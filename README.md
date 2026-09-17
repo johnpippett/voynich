@@ -16,6 +16,8 @@ assignments are necessary to attain its certified dictionary score. One remains 
 The [complete-key study](reports/OPTIMAL_SET.md) finds exactly four optimum maps in that finite Latin control.
 A fixed character model selects the map that recovers all test characters and words.
 This repairs an inspected development control. The [fixed protocol](docs/plans/optimal-set-secondary-v1.md) preceded the run.
+The [Italian search study](reports/HOMOPHONIC_SEARCH_DEVELOPMENT.md) improves two saved maps with eight local-search moves each.
+It leaves a large optimization gap and does not score test text.
 The [research audit](docs/research/recent-research-audit.md) reviews recent structural claims and their limits.
 The [initial findings](reports/FINDINGS.md) remain available as historical results.
 Stage 2 replaces their prediction partitions with source-backed bifolio groups.
@@ -32,6 +34,7 @@ The [folio report](docs/research/folio.md) gives the identification evidence.
 - Exact secondary ranking selects the correct observed map and recovers 111,052 test characters and 19,931 words without errors.
 - This later result follows the inspected failure. It is exploratory development, not blind validation.
 - The Italian homophonic controls recovered 43.35% and 66.48% of test characters. Their optimum scores remain unknown.
+- The later Italian development run improves the best fitted dictionary score to 565,215,014 of 897,839,540. This is not a recovery rate.
 - The new lexicon pilot bounds the training score at 35.51% or less in four fixed substitution problems.
 - That score averages token and type hit rates. The bounds apply only to the declared word lists, raw EVA units, and injective keys.
 - Two lexicon controls recovered every test character. The Italian control still has at least 60 equally scoring keys.

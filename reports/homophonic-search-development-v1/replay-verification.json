@@ -1,0 +1,53 @@
+{
+  "blockers": [],
+  "checkout": {
+    "clean_after": true,
+    "clean_before": true,
+    "mode": "anonymous_clean_detached"
+  },
+  "command": "python -m experiments.search_development.run_frozen",
+  "commit": "46798173ee9efe96d00c480d8aabf75540211d42",
+  "exit_code": 0,
+  "public_output_equality": true,
+  "public_outputs": [
+    {
+      "name": "manifest.json",
+      "primary_sha256": "4985b91f18a3d6b81ec7de3c63d349ad979217b7c25b041c7bedfde5cc55d190",
+      "replay_sha256": "4985b91f18a3d6b81ec7de3c63d349ad979217b7c25b041c7bedfde5cc55d190"
+    },
+    {
+      "name": "cold_selected.key.json",
+      "primary_sha256": "91ffd14f8bc5b6dc94b2cf31cbc1e63488bafdbf5b8618d79b429ce816167de8",
+      "replay_sha256": "91ffd14f8bc5b6dc94b2cf31cbc1e63488bafdbf5b8618d79b429ce816167de8"
+    },
+    {
+      "name": "assisted_selected.key.json",
+      "primary_sha256": "d77a7fb931ebf1222c496afcb38a5dd5fe887c19e5eea9f368c5af8fb4a90251",
+      "replay_sha256": "d77a7fb931ebf1222c496afcb38a5dd5fe887c19e5eea9f368c5af8fb4a90251"
+    },
+    {
+      "name": "aggregate.json",
+      "primary_sha256": "1a7c224f08e2e0483edc5be851c69cf13ca198b2e19889d4535929a717511ce7",
+      "replay_sha256": "1a7c224f08e2e0483edc5be851c69cf13ca198b2e19889d4535929a717511ce7"
+    },
+    {
+      "name": "supervision.json",
+      "primary_sha256": "0c856c39cf0bf2b223908048cc80b9912f534f5176b305f3fbec9e46e0d83446",
+      "replay_sha256": "0c856c39cf0bf2b223908048cc80b9912f534f5176b305f3fbec9e46e0d83446"
+    }
+  ],
+  "receipt_sha256": "0c856c39cf0bf2b223908048cc80b9912f534f5176b305f3fbec9e46e0d83446",
+  "repository": "https://github.com/johnpippett/voynich.git",
+  "safe_statuses": {
+    "child_error_event_count": 0,
+    "malformed_output_count": 0,
+    "numeric_outputs_valid": true,
+    "progress_event_count": 4,
+    "reason": "completed",
+    "supervisor": "development_only",
+    "terminal_event_seen": true,
+    "wrapper": "development_only"
+  },
+  "schema_version": 1,
+  "scope": "Frozen finite Italian control replay; no manuscript input or test scoring."
+}
