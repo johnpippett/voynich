@@ -436,6 +436,51 @@ A separate AI task checked the lookup and glossary-expansion code. This is not e
 The local source manifest and twelve files remain in `results/schechter-decoder-audit-v1/`.
 The `decode.js` SHA-256 is `796c63d4e386b766e62ad33d84129e0861b6ea8153015aaa53d37c797c221329`.
 
+## Lunar-mansion names: complete-label collision
+
+This exploratory check asked whether the 28 radial labels on f69v could give 28 distinct lunar-mansion names through one fixed translation function.
+Here, the function receives the complete label. Its output cannot depend on the label's position or neighboring text.
+
+A source task selected one historical list before any comparison with Voynich labels.
+The [Ambrosiana M. 28 sup. catalogue](https://ptolemaeus.badw.de/ms/642) identifies a fourteenth-century copy of a *Picatrix* excerpt on ff. 92r–92v.
+[Pingree's edition](https://resources.warburg.sas.ac.uk/pdf/fbh295b2205454.pdf), printed pp. li–liii, Excerpt VI, supplies 28 names in sequence.
+All 28 remain distinct after lowercase conversion. Two AI tasks checked the stored list against the printed pages.
+We did not change spellings or select a second list after inspecting Voynich labels.
+
+The source-order review exposed this repeated complete label:
+
+| Radial record | IT2a reading | ZL3b reading |
+| --- | --- | --- |
+| `f69v.14,@Ri` | `okeod` | `okeod` |
+| `f69v.18,@Ri` | `okeod` | `okeod` |
+
+These are distinct records in both [IT2a](https://www.voynich.nu/data/IT2a-n.txt) and [ZL3b](https://www.voynich.nu/data/ZL3b-n.txt).
+Both complete records contain one word and pass the strict transcription check.
+The check permits removal of free comments and layout whitespace. It preserves all glyphs and period separators.
+A separate calculation read the four source lines directly, without the corpus parser, and confirmed their equality.
+The two transcriptions describe the same manuscript. They are not two physical observations.
+
+Equal inputs must produce equal outputs under a fixed, context-independent function.
+A one-to-one assignment of the 28 distinct names requires different outputs at these two positions.
+The requirements conflict. This excludes every permutation of this list under that model, including every rotation and direction.
+The argument requires no sign-to-letter substitution, glyph unitization, or preserved internal word boundaries.
+
+Both records were in the planned training set, at indices 11 and 15.
+We stopped before key fitting or name comparison on test labels.
+The collision check followed source inspection. It is not a blind prediction result.
+
+The complete IT source-text crosswalk links these records to H-series labels 8 and 12 in the [legacy record](https://www.voynich.nu/q10/f069v_tr.txt).
+That record numbers the labels clockwise from the wide gap.
+A blind AI check of the [Yale image](https://collections.library.yale.edu/iiif/2/1006199/full/full/0/default.jpg) located candidate areas but could not verify either complete glyph string.
+The image reader also retained a possible one-position error. We stopped without image certification or replacement targets.
+
+The result remains conditional on transcription equality and the proposed role of each complete label as a distinct name.
+It does not exclude position-dependent decoding, different label roles, corrected glyph readings, or lunar content.
+No name or plaintext was recovered.
+
+The source list, original plan, collision addendum, and receipts remain in `results/lunar-mansion-pilot-v1/`.
+The direct-source verification receipt has SHA-256 `852e776db3ea5e960973961255f5006613cfd771d063b7692d423bb44d61361a`.
+
 ## Initial audit limits
 
 The initial pass used catalogue descriptions, folio-layout records, and exact-locus

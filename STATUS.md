@@ -6,6 +6,11 @@ The project has no validated key, plaintext language, or translation.
 
 ## Current findings and stopped branches
 
+Two complete radial labels on f69v are identical in both pinned transcriptions.
+They cannot map to different names through a fixed, context-independent function.
+This [collision check](docs/research/anchor-audit.md#lunar-mansion-names-complete-label-collision) stops a one-to-one reading of the 28 labels as one fixed historical list.
+It remains conditional on transcription equality and label role. It does not reject lunar content or position-dependent decoding.
+
 The [fixed-expansion test](reports/LINE_TRIPLET_BOUNDARIES.md) gives an exact constraint on one three-digit code model.
 It assumes fixed expansion lengths and shared space and line-ending contributions that restore the same code phase after each selected line.
 Every represented training-unit length must then be divisible by three, separately in Currier A and B in both sources.
