@@ -61,6 +61,17 @@ Any later comparison must check the external manuscript's binding and text order
 The record prefers a 1258–1266 date and notes later dating proposals.
 The broader thirteenth-century date is sufficient for this assessment.
 
+## Named-witness image check
+
+A later check used [Cod. Bodmer 135](https://www.e-codices.ch/de/description/fmb/cb-0135), another copy of *De balneis Puteolanis*.
+The catalogue dates this copy to approximately 1350–1370, with uncertainty.
+It records thirty-five numbered baths and illustrated rectos from f2 onward.
+AI image review examined f2r, f3r, f24r, and f28r through the [IIIF manifest](https://www.e-codices.ch/metadata/iiif/fmb-cb-0135/manifest.json).
+The primary agent also inspected f2r and f3r.
+The review identified no fixed caption, place name, or scene sequence that connects this sample to f84r.
+It does not exclude a broader relation to bathing imagery.
+No text comparison followed. The anchor decision remains unchanged, and this image-comparison branch is stopped.
+
 ## Negative evidence and limits
 
 The Yale catalogue's section label is a modern catalogue description. It does

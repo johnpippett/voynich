@@ -408,6 +408,34 @@ It reused the parser and unit representation. This is not an independent transcr
 The local plan, executed script, and result remain in `results/gallows-continuation-v1/`.
 The result SHA-256 is `c8ac8f92ad2fa349ea676008addfbe0c66f1516ae8d353da17483727e73f861f`.
 
+## Whole-word glossary decoder audit
+
+This audit asked whether an executable decoder predicts readings from sign rules or retrieves assigned whole-word meanings.
+Only the first mechanism could supply a sign-rule transfer test without a new model from this project.
+
+The audit fixes [Schechter's repository](https://github.com/scott-schechter/voynich-decoded/tree/71f2f3c91e9113d285ab21e024f1dd70c1f43c44) at revision `71f2f3c91e9113d285ab21e024f1dd70c1f43c44`.
+The function [`decodeWord`](https://github.com/scott-schechter/voynich-decoded/blob/71f2f3c91e9113d285ab21e024f1dd70c1f43c44/decode.js#L97-L109) first looks up a complete cleaned word in `GLOSS`.
+If that lookup fails, it removes occurrences of four specified compound signs and repeats the lookup.
+If both lookups fail, it returns no reading. It does not construct a new output word from sign values.
+
+Coverage is the proportion of input words for which the function returns a nonempty value.
+The [counting code](https://github.com/scott-schechter/voynich-decoded/blob/71f2f3c91e9113d285ab21e024f1dd70c1f43c44/decode.js#L480-L503) does not test the meaning of that value.
+Keep the glossary keys and lookup rules fixed. Replace each returned meaning with a different nonempty string.
+Every coverage decision then stays the same.
+This follows from the code; we did not run a glossary permutation experiment.
+Thus, coverage alone cannot select the proposed meanings over other assignments.
+
+The [reproduction guide](https://github.com/scott-schechter/voynich-decoded/blob/71f2f3c91e9113d285ab21e024f1dd70c1f43c44/publication/07-reproduction-guide.md#L198-L240) includes manual assignments and additions based on partially interpreted lines.
+The [reverse-encoding report](https://github.com/scott-schechter/voynich-decoded/blob/71f2f3c91e9113d285ab21e024f1dd70c1f43c44/publication/13-reverse-encoding-test.md#L3-L7) selects words from the assigned output vocabulary and reverses glossary entries.
+That construction does not independently establish their meanings.
+
+We stopped the sign-rule transfer branch. We did not execute the package or run a manuscript experiment.
+This audit does not prove that every glossary entry is incorrect or that a whole-word code is impossible.
+It identifies a limit of the examined executable method and coverage statistic.
+A separate AI task checked the lookup and glossary-expansion code. This is not external scholarly validation.
+The local source manifest and twelve files remain in `results/schechter-decoder-audit-v1/`.
+The `decode.js` SHA-256 is `796c63d4e386b766e62ad33d84129e0861b6ea8153015aaa53d37c797c221329`.
+
 ## Initial audit limits
 
 The initial pass used catalogue descriptions, folio-layout records, and exact-locus

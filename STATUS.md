@@ -13,6 +13,8 @@ The result permits lengths zero, three, six, and larger multiples. It identifies
 
 Spaces need not mark plaintext words. Variable padding, independent line phases, other unit inventories, and context-dependent expansions remain outside this model.
 The [source audit](docs/research/anchor-audit.md) also records the stopped Hannig and gallows-continuation checks.
+The examined Schechter decoder retrieves assigned whole-word meanings. Its coverage cannot distinguish those meanings from other nonempty assignments.
+We stopped its sign-rule transfer branch without running the package. No plaintext resulted.
 
 The [cross-boundary test](reports/BOUNDARY_PREDICTION.md) finds transferable prediction between recorded word parts.
 A preceding final unit reduces the next initial-unit loss by about 0.18–0.20 bits in the visual-unit track.
