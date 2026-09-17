@@ -55,6 +55,11 @@ The Naibbe tables used Voynich features during construction. Their compatibility
 
 ## Reproduce the research
 
+Commit attribution was corrected on 2026-09-17.
+For an earlier project commit ID, use the corresponding ID in the [commit map](docs/history/commit-map-2026-09-17.tsv).
+Each mapped commit has the same file contents, message, and dates.
+The [attribution note](<wiki/30-39 Integrations & Tooling/32 Integration Notes/32.02 Commit Attribution.md>) explains the correction.
+
 Use Python 3.11 or later. The analysis uses the Python standard library.
 
 ```sh

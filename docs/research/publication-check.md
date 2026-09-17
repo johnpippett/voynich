@@ -2,10 +2,13 @@
 
 Audit date: 2026-09-16.
 
+This record describes the original publication audit.
+The [later attribution correction](<../../wiki/30-39 Integrations & Tooling/32 Integration Notes/32.02 Commit Attribution.md>) supersedes its Git identity statement.
+
 The audit covered the 43 paths in the staged tree. It checked staged names and
 content only. It made no network request and did not publish the repository.
 
-The local Git identity is `Voynich Research` with the GitHub no-reply address.
+The local Git identity was `Voynich Research` with the GitHub no-reply address.
 The staged content has no personal email address, phone contact, credential
 marker, private key block, access token, or secret assignment. The public
 repository URL in `README.md` is allowed: `https://github.com/johnpippett/voynich`.

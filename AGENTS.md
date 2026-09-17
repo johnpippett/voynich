@@ -2,7 +2,10 @@
 
 This repository is public. Do not include personal information, private contact
 details, local user paths, credentials, or attachment metadata.
-Use a neutral research commit identity. Audit staged content before publication.
+Use the repository commit identity: `johnpippett <jack@pippett.me>`.
+The owner permits this email address in public commit metadata and attribution records.
+Do not use a generic `noreply@users.noreply.github.com` address. It can identify another account.
+Keep all other personal information excluded. Audit staged content before publication.
 Publish useful research updates to the authorized GitHub repository when they
 are ready. This standing permission applies only to repository research
 updates.
