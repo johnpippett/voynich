@@ -1,0 +1,143 @@
+{
+  "checks": {
+    "accepted_projection": true,
+    "books": true,
+    "chapters": true,
+    "combining_class_zero_mark_rejected": true,
+    "cross_partition_duplicates_zero": true,
+    "floor_split_rule": true,
+    "paragraphs": true,
+    "private_paragraph_rows_exact": true,
+    "private_partition_arrays_exact": true,
+    "public_adapter_manifest_exact": true,
+    "source_pins": true
+  },
+  "comparisons": {
+    "cross_partition_duplicates_zero": true,
+    "independent_projection_pin": true,
+    "module_projection_pin": true,
+    "private_paragraph_rows": true,
+    "private_partition_arrays": true,
+    "public_adapter_manifest": true
+  },
+  "inputs": {
+    "reports/celsus-projection-v1/acceptance.json": {
+      "bytes": 12935,
+      "sha256": "8067be5cb874a8e53472d11e3188be0eb92b7c30c3def9f31de2451e06fc6faf"
+    },
+    "results/celsus-projection-v1/celsus-lat5.xml": {
+      "bytes": 893899,
+      "sha256": "a4a5194ba38a7efd5192d20f2a7b696f4fa64105010eb629aa7c35255a935145"
+    },
+    "results/celsus-projection-v1/module-paragraphs.jsonl": {
+      "bytes": 747194,
+      "sha256": "f37d99f5ad0771c32c4d71934b58df00438ca7dadf870f89dc93b181c1d373f2"
+    },
+    "results/celsus-reference-control-v1/paragraphs.private.jsonl": {
+      "bytes": 973283,
+      "sha256": "6bc2af80bc11f728b81e218b0dd6a0c51878aec075c0f2bbd4415fb4df0e4f93"
+    },
+    "results/celsus-reference-control-v1/partition-manifest.json": {
+      "bytes": 8843,
+      "sha256": "634ed31c54e1147ee930c6261ed9261938ec120f310db2e22ed54bca630dc9e1"
+    },
+    "results/celsus-reference-control-v1/partitions.private.json": {
+      "bytes": 870217,
+      "sha256": "ca6209869b934958c04b9707c0c70652046abb118d365c9c9f272c6adb7802f1"
+    }
+  },
+  "limitations": [
+    "This audit verifies one frozen Celsus source and one fixed chapter split.",
+    "It does not test a cipher, a model, or the Voynich manuscript.",
+    "Near duplicates within or across chapters remain possible and are not removed."
+  ],
+  "method": "Independent stdlib tokenization, split assignment, normalization, deduplication, hashing, and comparison. No project adapter or partition runner was imported.",
+  "partitions": {
+    "test": {
+      "cross_partition_duplicate_count": 0,
+      "empty_count": 0,
+      "paragraph_count": 175,
+      "rejected_run_count": 0,
+      "retained_paragraph_count": 175,
+      "retained_paragraph_sequence_sha256": "f9fa5f1e3d8813a602489a927a9134540dac5d9742be624d89f23183bf5cb4d5",
+      "roman_like_count": 419,
+      "token_count": 27147,
+      "token_stream_sha256": "d0396cfc90bd8c55a62d1d1c8a19a7268aba3f799ae490c63fa88c0d7f2c70cf",
+      "type_count": 6328
+    },
+    "train": {
+      "cross_partition_duplicate_count": 0,
+      "empty_count": 0,
+      "paragraph_count": 252,
+      "rejected_run_count": 0,
+      "retained_paragraph_count": 252,
+      "retained_paragraph_sequence_sha256": "ef012a37916f1c229d272031454f2e40100560755b18156978e085e341fbf257",
+      "roman_like_count": 702,
+      "token_count": 62423,
+      "token_stream_sha256": "c2b7cf672589f203857ced3be014e9c808dde52163251778b7f185efe1a30d0e",
+      "type_count": 10805
+    },
+    "validation": {
+      "cross_partition_duplicate_count": 0,
+      "empty_count": 0,
+      "paragraph_count": 123,
+      "rejected_run_count": 0,
+      "retained_paragraph_count": 123,
+      "retained_paragraph_sequence_sha256": "b840d6aa66289eeef3c6a4d16f57f7df61106110bc14e16b05a89bb0acf4f077",
+      "roman_like_count": 316,
+      "token_count": 12145,
+      "token_stream_sha256": "521d46778627c9a5a4e0dec08109d044fbe989835bfcf03cfa8119487f63b25f",
+      "type_count": 3794
+    }
+  },
+  "private_outputs": {
+    "paragraphs.private.jsonl": {
+      "bytes": 973283,
+      "exact_match": true,
+      "sha256": "6bc2af80bc11f728b81e218b0dd6a0c51878aec075c0f2bbd4415fb4df0e4f93"
+    },
+    "partitions.private.json": {
+      "bytes": 870217,
+      "exact_match": true,
+      "sha256": "ca6209869b934958c04b9707c0c70652046abb118d365c9c9f272c6adb7802f1"
+    }
+  },
+  "schema_version": 1,
+  "source": {
+    "book_count": 8,
+    "book_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "chapter_count": 211,
+    "chapter_count_by_split": {
+      "test": 49,
+      "train": 124,
+      "validation": 38
+    },
+    "paragraph_count_by_split": {
+      "test": 175,
+      "train": 252,
+      "validation": 123
+    },
+    "record_count": 550
+  },
+  "split": {
+    "chapter_order": "source order within each book",
+    "floor_rule_match": true,
+    "fractions": {
+      "test": "remainder",
+      "train": "floor(60/100)",
+      "validation": "floor(20/100)"
+    },
+    "unit": "book_id:chapter_id"
+  },
+  "status": "PASS",
+  "verification": "celsus-reference-control-independent-audit"
+}

@@ -13,6 +13,7 @@ The [lexicon report](reports/LEXICON.md) contains the earlier manuscript bounds.
 The [Stage 2 report](reports/STAGE2.md) contains the earlier controlled searches.
 The [initial report](reports/FINDINGS.md) preserves the earlier exploratory results.
 The [Celsus projection report](reports/CELSUS_PROJECTION.md) validates one ancient medical source extraction.
+The [Celsus partition report](reports/CELSUS_PARTITIONS.md) records 101,715 word tokens and independent checks of the fixed chapter split.
 The [Italian search report](reports/HOMOPHONIC_SEARCH_DEVELOPMENT.md) records local-search improvements and remaining score bounds.
 
 The current work includes:
