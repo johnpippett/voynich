@@ -1,0 +1,134 @@
+{
+  "commands": {
+    "fetch": [
+      "python",
+      "scripts/fetch_reference_sources.py"
+    ],
+    "fetch_exit_code": 0,
+    "run": [
+      "python",
+      "-m",
+      "experiments.cyclic_pairing.run_controls"
+    ],
+    "run_exit_code": 0
+  },
+  "commit": {
+    "expected": "6c007385d758a91bb230c92d69ff8bc50f59f709",
+    "match": true,
+    "primary": "6c007385d758a91bb230c92d69ff8bc50f59f709",
+    "replay": "6c007385d758a91bb230c92d69ff8bc50f59f709",
+    "replay_detached": true
+  },
+  "hash_checks": {
+    "freeze_manifest_receipt_match": true,
+    "freeze_manifest_sha256": "66c2cdeb461278804ff3be16d592940711a450a33ac8db7f46e12d38c8eca12b",
+    "public_output_hashes_match": true,
+    "reference_fetch_hashes_verified": true
+  },
+  "limitations": [
+    "This receipt compares public output bytes and hashes only.",
+    "Private resource and run receipts are preserved outside this aggregate.",
+    "No raw reference text or private runtime data is included."
+  ],
+  "outputs": {
+    "reports/cyclic-pairing-control-v1/supervision.json": {
+      "equal": true,
+      "primary": {
+        "bytes": 3370,
+        "sha256": "46fb24a824a1805b233779c01f76ae0dd794d0e3536361561da2ffa44705347d"
+      },
+      "replay": {
+        "bytes": 3370,
+        "sha256": "46fb24a824a1805b233779c01f76ae0dd794d0e3536361561da2ffa44705347d"
+      }
+    },
+    "results/cyclic-pairing-control-v1/italian_old/diagnostics.json": {
+      "equal": true,
+      "primary": {
+        "bytes": 2387,
+        "sha256": "cae9ece0fd3f843b85e7217150497230e2c4437e6dca160750472b5afde7d7b7"
+      },
+      "replay": {
+        "bytes": 2387,
+        "sha256": "cae9ece0fd3f843b85e7217150497230e2c4437e6dca160750472b5afde7d7b7"
+      }
+    },
+    "results/cyclic-pairing-control-v1/italian_old/input.json": {
+      "equal": true,
+      "primary": {
+        "bytes": 5412,
+        "sha256": "6f6cad275f5c9feb3bd7dc80e5e7549b298c3731f713fc492f087eb0675984d3"
+      },
+      "replay": {
+        "bytes": 5412,
+        "sha256": "6f6cad275f5c9feb3bd7dc80e5e7549b298c3731f713fc492f087eb0675984d3"
+      }
+    },
+    "results/cyclic-pairing-control-v1/italian_old/pairing.json": {
+      "equal": true,
+      "primary": {
+        "bytes": 15920,
+        "sha256": "e3f9e943caed5928a91ad9ea615af92cc8f6cea152639c91cd1a82c3eb18c830"
+      },
+      "replay": {
+        "bytes": 15920,
+        "sha256": "e3f9e943caed5928a91ad9ea615af92cc8f6cea152639c91cd1a82c3eb18c830"
+      }
+    },
+    "results/cyclic-pairing-control-v1/latin_llct/diagnostics.json": {
+      "equal": true,
+      "primary": {
+        "bytes": 2442,
+        "sha256": "de6c7b97a9f0d493ab08c3998e37857d34f066db7e54d803ac28ec2b0795fee9"
+      },
+      "replay": {
+        "bytes": 2442,
+        "sha256": "de6c7b97a9f0d493ab08c3998e37857d34f066db7e54d803ac28ec2b0795fee9"
+      }
+    },
+    "results/cyclic-pairing-control-v1/latin_llct/input.json": {
+      "equal": true,
+      "primary": {
+        "bytes": 5414,
+        "sha256": "ba8d74a8ccaa11b2bfc0c665877df295c5a758b1eb7bf1b2912391fb87efcd06"
+      },
+      "replay": {
+        "bytes": 5414,
+        "sha256": "ba8d74a8ccaa11b2bfc0c665877df295c5a758b1eb7bf1b2912391fb87efcd06"
+      }
+    },
+    "results/cyclic-pairing-control-v1/latin_llct/pairing.json": {
+      "equal": true,
+      "primary": {
+        "bytes": 15187,
+        "sha256": "672960dd6f9a791f806b4e8c93b6e4df3bc966479c6c0960ceaa1124d214a4ee"
+      },
+      "replay": {
+        "bytes": 15187,
+        "sha256": "672960dd6f9a791f806b4e8c93b6e4df3bc966479c6c0960ceaa1124d214a4ee"
+      }
+    }
+  },
+  "repository": "https://github.com/johnpippett/voynich.git",
+  "run_status": {
+    "corpora": [
+      "latin_llct",
+      "italian_old"
+    ],
+    "numeric_outputs_valid": true,
+    "status": "complete",
+    "synthetic_tests": {
+      "count": 20,
+      "returncode": 0,
+      "status": "pass"
+    }
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "verification": "cyclic-pairing-control-v1-public-replay",
+  "working_tree": {
+    "expected_untracked_public_supervision": true,
+    "private_replay_receipts_preserved": true,
+    "tracked_files_clean": true
+  }
+}

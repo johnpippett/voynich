@@ -6,7 +6,7 @@ The project has no validated key, plaintext language, or translation.
 
 ## Completed research
 
-The [complete-key report](reports/OPTIMAL_SET.md) contains the latest Latin development result.
+The [complete-key report](reports/OPTIMAL_SET.md) contains the Latin letter-recovery development result.
 The [assignment report](reports/IDENTIFIABILITY.md) contains the preceding conditional assignment results.
 The [homophonic report](reports/HOMOPHONIC.md) contains the preceding controls and their limits.
 The [lexicon report](reports/LEXICON.md) contains the earlier manuscript bounds.
@@ -15,6 +15,7 @@ The [initial report](reports/FINDINGS.md) preserves the earlier exploratory resu
 The [Celsus projection report](reports/CELSUS_PROJECTION.md) validates one ancient medical source extraction.
 The [Celsus partition report](reports/CELSUS_PARTITIONS.md) records 101,715 word tokens and independent checks of the fixed chapter split.
 The [Italian search report](reports/HOMOPHONIC_SEARCH_DEVELOPMENT.md) records local-search improvements and remaining score bounds.
+The [cyclic pairing report](reports/CYCLIC_PAIRING.md) identifies 23 forced Latin pairs and 21 forced Italian pairs without plaintext-letter assignments.
 
 The current work includes:
 

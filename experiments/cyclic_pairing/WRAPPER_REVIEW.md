@@ -5,9 +5,12 @@ Review date: 2026-09-17.
 This is a synthetic, read-only review. It does not run a reference corpus,
 the control study, or a manuscript stream. No source code was edited.
 
-Reviewed hashes:
+This review records the initial snapshot and its 53 tests.
+The later [pin-correction audit](STUDY_REVIEW.md#final-pin-correction-audit) records the corrected snapshot and 54 tests.
 
-- `experiments/cyclic_pairing/run_controls.py`: `b45b8b5ce82a73236a691350dc7e633c2de6cd6e801d3791a5e65b6f5409772`;
+Reviewed initial hashes:
+
+- `experiments/cyclic_pairing/run_controls.py`: `b45b8b5ce82a73236a691350dc7e633c2de6cd6e801d3791a5e65b6f5409772a`;
 - `experiments/cyclic_pairing/test_run_controls.py`: `9b5a32fc6439cf4c223d328a49c193601d724ffcc1fe7de0517138b3bc88f2c8`;
 - `experiments/cyclic_pairing/__init__.py`: `34b9b19317fdaea3e3b99f51d5c45db120c5eae6ac91068aaf7369d8df6ce00b`.
 

@@ -14,7 +14,7 @@ corpus or the Voynich manuscript. It does not run a model or a control stream.
 - [`__init__.py`](__init__.py), SHA-256 `34b9b19317fdaea3e3b99f51d5c45db120c5eae6ac91068aaf7369d8df6ce00b`;
 - [`pairing.py`](pairing.py), SHA-256 `da9c89b4738d0dde959a3c730111dee864c05cd3e3b20932b2b8a3f30a57da95`;
 - [`forced.py`](forced.py), SHA-256 `3f3a4fc450b5921905b8931310379d8361a6ca0b8d2989b8b8e939ddbc8d76a4`;
-- [`WRAPPER_REVIEW.md`](WRAPPER_REVIEW.md), SHA-256 `0f0087bcd6e57f1a0c4231d3fdb1ef32badb923d1d4bf385d4fa6363273c8742`;
+- [`WRAPPER_REVIEW.md`](WRAPPER_REVIEW.md), SHA-256 `fb4248f7261fe962d3864751a9219c0132ba5cc3392ee6ef8d10124757bdb2c6`;
 - [`cyclic-pairing-control-v1.md`](../../docs/plans/cyclic-pairing-control-v1.md), SHA-256 `4df185f2f56b7e9dd8721cdd7b996c16aeb6f1ba49d0b6abce13f60db99823c6`.
 
 ## Review result
