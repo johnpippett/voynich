@@ -15,7 +15,7 @@ import time
 import unittest
 from unittest.mock import patch
 
-from experiments.cyclic_pairing import run_controls
+from experiments.cyclic_pairing import run_controls, study
 
 
 def _sha256_bytes(value: bytes) -> str:
@@ -98,10 +98,7 @@ def _freeze_fixture(root: Path) -> tuple[Path, dict[str, object]]:
 
 
 def _valid_input(corpus: str, freeze_hash: str) -> dict[str, object]:
-    stream_hashes = {
-        "latin_llct": "eb03e98b086b9b8bc883f349afaee968bfeaeee8c95be5f66bec320e54b419b2",
-        "italian_old": "d7e9c6e0b716cf7ea1c7deb4f135ca2692ea70b4f927548e99668ab0c1428492",
-    }
+    stream_hashes = run_controls.EXPECTED_VALIDATION_STREAM_HASHES
     provenance = _fixture_provenance(corpus)
     return {
         "record_type": "input",
@@ -139,11 +136,7 @@ def _valid_pairing(corpus: str, freeze_hash: str) -> dict[str, object]:
         "max_edge_queries": 26,
         "declared_unit_count": 52,
         "declared_units_sha256": run_controls.EXPECTED_DECLARED_UNITS_SHA256,
-        "validation_stream_sha256": (
-            "eb03e98b086b9b8bc883f349afaee968bfeaeee8c95be5f66bec320e54b419b2"
-            if corpus == "latin_llct"
-            else "d7e9c6e0b716cf7ea1c7deb4f135ca2692ea70b4f927548e99668ab0c1428492"
-        ),
+        "validation_stream_sha256": run_controls.EXPECTED_VALIDATION_STREAM_HASHES[corpus],
         "word_count": 1,
         "unit_token_count": 1,
         "manifest_sha256": freeze_hash,
@@ -231,6 +224,18 @@ def _valid_diagnostics(corpus: str, freeze_hash: str) -> dict[str, object]:
 
 
 class RunControlsTests(unittest.TestCase):
+    def test_stream_pins_match_both_pinned_prior_reports(self) -> None:
+        report_paths = {
+            "latin_llct": Path("reports/homophonic-feasibility-v1/latin-cold.json"),
+            "italian_old": Path("reports/homophonic-feasibility-v1/italian-cold.json"),
+        }
+        expected = {
+            corpus: json.loads(path.read_text(encoding="utf-8"))["stream_sha256"]["cipher_validation"]
+            for corpus, path in report_paths.items()
+        }
+        self.assertEqual(run_controls.EXPECTED_VALIDATION_STREAM_HASHES, expected)
+        self.assertEqual(study.EXPECTED_VALIDATION_STREAM_HASHES, expected)
+
     def test_freeze_verification_accepts_exact_allowlist_and_returns_hash(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

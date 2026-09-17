@@ -1,6 +1,6 @@
 # Cyclic pairing control v1
 
-Status: fixed development protocol, before the first run. Date: 2026-09-17.
+Status: amended development protocol, before the corrected run. Date: 2026-09-17.
 
 This protocol measures ciphertext-only pair recovery in the fixed capacity-two
 control emitter. It uses two validation streams from pinned reference inputs:
@@ -42,7 +42,7 @@ These values are input consistency pins, not pairing evidence.
 
 | Corpus | Prior report | Report SHA-256 | `cipher_validation` SHA-256 |
 | --- | --- | --- | --- |
-| `latin_llct` | `reports/homophonic-feasibility-v1/latin-cold.json` | `923dba00df53ff05ca88e91362ea44c693d66b8f0824071d85cc5b0d984ba77e` | `eb03e98b086b9b8bc883f349afaee968bfeaeee8c95be5f66bec320e54b419b2` |
+| `latin_llct` | `reports/homophonic-feasibility-v1/latin-cold.json` | `923dba00df53ff05ca88e91362ea44c693d66b8f0824071d85cc5b0d984ba77e` | `eb03e98b086b9f8bc883f349afaee968bfeaeee8c95be5f66bec320e54b419b2` |
 | `italian_old` | `reports/homophonic-feasibility-v1/italian-cold.json` | `4209022e13399bb7347b8f1d098f43c4d0922ae1b9c6df72382ed5553b44b0b3` | `d7e9c6e0b716cf7ea1c7deb4f135ca2692ea70b4f927548e99668ab0c1428492` |
 
 ## Fixed input
@@ -254,3 +254,21 @@ names or a plaintext.
 The shared research remains active. A later protocol must define any use of
 pair groups in substitution search, any new control seed, any manuscript
 stream, and any claim about decipherment.
+
+## Pin correction after attempt 1
+
+Commit `2995a6ad80e8d769a4145ba13a15e521d4733831` contains the initial freeze.
+The first run stopped the Latin child before it wrote input or pairing records.
+The copied Latin stream pin had `b` instead of `f` at zero-based character 13.
+The prior report and its file hash did not change.
+The Italian child completed in that attempt.
+
+The initial manifest remains in `experiments/cyclic_pairing/freeze-v1-initial.json`.
+Its SHA-256 is `271df785f0df13415dfdaec44ce91b7b3ba9e317d052ec904914ad89ca9b3981`.
+The initial aggregate records remain under `reports/cyclic-pairing-control-v1/attempt-1/`.
+
+The amendment corrects that literal in the plan, study, and wrapper.
+A new regression checks both runner maps against both published prior reports.
+The pairing method, source bytes, emitter, seed, budgets, and diagnostics remain unchanged.
+Publish a new external freeze before the corrected two-corpus run.
+Keep the corrected run separate from attempt 1.

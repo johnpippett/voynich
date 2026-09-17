@@ -7,20 +7,20 @@ corpus or the Voynich manuscript. It does not run a model or a control stream.
 
 ## Reviewed snapshot
 
-- [`study.py`](study.py), SHA-256 `bdf9da11293e32e0483f55b100153ca49f4822efa0021541c116143f47022be3`;
+- [`study.py`](study.py), SHA-256 `73f18f96627d47d5a8d02e7499af726d69f0bc5f65c825bfc4b61b756b7db0b3`;
 - [`test_study.py`](test_study.py), SHA-256 `b53f50e74c454d36fdf8ce85774ff31dc9ca4d02bffc103cd65f080b752af1fd`;
-- [`run_controls.py`](run_controls.py), SHA-256 `b45b8b5ce82a73236a691350dc7e633c2de6cd6e801d3791a5e65b6f5409772a`;
-- [`test_run_controls.py`](test_run_controls.py), SHA-256 `9b5a32fc6439cf4c223d328a49c193601d724ffcc1fe7de0517138b3bc88f2c8`;
+- [`run_controls.py`](run_controls.py), SHA-256 `37016a443dda3e042be58fbddcf858f896d42246f60cbd3c17a3e9985b98abab`;
+- [`test_run_controls.py`](test_run_controls.py), SHA-256 `9e98b99fbba44429a0f023e6d6fefa3b70634102a84f9b4e8cad83f379fdf63c`;
 - [`__init__.py`](__init__.py), SHA-256 `34b9b19317fdaea3e3b99f51d5c45db120c5eae6ac91068aaf7369d8df6ce00b`;
 - [`pairing.py`](pairing.py), SHA-256 `da9c89b4738d0dde959a3c730111dee864c05cd3e3b20932b2b8a3f30a57da95`;
 - [`forced.py`](forced.py), SHA-256 `3f3a4fc450b5921905b8931310379d8361a6ca0b8d2989b8b8e939ddbc8d76a4`;
 - [`WRAPPER_REVIEW.md`](WRAPPER_REVIEW.md), SHA-256 `0f0087bcd6e57f1a0c4231d3fdb1ef32badb923d1d4bf385d4fa6363273c8742`;
-- [`cyclic-pairing-control-v1.md`](../../docs/plans/cyclic-pairing-control-v1.md), SHA-256 `6da0d8b862dacfb90b3255bb5df4212d180052729f2d9170bc8ea2e6e30c3310`.
+- [`cyclic-pairing-control-v1.md`](../../docs/plans/cyclic-pairing-control-v1.md), SHA-256 `4df185f2f56b7e9dd8721cdd7b996c16aeb6f1ba49d0b6abce13f60db99823c6`.
 
 ## Review result
 
 The current implementation has no remaining blocking defect in the study or
-wrapper gates reviewed here. The final reported synthetic gate has 53 passing
+wrapper gates reviewed here. The final reported synthetic gate has 54 passing
 tests. The updated plan hash is recorded above. The external pre-run freeze
 remains a required gate before any control stream runs.
 
@@ -80,3 +80,36 @@ The review used synthetic tests only. It did not verify a real reference
 stream, resource limit event, or published numeric result. The external
 freeze must bind the final files, runtime, source inputs, output paths, and
 resource limits before the runner starts.
+
+## Final pin correction audit
+
+The first control attempt stopped the Latin child before it wrote `input.json`.
+The cause was a one-character Latin stream pin error. The Italian child
+completed under the initial freeze, but the two-corpus attempt was incomplete.
+
+The prior Latin report remains unchanged. Its report hash is
+`923dba00df53ff05ca88e91362ea44c693d66b8f0824071d85cc5b0d984ba77e`, and its
+`cipher_validation` value is
+`eb03e98b086b9f8bc883f349afaee968bfeaeee8c95be5f66bec320e54b419b2`.
+The failed code used `...b9b8...` at one position. The corrected study,
+wrapper, and protocol now use the report value. The Italian pin matched its
+prior report. A static audit found no other pin mismatch.
+
+The corrected study SHA-256 is
+`73f18f96627d47d5a8d02e7499af726d69f0bc5f65c825bfc4b61b756b7db0b3`.
+The corrected wrapper SHA-256 is
+`37016a443dda3e042be58fbddcf858f896d42246f60cbd3c17a3e9985b98abab`.
+The corrected wrapper-test SHA-256 is
+`9e98b99fbba44429a0f023e6d6fefa3b70634102a84f9b4e8cad83f379fdf63c`.
+The corrected protocol SHA-256 is
+`4df185f2f56b7e9dd8721cdd7b996c16aeb6f1ba49d0b6abce13f60db99823c6`.
+The corrected freeze SHA-256 is
+`66c2cdeb461278804ff3be16d592940711a450a33ac8db7f46e12d38c8eca12b`.
+The initial freeze remains preserved at
+[`freeze-v1-initial.json`](freeze-v1-initial.json), SHA-256
+`271df785f0df13415dfdaec44ce91b7b3ba9e317d052ec904914ad89ca9b3981`.
+The initial receipt directory remains at
+[`attempt-1`](../../reports/cyclic-pairing-control-v1/attempt-1).
+
+The final synthetic gate reports 54 passing tests after the pin correction.
+This audit did not rerun a reference stream or change source code.

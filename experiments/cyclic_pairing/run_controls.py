@@ -65,7 +65,7 @@ EXPECTED_RESOURCES = {
 }
 EXPECTED_DECLARED_UNITS_SHA256 = "16018ee0527c55f40d0d3707a0b162570b3bdd5c64c52aa1617e04baf6349619"
 EXPECTED_VALIDATION_STREAM_HASHES = {
-    "latin_llct": "eb03e98b086b9b8bc883f349afaee968bfeaeee8c95be5f66bec320e54b419b2",
+    "latin_llct": "eb03e98b086b9f8bc883f349afaee968bfeaeee8c95be5f66bec320e54b419b2",
     "italian_old": "d7e9c6e0b716cf7ea1c7deb4f135ca2692ea70b4f927548e99668ab0c1428492",
 }
 # SHA-256 of the sorted 26 unit pairs produced by the fixed cap2 seed 7000.

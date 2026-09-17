@@ -44,7 +44,7 @@ UNITS = tuple(f"c{index:02d}" for index in range(52))
 OUTPUT_RELATIVE = Path("results/cyclic-pairing-control-v1")
 FREEZE_RELATIVE = Path("experiments/cyclic_pairing/freeze-v1.json")
 EXPECTED_VALIDATION_STREAM_HASHES = {
-    "latin_llct": "eb03e98b086b9b8bc883f349afaee968bfeaeee8c95be5f66bec320e54b419b2",
+    "latin_llct": "eb03e98b086b9f8bc883f349afaee968bfeaeee8c95be5f66bec320e54b419b2",
     "italian_old": "d7e9c6e0b716cf7ea1c7deb4f135ca2692ea70b4f927548e99668ab0c1428492",
 }
 

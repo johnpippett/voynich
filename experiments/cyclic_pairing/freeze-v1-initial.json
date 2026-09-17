@@ -13,7 +13,7 @@
   "files": [
     {
       "path": "docs/plans/cyclic-pairing-control-v1.md",
-      "sha256": "4df185f2f56b7e9dd8721cdd7b996c16aeb6f1ba49d0b6abce13f60db99823c6"
+      "sha256": "6da0d8b862dacfb90b3255bb5df4212d180052729f2d9170bc8ea2e6e30c3310"
     },
     {
       "path": "docs/research/cyclic-emitter-pairing.md",
@@ -21,7 +21,7 @@
     },
     {
       "path": "experiments/cyclic_pairing/study.py",
-      "sha256": "73f18f96627d47d5a8d02e7499af726d69f0bc5f65c825bfc4b61b756b7db0b3"
+      "sha256": "bdf9da11293e32e0483f55b100153ca49f4822efa0021541c116143f47022be3"
     },
     {
       "path": "experiments/cyclic_pairing/test_study.py",
@@ -29,11 +29,11 @@
     },
     {
       "path": "experiments/cyclic_pairing/run_controls.py",
-      "sha256": "37016a443dda3e042be58fbddcf858f896d42246f60cbd3c17a3e9985b98abab"
+      "sha256": "b45b8b5ce82a73236a691350dc7e633c2de6cd6e801d3791a5e65b6f5409772a"
     },
     {
       "path": "experiments/cyclic_pairing/test_run_controls.py",
-      "sha256": "9e98b99fbba44429a0f023e6d6fefa3b70634102a84f9b4e8cad83f379fdf63c"
+      "sha256": "9b5a32fc6439cf4c223d328a49c193601d724ffcc1fe7de0517138b3bc88f2c8"
     },
     {
       "path": "experiments/cyclic_pairing/pairing.py",
