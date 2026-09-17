@@ -14,6 +14,7 @@ The [Stage 2 report](reports/STAGE2.md) contains the earlier controlled searches
 The [initial report](reports/FINDINGS.md) preserves the earlier exploratory results.
 The [Celsus projection report](reports/CELSUS_PROJECTION.md) validates one ancient medical source extraction.
 The [Celsus partition report](reports/CELSUS_PARTITIONS.md) records 101,715 word tokens and independent checks of the fixed chapter split.
+The [Celsus model report](reports/CELSUS_MODEL.md) records an incomplete known-cipher search and failed exact-recovery gates.
 The [Italian search report](reports/HOMOPHONIC_SEARCH_DEVELOPMENT.md) records local-search improvements and remaining score bounds.
 The [cyclic pairing report](reports/CYCLIC_PAIRING.md) identifies 23 forced Latin pairs and 21 forced Italian pairs without plaintext-letter assignments.
 

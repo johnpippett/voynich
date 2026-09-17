@@ -1,0 +1,122 @@
+{
+  "checks": {
+    "accuracy_and_gates": true,
+    "control_freeze_pinned": true,
+    "fit_units_and_capacity": true,
+    "incomplete_search_status": true,
+    "integer_fit_objective": true,
+    "integer_planted_objective": true,
+    "key_accuracy_14_of_48": true,
+    "known_score_within_upper_bound": true,
+    "model_output_pins": true,
+    "partition_pins": true,
+    "stream_hashes": true,
+    "training_lexicon": true
+  },
+  "inputs": {
+    "control_freeze": {
+      "bytes": 7827,
+      "sha256": "63c862d19c6891d43257b36f2e0f15c88529d0929b1087022fc46260c1bc371f"
+    },
+    "freeze_file_count": 43,
+    "frozen_file_hashes_verified": true,
+    "model_outputs": {
+      "results/celsus-reference-control-v1/model/cold.json": {
+        "bytes": 12110,
+        "sha256": "62799634681c71cbe3c7c78ebfa4b2a47d3c77c82eb02f6d9553a1f251ab405d"
+      },
+      "results/celsus-reference-control-v1/model/cold.keys.json": {
+        "bytes": 725,
+        "sha256": "f3d291b907a5241dcc6ee350212bc3e1f0a25ba9cba9560bb167a5cdde022c4c"
+      },
+      "results/celsus-reference-control-v1/model/supervision.json": {
+        "bytes": 2019,
+        "sha256": "1a18b2a782794fe04402d21da0a4fa3d0493f64721be911f771aba5776ede6c2"
+      }
+    },
+    "partition_manifest": {
+      "bytes": 8843,
+      "sha256": "634ed31c54e1147ee930c6261ed9261938ec120f310db2e22ed54bca630dc9e1"
+    },
+    "partitions": {
+      "bytes": 870217,
+      "sha256": "ca6209869b934958c04b9707c0c70652046abb118d365c9c9f272c6adb7802f1"
+    }
+  },
+  "limitations": [
+    "This audit verifies a known-cipher Celsus control only.",
+    "It does not rerun the solver or score the Voynich manuscript.",
+    "The reported search remains incomplete. The upper bound is not an optimum certificate.",
+    "The planted score is feasible within the reported upper bound."
+  ],
+  "model_status": "incomplete_search",
+  "result": {
+    "accuracy": {
+      "test": {
+        "full_char_accuracy": 0.6166626854579718,
+        "full_char_correct": 92936,
+        "full_char_total": 150708,
+        "full_token_accuracy": 0.13537407448336833,
+        "full_token_correct": 3675,
+        "full_token_total": 27147
+      },
+      "validation": {
+        "full_char_accuracy": 0.6191714077749224,
+        "full_char_correct": 41682,
+        "full_char_total": 67319,
+        "full_token_accuracy": 0.1263894606834088,
+        "full_token_correct": 1535,
+        "full_token_total": 12145
+      }
+    },
+    "fit": {
+      "score": 16202725,
+      "token_hits": 1620,
+      "type_hits": 265
+    },
+    "fit_key": {
+      "capacity": 2,
+      "capacity_valid": true,
+      "correct_count": 14,
+      "key_unit_count": 48,
+      "maximum_preimage_count": 2,
+      "total_count": 48,
+      "unit_count": 48
+    },
+    "gates": {
+      "test": {
+        "full_decoding_pass": false,
+        "fully_observed_tokens_pass": false,
+        "observed_positions_pass": false
+      },
+      "validation": {
+        "full_decoding_pass": false,
+        "fully_observed_tokens_pass": false,
+        "observed_positions_pass": false
+      }
+    },
+    "objective_denominator": 194684350,
+    "planted": {
+      "score": 166472985,
+      "token_hits": 10739,
+      "type_hits": 6620
+    },
+    "reported_upper_bound": 170919175,
+    "score_within_upper_bound": true,
+    "streams_sha256": {
+      "cipher_test": "649e3d3ac729ce40e2c0add018d7eb545d228c4666d86983dd2953765be16007",
+      "cipher_train": "b09844905a3f7251771ca028c25eb4248fdcbc062ee4b78946ba89687428a6f7",
+      "cipher_validation": "bedbcae186f172495cff730391c5696b21261caacaafb1a6ec01cab91d97215a",
+      "plaintext_test": "34b813e7c83ce822d217097c375e714e1fc55b307e96764367e88d612da8c313",
+      "plaintext_train": "8e5ffbb79e7e5ce649db4bdaedb32ba9dcd7c125f5e4e2e55809aae7cefb31d2",
+      "plaintext_validation": "c6b87192819b19c2fc7d72a92467fad12278abe0e70ad3aa7c9830a1b01ba5f2"
+    },
+    "token_count": 12145,
+    "train_lexicon_sha256": "91e317e7a8f53358c90f1aa801c301d9dc62b67c9f905e0c57532dc1dbb2f683",
+    "train_lexicon_type_count": 10805,
+    "type_count": 8015
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "verification": "celsus-model-control-independent-audit"
+}

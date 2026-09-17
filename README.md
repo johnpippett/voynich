@@ -129,6 +129,7 @@ All manuscript analyses remain exploratory. A new partition does not make previo
 - [Celsus projection validation](reports/CELSUS_PROJECTION.md)
 - [Celsus partition results](reports/CELSUS_PARTITIONS.md)
 - [Celsus reference control protocol](docs/plans/celsus-reference-control-v1.md)
+- [Celsus model result](reports/CELSUS_MODEL.md)
 - [Celsus model run plan](docs/plans/celsus-model-run-v1.md)
 - [Cyclic pairing results](reports/CYCLIC_PAIRING.md)
 - [Cyclic pairing control protocol](docs/plans/cyclic-pairing-control-v1.md)
