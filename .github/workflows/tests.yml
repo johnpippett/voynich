@@ -24,3 +24,5 @@ jobs:
         run: PYTHONPATH=src:. python -m unittest discover -s experiments/lexicon -p 'test_*.py' -v
       - name: Run homophonic experiment tests
         run: PYTHONPATH=src:. python -m unittest discover -s experiments/homophonic -p 'test_*.py' -v
+      - name: Run identifiability experiment tests
+        run: PYTHONPATH=src:. python -m unittest discover -s experiments/identifiability -p 'test_*.py' -v

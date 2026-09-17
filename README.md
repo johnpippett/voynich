@@ -11,6 +11,8 @@ Read the [homophonic controls](reports/HOMOPHONIC.md), [lexicon bounds](reports/
 The [homophonic model](experiments/homophonic/README.md) permits several cipher
 units per plaintext letter. Its first four controls failed the exact-recovery
 checks. Manuscript use remains deferred.
+The [assignment study](docs/plans/optimal-key-identifiability-v1.md) will test
+which Latin control assignments are necessary to attain its certified score.
 The [initial findings](reports/FINDINGS.md) remain available as historical results.
 Stage 2 replaces their prediction partitions with source-backed bifolio groups.
 
