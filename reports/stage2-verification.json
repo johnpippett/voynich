@@ -72,7 +72,41 @@
     "The grouping uses provider metadata. No independent conservation examination was performed."
   ],
   "public_clone_check": {
-    "status": "pending"
+    "status": "passed",
+    "checked_utc": "2026-09-17T05:37:01.994923+00:00",
+    "repository": "https://github.com/johnpippett/voynich",
+    "commit": "d0b4dd2ccb3bd99fb530db759df6dc95e6361aa1",
+    "authentication": "Anonymous HTTPS clone with credential helpers and extra headers disabled.",
+    "input_downloads": "All manuscript, reference, and Naibbe table downloads passed pinned hash checks.",
+    "tests_run": 85,
+    "tests_passed": 85,
+    "full_structural_analysis": "Exact portable match after removal of creation time and source directory prefix.",
+    "portable_analysis_sha256": "7ce1e8e885e1a874c1e50dc09eff0a524825d3382fecb241863d0bdc8339c7e1",
+    "planted_controls": {
+      "languages": [
+        "latin_llct",
+        "italian_old"
+      ],
+      "seeds": [
+        500
+      ],
+      "control_objects_equal_except_elapsed_seconds": true,
+      "scope": "One of the 32 published seeds per language was repeated in the public clone."
+    },
+    "manuscript_search": {
+      "report": "reports/substitution/latin-zl.json",
+      "complete_json_equal": true
+    },
+    "naibbe": {
+      "report": "reports/naibbe-split.json",
+      "complete_json_equal": true
+    },
+    "regenerated_byte_identical": [
+      "reports/reference-invariants.json",
+      "reports/substitution-inventory.json",
+      "reports/STAGE2.md"
+    ],
+    "tracked_checkout_unchanged": true
   },
   "offline_distribution_test": {
     "method": "Copy repository source, scripts, tests, metadata, and design without ignored downloads.",
@@ -89,5 +123,15 @@
     "repeated_structural_runs": 4,
     "repeated_substitution_runs": 4,
     "numerical_results_unchanged": true
+  },
+  "analysis_commit": "d0b4dd2ccb3bd99fb530db759df6dc95e6361aa1",
+  "github_actions": {
+    "run_url": "https://github.com/johnpippett/voynich/actions/runs/35186218280",
+    "head_sha": "d0b4dd2ccb3bd99fb530db759df6dc95e6361aa1",
+    "conclusion": "success",
+    "jobs": {
+      "Python 3.11": "success",
+      "Python 3.13": "success"
+    }
   }
 }
