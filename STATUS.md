@@ -6,6 +6,13 @@ The project has no validated key, plaintext language, or translation.
 
 ## Current findings and stopped branches
 
+The [fixed-expansion test](reports/TRIPLET_BOUNDARIES.md) gives an exact constraint on one three-digit code model.
+It assumes fixed expansion lengths and a fixed boundary contribution that restores the same code phase after each selected word.
+Every represented training-unit length must then be divisible by three, separately in Currier A and B in both sources.
+The result permits lengths zero, three, six, and larger multiples. It identifies no digit values or plaintext.
+It does not apply to arbitrary spaces, variable padding, other unit inventories, or context-dependent expansions.
+The [source audit](docs/research/anchor-audit.md) also records the stopped Hannig and gallows-continuation checks.
+
 The [cross-boundary test](reports/BOUNDARY_PREDICTION.md) finds transferable prediction between recorded word parts.
 A preceding final unit reduces the next initial-unit loss by about 0.18–0.20 bits in the visual-unit track.
 An excess remains under matched folio, position, and word-length controls in both transcriptions.
@@ -17,6 +24,9 @@ The `a/o` and `ch/sh` component results differ. They do not justify merging thes
 All selected `a/o` targets have two units. Source readings and image judgments disagree at some locations.
 We stopped further tuning of this short-form association. It does not identify a writing mechanism.
 This is a constraint for future models, not a translation.
+
+The fixed endpoint table has lower conditional likelihood than the matched comparison model [across physical line breaks](reports/CROSS_LINE_TRANSFER.md).
+This result does not establish a line reset or absence of all cross-line dependence.
 
 The [local word-memory test](reports/LOCAL_MEMORY.md) found no useful prediction gain from the observed word order.
 Both transcriptions selected zero weight for exact repetition.

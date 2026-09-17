@@ -361,6 +361,53 @@ No plant name or plaintext was recovered.
 The local records remain in `results/bax-partial-key-v1/`.
 The corrected result has SHA-256 `00b128b7b294e7189aeb9b3c18192cff471cfebad897ee3173730aac85aeecd3`.
 
+## Hannig reading-rule check
+
+This check asked whether Hannig's Hebrew proposal gives a fixed rule for text outside its examples.
+Such a rule could separate successful prediction from choices made after interpretation.
+
+The [author's 2020 paper](https://www.academia.edu/43281135/Voynich_Hebr%C3%A4isch_Der_Weg_zur_Entzifferung), pp. 3–4, describes transcription corrections and marks one version as corrected after translation.
+Pages 17–19 leave several symbol functions unresolved.
+The author states that automatic transcription cannot select some functions without translation.
+
+The review used indexed text. It did not verify the PDF glyph images.
+No manuscript experiment followed. A stricter automatic decoder would require additional rules from this project.
+We stopped automatic replication. This source limit does not reject Hebrew or every partial constraint in the proposal.
+
+## Gallows continuation feasibility
+
+This check asked whether longer word continuations could distinguish four fixed replacements for paragraph-opening `p/f`.
+The maps were `f→k, p→t`; `f→t, p→k`; `f→ke, p→te`; and `f→te, p→ke`.
+The last map comes from [Davis (2022)](https://ceur-ws.org/Vol-3313/keynote2.pdf), section 5.1.
+That proposal permits selective abbreviation. It does not require equal word distributions at different paragraph positions.
+
+The planned comparison holds the next visual unit and Currier class fixed.
+It would compare the remaining word tail with continuations after `kx`, `tx`, `kex`, and `tex`, where `x` is that next unit.
+This control removes the immediate follower difference from the proposed score.
+Topic and paragraph position could still explain a difference. A higher score would not establish glyph identity or meaning.
+
+The feasibility stage used the existing physical-group split and six-compound unit representation.
+It retained complete paragraph lines with at least three words and unambiguous period boundaries.
+Training words exclude the first word of each marked paragraph. Targets are marked paragraph openings in test groups.
+Each of the four required contexts needed at least ten training tokens in the same Currier class.
+The plan required common support for at least twenty targets, half the selected targets, and three physical groups.
+No group could contain more than half of the common set.
+
+| Source | Selected targets | Targets with common support | Physical groups in common set | Largest group |
+| --- | ---: | ---: | ---: | ---: |
+| ZL | 33 | 0 | 0 | 0 |
+| IT | 88 | 28 | 5 | 15 |
+
+Both sources fail the fixed coverage rules. The twenty-eight IT targets all have `o` as their next visual unit and class B.
+We calculated no target-tail matches, probabilities, losses, or map rankings.
+We stopped the comparison without new replacement rules or weaker controls.
+This result limits the proposed comparison. It does not reject allography or abbreviation.
+A separate AI calculation confirmed all 121 target records and their four support counts.
+It reused the parser and unit representation. This is not an independent transcription or external scholarly validation.
+
+The local plan, executed script, and result remain in `results/gallows-continuation-v1/`.
+The result SHA-256 is `c8ac8f92ad2fa349ea676008addfbe0c66f1516ae8d353da17483727e73f861f`.
+
 ## Initial audit limits
 
 The initial pass used catalogue descriptions, folio-layout records, and exact-locus
