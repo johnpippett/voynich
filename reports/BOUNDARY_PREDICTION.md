@@ -61,6 +61,30 @@ They identify small candidate sets for source-image inspection.
 The [same-tail record](boundary-prediction-v1/same-tail.json) preserves the original sampled expectation and ranks.
 The [component record](boundary-prediction-v1/same-tail-components.json) contains all initial-unit sets and their exact expectation contributions.
 
+## Image check and branch limit
+
+The image check asked whether the selected `a/o` labels describe visible sign differences or uncertain transcription choices.
+The selection contains all 14 ZL and 13 IT targets in the selected visual cells.
+Seven targets have the same source locus in both sets. The resulting list contains 20 distinct folio/locus pairs.
+Every target has exactly two visual units. Its second unit is `r` or `l`.
+Thus, these cells supply no evidence of initial alternation across longer words.
+
+The sources disagree at both selected IT locations on f85r1.
+At locus 28, IT has initial `o` and ZL has `a`.
+At locus 32, IT has `a` and ZL has `o`.
+The corresponding ZL lines do not supply this selected cell under the fixed filter and matching rules.
+These comparisons use the corresponding image locations, not equal token indices across different segmentations.
+
+Image inspection does not resolve every label.
+Two AI readers disagree on the initial at f86v5.35, even after checking the initial without the following sign.
+Five locations have provisional shape labels. Fifteen remain uncertain because of location, boundary, or classification limits.
+These readings are not external palaeographic validation.
+The [image audit](boundary-prediction-v1/initial-ao-image-audit.json) records every selected case, image source, and approximate review box.
+No source reading or model score was changed.
+
+This branch stops here. Further tuning would not, by itself, distinguish morphology, copying, lexical context, or transcription choices.
+The result supplies no sound, meaning, key, or translation.
+
 ## Reproduction
 
 Use a fresh checkout with Python assertions enabled:

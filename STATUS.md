@@ -9,10 +9,13 @@ The project has no validated key, plaintext language, or translation.
 The [cross-boundary test](reports/BOUNDARY_PREDICTION.md) finds transferable prediction between recorded word parts.
 A preceding final unit reduces the next initial-unit loss by about 0.18–0.20 bits in the visual-unit track.
 An excess remains under matched folio, position, and word-length controls in both transcriptions.
+The matched predecessor null can change labels for only 30.3% of ZL targets and 37.4% of IT targets.
 The effect varies across page groups. It does not establish linguistic spaces, sounds, or meaning.
 The main unitization has no gain on the small subset where both word types were absent from training.
 A same-remainder control retains a positive excess in a small selected subset.
 The `a/o` and `ch/sh` component results differ. They do not justify merging these signs.
+All selected `a/o` targets have two units. Source readings and image judgments disagree at some locations.
+We stopped further tuning of this short-form association. It does not identify a writing mechanism.
 This is a constraint for future models, not a translation.
 
 The [local word-memory test](reports/LOCAL_MEMORY.md) found no useful prediction gain from the observed word order.

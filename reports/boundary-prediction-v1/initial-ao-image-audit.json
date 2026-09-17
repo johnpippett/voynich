@@ -1,0 +1,632 @@
+{
+  "schema": "selected-initial-ao-image-audit-v1",
+  "date": "2026-09-17",
+  "purpose": "Check visible initial differences against transcription uncertainty in the selected cells.",
+  "selection": "All visual active cells whose initial-unit set is exactly a/o in the published same-tail component result.",
+  "selection_private_record_sha256": "18fe2265907a7bffecee737870465b5518836d896fad1723a80de166c2b61c42",
+  "source_sha256": {
+    "ZL": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+    "IT": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"
+  },
+  "selection_code_sha256": {
+    "experiments/homophonic/units.py": "fc321f7cc59bf91aed1061d9fb72b531125ab9255ae171167de0bbe289c59760",
+    "scripts/check_boundary_prediction.py": "94d8e66b2ad5471684139d1139792dd8c8ed088fa3104653160ec1fe4e5143bd",
+    "scripts/check_boundary_same_tail.py": "b5a5035a24550c9d7b6e165063490660f0009f271600cbab80dda689b63fe56c",
+    "scripts/run_local_memory_diagnostic.py": "746fc1e36484ebcb79d71a34578f3e4fe9909423e8c2c9acf0183a6c400a7a47",
+    "src/voynich/context.py": "34bf3b4358ddecfd334b9937b17217b7a3da8ea9ccc0f64b544a579d959d8c6e",
+    "src/voynich/corpus.py": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+    "src/voynich/groups.py": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0",
+    "reports/boundary-prediction-v1/same-tail.json": "124da8be36e16fa263a98a81de7f9ae60604ad37fe62bbd748ebdf2e0dee2073"
+  },
+  "coordinate_system": "Original image pixels: x, y, width, height. Boxes are approximate review regions, not glyph bounds.",
+  "target_token_index_base": 0,
+  "counts": {
+    "ZL_source_cases": 14,
+    "IT_source_cases": 13,
+    "distinct_loci": 20,
+    "uncertain": 15,
+    "provisional": 5,
+    "independently_certified_glyphs": 0
+  },
+  "limits": [
+    "Source readings were available to the main image reviewers.",
+    "The second reader of the five root crops did not consult source labels before classification.",
+    "Provisional means shape-compatible, not a certified transcription.",
+    "Uncertain includes unresolved location, boundary, or classification.",
+    "Image review did not change sources or model scores.",
+    "No linguistic, phonetic, or semantic inference is supported."
+  ],
+  "images": [
+    {
+      "canvas_id": "1006188",
+      "url": "https://collections.library.yale.edu/iiif/2/1006188/full/full/0/default.jpg",
+      "bytes": 2379242,
+      "sha256": "2897cf3214d13176c9d708a9f4f9030752a50922271ade7286c0c2cd73b811fd",
+      "label": "58r",
+      "width": 2793,
+      "height": 3749,
+      "canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006188"
+    },
+    {
+      "canvas_id": "1006189",
+      "url": "https://collections.library.yale.edu/iiif/2/1006189/full/full/0/default.jpg",
+      "bytes": 2342333,
+      "sha256": "7319cd29982e6ac56192d02b8546a4b65aace9f2e65f3c782a1c019a94d3b3fc",
+      "label": "58v",
+      "width": 2986,
+      "height": 3769,
+      "canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006189"
+    },
+    {
+      "canvas_id": "1006228",
+      "url": "https://collections.library.yale.edu/iiif/2/1006228/full/full/0/default.jpg",
+      "bytes": 2400324,
+      "sha256": "630363719d71b356384a71aaded860df772fd23ad28dd8e6dc2db9901b6e08a1",
+      "label": "85r (part) (part of 85-86 foldout)",
+      "width": 2775,
+      "height": 3745,
+      "canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006228"
+    },
+    {
+      "canvas_id": "1006230",
+      "url": "https://collections.library.yale.edu/iiif/2/1006230/full/full/0/default.jpg",
+      "bytes": 4051973,
+      "sha256": "4c5f7642e7da2be07242968faa92a2d0bb1cb88e8589d30f5d2acbfc3cc7e0be",
+      "label": "86v (part) (part of 85-86 foldout)",
+      "width": 4897,
+      "height": 3788,
+      "canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006230"
+    },
+    {
+      "canvas_id": "1006261",
+      "url": "https://collections.library.yale.edu/iiif/2/1006261/full/full/0/default.jpg",
+      "bytes": 2135119,
+      "sha256": "41e4c5cd7a0b171517dea7724fc3b858ffe38293f043f317061e93a99c47ffc5",
+      "label": "106v",
+      "width": 2670,
+      "height": 3697,
+      "canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006261"
+    },
+    {
+      "canvas_id": "1006271",
+      "url": "https://collections.library.yale.edu/iiif/2/1006271/full/full/0/default.jpg",
+      "bytes": 2246955,
+      "sha256": "d5b4940ea3d934848bf98c751616172339e8f0e587e41aaea15023e1a314eca3",
+      "label": "113v",
+      "width": 2666,
+      "height": 3697,
+      "canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006271"
+    }
+  ],
+  "locations": [
+    {
+      "folio": "f58r",
+      "locus": "f58r.2,+P0",
+      "selected_source_cases": [
+        {
+          "source": "ZL",
+          "target_token_index": 1,
+          "expected_initial": "o"
+        },
+        {
+          "source": "IT",
+          "target_token_index": 1,
+          "expected_initial": "o"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "r",
+      "image_status": "uncertain",
+      "review_box": [
+        900,
+        360,
+        420,
+        170
+      ],
+      "location_confidence": "medium",
+      "provisional_shape": "o-compatible",
+      "limit": "The initial or its boundary is not resolved.",
+      "canvas_id": "1006188"
+    },
+    {
+      "folio": "f58r",
+      "locus": "f58r.16,+P0",
+      "selected_source_cases": [
+        {
+          "source": "ZL",
+          "target_token_index": 1,
+          "expected_initial": "a"
+        },
+        {
+          "source": "IT",
+          "target_token_index": 1,
+          "expected_initial": "a"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "r",
+      "image_status": "uncertain",
+      "review_box": [
+        650,
+        1270,
+        700,
+        260
+      ],
+      "location_confidence": "low",
+      "provisional_shape": "a-compatible",
+      "limit": "The initial or its boundary is not resolved.",
+      "canvas_id": "1006188"
+    },
+    {
+      "folio": "f58r",
+      "locus": "f58r.31,+P0",
+      "selected_source_cases": [
+        {
+          "source": "ZL",
+          "target_token_index": 5,
+          "expected_initial": "o"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "l",
+      "image_status": "uncertain",
+      "review_box": [
+        1300,
+        2220,
+        650,
+        230
+      ],
+      "location_confidence": "low",
+      "provisional_shape": "uncertain",
+      "limit": "The initial or its boundary is not resolved.",
+      "canvas_id": "1006188"
+    },
+    {
+      "folio": "f58r",
+      "locus": "f58r.32,+P0",
+      "selected_source_cases": [
+        {
+          "source": "ZL",
+          "target_token_index": 5,
+          "expected_initial": "a"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "l",
+      "image_status": "uncertain",
+      "review_box": [
+        1300,
+        2300,
+        650,
+        230
+      ],
+      "location_confidence": "low",
+      "provisional_shape": "uncertain",
+      "limit": "The initial or its boundary is not resolved.",
+      "canvas_id": "1006188"
+    },
+    {
+      "folio": "f58v",
+      "locus": "f58v.26,+P0",
+      "selected_source_cases": [
+        {
+          "source": "ZL",
+          "target_token_index": 8,
+          "expected_initial": "a"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "l",
+      "image_status": "uncertain",
+      "review_box": [
+        1650,
+        1570,
+        900,
+        300
+      ],
+      "location_confidence": "low",
+      "provisional_shape": "uncertain",
+      "limit": "The initial or its boundary is not resolved.",
+      "canvas_id": "1006189"
+    },
+    {
+      "folio": "f58v",
+      "locus": "f58v.30,+P0",
+      "selected_source_cases": [
+        {
+          "source": "ZL",
+          "target_token_index": 8,
+          "expected_initial": "o"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "l",
+      "image_status": "uncertain",
+      "review_box": [
+        1650,
+        1940,
+        900,
+        300
+      ],
+      "location_confidence": "low",
+      "provisional_shape": "uncertain",
+      "limit": "The initial or its boundary is not resolved.",
+      "canvas_id": "1006189"
+    },
+    {
+      "folio": "f86v5",
+      "locus": "f86v5.15,+P0",
+      "selected_source_cases": [
+        {
+          "source": "ZL",
+          "target_token_index": 1,
+          "expected_initial": "a"
+        },
+        {
+          "source": "IT",
+          "target_token_index": 1,
+          "expected_initial": "a"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "r",
+      "image_status": "provisional",
+      "review_box": [
+        570,
+        1325,
+        110,
+        85
+      ],
+      "location_confidence": "located_approximate_box",
+      "provisional_shape": "a",
+      "limit": "AI image assessment; no independent palaeographic validation.",
+      "canvas_id": "1006230"
+    },
+    {
+      "folio": "f86v5",
+      "locus": "f86v5.20,+P0",
+      "selected_source_cases": [
+        {
+          "source": "ZL",
+          "target_token_index": 1,
+          "expected_initial": "a"
+        },
+        {
+          "source": "IT",
+          "target_token_index": 1,
+          "expected_initial": "a"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "r",
+      "image_status": "provisional",
+      "review_box": [
+        590,
+        1660,
+        125,
+        90
+      ],
+      "location_confidence": "located_approximate_box",
+      "provisional_shape": "a",
+      "limit": "AI image assessment; no independent palaeographic validation.",
+      "canvas_id": "1006230"
+    },
+    {
+      "folio": "f86v5",
+      "locus": "f86v5.35,+P0",
+      "selected_source_cases": [
+        {
+          "source": "ZL",
+          "target_token_index": 1,
+          "expected_initial": "o"
+        },
+        {
+          "source": "IT",
+          "target_token_index": 1,
+          "expected_initial": "o"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "r",
+      "image_status": "uncertain",
+      "review_box": [
+        660,
+        2545,
+        100,
+        85
+      ],
+      "location_confidence": "located_approximate_box",
+      "provisional_shape": null,
+      "limit": "AI readers disagree after initial-only review. No label is certified.",
+      "reader_classifications": {
+        "primary": "o",
+        "second_reader": "a"
+      },
+      "canvas_id": "1006230"
+    },
+    {
+      "folio": "f106v",
+      "locus": "f106v.3,+P0",
+      "selected_source_cases": [
+        {
+          "source": "ZL",
+          "target_token_index": 4,
+          "expected_initial": "a"
+        },
+        {
+          "source": "IT",
+          "target_token_index": 4,
+          "expected_initial": "a"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "l",
+      "image_status": "provisional",
+      "review_box": [
+        1000,
+        310,
+        500,
+        120
+      ],
+      "location_confidence": "medium",
+      "provisional_shape": "a",
+      "limit": "This is a shared physical locus. It does not provide two independent image readings.",
+      "canvas_id": "1006261"
+    },
+    {
+      "folio": "f106v",
+      "locus": "f106v.13,+P0",
+      "selected_source_cases": [
+        {
+          "source": "ZL",
+          "target_token_index": 4,
+          "expected_initial": "a"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "l",
+      "image_status": "provisional",
+      "review_box": [
+        900,
+        990,
+        550,
+        130
+      ],
+      "location_confidence": "medium",
+      "provisional_shape": "a",
+      "limit": "The handwriting and image scale limit a palaeographic claim. This is a shape comparison only. The source identifier is corrected to ZL from the candidate audit; the shape assessment used the actual folio image neighborhood, not an IT-specific token alignment.",
+      "canvas_id": "1006261"
+    },
+    {
+      "folio": "f106v",
+      "locus": "f106v.33,+P0",
+      "selected_source_cases": [
+        {
+          "source": "ZL",
+          "target_token_index": 4,
+          "expected_initial": "o"
+        },
+        {
+          "source": "IT",
+          "target_token_index": 4,
+          "expected_initial": "o"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "l",
+      "image_status": "provisional",
+      "review_box": [
+        950,
+        2430,
+        550,
+        130
+      ],
+      "location_confidence": "medium",
+      "provisional_shape": "o",
+      "limit": "This is a shared physical locus. IT and ZL punctuation around the target does not create a second image observation.",
+      "canvas_id": "1006261"
+    },
+    {
+      "folio": "f113v",
+      "locus": "f113v.26,+P0",
+      "selected_source_cases": [
+        {
+          "source": "ZL",
+          "target_token_index": 5,
+          "expected_initial": "a"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "r",
+      "image_status": "uncertain",
+      "review_box": [
+        900,
+        2000,
+        900,
+        150
+      ],
+      "location_confidence": "low",
+      "provisional_shape": "uncertain",
+      "limit": "No visible a/o decision is reported. The source expected label remains metadata from the candidate audit.",
+      "canvas_id": "1006271"
+    },
+    {
+      "folio": "f113v",
+      "locus": "f113v.42,+P0",
+      "selected_source_cases": [
+        {
+          "source": "ZL",
+          "target_token_index": 5,
+          "expected_initial": "o"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "r",
+      "image_status": "uncertain",
+      "review_box": [
+        900,
+        3080,
+        900,
+        150
+      ],
+      "location_confidence": "low",
+      "provisional_shape": "uncertain",
+      "limit": "The target remains image-uncertain. The source expected label comes from candidate metadata only.",
+      "canvas_id": "1006271"
+    },
+    {
+      "folio": "f58v",
+      "locus": "f58v.6,+P0",
+      "selected_source_cases": [
+        {
+          "source": "IT",
+          "target_token_index": 1,
+          "expected_initial": "o"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "r",
+      "image_status": "uncertain",
+      "review_box": [
+        700,
+        430,
+        650,
+        250
+      ],
+      "location_confidence": "low",
+      "provisional_shape": "o-compatible",
+      "limit": "The initial or its boundary is not resolved.",
+      "canvas_id": "1006189"
+    },
+    {
+      "folio": "f58v",
+      "locus": "f58v.20,+P0",
+      "selected_source_cases": [
+        {
+          "source": "IT",
+          "target_token_index": 1,
+          "expected_initial": "a"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "r",
+      "image_status": "uncertain",
+      "review_box": [
+        700,
+        1180,
+        650,
+        260
+      ],
+      "location_confidence": "low",
+      "provisional_shape": "uncertain",
+      "limit": "The initial or its boundary is not resolved.",
+      "canvas_id": "1006189"
+    },
+    {
+      "folio": "f85r1",
+      "locus": "f85r1.28,+P0",
+      "selected_source_cases": [
+        {
+          "source": "IT",
+          "target_token_index": 6,
+          "expected_initial": "o"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "r",
+      "image_status": "uncertain",
+      "review_box": [
+        1450,
+        2240,
+        110,
+        95
+      ],
+      "location_confidence": "located_approximate_box",
+      "provisional_shape": "a",
+      "limit": "Source initials disagree. Image inspection does not certify a correction.",
+      "other_source_reading": {
+        "source": "ZL",
+        "initial": "a",
+        "alignment": "Corresponding image target; token indices can differ."
+      },
+      "canvas_id": "1006228"
+    },
+    {
+      "folio": "f85r1",
+      "locus": "f85r1.32,+P0",
+      "selected_source_cases": [
+        {
+          "source": "IT",
+          "target_token_index": 6,
+          "expected_initial": "a"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "r",
+      "image_status": "uncertain",
+      "review_box": [
+        1440,
+        2520,
+        100,
+        100
+      ],
+      "location_confidence": "located_approximate_box",
+      "provisional_shape": null,
+      "limit": "Source initials disagree. Image inspection does not certify a correction.",
+      "other_source_reading": {
+        "source": "ZL",
+        "initial": "o",
+        "alignment": "Corresponding image target; token indices can differ."
+      },
+      "canvas_id": "1006228"
+    },
+    {
+      "folio": "f113v",
+      "locus": "f113v.20,+P0",
+      "selected_source_cases": [
+        {
+          "source": "IT",
+          "target_token_index": 4,
+          "expected_initial": "o"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "r",
+      "image_status": "uncertain",
+      "review_box": [
+        900,
+        1500,
+        900,
+        150
+      ],
+      "location_confidence": "low",
+      "provisional_shape": "uncertain",
+      "limit": "No visible a/o decision is reported. Nearby controls and transcription boundaries were not treated as glyphs.",
+      "canvas_id": "1006271"
+    },
+    {
+      "folio": "f113v",
+      "locus": "f113v.40,+P0",
+      "selected_source_cases": [
+        {
+          "source": "IT",
+          "target_token_index": 4,
+          "expected_initial": "a"
+        }
+      ],
+      "target_unit_count": 2,
+      "remainder_unit": "r",
+      "image_status": "uncertain",
+      "review_box": [
+        900,
+        3040,
+        900,
+        150
+      ],
+      "location_confidence": "low",
+      "provisional_shape": "uncertain",
+      "limit": "No visible a/o decision is reported. Adjacent punctuation and line spacing can affect visual alignment.",
+      "canvas_id": "1006271"
+    }
+  ]
+}
