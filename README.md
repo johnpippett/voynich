@@ -13,6 +13,8 @@ units per plaintext letter. Its first four controls failed the exact-recovery
 checks. Manuscript use remains deferred.
 The [assignment study](reports/IDENTIFIABILITY.md) proves that 45 Latin control
 assignments are necessary to attain its certified dictionary score. One remains ambiguous.
+The [next study](experiments/optimal_set/README.md) will enumerate all optimal maps and compare their exact character-model likelihoods.
+Its [fixed protocol](docs/plans/optimal-set-secondary-v1.md) precedes the first reference run.
 The [initial findings](reports/FINDINGS.md) remain available as historical results.
 Stage 2 replaces their prediction partitions with source-backed bifolio groups.
 
