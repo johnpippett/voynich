@@ -1,0 +1,163 @@
+{
+  "schema": "fluid-scene-layout-v1",
+  "research_date": "2026-09-17",
+  "purpose": "Record visible figure-and-color units and nearby writing blocks without assigning meaning or reading order.",
+  "coordinate_system": {
+    "origin": "top-left of the source image",
+    "x_axis": "right",
+    "y_axis": "down",
+    "units": "source-image pixels",
+    "box_format": "[x, y, width, height]",
+    "box_edges": "approximate outer bounds; width and height are positive"
+  },
+  "source_images": [
+    {
+      "folio": "f84r",
+      "canvas_id": "1006226",
+      "canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006226",
+      "image_url": "https://collections.library.yale.edu/iiif/2/1006226/full/full/0/default.jpg",
+      "width": 2753,
+      "height": 3745,
+      "sha256": "7e8fa7c29b6c6ab462ad5359bdabfcd60505622700f6e5cb18478d20cbd79fbe",
+      "inspection_copy": "private full-image copy; not included in this repository"
+    },
+    {
+      "folio": "f78v",
+      "canvas_id": "1006215",
+      "canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006215",
+      "image_url": "https://collections.library.yale.edu/iiif/2/1006215/full/full/0/default.jpg",
+      "width": 2841,
+      "height": 3706,
+      "sha256": "9c574f3a564cc55252633174784745a075689be93a9c7249f381f71434f282e0",
+      "inspection_copy": "private full-image copy; not included in this repository"
+    }
+  ],
+  "pages": [
+    {
+      "folio": "f84r",
+      "unit_definition": "A visible enclosure that contains drawn figures and a colored area. This is a spatial label only.",
+      "scene_units": [
+        {
+          "id": "f84r-s01",
+          "box": [120, 90, 2380, 800],
+          "boundary_uncertainty_px": 80,
+          "boundary_note": "Long upper enclosure. The lower edge reaches the green lower margin before the first writing lines, so the boundary is approximate. Short marks inside the enclosure are not separate text blocks."
+        },
+        {
+          "id": "f84r-s02",
+          "box": [260, 1570, 1870, 550],
+          "boundary_uncertainty_px": 45,
+          "boundary_note": "Middle horizontal enclosure. The upper edge is separated from the preceding writing by a blank interval."
+        },
+        {
+          "id": "f84r-s03",
+          "box": [80, 2540, 1150, 850],
+          "boundary_uncertainty_px": 55,
+          "boundary_note": "Lower-left rounded enclosure. A winding colored line touches its left side and is not treated as part of the box."
+        }
+      ],
+      "writing_blocks": [
+        {
+          "id": "f84r-t01",
+          "box": [180, 780, 2200, 900],
+          "boundary_uncertainty_px": 85,
+          "boundary_note": "Dense block between the upper and middle enclosures. The box includes the lowest visible writing rows. Its lines have no visible separator that assigns them to one enclosure."
+        },
+        {
+          "id": "f84r-t02",
+          "box": [200, 2070, 2100, 510],
+          "boundary_uncertainty_px": 55,
+          "boundary_note": "Dense block below the middle enclosure. It approaches the lower-left enclosure and continues toward the right side."
+        },
+        {
+          "id": "f84r-t03",
+          "box": [1030, 2520, 1280, 760],
+          "boundary_uncertainty_px": 80,
+          "boundary_note": "Dense block to the right of the lower-left enclosure. The box includes the leftmost visible rows before the block narrows. Its relation to that enclosure is spatial only."
+        }
+      ],
+      "non_assigned_visual_components": [
+        {
+          "id": "f84r-c01",
+          "box": [55, 280, 250, 3340],
+          "boundary_uncertainty_px": 80,
+          "description": "Winding colored line along the left margin. It crosses the vertical level of all three enclosures and is not assigned to a writing block."
+        }
+      ],
+      "candidate_adjacencies": [
+        {
+          "scene_id": "f84r-s01",
+          "candidate_text_ids": ["f84r-t01"],
+          "relation": "text below",
+          "association": "not_determinable",
+          "reason": "The writing block is adjacent, but its lines do not have a visible one-to-one boundary with the enclosure."
+        },
+        {
+          "scene_id": "f84r-s02",
+          "candidate_text_ids": ["f84r-t01", "f84r-t02"],
+          "relation": "text above and below",
+          "association": "not_determinable",
+          "reason": "The middle enclosure is between two dense writing regions. No caption boundary or line link is visible."
+        },
+        {
+          "scene_id": "f84r-s03",
+          "candidate_text_ids": ["f84r-t02", "f84r-t03"],
+          "relation": "text above and right",
+          "association": "not_determinable",
+          "reason": "The lower-left enclosure interrupts the lower writing region. The right-side block cannot be assigned to it from layout alone."
+        }
+      ]
+    },
+    {
+      "folio": "f78v",
+      "unit_definition": "A visible enclosure that contains drawn figures and a colored area. This is a spatial label only.",
+      "scene_units": [
+        {
+          "id": "f78v-s01",
+          "box": [940, 1510, 1840, 730],
+          "boundary_uncertainty_px": 55,
+          "boundary_note": "Long central enclosure. The box includes the lower outlined extension because it touches the colored area; this inclusion is uncertain."
+        }
+      ],
+      "writing_blocks": [
+        {
+          "id": "f78v-t01",
+          "box": [960, 250, 1800, 1270],
+          "boundary_uncertainty_px": 65,
+          "boundary_note": "Dense block above the enclosure. Its lower lines approach the upper boundary."
+        },
+        {
+          "id": "f78v-t02",
+          "box": [950, 2140, 1820, 950],
+          "boundary_uncertainty_px": 85,
+          "boundary_note": "Dense block below the enclosure. The box includes the upper gallows and first visible rows near the lower outlined extension."
+        }
+      ],
+      "non_assigned_visual_components": [
+        {
+          "id": "f78v-c01",
+          "box": [760, 420, 350, 1450],
+          "boundary_uncertainty_px": 80,
+          "description": "Winding colored line at the left of the enclosure. It reaches the enclosure boundary but has no visible text link."
+        }
+      ],
+      "candidate_adjacencies": [
+        {
+          "scene_id": "f78v-s01",
+          "candidate_text_ids": ["f78v-t01", "f78v-t02"],
+          "relation": "text above and below",
+          "association": "not_determinable",
+          "reason": "One enclosure lies between two dense writing regions. Layout does not identify which lines, if any, describe it."
+        }
+      ]
+    }
+  ],
+  "aggregate": {
+    "f84r_scene_unit_count": 3,
+    "f84r_writing_block_count": 3,
+    "f78v_scene_unit_count": 1,
+    "f78v_writing_block_count": 2,
+    "one_to_one_scene_text_relation_supported": false,
+    "conclusion": "The visible layout supports repeated figure-and-color units near dense writing. It does not establish a stable one-to-one scene-to-writing assignment. This is a layout result only and does not refute a semantic reading."
+  }
+}
