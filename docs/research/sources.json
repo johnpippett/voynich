@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "research_as_of": "2026-09-16",
+  "research_as_of": "2026-09-17",
   "core_source_count": 15,
   "scope": "Primary measurements, institutional records, peer-reviewed studies, and author-accessible research papers. The index records evidence and limits. It does not endorse a decipherment.",
-  "retrieval_policy": "URLs and retrieval dates are recorded. This task does not add downloaded source files to the repository, so no local source hash is claimed.",
+  "retrieval_policy": "Source entries record URLs and retrieval dates. Downloaded source files remain outside the public repository. Later experiment reports record local source hashes when available.",
   "sources": [
     {
       "id": "S01",
@@ -159,14 +159,15 @@
       "citation": "Torsten Timm and Andreas Schinner, A Possible Generating Algorithm of the Voynich Manuscript, Cryptologia 44(1), 1-19, 2020.",
       "publication_date": "2020 issue; first online 2019",
       "urls": [
-        "https://doi.org/10.1080/01611194.2019.1596999"
+        "https://doi.org/10.1080/01611194.2019.1596999",
+        "https://github.com/TorstenTimm/SelfCitationTextgenerator/tree/a6ede2202dd7ad6285ce2c007bf22c2a0e7709b7"
       ],
-      "retrieved": "2026-09-16",
-      "sections_read": "Abstract, word-network construction, self-citation process, and statistical claims.",
-      "contribution": "A local copy-and-modify process generates word networks and selected frequency behavior similar to VMS observations, including two Zipf-like relationships.",
-      "caveats": "The generator is a feasibility model. It does not prove a hoax, identify an author, or explain every physical and document-level feature.",
-      "access_limitation": "Only the DOI abstract and accessible article metadata were available during this review. The full publisher article was not read.",
-      "next_use": "Fit only predeclared copy distance and edit rules on training groups. Test held-out lines and pages against Naibbe and human-gibberish controls."
+      "retrieved": "2026-09-17",
+      "sections_read": "Publisher abstract and article metadata. A later review examined the author repository, including source selection, word changes, configuration, and position calculation.",
+      "contribution": "The author code permits a controlled comparison of its source-position setting. Twenty paired seed runs show that the declared column statistic detects this setting change.",
+      "caveats": "The generator supplies a possible mechanism. It does not prove historical copying or identify an author, language, or meaning. Threshold zero does not disable the position branch.",
+      "access_limitation": "The full publisher article was unavailable. The repository source was read and compiled at revision a6ede2202dd7ad6285ce2c007bf22c2a0e7709b7. Repository settings are not assumed to reproduce the paper experiment.",
+      "next_use": "Use the scope and controls in reports/COLUMN_ASSOCIATION.md. Do not infer historical copying from the calibrated column statistic alone."
     },
     {
       "id": "S12",

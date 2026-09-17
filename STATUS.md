@@ -6,6 +6,11 @@ The project has no validated key, plaintext language, or translation.
 
 ## Current findings and stopped branches
 
+A [text-column comparison](reports/COLUMN_ASSOCIATION.md) finds a small word-similarity excess in both transcriptions.
+A control that preserves complete lines does not meet the declared criterion for an additional line-order effect.
+The one-sided permutation p-values are 0.1586 for ZL and 0.0558 for IT.
+We stopped this statistic. The column association alone does not establish copying between neighboring lines.
+
 Two complete radial labels on f69v are identical in both pinned transcriptions.
 They cannot map to different names through a fixed, context-independent function.
 This [collision check](docs/research/anchor-audit.md#lunar-mansion-names-complete-label-collision) stops a one-to-one reading of the 28 labels as one fixed historical list.
