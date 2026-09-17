@@ -126,6 +126,7 @@ All manuscript analyses remain exploratory. A new partition does not make previo
 - [Hildegard OCR audit](docs/research/causae-ocr-audit.md)
 - [Celsus source audit](docs/research/celsus-source-audit.md)
 - [Celsus projection validation](reports/CELSUS_PROJECTION.md)
+- [Celsus reference control protocol](docs/plans/celsus-reference-control-v1.md)
 
 ## Contributions
 

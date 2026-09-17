@@ -1,0 +1,78 @@
+{
+  "files": [
+    {
+      "path": "docs/plans/celsus-reference-control-v1.md",
+      "sha256": "cccbf455dc8ec98b040beec13786f212d741219e58f68354601eccca18169dbe"
+    },
+    {
+      "path": "experiments/medical/reference_adapter.py",
+      "sha256": "4c1b50b75b3e7bfda5ff2d66ee3352ef35329a1b564858041067dd36af4c3357"
+    },
+    {
+      "path": "experiments/medical/test_reference_adapter.py",
+      "sha256": "e0c804787ac55802c5e0955bb7629cecd67934b4989cd097efec8d9bed236700"
+    },
+    {
+      "path": "experiments/medical/run_partition.py",
+      "sha256": "3ca15135530e266eb7c973e161532a36d72c8b04f1215c035827e78c37ef39eb"
+    },
+    {
+      "path": "experiments/medical/test_run_partition.py",
+      "sha256": "fb4215524296e3a2df506157b41206d3ebe5d267347a142b99bee25de5cdc75f"
+    },
+    {
+      "path": "src/voynich/__init__.py",
+      "sha256": "b102a07c0172d042de5a70dd819dfcdc53d17531835288acc48b05f10a954bf6"
+    },
+    {
+      "path": "src/voynich/reference.py",
+      "sha256": "97e173c761b137d3653a827315b62a68af3e96abd189afdecc46e9759d2b94d9"
+    },
+    {
+      "path": "reports/celsus-projection-v1/acceptance.json",
+      "sha256": "8067be5cb874a8e53472d11e3188be0eb92b7c30c3def9f31de2451e06fc6faf"
+    },
+    {
+      "path": "reports/celsus-projection-v1/initial-receipt.json",
+      "sha256": "f9333cdac5f45742f23ffb76b8600421635296fa1b855ab54412f3b94300be91"
+    },
+    {
+      "path": "experiments/medical/freeze-v1.json",
+      "sha256": "5c48648f0098f1d303ddfc5309aa42d58899cd44b2b118a7cc55811f266f5631"
+    },
+    {
+      "path": "docs/plans/celsus-projection-v1.md",
+      "sha256": "3f9dcb864c9302d220d0fe1cafbc869ef9422724221fe38860f9481e3ff28efa"
+    },
+    {
+      "path": "experiments/medical/tei_projection.py",
+      "sha256": "d736f77a172854de0ada730d1775d36ae02691e5e0ee547931e8208120dfbadc"
+    },
+    {
+      "path": "experiments/medical/run_projection.py",
+      "sha256": "810f9083c1f38ddae272e38e68b494295527c0bed95dd7be2e6f93dfb18f6581"
+    },
+    {
+      "path": "experiments/medical/test_tei_projection.py",
+      "sha256": "c190fe6a748a4df77a2d1e55faf21f0232c0fb64a68ee41d2d752cdcb2f937ed"
+    },
+    {
+      "path": "experiments/medical/test_run_projection.py",
+      "sha256": "09e54635b7c2fe618e874661548b426b9b2698f1e7c5f98d1fb35e7dfcb3a4ff"
+    },
+    {
+      "path": "results/celsus-projection-v1/celsus-lat5.xml",
+      "sha256": "a4a5194ba38a7efd5192d20f2a7b696f4fa64105010eb629aa7c35255a935145"
+    },
+    {
+      "path": "results/celsus-projection-v1/module-paragraphs.jsonl",
+      "sha256": "f37d99f5ad0771c32c4d71934b58df00438ca7dadf870f89dc93b181c1d373f2"
+    },
+    {
+      "path": "results/celsus-projection-v1/independent-paragraphs.jsonl",
+      "sha256": "f37d99f5ad0771c32c4d71934b58df00438ca7dadf870f89dc93b181c1d373f2"
+    }
+  ],
+  "protocol": "celsus-reference-control-v1",
+  "schema_version": 1
+}
