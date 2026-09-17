@@ -1,0 +1,172 @@
+{
+  "child_command": [
+    "python",
+    "-m",
+    "experiments.cyclic_pairing.study",
+    "--corpus"
+  ],
+  "command": [
+    "python",
+    "-m",
+    "experiments.cyclic_pairing.run_controls"
+  ],
+  "files": [
+    {
+      "path": "docs/plans/cyclic-pairing-control-v1.md",
+      "sha256": "6da0d8b862dacfb90b3255bb5df4212d180052729f2d9170bc8ea2e6e30c3310"
+    },
+    {
+      "path": "docs/research/cyclic-emitter-pairing.md",
+      "sha256": "df15917ad990e06cf017410cfa50daa0a691439444af31d25d7f226b1bd0064b"
+    },
+    {
+      "path": "experiments/cyclic_pairing/study.py",
+      "sha256": "bdf9da11293e32e0483f55b100153ca49f4822efa0021541c116143f47022be3"
+    },
+    {
+      "path": "experiments/cyclic_pairing/test_study.py",
+      "sha256": "b53f50e74c454d36fdf8ce85774ff31dc9ca4d02bffc103cd65f080b752af1fd"
+    },
+    {
+      "path": "experiments/cyclic_pairing/run_controls.py",
+      "sha256": "b45b8b5ce82a73236a691350dc7e633c2de6cd6e801d3791a5e65b6f5409772a"
+    },
+    {
+      "path": "experiments/cyclic_pairing/test_run_controls.py",
+      "sha256": "9b5a32fc6439cf4c223d328a49c193601d724ffcc1fe7de0517138b3bc88f2c8"
+    },
+    {
+      "path": "experiments/cyclic_pairing/pairing.py",
+      "sha256": "da9c89b4738d0dde959a3c730111dee864c05cd3e3b20932b2b8a3f30a57da95"
+    },
+    {
+      "path": "experiments/cyclic_pairing/forced.py",
+      "sha256": "3f3a4fc450b5921905b8931310379d8361a6ca0b8d2989b8b8e939ddbc8d76a4"
+    },
+    {
+      "path": "experiments/cyclic_pairing/test_pairing.py",
+      "sha256": "266d49547bf361a0f2ac290c88fb29f3e9ac86d08dbd73450654d50e87c1bf3d"
+    },
+    {
+      "path": "experiments/cyclic_pairing/test_forced.py",
+      "sha256": "1f33dbd220e709446634f78ac656a01c4ad180538c1427c14049073e98eb893c"
+    },
+    {
+      "path": "experiments/cyclic_pairing/__init__.py",
+      "sha256": "34b9b19317fdaea3e3b99f51d5c45db120c5eae6ac91068aaf7369d8df6ce00b"
+    },
+    {
+      "path": "experiments/homophonic/controls.py",
+      "sha256": "4845d1de4e766c5d63b23919bab2715db24b431ba502112494e477a1740fd896"
+    },
+    {
+      "path": "src/voynich/__init__.py",
+      "sha256": "b102a07c0172d042de5a70dd819dfcdc53d17531835288acc48b05f10a954bf6"
+    },
+    {
+      "path": "src/voynich/reference.py",
+      "sha256": "97e173c761b137d3653a827315b62a68af3e96abd189afdecc46e9759d2b94d9"
+    },
+    {
+      "path": "data/reference_manifest.json",
+      "sha256": "f261b781f150991e3305aae5057a94dc91afd8e59c58bb22ff199347f5ce3e6d"
+    },
+    {
+      "path": "docs/plans/visual-homophonic-pilot.md",
+      "sha256": "0e6a6edf5e0172f5e7a0f1fbf2f7ede8b9b181c7180aa616de58f44ae04d1249"
+    },
+    {
+      "path": "reports/homophonic-feasibility-v1/latin-cold.json",
+      "sha256": "923dba00df53ff05ca88e91362ea44c693d66b8f0824071d85cc5b0d984ba77e"
+    },
+    {
+      "path": "reports/homophonic-feasibility-v1/italian-cold.json",
+      "sha256": "4209022e13399bb7347b8f1d098f43c4d0922ae1b9c6df72382ed5553b44b0b3"
+    },
+    {
+      "path": "data/raw/reference/latin_llct/la_llct-ud-train.conllu",
+      "sha256": "8aabc8735c7a623a9e4820e13861a87459dd0fb5b2d238f0583854143526a643"
+    },
+    {
+      "path": "data/raw/reference/latin_llct/la_llct-ud-dev.conllu",
+      "sha256": "040457f2e47265a5676c83ce236e1d625af41eda8f779812841e8ba84e28480c"
+    },
+    {
+      "path": "data/raw/reference/latin_llct/la_llct-ud-test.conllu",
+      "sha256": "81d9f57de66d83303ad4df54a60cd445ac089b50070d369831a632b4cf948e64"
+    },
+    {
+      "path": "data/raw/reference/latin_llct/README.md",
+      "sha256": "eb3daaa3c8d7e4f3d1ea222bdacef989553714c10f6ebf68cb2dd93e1e2789f8"
+    },
+    {
+      "path": "data/raw/reference/latin_llct/LICENSE.txt",
+      "sha256": "899b1804a12ebc090b96339614eede1b64b686721b650a71430b55b5235f7f79"
+    },
+    {
+      "path": "data/raw/reference/italian_old/it_old-ud-train.conllu",
+      "sha256": "9e94e25d826632a005adc2a8a1daa88f46bdd1509d56090b4c82d27779e1a5e0"
+    },
+    {
+      "path": "data/raw/reference/italian_old/it_old-ud-dev.conllu",
+      "sha256": "6c900aecef3abebfe87c4e5d5c9880326cc69b8122e62ec95ef6c50fbe4e6e0b"
+    },
+    {
+      "path": "data/raw/reference/italian_old/it_old-ud-test.conllu",
+      "sha256": "19dc1ecf5bfffd552130be63c3dab02d1dd9b9e6a6d4bc31ace0fe6494ebdf89"
+    },
+    {
+      "path": "data/raw/reference/italian_old/README.md",
+      "sha256": "1796c08e68d943ca458642d334165a192705455586cc6d35ccd83382ffe1d1a5"
+    },
+    {
+      "path": "data/raw/reference/italian_old/LICENSE.txt",
+      "sha256": "899b1804a12ebc090b96339614eede1b64b686721b650a71430b55b5235f7f79"
+    }
+  ],
+  "outputs": {
+    "corpora": [
+      "latin_llct",
+      "italian_old"
+    ],
+    "corpus": [
+      "results/cyclic-pairing-control-v1/latin_llct/input.json",
+      "results/cyclic-pairing-control-v1/latin_llct/pairing.json",
+      "results/cyclic-pairing-control-v1/latin_llct/diagnostics.json",
+      "results/cyclic-pairing-control-v1/italian_old/input.json",
+      "results/cyclic-pairing-control-v1/italian_old/pairing.json",
+      "results/cyclic-pairing-control-v1/italian_old/diagnostics.json"
+    ],
+    "private": "results/cyclic-pairing-control-v1/resources.json",
+    "public": "reports/cyclic-pairing-control-v1/supervision.json"
+  },
+  "parameters": {
+    "capacity": 2,
+    "corpora": [
+      "latin_llct",
+      "italian_old"
+    ],
+    "declared_unit_count": 52,
+    "family": "cap2",
+    "input_scope": "ciphertext_validation_only",
+    "max_edge_queries": 26,
+    "node_budget": 100000,
+    "seed": 7000,
+    "synthetic_test_count": 20
+  },
+  "protocol": "cyclic-pairing-control-v1",
+  "resources": {
+    "as_limit_bytes": null,
+    "child_cpu_workers": 1,
+    "corpus_wall_seconds": 300.0,
+    "poll_interval_seconds": 0.25,
+    "rss_limit_bytes": 7516192768,
+    "terminate_grace_seconds": 5.0
+  },
+  "runtime": {
+    "freeze_python": "3.14.7",
+    "implementation": "CPython",
+    "platform": "Linux-7.2.3-arch1-3-x86_64-with-glibc2.44"
+  },
+  "schema_version": 1
+}

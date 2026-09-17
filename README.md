@@ -129,6 +129,11 @@ All manuscript analyses remain exploratory. A new partition does not make previo
 - [Celsus projection validation](reports/CELSUS_PROJECTION.md)
 - [Celsus partition results](reports/CELSUS_PARTITIONS.md)
 - [Celsus reference control protocol](docs/plans/celsus-reference-control-v1.md)
+- [Cyclic pairing control protocol](docs/plans/cyclic-pairing-control-v1.md)
+- [Cyclic emitter constraints](docs/research/cyclic-emitter-pairing.md)
+- [Observed pair classes](docs/research/observed-pair-quotient.md)
+- [Segment and uncertainty limits](docs/research/segmented-cyclic-emitter-design.md)
+- [Local cyclic obstructions](docs/research/local-cyclic-obstructions.md)
 
 ## Contributions
 

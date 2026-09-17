@@ -36,3 +36,5 @@ jobs:
         run: PYTHONPATH=src:. python -m unittest discover -s experiments/lexical_warmstart -p 'test_*.py' -v
       - name: Run search-development tests
         run: PYTHONPATH=src:. python -m unittest discover -s experiments/search_development -p 'test_*.py' -v
+      - name: Run cyclic-pairing tests
+        run: PYTHONPATH=src:. python -m unittest discover -s experiments/cyclic_pairing -t . -p 'test_*.py' -v
