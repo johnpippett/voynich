@@ -1,6 +1,7 @@
 # Cyclic quotient recovery v1
 
-Status: development design only. Date: 2026-09-17.
+Status: stopped development draft, preserved at the research pause on 2026-09-17.
+No reference-corpus fit or manuscript run occurred for this branch.
 
 This plan defines a later plaintext-letter search after a ciphertext-only
 observed pair relation is proved. It uses no manuscript data and reports no
@@ -81,14 +82,21 @@ units. Pair member order has no effect on the class identifier or the lexical
 search.
 
 For each closed pair, store two members and zero open slots. For each open
-singleton, store one observed member and one open slot. Keep the residual
-graph of unseen units and all feasible unseen-mate alternatives as evidence.
+singleton, store one observed member and one open slot. Keep the complete
+compatibility graph and its recorded orientations as evidence.
+Remove forced observed-observed pair endpoints to form the residual graph.
+Its vertices contain the open singletons and all unseen units.
+Its full perfect matchings represent all feasible unseen completions.
+Each completion combines with the fixed observed pairs to give a full matching.
+An individual residual edge is a compatibility candidate. Do not claim that
+it belongs to a full matching without a separate extension certificate.
 Do not assign an unseen unit to a singleton. Do not pair two unseen units for
 the quotient. These choices belong to a later residual completion problem.
 
 The quotient is admissible only when every full matching maps to the same
-observed classes and every retained residual state has a full matching
-extension. A closed pair consumes the exact two-unit capacity of one letter.
+observed classes. A retained residual state means a full residual matching,
+not an isolated candidate edge. It must extend with the fixed observed pairs.
+A closed pair consumes the exact two-unit capacity of one letter.
 An open singleton consumes one unit and can accept at most one unseen mate.
 If no observed-observed edge exists for a unit, record that graph absence. If
 all present observed-observed edges are disproved, the unit is an open

@@ -122,6 +122,11 @@ signal is not extended to a manuscript-wide reading. Primary records are the
 [full paper page](https://voynich.site/paper-2-labels?lang=en), and [data and
 code page](https://voynich.site/data-and-code?lang=en).
 
+The later [panel control](../../reports/ZODIAC_PANEL_CONTROL.md) conditions on each physical panel's predicted class counts.
+Its exact p-value is 0.42044 for the published attribute sequence.
+This does not support additional alignment within panels under that null.
+Missing raw answer files limit the check to the archived sequence and released position assignments.
+
 The separate [directionality audit](directionality-method-audit.md) checks the estimator.
 The [medical source audit](antidotarium-source-audit.md) checks one released reference corpus.
 

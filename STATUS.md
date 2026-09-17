@@ -3,8 +3,16 @@
 The objective is to explain the Voynich manuscript's writing system and recover its content where possible.
 That objective remains unresolved.
 The project has no validated key, plaintext language, or translation.
+Research is paused at the owner's request, dated 2026-09-17.
+No further experiment will start until the owner asks to resume.
+The [pause record](docs/research/pause-record-2026-09-17.md) distinguishes findings from unfinished development.
 
 ## Current findings and stopped branches
+
+A [zodiac degree-alignment control](reports/ZODIAC_PANEL_CONTROL.md) tests a published figure-attribute sequence while preserving each physical panel's class counts.
+The fixed alignment has 52 matches among 78 known positions. Its exact conditional p-value is 0.42044.
+We stopped this alignment as a source of fine positional constraints for label interpretation.
+The result depends on the released sequence and table vectors. Missing raw inputs prevent independent verification of the answer-to-image joins.
 
 A [text-column comparison](reports/COLUMN_ASSOCIATION.md) finds a small word-similarity excess in both transcriptions.
 A control that preserves complete lines does not meet the declared criterion for an additional line-order effect.

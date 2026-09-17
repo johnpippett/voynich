@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "research_as_of": "2026-09-17",
+  "status": "stopped after fixed conditional test",
+  "scope": "Published attribute sequence and released table vectors; no plaintext claim",
+  "source_record": "https://doi.org/10.5281/zenodo.21761983",
+  "known_positions": 78,
+  "observed_score": 52,
+  "fixed_shift": 23,
+  "panels": [
+    {
+      "folio": "f70v2",
+      "sign": "Pisces",
+      "positions": 30,
+      "known": 22,
+      "observed_score": 17,
+      "null_mean": 14.2,
+      "predicted_ones": 7
+    },
+    {
+      "folio": "f71r",
+      "sign": "Aries",
+      "positions": 15,
+      "known": 14,
+      "observed_score": 8,
+      "null_mean": 8.4,
+      "predicted_ones": 9
+    },
+    {
+      "folio": "f70v1",
+      "sign": "Aries",
+      "positions": 15,
+      "known": 14,
+      "observed_score": 8,
+      "null_mean": 8.0,
+      "predicted_ones": 0
+    },
+    {
+      "folio": "f71v",
+      "sign": "Taurus",
+      "positions": 15,
+      "known": 14,
+      "observed_score": 6,
+      "null_mean": 7.266666666666667,
+      "predicted_ones": 8
+    },
+    {
+      "folio": "f72r1",
+      "sign": "Taurus",
+      "positions": 15,
+      "known": 14,
+      "observed_score": 13,
+      "null_mean": 13.0,
+      "predicted_ones": 0
+    }
+  ],
+  "within_panel": {
+    "combinations": 1518750,
+    "upper_tail_count": 638550,
+    "p_fraction": "473/1125",
+    "p_value": 0.42044444444444445,
+    "null_mean_fraction": "763/15",
+    "null_mean": 50.86666666666667,
+    "observed_minus_mean": 1.1333333333333333,
+    "score_histogram": {
+      "44": 2025,
+      "45": 15525,
+      "46": 43875,
+      "47": 93825,
+      "48": 128250,
+      "49": 173475,
+      "50": 215325,
+      "51": 207900,
+      "52": 222075,
+      "53": 178875,
+      "54": 116100,
+      "55": 89100,
+      "56": 32400
+    }
+  },
+  "whole_sign_reproduction": {
+    "combinations": 27000,
+    "upper_tail_count": 225,
+    "p_fraction": "1/120",
+    "p_value": 0.008333333333333333,
+    "null_mean_fraction": "611/15",
+    "null_mean": 40.733333333333334,
+    "observed_minus_mean": 11.266666666666667,
+    "score_histogram": {
+      "22": 3,
+      "23": 12,
+      "24": 33,
+      "25": 67,
+      "26": 104,
+      "27": 170,
+      "28": 199,
+      "29": 274,
+      "30": 367,
+      "31": 425,
+      "32": 615,
+      "33": 760,
+      "34": 966,
+      "35": 1213,
+      "36": 1355,
+      "37": 1542,
+      "38": 1554,
+      "39": 1594,
+      "40": 1538,
+      "41": 1449,
+      "42": 1554,
+      "43": 1512,
+      "44": 1589,
+      "45": 1622,
+      "46": 1588,
+      "47": 1481,
+      "48": 1244,
+      "49": 956,
+      "50": 616,
+      "51": 373,
+      "52": 195,
+      "53": 30
+    }
+  },
+  "additional_alignment_gate": false,
+  "limits": {
+    "raw_answer_join_verified": false,
+    "historical_class_markers_visually_verified": false,
+    "new_blind_image_replication": false,
+    "position_assignments": "inherited from the source"
+  },
+  "verification": {
+    "all_90_archived_positions_match": true,
+    "separate_calculation_matches_all_profiles_and_histograms": true,
+    "direct_cartesian_check_of_saved_profiles": true
+  },
+  "record_sha256": {
+    "panel-control-plan.md": "182a53929d7b0f1116b137d16039088209fac43830e1c705102fc9727b79f19b",
+    "panel-control-input-addendum.md": "ff7e8351cd8edd63b6e2666484d9cc72543eb628c8a6a8f8414e0c53b9e78988",
+    "panel-control.py": "97f737a6a11931f109a9004a00b9985157b792fd138acd4b817a358de3467000",
+    "panel-control-freeze.json": "b1ebe8dc7b1f398d7e1097fef1a918d2a9d3e701fc0ad7c4f93fbd95d4e51601",
+    "panel-vector-check.json": "745e0ab21e80f557398fff845ecd23395b5e6c5fa37b32e301bc4207ea9b046a",
+    "panel-control-result.json": "09c652a8485e68a0bf528c108daeda514c920014adb4c4d01661f2489beb5c0d",
+    "panel-verify.py": "9b7d0f97c70d155fde2247a8b8235ad3e6ea9550e2b22bb76b543adc325c4281",
+    "panel-verification.json": "94849bc8288e5611d4e49ef62fb09d3812fa9835a3a58d0ca017dd63763176da",
+    "panel-cartesian-check.json": "ab96575214edfc9a9662f872dd4970f9d80d5faeae566aaef5a7fe3672111468",
+    "paper2_arxiv.pdf": "aaaa54b9cc47718b8d5d29560d5b543542dadcc989585c7b219fc1d156e4c708",
+    "voynich_replication_v1.zip": "c01f3a8e064e709464711b6d1b3254d2c41f9fdf9205c2681b8573b655e6eada"
+  }
+}

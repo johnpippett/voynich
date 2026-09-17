@@ -1,5 +1,9 @@
 # Voynich research
 
+Research is paused at the owner's request, dated 2026-09-17.
+Do not start new research runs or extend stopped studies until the owner asks to resume.
+The [pause record](docs/research/pause-record-2026-09-17.md) gives the current state and retained work.
+
 This repository is public. Do not include personal information, private contact
 details, local user paths, credentials, or attachment metadata.
 Use the repository commit identity: `johnpippett <jack@pippett.me>`.

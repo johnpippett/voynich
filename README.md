@@ -6,6 +6,10 @@ It keeps source records and compares observations with explicit statistical cont
 **This project has not deciphered the manuscript.**
 It has no validated key, plaintext language, or translation.
 
+**Research is paused at the owner's request, dated 2026-09-17.**
+The [pause record](docs/research/pause-record-2026-09-17.md) summarizes the findings, limits, and retained unfinished work.
+The [current status](STATUS.md) records the completed experiments and stopped branches.
+
 The [fixed-expansion test](reports/LINE_TRIPLET_BOUNDARIES.md) constrains a three-digit code model.
 It assumes a common line-boundary phase within each source and Currier class.
 Under the report's assumptions, every tested training-unit length must be divisible by three. This supplies no letter values or plaintext.
