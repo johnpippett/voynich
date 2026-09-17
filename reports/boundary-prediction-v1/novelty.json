@@ -1,0 +1,1875 @@
+{
+  "schema": "boundary-prediction-novelty-v1",
+  "sources": [
+    {
+      "command": "PYTHONPATH=src python scripts/check_boundary_novelty.py",
+      "counts": {
+        "test": {
+          "groups": 13,
+          "lines": 861,
+          "words": 7111
+        },
+        "train": {
+          "groups": 34,
+          "lines": 1702,
+          "words": 14445
+        },
+        "validation": {
+          "groups": 3,
+          "lines": 237,
+          "words": 2278
+        }
+      },
+      "dependency_sha256": {
+        "experiments/homophonic/units.py": "fc321f7cc59bf91aed1061d9fb72b531125ab9255ae171167de0bbe289c59760",
+        "scripts/run_local_memory_diagnostic.py": "746fc1e36484ebcb79d71a34578f3e4fe9909423e8c2c9acf0183a6c400a7a47",
+        "src/voynich/context.py": "34bf3b4358ddecfd334b9937b17217b7a3da8ea9ccc0f64b544a579d959d8c6e",
+        "src/voynich/corpus.py": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+        "src/voynich/groups.py": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0"
+      },
+      "excluded_lines": {
+        "excluded_tokens": 783,
+        "fewer_than_three_words": 77,
+        "interrupted_line": 470,
+        "not_paragraph": 1255
+      },
+      "existing_method_script_sha256": "94d8e66b2ad5471684139d1139792dd8c8ed088fa3104653160ec1fe4e5143bd",
+      "existing_result_sha256": "5609f762c8410b0ef7aa598010567d32226112750f9f5f11a6bf4d3409ba9098",
+      "exploratory": true,
+      "header": "This compares familiar phrase contribution with a transferable unit relation.",
+      "representations": {
+        "raw": {
+          "coverage_categories": {
+            "0": {
+              "baseline_bits_per_target": 3.050141518971478,
+              "conditional_bits_per_target": 2.803635382777502,
+              "gain_bits_per_target": 0.2465061361939759,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": 0.1343134707777483,
+                  "targets": 100
+                },
+                "106": {
+                  "gain_bits_per_target": 0.30386441382828555,
+                  "targets": 966
+                },
+                "11": {
+                  "gain_bits_per_target": -0.021930977970897176,
+                  "targets": 83
+                },
+                "17": {
+                  "gain_bits_per_target": 0.18897912430187214,
+                  "targets": 148
+                },
+                "25": {
+                  "gain_bits_per_target": 0.11149193888180593,
+                  "targets": 67
+                },
+                "28": {
+                  "gain_bits_per_target": 0.026658877169065353,
+                  "targets": 44
+                },
+                "3": {
+                  "gain_bits_per_target": 0.1264410642711524,
+                  "targets": 122
+                },
+                "57": {
+                  "gain_bits_per_target": 0.09139968462120628,
+                  "targets": 182
+                },
+                "58": {
+                  "gain_bits_per_target": 0.16160390146460846,
+                  "targets": 278
+                },
+                "75": {
+                  "gain_bits_per_target": 0.24565868829348125,
+                  "targets": 726
+                },
+                "77": {
+                  "gain_bits_per_target": 0.3552043139019739,
+                  "targets": 743
+                },
+                "85": {
+                  "gain_bits_per_target": 0.2618958100431602,
+                  "targets": 927
+                },
+                "93": {
+                  "gain_bits_per_target": 0.01580294125237081,
+                  "targets": 98
+                }
+              },
+              "status": "scored",
+              "targets": 4484,
+              "unknown_initial_targets": 0
+            },
+            "1": {
+              "baseline_bits_per_target": 3.2465765447833057,
+              "conditional_bits_per_target": 3.120628333288413,
+              "gain_bits_per_target": 0.12594821149489283,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": -0.2306102497474647,
+                  "targets": 21
+                },
+                "106": {
+                  "gain_bits_per_target": 0.22084614512568485,
+                  "targets": 425
+                },
+                "11": {
+                  "gain_bits_per_target": 0.035942620695080855,
+                  "targets": 23
+                },
+                "17": {
+                  "gain_bits_per_target": -0.018096821925183436,
+                  "targets": 77
+                },
+                "25": {
+                  "gain_bits_per_target": -0.08275337373109949,
+                  "targets": 25
+                },
+                "28": {
+                  "gain_bits_per_target": -0.031937772322506705,
+                  "targets": 21
+                },
+                "3": {
+                  "gain_bits_per_target": -0.06133439937439249,
+                  "targets": 80
+                },
+                "57": {
+                  "gain_bits_per_target": -0.013103192590355627,
+                  "targets": 83
+                },
+                "58": {
+                  "gain_bits_per_target": 0.1363060167169676,
+                  "targets": 175
+                },
+                "75": {
+                  "gain_bits_per_target": 0.13722035716209555,
+                  "targets": 118
+                },
+                "77": {
+                  "gain_bits_per_target": 0.15019856663702139,
+                  "targets": 170
+                },
+                "85": {
+                  "gain_bits_per_target": 0.1688927828891284,
+                  "targets": 286
+                },
+                "93": {
+                  "gain_bits_per_target": 0.03901666688388753,
+                  "targets": 48
+                }
+              },
+              "status": "scored",
+              "targets": 1552,
+              "unknown_initial_targets": 2
+            },
+            "2": {
+              "baseline_bits_per_target": 3.379292379310163,
+              "conditional_bits_per_target": 3.401588411212128,
+              "gain_bits_per_target": -0.022296031901965278,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": 0.26599572711335434,
+                  "targets": 7
+                },
+                "106": {
+                  "gain_bits_per_target": -0.0024688309980555392,
+                  "targets": 70
+                },
+                "11": {
+                  "gain_bits_per_target": -0.26332996364273165,
+                  "targets": 9
+                },
+                "17": {
+                  "gain_bits_per_target": -0.1752824358155761,
+                  "targets": 12
+                },
+                "25": {
+                  "gain_bits_per_target": -0.19400855093688812,
+                  "targets": 5
+                },
+                "28": {
+                  "gain_bits_per_target": -0.8787084581389779,
+                  "targets": 1
+                },
+                "3": {
+                  "gain_bits_per_target": 0.20757776548769005,
+                  "targets": 7
+                },
+                "57": {
+                  "gain_bits_per_target": 0.07965234878984516,
+                  "targets": 14
+                },
+                "58": {
+                  "gain_bits_per_target": -0.10379050068721887,
+                  "targets": 39
+                },
+                "75": {
+                  "gain_bits_per_target": -0.22656561903734782,
+                  "targets": 6
+                },
+                "77": {
+                  "gain_bits_per_target": 0.5629725006964534,
+                  "targets": 7
+                },
+                "85": {
+                  "gain_bits_per_target": -0.13422961663202282,
+                  "targets": 22
+                },
+                "93": {
+                  "gain_bits_per_target": 0.11419316193519981,
+                  "targets": 15
+                }
+              },
+              "status": "scored",
+              "targets": 214,
+              "unknown_initial_targets": 1
+            }
+          },
+          "full_test_score": {
+            "baseline_bits_per_target": 3.110190390039067,
+            "conditional_bits_per_target": 2.9028249839419726,
+            "gain_bits_per_target": 0.20736540609709453,
+            "groups": {
+              "10": {
+                "gain_bits_per_target": 0.08164454627243378,
+                "targets": 128
+              },
+              "106": {
+                "gain_bits_per_target": 0.2650375203741786,
+                "targets": 1461
+              },
+              "11": {
+                "gain_bits_per_target": -0.029248352768540726,
+                "targets": 115
+              },
+              "17": {
+                "gain_bits_per_target": 0.10325766193523699,
+                "targets": 237
+              },
+              "25": {
+                "gain_bits_per_target": 0.04568126605277405,
+                "targets": 97
+              },
+              "28": {
+                "gain_bits_per_target": -0.005703198204132191,
+                "targets": 66
+              },
+              "3": {
+                "gain_bits_per_target": 0.05728278588298093,
+                "targets": 209
+              },
+              "57": {
+                "gain_bits_per_target": 0.05972154300759061,
+                "targets": 279
+              },
+              "58": {
+                "gain_bits_per_target": 0.13156830895493699,
+                "targets": 492
+              },
+              "75": {
+                "gain_bits_per_target": 0.22727154839055347,
+                "targets": 850
+              },
+              "77": {
+                "gain_bits_per_target": 0.31890366202427706,
+                "targets": 920
+              },
+              "85": {
+                "gain_bits_per_target": 0.2333017815792678,
+                "targets": 1235
+              },
+              "93": {
+                "gain_bits_per_target": 0.031890594299298324,
+                "targets": 161
+              }
+            },
+            "status": "scored",
+            "targets": 6250,
+            "unknown_initial_targets": 3
+          },
+          "full_test_verification": {
+            "max_abs_error": 0.0,
+            "status": "matched",
+            "targets": 6250
+          },
+          "ordered_pair_train_coverage": {
+            "seen": {
+              "baseline_bits_per_target": 2.972092444509677,
+              "conditional_bits_per_target": 2.482991552706941,
+              "gain_bits_per_target": 0.48910089180273614,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": 0.20963960140953966,
+                  "targets": 29
+                },
+                "106": {
+                  "gain_bits_per_target": 0.646979035286387,
+                  "targets": 177
+                },
+                "11": {
+                  "gain_bits_per_target": 0.2382692978460175,
+                  "targets": 15
+                },
+                "17": {
+                  "gain_bits_per_target": 0.3798606128346811,
+                  "targets": 32
+                },
+                "25": {
+                  "gain_bits_per_target": 0.0566294179313355,
+                  "targets": 15
+                },
+                "28": {
+                  "gain_bits_per_target": 0.2969862864277268,
+                  "targets": 13
+                },
+                "3": {
+                  "gain_bits_per_target": 0.559749845150905,
+                  "targets": 15
+                },
+                "57": {
+                  "gain_bits_per_target": 0.17840403699404916,
+                  "targets": 24
+                },
+                "58": {
+                  "gain_bits_per_target": 0.6100188108095447,
+                  "targets": 53
+                },
+                "75": {
+                  "gain_bits_per_target": 0.33877349106086113,
+                  "targets": 268
+                },
+                "77": {
+                  "gain_bits_per_target": 0.5091237084884054,
+                  "targets": 264
+                },
+                "85": {
+                  "gain_bits_per_target": 0.6943055941970455,
+                  "targets": 171
+                },
+                "93": {
+                  "gain_bits_per_target": 0.18099481107563134,
+                  "targets": 12
+                }
+              },
+              "status": "scored",
+              "targets": 1088,
+              "unknown_initial_targets": 0
+            },
+            "unseen": {
+              "baseline_bits_per_target": 3.1392974347380167,
+              "conditional_bits_per_target": 2.9913137040473035,
+              "gain_bits_per_target": 0.14798373069071347,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": 0.044151045272676215,
+                  "targets": 99
+                },
+                "106": {
+                  "gain_bits_per_target": 0.21238670406618768,
+                  "targets": 1284
+                },
+                "11": {
+                  "gain_bits_per_target": -0.06937600036072468,
+                  "targets": 100
+                },
+                "17": {
+                  "gain_bits_per_target": 0.060080615941176516,
+                  "targets": 205
+                },
+                "25": {
+                  "gain_bits_per_target": 0.04367855534328153,
+                  "targets": 82
+                },
+                "28": {
+                  "gain_bits_per_target": -0.07994778877421108,
+                  "targets": 53
+                },
+                "3": {
+                  "gain_bits_per_target": 0.018432240063296225,
+                  "targets": 194
+                },
+                "57": {
+                  "gain_bits_per_target": 0.048551425926512716,
+                  "targets": 255
+                },
+                "58": {
+                  "gain_bits_per_target": 0.07380549210233042,
+                  "targets": 439
+                },
+                "75": {
+                  "gain_bits_per_target": 0.1759270112159101,
+                  "targets": 582
+                },
+                "77": {
+                  "gain_bits_per_target": 0.24235169210578636,
+                  "targets": 656
+                },
+                "85": {
+                  "gain_bits_per_target": 0.1592118831228393,
+                  "targets": 1064
+                },
+                "93": {
+                  "gain_bits_per_target": 0.019882201001875602,
+                  "targets": 149
+                }
+              },
+              "status": "scored",
+              "targets": 5162,
+              "unknown_initial_targets": 3
+            }
+          },
+          "primary_novelty_subset": {
+            "baseline_bits_per_target": 3.379292379310163,
+            "conditional_bits_per_target": 3.401588411212128,
+            "gain_bits_per_target": -0.022296031901965278,
+            "groups": {
+              "10": {
+                "gain_bits_per_target": 0.26599572711335434,
+                "targets": 7
+              },
+              "106": {
+                "gain_bits_per_target": -0.0024688309980555392,
+                "targets": 70
+              },
+              "11": {
+                "gain_bits_per_target": -0.26332996364273165,
+                "targets": 9
+              },
+              "17": {
+                "gain_bits_per_target": -0.1752824358155761,
+                "targets": 12
+              },
+              "25": {
+                "gain_bits_per_target": -0.19400855093688812,
+                "targets": 5
+              },
+              "28": {
+                "gain_bits_per_target": -0.8787084581389779,
+                "targets": 1
+              },
+              "3": {
+                "gain_bits_per_target": 0.20757776548769005,
+                "targets": 7
+              },
+              "57": {
+                "gain_bits_per_target": 0.07965234878984516,
+                "targets": 14
+              },
+              "58": {
+                "gain_bits_per_target": -0.10379050068721887,
+                "targets": 39
+              },
+              "75": {
+                "gain_bits_per_target": -0.22656561903734782,
+                "targets": 6
+              },
+              "77": {
+                "gain_bits_per_target": 0.5629725006964534,
+                "targets": 7
+              },
+              "85": {
+                "gain_bits_per_target": -0.13422961663202282,
+                "targets": 22
+              },
+              "93": {
+                "gain_bits_per_target": 0.11419316193519981,
+                "targets": 15
+              }
+            },
+            "status": "scored",
+            "targets": 214,
+            "unknown_initial_targets": 1
+          },
+          "test_line_count": 861,
+          "train_line_count": 1702,
+          "training_input_sha256": "ea3f40fa5eb76903b9e028c8f7e4ffc8c4aa4d0f6e3fbf75d2b7bde60ef137f6"
+        },
+        "visual": {
+          "coverage_categories": {
+            "0": {
+              "baseline_bits_per_target": 3.2362088321128666,
+              "conditional_bits_per_target": 2.9896059158413713,
+              "gain_bits_per_target": 0.24660291627149525,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": 0.137043773009504,
+                  "targets": 100
+                },
+                "106": {
+                  "gain_bits_per_target": 0.3017271262910261,
+                  "targets": 966
+                },
+                "11": {
+                  "gain_bits_per_target": 0.0042983144942402495,
+                  "targets": 83
+                },
+                "17": {
+                  "gain_bits_per_target": 0.17509260829063455,
+                  "targets": 148
+                },
+                "25": {
+                  "gain_bits_per_target": 0.026631735501963273,
+                  "targets": 67
+                },
+                "28": {
+                  "gain_bits_per_target": 0.03223137541610881,
+                  "targets": 44
+                },
+                "3": {
+                  "gain_bits_per_target": 0.10248439320223562,
+                  "targets": 122
+                },
+                "57": {
+                  "gain_bits_per_target": 0.0801064118639268,
+                  "targets": 182
+                },
+                "58": {
+                  "gain_bits_per_target": 0.1659607507919961,
+                  "targets": 278
+                },
+                "75": {
+                  "gain_bits_per_target": 0.25660963684331634,
+                  "targets": 726
+                },
+                "77": {
+                  "gain_bits_per_target": 0.3659309997480177,
+                  "targets": 743
+                },
+                "85": {
+                  "gain_bits_per_target": 0.26060143887310594,
+                  "targets": 927
+                },
+                "93": {
+                  "gain_bits_per_target": -0.01898665622601577,
+                  "targets": 98
+                }
+              },
+              "status": "scored",
+              "targets": 4484,
+              "unknown_initial_targets": 0
+            },
+            "1": {
+              "baseline_bits_per_target": 3.5317963487717248,
+              "conditional_bits_per_target": 3.4172764262718225,
+              "gain_bits_per_target": 0.1145199224999022,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": -0.25139304719937716,
+                  "targets": 21
+                },
+                "106": {
+                  "gain_bits_per_target": 0.21256049846445368,
+                  "targets": 425
+                },
+                "11": {
+                  "gain_bits_per_target": -0.004781220435610887,
+                  "targets": 23
+                },
+                "17": {
+                  "gain_bits_per_target": -0.16107414736180906,
+                  "targets": 77
+                },
+                "25": {
+                  "gain_bits_per_target": -0.4493850528911537,
+                  "targets": 25
+                },
+                "28": {
+                  "gain_bits_per_target": 0.004947361914915405,
+                  "targets": 21
+                },
+                "3": {
+                  "gain_bits_per_target": -0.13927444473788456,
+                  "targets": 80
+                },
+                "57": {
+                  "gain_bits_per_target": -0.02253934280267858,
+                  "targets": 83
+                },
+                "58": {
+                  "gain_bits_per_target": 0.14324175718078355,
+                  "targets": 175
+                },
+                "75": {
+                  "gain_bits_per_target": 0.19980198974730484,
+                  "targets": 118
+                },
+                "77": {
+                  "gain_bits_per_target": 0.1525287288767532,
+                  "targets": 170
+                },
+                "85": {
+                  "gain_bits_per_target": 0.19093312898753276,
+                  "targets": 286
+                },
+                "93": {
+                  "gain_bits_per_target": 0.0031539778737131505,
+                  "targets": 48
+                }
+              },
+              "status": "scored",
+              "targets": 1552,
+              "unknown_initial_targets": 2
+            },
+            "2": {
+              "baseline_bits_per_target": 3.7283808240593532,
+              "conditional_bits_per_target": 3.807994873926955,
+              "gain_bits_per_target": -0.0796140498676022,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": 0.2733720990439044,
+                  "targets": 7
+                },
+                "106": {
+                  "gain_bits_per_target": 0.01144752510209506,
+                  "targets": 70
+                },
+                "11": {
+                  "gain_bits_per_target": -0.12423229591051507,
+                  "targets": 9
+                },
+                "17": {
+                  "gain_bits_per_target": -0.2844845042468875,
+                  "targets": 12
+                },
+                "25": {
+                  "gain_bits_per_target": -0.5095631088786519,
+                  "targets": 5
+                },
+                "28": {
+                  "gain_bits_per_target": -0.878234731482904,
+                  "targets": 1
+                },
+                "3": {
+                  "gain_bits_per_target": 0.3276808174002116,
+                  "targets": 7
+                },
+                "57": {
+                  "gain_bits_per_target": 0.13550498677722242,
+                  "targets": 14
+                },
+                "58": {
+                  "gain_bits_per_target": -0.2750863305125251,
+                  "targets": 39
+                },
+                "75": {
+                  "gain_bits_per_target": -0.24390196063340852,
+                  "targets": 6
+                },
+                "77": {
+                  "gain_bits_per_target": 0.5750607330088607,
+                  "targets": 7
+                },
+                "85": {
+                  "gain_bits_per_target": -0.12475138307856976,
+                  "targets": 22
+                },
+                "93": {
+                  "gain_bits_per_target": -0.33828898122097023,
+                  "targets": 15
+                }
+              },
+              "status": "scored",
+              "targets": 214,
+              "unknown_initial_targets": 1
+            }
+          },
+          "full_test_score": {
+            "baseline_bits_per_target": 3.326461093253842,
+            "conditional_bits_per_target": 3.123826694916311,
+            "gain_bits_per_target": 0.20263439833753102,
+            "groups": {
+              "10": {
+                "gain_bits_per_target": 0.08077131252399061,
+                "targets": 128
+              },
+              "106": {
+                "gain_bits_per_target": 0.2618808642037443,
+                "targets": 1461
+              },
+              "11": {
+                "gain_bits_per_target": -0.007576509827754307,
+                "targets": 115
+              },
+              "17": {
+                "gain_bits_per_target": 0.04260414611473342,
+                "targets": 237
+              },
+              "25": {
+                "gain_bits_per_target": -0.12369191327876912,
+                "targets": 97
+              },
+              "28": {
+                "gain_bits_per_target": 0.009755157379380604,
+                "targets": 66
+              },
+              "3": {
+                "gain_bits_per_target": 0.017487589059538424,
+                "targets": 209
+              },
+              "57": {
+                "gain_bits_per_target": 0.05235007642112387,
+                "targets": 279
+              },
+              "58": {
+                "gain_bits_per_target": 0.12291875881468203,
+                "targets": 492
+              },
+              "75": {
+                "gain_bits_per_target": 0.24519037573485816,
+                "targets": 850
+              },
+              "77": {
+                "gain_bits_per_target": 0.3280891759270513,
+                "targets": 920
+              },
+              "85": {
+                "gain_bits_per_target": 0.23760314032232846,
+                "targets": 1235
+              },
+              "93": {
+                "gain_bits_per_target": -0.04213438565544021,
+                "targets": 161
+              }
+            },
+            "status": "scored",
+            "targets": 6250,
+            "unknown_initial_targets": 3
+          },
+          "full_test_verification": {
+            "max_abs_error": 0.0,
+            "status": "matched",
+            "targets": 6250
+          },
+          "ordered_pair_train_coverage": {
+            "seen": {
+              "baseline_bits_per_target": 3.10999216023559,
+              "conditional_bits_per_target": 2.6159306664907698,
+              "gain_bits_per_target": 0.4940614937448206,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": 0.21518804615135864,
+                  "targets": 29
+                },
+                "106": {
+                  "gain_bits_per_target": 0.647116074754206,
+                  "targets": 177
+                },
+                "11": {
+                  "gain_bits_per_target": 0.25030314293397804,
+                  "targets": 15
+                },
+                "17": {
+                  "gain_bits_per_target": 0.371994646546288,
+                  "targets": 32
+                },
+                "25": {
+                  "gain_bits_per_target": -0.03407143746761534,
+                  "targets": 15
+                },
+                "28": {
+                  "gain_bits_per_target": 0.31889405471596394,
+                  "targets": 13
+                },
+                "3": {
+                  "gain_bits_per_target": 0.5955773126666785,
+                  "targets": 15
+                },
+                "57": {
+                  "gain_bits_per_target": 0.17160995325419037,
+                  "targets": 24
+                },
+                "58": {
+                  "gain_bits_per_target": 0.6234023019881567,
+                  "targets": 53
+                },
+                "75": {
+                  "gain_bits_per_target": 0.3492986790259186,
+                  "targets": 268
+                },
+                "77": {
+                  "gain_bits_per_target": 0.5198553455091919,
+                  "targets": 264
+                },
+                "85": {
+                  "gain_bits_per_target": 0.6942327474660864,
+                  "targets": 171
+                },
+                "93": {
+                  "gain_bits_per_target": 0.1504751715125184,
+                  "targets": 12
+                }
+              },
+              "status": "scored",
+              "targets": 1088,
+              "unknown_initial_targets": 0
+            },
+            "unseen": {
+              "baseline_bits_per_target": 3.3720864708446707,
+              "conditional_bits_per_target": 3.2308764583659406,
+              "gain_bits_per_target": 0.14121001247873013,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": 0.04139671378466073,
+                  "targets": 99
+                },
+                "106": {
+                  "gain_bits_per_target": 0.20877601041291013,
+                  "targets": 1284
+                },
+                "11": {
+                  "gain_bits_per_target": -0.04625845774201423,
+                  "targets": 100
+                },
+                "17": {
+                  "gain_bits_per_target": -0.008812907611167159,
+                  "targets": 205
+                },
+                "25": {
+                  "gain_bits_per_target": -0.14008590275641894,
+                  "targets": 82
+                },
+                "28": {
+                  "gain_bits_per_target": -0.06607136460883808,
+                  "targets": 53
+                },
+                "3": {
+                  "gain_bits_per_target": -0.027210069982250496,
+                  "targets": 194
+                },
+                "57": {
+                  "gain_bits_per_target": 0.04112561742507055,
+                  "targets": 255
+                },
+                "58": {
+                  "gain_bits_per_target": 0.06249591647255431,
+                  "targets": 439
+                },
+                "75": {
+                  "gain_bits_per_target": 0.19725046975203286,
+                  "targets": 582
+                },
+                "77": {
+                  "gain_bits_per_target": 0.25091498572936055,
+                  "targets": 656
+                },
+                "85": {
+                  "gain_bits_per_target": 0.16421623917422398,
+                  "targets": 1064
+                },
+                "93": {
+                  "gain_bits_per_target": -0.057646564756215574,
+                  "targets": 149
+                }
+              },
+              "status": "scored",
+              "targets": 5162,
+              "unknown_initial_targets": 3
+            }
+          },
+          "primary_novelty_subset": {
+            "baseline_bits_per_target": 3.7283808240593532,
+            "conditional_bits_per_target": 3.807994873926955,
+            "gain_bits_per_target": -0.0796140498676022,
+            "groups": {
+              "10": {
+                "gain_bits_per_target": 0.2733720990439044,
+                "targets": 7
+              },
+              "106": {
+                "gain_bits_per_target": 0.01144752510209506,
+                "targets": 70
+              },
+              "11": {
+                "gain_bits_per_target": -0.12423229591051507,
+                "targets": 9
+              },
+              "17": {
+                "gain_bits_per_target": -0.2844845042468875,
+                "targets": 12
+              },
+              "25": {
+                "gain_bits_per_target": -0.5095631088786519,
+                "targets": 5
+              },
+              "28": {
+                "gain_bits_per_target": -0.878234731482904,
+                "targets": 1
+              },
+              "3": {
+                "gain_bits_per_target": 0.3276808174002116,
+                "targets": 7
+              },
+              "57": {
+                "gain_bits_per_target": 0.13550498677722242,
+                "targets": 14
+              },
+              "58": {
+                "gain_bits_per_target": -0.2750863305125251,
+                "targets": 39
+              },
+              "75": {
+                "gain_bits_per_target": -0.24390196063340852,
+                "targets": 6
+              },
+              "77": {
+                "gain_bits_per_target": 0.5750607330088607,
+                "targets": 7
+              },
+              "85": {
+                "gain_bits_per_target": -0.12475138307856976,
+                "targets": 22
+              },
+              "93": {
+                "gain_bits_per_target": -0.33828898122097023,
+                "targets": 15
+              }
+            },
+            "status": "scored",
+            "targets": 214,
+            "unknown_initial_targets": 1
+          },
+          "test_line_count": 861,
+          "train_line_count": 1702,
+          "training_input_sha256": "c45ecf7eb5c638ceada86ca2303b3616b801d880438f5575839d977f9dcc37ec"
+        }
+      },
+      "script_sha256": "b9a30c2357d7a69aa3d4d3f40fb091ee83e69e9d0c80505f4f1d4354c8c42481",
+      "selection": "Nested after the overall result; descriptive only, with no causal inference.",
+      "source": "ZL",
+      "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "spacing": "split",
+      "train_ordered_pair_type_count": 11310,
+      "train_word_type_count": 3695,
+      "validation_used": false
+    },
+    {
+      "command": "PYTHONPATH=src python scripts/check_boundary_novelty.py",
+      "counts": {
+        "test": {
+          "groups": 13,
+          "lines": 1002,
+          "words": 8228
+        },
+        "train": {
+          "groups": 34,
+          "lines": 2062,
+          "words": 17361
+        },
+        "validation": {
+          "groups": 3,
+          "lines": 291,
+          "words": 2772
+        }
+      },
+      "dependency_sha256": {
+        "experiments/homophonic/units.py": "fc321f7cc59bf91aed1061d9fb72b531125ab9255ae171167de0bbe289c59760",
+        "scripts/run_local_memory_diagnostic.py": "746fc1e36484ebcb79d71a34578f3e4fe9909423e8c2c9acf0183a6c400a7a47",
+        "src/voynich/context.py": "34bf3b4358ddecfd334b9937b17217b7a3da8ea9ccc0f64b544a579d959d8c6e",
+        "src/voynich/corpus.py": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+        "src/voynich/groups.py": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0"
+      },
+      "excluded_lines": {
+        "excluded_tokens": 67,
+        "fewer_than_three_words": 83,
+        "interrupted_line": 613,
+        "not_paragraph": 1097
+      },
+      "existing_method_script_sha256": "94d8e66b2ad5471684139d1139792dd8c8ed088fa3104653160ec1fe4e5143bd",
+      "existing_result_sha256": "b3042e6e6e54c23724c829d7b50d70a8e3e6d29b9b1e47b4bddef2a04fe0a20c",
+      "exploratory": true,
+      "header": "This compares familiar phrase contribution with a transferable unit relation.",
+      "representations": {
+        "raw": {
+          "coverage_categories": {
+            "0": {
+              "baseline_bits_per_target": 3.0253631849033513,
+              "conditional_bits_per_target": 2.7942252861747585,
+              "gain_bits_per_target": 0.23113789872859283,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": 0.13018575595721588,
+                  "targets": 107
+                },
+                "106": {
+                  "gain_bits_per_target": 0.28031718885837714,
+                  "targets": 1097
+                },
+                "11": {
+                  "gain_bits_per_target": 0.004633479441558334,
+                  "targets": 93
+                },
+                "17": {
+                  "gain_bits_per_target": 0.08381280099730767,
+                  "targets": 179
+                },
+                "25": {
+                  "gain_bits_per_target": 0.07115389958550476,
+                  "targets": 71
+                },
+                "28": {
+                  "gain_bits_per_target": 0.11097607245753566,
+                  "targets": 52
+                },
+                "3": {
+                  "gain_bits_per_target": 0.13550164498908787,
+                  "targets": 149
+                },
+                "57": {
+                  "gain_bits_per_target": 0.13194009150146943,
+                  "targets": 232
+                },
+                "58": {
+                  "gain_bits_per_target": 0.16209315239514102,
+                  "targets": 368
+                },
+                "75": {
+                  "gain_bits_per_target": 0.2221526842813038,
+                  "targets": 797
+                },
+                "77": {
+                  "gain_bits_per_target": 0.3385435508083322,
+                  "targets": 837
+                },
+                "85": {
+                  "gain_bits_per_target": 0.25277933486228127,
+                  "targets": 1017
+                },
+                "93": {
+                  "gain_bits_per_target": 0.05412986984603214,
+                  "targets": 114
+                }
+              },
+              "status": "scored",
+              "targets": 5113,
+              "unknown_initial_targets": 0
+            },
+            "1": {
+              "baseline_bits_per_target": 3.2091449145722137,
+              "conditional_bits_per_target": 3.1133520294799135,
+              "gain_bits_per_target": 0.09579288509230015,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": -0.3389190498523961,
+                  "targets": 28
+                },
+                "106": {
+                  "gain_bits_per_target": 0.1918931718441438,
+                  "targets": 492
+                },
+                "11": {
+                  "gain_bits_per_target": -0.12974353401243227,
+                  "targets": 38
+                },
+                "17": {
+                  "gain_bits_per_target": -0.0767477815483854,
+                  "targets": 89
+                },
+                "25": {
+                  "gain_bits_per_target": -0.11108158853347797,
+                  "targets": 39
+                },
+                "28": {
+                  "gain_bits_per_target": -0.16668582158448764,
+                  "targets": 18
+                },
+                "3": {
+                  "gain_bits_per_target": -0.11212020859539694,
+                  "targets": 85
+                },
+                "57": {
+                  "gain_bits_per_target": 0.04763854333096595,
+                  "targets": 138
+                },
+                "58": {
+                  "gain_bits_per_target": 0.0556307014803369,
+                  "targets": 235
+                },
+                "75": {
+                  "gain_bits_per_target": 0.03638943187386176,
+                  "targets": 116
+                },
+                "77": {
+                  "gain_bits_per_target": 0.2656483686499029,
+                  "targets": 189
+                },
+                "85": {
+                  "gain_bits_per_target": 0.1510724931854076,
+                  "targets": 355
+                },
+                "93": {
+                  "gain_bits_per_target": -0.07035279686626507,
+                  "targets": 57
+                }
+              },
+              "status": "scored",
+              "targets": 1879,
+              "unknown_initial_targets": 1
+            },
+            "2": {
+              "baseline_bits_per_target": 3.2122098453944092,
+              "conditional_bits_per_target": 3.1993240543949497,
+              "gain_bits_per_target": 0.01288579099945976,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": 0.2000710173304423,
+                  "targets": 6
+                },
+                "106": {
+                  "gain_bits_per_target": -0.007716585193324666,
+                  "targets": 75
+                },
+                "11": {
+                  "gain_bits_per_target": -0.05149172860498723,
+                  "targets": 10
+                },
+                "17": {
+                  "gain_bits_per_target": -0.055687414562715996,
+                  "targets": 23
+                },
+                "25": {
+                  "gain_bits_per_target": -0.18293254699111947,
+                  "targets": 3
+                },
+                "3": {
+                  "gain_bits_per_target": -0.22516868076484675,
+                  "targets": 4
+                },
+                "57": {
+                  "gain_bits_per_target": 0.17454565281124257,
+                  "targets": 16
+                },
+                "58": {
+                  "gain_bits_per_target": -0.07700814430221475,
+                  "targets": 49
+                },
+                "75": {
+                  "gain_bits_per_target": 0.4500776633548407,
+                  "targets": 4
+                },
+                "77": {
+                  "gain_bits_per_target": 0.44338601263505095,
+                  "targets": 10
+                },
+                "85": {
+                  "gain_bits_per_target": 0.007090934358813521,
+                  "targets": 23
+                },
+                "93": {
+                  "gain_bits_per_target": 0.020199947292860735,
+                  "targets": 11
+                }
+              },
+              "status": "scored",
+              "targets": 234,
+              "unknown_initial_targets": 1
+            }
+          },
+          "full_test_score": {
+            "baseline_bits_per_target": 3.0792032054683527,
+            "conditional_bits_per_target": 2.890327176907378,
+            "gain_bits_per_target": 0.18887602856097443,
+            "groups": {
+              "10": {
+                "gain_bits_per_target": 0.04000403259246617,
+                "targets": 141
+              },
+              "106": {
+                "gain_bits_per_target": 0.24119029617515617,
+                "targets": 1664
+              },
+              "11": {
+                "gain_bits_per_target": -0.035562113407499256,
+                "targets": 141
+              },
+              "17": {
+                "gain_bits_per_target": 0.02368085321570186,
+                "targets": 291
+              },
+              "25": {
+                "gain_bits_per_target": 0.0015128077592196586,
+                "targets": 113
+              },
+              "28": {
+                "gain_bits_per_target": 0.039577299703872526,
+                "targets": 70
+              },
+              "3": {
+                "gain_bits_per_target": 0.04100358256178992,
+                "targets": 238
+              },
+              "57": {
+                "gain_bits_per_target": 0.10356722967096889,
+                "targets": 386
+              },
+              "58": {
+                "gain_bits_per_target": 0.10575168076454394,
+                "targets": 652
+              },
+              "75": {
+                "gain_bits_per_target": 0.19964795433259153,
+                "targets": 917
+              },
+              "77": {
+                "gain_bits_per_target": 0.3262570982893402,
+                "targets": 1036
+              },
+              "85": {
+                "gain_bits_per_target": 0.22284617213334182,
+                "targets": 1395
+              },
+              "93": {
+                "gain_bits_per_target": 0.013092830556549596,
+                "targets": 182
+              }
+            },
+            "status": "scored",
+            "targets": 7226,
+            "unknown_initial_targets": 2
+          },
+          "full_test_verification": {
+            "max_abs_error": 0.0,
+            "status": "matched",
+            "targets": 7226
+          },
+          "ordered_pair_train_coverage": {
+            "seen": {
+              "baseline_bits_per_target": 2.937599730555204,
+              "conditional_bits_per_target": 2.4876051810616184,
+              "gain_bits_per_target": 0.4499945494935857,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": 0.2498200725603641,
+                  "targets": 32
+                },
+                "106": {
+                  "gain_bits_per_target": 0.5864560065862691,
+                  "targets": 200
+                },
+                "11": {
+                  "gain_bits_per_target": 0.2759676094337235,
+                  "targets": 19
+                },
+                "17": {
+                  "gain_bits_per_target": 0.2697949439905381,
+                  "targets": 33
+                },
+                "25": {
+                  "gain_bits_per_target": 0.166075443336164,
+                  "targets": 19
+                },
+                "28": {
+                  "gain_bits_per_target": 0.19224791709533467,
+                  "targets": 11
+                },
+                "3": {
+                  "gain_bits_per_target": 0.39729321274986307,
+                  "targets": 17
+                },
+                "57": {
+                  "gain_bits_per_target": 0.43394315948157997,
+                  "targets": 38
+                },
+                "58": {
+                  "gain_bits_per_target": 0.503989934658654,
+                  "targets": 57
+                },
+                "75": {
+                  "gain_bits_per_target": 0.31515124472324346,
+                  "targets": 306
+                },
+                "77": {
+                  "gain_bits_per_target": 0.45681311283840687,
+                  "targets": 304
+                },
+                "85": {
+                  "gain_bits_per_target": 0.6455723452946547,
+                  "targets": 188
+                },
+                "93": {
+                  "gain_bits_per_target": 0.25343975275701125,
+                  "targets": 13
+                }
+              },
+              "status": "scored",
+              "targets": 1237,
+              "unknown_initial_targets": 0
+            },
+            "unseen": {
+              "baseline_bits_per_target": 3.1084507423639223,
+              "conditional_bits_per_target": 2.973507525690348,
+              "gain_bits_per_target": 0.1349432166735743,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": -0.021593336939393908,
+                  "targets": 109
+                },
+                "106": {
+                  "gain_bits_per_target": 0.19402284939768127,
+                  "targets": 1464
+                },
+                "11": {
+                  "gain_bits_per_target": -0.08407903745654209,
+                  "targets": 122
+                },
+                "17": {
+                  "gain_bits_per_target": -0.007798856069451339,
+                  "targets": 258
+                },
+                "25": {
+                  "gain_bits_per_target": -0.03174985262335382,
+                  "targets": 94
+                },
+                "28": {
+                  "gain_bits_per_target": 0.011113286291905004,
+                  "targets": 59
+                },
+                "3": {
+                  "gain_bits_per_target": 0.013596687931937813,
+                  "targets": 221
+                },
+                "57": {
+                  "gain_bits_per_target": 0.0674916971054421,
+                  "targets": 348
+                },
+                "58": {
+                  "gain_bits_per_target": 0.06760112534947813,
+                  "targets": 595
+                },
+                "75": {
+                  "gain_bits_per_target": 0.14180178925969586,
+                  "targets": 611
+                },
+                "77": {
+                  "gain_bits_per_target": 0.27203711410502834,
+                  "targets": 732
+                },
+                "85": {
+                  "gain_bits_per_target": 0.15700315593257433,
+                  "targets": 1207
+                },
+                "93": {
+                  "gain_bits_per_target": -0.0053953942281013845,
+                  "targets": 169
+                }
+              },
+              "status": "scored",
+              "targets": 5989,
+              "unknown_initial_targets": 2
+            }
+          },
+          "primary_novelty_subset": {
+            "baseline_bits_per_target": 3.2122098453944092,
+            "conditional_bits_per_target": 3.1993240543949497,
+            "gain_bits_per_target": 0.01288579099945976,
+            "groups": {
+              "10": {
+                "gain_bits_per_target": 0.2000710173304423,
+                "targets": 6
+              },
+              "106": {
+                "gain_bits_per_target": -0.007716585193324666,
+                "targets": 75
+              },
+              "11": {
+                "gain_bits_per_target": -0.05149172860498723,
+                "targets": 10
+              },
+              "17": {
+                "gain_bits_per_target": -0.055687414562715996,
+                "targets": 23
+              },
+              "25": {
+                "gain_bits_per_target": -0.18293254699111947,
+                "targets": 3
+              },
+              "3": {
+                "gain_bits_per_target": -0.22516868076484675,
+                "targets": 4
+              },
+              "57": {
+                "gain_bits_per_target": 0.17454565281124257,
+                "targets": 16
+              },
+              "58": {
+                "gain_bits_per_target": -0.07700814430221475,
+                "targets": 49
+              },
+              "75": {
+                "gain_bits_per_target": 0.4500776633548407,
+                "targets": 4
+              },
+              "77": {
+                "gain_bits_per_target": 0.44338601263505095,
+                "targets": 10
+              },
+              "85": {
+                "gain_bits_per_target": 0.007090934358813521,
+                "targets": 23
+              },
+              "93": {
+                "gain_bits_per_target": 0.020199947292860735,
+                "targets": 11
+              }
+            },
+            "status": "scored",
+            "targets": 234,
+            "unknown_initial_targets": 1
+          },
+          "test_line_count": 1002,
+          "train_line_count": 2062,
+          "training_input_sha256": "bfa5ef3408f3611fd51adb74c3a4731f7b8870456f988f3d19ee4d74a500035a"
+        },
+        "visual": {
+          "coverage_categories": {
+            "0": {
+              "baseline_bits_per_target": 3.2272478861870773,
+              "conditional_bits_per_target": 2.9982972032951065,
+              "gain_bits_per_target": 0.2289506828919707,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": 0.178210846163158,
+                  "targets": 107
+                },
+                "106": {
+                  "gain_bits_per_target": 0.28008417412611136,
+                  "targets": 1097
+                },
+                "11": {
+                  "gain_bits_per_target": 0.016932826076918088,
+                  "targets": 93
+                },
+                "17": {
+                  "gain_bits_per_target": 0.04564478367000086,
+                  "targets": 179
+                },
+                "25": {
+                  "gain_bits_per_target": 0.0295894580500316,
+                  "targets": 71
+                },
+                "28": {
+                  "gain_bits_per_target": 0.1154231744194722,
+                  "targets": 52
+                },
+                "3": {
+                  "gain_bits_per_target": 0.08111266034393415,
+                  "targets": 149
+                },
+                "57": {
+                  "gain_bits_per_target": 0.12261018447680502,
+                  "targets": 232
+                },
+                "58": {
+                  "gain_bits_per_target": 0.1634538564260885,
+                  "targets": 368
+                },
+                "75": {
+                  "gain_bits_per_target": 0.22719238047188223,
+                  "targets": 797
+                },
+                "77": {
+                  "gain_bits_per_target": 0.3447972222001641,
+                  "targets": 837
+                },
+                "85": {
+                  "gain_bits_per_target": 0.24945133095475136,
+                  "targets": 1017
+                },
+                "93": {
+                  "gain_bits_per_target": 0.021174931790526125,
+                  "targets": 114
+                }
+              },
+              "status": "scored",
+              "targets": 5113,
+              "unknown_initial_targets": 0
+            },
+            "1": {
+              "baseline_bits_per_target": 3.509295174964364,
+              "conditional_bits_per_target": 3.4254358398897495,
+              "gain_bits_per_target": 0.08385933507461431,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": -0.35577880546967017,
+                  "targets": 28
+                },
+                "106": {
+                  "gain_bits_per_target": 0.19045571544809745,
+                  "targets": 492
+                },
+                "11": {
+                  "gain_bits_per_target": -0.15574054005647342,
+                  "targets": 38
+                },
+                "17": {
+                  "gain_bits_per_target": -0.14862446465794205,
+                  "targets": 89
+                },
+                "25": {
+                  "gain_bits_per_target": -0.2406089190647345,
+                  "targets": 39
+                },
+                "28": {
+                  "gain_bits_per_target": -0.14273301545649827,
+                  "targets": 18
+                },
+                "3": {
+                  "gain_bits_per_target": -0.30256842769123293,
+                  "targets": 85
+                },
+                "57": {
+                  "gain_bits_per_target": -0.005004579099560886,
+                  "targets": 138
+                },
+                "58": {
+                  "gain_bits_per_target": 0.05231569424705277,
+                  "targets": 235
+                },
+                "75": {
+                  "gain_bits_per_target": 0.0981360750439236,
+                  "targets": 116
+                },
+                "77": {
+                  "gain_bits_per_target": 0.2849340146122012,
+                  "targets": 189
+                },
+                "85": {
+                  "gain_bits_per_target": 0.1696926160414657,
+                  "targets": 355
+                },
+                "93": {
+                  "gain_bits_per_target": -0.1128857348026819,
+                  "targets": 57
+                }
+              },
+              "status": "scored",
+              "targets": 1879,
+              "unknown_initial_targets": 1
+            },
+            "2": {
+              "baseline_bits_per_target": 3.525628641720416,
+              "conditional_bits_per_target": 3.5715616985121574,
+              "gain_bits_per_target": -0.04593305679174152,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": 0.20843520419060427,
+                  "targets": 6
+                },
+                "106": {
+                  "gain_bits_per_target": -0.06622634567404476,
+                  "targets": 75
+                },
+                "11": {
+                  "gain_bits_per_target": 0.07351189891352376,
+                  "targets": 10
+                },
+                "17": {
+                  "gain_bits_per_target": -0.10911965596090836,
+                  "targets": 23
+                },
+                "25": {
+                  "gain_bits_per_target": -0.1811451699682133,
+                  "targets": 3
+                },
+                "3": {
+                  "gain_bits_per_target": -0.45709599235916754,
+                  "targets": 4
+                },
+                "57": {
+                  "gain_bits_per_target": 0.20081874259147492,
+                  "targets": 16
+                },
+                "58": {
+                  "gain_bits_per_target": -0.21583754999832186,
+                  "targets": 49
+                },
+                "75": {
+                  "gain_bits_per_target": 0.45023117156662895,
+                  "targets": 4
+                },
+                "77": {
+                  "gain_bits_per_target": 0.3315681886691749,
+                  "targets": 10
+                },
+                "85": {
+                  "gain_bits_per_target": 0.022389452343793314,
+                  "targets": 23
+                },
+                "93": {
+                  "gain_bits_per_target": -0.10492199272382795,
+                  "targets": 11
+                }
+              },
+              "status": "scored",
+              "targets": 234,
+              "unknown_initial_targets": 1
+            }
+          },
+          "full_test_score": {
+            "baseline_bits_per_target": 3.310252031275276,
+            "conditional_bits_per_target": 3.1279314947484864,
+            "gain_bits_per_target": 0.18232053652678934,
+            "groups": {
+              "10": {
+                "gain_bits_per_target": 0.07345649086135297,
+                "targets": 141
+              },
+              "106": {
+                "gain_bits_per_target": 0.23797450426157185,
+                "targets": 1664
+              },
+              "11": {
+                "gain_bits_per_target": -0.025590558211754648,
+                "targets": 141
+              },
+              "17": {
+                "gain_bits_per_target": -0.026003138023118783,
+                "targets": 291
+              },
+              "25": {
+                "gain_bits_per_target": -0.06925957373342514,
+                "targets": 113
+              },
+              "28": {
+                "gain_bits_per_target": 0.04904015416565122,
+                "targets": 70
+              },
+              "3": {
+                "gain_bits_per_target": -0.0649618232434674,
+                "targets": 238
+              },
+              "57": {
+                "gain_bits_per_target": 0.08022805897498182,
+                "targets": 386
+              },
+              "58": {
+                "gain_bits_per_target": 0.09489136098610508,
+                "targets": 652
+              },
+              "75": {
+                "gain_bits_per_target": 0.211839734599184,
+                "targets": 917
+              },
+              "77": {
+                "gain_bits_per_target": 0.33374853825283307,
+                "targets": 1036
+              },
+              "85": {
+                "gain_bits_per_target": 0.2254106377631615,
+                "targets": 1395
+              },
+              "93": {
+                "gain_bits_per_target": -0.02843234384392797,
+                "targets": 182
+              }
+            },
+            "status": "scored",
+            "targets": 7226,
+            "unknown_initial_targets": 2
+          },
+          "full_test_verification": {
+            "max_abs_error": 0.0,
+            "status": "matched",
+            "targets": 7226
+          },
+          "ordered_pair_train_coverage": {
+            "seen": {
+              "baseline_bits_per_target": 3.0953786704831776,
+              "conditional_bits_per_target": 2.640198392698527,
+              "gain_bits_per_target": 0.4551802777846511,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": 0.263862493543932,
+                  "targets": 32
+                },
+                "106": {
+                  "gain_bits_per_target": 0.5863044396318031,
+                  "targets": 200
+                },
+                "11": {
+                  "gain_bits_per_target": 0.30246529286276763,
+                  "targets": 19
+                },
+                "17": {
+                  "gain_bits_per_target": 0.25242613125358043,
+                  "targets": 33
+                },
+                "25": {
+                  "gain_bits_per_target": 0.1000189179508691,
+                  "targets": 19
+                },
+                "28": {
+                  "gain_bits_per_target": 0.1779182376416105,
+                  "targets": 11
+                },
+                "3": {
+                  "gain_bits_per_target": 0.36959278219686265,
+                  "targets": 17
+                },
+                "57": {
+                  "gain_bits_per_target": 0.4438379285301254,
+                  "targets": 38
+                },
+                "58": {
+                  "gain_bits_per_target": 0.5138947540687906,
+                  "targets": 57
+                },
+                "75": {
+                  "gain_bits_per_target": 0.32853563401710245,
+                  "targets": 306
+                },
+                "77": {
+                  "gain_bits_per_target": 0.4668447196878354,
+                  "targets": 304
+                },
+                "85": {
+                  "gain_bits_per_target": 0.6471127294778093,
+                  "targets": 188
+                },
+                "93": {
+                  "gain_bits_per_target": 0.22064164995278027,
+                  "targets": 13
+                }
+              },
+              "status": "scored",
+              "targets": 1237,
+              "unknown_initial_targets": 0
+            },
+            "unseen": {
+              "baseline_bits_per_target": 3.354633121156696,
+              "conditional_bits_per_target": 3.2286704907805124,
+              "gain_bits_per_target": 0.12596263037618374,
+              "groups": {
+                "10": {
+                  "gain_bits_per_target": 0.017557480899494788,
+                  "targets": 109
+                },
+                "106": {
+                  "gain_bits_per_target": 0.19038844751700404,
+                  "targets": 1464
+                },
+                "11": {
+                  "gain_bits_per_target": -0.07668122354303271,
+                  "targets": 122
+                },
+                "17": {
+                  "gain_bits_per_target": -0.061616184093394206,
+                  "targets": 258
+                },
+                "25": {
+                  "gain_bits_per_target": -0.1034754390738679,
+                  "targets": 94
+                },
+                "28": {
+                  "gain_bits_per_target": 0.025012036907421646,
+                  "targets": 59
+                },
+                "3": {
+                  "gain_bits_per_target": -0.09838910058503152,
+                  "targets": 221
+                },
+                "57": {
+                  "gain_bits_per_target": 0.04052353298907514,
+                  "targets": 348
+                },
+                "58": {
+                  "gain_bits_per_target": 0.05475154013616672,
+                  "targets": 595
+                },
+                "75": {
+                  "gain_bits_per_target": 0.15339628906418717,
+                  "targets": 611
+                },
+                "77": {
+                  "gain_bits_per_target": 0.27847362137272297,
+                  "targets": 732
+                },
+                "85": {
+                  "gain_bits_per_target": 0.15972713052011753,
+                  "targets": 1207
+                },
+                "93": {
+                  "gain_bits_per_target": -0.04759188182829052,
+                  "targets": 169
+                }
+              },
+              "status": "scored",
+              "targets": 5989,
+              "unknown_initial_targets": 2
+            }
+          },
+          "primary_novelty_subset": {
+            "baseline_bits_per_target": 3.525628641720416,
+            "conditional_bits_per_target": 3.5715616985121574,
+            "gain_bits_per_target": -0.04593305679174152,
+            "groups": {
+              "10": {
+                "gain_bits_per_target": 0.20843520419060427,
+                "targets": 6
+              },
+              "106": {
+                "gain_bits_per_target": -0.06622634567404476,
+                "targets": 75
+              },
+              "11": {
+                "gain_bits_per_target": 0.07351189891352376,
+                "targets": 10
+              },
+              "17": {
+                "gain_bits_per_target": -0.10911965596090836,
+                "targets": 23
+              },
+              "25": {
+                "gain_bits_per_target": -0.1811451699682133,
+                "targets": 3
+              },
+              "3": {
+                "gain_bits_per_target": -0.45709599235916754,
+                "targets": 4
+              },
+              "57": {
+                "gain_bits_per_target": 0.20081874259147492,
+                "targets": 16
+              },
+              "58": {
+                "gain_bits_per_target": -0.21583754999832186,
+                "targets": 49
+              },
+              "75": {
+                "gain_bits_per_target": 0.45023117156662895,
+                "targets": 4
+              },
+              "77": {
+                "gain_bits_per_target": 0.3315681886691749,
+                "targets": 10
+              },
+              "85": {
+                "gain_bits_per_target": 0.022389452343793314,
+                "targets": 23
+              },
+              "93": {
+                "gain_bits_per_target": -0.10492199272382795,
+                "targets": 11
+              }
+            },
+            "status": "scored",
+            "targets": 234,
+            "unknown_initial_targets": 1
+          },
+          "test_line_count": 1002,
+          "train_line_count": 2062,
+          "training_input_sha256": "646f173870625c4db28766575c9c17b9ef02d034d56bc3d9d01ead80efbf86ff"
+        }
+      },
+      "script_sha256": "b9a30c2357d7a69aa3d4d3f40fb091ee83e69e9d0c80505f4f1d4354c8c42481",
+      "selection": "Nested after the overall result; descriptive only, with no causal inference.",
+      "source": "IT",
+      "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "spacing": "split",
+      "train_ordered_pair_type_count": 13591,
+      "train_word_type_count": 4384,
+      "validation_used": false
+    }
+  ]
+}

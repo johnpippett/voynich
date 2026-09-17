@@ -6,6 +6,13 @@ The project has no validated key, plaintext language, or translation.
 
 ## Current findings and stopped branches
 
+The [cross-boundary test](reports/BOUNDARY_PREDICTION.md) finds transferable prediction between recorded word parts.
+A preceding final unit reduces the next initial-unit loss by about 0.18–0.20 bits in the visual-unit track.
+An excess remains under matched folio, position, and word-length controls in both transcriptions.
+The effect varies across page groups. It does not establish linguistic spaces, sounds, or meaning.
+The main unitization has no gain on the small subset where both word types were absent from training.
+This is a constraint for future models, not a translation.
+
 The [local word-memory test](reports/LOCAL_MEMORY.md) found no useful prediction gain from the observed word order.
 Both transcriptions selected zero weight for exact repetition.
 The edit model did not retain a useful advantage under the two word-order controls.
