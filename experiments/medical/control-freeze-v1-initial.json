@@ -12,7 +12,7 @@
   "files": [
     {
       "path": "docs/plans/celsus-model-run-v1.md",
-      "sha256": "672b59a934f18b04624e665af06e5ed19d410d7d37b2f537454b4b53e8e3afe1"
+      "sha256": "c7d62e3ec39fa568d8e216b3965d773ef1d7f3c020e8d0e663fb14fd8610a91c"
     },
     {
       "path": "docs/plans/celsus-reference-control-v1.md",
@@ -32,11 +32,11 @@
     },
     {
       "path": "experiments/medical/run_control.py",
-      "sha256": "9f4671c1eebcdbd3a85efaeb3b6bd0b4231579212e381932c4420e95ebbefd7e"
+      "sha256": "bf60c09c96580d0be130d7923294d4b83a86fca45bf86867f9bcda1bb152ff63"
     },
     {
       "path": "experiments/medical/test_run_control.py",
-      "sha256": "9da6de59ca0cd76310dd884cf9a45cac9f799398c19ba9e3c76e453b3c2759c1"
+      "sha256": "195d295cd4ca0446baa4cde9d089a972ee88a53cedaec7ba187bafcd574127cf"
     },
     {
       "path": "experiments/medical/partition-freeze-v1.json",

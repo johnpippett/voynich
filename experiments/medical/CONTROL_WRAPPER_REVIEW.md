@@ -7,17 +7,17 @@ plan. It does not parse source data, encrypt text, or run the model.
 
 Reviewed files and hashes:
 
-* `experiments/medical/run_control.py`  
+* `experiments/medical/run_control.py`
   `568211501343e9096248cfb4483ca83120534d3a34cc1174a20a69a1172c36ae`
-* `experiments/medical/test_run_control.py`  
+* `experiments/medical/test_run_control.py`
   `e2bbb4a445d56179f297579f32be0001ce8b3cfd44aca968d4e0a3e0b37fd2d0`
-* `experiments/medical/control_study.py`  
+* `experiments/medical/control_study.py`
   `cb1e3a8eac052903f7f5b4c77668b1a339d362bbe4035134ccdd38d7f11371e6`
-* `experiments/medical/test_control_study.py`  
+* `experiments/medical/test_control_study.py`
   `030d5e07e0d0e0bbe0a2e4956a72a3b24deb08a30ab9125d20128904cdbc7884`
-* `docs/plans/celsus-model-run-v1.md`  
+* `docs/plans/celsus-model-run-v1.md`
   `fd83af0db1f717e56bc335f4b88c67ea2b603ab0e0d956da0d9cc826c4c4bd36`
-* `docs/plans/celsus-reference-control-v1.md`  
+* `docs/plans/celsus-reference-control-v1.md`
   `cccbf455dc8ec98b040beec13786f212d741219e58f68354601eccca18169dbe`
 
 ## Findings
@@ -99,11 +99,11 @@ run was performed.
 
 The following source patch was reviewed after the initial findings:
 
-* `experiments/medical/run_control.py`  
+* `experiments/medical/run_control.py`
   `bf60c09c96580d0be130d7923294d4b83a86fca45bf86867f9bcda1bb152ff63`
-* `experiments/medical/test_run_control.py`  
+* `experiments/medical/test_run_control.py`
   `195d295cd4ca0446baa4cde9d089a972ee88a53cedaec7ba187bafcd574127cf`
-* `docs/plans/celsus-model-run-v1.md`  
+* `docs/plans/celsus-model-run-v1.md`
   `c7d62e3ec39fa568d8e216b3965d773ef1d7f3c020e8d0e663fb14fd8610a91c`
 
 The RSS race is fixed. The monitor rechecks the child state after a missing
@@ -132,3 +132,26 @@ independent outer recomputation.
 The final focused suite ran 23 tests: 7 core tests and 16 wrapper tests. All
 passed with the command above, and both wrapper files passed `py_compile`.
 No source, encryption, or model run was performed.
+
+## Final CLI regression resolution
+
+A follow-up CLI check found that the first no-option fix still bound
+`ALL_OUTPUT_PATHS` after the `__main__` call. A valid-freeze CLI run therefore
+could fail in `preflight_outputs()` before it started the child.
+
+The final source binds `ALL_OUTPUT_PATHS` with the other output constants before
+`main()` runs. The final hashes are:
+
+* `experiments/medical/run_control.py`
+  `9f4671c1eebcdbd3a85efaeb3b6bd0b4231579212e381932c4420e95ebbefd7e`
+* `experiments/medical/test_run_control.py`
+  `9da6de59ca0cd76310dd884cf9a45cac9f799398c19ba9e3c76e453b3c2759c1`
+
+The new subprocess test uses a temporary frozen project and a dummy
+`control_study` that exits with code 2. The wrapper reaches the child, returns
+`input_mismatch`, and writes both public and private receipts with that status.
+It does not use source data or run the model.
+
+The final focused suite ran 24 tests: 7 core tests and 17 wrapper tests. All
+passed, and both wrapper files passed `py_compile`. No remaining finding from
+this bounded wrapper review is open.

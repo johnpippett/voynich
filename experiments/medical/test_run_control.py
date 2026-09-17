@@ -4,7 +4,10 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 from pathlib import Path
+import subprocess
+import sys
 import tempfile
 import unittest
 from unittest import mock
@@ -405,6 +408,68 @@ class RunControlTests(unittest.TestCase):
             status = wrapper.main(["--project-root", str(self.root)])
         self.assertEqual(status, 1)
         self.assertEqual(json.loads(output.getvalue())["reason"], "fixed_command_takes_no_options")
+
+    def test_real_cli_reaches_dummy_child_and_writes_failure_receipts(self) -> None:
+        fixture = self.root / "cli-fixture"
+        source_path = Path(wrapper.__file__)
+        production_outputs = {
+            "cold": "results/celsus-reference-control-v1/model/cold.json",
+            "keys": "results/celsus-reference-control-v1/model/cold.keys.json",
+            "public": "results/celsus-reference-control-v1/model/supervision.json",
+            "private": "results/celsus-reference-control-v1/model/resources.private.json",
+        }
+        for relative in self.old_files:
+            path = fixture / relative
+            path.parent.mkdir(parents=True, exist_ok=True)
+            if relative == Path("experiments/medical/run_control.py"):
+                path.write_bytes(source_path.read_bytes())
+            elif relative == Path("experiments/medical/control_study.py"):
+                path.write_text("raise SystemExit(2)\n", encoding="utf-8")
+            else:
+                path.write_bytes(b"synthetic freeze pin\n")
+        entries = [
+            {
+                "path": relative.as_posix(),
+                "sha256": hashlib.sha256((fixture / relative).read_bytes()).hexdigest(),
+            }
+            for relative in self.old_files
+        ]
+        manifest = {
+            "schema_version": 1,
+            "protocol": wrapper.PROTOCOL,
+            "command": list(wrapper.EXPECTED_COMMAND),
+            "child_command": list(wrapper.EXPECTED_CHILD_COMMAND),
+            "parameters": dict(wrapper.EXPECTED_PARAMETERS),
+            "resources": dict(wrapper.EXPECTED_RESOURCES),
+            "runtime": {
+                "freeze_python": "Python 3.11",
+                "implementation": "CPython",
+                "platform": "Linux",
+            },
+            "outputs": production_outputs,
+            "files": entries,
+        }
+        manifest_path = fixture / wrapper.FREEZE_MANIFEST_PATH
+        manifest_path.parent.mkdir(parents=True, exist_ok=True)
+        manifest_path.write_bytes(_bytes(manifest))
+        environment = dict(os.environ)
+        environment.pop("PYTHONPATH", None)
+        completed = subprocess.run(
+            [sys.executable, "-m", "experiments.medical.run_control"],
+            cwd=fixture,
+            env=environment,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        self.assertEqual(completed.returncode, 1, completed.stderr)
+        self.assertEqual(json.loads(completed.stdout)["status"], "input_mismatch")
+        public_path = fixture / production_outputs["public"]
+        private_path = fixture / production_outputs["private"]
+        self.assertTrue(public_path.is_file())
+        self.assertTrue(private_path.is_file())
+        self.assertEqual(json.loads(public_path.read_text())["status"], "input_mismatch")
+        self.assertEqual(json.loads(private_path.read_text())["status"], "input_mismatch")
 
 
 if __name__ == "__main__":

@@ -44,6 +44,8 @@ EXPECTED_RESOURCES = {
     "as_limit_bytes": None, "child_cpu_workers": 1, "retry_count": 0,
 }
 OUTPUT_PATHS = (COLD_PATH, KEY_PATH, PUBLIC_RECEIPT_PATH, PRIVATE_RECEIPT_PATH)
+# Keep the explicit name for callers that inspect all fixed outputs.
+ALL_OUTPUT_PATHS = OUTPUT_PATHS
 
 # The external manifest excludes itself. The list covers the child imports,
 # partition freeze, partition outputs, comparator records, and fixed plans.
@@ -492,7 +494,6 @@ if __name__ == "__main__":
     raise SystemExit(main())
 
 
-ALL_OUTPUT_PATHS = OUTPUT_PATHS
 verify_freeze_manifest = verify_control_freeze
 validate_model_outputs = validate_child_outputs
 __all__ = ["ALL_OUTPUT_PATHS", "COLD_PATH", "EXPECTED_CHILD_COMMAND", "EXPECTED_CODE_PATHS", "EXPECTED_COMMAND", "EXPECTED_PARAMETERS", "EXPECTED_RESOURCES", "FREEZE_FILES", "FREEZE_MANIFEST_PATH", "FreezeFailure", "KEY_PATH", "MODEL_ROOT", "OUTPUT_PATHS", "PARTITION_MANIFEST_PATH", "PARTITIONS_PATH", "PARAGRAPHS_PATH", "PRIVATE_RECEIPT_PATH", "PROTOCOL", "PUBLIC_RECEIPT_PATH", "ResourceFailure", "RESULTS_ROOT", "canonical_json_bytes", "control_status", "ensure_linux_rss_support", "launch_child", "main", "monitor_process", "preflight_outputs", "run_control", "sample_rss_bytes", "sha256_bytes", "sha256_path", "validate_child_outputs", "validate_model_outputs", "verify_control_freeze", "verify_freeze_manifest"]

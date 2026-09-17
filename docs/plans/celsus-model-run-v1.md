@@ -107,3 +107,20 @@ and its two private outputs, the partition freeze and its pinned files, the
 homophonic runner and its imported solver dependencies, and the frozen
 comparator records. A changed or missing byte stops the run before child
 launch.
+
+## Entry-point correction after attempt 1
+
+Commit `dc71f118122becccc009f6c8859915e310bc47e2` contains the initial control freeze.
+The first command stopped before child launch because an output-path constant was not yet defined.
+Import-based tests did not expose the command-line execution order.
+
+The correction binds the constant before the entry point.
+A subprocess regression uses the actual wrapper command and a synthetic child.
+It checks that child exit code 2 produces an input-mismatch status and both receipts.
+The test reads no reference text and runs no model.
+
+The initial manifest remains in `experiments/medical/control-freeze-v1-initial.json`.
+Its SHA-256 is `5620f2fc15489d361dcd03d64b9144daa931f85b2abbb90929e33dab7997bf7a`.
+The failed launch record remains in `reports/celsus-model-control-v1/attempt-1/launch.json`.
+Publish the corrected freeze before another command attempt.
+All statistical settings and source partitions remain unchanged.

@@ -1,0 +1,23 @@
+{
+  "attempt": 1,
+  "child_launched": false,
+  "command": [
+    "python",
+    "-m",
+    "experiments.medical.run_control"
+  ],
+  "command_result": {
+    "numeric_outputs_valid": false,
+    "protocol": "celsus-reference-control-v1",
+    "reason": "wrapper_failure",
+    "schema_version": 1,
+    "status": "implementation_failure"
+  },
+  "commit": "dc71f118122becccc009f6c8859915e310bc47e2",
+  "diagnosis": "The CLI used ALL_OUTPUT_PATHS before its assignment. The child did not start.",
+  "exit_code": 1,
+  "freeze_sha256": "5620f2fc15489d361dcd03d64b9144daa931f85b2abbb90929e33dab7997bf7a",
+  "model_outputs_present": false,
+  "protocol": "celsus-reference-control-v1",
+  "schema_version": 1
+}
