@@ -1,0 +1,608 @@
+{
+  "audit": {
+    "add_count": 0,
+    "body_element_count": 5938,
+    "body_tag_counts": {
+      "body": 1,
+      "choice": 446,
+      "corr": 446,
+      "del": 10,
+      "div": 220,
+      "figure": 5,
+      "foreign": 276,
+      "head": 217,
+      "hi": 525,
+      "milestone": 1807,
+      "note": 628,
+      "p": 550,
+      "pb": 361,
+      "sic": 446
+    },
+    "book_count": 8,
+    "book_id_duplicates": {},
+    "book_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "book_ids_complete_1_to_8": true,
+    "chapter_count": 211,
+    "chapter_ids_repeat_across_books": true,
+    "chapter_key_count": 211,
+    "chapter_key_duplicates": {},
+    "chapters_by_book": {
+      "1": 11,
+      "2": 34,
+      "3": 27,
+      "4": 32,
+      "5": 29,
+      "6": 19,
+      "7": 34,
+      "8": 25
+    },
+    "choice_count": 446,
+    "choice_patterns": {
+      "sic,corr": 446
+    },
+    "del_count": 10,
+    "element_count": 5995,
+    "empty_leaf_counts": {
+      "foreign": 14,
+      "milestone": 1807,
+      "pb": 361
+    },
+    "empty_paragraph_count": 0,
+    "foreign_count": 276,
+    "foreign_languages": {
+      "grc": 276
+    },
+    "mixed_content_boundaries": {
+      "choice": {
+        "outside_selected_count": 0,
+        "selected_boundary_classes": {
+          "letter_letter_with_whitespace": 173,
+          "letter_nonletter": 107,
+          "missing_boundary": 23,
+          "nonletter_letter": 118,
+          "nonletter_nonletter": 25
+        },
+        "selected_count": 446,
+        "source_boundary_classes": {
+          "letter_letter_with_whitespace": 173,
+          "letter_nonletter": 107,
+          "missing_boundary": 23,
+          "nonletter_letter": 118,
+          "nonletter_nonletter": 25
+        },
+        "source_count": 446
+      },
+      "del": {
+        "outside_selected_count": 3,
+        "selected_boundary_classes": {
+          "letter_letter_with_whitespace": 6,
+          "letter_nonletter": 1
+        },
+        "selected_count": 7,
+        "source_boundary_classes": {
+          "letter_letter_with_whitespace": 6,
+          "letter_nonletter": 3,
+          "missing_boundary": 1
+        },
+        "source_count": 10
+      },
+      "foreign": {
+        "outside_selected_count": 0,
+        "selected_boundary_classes": {
+          "letter_letter_with_whitespace": 176,
+          "letter_nonletter": 2,
+          "missing_boundary": 21,
+          "nonletter_letter": 73,
+          "nonletter_nonletter": 4
+        },
+        "selected_count": 276,
+        "source_boundary_classes": {
+          "letter_letter_with_whitespace": 176,
+          "letter_nonletter": 2,
+          "missing_boundary": 21,
+          "nonletter_letter": 73,
+          "nonletter_nonletter": 4
+        },
+        "source_count": 276
+      },
+      "milestone": {
+        "outside_selected_count": 3,
+        "selected_boundary_classes": {
+          "letter_letter_with_whitespace": 25,
+          "missing_boundary": 679,
+          "nonletter_letter": 1097,
+          "nonletter_nonletter": 3
+        },
+        "selected_count": 1804,
+        "source_boundary_classes": {
+          "letter_letter_with_whitespace": 25,
+          "missing_boundary": 682,
+          "nonletter_letter": 1097,
+          "nonletter_nonletter": 3
+        },
+        "source_count": 1807
+      },
+      "note": {
+        "outside_selected_count": 2,
+        "selected_boundary_classes": {
+          "letter_letter_with_whitespace": 51,
+          "letter_nonletter": 554,
+          "missing_boundary": 17,
+          "nonletter_letter": 1,
+          "nonletter_nonletter": 3
+        },
+        "selected_count": 626,
+        "source_boundary_classes": {
+          "letter_letter_with_whitespace": 51,
+          "letter_nonletter": 554,
+          "missing_boundary": 18,
+          "nonletter_letter": 1,
+          "nonletter_nonletter": 4
+        },
+        "source_count": 628
+      },
+      "pb": {
+        "outside_selected_count": 53,
+        "selected_boundary_classes": {
+          "letter_letter_with_whitespace": 228,
+          "letter_nonletter": 1,
+          "missing_boundary": 14,
+          "nonletter_letter": 65
+        },
+        "selected_count": 308,
+        "source_boundary_classes": {
+          "letter_letter_with_whitespace": 228,
+          "letter_nonletter": 1,
+          "missing_boundary": 67,
+          "nonletter_letter": 65
+        },
+        "source_count": 361
+      }
+    },
+    "mixed_content_boundary_method": "The scan uses parent text or the immediate previous sibling tail before an element, and that element tail after it. It does not simulate removal of adjacent excluded siblings.",
+    "note_count": 628,
+    "outside_selected_relevant_tag_counts": {
+      "add": 0,
+      "choice": 0,
+      "del": 3,
+      "figure": 1,
+      "foreign": 0,
+      "head": 213,
+      "hi": 0,
+      "milestone": 3,
+      "note": 2,
+      "pb": 53
+    },
+    "paragraph_count": 550,
+    "paragraph_id_count": 0,
+    "paragraphs_by_book": {
+      "1": 28,
+      "2": 45,
+      "3": 45,
+      "4": 35,
+      "5": 204,
+      "6": 80,
+      "7": 74,
+      "8": 39
+    },
+    "projection_diagnostics": {
+      "excluded_ancestor_tags": [
+        "head",
+        "note",
+        "del",
+        "figure",
+        "foreign",
+        "sic"
+      ],
+      "selected_paragraph_subtree": {
+        "ancestor_exclusion_counts": {
+          "add": {
+            "excluded_ancestor_paths": {},
+            "total_count": 0,
+            "with_any_excluded_ancestor": 0,
+            "without_excluded_ancestor": 0
+          },
+          "choice": {
+            "excluded_ancestor_paths": {},
+            "total_count": 446,
+            "with_any_excluded_ancestor": 0,
+            "without_excluded_ancestor": 446
+          },
+          "corr": {
+            "excluded_ancestor_paths": {},
+            "total_count": 446,
+            "with_any_excluded_ancestor": 0,
+            "without_excluded_ancestor": 446
+          },
+          "del": {
+            "excluded_ancestor_paths": {},
+            "total_count": 7,
+            "with_any_excluded_ancestor": 0,
+            "without_excluded_ancestor": 7
+          },
+          "figure": {
+            "excluded_ancestor_paths": {
+              "note": 4
+            },
+            "total_count": 4,
+            "with_any_excluded_ancestor": 4,
+            "without_excluded_ancestor": 0
+          },
+          "foreign": {
+            "excluded_ancestor_paths": {
+              "note": 8
+            },
+            "total_count": 276,
+            "with_any_excluded_ancestor": 8,
+            "without_excluded_ancestor": 268
+          },
+          "head": {
+            "excluded_ancestor_paths": {
+              "figure>note": 4
+            },
+            "total_count": 4,
+            "with_any_excluded_ancestor": 4,
+            "without_excluded_ancestor": 0
+          },
+          "hi": {
+            "excluded_ancestor_paths": {
+              "note": 503,
+              "note>note": 2
+            },
+            "total_count": 525,
+            "with_any_excluded_ancestor": 505,
+            "without_excluded_ancestor": 20
+          },
+          "milestone": {
+            "excluded_ancestor_paths": {
+              "note": 4
+            },
+            "total_count": 1804,
+            "with_any_excluded_ancestor": 4,
+            "without_excluded_ancestor": 1800
+          },
+          "note": {
+            "excluded_ancestor_paths": {
+              "note": 1
+            },
+            "total_count": 626,
+            "with_any_excluded_ancestor": 1,
+            "without_excluded_ancestor": 625
+          },
+          "pb": {
+            "excluded_ancestor_paths": {
+              "note": 1
+            },
+            "total_count": 308,
+            "with_any_excluded_ancestor": 1,
+            "without_excluded_ancestor": 307
+          },
+          "sic": {
+            "excluded_ancestor_paths": {},
+            "total_count": 446,
+            "with_any_excluded_ancestor": 0,
+            "without_excluded_ancestor": 446
+          }
+        },
+        "direct_drop_candidate_counts": {
+          "del": 7,
+          "figure": 0,
+          "foreign": 268,
+          "head": 0,
+          "milestone": 1800,
+          "note": 625,
+          "pb": 307,
+          "sic": 446
+        },
+        "retained_candidate_counts": {
+          "choice": 446,
+          "corr": 446,
+          "hi": 20
+        },
+        "scope": "selected paragraph subtree"
+      },
+      "source_body": {
+        "ancestor_exclusion_counts": {
+          "add": {
+            "excluded_ancestor_paths": {},
+            "total_count": 0,
+            "with_any_excluded_ancestor": 0,
+            "without_excluded_ancestor": 0
+          },
+          "choice": {
+            "excluded_ancestor_paths": {},
+            "total_count": 446,
+            "with_any_excluded_ancestor": 0,
+            "without_excluded_ancestor": 446
+          },
+          "corr": {
+            "excluded_ancestor_paths": {},
+            "total_count": 446,
+            "with_any_excluded_ancestor": 0,
+            "without_excluded_ancestor": 446
+          },
+          "del": {
+            "excluded_ancestor_paths": {
+              "head": 3
+            },
+            "total_count": 10,
+            "with_any_excluded_ancestor": 3,
+            "without_excluded_ancestor": 7
+          },
+          "figure": {
+            "excluded_ancestor_paths": {
+              "note": 4
+            },
+            "total_count": 5,
+            "with_any_excluded_ancestor": 4,
+            "without_excluded_ancestor": 1
+          },
+          "foreign": {
+            "excluded_ancestor_paths": {
+              "note": 8
+            },
+            "total_count": 276,
+            "with_any_excluded_ancestor": 8,
+            "without_excluded_ancestor": 268
+          },
+          "head": {
+            "excluded_ancestor_paths": {
+              "figure": 1,
+              "figure>note": 4
+            },
+            "total_count": 217,
+            "with_any_excluded_ancestor": 5,
+            "without_excluded_ancestor": 212
+          },
+          "hi": {
+            "excluded_ancestor_paths": {
+              "note": 503,
+              "note>note": 2
+            },
+            "total_count": 525,
+            "with_any_excluded_ancestor": 505,
+            "without_excluded_ancestor": 20
+          },
+          "milestone": {
+            "excluded_ancestor_paths": {
+              "note": 4
+            },
+            "total_count": 1807,
+            "with_any_excluded_ancestor": 4,
+            "without_excluded_ancestor": 1803
+          },
+          "note": {
+            "excluded_ancestor_paths": {
+              "head": 2,
+              "note": 1
+            },
+            "total_count": 628,
+            "with_any_excluded_ancestor": 3,
+            "without_excluded_ancestor": 625
+          },
+          "pb": {
+            "excluded_ancestor_paths": {
+              "note": 1
+            },
+            "total_count": 361,
+            "with_any_excluded_ancestor": 1,
+            "without_excluded_ancestor": 360
+          },
+          "sic": {
+            "excluded_ancestor_paths": {},
+            "total_count": 446,
+            "with_any_excluded_ancestor": 0,
+            "without_excluded_ancestor": 446
+          }
+        },
+        "direct_drop_candidate_counts": {
+          "del": 7,
+          "figure": 1,
+          "foreign": 268,
+          "head": 212,
+          "milestone": 1803,
+          "note": 625,
+          "pb": 360,
+          "sic": 446
+        },
+        "retained_candidate_counts": {
+          "choice": 446,
+          "corr": 446,
+          "hi": 20
+        },
+        "scope": "source body"
+      },
+      "status": "diagnostic only; no projection was run"
+    },
+    "schema_validation": "not performed",
+    "selected_projection_coverage": {
+      "all_books_have_prose": true,
+      "all_chapters_have_prose": true,
+      "chapter_key_count": 211,
+      "chapter_key_duplicates": {},
+      "chapters_with_paragraphs": 211,
+      "paragraphs_outside_book_chapter": 0,
+      "selected_book_count": 8,
+      "selected_chapter_count": 211,
+      "selected_node_counts": {
+        "choice": 446,
+        "corr": 446,
+        "del": 7,
+        "figure": 4,
+        "foreign": 276,
+        "head": 4,
+        "hi": 525,
+        "milestone": 1804,
+        "note": 626,
+        "pb": 308,
+        "sic": 446
+      },
+      "selected_paragraph_count": 550
+    },
+    "selected_relevant_tag_counts": {
+      "add": 0,
+      "choice": 446,
+      "del": 7,
+      "figure": 4,
+      "foreign": 276,
+      "head": 4,
+      "hi": 525,
+      "milestone": 1804,
+      "note": 626,
+      "pb": 308
+    },
+    "source_relevant_tag_counts": {
+      "add": 0,
+      "choice": 446,
+      "del": 10,
+      "figure": 5,
+      "foreign": 276,
+      "head": 217,
+      "hi": 525,
+      "milestone": 1807,
+      "note": 628,
+      "pb": 361
+    },
+    "well_formed": true,
+    "xml_id_count": 1,
+    "xml_id_duplicates": {}
+  },
+  "checks": {
+    "all_book_ids_1_to_8": true,
+    "all_books_have_prose": true,
+    "all_chapter_keys_unique": true,
+    "all_chapters_have_prose": true,
+    "all_file_digests_match_pins": true,
+    "all_selected_chapter_keys_unique": true,
+    "choice_pattern_is_sic_corr": true,
+    "foreign_text_is_greek": true,
+    "no_empty_paragraphs": true,
+    "xml_well_formed": true
+  },
+  "evidence_urls": {
+    "commit": "https://github.com/PerseusDL/canonical-latinLit/commit/ae0fe427f56d7652efc3090af74a2663a4cbed60",
+    "dll_author": "https://catalog.digitallatin.org/dll-author/a5349",
+    "dll_work": "https://catalog.digitallatin.org/dll-work/w2724",
+    "repository_license": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/ae0fe427f56d7652efc3090af74a2663a4cbed60/license.md",
+    "repository_readme": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/ae0fe427f56d7652efc3090af74a2663a4cbed60/README.md",
+    "scaife_edition": "https://atlas.perseus.tufts.edu/library/urn:cts:latinLit:phi0836.phi002.perseus-lat5/"
+  },
+  "files": [
+    {
+      "bytes": 893899,
+      "expected_bytes": 893899,
+      "expected_git_blob_sha1": "dead5082d1d181fd8e43dceeed4793f79213831c",
+      "expected_sha256": "a4a5194ba38a7efd5192d20f2a7b696f4fa64105010eb629aa7c35255a935145",
+      "file": "celsus-lat5.xml",
+      "git_blob_sha1": "dead5082d1d181fd8e43dceeed4793f79213831c",
+      "role": "TEI source",
+      "sha256": "a4a5194ba38a7efd5192d20f2a7b696f4fa64105010eb629aa7c35255a935145",
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/ae0fe427f56d7652efc3090af74a2663a4cbed60/data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml",
+      "verified": true
+    },
+    {
+      "bytes": 1694,
+      "expected_bytes": 1694,
+      "expected_git_blob_sha1": "8490f544b0edee9edef9f24e1d9785e9eba6727d",
+      "expected_sha256": "497674650e7a74c9f42257a144583b955c8a8989b958abf7e72b9d51efa5aa1a",
+      "file": "celsus-cts.xml",
+      "git_blob_sha1": "8490f544b0edee9edef9f24e1d9785e9eba6727d",
+      "role": "CTS work metadata",
+      "sha256": "497674650e7a74c9f42257a144583b955c8a8989b958abf7e72b9d51efa5aa1a",
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/ae0fe427f56d7652efc3090af74a2663a4cbed60/data/phi0836/phi002/__cts__.xml",
+      "verified": true
+    },
+    {
+      "bytes": 2334,
+      "expected_bytes": 2334,
+      "expected_git_blob_sha1": "dc327f44bde676e16bb63cd223afa922d00045b5",
+      "expected_sha256": "7ea684aea5b084c38fc919da2adf0df8339490243a43bf744fb8e27384d82623",
+      "file": "canonical-latinLit-README.md",
+      "git_blob_sha1": "dc327f44bde676e16bb63cd223afa922d00045b5",
+      "role": "Repository README",
+      "sha256": "7ea684aea5b084c38fc919da2adf0df8339490243a43bf744fb8e27384d82623",
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/ae0fe427f56d7652efc3090af74a2663a4cbed60/README.md",
+      "verified": true
+    },
+    {
+      "bytes": 18625,
+      "expected_bytes": 18625,
+      "expected_git_blob_sha1": "033217724f8631eeb12987b30d76e8a62f275ceb",
+      "expected_sha256": "ccf0e8ce183761bf82700126cc45a4e907b2cede024e65e3fef5c2338b9b7063",
+      "file": "canonical-latinLit-license.md",
+      "git_blob_sha1": "033217724f8631eeb12987b30d76e8a62f275ceb",
+      "role": "Repository license",
+      "sha256": "ccf0e8ce183761bf82700126cc45a4e907b2cede024e65e3fef5c2338b9b7063",
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/ae0fe427f56d7652efc3090af74a2663a4cbed60/license.md",
+      "verified": true
+    }
+  ],
+  "license_evidence": {
+    "modification_request": "Offer Perseus any modifications",
+    "repository_statement": "CC BY-SA 4.0 unless otherwise indicated",
+    "tei_availability_element_count": 0,
+    "tei_licence_element_count": 0,
+    "tei_rights_element_count": 0
+  },
+  "repository": {
+    "branch": "master",
+    "commit": "ae0fe427f56d7652efc3090af74a2663a4cbed60",
+    "commit_url": "https://github.com/PerseusDL/canonical-latinLit/commit/ae0fe427f56d7652efc3090af74a2663a4cbed60",
+    "url": "https://github.com/PerseusDL/canonical-latinLit"
+  },
+  "schema_version": 1,
+  "source_review_date": "2026-09-17",
+  "tei_header": {
+    "author": [
+      "Celsus"
+    ],
+    "availability_element_count": 0,
+    "editor": [
+      "Charles Victor Daremberg"
+    ],
+    "licence_element_count": 0,
+    "publication_date": [
+      "2009-10-07"
+    ],
+    "publication_place": [
+      "Medford, MA"
+    ],
+    "publication_publisher": [
+      "Trustees of Tufts University"
+    ],
+    "refs_decl_units": [
+      "book",
+      "chapter",
+      "page",
+      "section"
+    ],
+    "rights_element_count": 0,
+    "source_date": [
+      "1891"
+    ],
+    "source_editor": [
+      "Charles Victor Daremberg"
+    ],
+    "source_place": [
+      "Lipsiae"
+    ],
+    "source_publisher": [
+      "Teubner"
+    ],
+    "source_title": [
+      "A. Cornelii Celsi De medicina libri octo"
+    ],
+    "title": [
+      "De Medicina"
+    ]
+  }
+}
