@@ -116,6 +116,7 @@ All manuscript analyses remain exploratory. A new partition does not make previo
 - [Hypothesis registry](docs/research/hypotheses.json)
 - [Literature review](docs/research/literature.md)
 - [Physical grouping audit](docs/research/physical-map-audit.md)
+- [Repeated-label image audit](docs/research/otaly-image-audit.md)
 - [Naibbe inversion limits](docs/research/naibbe-inversion.md)
 - [Medical source candidates](docs/research/medical-corpus-candidates.md)
 - [Hildegard OCR audit](docs/research/causae-ocr-audit.md)
