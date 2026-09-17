@@ -1,0 +1,519 @@
+{
+  "artifacts": [
+    {
+      "bytes": 13068,
+      "path": "reports/optimal-set-secondary-v1-latin/enumeration.json",
+      "sha256": "4a5e43e6331c7e1a4ce32fae3ff84d5af6defcc6d77e641a4260bc6a53b2776c"
+    },
+    {
+      "bytes": 34474,
+      "path": "reports/optimal-set-secondary-v1-latin/input.json",
+      "sha256": "3a9b5f0fe4dc69abcb13e10dcbf63d8086c2bf329af84d62b47b0477c6470eec"
+    },
+    {
+      "bytes": 14057,
+      "path": "reports/optimal-set-secondary-v1-latin/ranking.json",
+      "sha256": "8641d91ab568326e70539711cb0e48ccc69ec0514b2043496ccef3b65f2d39e0"
+    },
+    {
+      "bytes": 28639,
+      "path": "reports/optimal-set-secondary-v1-latin/result.json",
+      "sha256": "112fd2823d569462a6cccd6422d023eafcca987eb4dcb3ed550262d1dc3cb54a"
+    },
+    {
+      "bytes": 13624,
+      "path": "reports/optimal-set-secondary-v1-latin/selection.json",
+      "sha256": "1eb5be203055324320b8d517e83bc42ee8579090bd1718e3194ef09be04f9b82"
+    }
+  ],
+  "implementation_commit": "883da35809cb1a3828876f272f108ae103fdf98a",
+  "implementation_url": "https://github.com/johnpippett/voynich/commit/883da35809cb1a3828876f272f108ae103fdf98a",
+  "independent_record_audit": {
+    "all_checks_passed": true,
+    "check_count": 18,
+    "model_counts_independently_reconstructed": true,
+    "path": "reports/optimal-set-record-audit.json",
+    "secondary_scorer_imported": false,
+    "sha256": "90e69c8e0b9c4f9b9b315f1805591d96e70754e3dcf1b9ec4e5a34519828ab88",
+    "status": "pass"
+  },
+  "kind": "optimal_set_secondary_verification",
+  "limits": [
+    "This is an inspected development control, not blind validation.",
+    "The result applies to one finite Latin cap2 cyclic-emitter control.",
+    "The old four exact-recovery checks remain failed.",
+    "Replay reproduces the implementation; it is not external scholarly validation.",
+    "No manuscript language, historical key, or translation is established."
+  ],
+  "primary_run": {
+    "command": [
+      "python",
+      "experiments/optimal_set/run_study.py",
+      "--output-dir",
+      "results/optimal-set-secondary-v1-latin"
+    ],
+    "elapsed_seconds": 2.187568942026701,
+    "exit_code": 0,
+    "finished_at": "2026-09-17T09:14:26.769386+00:00",
+    "implementation_commit": "883da35809cb1a3828876f272f108ae103fdf98a",
+    "peak_rss_kib": 130224,
+    "source_sha256": {
+      "docs/plans/optimal-set-secondary-v1.md": "17abf949562b5152c104b8fb8c6987079b22514d87bb93aa155236b2d8c6867c",
+      "experiments/optimal_set/enumerate.py": "443b53105412e28b1b00172c38776e6a9d43ef94c45a774533e2a2e0e443e5d8",
+      "experiments/optimal_set/run_study.py": "225ed29bf5ad72733fd7282bcb1f5794a137a1c1ecd9d455cd67b9e020233448",
+      "experiments/optimal_set/secondary.py": "367d4ed3bd88a7601183a5870d978c19a50b0a2c7ccdd28127185aae559cdc85"
+    },
+    "started_at": "2026-09-17T09:14:24.581823+00:00",
+    "system_cpu_seconds": 0.05282,
+    "user_cpu_seconds": 2.129092
+  },
+  "protocol_sha256": "17abf949562b5152c104b8fb8c6987079b22514d87bb93aa155236b2d8c6867c",
+  "public_ci": {
+    "completed_at": "2026-09-17T09:12:34Z",
+    "completed_before_primary": true,
+    "conclusion": "success",
+    "head_commit": "883da35809cb1a3828876f272f108ae103fdf98a",
+    "python_versions": [
+      "3.11",
+      "3.13"
+    ],
+    "url": "https://github.com/johnpippett/voynich/actions/runs/35203838671"
+  },
+  "public_replay": {
+    "all_five_artifacts_byte_equal": true,
+    "anonymous_checkout": true,
+    "command": [
+      "python",
+      "experiments/optimal_set/run_study.py",
+      "--output-dir",
+      "results/optimal-set-secondary-public-replay-v1"
+    ],
+    "detached_commit": "883da35809cb1a3828876f272f108ae103fdf98a",
+    "elapsed_seconds": 2.275556,
+    "exit_code": 0,
+    "fetched_public_code_with_verified_existing_pinned_source_cache": true,
+    "peak_rss_kib": 129868,
+    "root_independently_compared_bytes": true,
+    "system_cpu_seconds": 0.06071,
+    "tracked_checkout_clean_before_and_after": true,
+    "user_cpu_seconds": 2.205806
+  },
+  "review_date": "2026-09-17",
+  "source_checks": {
+    "code_hashes": {
+      "all_match": true,
+      "checked_count": 17,
+      "records": [
+        {
+          "path": "experiments/homophonic/ambiguity.py",
+          "sha256": "f10f4d643d0dbe87e192102d7fc3d59cb0b3e71cb53b35e506ec1c9f0d1a9223"
+        },
+        {
+          "path": "experiments/homophonic/anneal.py",
+          "sha256": "acc88067d1350180d7704db39b1d7f70070dd5a703dc07b27b98b090d6294ea5"
+        },
+        {
+          "path": "experiments/homophonic/bitset_bound.py",
+          "sha256": "8ab50b9700497cc493e0ba79a9fc6d452cf95e5b8c7d9d19d0de08b567000f76"
+        },
+        {
+          "path": "experiments/homophonic/controls.py",
+          "sha256": "4845d1de4e766c5d63b23919bab2715db24b431ba502112494e477a1740fd896"
+        },
+        {
+          "path": "experiments/homophonic/run_controls.py",
+          "sha256": "65f81693336a3c705281ed711b45881a19a0adc34b715a29188dc1361d86be63"
+        },
+        {
+          "path": "experiments/homophonic/solver.py",
+          "sha256": "5e5b0d1bd21dcdf850d9154c088065d2cd6174671083dc6b5b935282da0c2760"
+        },
+        {
+          "path": "experiments/identifiability/assess.py",
+          "sha256": "e043aa38e7e40800f5e03af4a35e5931965eecd374f38e8bcf7a799caeb868c0"
+        },
+        {
+          "path": "experiments/identifiability/run_assessment.py",
+          "sha256": "84351d57aff0676a07da97618ff9736c4a50071a3a9b69934cd71e0fa0c0a762"
+        },
+        {
+          "path": "experiments/identifiability/threshold.py",
+          "sha256": "f4699b0a32ee383c414a8ffe155fc0a4fe1aac65ce2a2225fd9ff3a3225436c8"
+        },
+        {
+          "path": "experiments/lexicon/run_pilot.py",
+          "sha256": "2eb25cdeb4fdf8ef167a3f10c2463b1ef61c23b1dd7e34a3aea9368c6edf69e5"
+        },
+        {
+          "path": "experiments/optimal_set/enumerate.py",
+          "sha256": "443b53105412e28b1b00172c38776e6a9d43ef94c45a774533e2a2e0e443e5d8"
+        },
+        {
+          "path": "experiments/optimal_set/run_study.py",
+          "sha256": "225ed29bf5ad72733fd7282bcb1f5794a137a1c1ecd9d455cd67b9e020233448"
+        },
+        {
+          "path": "experiments/optimal_set/secondary.py",
+          "sha256": "367d4ed3bd88a7601183a5870d978c19a50b0a2c7ccdd28127185aae559cdc85"
+        },
+        {
+          "path": "src/voynich/corpus.py",
+          "sha256": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2"
+        },
+        {
+          "path": "src/voynich/groups.py",
+          "sha256": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0"
+        },
+        {
+          "path": "src/voynich/reference.py",
+          "sha256": "97e173c761b137d3653a827315b62a68af3e96abd189afdecc46e9759d2b94d9"
+        },
+        {
+          "path": "src/voynich/substitution.py",
+          "sha256": "3c246844b9adcd003d593eff97b53c6a3d1f54bc1fd76bc8e5145345aadf3332"
+        }
+      ]
+    },
+    "protocol_hashes": {
+      "all_match": true,
+      "checked_count": 3,
+      "records": [
+        {
+          "path": "docs/plans/optimal-key-identifiability-v1.md",
+          "sha256": "ba61e56ff7730531f946450ac86b910842fc313bb52b7b34b415391125d6046d"
+        },
+        {
+          "path": "docs/plans/optimal-set-secondary-v1.md",
+          "sha256": "17abf949562b5152c104b8fb8c6987079b22514d87bb93aa155236b2d8c6867c"
+        },
+        {
+          "path": "docs/plans/visual-homophonic-pilot.md",
+          "sha256": "0e6a6edf5e0172f5e7a0f1fbf2f7ede8b9b181c7180aa616de58f44ae04d1249"
+        }
+      ]
+    },
+    "source_hashes": {
+      "all_match": true,
+      "checked_count": 77,
+      "records": [
+        {
+          "path": "data/raw/reference/italian_old/LICENSE.txt",
+          "sha256": "899b1804a12ebc090b96339614eede1b64b686721b650a71430b55b5235f7f79"
+        },
+        {
+          "path": "data/raw/reference/italian_old/README.md",
+          "sha256": "1796c08e68d943ca458642d334165a192705455586cc6d35ccd83382ffe1d1a5"
+        },
+        {
+          "path": "data/raw/reference/italian_old/it_old-ud-dev.conllu",
+          "sha256": "6c900aecef3abebfe87c4e5d5c9880326cc69b8122e62ec95ef6c50fbe4e6e0b"
+        },
+        {
+          "path": "data/raw/reference/italian_old/it_old-ud-test.conllu",
+          "sha256": "19dc1ecf5bfffd552130be63c3dab02d1dd9b9e6a6d4bc31ace0fe6494ebdf89"
+        },
+        {
+          "path": "data/raw/reference/italian_old/it_old-ud-train.conllu",
+          "sha256": "9e94e25d826632a005adc2a8a1daa88f46bdd1509d56090b4c82d27779e1a5e0"
+        },
+        {
+          "path": "data/raw/reference/latin_llct/LICENSE.txt",
+          "sha256": "899b1804a12ebc090b96339614eede1b64b686721b650a71430b55b5235f7f79"
+        },
+        {
+          "path": "data/raw/reference/latin_llct/README.md",
+          "sha256": "eb3daaa3c8d7e4f3d1ea222bdacef989553714c10f6ebf68cb2dd93e1e2789f8"
+        },
+        {
+          "path": "data/raw/reference/latin_llct/la_llct-ud-dev.conllu",
+          "sha256": "040457f2e47265a5676c83ce236e1d625af41eda8f779812841e8ba84e28480c"
+        },
+        {
+          "path": "data/raw/reference/latin_llct/la_llct-ud-test.conllu",
+          "sha256": "81d9f57de66d83303ad4df54a60cd445ac089b50070d369831a632b4cf948e64"
+        },
+        {
+          "path": "data/raw/reference/latin_llct/la_llct-ud-train.conllu",
+          "sha256": "8aabc8735c7a623a9e4820e13861a87459dd0fb5b2d238f0583854143526a643"
+        },
+        {
+          "path": "data/reference_manifest.json",
+          "sha256": "f261b781f150991e3305aae5057a94dc91afd8e59c58bb22ff199347f5ce3e6d"
+        },
+        {
+          "path": "experiments/homophonic/ambiguity.py",
+          "sha256": "f10f4d643d0dbe87e192102d7fc3d59cb0b3e71cb53b35e506ec1c9f0d1a9223"
+        },
+        {
+          "path": "experiments/homophonic/anneal.py",
+          "sha256": "acc88067d1350180d7704db39b1d7f70070dd5a703dc07b27b98b090d6294ea5"
+        },
+        {
+          "path": "experiments/homophonic/bitset_bound.py",
+          "sha256": "8ab50b9700497cc493e0ba79a9fc6d452cf95e5b8c7d9d19d0de08b567000f76"
+        },
+        {
+          "path": "experiments/homophonic/controls.py",
+          "sha256": "4845d1de4e766c5d63b23919bab2715db24b431ba502112494e477a1740fd896"
+        },
+        {
+          "path": "experiments/homophonic/run_controls.py",
+          "sha256": "65f81693336a3c705281ed711b45881a19a0adc34b715a29188dc1361d86be63"
+        },
+        {
+          "path": "experiments/homophonic/solver.py",
+          "sha256": "5e5b0d1bd21dcdf850d9154c088065d2cd6174671083dc6b5b935282da0c2760"
+        },
+        {
+          "path": "experiments/identifiability/assess.py",
+          "sha256": "e043aa38e7e40800f5e03af4a35e5931965eecd374f38e8bcf7a799caeb868c0"
+        },
+        {
+          "path": "experiments/identifiability/run_assessment.py",
+          "sha256": "84351d57aff0676a07da97618ff9736c4a50071a3a9b69934cd71e0fa0c0a762"
+        },
+        {
+          "path": "experiments/identifiability/threshold.py",
+          "sha256": "f4699b0a32ee383c414a8ffe155fc0a4fe1aac65ce2a2225fd9ff3a3225436c8"
+        },
+        {
+          "path": "experiments/lexicon/run_pilot.py",
+          "sha256": "2eb25cdeb4fdf8ef167a3f10c2463b1ef61c23b1dd7e34a3aea9368c6edf69e5"
+        },
+        {
+          "path": "experiments/optimal_set/enumerate.py",
+          "sha256": "443b53105412e28b1b00172c38776e6a9d43ef94c45a774533e2a2e0e443e5d8"
+        },
+        {
+          "path": "experiments/optimal_set/run_study.py",
+          "sha256": "225ed29bf5ad72733fd7282bcb1f5794a137a1c1ecd9d455cd67b9e020233448"
+        },
+        {
+          "path": "experiments/optimal_set/secondary.py",
+          "sha256": "367d4ed3bd88a7601183a5870d978c19a50b0a2c7ccdd28127185aae559cdc85"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/assessment.json",
+          "sha256": "0f6401ee435f5bb6c71a8c4172b3c1ea44eaca440637ebc1b1d68c48979e3fbb"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c00.json",
+          "sha256": "e5a9eb6cfdb33c3a7415a8d837a5afc77fab05742fd9c982506cdc5205940bbe"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c01.json",
+          "sha256": "5433e3633200afad890e02a2d0233f3838152e9e3be61dc85712280ca3d76397"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c02.json",
+          "sha256": "3d163bed536a6ef7fb661b333f734a0ae64bb8721fe2d286ed345824e7fbc96a"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c03.json",
+          "sha256": "b7307dbcfe9ccc696e83b489a94d2715638444eafc57c3ea61e5963d94ce634d"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c04.json",
+          "sha256": "6eb05f70132400071a3f751340838277c64a20a59609bab3c2b5cb643e1010b2"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c05.json",
+          "sha256": "c2b7e2b853de18cf6852c908d999b4628e74b102d18275e814a8a8de9f6d7d10"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c06.json",
+          "sha256": "701e0cd3aa3bd967fee902e40a6af3d6a26581d322c87710bdbd25d788febdc7"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c07.json",
+          "sha256": "2e40776fd50725012d4e4bb431d035e7ffe67c221d1e8577b04ec17c9beb37ce"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c08.json",
+          "sha256": "a4c5a71946221aeb35409870c3dec1923c4098c48e9b626c43672070683de381"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c09.json",
+          "sha256": "f0575a6f2807c556a156b05f0a7b635ce910d5b09ff37bed51f2e6b745192838"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c10.json",
+          "sha256": "f82ef2174e1f531171d25de0ca964d8a6f4b1a8def0f75c8728dceb32785bede"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c11.json",
+          "sha256": "92316fbd7e1b930da30f3e937c706895f43f7dbb35db878142b852be9b834fea"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c12.json",
+          "sha256": "8071955d07a49831a2bc9bc7166abe180f4365f4005515cc69bc62f1f62d4126"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c14.json",
+          "sha256": "681f5db06eb35fa99c16d598f6cf60b921063c8d4ca8e356ca95239f8aeaf8e1"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c15.json",
+          "sha256": "4475584e27bca199b545f77868f77f0adc2bab9746f793eed3f805712a8cdbd7"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c16.json",
+          "sha256": "32c601b9500ff8688ab22d6908288e4574259816a298d793c08e117cbf76a655"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c17.json",
+          "sha256": "fd507ac3eb4fa71a579102ef2775e0d78e74e947b307f720a769a42becfd166e"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c18.json",
+          "sha256": "f37515bdf3d9644bd23a3c17cc2edb0fb9ce975305280a55d1f60443be51bafa"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c21.json",
+          "sha256": "fa9274cd546ac360ebadf294af558bf7ef9b8d7b394bb4c3fcca566a7f90d3e1"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c22.json",
+          "sha256": "0e1e27f31d5d98725bd9d4ee9498f78595a26cee0ad441e1ea37bf156b7afc87"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c23.json",
+          "sha256": "64989fd5fa36a81b9d9c956fcb8aa7016b0477e7d5b5a48567427bc716587c6b"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c24.json",
+          "sha256": "eabb7cbbcb08d3178ada9f8f22f8d2150827efe23d36b3ed08729492ff8a629f"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c26.json",
+          "sha256": "7d78dfc78fcfb369e2a90ccf99076217d307a319304d60043a10be311e7ed818"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c27.json",
+          "sha256": "1037e2c72f24968ec33bd21a19846853314199e8d9fc95a8dd63763c64994fa6"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c28.json",
+          "sha256": "3d336d15f115c157479ac78af42099d43b44eed009113d34b5cd7d22112d0c6c"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c29.json",
+          "sha256": "9e7eaa22dc7567945dba1adf278704771bc9e696bb433f46110d7f03858ddf0a"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c30.json",
+          "sha256": "b2904a2d713d52dd21fc1e9a5658b6a517652718a2223161ed97eb1d226335ea"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c31.json",
+          "sha256": "84e82333a8c96931890ddfebe8f434e72f4c56a835015978af6c5626f15ec7c3"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c32.json",
+          "sha256": "572fca8061053752bb54ddc1554c79d934f3d5dc983e30a7382944ba723fe7d7"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c33.json",
+          "sha256": "0a021706aefc39c02ca4cb098940a255eae951c1e9a564131479cb20c9dae477"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c34.json",
+          "sha256": "351454026ce9b92817e7893c911af74046164860b3537881db1511e2884dfa1c"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c35.json",
+          "sha256": "5b10a2956c7e42d737e738ea6b03ef0a809a0a139c1c94c8eb23069959487702"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c36.json",
+          "sha256": "2c12c6bdb3e5f6244cbbe0b1fff463cd2c75aacdcac2f80da91f5116137dcae0"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c37.json",
+          "sha256": "a15e1740b372cffa0db6a1bf84edf05a7e68856b8a8d00a7c4ab98eb01f3e069"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c38.json",
+          "sha256": "6423f5ef50d3286772c6d031fd2b9d041a8b6cd47acc369bcbbfc2717778293d"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c39.json",
+          "sha256": "05cb160e588bca72b1652b5f1912067e1c8ef0bd13506a5540db3d17e99c8daf"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c40.json",
+          "sha256": "4310912efa3e52e0c00b4c63dd4f571d0874b4e3869dda20407ca4df001814e8"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c41.json",
+          "sha256": "2814b16350240b356078202f993d7a959ea90e120d14cbdf98cc9da3379fbf33"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c43.json",
+          "sha256": "c8d14f160b15050789b048bd558591c255de27e78f55c5cd4eaa64611e33037c"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c44.json",
+          "sha256": "30c2f35a502667e07d78dc186873975c2f8a547c810a8d4896d65f69d2950216"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c45.json",
+          "sha256": "8330895b0bcb8eaa95ed4751618f7e5a6e4beef5b74685abfdce5ad4618d108d"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c46.json",
+          "sha256": "f118e11de4cd9a17f5831ac7c24a8db4806b5c33958ef47ca076a9a198cf843d"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c47.json",
+          "sha256": "fd9f22c12878ec4576e2259bd3d5d72fc1f87a946c555f73b81b8254a44d3ea3"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c49.json",
+          "sha256": "7c2137ad8a366142132c2739accb94423d74584e6b771b55be9f092f1d9780cb"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c50.json",
+          "sha256": "b0b0e1a2d38182fbfcf3293e1bfc5abd8516efa57aac70fcdf0162d3dea643e2"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/c51.json",
+          "sha256": "b4a1f3912c9ea9234df396874c09406078e02b84528f54598530d9e33860eb42"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/decisions.json",
+          "sha256": "607585729d72be0e3bbaaaadabc74225b774b66540ea08f061d0d0459edcfa3d"
+        },
+        {
+          "path": "reports/identifiability-v1-latin/run.json",
+          "sha256": "7345c627c7ec66d95f1b261963336d6e86ae0671d11558f54a246f91b536dc6d"
+        },
+        {
+          "path": "src/voynich/corpus.py",
+          "sha256": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2"
+        },
+        {
+          "path": "src/voynich/groups.py",
+          "sha256": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0"
+        },
+        {
+          "path": "src/voynich/reference.py",
+          "sha256": "97e173c761b137d3653a827315b62a68af3e96abd189afdecc46e9759d2b94d9"
+        },
+        {
+          "path": "src/voynich/substitution.py",
+          "sha256": "3c246844b9adcd003d593eff97b53c6a3d1f54bc1fd76bc8e5145345aadf3332"
+        }
+      ]
+    }
+  },
+  "tests": {
+    "all_passed": true,
+    "core": 85,
+    "homophonic": 58,
+    "identifiability": 33,
+    "lexicon": 52,
+    "optimal_set": 34,
+    "total": 262
+  }
+}

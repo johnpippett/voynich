@@ -7,7 +7,7 @@ This experiment separates three questions:
 3. How do the retained maps compare with the known control solution?
 
 The [protocol](../../docs/plans/optimal-set-secondary-v1.md) fixes the next Latin development study.
-No reference run has used these modules yet.
+The [first result](../../reports/OPTIMAL_SET.md) retains four primary-optimal maps and selects the correct observed map with the secondary score.
 The original homophonic controls remain failed exact-recovery tests.
 This experiment does not provide a manuscript reading.
 
@@ -65,7 +65,7 @@ The corpus loader verifies test input hashes before fitting. Test scoring occurs
 The ranking function receives the training model, validation ciphertext counts, and candidate maps.
 It receives no test text, test scores, or planted map.
 
-After publication of the protocol and code, run the fixed study with a new output directory:
+Use the published implementation commit named in the report. Run the fixed study with a new output directory:
 
 ```sh
 python experiments/optimal_set/run_study.py --output-dir results/optimal-set-secondary-v1-latin

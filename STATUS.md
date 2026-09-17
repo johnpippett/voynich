@@ -6,7 +6,8 @@ The project has no validated key, plaintext language, or translation.
 
 ## Completed research
 
-The [assignment report](reports/IDENTIFIABILITY.md) contains the latest conditional assignment results.
+The [complete-key report](reports/OPTIMAL_SET.md) contains the latest Latin development result.
+The [assignment report](reports/IDENTIFIABILITY.md) contains the preceding conditional assignment results.
 The [homophonic report](reports/HOMOPHONIC.md) contains the preceding controls and their limits.
 The [lexicon report](reports/LEXICON.md) contains the earlier manuscript bounds.
 The [Stage 2 report](reports/STAGE2.md) contains the earlier controlled searches.
@@ -25,9 +26,10 @@ The current work includes:
 - Exact test-text recovery for two lexicon controls, with explicit key-ambiguity counts.
 - Four homophonic controls with frozen settings, saved maps, recovery errors, and score bounds.
 - Complete alternative-assignment queries for all 46 fitted units in the Latin homophonic control.
+- Complete enumeration of four dictionary-optimal maps and exact character-model ranking of those maps.
 
 The Latin homophonic controls reached a certified dictionary optimum with four test character errors.
-At least four keys attain that optimum. Certification does not establish the correct key.
+Exactly four keys attain that optimum. Certification alone does not establish the correct key.
 The Italian controls stopped with unequal bounds and incomplete recovery.
 All four controls failed their declared exact-recovery checks.
 
@@ -36,6 +38,12 @@ The remaining assignment is ambiguous. All four test errors occur at this unit.
 The forced assignments cover 111,048 test characters without errors.
 These results concern one finite objective and domain. They do not identify a manuscript key.
 The study follows an inspected control failure and is not blind validation.
+
+The later complete-key study retains all four optimal maps for the 46 observed units.
+The training-only character model uniquely selects the correct observed map, with exact likelihood ratio `8036/1131` over each alternative.
+That map recovers all 111,052 test characters and 19,931 test words.
+A clean public replay matches all five result files. A separate calculation confirms all 18 audit checks.
+This repairs the inspected Latin example. It does not change the original failed gates or validate a manuscript decoder.
 
 Separate AI-agent tasks performed implementation and code review within this project.
 These checks do not constitute external scholarly validation.

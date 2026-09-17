@@ -6,15 +6,16 @@ It keeps source records and compares observations with explicit statistical cont
 **This project has not deciphered the manuscript.**
 It has no validated key, plaintext language, or translation.
 
-Read the [assignment results](reports/IDENTIFIABILITY.md), [homophonic controls](reports/HOMOPHONIC.md), and [research status](STATUS.md).
+Read the [complete-key results](reports/OPTIMAL_SET.md), [assignment results](reports/IDENTIFIABILITY.md), and [research status](STATUS.md).
 
 The [homophonic model](experiments/homophonic/README.md) permits several cipher
 units per plaintext letter. Its first four controls failed the exact-recovery
 checks. Manuscript use remains deferred.
 The [assignment study](reports/IDENTIFIABILITY.md) proves that 45 Latin control
 assignments are necessary to attain its certified dictionary score. One remains ambiguous.
-The [next study](experiments/optimal_set/README.md) will enumerate all optimal maps and compare their exact character-model likelihoods.
-Its [fixed protocol](docs/plans/optimal-set-secondary-v1.md) precedes the first reference run.
+The [complete-key study](reports/OPTIMAL_SET.md) finds exactly four optimum maps in that finite Latin control.
+A fixed character model selects the map that recovers all test characters and words.
+This repairs an inspected development control. The [fixed protocol](docs/plans/optimal-set-secondary-v1.md) preceded the run.
 The [initial findings](reports/FINDINGS.md) remain available as historical results.
 Stage 2 replaces their prediction partitions with source-backed bifolio groups.
 
@@ -24,9 +25,11 @@ The [folio report](docs/research/folio.md) gives the identification evidence.
 ## Results
 
 - Both Latin homophonic controls reached a certified dictionary optimum but missed four of 111,052 test characters.
-- At least four keys attain that Latin optimum. The selected map matches 45 of 46 observed assignments.
+- Exactly four keys attain that Latin optimum. The earlier selected map matches 45 of 46 observed assignments.
 - All 45 forced assignments match the planted control map. They cover 111,048 test characters without errors.
 - The remaining ambiguous assignment accounts for all four test errors. This follow-up does not change the failed recovery check.
+- Exact secondary ranking selects the correct observed map and recovers 111,052 test characters and 19,931 words without errors.
+- This later result follows the inspected failure. It is exploratory development, not blind validation.
 - The Italian homophonic controls recovered 43.35% and 66.48% of test characters. Their optimum scores remain unknown.
 - The new lexicon pilot bounds the training score at 35.51% or less in four fixed substitution problems.
 - That score averages token and type hit rates. The bounds apply only to the declared word lists, raw EVA units, and injective keys.
@@ -78,6 +81,7 @@ A new run does not update that record.
 The [lexicon verification record](reports/lexicon-verification.json) covers the earlier solver and its public-source reproduction.
 The [homophonic verification record](reports/homophonic-verification.json) covers the four new controls.
 The [assignment verification record](reports/identifiability-verification.json) covers the conditional assignment study.
+The [complete-key verification record](reports/optimal-set-verification.json) records a byte-identical public replay and an independent exact calculation.
 
 ## Data and scope
 
