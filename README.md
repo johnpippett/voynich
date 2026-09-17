@@ -16,6 +16,7 @@ assignments are necessary to attain its certified dictionary score. One remains 
 The [complete-key study](reports/OPTIMAL_SET.md) finds exactly four optimum maps in that finite Latin control.
 A fixed character model selects the map that recovers all test characters and words.
 This repairs an inspected development control. The [fixed protocol](docs/plans/optimal-set-secondary-v1.md) preceded the run.
+The [research audit](docs/research/recent-research-audit.md) reviews recent structural claims and their limits.
 The [initial findings](reports/FINDINGS.md) remain available as historical results.
 Stage 2 replaces their prediction partitions with source-backed bifolio groups.
 
