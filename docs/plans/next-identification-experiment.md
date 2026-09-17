@@ -6,6 +6,12 @@ The current raw-EVA substitution run is exploratory. It reports a fixed-key
 search and language-model scores. It does not provide a lexical key, a source
 language, or a translation. This plan tests one next identification step.
 
+The current lexicon pilot tests computational feasibility. It does not run the
+planned 32 positive controls or 1,000 replicates for each null family. It uses
+lexical order to select between visited keys with equal scores. The proposed
+study below uses a character model for this selection. The pilot results do
+not satisfy this plan's controls or project gates.
+
 ## Recommendation
 
 Run approach A first: a globally constrained vocabulary and word-pattern
@@ -193,13 +199,19 @@ material or an independent evaluator or data source for a confirmatory claim.
 Run at least 32 seeded positive controls per language. Use seeds `500` through
 `531`, unless a new seed range is frozen before the run. For each control,
 build the lexicon and language model from plaintext reference training data
-only. Do not encrypt or place training words in the solver input. Encrypt a
-frozen sample of reference validation words with an injective key from the same
-raw-EVA alphabet, preserve word boundaries, and fit the solver on those
-ciphertext validation words. Encrypt reference test words with the same key
-and evaluate the learned key once on that ciphertext test. Keep the planted key
-and test plaintext evaluation-only. Use the current pilot sampling rule and
-record its seed and cap.
+only. Do not use the reference training partition as ciphertext input. Use synthetic
+cipher units `c00` through `c25` for the controls. This uses the same injective
+cipher family as `H-A`. The control alphabet can differ in size from the
+observed raw-EVA alphabet. Encrypt the complete selected reference validation
+partition, preserve word boundaries, and fit the solver on those ciphertext
+validation words. Encrypt the complete selected reference test partition with
+the same key and evaluate the learned key once on that ciphertext test. This
+keeps the current pipeline: plaintext train, encrypted validation fitting, and
+encrypted test scoring. Keep the planted key and test plaintext evaluation-
+only. The current smaller validation sample remains a feasibility setting and
+must be labelled as such. Do not drop plaintext symbols to force an
+observed-alphabet match. If a restricted-alphabet control is useful, predeclare
+it as a separate restricted-coverage control and report every exclusion.
 
 Report exact used-symbol key recovery, reference-test symbol accuracy, token
 accuracy, type accuracy, and lexicon-hit rates. A zero denominator is
