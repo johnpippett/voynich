@@ -15,3 +15,11 @@ Get separate authorization before you contact researchers, submit material, or p
 Use Python standard-library code when possible. Run `PYTHONPATH=src python -m unittest discover -s tests -v`.
 Use bounded Luna workers for independent tasks. Workers must not create other workers.
 Apply ASD-STE100 writing rules to technical documents.
+
+
+## Grimoire Gate
+
+Read [wiki/README.md](wiki/README.md) and relevant existing notes before editing.
+After meaningful changes, update a decimal-numbered wiki note covering what,
+why, verification, and rollback when relevant; append the session log index.
+Report the wiki files changed, or explain why no documentation changed.

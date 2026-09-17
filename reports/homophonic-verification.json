@@ -1,0 +1,106 @@
+{
+  "schema_version": "homophonic-verification-v1",
+  "status": "verified_with_declared_limits",
+  "implementation_and_protocol_commit": "ce8b626ab3cf8147829716f7828dff7fceba6cde",
+  "protocol_sha256": "0e6a6edf5e0172f5e7a0f1fbf2f7ede8b9b181c7180aa616de58f44ae04d1249",
+  "local_tests": {
+    "python": "3.14.7",
+    "core_passed": 85,
+    "lexicon_passed": 52,
+    "homophonic_passed": 58
+  },
+  "github_actions": {
+    "run_url": "https://github.com/johnpippett/voynich/actions/runs/35192837911",
+    "commit": "ce8b626ab3cf8147829716f7828dff7fceba6cde",
+    "python_3_11": "success",
+    "python_3_13": "success",
+    "completed_before_first_primary_run": true
+  },
+  "recorded_source_hash_checks": {
+    "comparisons": 44,
+    "all_match": true
+  },
+  "public_checkout_tests": {
+    "retrieval": "Anonymous fetch in a reused clean checkout with previously downloaded inputs.",
+    "commit": "ce8b626ab3cf8147829716f7828dff7fceba6cde",
+    "changed_paths_byte_equal": 23,
+    "core_passed": 85,
+    "lexicon_passed": 52,
+    "homophonic_passed": 58
+  },
+  "independent_record_audit": {
+    "runs": 4,
+    "scope": "Read-only consistency checks of hashes, score arithmetic, bounds, saved maps, recovery counts, and ambiguity conditions.",
+    "mismatches": 0,
+    "corpus_reconstruction": false
+  },
+  "primary_run_resources": {
+    "latin-cold": {
+      "elapsed_seconds": 88.70265696401475,
+      "max_rss_kib": 1638508,
+      "outcome": "completed",
+      "started_utc": "2026-09-17T07:07:20.150427+00:00",
+      "system_cpu_seconds": 0.7567419999999999,
+      "user_cpu_seconds": 87.723145
+    },
+    "latin-assisted": {
+      "elapsed_seconds": 128.42259484698297,
+      "max_rss_kib": 1650484,
+      "outcome": "completed",
+      "started_utc": "2026-09-17T07:11:04.971979+00:00",
+      "system_cpu_seconds": 0.825077,
+      "user_cpu_seconds": 127.161548
+    },
+    "italian-cold": {
+      "elapsed_seconds": 720.5005677640438,
+      "max_rss_kib": 5622080,
+      "outcome": "completed",
+      "started_utc": "2026-09-17T07:13:32.758518+00:00",
+      "system_cpu_seconds": 2.520289,
+      "user_cpu_seconds": 715.232861
+    },
+    "italian-assisted": {
+      "elapsed_seconds": 780.8340562460362,
+      "max_rss_kib": 5624120,
+      "outcome": "completed",
+      "started_utc": "2026-09-17T07:30:58.209786+00:00",
+      "system_cpu_seconds": 2.306085,
+      "user_cpu_seconds": 775.709318
+    }
+  },
+  "artifacts_sha256": {
+    "reports/homophonic-feasibility-v1/italian-assisted.json": "461ddb0d5f097227d7d521436a3a6ebb459b8d53de973ed2e1e913af3be42f31",
+    "reports/homophonic-feasibility-v1/italian-assisted.keys.json": "df35fb2e7d1df309f60030d984e01a22837c92af37c72d0bf8d9c5a765b097fe",
+    "reports/homophonic-feasibility-v1/italian-cold.json": "4209022e13399bb7347b8f1d098f43c4d0922ae1b9c6df72382ed5553b44b0b3",
+    "reports/homophonic-feasibility-v1/italian-cold.keys.json": "08a3b0b6cf76e013efb8175bd6fa1251fd1ae9ae1911a96420d123ae81198e50",
+    "reports/homophonic-feasibility-v1/latin-assisted.json": "9869104977e21a43b00e7da53ceef46e67962456ca60c1efb662ecb41fadf5a3",
+    "reports/homophonic-feasibility-v1/latin-assisted.keys.json": "6d52bb2c96bb52a1c54571f157e937ca99f7ca4618793ba5b7de09f5e7ad8655",
+    "reports/homophonic-feasibility-v1/latin-cold.json": "923dba00df53ff05ca88e91362ea44c693d66b8f0824071d85cc5b0d984ba77e",
+    "reports/homophonic-feasibility-v1/latin-cold.keys.json": "965774da55e1ace6522a184a0040f63563c508e0d690270b9d726f6dd7575bb2"
+  },
+  "summary_generation": {
+    "generator": "scripts/build_homophonic_summary.py",
+    "generator_sha256": "59a4729bbcafa9106130cbcca884b2aacec2c5cfcfb301dbf077c2d72fb0024f",
+    "report": "reports/HOMOPHONIC.md",
+    "report_sha256": "f0c1deb3b395d0bacf09c6af5fdbada34cac1352e4cd055bdec5c1b239527852"
+  },
+  "limits": [
+    "The reviews are internal AI-agent checks, not external scholarly validation.",
+    "The software has tests and computational review, not formal program verification.",
+    "Each reference uses one planted key. Cold and assisted runs share its ciphertext.",
+    "All four runs failed exact recovery. No manuscript experiment used this model.",
+    "Equal score bounds certify the finite objective, not key uniqueness or historical truth."
+  ],
+  "public_checkout_reproduction": {
+    "checkout": "Reused anonymous checkout at the published implementation commit.",
+    "commit": "ce8b626ab3cf8147829716f7828dff7fceba6cde",
+    "case": "latin-cold",
+    "report_and_key_files_byte_equal": 2,
+    "report_sha256": "923dba00df53ff05ca88e91362ea44c693d66b8f0824071d85cc5b0d984ba77e",
+    "key_record_sha256": "965774da55e1ace6522a184a0040f63563c508e0d690270b9d726f6dd7575bb2",
+    "elapsed_seconds": 79.468641324,
+    "reference_manifest_and_all_latin_inputs_hashes_match": true,
+    "tracked_and_untracked_status_before_and_after": "clean",
+    "limits": "Only the Latin cold control was replayed from this public checkout."
+  }
+}

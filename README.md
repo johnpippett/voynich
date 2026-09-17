@@ -6,11 +6,11 @@ It keeps source records and compares observations with explicit statistical cont
 **This project has not deciphered the manuscript.**
 It has no validated key, plaintext language, or translation.
 
-Read the [lexicon bounds](reports/LEXICON.md), [Stage 2 findings](reports/STAGE2.md), and [research status](STATUS.md).
+Read the [homophonic controls](reports/HOMOPHONIC.md), [lexicon bounds](reports/LEXICON.md), and [research status](STATUS.md).
 
-The next [model prototype](experiments/homophonic/README.md) permits several
-cipher units per plaintext letter. Its known-cipher controls must be checked
-before manuscript use.
+The [homophonic model](experiments/homophonic/README.md) permits several cipher
+units per plaintext letter. Its first four controls failed the exact-recovery
+checks. Manuscript use remains deferred.
 The [initial findings](reports/FINDINGS.md) remain available as historical results.
 Stage 2 replaces their prediction partitions with source-backed bifolio groups.
 
@@ -19,6 +19,9 @@ The [folio report](docs/research/folio.md) gives the identification evidence.
 
 ## Results
 
+- Both Latin homophonic controls reached a certified dictionary optimum but missed four of 111,052 test characters.
+- At least four keys attain that Latin optimum. The selected map matches 45 of 46 observed assignments.
+- The Italian homophonic controls recovered 43.35% and 66.48% of test characters. Their optimum scores remain unknown.
 - The new lexicon pilot bounds the training score at 35.51% or less in four fixed substitution problems.
 - That score averages token and type hit rates. The bounds apply only to the declared word lists, raw EVA units, and injective keys.
 - Two lexicon controls recovered every test character. The Italian control still has at least 60 equally scoring keys.
@@ -66,7 +69,8 @@ The [lexicon report](reports/LEXICON.md) gives the new bounded-search commands a
 The [methods document](docs/research/stage2-methods.md) defines sampling, controls, normalization, and search settings.
 The [verification record](reports/stage2-verification.json) records the checks for the published runs.
 A new run does not update that record.
-The [lexicon verification record](reports/lexicon-verification.json) covers the new solver and its public-source reproduction.
+The [lexicon verification record](reports/lexicon-verification.json) covers the earlier solver and its public-source reproduction.
+The [homophonic verification record](reports/homophonic-verification.json) covers the four new controls.
 
 ## Data and scope
 

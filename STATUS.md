@@ -6,7 +6,8 @@ The project has no validated key, plaintext language, or translation.
 
 ## Completed research
 
-The [lexicon report](reports/LEXICON.md) contains the latest bounds and their limits.
+The [homophonic report](reports/HOMOPHONIC.md) contains the latest controls and their limits.
+The [lexicon report](reports/LEXICON.md) contains the earlier manuscript bounds.
 The [Stage 2 report](reports/STAGE2.md) contains the earlier controlled searches.
 The [initial report](reports/FINDINGS.md) preserves the earlier exploratory results.
 
@@ -21,6 +22,12 @@ The current work includes:
 - A complete candidate enumerator for the fixed published Naibbe tables.
 - Global score bounds for four fixed lexicon and manuscript-training problems.
 - Exact test-text recovery for two lexicon controls, with explicit key-ambiguity counts.
+- Four homophonic controls with frozen settings, saved maps, recovery errors, and score bounds.
+
+The Latin homophonic controls reached a certified dictionary optimum with four test character errors.
+At least four keys attain that optimum. Certification does not establish the correct key.
+The Italian controls stopped with unequal bounds and incomplete recovery.
+All four controls failed their declared exact-recovery checks.
 
 Separate AI-agent tasks performed implementation and code review within this project.
 These checks do not constitute external scholarly validation.
