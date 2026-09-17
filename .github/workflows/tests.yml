@@ -22,3 +22,5 @@ jobs:
         run: PYTHONPATH=src python -m unittest discover -s tests -v
       - name: Run lexicon experiment tests
         run: PYTHONPATH=src:. python -m unittest discover -s experiments/lexicon -p 'test_*.py' -v
+      - name: Run homophonic experiment tests
+        run: PYTHONPATH=src:. python -m unittest discover -s experiments/homophonic -p 'test_*.py' -v

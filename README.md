@@ -7,6 +7,10 @@ It keeps source records and compares observations with explicit statistical cont
 It has no validated key, plaintext language, or translation.
 
 Read the [lexicon bounds](reports/LEXICON.md), [Stage 2 findings](reports/STAGE2.md), and [research status](STATUS.md).
+
+The next [model prototype](experiments/homophonic/README.md) permits several
+cipher units per plaintext letter. Its known-cipher controls must be checked
+before manuscript use.
 The [initial findings](reports/FINDINGS.md) remain available as historical results.
 Stage 2 replaces their prediction partitions with source-backed bifolio groups.
 
