@@ -138,6 +138,9 @@ All manuscript analyses remain exploratory. A new partition does not make previo
 - [Observed pair classes](docs/research/observed-pair-quotient.md)
 - [Segment and uncertainty limits](docs/research/segmented-cyclic-emitter-design.md)
 - [Local cyclic obstructions](docs/research/local-cyclic-obstructions.md)
+- [Repeated EVA unit evidence](docs/research/eva-run-unitization-evidence.md)
+- [Mixed singleton and pair cycles](docs/research/mixed-cycle-identifiability.md)
+- [Next mechanism assessment](docs/research/next-mechanism-experiment-assessment.md)
 - [Manuscript local cyclic protocol](docs/plans/vms-local-cyclic-falsification-v1.md)
 
 ## Contributions
