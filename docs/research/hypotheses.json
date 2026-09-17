@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "status": "predeclared",
+  "date": "2026-09-16",
+  "stage": "future_confirmatory_decoder",
+  "scope": "Competing explanations for the Voynich manuscript text. These are testable model families, not claims that a family is true.",
+  "general_rules": {
+    "primary_inputs": ["ZL EVA IVTFF", "IT EVA IVTFF"],
+    "split_unit": "Future confirmatory split: physical leaf or complete folded-leaf group. Current exploratory split: canonical folio_group.",
+    "required_split": "Held-out physical-group manifest with exact assignments recorded. The current exploratory split uses canonical folio_group keys and is approximately 70/10/20 for train, validation, and test.",
+    "test_use": "The test partition is evaluated once after model and exception rules are frozen.",
+    "minimum_evidence": [
+      "held-out prediction",
+      "comparison with order-preserving and order-destroying controls",
+      "uncertainty and transcript robustness",
+      "complete exception ledger",
+      "independent reproduction"
+    ],
+    "interpretive_limit": "Failure to decode does not prove that the manuscript lacks meaning. Regularity does not prove a language.",
+    "current_stage": "Exploratory structural tests only. The current parser handles basic EVA with strict rejection and the split and join spacing policies. It does not implement the other uncertainty modes, character spans, foldout grouping, or a decoder. It does not decode a language or produce a translation.",
+    "current_folio_group_unions": [
+      "69/70",
+      "71/72",
+      "85/86",
+      "88/89/90",
+      "94/95",
+      "100/101/102"
+    ],
+    "folio_group_version": "conservative-foldout-groups-v2",
+    "folio_group_aliases": {
+      "fRos": "85"
+    },
+    "folio_group_limit": "These conservative unions keep candidate cross-number relations together. The 85/86 union has direct Yale support. The mapping does not identify every physical sheet.",
+    "character_null": "The raw-EVA null shuffles code points within each token. The grouped null shuffles declared grouped units and keeps each unit's internal order."
+  },
+  "proposed_solution_gates": [
+    "fixed_deterministic_method",
+    "bounded_exception_ledger",
+    "independently_justified_historic_language",
+    "blind_unseen_reading",
+    "broad_physical_and_section_coverage",
+    "independent_reproduction"
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "family": "ordinary_substitution",
+      "label": "Fixed ordinary substitution",
+      "claim": "Voynich signs encode an ordinary language through a fixed symbol-to-symbol or fixed limited-homophone substitution.",
+      "allowed_model_classes": [
+        "monoalphabetic substitution",
+        "predeclared limited homophonic substitution",
+        "fixed word-separator treatment"
+      ],
+      "predictions": [
+        "One frozen map applies across unseen physical groups.",
+        "Repeated sign sequences produce stable plaintext sequences.",
+        "A planted substitution control is recovered by the same search.",
+        "Decoded held-out text gives a better language-model score than raw EVA and order-destroying controls."
+      ],
+      "disconfirming_observations": [
+        "Held-out coverage is below the frozen threshold.",
+        "Repeated input types have conflicting outputs or growing exceptions.",
+        "The method fails on a planted substitution control.",
+        "The apparent gain disappears under transcript or uncertainty changes."
+      ],
+      "required_experiments": ["E1", "E2", "E3", "E4"],
+      "required_nulls": ["N1", "N2", "N5", "N6"]
+    },
+    {
+      "id": "H2",
+      "family": "syllabic_or_abbreviation",
+      "label": "Syllabic, morphemic, or abbreviation system",
+      "claim": "Signs or sign groups encode syllables, morphemes, or conventional abbreviations rather than single alphabetic letters.",
+      "allowed_model_classes": [
+        "fixed sign-group to syllable map",
+        "bounded positional abbreviation rules",
+        "predeclared morpheme segmentation"
+      ],
+      "predictions": [
+        "Repeated sign groups have stable positional or morphological roles.",
+        "A finite expansion table improves held-out word coverage without folio-specific edits.",
+        "Segmentation rules learned on training groups transfer to unseen groups.",
+        "The same expansion rules recover planted syllabic or abbreviation controls."
+      ],
+      "disconfirming_observations": [
+        "Segment boundaries or expansions change by folio to match the proposed reading.",
+        "The method uses an unbounded abbreviation list for held-out performance.",
+        "No stable positional roles remain after group-preserving null tests.",
+        "The method cannot recover a planted syllabic control."
+      ],
+      "required_experiments": ["E1", "E2", "E3", "E4"],
+      "required_nulls": ["N1", "N2", "N5", "N6"]
+    },
+    {
+      "id": "H3",
+      "family": "language_plus_encoding",
+      "label": "Historical language with an additional encoding",
+      "claim": "The manuscript represents a historically plausible language through a fixed encoding such as transliteration, homophony, anagramming, nulls, or a bounded word-order rule.",
+      "allowed_model_classes": [
+        "predeclared transliteration",
+        "bounded homophony",
+        "bounded within-word transposition",
+        "bounded null or word-order rule"
+      ],
+      "predictions": [
+        "The encoding is frozen before the final test and applies across physical groups.",
+        "The candidate language is selected from a predeclared historically justified list.",
+        "Decoded held-out text gives a better predictive score than raw EVA and matched controls.",
+        "Morphology and function-word behavior transfer to unseen groups.",
+        "The full method recovers planted controls generated from the same language and encoding family."
+      ],
+      "disconfirming_observations": [
+        "The best language changes after each held-out folio or section.",
+        "The encoding is chosen from test output or uses folio-specific exceptions.",
+        "A language-model score improves without stable mapping or morphology.",
+        "The method fails on its planted control but produces a result for the manuscript."
+      ],
+      "required_experiments": ["E1", "E2", "E3", "E4"],
+      "required_nulls": ["N1", "N2", "N5", "N6"],
+      "historic_language_rule": "A candidate language must have independent evidence for the manuscript period and setting. Plausible output alone is not evidence."
+    },
+    {
+      "id": "H4",
+      "family": "procedural_or_generative_nonsemantic",
+      "label": "Procedural, generative, formulaic, or nonsemantic text",
+      "claim": "The text is produced by local rules, a notation system, a formulaic process, or a nonsemantic generator. It can still carry limited structured content.",
+      "allowed_model_classes": [
+        "character Markov model",
+        "word-template or slot model",
+        "section-conditioned generator",
+        "formulaic label model"
+      ],
+      "predictions": [
+        "Low-order character, word-length, and positional constraints predict held-out text.",
+        "Matched generated surrogates reproduce structural metrics without a historical lexicon.",
+        "A fixed language decoding does not give stable held-out performance compared with the generator.",
+        "Section-conditioned generation can explain differences between manuscript sections."
+      ],
+      "disconfirming_observations": [
+        "A fixed historically justified decoding gives better held-out prediction and morphology than the generator.",
+        "The generator uses a growing exception list or memorizes physical groups.",
+        "Matched surrogates fail to reproduce the claimed structural result."
+      ],
+      "required_experiments": ["E1", "E2", "E3", "E4"],
+      "required_nulls": ["N1", "N2", "N6"],
+      "interpretive_limit": "Support for this family does not prove that the manuscript has no meaning. It only shows that a nonsemantic or procedural model remains competitive."
+    }
+  ],
+  "null_models": [
+    {
+      "id": "N1",
+      "name": "within-group word-order shuffle",
+      "preserves": ["physical-group sizes", "word counts", "token frequencies", "token lengths"],
+      "destroys": ["word order", "long-range sequence structure"]
+    },
+    {
+      "id": "N2",
+      "name": "within-token character-order shuffle",
+      "preserves": ["character multiset per token", "token length"],
+      "destroys": ["within-token order"]
+    },
+    {
+      "id": "N3",
+      "name": "physical-group section-label shuffle",
+      "preserves": ["section-label counts"],
+      "destroys": ["group-to-section association"]
+    },
+    {
+      "id": "N4",
+      "name": "cross-transcript pairing shuffle",
+      "preserves": ["ZL group counts", "IT group counts", "locus counts"],
+      "destroys": ["true ZL-IT locus pairing"]
+    },
+    {
+      "id": "N5",
+      "name": "planted known-language cipher",
+      "preserves": ["declared cipher family", "known source language"],
+      "tests": ["recovery power", "false-negative rate", "exception accounting"]
+    },
+    {
+      "id": "N6",
+      "name": "matched generative surrogate",
+      "preserves": ["group sizes", "word lengths", "character frequencies", "declared low-order transitions"],
+      "destroys": ["source-language lexicon", "source-language semantics"]
+    }
+  ]
+}

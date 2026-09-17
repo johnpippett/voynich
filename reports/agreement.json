@@ -1,0 +1,88 @@
+{
+  "status": "compared",
+  "alignment": {
+    "key": "folio plus numeric locus index",
+    "assumption": "Inputs use the normalized common IVTFF locus convention.",
+    "locator_and_kind": "Locator and kind differences are reported but do not change the key.",
+    "duplicate_policy": "Raise ValueError before comparison.",
+    "max_mismatch_examples": 20
+  },
+  "counts": {
+    "total": {
+      "left": 5385,
+      "right": 5215,
+      "combined": 10600
+    },
+    "left_total": 5385,
+    "right_total": 5215,
+    "aligned": 5214,
+    "eligible": 3760,
+    "unmatched": {
+      "left": 171,
+      "right": 1
+    },
+    "ineligible": 1454,
+    "kind_mismatches": 0
+  },
+  "eligibility": {
+    "eligible": 3760,
+    "excluded": {
+      "empty_tokens": 73,
+      "interrupted": 679,
+      "uncertain_or_rare_tokens": 958
+    },
+    "excluded_by_side": {
+      "left:empty_tokens": 66,
+      "left:interrupted": 625,
+      "left:uncertain_or_rare_tokens": 929,
+      "right:empty_tokens": 21,
+      "right:interrupted": 662,
+      "right:uncertain_or_rare_tokens": 114
+    },
+    "rules": [
+      "Exclude aligned pairs with excluded_tokens, uncertain or rare markers, or non-basic tokens.",
+      "Exclude aligned pairs whose raw text contains <->, <~>, or an interruption annotation.",
+      "Exclude aligned pairs with no accepted tokens."
+    ]
+  },
+  "agreement": {
+    "raw": {
+      "identical": 1282,
+      "coverage": 0.34095744680851064
+    },
+    "tokens": {
+      "identical": 2080,
+      "coverage": 0.5531914893617021
+    },
+    "token_edit_distance": {
+      "method": "Levenshtein distance on token sequences",
+      "sum": 3387,
+      "mean": 0.9007978723404255,
+      "max": 13,
+      "eligible_pairs": 3760
+    }
+  },
+  "interpretation_limits": [
+    "Agreement does not identify an accurate transcription.",
+    "Agreement does not establish source independence.",
+    "Unmatched keys can reflect divergent numbering, coverage, or preservation."
+  ],
+  "source_sha256": {
+    "ZL3b-n.txt": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+    "IT2a-n.txt": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"
+  },
+  "code_sha256": {
+    "src/voynich/__init__.py": "b102a07c0172d042de5a70dd819dfcdc53d17531835288acc48b05f10a954bf6",
+    "src/voynich/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/voynich/agreement.py": "ec06685676af415ec3899a0722c09fd48ccc179127d96b620478d0245dfaaae1",
+    "src/voynich/cli.py": "bc385b3f580b498998563c824b7cbfa23df97d6237c38325213852d0e3fdd340",
+    "src/voynich/context.py": "5e6ceeec03b27adcfd6dee8c96e35cb78011416168fcd033949610a7002537e3",
+    "src/voynich/corpus.py": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+    "src/voynich/export.py": "df2150cdaeb6bbb681ad071132cae5f30c6d026b7505c3439694e75291a8ab87",
+    "src/voynich/groups.py": "ace52f6e32f572c3bc612fb90f4186c75c22904c21d1292444c17841d6d5193b",
+    "src/voynich/predictive.py": "99aa11b6ea56b7ae6e0c077636fd88e8a3f4559a5873162ed6da5d73b2090568",
+    "src/voynich/structure.py": "5442b9ccb883478d2930d65e3e20803d32624a63257b85214f95209597b6152b"
+  },
+  "focus_folio": "f84r",
+  "focus_rows": 47
+}

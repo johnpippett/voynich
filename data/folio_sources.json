@@ -1,0 +1,168 @@
+{
+  "retrieved_utc": "2026-09-16",
+  "repository": "Yale University, Beinecke Rare Book and Manuscript Library",
+  "shelfmark": "Beinecke MS 408",
+  "object_id": "2002046",
+  "title": "Cipher manuscript (Voynich manuscript)",
+  "manifest": {
+    "url": "https://collections.library.yale.edu/manifests/2002046",
+    "type": "IIIF Presentation 3 manifest",
+    "record_label": "Cipher manuscript",
+    "page_order_index_is_zero_based": true
+  },
+  "identification": {
+    "folio": "84r",
+    "confidence": "high",
+    "manifest_item_index": 152,
+    "visible_foliation": "84",
+    "evidence": [
+      "The supplied image shows foliation 84 in the upper-right margin.",
+      "The Yale manifest item at index 152 has Image Label 84r and Image ID 1006226.",
+      "The supplied image matches the Yale 84r page layout: upper scalloped border, long upper scene, central text block, middle scene, lower-left figure group, and winding blue-green line.",
+      "The Yale 84v image has a different layout with blue circular scenes on the right side."
+    ],
+    "interpretation_boundary": "The folio side is verified by comparison with Yale's labelled page image. The script remains unidentified and undeciphered."
+  },
+  "matched_page": {
+    "label": "84r",
+    "image_id": "1006226",
+    "canvas_url_from_manifest": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006226",
+    "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006226",
+    "iiif_image_service": "https://collections.library.yale.edu/iiif/2/1006226",
+    "full_image_url": "https://collections.library.yale.edu/iiif/2/1006226/full/full/0/default.jpg",
+    "dimensions_px": {
+      "width": 2753,
+      "height": 3745
+    },
+    "local_asset": "assets/yale-folio-84r.jpg",
+    "distribution": "Local inspection copy only. Use full_image_url for public access.",
+    "sha256": "7e8fa7c29b6c6ab462ad5359bdabfcd60505622700f6e5cb18478d20cbd79fbe"
+  },
+  "control_page": {
+    "label": "84v",
+    "image_id": "1006227",
+    "manifest_item_index": 153,
+    "canvas_url_from_manifest": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006227",
+    "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006227",
+    "iiif_image_service": "https://collections.library.yale.edu/iiif/2/1006227",
+    "full_image_url": "https://collections.library.yale.edu/iiif/2/1006227/full/full/0/default.jpg",
+    "dimensions_px": {
+      "width": 2838,
+      "height": 3697
+    },
+    "local_asset": "assets/yale-folio-84v.jpg",
+    "distribution": "Local inspection copy only. Use full_image_url for public access.",
+    "sha256": "e47d19f00b8c50c3216c4e48106c0b229c61091b403f52bb084bf89fa9fe5f6f",
+    "control_observation": "Different layout: text block on the left and blue circular scenes on the right."
+  },
+  "neighboring_manifest_items": [
+    {
+      "label": "83v",
+      "manifest_item_index": 151,
+      "image_id": "1006225",
+      "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006225"
+    },
+    {
+      "label": "85r (part) (part of 85-86 foldout)",
+      "manifest_item_index": 154,
+      "image_id": "1006228",
+      "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006228"
+    }
+  ],
+  "comparison": {
+    "method": "Visual feature comparison against full Yale IIIF JPEGs, with a fixed-size pixel-error check as a secondary control.",
+    "result": "84r matches the supplied image. 84v does not.",
+    "caution": "The user image has different framing and scale. The pixel check is supporting evidence only."
+  },
+  "implemented_grouping": {
+    "version": "conservative-foldout-groups-v2",
+    "representative": "Smallest numeric folio in each connected component.",
+    "components": [
+      [
+        69,
+        70
+      ],
+      [
+        71,
+        72
+      ],
+      [
+        85,
+        86
+      ],
+      [
+        88,
+        89,
+        90
+      ],
+      [
+        94,
+        95
+      ],
+      [
+        100,
+        101,
+        102
+      ]
+    ],
+    "representatives": [
+      "69",
+      "71",
+      "85",
+      "88",
+      "94",
+      "100"
+    ],
+    "confirmed_cross_number_foldout": [
+      85,
+      86
+    ],
+    "candidate_components": [
+      [
+        69,
+        70
+      ],
+      [
+        71,
+        72
+      ],
+      [
+        88,
+        89,
+        90
+      ],
+      [
+        94,
+        95
+      ],
+      [
+        100,
+        101,
+        102
+      ]
+    ],
+    "aliases": {
+      "fRos": "85"
+    },
+    "fRos_source": {
+      "source": "ZL3b-n.txt",
+      "header": "<fRos>",
+      "lines": "5253-5258",
+      "description": "The header calls fRos part of a 6-page 9-circle composite and lists pages 85v and 86r.",
+      "distribution": "Raw source input is not distributed by this repository."
+    },
+    "evidence": "docs/research/physical-groups.md",
+    "limitation": "Candidate unions are conservative leakage controls, not proof of physical identity. A complete physical-sheet map is still required for confirmatory work."
+  },
+  "primary_sources": [
+    "https://collections.library.yale.edu/manifests/2002046",
+    "https://collections.library.yale.edu/catalog/2002046?child_oid=1006226",
+    "https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.htm",
+    "https://beinecke.library.yale.edu/beinecke/collections/beinecke-cipher-voynich-manuscript"
+  ],
+  "reference_page": {
+    "folio": "84r",
+    "source": "Yale Digital Collections, Beinecke MS 408",
+    "attachment_policy": "Private attachment metadata is not distributed."
+  }
+}

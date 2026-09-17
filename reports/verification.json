@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "tests": 59,
+  "full_run_reproducibility": "Exact analysis-object equality after removing only UTC creation time.",
+  "replicate_source": "ZL3b-n.txt",
+  "grouping_version": "conservative-foldout-groups-v2",
+  "source_code_hashes": "All match current files for all three reviewed runs.",
+  "protocol_snapshot": "docs/plans/run-design-v2.md",
+  "protocol_sha256": "da7c7fc2e9a68fb97d581319092ef5c5770e847a98acb8203b81a3d4d88a0eef",
+  "protocol_note": "The current design has subsequent editorial changes. The archived run protocol preserves the exact bytes used for these experiments.",
+  "canonical_replicate_sha256": "829aee894dfa47f3f26c9e062d48fccf703e3ad522c02bc431259a6b9dddfa3e",
+  "review_scope": "Separate AI-agent code reviews within this project; external scholarly validation remains outstanding."
+}

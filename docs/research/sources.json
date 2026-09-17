@@ -1,0 +1,270 @@
+{
+  "schema_version": "1.0",
+  "research_as_of": "2026-09-16",
+  "core_source_count": 15,
+  "scope": "Primary measurements, institutional records, peer-reviewed studies, and author-accessible research papers. The index records evidence and limits. It does not endorse a decipherment.",
+  "retrieval_policy": "URLs and retrieval dates are recorded. This task does not add downloaded source files to the repository, so no local source hash is claimed.",
+  "sources": [
+    {
+      "id": "S01",
+      "kind": "institutional_record",
+      "citation": "Yale University, Beinecke Rare Book and Manuscript Library, Cipher (Voynich) Manuscript, MS 408 collection and detailed catalog record.",
+      "publication_date": "undated current record; catalog record predates this review",
+      "urls": [
+        "https://beinecke.library.yale.edu/beinecke/collections/beinecke-cipher-voynich-manuscript",
+        "https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.HTM"
+      ],
+      "retrieved": "2026-09-16",
+      "sections_read": "Collection description, physical description, section labels, provenance summary, and catalog history.",
+      "contribution": "The holding institution identifies the writing and author as unknown, provides page images, describes the illustrated sections, and separates the stronger seventeenth-century provenance from earlier speculation.",
+      "caveats": "The older catalog preserves superseded or speculative claims about Roger Bacon, John Dee, and plant origins. Radiocarbon and conservation results are summarized elsewhere.",
+      "next_use": "Use the Yale images and physical folio metadata as the fixed object reference. Keep picture labels separate from text interpretation."
+    },
+    {
+      "id": "S02",
+      "kind": "primary_measurement_report",
+      "citation": "Gregory W. L. Hodgins, Dating Results for Voynich Manuscript Parchment Leaves 8, 26, 47 and 68, letter report, 17 February 2009.",
+      "publication_date": "2009-02-17",
+      "urls": [
+        "https://voynich.nu/papers/Carbon_GH_2009.pdf"
+      ],
+      "retrieved": "2026-09-16",
+      "sections_read": "Sample treatment, accelerator mass spectrometry, contamination check, calibration, combined result, and limitations.",
+      "contribution": "Four solvent-treated samples combine to 516 +/- 18 radiocarbon years BP. The calibrated 95.4% range is 1404-1438 CE; the 68.2% range is 1411-1430 CE.",
+      "caveats": "The report dates sampled parchment, not writing, ink, pigment, or source text. The untreated leaf 68 sample was younger and is consistent with later carbon contamination.",
+      "next_use": "Use the date as a physical-codex prior. Do not use it as a direct date for a proposed language or cipher."
+    },
+    {
+      "id": "S03",
+      "kind": "institutional_conservation_report",
+      "citation": "Paula Zyats, Gregory W. L. Hodgins, and Joseph G. Barabe, The Mysterious Voynich Manuscript: Collaboration Yields New Insights, Book and Paper Group Annual 31, 2012.",
+      "publication_date": "2012",
+      "urls": [
+        "https://cool.culturalheritage.org/coolaic/sg/bpg/annual/v31/bpga31-ebook.pdf"
+      ],
+      "retrieved": "2026-09-16",
+      "sections_read": "Abstract, material examination, ink and pigment discussion, conservation history, and radiocarbon summary.",
+      "contribution": "The Yale, conservation, ink, pigment, and radiocarbon collaboration reports material findings consistent with a medieval codex and states that authorship and meaning remain unresolved.",
+      "caveats": "Material compatibility does not identify a scribe, language, or text date. This is a conservation annual report rather than a new decipherment study.",
+      "next_use": "Use it to bound physical claims and to keep parchment, ink, and writing-date claims separate."
+    },
+    {
+      "id": "S04",
+      "kind": "institutional_status_report",
+      "citation": "Yale News, Deciphering a mysterious manuscript, 21 February 2025.",
+      "publication_date": "2025-02-21",
+      "urls": [
+        "https://news.yale.edu/2025/02/21/deciphering-mysterious-manuscript"
+      ],
+      "retrieved": "2026-09-16",
+      "sections_read": "Current description, paleographic summary, and linguistics comments.",
+      "contribution": "Yale's current summary still treats the manuscript as undeciphered. It reports the five-collaborator description and notes that linguistic pattern analysis does not provide word meanings.",
+      "caveats": "This is institutional news, not a new paleographic or linguistic measurement. Its display metadata uses a broad sixteenth-century label that should not override the radiocarbon report.",
+      "next_use": "Use it as a current status check and as a guard against reporting a public decipherment claim as accepted."
+    },
+    {
+      "id": "S05",
+      "kind": "peer_reviewed_paleography",
+      "citation": "Lisa Fagin Davis, How Many Glyphs and How Many Scribes? Digital Paleography and the Voynich Manuscript, Manuscript Studies 5(1), 164-180, 2020.",
+      "publication_date": "2020",
+      "urls": [
+        "https://doi.org/10.1353/mns.2020.0011",
+        "https://muse.jhu.edu/article/754633"
+      ],
+      "retrieved": "2026-09-16",
+      "sections_read": "Abstract and available paper metadata on the Archetype/DigiPal annotation method and hand questions.",
+      "contribution": "Digital paleography and glyph-shape annotation propose multiple writing hands, commonly summarized as five, and provide a hand-labelled corpus for controlled analysis.",
+      "caveats": "A hand label does not prove a separate person or language. Sample selection, diagnostic glyphs, and the relation to Currier A/B need independent tests. A 2026 preprint challenges the discrete five-hand interpretation.",
+      "access_limitation": "Only the abstract and available paper metadata were accessible during this review. The full publisher article was not read.",
+      "next_use": "Run every document model with Davis labels, an unknown-hand control, and a continuous-variation alternative."
+    },
+    {
+      "id": "S06",
+      "kind": "peer_reviewed_computational_linguistics",
+      "citation": "Sravana Reddy and Kevin Knight, What We Know About The Voynich Manuscript, Proceedings of the 5th ACL-HLT Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities, 78-86, 2011.",
+      "publication_date": "2011",
+      "urls": [
+        "https://aclanthology.org/W11-1511/",
+        "https://aclanthology.org/W11-1511.pdf"
+      ],
+      "retrieved": "2026-09-16",
+      "sections_read": "Corpus description, hidden Markov model, word and character statistics, word order, topic and page-order tests, and conclusion.",
+      "contribution": "The study reports Zipf-like word frequencies, affix-like word structure, Currier A/B separation, page-neighbor similarity, and weak topic structure. It also reports weak local word order and unusual repeated bigrams.",
+      "caveats": "Language-like statistics are necessary but not sufficient for language. A 2011 corpus and transcription do not test newer generators. The paper states that decipherment claims are not supported by arbitrary local matches.",
+      "next_use": "Reimplement the metric family on frozen ZL and IT corpora, then test it against Naibbe, self-citation, and human-gibberish controls."
+    },
+    {
+      "id": "S07",
+      "kind": "peer_reviewed_information_theory",
+      "citation": "Marcelo A. Montemurro and Damián H. Zanette, Keywords and Co-Occurrence Patterns in the Voynich Manuscript: An Information-Theoretic Analysis, PLOS ONE 8(6), e66344, 2013.",
+      "publication_date": "2013",
+      "urls": [
+        "https://doi.org/10.1371/journal.pone.0066344",
+        "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0066344&type=printable"
+      ],
+      "retrieved": "2026-09-16",
+      "sections_read": "Corpus and section setup, information maxima, co-occurrence networks, comparison texts, and discussion.",
+      "contribution": "Word co-occurrence and information measures find long-range organization and section-linked word networks in the EVA transcription.",
+      "caveats": "The section partitions and illustration labels come from the same manuscript. The controls do not cover all modern generative or cipher models. Network structure is not decoded semantics.",
+      "next_use": "Use section clustering as a held-out prediction target. Condition on hand and page format before interpreting it as topic evidence."
+    },
+    {
+      "id": "S08",
+      "kind": "peer_reviewed_network_analysis",
+      "citation": "Diego R. Amancio, Eduardo G. Altmann, Diego Rybski, Osvaldo N. Oliveira Jr., and Luciano da F. Costa, Probing the Statistical Properties of Unknown Texts: Application to the Voynich Manuscript, PLOS ONE 8(7), e67310, 2013.",
+      "publication_date": "2013",
+      "urls": [
+        "https://doi.org/10.1371/journal.pone.0067310",
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0067310"
+      ],
+      "retrieved": "2026-09-16",
+      "sections_read": "Abstract, methods, network and intermittency measures, shuffled controls, classification errors, and limitations.",
+      "contribution": "Word properties, network topology, and intermittency separate most VMS samples from shuffled text and resemble natural-language document structure in many measures.",
+      "caveats": "The method misclassifies some known English and Portuguese samples. The authors state that the available data cannot faithfully predict the unknown language. Unusual repeated bigrams and high intermittency remain unexplained.",
+      "next_use": "Keep the method as a non-randomness baseline. Evaluate whether each candidate generator reproduces both its positive and anomalous results."
+    },
+    {
+      "id": "S09",
+      "kind": "peer_reviewed_cipher_construction",
+      "citation": "Gordon Rugg, An Elegant Hoax? A Possible Solution to the Voynich Manuscript, Cryptologia 28(1), 31-46, 2004.",
+      "publication_date": "2004 issue; publisher online record is later",
+      "urls": [
+        "https://doi.org/10.1080/0161-110491892755"
+      ],
+      "retrieved": "2026-09-16",
+      "sections_read": "Abstract and construction description.",
+      "contribution": "A Cardan-grille and fragment-table procedure can generate VMS-like strings or encode plaintext with period-plausible tools.",
+      "caveats": "The construction proves feasibility only. It does not show that MS 408 used the method or that the generated text has no hidden message.",
+      "access_limitation": "Only the DOI abstract and an accessible construction summary were available during this review. The full publisher article was not read.",
+      "next_use": "Use a fixed grille family as a historical-generative control. Score it on held-out page and line structure instead of visual resemblance."
+    },
+    {
+      "id": "S10",
+      "kind": "peer_reviewed_cipher_construction",
+      "citation": "Gordon Rugg and Gavin Taylor, Hoaxing Statistical Features of the Voynich Manuscript, Cryptologia 41(3), 247-268, 2017.",
+      "publication_date": "2017",
+      "urls": [
+        "https://doi.org/10.1080/01611194.2016.1206753"
+      ],
+      "retrieved": "2026-09-16",
+      "sections_read": "Abstract and construction results.",
+      "contribution": "The table-and-grille family reproduces a Zipf-like frequency curve, a symmetric word-length distribution, and uneven word and syllable distributions.",
+      "caveats": "Matching selected aggregate statistics does not identify the historical process. The construction must be compared with higher-level page, line, hand, and transcription controls.",
+      "access_limitation": "Only the DOI abstract and accessible article metadata were available during this review. The full publisher article was not read.",
+      "next_use": "Use the same target metrics as a non-unique-statistics demonstration. Do not use them as a decipherment score alone."
+    },
+    {
+      "id": "S11",
+      "kind": "peer_reviewed_generative_model",
+      "citation": "Torsten Timm and Andreas Schinner, A Possible Generating Algorithm of the Voynich Manuscript, Cryptologia 44(1), 1-19, 2020.",
+      "publication_date": "2020 issue; first online 2019",
+      "urls": [
+        "https://doi.org/10.1080/01611194.2019.1596999"
+      ],
+      "retrieved": "2026-09-16",
+      "sections_read": "Abstract, word-network construction, self-citation process, and statistical claims.",
+      "contribution": "A local copy-and-modify process generates word networks and selected frequency behavior similar to VMS observations, including two Zipf-like relationships.",
+      "caveats": "The generator is a feasibility model. It does not prove a hoax, identify an author, or explain every physical and document-level feature.",
+      "access_limitation": "Only the DOI abstract and accessible article metadata were available during this review. The full publisher article was not read.",
+      "next_use": "Fit only predeclared copy distance and edit rules on training groups. Test held-out lines and pages against Naibbe and human-gibberish controls."
+    },
+    {
+      "id": "S12",
+      "kind": "peer_reviewed_experimental_null",
+      "citation": "Daniel Gaskell and Claire Bowern, Gibberish after All? Voynichese Is Statistically Similar to Human-Produced Samples of Meaningless Text, Proceedings of the International Conference on the Voynich Manuscript 2022, CEUR-WS 3313, paper 4, 2022.",
+      "publication_date": "2022",
+      "urls": [
+        "https://ceur-ws.org/Vol-3313/paper4.pdf",
+        "https://github.com/danielgaskell/voynich"
+      ],
+      "retrieved": "2026-09-16",
+      "sections_read": "Volunteer protocol, corpus, metric comparison, classifier, discussion, and limitations.",
+      "contribution": "Forty-two volunteers wrote short texts without intended meaning. These samples reproduce several language-like metrics, and a classifier often places VMS transcriptions closer to human gibberish.",
+      "caveats": "Volunteer samples are short and use Latin letters. The experiment does not test the full codex, historical conditions, or a specific cipher.",
+      "next_use": "Use the released data as a realistic low-level null. Add matched page-length and line-layout controls before making document-level claims."
+    },
+    {
+      "id": "S13",
+      "kind": "research_preprint_and_corpus",
+      "citation": "Luke Lindemann and Claire Bowern, Character Entropy in Modern and Historical Texts: Comparison Metrics for an Undeciphered Manuscript, arXiv:2010.14697, 2020/2021 versions.",
+      "publication_date": "2020-10-28 first version; 2021-05-18 listed version 2",
+      "urls": [
+        "https://arxiv.org/abs/2010.14697",
+      "https://github.com/chirila/Voynich-public"
+      ],
+      "retrieved": "2026-09-16",
+      "sections_read": "Corpus construction, transcription variants, conditional character entropy, historical comparison, and limitations.",
+      "contribution": "A corpus partitioned by Currier class, proposed hand, and transcription is compared with 311 Wikipedia language samples and 18 historical texts in eight languages. Conditional character entropy remains unusually low and character placement is highly constrained.",
+      "caveats": "This is an arXiv research paper, not a final journal article. Entropy depends on symbol grouping and word boundaries. The result suggests a clue about encoding or lost distinctions; it does not select a language.",
+      "next_use": "Make conditional entropy and positional restrictions primary held-out metrics. Re-run them under every fixed transcription uncertainty mode."
+    },
+    {
+      "id": "S14",
+      "kind": "research_preprint_topic_model",
+      "citation": "Rachel Sterneck, Annie Polish, and Claire Bowern, Topic Modeling in the Voynich Manuscript, arXiv:2107.02858, 2021.",
+      "publication_date": "2021-07-06",
+      "urls": [
+        "https://arxiv.org/abs/2107.02858",
+        "https://alumniacademy.yale.edu/sites/default/files/2021-07/Topic%20Modeling%20in%20the%20Voynich%20Manuscript.pdf"
+      ],
+      "retrieved": "2026-09-16",
+      "sections_read": "LDA, LSA, NMF setup, chunk normalization, hand and section comparisons, and limitations.",
+      "contribution": "Topic clusters from pages and 40-word chunks track combinations of illustration section, Currier class, and proposed scribal hand.",
+      "caveats": "Topic models depend on token units, page length, normalization, and supplied section and hand labels. A topic can encode production history rather than semantic content. The paper is an arXiv preprint.",
+      "next_use": "Use topic assignment as a held-out prediction target and compare it with models that know hand and layout but have no semantic source text."
+    },
+    {
+      "id": "S15",
+      "kind": "peer_reviewed_cipher_construction_with_supplement",
+      "citation": "Michael A. Greshko, The Naibbe Cipher: A Substitution Cipher That Encrypts Latin and Italian as Voynich Manuscript-Like Ciphertext, Cryptologia, 2025, with supplementary material.",
+      "publication_date": "2025-11-26 article; 2025-11-27 supplement record",
+      "urls": [
+        "https://doi.org/10.1080/01611194.2025.2566408",
+        "https://doi.org/10.6084/m9.figshare.30730162",
+        "https://tandf.figshare.com/articles/journal_contribution/The_Naibbe_cipher_a_substitution_cipher_that_encrypts_Latin_and_Italian_as_Voynich_Manuscript-like_ciphertext/30730162"
+      ],
+      "retrieved": "2026-09-16",
+      "sections_read": "Article abstract and full supplementary material on hapax types, rare glyphs, illustrations, repetition, self-similarity, topic clusters, MATTR, MCW70, and autocorrelation.",
+      "contribution": "Naibbe is a reversible, verbose homophonic substitution procedure with plaintext unigram and bigram tables. It is designed for period-plausible manual use and reproduces many VMS-like properties in Latin and Italian mock ciphertext. Supplementary trials report MCW70 about 0.44 +/- 0.01 and MATTR about 0.56 +/- 0.01.",
+      "caveats": "The article and supplement do not decrypt MS 408 and do not confirm that MS 408 is ciphertext. Mock output does not match every VMS word, line, or paragraph placement. The publisher page may require access; the supplement is openly available through Figshare.",
+      "access_limitation": "The publisher article page was not accessible during this review. The article abstract, metadata, and full open supplementary material were read.",
+      "next_use": "Treat Naibbe as a fixed candidate family in a blind held-out competition. Do not tune its tables from test VMS frequencies."
+    }
+  ],
+  "context_sources": [
+    {
+      "id": "C01",
+      "kind": "peer_reviewed_review",
+      "citation": "Claire L. Bowern and Luke Lindemann, The Linguistics of the Voynich Manuscript, Annual Review of Linguistics 7, 285-308, 2021.",
+      "publication_date": "2021",
+      "urls": [
+        "https://doi.org/10.1146/annurev-linguistics-011619-030613",
+        "https://alumniacademy.yale.edu/sites/default/files/2021-07/The%20Linguistics%20of%20the%20Voynich%20Manuscript.pdf"
+      ],
+      "retrieved": "2026-09-16",
+      "use": "Synthesis check. It states that no consensus exists on the underlying language and that the contents remain undecipherable. Its preference for a natural-language interpretation is an argument, not a consensus result."
+    },
+    {
+      "id": "C02",
+      "kind": "institutional_status_statement",
+      "citation": "University of Bristol, statement on the Voynich Manuscript paper, 16 May 2019.",
+      "publication_date": "2019-05-16",
+      "urls": [
+        "https://www.bristol.ac.uk/news/2019/may/voynich-manuscript.html"
+      ],
+      "retrieved": "2026-09-16",
+      "use": "Status check. The university states that the Cheshire paper was the author's work, not a university result, and that the story was removed while validity concerns were assessed."
+    },
+    {
+      "id": "C03",
+      "kind": "unreviewed_2026_critique",
+      "citation": "Torsten Timm, One Hand, Five Labels: A Critical Examination of the Five-Scribe Hypothesis for the Voynich Manuscript, Zenodo preprint, compiled 19 March 2026.",
+      "publication_date": "2026-03-19",
+      "urls": [
+        "https://zenodo.org/records/19119470"
+      ],
+      "retrieved": "2026-09-16",
+      "use": "Watch item. It argues that Davis's labels may reflect continuous handwriting variation and text-format or Currier-class effects. It is a direct, reproducibility-relevant challenge, but it is not peer-reviewed and its conclusion must not be reported as settled."
+    }
+  ]
+}
