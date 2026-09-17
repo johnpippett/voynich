@@ -481,6 +481,34 @@ No name or plaintext was recovered.
 The source list, original plan, collision addendum, and receipts remain in `results/lunar-mansion-pilot-v1/`.
 The direct-source verification receipt has SHA-256 `852e776db3ea5e960973961255f5006613cfd771d063b7692d423bb44d61361a`.
 
+## Caspari–Faccini reading-rule check
+
+This source review asked whether the published rules determine readings before interpretation.
+A fixed rule could support a prediction on text outside the examples.
+
+The review used [Caspari and Faccini's version 1 preprint](https://doi.org/10.31235/osf.io/8b4we_v1), *A Key to the Voynich Manuscript*.
+Table 1, PDF pages 5–8, supplies a partial visual alphabet, ligatures, and syllable signs.
+Some rows permit alternatives, including `F/P` and `X/SS`.
+Page 9 states that contractions need context and describes the word identifications as preliminary.
+The methods on pages 13–14 describe revisions made with other words, illustrations, and dictionaries.
+The authors work from the manuscript and describe limitations of existing machine-readable transcriptions.
+
+These provisions do not specify one automatic reading procedure for a new passage.
+The table still gives partial constraints. Its incompleteness does not make every proposed reading false.
+We stopped full automatic decoder replication without a manuscript experiment or an invented EVA conversion.
+This decision does not reject Italian, shorthand, or every test of a partial key.
+
+The linked supplement was not available through the inspected OSF file listing.
+That listing and the project component listing returned no entries on 2026-09-17.
+The [institutional record](https://pure.mpg.de/rest/items/item_3644902) links to the same supplementary location.
+Thus, this review does not assess rules or vocabulary that might appear in the supplement.
+
+The primary agent inspected the four table pages and the extracted paper text.
+A separate AI task reviewed the limits of a fixed reading test. This is not external scholarly validation.
+The OSF and institutional PDFs produce identical extracted text but have different file bytes.
+The OSF PDF SHA-256 is `963912ce0fefe6c738d64d55a02779d0aacab75af8569bc96ef1feebcb69a560`.
+Sources and access receipts remain in `results/caspari-faccini-audit-v1/`.
+
 ## Initial audit limits
 
 The initial pass used catalogue descriptions, folio-layout records, and exact-locus

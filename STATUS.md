@@ -20,6 +20,8 @@ Spaces need not mark plaintext words. Variable padding, independent line phases,
 The [source audit](docs/research/anchor-audit.md) also records the stopped Hannig and gallows-continuation checks.
 The examined Schechter decoder retrieves assigned whole-word meanings. Its coverage cannot distinguish those meanings from other nonempty assignments.
 We stopped its sign-rule transfer branch without running the package. No plaintext resulted.
+The Caspari–Faccini preprint supplies a partial visual key but leaves reading choices dependent on context.
+We stopped full automatic decoder replication. The linked supplement was unavailable through the inspected source listings.
 
 The [cross-boundary test](reports/BOUNDARY_PREDICTION.md) finds transferable prediction between recorded word parts.
 A preceding final unit reduces the next initial-unit loss by about 0.18–0.20 bits in the visual-unit track.
