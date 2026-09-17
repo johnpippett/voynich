@@ -2,7 +2,8 @@
 
 This directory contains a fixed XML extraction procedure for a proposed ancient Latin medical control.
 The [protocol](../../docs/plans/celsus-projection-v1.md) defines the source, rules, and acceptance checks.
-No pinned-source projection has run at this implementation stage.
+The [validation report](../../reports/CELSUS_PROJECTION.md) records the first source run and its separate manual acceptance.
+Both traversals produced the same 550 paragraph records. A clean public checkout reproduced all five output files.
 
 The paragraph projector accepts source bytes. The separate runner verifies the pinned source and compares two traversals.
 It keeps full text private and writes public aggregate records. It does not fit a model.

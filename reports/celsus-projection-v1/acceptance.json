@@ -1,0 +1,460 @@
+{
+  "checks": {
+    "all_review_locations_covered_once": true,
+    "all_review_overall_statuses_pass": true,
+    "context_locations_and_hashes_match": true,
+    "freeze_manifest_pinned": true,
+    "module_independent_records_equal": true,
+    "module_independent_reports_equal": true,
+    "no_review_feature_failures": true,
+    "public_output_has_no_raw_paragraphs": true,
+    "replay_byte_equal": true,
+    "source_pinned": true,
+    "source_structure": true
+  },
+  "freeze": {
+    "ci_run_url": "https://github.com/johnpippett/voynich/actions/runs/35207958885",
+    "commit": "c1753fc1f71836f50ff7c6946d722dead07441a9",
+    "files": [
+      {
+        "path": "docs/plans/celsus-projection-v1.md",
+        "sha256": "3f9dcb864c9302d220d0fe1cafbc869ef9422724221fe38860f9481e3ff28efa"
+      },
+      {
+        "path": "experiments/medical/tei_projection.py",
+        "sha256": "d736f77a172854de0ada730d1775d36ae02691e5e0ee547931e8208120dfbadc"
+      },
+      {
+        "path": "experiments/medical/run_projection.py",
+        "sha256": "810f9083c1f38ddae272e38e68b494295527c0bed95dd7be2e6f93dfb18f6581"
+      },
+      {
+        "path": "experiments/medical/test_tei_projection.py",
+        "sha256": "c190fe6a748a4df77a2d1e55faf21f0232c0fb64a68ee41d2d752cdcb2f937ed"
+      },
+      {
+        "path": "experiments/medical/test_run_projection.py",
+        "sha256": "09e54635b7c2fe618e874661548b426b9b2698f1e7c5f98d1fb35e7dfcb3a4ff"
+      }
+    ],
+    "first_projection_ci_cutoff_utc": "2026-09-17T09:59:43.718620Z",
+    "manifest_path": "experiments/medical/freeze-v1.json",
+    "manifest_sha256": "5c48648f0098f1d303ddfc5309aa42d58899cd44b2b118a7cc55811f266f5631"
+  },
+  "initial_receipt": {
+    "byte_exact_copy": true,
+    "bytes": 16074,
+    "path": "reports/celsus-projection-v1/initial-receipt.json",
+    "sha256": "f9333cdac5f45742f23ffb76b8600421635296fa1b855ab54412f3b94300be91",
+    "source_manual_acceptance": "PENDING",
+    "source_path": "results/celsus-projection-v1/public-receipt.json",
+    "source_status": "PENDING_MANUAL_REVIEW"
+  },
+  "input_artifacts": {
+    "manual_checklist": {
+      "bytes": 15401,
+      "path": "results/celsus-projection-v1/manual-checklist.json",
+      "sha256": "32bdec1422e4b80d25139b275b3810bff2f5ffb2818e2c628bebb5f886402aca",
+      "source_manual_acceptance": "PENDING"
+    },
+    "manual_context": {
+      "bytes": 183880,
+      "path": "results/celsus-projection-v1/manual-context.jsonl",
+      "records": 30,
+      "sha256": "1e5186bcbac24ae86e52aae46dbc249732473752fdeb73908003b8e697ee44f5"
+    }
+  },
+  "manual_acceptance": "ACCEPTED",
+  "manual_review": {
+    "addendum": {
+      "affected_entries": 4,
+      "bytes": 6391,
+      "feature": "tails",
+      "original_status": "FEATURE_NOT_PRESENT",
+      "path": "results/celsus-projection-v1/manual-review-batch2-addendum.json",
+      "projection_rules_changed": false,
+      "revised_status": "PASS",
+      "sha256": "a48343da05329a331e21c8835b481e56b8be86cbc872944fd425591587935747"
+    },
+    "batches": [
+      {
+        "bytes": 22948,
+        "feature_status_counts": {
+          "choice_correction": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 2,
+            "PASS": 8
+          },
+          "empty_status": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 10,
+            "PASS": 0
+          },
+          "excluded_content": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 1,
+            "PASS": 9
+          },
+          "location_fields": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          },
+          "source_spelling": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          },
+          "tails": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          },
+          "transparent_markers": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          },
+          "xml_whitespace": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          }
+        },
+        "first_index": 1,
+        "last_index": 10,
+        "manual_review_type": null,
+        "method": "AI-assisted manual source inspection",
+        "name": "batch1",
+        "path": "results/celsus-projection-v1/manual-review-batch1.json",
+        "record_count": 10,
+        "sha256": "9e6cd2a406d97d3783ced93e613ec221fd25746d0a4fe35af33524b2fcaaa4ea",
+        "status": "PASS"
+      },
+      {
+        "bytes": 34144,
+        "feature_status_counts": {
+          "choice_correction": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 4,
+            "PASS": 6
+          },
+          "empty_status": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          },
+          "excluded_content": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 4,
+            "PASS": 6
+          },
+          "location_fields": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          },
+          "source_spelling": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          },
+          "tails": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          },
+          "transparent_markers": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          },
+          "xml_whitespace": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          }
+        },
+        "first_index": 11,
+        "last_index": 20,
+        "manual_review_type": "AI-assisted manual source inspection, not human or external validation",
+        "method": "AI-assisted manual source inspection",
+        "name": "batch2",
+        "path": "results/celsus-projection-v1/manual-review-batch2.json",
+        "record_count": 10,
+        "sha256": "f81465266f6db30c4be32a7a99bb7e9bba9bba1851f6314c911eb0254b02abf0",
+        "status": "PASS"
+      },
+      {
+        "bytes": 29705,
+        "feature_status_counts": {
+          "choice_correction": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 4,
+            "PASS": 6
+          },
+          "empty_status": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 10,
+            "PASS": 0
+          },
+          "excluded_content": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 1,
+            "PASS": 9
+          },
+          "location_fields": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          },
+          "source_spelling": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          },
+          "tails": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          },
+          "transparent_markers": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          },
+          "xml_whitespace": {
+            "FAIL": 0,
+            "FEATURE_NOT_PRESENT": 0,
+            "PASS": 10
+          }
+        },
+        "first_index": 21,
+        "last_index": 30,
+        "manual_review_type": null,
+        "method": "AI-assisted manual source inspection",
+        "name": "batch3",
+        "path": "results/celsus-projection-v1/manual-review-batch3.json",
+        "record_count": 10,
+        "sha256": "f85c36b52c87ae2236f3a5451f0bee0d3cf974773c766057d2cb4bca48296fa2",
+        "status": "PASS"
+      }
+    ],
+    "empty_status_convention": {
+      "batch1_and_batch3": "FEATURE_NOT_PRESENT for non-empty entries",
+      "batch2": "PASS for the non-empty include-policy check",
+      "preserved": true
+    },
+    "fail_count": 0,
+    "feature_status_counts": {
+      "choice_correction": {
+        "FAIL": 0,
+        "FEATURE_NOT_PRESENT": 10,
+        "PASS": 20
+      },
+      "empty_status": {
+        "FAIL": 0,
+        "FEATURE_NOT_PRESENT": 20,
+        "PASS": 10
+      },
+      "excluded_content": {
+        "FAIL": 0,
+        "FEATURE_NOT_PRESENT": 6,
+        "PASS": 24
+      },
+      "location_fields": {
+        "FAIL": 0,
+        "FEATURE_NOT_PRESENT": 0,
+        "PASS": 30
+      },
+      "source_spelling": {
+        "FAIL": 0,
+        "FEATURE_NOT_PRESENT": 0,
+        "PASS": 30
+      },
+      "tails": {
+        "FAIL": 0,
+        "FEATURE_NOT_PRESENT": 0,
+        "PASS": 30
+      },
+      "transparent_markers": {
+        "FAIL": 0,
+        "FEATURE_NOT_PRESENT": 0,
+        "PASS": 30
+      },
+      "xml_whitespace": {
+        "FAIL": 0,
+        "FEATURE_NOT_PRESENT": 0,
+        "PASS": 30
+      }
+    },
+    "features_per_location": 8,
+    "human_or_external_validation_claim": false,
+    "locations_reviewed": 30,
+    "overall_status_counts": {
+      "PASS": 30
+    },
+    "review_method": "AI-assisted manual source inspection",
+    "tails_addendum_scope": "The batch 2 addendum changes four tail presence labels from FEATURE_NOT_PRESENT to PASS after full subtree checks. It changes no projection rule."
+  },
+  "projection": {
+    "actual_retained": {
+      "choice": 446,
+      "corr": 446,
+      "hi": 20,
+      "milestone": 1800,
+      "p": 550,
+      "pb": 307
+    },
+    "ancestor_excluded": {
+      "by_path": {
+        "figure|note": 4,
+        "foreign|note": 8,
+        "head|note>figure": 4,
+        "hi|note": 503,
+        "hi|note>note": 2,
+        "milestone|note": 4,
+        "note|note": 1,
+        "pb|note": 1
+      },
+      "by_tag": {
+        "figure": 4,
+        "foreign": 8,
+        "head": 4,
+        "hi": 505,
+        "milestone": 4,
+        "note": 1,
+        "pb": 1
+      }
+    },
+    "boundary_validation": {
+      "status": "PASS"
+    },
+    "direct_excluded": {
+      "del": 7,
+      "foreign": 268,
+      "note": 625,
+      "sic": 446
+    },
+    "dropped_empty_paragraph_count": 0,
+    "empty_policy": "include",
+    "empty_projected_paragraph_count": 0,
+    "independent": {
+      "bytes": 747194,
+      "path": "results/celsus-projection-v1/independent-paragraphs.jsonl",
+      "records": 550,
+      "sha256": "f37d99f5ad0771c32c4d71934b58df00438ca7dadf870f89dc93b181c1d373f2"
+    },
+    "module": {
+      "bytes": 747194,
+      "path": "results/celsus-projection-v1/module-paragraphs.jsonl",
+      "records": 550,
+      "sha256": "f37d99f5ad0771c32c4d71934b58df00438ca7dadf870f89dc93b181c1d373f2"
+    },
+    "projected_chapter_count": 211,
+    "projected_paragraph_count": 550,
+    "projected_paragraphs_by_book": {
+      "1": 28,
+      "2": 45,
+      "3": 45,
+      "4": 35,
+      "5": 204,
+      "6": 80,
+      "7": 74,
+      "8": 39
+    },
+    "records_equal": true,
+    "reports_equal": true
+  },
+  "protocol": "celsus-projection-v1",
+  "replay": {
+    "all_outputs_byte_equal": true,
+    "bytes": 2217,
+    "checkout_commit": "c1753fc1f71836f50ff7c6946d722dead07441a9",
+    "exit_status": 0,
+    "input": {
+      "bytes": 2476,
+      "path": "results/celsus-projection-v1-replay-verification.json",
+      "sha256": "13c1daf30d9cb95cf4ea8131d9eb88fe683002ab392a7d5a3c0309a190eb0e63"
+    },
+    "path": "reports/celsus-projection-v1/replay-verification.json",
+    "sha256": "4d5325bd7d650e84cc5cceb2b4640c40065d1e69d4f28d80dc41fdfbfbccb45d"
+  },
+  "result": "PASS",
+  "schema_version": 1,
+  "source": {
+    "audit_receipt_sha256": "aebba00a41c120e4101d94c67f4783e9de55106051d158f3ccd41246d960e6de",
+    "audit_revision": "f26874c",
+    "bytes": 893899,
+    "commit": "ae0fe427f56d7652efc3090af74a2663a4cbed60",
+    "repository": "https://github.com/PerseusDL/canonical-latinLit",
+    "sha256": "a4a5194ba38a7efd5192d20f2a7b696f4fa64105010eb629aa7c35255a935145",
+    "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/ae0fe427f56d7652efc3090af74a2663a4cbed60/data/phi0836/phi002/phi0836.phi002.perseus-lat5.xml"
+  },
+  "status": "COMPLETE",
+  "structure": {
+    "book_count": 8,
+    "book_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "chapter_count": 211,
+    "chapters_by_book": {
+      "1": 11,
+      "2": 34,
+      "3": 27,
+      "4": 32,
+      "5": 29,
+      "6": 19,
+      "7": 34,
+      "8": 25
+    },
+    "paragraph_count": 550,
+    "paragraphs_by_book": {
+      "1": 28,
+      "2": 45,
+      "3": 45,
+      "4": 35,
+      "5": 204,
+      "6": 80,
+      "7": 74,
+      "8": 39
+    },
+    "selected_subtree_counts": {
+      "choice": 446,
+      "corr": 446,
+      "del": 7,
+      "figure": 4,
+      "foreign": 276,
+      "head": 4,
+      "hi": 525,
+      "milestone": 1804,
+      "note": 626,
+      "p": 550,
+      "pb": 308,
+      "sic": 446
+    },
+    "source_counts": {
+      "body": 1,
+      "choice": 446,
+      "corr": 446,
+      "del": 10,
+      "div": 220,
+      "figure": 5,
+      "foreign": 276,
+      "head": 217,
+      "hi": 525,
+      "milestone": 1807,
+      "note": 628,
+      "p": 550,
+      "pb": 361,
+      "sic": 446
+    }
+  }
+}

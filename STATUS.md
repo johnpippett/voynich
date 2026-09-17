@@ -12,6 +12,7 @@ The [homophonic report](reports/HOMOPHONIC.md) contains the preceding controls a
 The [lexicon report](reports/LEXICON.md) contains the earlier manuscript bounds.
 The [Stage 2 report](reports/STAGE2.md) contains the earlier controlled searches.
 The [initial report](reports/FINDINGS.md) preserves the earlier exploratory results.
+The [Celsus projection report](reports/CELSUS_PROJECTION.md) validates one ancient medical source extraction.
 
 The current work includes:
 
@@ -27,6 +28,7 @@ The current work includes:
 - Four homophonic controls with frozen settings, saved maps, recovery errors, and score bounds.
 - Complete alternative-assignment queries for all 46 fitted units in the Latin homophonic control.
 - Complete enumeration of four dictionary-optimal maps and exact character-model ranking of those maps.
+- Two matching Celsus text projections, a byte-identical public replay, and AI inspection of 30 fixed source locations.
 
 The Latin homophonic controls reached a certified dictionary optimum with four test character errors.
 Exactly four keys attain that optimum. Certification alone does not establish the correct key.

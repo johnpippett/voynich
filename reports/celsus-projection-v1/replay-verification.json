@@ -1,0 +1,63 @@
+{
+  "checkout": {
+    "commit": "c1753fc1f71836f50ff7c6946d722dead07441a9",
+    "detached": true,
+    "tracked_clean_after": true,
+    "tracked_clean_before": true
+  },
+  "command": "python -m experiments.medical.run_projection --output-dir results/celsus-projection-v1",
+  "input": {
+    "bytes": 2476,
+    "path": "results/celsus-projection-v1-replay-verification.json",
+    "sha256": "13c1daf30d9cb95cf4ea8131d9eb88fe683002ab392a7d5a3c0309a190eb0e63"
+  },
+  "outputs": [
+    {
+      "byte_equal": true,
+      "bytes": 16074,
+      "path": "results/celsus-projection-v1/public-receipt.json",
+      "sha256": "f9333cdac5f45742f23ffb76b8600421635296fa1b855ab54412f3b94300be91"
+    },
+    {
+      "byte_equal": true,
+      "bytes": 747194,
+      "path": "results/celsus-projection-v1/module-paragraphs.jsonl",
+      "sha256": "f37d99f5ad0771c32c4d71934b58df00438ca7dadf870f89dc93b181c1d373f2"
+    },
+    {
+      "byte_equal": true,
+      "bytes": 747194,
+      "path": "results/celsus-projection-v1/independent-paragraphs.jsonl",
+      "sha256": "f37d99f5ad0771c32c4d71934b58df00438ca7dadf870f89dc93b181c1d373f2"
+    },
+    {
+      "byte_equal": true,
+      "bytes": 15401,
+      "path": "results/celsus-projection-v1/manual-checklist.json",
+      "sha256": "32bdec1422e4b80d25139b275b3810bff2f5ffb2818e2c628bebb5f886402aca"
+    },
+    {
+      "byte_equal": true,
+      "bytes": 183880,
+      "path": "results/celsus-projection-v1/manual-context.jsonl",
+      "sha256": "1e5186bcbac24ae86e52aae46dbc249732473752fdeb73908003b8e697ee44f5"
+    }
+  ],
+  "resource_fields": "omitted from this public receipt",
+  "run": {
+    "exit_status": 0,
+    "independent_record_count": 550,
+    "manual_acceptance": "PENDING",
+    "module_record_count": 550,
+    "public_stdout_contains_full_text": false,
+    "source_bytes": 893899,
+    "source_sha256": "a4a5194ba38a7efd5192d20f2a7b696f4fa64105010eb629aa7c35255a935145",
+    "stderr_bytes": 0,
+    "stdout_bytes": 16074,
+    "stdout_sha256": "f9333cdac5f45742f23ffb76b8600421635296fa1b855ab54412f3b94300be91",
+    "validation_scope": "pinned_source",
+    "validation_status": "PENDING_MANUAL_REVIEW"
+  },
+  "schema_version": 1,
+  "verification": "celsus-projection-public-replay"
+}
