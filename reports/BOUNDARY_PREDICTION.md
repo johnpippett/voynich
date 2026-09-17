@@ -29,6 +29,38 @@ A nested check tested pairs with both word types absent from train. `visual_six`
 
 The source groups and paragraph-line filter were inspected before this run. The result is exploratory. The transcriptions and unitizations are not independent replications. Input attribution and hashes are in the [source manifest](../data/source_manifest.json). The primary result records are [ZL](boundary-prediction-v1/ZL.json) and [IT](boundary-prediction-v1/IT.json). The fixed unitizer is [the `visual_six` implementation](../experiments/homophonic/units.py).
 
+## Exact target-remainder control
+
+A later exploratory control holds the complete target remainder fixed after its first unit.
+It also matches folio, exact target index, last-word status, and preceding-word unit length.
+Empty remainders are excluded. Only cells with variation in both endpoints can affect the score.
+The existing fitted table is unchanged. This is a conditional association test after observing the target remainder.
+It is not a new complete-word predictor.
+
+| Source and units | Variable cells | Targets | Exact excess per variable target | 99-draw rank |
+| --- | ---: | ---: | ---: | ---: |
+| ZL visual | 45 | 99 | +0.191049 | 0.01 |
+| IT visual | 70 | 153 | +0.143018 | 0.02 |
+| ZL raw | 32 | 76 | +0.105203 | 0.08 |
+| IT raw | 41 | 95 | +0.076107 | 0.04 |
+
+The visual cells contain only 1.6% of eligible ZL targets and 2.1% of eligible IT targets.
+The rank uses 99 predecessor-label permutations with seed 411.
+The exact excess uses the complete permutation expectation, calculated from each cell's predecessor-label frequencies.
+Thus, the expectation has no Monte Carlo error. The rank remains a descriptive finite-draw result.
+Conditioning on part of the target and selecting variable cells can induce associations.
+The test assumes exchangeability within each cell. It does not establish a cause, a morpheme, or a linguistic word boundary.
+
+The descriptive component calculation found no uniform initial-unit effect.
+For visual `a/o` cells, excess totals are +8.140 bits over 14 ZL targets and +1.767 bits over 13 IT targets.
+For visual `ch/sh` cells, totals are -0.288 bits over 43 ZL targets and -0.527 bits over 51 IT targets.
+These are selected component totals, not separate confirmatory tests.
+Identical written remainders do not establish identical meanings. These results do not justify merging initial units.
+They identify small candidate sets for source-image inspection.
+
+The [same-tail record](boundary-prediction-v1/same-tail.json) preserves the original sampled expectation and ranks.
+The [component record](boundary-prediction-v1/same-tail-components.json) contains all initial-unit sets and their exact expectation contributions.
+
 ## Reproduction
 
 Use a fresh checkout with Python assertions enabled:
@@ -38,4 +70,6 @@ python scripts/fetch_sources.py
 python scripts/check_boundary_prediction.py ZL
 python scripts/check_boundary_prediction.py IT
 PYTHONPATH=src python scripts/check_boundary_novelty.py
+python scripts/check_boundary_same_tail.py
+python scripts/summarize_boundary_same_tail.py
 ```

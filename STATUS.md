@@ -11,6 +11,8 @@ A preceding final unit reduces the next initial-unit loss by about 0.18–0.20 b
 An excess remains under matched folio, position, and word-length controls in both transcriptions.
 The effect varies across page groups. It does not establish linguistic spaces, sounds, or meaning.
 The main unitization has no gain on the small subset where both word types were absent from training.
+A same-remainder control retains a positive excess in a small selected subset.
+The `a/o` and `ch/sh` component results differ. They do not justify merging these signs.
 This is a constraint for future models, not a translation.
 
 The [local word-memory test](reports/LOCAL_MEMORY.md) found no useful prediction gain from the observed word order.

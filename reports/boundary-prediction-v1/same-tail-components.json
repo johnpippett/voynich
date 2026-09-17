@@ -1,0 +1,716 @@
+{
+  "header": "This decomposes same-tail association by target initial-unit set.",
+  "schema": "boundary-same-tail-components-v1",
+  "sources": [
+    {
+      "exploratory": true,
+      "limit": "Descriptive decomposition of an observed-minus-exact-null contrast; no causal rule.",
+      "method_script_sha256": "94d8e66b2ad5471684139d1139792dd8c8ed088fa3104653160ec1fe4e5143bd",
+      "representations": {
+        "raw": {
+          "active_cell_count": 32,
+          "active_target_count": 76,
+          "active_totals": {
+            "cell_count": 32,
+            "excess_bits": 7.995392114602561,
+            "expected_gain_bits": 8.842873471523392,
+            "observed_gain_bits": 16.838265586125953,
+            "target_count": 76
+          },
+          "components": [
+            {
+              "cell_count": 8,
+              "excess_bits": 4.921556217520186,
+              "expected_gain_bits": 1.737028345759759,
+              "observed_gain_bits": 6.658584563279945,
+              "target_count": 18,
+              "target_initial_units": [
+                "a",
+                "o"
+              ]
+            },
+            {
+              "cell_count": 18,
+              "excess_bits": -1.1341521346373895,
+              "expected_gain_bits": 6.892460164971866,
+              "observed_gain_bits": 5.758308030334477,
+              "target_count": 45,
+              "target_initial_units": [
+                "c",
+                "s"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.42710033518272006,
+              "expected_gain_bits": -0.8408341674948918,
+              "observed_gain_bits": -0.41373383231217176,
+              "target_count": 2,
+              "target_initial_units": [
+                "d",
+                "k"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.2726939999695839,
+              "expected_gain_bits": 0.41193802886247255,
+              "observed_gain_bits": 0.6846320288320564,
+              "target_count": 2,
+              "target_initial_units": [
+                "d",
+                "s"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.7992281015004483,
+              "expected_gain_bits": -0.7413063652289154,
+              "observed_gain_bits": 0.057921736271532964,
+              "target_count": 2,
+              "target_initial_units": [
+                "l",
+                "o"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 2.5665262303140395,
+              "expected_gain_bits": 0.3557743105178979,
+              "observed_gain_bits": 2.9223005408319374,
+              "target_count": 2,
+              "target_initial_units": [
+                "l",
+                "y"
+              ]
+            },
+            {
+              "cell_count": 2,
+              "excess_bits": 0.14243936475297314,
+              "expected_gain_bits": 1.0278131541352034,
+              "observed_gain_bits": 1.1702525188881765,
+              "target_count": 5,
+              "target_initial_units": [
+                "o",
+                "y"
+              ]
+            }
+          ],
+          "eligible_targets": 6083,
+          "excluded_empty_target_tail": 167
+        },
+        "visual": {
+          "active_cell_count": 45,
+          "active_target_count": 99,
+          "active_totals": {
+            "cell_count": 45,
+            "excess_bits": 18.913895111754762,
+            "expected_gain_bits": 13.098841410753963,
+            "observed_gain_bits": 32.012736522508725,
+            "target_count": 99
+          },
+          "components": [
+            {
+              "cell_count": 6,
+              "excess_bits": 8.140154197364991,
+              "expected_gain_bits": 3.0942483717181464,
+              "observed_gain_bits": 11.234402569083137,
+              "target_count": 14,
+              "target_initial_units": [
+                "a",
+                "o"
+              ]
+            },
+            {
+              "cell_count": 2,
+              "excess_bits": 0.4595342538901246,
+              "expected_gain_bits": 1.6930756587381754,
+              "observed_gain_bits": 2.1526099126283,
+              "target_count": 5,
+              "target_initial_units": [
+                "ch",
+                "cth"
+              ]
+            },
+            {
+              "cell_count": 2,
+              "excess_bits": 1.6814762447846219,
+              "expected_gain_bits": -0.6120539956617579,
+              "observed_gain_bits": 1.069422249122864,
+              "target_count": 4,
+              "target_initial_units": [
+                "ch",
+                "d"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": -0.32860457319297076,
+              "expected_gain_bits": -0.6592224581199009,
+              "observed_gain_bits": -0.9878270313128716,
+              "target_count": 2,
+              "target_initial_units": [
+                "ch",
+                "k"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 1.6036091539661088,
+              "expected_gain_bits": -0.17956947486199137,
+              "observed_gain_bits": 1.4240396791041174,
+              "target_count": 2,
+              "target_initial_units": [
+                "ch",
+                "q"
+              ]
+            },
+            {
+              "cell_count": 19,
+              "excess_bits": -0.2883086151237535,
+              "expected_gain_bits": 7.7854488034847495,
+              "observed_gain_bits": 7.497140188360996,
+              "target_count": 43,
+              "target_initial_units": [
+                "ch",
+                "sh"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.8976862182512022,
+              "expected_gain_bits": -0.5770373371288713,
+              "observed_gain_bits": 0.3206488811223309,
+              "target_count": 2,
+              "target_initial_units": [
+                "ch",
+                "t"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.5678469315486243,
+              "expected_gain_bits": 0.6012425610525405,
+              "observed_gain_bits": 1.1690894926011648,
+              "target_count": 2,
+              "target_initial_units": [
+                "ckh",
+                "sh"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 1.3190138378233822,
+              "expected_gain_bits": -0.7524999962078063,
+              "observed_gain_bits": 0.5665138416155759,
+              "target_count": 3,
+              "target_initial_units": [
+                "cth",
+                "d"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.4271006591573432,
+              "expected_gain_bits": -0.8406512801368748,
+              "observed_gain_bits": -0.41355062097953166,
+              "target_count": 2,
+              "target_initial_units": [
+                "d",
+                "k"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": -0.9270369453633709,
+              "expected_gain_bits": 0.28696314211494833,
+              "observed_gain_bits": -0.6400738032484226,
+              "target_count": 2,
+              "target_initial_units": [
+                "d",
+                "q"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 1.4553400900123572,
+              "expected_gain_bits": 2.110028903242455,
+              "observed_gain_bits": 3.565368993254812,
+              "target_count": 2,
+              "target_initial_units": [
+                "d",
+                "r"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": -0.12812697806984552,
+              "expected_gain_bits": 1.0478918671698185,
+              "observed_gain_bits": 0.919764889099973,
+              "target_count": 2,
+              "target_initial_units": [
+                "d",
+                "t"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.10740951470340132,
+              "expected_gain_bits": 0.5135456093229704,
+              "observed_gain_bits": 0.6209551240263718,
+              "target_count": 2,
+              "target_initial_units": [
+                "k",
+                "sh"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 1.5098555712771002,
+              "expected_gain_bits": -0.6878106523071494,
+              "observed_gain_bits": 0.8220449189699508,
+              "target_count": 2,
+              "target_initial_units": [
+                "l",
+                "o"
+              ]
+            },
+            {
+              "cell_count": 2,
+              "excess_bits": 0.171122041791393,
+              "expected_gain_bits": 0.8626214414531104,
+              "observed_gain_bits": 1.0337434832445034,
+              "target_count": 4,
+              "target_initial_units": [
+                "o",
+                "y"
+              ]
+            },
+            {
+              "cell_count": 3,
+              "excess_bits": 2.2458235089340493,
+              "expected_gain_bits": -0.5873797531185989,
+              "observed_gain_bits": 1.6584437558154503,
+              "target_count": 6,
+              "target_initial_units": [
+                "sh",
+                "t"
+              ]
+            }
+          ],
+          "eligible_targets": 6078,
+          "excluded_empty_target_tail": 172
+        }
+      },
+      "same_tail_result_sha256": "124da8be36e16fa263a98a81de7f9ae60604ad37fe62bbd748ebdf2e0dee2073",
+      "same_tail_script_sha256": "b5a5035a24550c9d7b6e165063490660f0009f271600cbab80dda689b63fe56c",
+      "source": "ZL",
+      "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc"
+    },
+    {
+      "exploratory": true,
+      "limit": "Descriptive decomposition of an observed-minus-exact-null contrast; no causal rule.",
+      "method_script_sha256": "94d8e66b2ad5471684139d1139792dd8c8ed088fa3104653160ec1fe4e5143bd",
+      "representations": {
+        "raw": {
+          "active_cell_count": 41,
+          "active_target_count": 95,
+          "active_totals": {
+            "cell_count": 41,
+            "excess_bits": 7.230205331848819,
+            "expected_gain_bits": -2.8447001674996555,
+            "observed_gain_bits": 4.385505164349164,
+            "target_count": 95
+          },
+          "components": [
+            {
+              "cell_count": 7,
+              "excess_bits": 7.141373990872879,
+              "expected_gain_bits": -3.9776287223290465,
+              "observed_gain_bits": 3.163745268543832,
+              "target_count": 15,
+              "target_initial_units": [
+                "a",
+                "o"
+              ]
+            },
+            {
+              "cell_count": 25,
+              "excess_bits": -2.4884553289086826,
+              "expected_gain_bits": 6.894658014524189,
+              "observed_gain_bits": 4.406202685615506,
+              "target_count": 60,
+              "target_initial_units": [
+                "c",
+                "s"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.10890010906206982,
+              "expected_gain_bits": -4.9287901017928455,
+              "observed_gain_bits": -4.819889992730776,
+              "target_count": 2,
+              "target_initial_units": [
+                "d",
+                "e"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.31737448484297026,
+              "expected_gain_bits": -0.8449431959298099,
+              "observed_gain_bits": -0.5275687110868397,
+              "target_count": 2,
+              "target_initial_units": [
+                "d",
+                "k"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.265287008275477,
+              "expected_gain_bits": 0.4474868809236119,
+              "observed_gain_bits": 0.7127738891990889,
+              "target_count": 2,
+              "target_initial_units": [
+                "d",
+                "s"
+              ]
+            },
+            {
+              "cell_count": 2,
+              "excess_bits": 0.12169173007115575,
+              "expected_gain_bits": -0.3814399381839877,
+              "observed_gain_bits": -0.25974820811283195,
+              "target_count": 4,
+              "target_initial_units": [
+                "d",
+                "t"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 1.586444504789255,
+              "expected_gain_bits": -0.8023270687457318,
+              "observed_gain_bits": 0.7841174360435232,
+              "target_count": 2,
+              "target_initial_units": [
+                "l",
+                "o"
+              ]
+            },
+            {
+              "cell_count": 3,
+              "excess_bits": 0.17758883284369542,
+              "expected_gain_bits": 0.7482839640339654,
+              "observed_gain_bits": 0.9258727968776608,
+              "target_count": 8,
+              "target_initial_units": [
+                "o",
+                "y"
+              ]
+            }
+          ],
+          "eligible_targets": 7135,
+          "excluded_empty_target_tail": 91
+        },
+        "visual": {
+          "active_cell_count": 70,
+          "active_target_count": 153,
+          "active_totals": {
+            "cell_count": 70,
+            "excess_bits": 21.881794365542813,
+            "expected_gain_bits": -1.6356528915576307,
+            "observed_gain_bits": 20.246141473985183,
+            "target_count": 153
+          },
+          "components": [
+            {
+              "cell_count": 6,
+              "excess_bits": 1.767307583516879,
+              "expected_gain_bits": 0.07433645173157988,
+              "observed_gain_bits": 1.8416440352484589,
+              "target_count": 13,
+              "target_initial_units": [
+                "a",
+                "o"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 1.2991608885332475,
+              "expected_gain_bits": -0.577656565521032,
+              "observed_gain_bits": 0.7215043230122156,
+              "target_count": 2,
+              "target_initial_units": [
+                "ch",
+                "ckh"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 1.7216350936434726,
+              "expected_gain_bits": -2.691016698891044,
+              "observed_gain_bits": -0.9693816052475714,
+              "target_count": 2,
+              "target_initial_units": [
+                "ch",
+                "cph"
+              ]
+            },
+            {
+              "cell_count": 4,
+              "excess_bits": 0.1602404439337004,
+              "expected_gain_bits": 1.9383182877905671,
+              "observed_gain_bits": 2.0985587317242675,
+              "target_count": 9,
+              "target_initial_units": [
+                "ch",
+                "cth"
+              ]
+            },
+            {
+              "cell_count": 5,
+              "excess_bits": 4.396348108301162,
+              "expected_gain_bits": -1.6084379455503912,
+              "observed_gain_bits": 2.787910162750771,
+              "target_count": 10,
+              "target_initial_units": [
+                "ch",
+                "d"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": -0.8489725573646147,
+              "expected_gain_bits": -0.16073588441192221,
+              "observed_gain_bits": -1.009708441776537,
+              "target_count": 2,
+              "target_initial_units": [
+                "ch",
+                "k"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.5088654590816883,
+              "expected_gain_bits": 1.3932816861874038,
+              "observed_gain_bits": 1.9021471452690921,
+              "target_count": 4,
+              "target_initial_units": [
+                "ch",
+                "k",
+                "sh"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 1.7858855669643163,
+              "expected_gain_bits": -0.4873669096548472,
+              "observed_gain_bits": 1.2985186573094691,
+              "target_count": 2,
+              "target_initial_units": [
+                "ch",
+                "q"
+              ]
+            },
+            {
+              "cell_count": 22,
+              "excess_bits": -0.5267585272018476,
+              "expected_gain_bits": 8.358478568129616,
+              "observed_gain_bits": 7.8317200409277685,
+              "target_count": 51,
+              "target_initial_units": [
+                "ch",
+                "sh"
+              ]
+            },
+            {
+              "cell_count": 3,
+              "excess_bits": 2.013091912268087,
+              "expected_gain_bits": -2.1711090913500435,
+              "observed_gain_bits": -0.15801717908195645,
+              "target_count": 6,
+              "target_initial_units": [
+                "ch",
+                "t"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.8457725437439585,
+              "expected_gain_bits": -1.434845843579378,
+              "observed_gain_bits": -0.5890732998354196,
+              "target_count": 2,
+              "target_initial_units": [
+                "ckh",
+                "d"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.4896882756666159,
+              "expected_gain_bits": 0.8296681104352519,
+              "observed_gain_bits": 1.3193563861018678,
+              "target_count": 2,
+              "target_initial_units": [
+                "ckh",
+                "sh"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 1.8287209085739047,
+              "expected_gain_bits": -0.567358302258711,
+              "observed_gain_bits": 1.2613626063151937,
+              "target_count": 2,
+              "target_initial_units": [
+                "ckh",
+                "t"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 1.5710889749490118,
+              "expected_gain_bits": -0.4722882946249847,
+              "observed_gain_bits": 1.0988006803240271,
+              "target_count": 3,
+              "target_initial_units": [
+                "cth",
+                "d"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": -1.366299062297859,
+              "expected_gain_bits": -1.0234052280913417,
+              "observed_gain_bits": -2.3897042903892007,
+              "target_count": 2,
+              "target_initial_units": [
+                "cth",
+                "sh"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.10890076257023651,
+              "expected_gain_bits": -4.928379428336532,
+              "observed_gain_bits": -4.819478665766296,
+              "target_count": 2,
+              "target_initial_units": [
+                "d",
+                "e"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.3173746327192717,
+              "expected_gain_bits": -0.8447900478245689,
+              "observed_gain_bits": -0.5274154151052972,
+              "target_count": 2,
+              "target_initial_units": [
+                "d",
+                "k"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": -0.9665653250315343,
+              "expected_gain_bits": 0.29990159375744785,
+              "observed_gain_bits": -0.6666637312740864,
+              "target_count": 2,
+              "target_initial_units": [
+                "d",
+                "q"
+              ]
+            },
+            {
+              "cell_count": 2,
+              "excess_bits": -0.6098298526138564,
+              "expected_gain_bits": 1.8336105832937832,
+              "observed_gain_bits": 1.2237807306799269,
+              "target_count": 4,
+              "target_initial_units": [
+                "d",
+                "t"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": -0.0388645275022963,
+              "expected_gain_bits": 0.3899877754958183,
+              "observed_gain_bits": 0.351123247993522,
+              "target_count": 2,
+              "target_initial_units": [
+                "k",
+                "r"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 0.1345494970171055,
+              "expected_gain_bits": 0.5241094915615161,
+              "observed_gain_bits": 0.6586589885786216,
+              "target_count": 2,
+              "target_initial_units": [
+                "k",
+                "sh"
+              ]
+            },
+            {
+              "cell_count": 2,
+              "excess_bits": 3.2411782881594045,
+              "expected_gain_bits": -1.5210411626466263,
+              "observed_gain_bits": 1.7201371255127782,
+              "target_count": 4,
+              "target_initial_units": [
+                "l",
+                "o"
+              ]
+            },
+            {
+              "cell_count": 7,
+              "excess_bits": 0.30487969718778185,
+              "expected_gain_bits": 1.7564033629321543,
+              "observed_gain_bits": 2.061283060119936,
+              "target_count": 14,
+              "target_initial_units": [
+                "o",
+                "y"
+              ]
+            },
+            {
+              "cell_count": 1,
+              "excess_bits": 1.3837611210911192,
+              "expected_gain_bits": -0.23721272307761776,
+              "observed_gain_bits": 1.1465483980135014,
+              "target_count": 2,
+              "target_initial_units": [
+                "q",
+                "sh"
+              ]
+            },
+            {
+              "cell_count": 3,
+              "excess_bits": 2.3606344596338573,
+              "expected_gain_bits": -0.3081046770537288,
+              "observed_gain_bits": 2.0525297825801285,
+              "target_count": 7,
+              "target_initial_units": [
+                "sh",
+                "t"
+              ]
+            }
+          ],
+          "eligible_targets": 7133,
+          "excluded_empty_target_tail": 93
+        }
+      },
+      "same_tail_result_sha256": "124da8be36e16fa263a98a81de7f9ae60604ad37fe62bbd748ebdf2e0dee2073",
+      "same_tail_script_sha256": "b5a5035a24550c9d7b6e165063490660f0009f271600cbab80dda689b63fe56c",
+      "source": "IT",
+      "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"
+    }
+  ]
+}
