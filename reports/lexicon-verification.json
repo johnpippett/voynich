@@ -1,0 +1,87 @@
+{
+  "schema_version": "lexicon-verification-v1",
+  "status": "verified_with_declared_limits",
+  "protocol_commit": "664a7425bb9834f25b253a649fb23fdad9a39428",
+  "implementation_commit": "c740e6800404b247bd093be39daa9bcc87fe8ad5",
+  "local_tests": {
+    "python": "3.14.7",
+    "core_passed": 85,
+    "lexicon_passed": 52
+  },
+  "github_actions": {
+    "run_url": "https://github.com/johnpippett/voynich/actions/runs/35188680755",
+    "commit": "c740e6800404b247bd093be39daa9bcc87fe8ad5",
+    "python_3_11": "success",
+    "python_3_13": "success"
+  },
+  "recorded_source_hash_checks": {
+    "comparisons": 49,
+    "all_match": true
+  },
+  "public_checkout_reproduction": {
+    "checkout": "detached public implementation commit",
+    "retrieval": "Anonymous fetch in a reused clean clone with previously downloaded, hash-checked inputs.",
+    "core_tests_passed": 85,
+    "lexicon_tests_passed": 52,
+    "reference_report_and_key_files_byte_equal": 4,
+    "manuscript_replay": {
+      "case": "latin-zl",
+      "node_budget": 10000,
+      "full_report_and_key_byte_equal": true
+    },
+    "final_tracked_and_untracked_status": "clean after both reference controls and the Latin/ZL manuscript replay",
+    "total_report_and_key_files_byte_equal": 6
+  },
+  "independent_bound_engine_check": {
+    "case": "latin-reference",
+    "engines": [
+      "bitset",
+      "reference"
+    ],
+    "comparison": "Solver, key, objective, ambiguity and test accuracy agree after engine labels are removed.",
+    "nodes_each": 341,
+    "lower_and_upper_bound_each": 64762632
+  },
+  "artifacts_sha256": {
+    "reports/lexicon-pilot-v1/italian-it.json": "703436b19d77a1966ff53df4be359a25d4a5ae9da8148f2eb7391eb8ed41484a",
+    "reports/lexicon-pilot-v1/italian-it.keys.json": "ba3931e40a3001aeefabd1954b58200c5cca144d54f463495a98fefdbc969478",
+    "reports/lexicon-pilot-v1/italian-reference.json": "5a9cc402e2657b0025265885c2071092309c09f307de7e7a419ab8a66dfeaa6a",
+    "reports/lexicon-pilot-v1/italian-reference.keys.json": "7c2b2452bb909066bc78c77028945c34c900312cab4db66be4694fe36e3f71a1",
+    "reports/lexicon-pilot-v1/italian-zl.json": "c00169136d72a80baa203ad49120978de61630f57039966feeea4a292687c897",
+    "reports/lexicon-pilot-v1/italian-zl.keys.json": "28056785b51419d32fc29277b3632ee34ffec7f63e9af885eb036dd7022996c7",
+    "reports/lexicon-pilot-v1/latin-it.json": "dc65a6445bd417378cff9d0cbc1b9491cc43d36ad88b9a1b5881c17d2032d040",
+    "reports/lexicon-pilot-v1/latin-it.keys.json": "fc2a3d016cbf8e03b831b61207694773360f36af07a9a967b2c2c9280dd79ad4",
+    "reports/lexicon-pilot-v1/latin-reference-scalar-check.json": "2cc463ff24ca00921c19246cba09282822fa54a1a2bcd6f8257ccf8251d45dd2",
+    "reports/lexicon-pilot-v1/latin-reference-scalar-check.keys.json": "9155aeb368829a21d36ec784bd7690b4cdd287230e3d94b58409348e2984d3e8",
+    "reports/lexicon-pilot-v1/latin-reference.json": "59c70447906d9f442f66eb2b5a802c83e18f9a272213054ec2cc4ecaa1ed25b8",
+    "reports/lexicon-pilot-v1/latin-reference.keys.json": "cc6dee2fdd900b16b3eace660763b86fbe03339bb71f66a6bb9d74ce2cadf846",
+    "reports/lexicon-pilot-v1/latin-zl.json": "d8828783ee46890c899c05b84444211f1d9e89dca615a493cbf420cbccd329f8",
+    "reports/lexicon-pilot-v1/latin-zl.keys.json": "cb7cd14bdfb6861e7fe1c55ee3d59fe9009e1550df2d25c2c029793621a31775"
+  },
+  "limits": [
+    "The reviews are internal AI-agent checks, not external scholarly validation.",
+    "The software has tests and mathematical review, not formal program verification.",
+    "Manuscript bounds concern the declared training objective, finite lexicons and fixed key domain.",
+    "All four manuscript searches stopped at the node limit with unequal bounds."
+  ],
+  "independent_results_audit": {
+    "path": "experiments/lexicon/RESULTS_REVIEW.md",
+    "runs": 6,
+    "mismatches": 0,
+    "recomputed": [
+      "weighted fit objective",
+      "fit token and type hits",
+      "validation and test hits",
+      "mapped and unmapped counts",
+      "reference plaintext recovery",
+      "key ambiguity counts"
+    ],
+    "sha256": "45b9f8841d336abc2f46ebedd92f10997868b030f1e1f421be387a7257b2603b"
+  },
+  "summary_generation": {
+    "generator": "scripts/build_lexicon_summary.py",
+    "generator_sha256": "01bb8c4f16b271e310c9735a48e6bee6454c06eafad032ae70fb66beb7fe99d3",
+    "report": "reports/LEXICON.md",
+    "report_sha256": "3c2354d2add034e1d6d2f9d47ece473e2c7ce8ae64d8789d62a80bfd008e9615"
+  }
+}

@@ -6,7 +6,7 @@ It keeps source records and compares observations with explicit statistical cont
 **This project has not deciphered the manuscript.**
 It has no validated key, plaintext language, or translation.
 
-Read the [Stage 2 findings](reports/STAGE2.md) and [research status](STATUS.md).
+Read the [lexicon bounds](reports/LEXICON.md), [Stage 2 findings](reports/STAGE2.md), and [research status](STATUS.md).
 The [initial findings](reports/FINDINGS.md) remain available as historical results.
 Stage 2 replaces their prediction partitions with source-backed bifolio groups.
 
@@ -15,14 +15,18 @@ The [folio report](docs/research/folio.md) gives the identification evidence.
 
 ## Results
 
-- Known substitution controls recovered every test character for 32 Latin keys and 32 Old Italian keys.
+- The new lexicon pilot bounds the training score at 35.51% or less in four fixed substitution problems.
+- That score averages token and type hit rates. The bounds apply only to the declared word lists, raw EVA units, and injective keys.
+- Two lexicon controls recovered every test character. The Italian control still has at least 60 equally scoring keys.
+- Stage 2 substitution controls recovered every test character for 32 Latin keys and 32 Old Italian keys.
 - Each language used one fixed set of text partitions. These are repeated key tests, not independent text samples.
-- The manuscript search found no validated reading. Its keys matched 8.6–11.3% of test words to the selected reference vocabularies.
+- The Stage 2 manuscript search found no validated reading. Its keys matched 8.6–11.3% of test words to the selected reference vocabularies.
 - The source metadata identifies 52 bifolio groups. The two transcriptions agree on all 225 shared page assignments.
 - Fixed published Naibbe tables accept 78.3–78.9% of tokens with split spacing. Many tokens have multiple candidate readings.
 
 These results have narrow limits.
-The search does not cover all possible keys, writing systems, or languages.
+The lexicon bounds apply to one restricted key model.
+These experiments do not cover every writing system or language.
 The Naibbe tables used Voynich features during construction. Their compatibility is not independent evidence of a historical cipher.
 
 ## Reproduce the research
@@ -37,6 +41,7 @@ python scripts/fetch_reference_sources.py
 python scripts/fetch_naibbe_table.py
 PYTHONPATH=src python -m voynich verify-sources
 PYTHONPATH=src python -m unittest discover -s tests -v
+PYTHONPATH=src:. python -m unittest discover -s experiments/lexicon -p 'test_*.py' -v
 ```
 
 The download scripts retrieve pinned inputs and check their hashes.
@@ -53,9 +58,11 @@ python scripts/check_naibbe_compatibility.py --output results/reproduction/naibb
 ```
 
 The [Stage 2 report](reports/STAGE2.md) gives the remaining experiment commands.
+The [lexicon report](reports/LEXICON.md) gives the new bounded-search commands and results.
 The [methods document](docs/research/stage2-methods.md) defines sampling, controls, normalization, and search settings.
 The [verification record](reports/stage2-verification.json) records the checks for the published runs.
 A new run does not update that record.
+The [lexicon verification record](reports/lexicon-verification.json) covers the new solver and its public-source reproduction.
 
 ## Data and scope
 

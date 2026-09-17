@@ -1,0 +1,357 @@
+{
+  "status": "reference_pilot",
+  "kind": "reference",
+  "language": "italian_old",
+  "source": null,
+  "seed": 500,
+  "encryption_seed": 500,
+  "node_budget": 10000,
+  "bound_engine": "bitset",
+  "fit_scope": "All reference validation words are encrypted. The train words form the lexicon.",
+  "reference_partitions": {
+    "train": {
+      "token_count": 31334,
+      "type_count": 6273
+    },
+    "validation": {
+      "token_count": 31681,
+      "type_count": 6196
+    },
+    "test": {
+      "token_count": 31152,
+      "type_count": 6024
+    }
+  },
+  "reference_metadata": {
+    "reference_manifest_sha256": "f261b781f150991e3305aae5057a94dc91afd8e59c58bb22ff199347f5ce3e6d",
+    "normalization": "NFKD casefold; remove combining marks; accept whole ASCII a-z forms only; preserve MWT surface forms; exclude empty nodes.",
+    "source_files": {
+      "it_old-ud-train.conllu": {
+        "sha256": "9e94e25d826632a005adc2a8a1daa88f46bdd1509d56090b4c82d27779e1a5e0",
+        "extraction": {
+          "surface_tokens": 95302,
+          "accepted_words": 75241,
+          "excluded_surface_tokens": 20061,
+          "multiword_tokens": 2340,
+          "skipped_component_rows": 4704,
+          "empty_nodes": 228,
+          "sentences": 2774,
+          "explicit_documents": 0
+        }
+      },
+      "it_old-ud-dev.conllu": {
+        "sha256": "6c900aecef3abebfe87c4e5d5c9880326cc69b8122e62ec95ef6c50fbe4e6e0b",
+        "extraction": {
+          "surface_tokens": 11940,
+          "accepted_words": 9522,
+          "excluded_surface_tokens": 2418,
+          "multiword_tokens": 278,
+          "skipped_component_rows": 556,
+          "empty_nodes": 45,
+          "sentences": 308,
+          "explicit_documents": 0
+        }
+      },
+      "it_old-ud-test.conllu": {
+        "sha256": "19dc1ecf5bfffd552130be63c3dab02d1dd9b9e6a6d4bc31ace0fe6494ebdf89",
+        "extraction": {
+          "surface_tokens": 11818,
+          "accepted_words": 9404,
+          "excluded_surface_tokens": 2414,
+          "multiword_tokens": 318,
+          "skipped_component_rows": 640,
+          "empty_nodes": 33,
+          "sentences": 337,
+          "explicit_documents": 0
+        }
+      }
+    },
+    "document_split": {
+      "Inferno": "train",
+      "Paradiso": "test",
+      "Purgatorio": "validation"
+    },
+    "split_counts": {
+      "train": {
+        "sentences": 1228,
+        "words": 31334,
+        "documents": 1
+      },
+      "validation": {
+        "sentences": 1174,
+        "words": 31681,
+        "documents": 1
+      },
+      "test": {
+        "sentences": 1017,
+        "words": 31152,
+        "documents": 1
+      }
+    },
+    "duplicate_or_empty_exclusions": {
+      "train": {
+        "sentences": 0,
+        "words": 0
+      },
+      "validation": {
+        "sentences": 0,
+        "words": 0
+      },
+      "test": {
+        "sentences": 0,
+        "words": 0
+      }
+    },
+    "limit": "Exact normalized duplicate sentences are removed across partitions. Near duplicates remain. Dante partitions are canticles of one work by one author."
+  },
+  "encryption": {
+    "plaintext_alphabet": "abcdefghijklmnopqrstuvwxyz",
+    "cipher_symbols": [
+      "c00",
+      "c01",
+      "c02",
+      "c03",
+      "c04",
+      "c05",
+      "c06",
+      "c07",
+      "c08",
+      "c09",
+      "c10",
+      "c11",
+      "c12",
+      "c13",
+      "c14",
+      "c15",
+      "c16",
+      "c17",
+      "c18",
+      "c19",
+      "c20",
+      "c21",
+      "c22",
+      "c23",
+      "c24",
+      "c25"
+    ],
+    "method": "seeded permutation from plaintext symbols to tuple c00..c25",
+    "seed": 500,
+    "oracle_key_sha256": "a234b9f97499a05c08d0a218eaf140f359cc078aaaca78f69a72aa1cfc857d97",
+    "oracle_key_role": "encryption and post-search reference accuracy only"
+  },
+  "fit_input": {
+    "token_count": 31681,
+    "type_count": 6196,
+    "cipher_unit": "tuple of c00..c25 symbols"
+  },
+  "solver": {
+    "status": "search_exhausted",
+    "score_certified": true,
+    "search_exhausted": true,
+    "feasible": true,
+    "nodes": 1402,
+    "pruned_nodes": 1539,
+    "frontier_node_count": 0,
+    "lower_bound": 259426929,
+    "upper_bound": 259426929,
+    "score": 259426929,
+    "hit_type_count": 2829,
+    "cipher_alphabet": [
+      "c00",
+      "c01",
+      "c02",
+      "c03",
+      "c04",
+      "c05",
+      "c06",
+      "c07",
+      "c08",
+      "c09",
+      "c11",
+      "c12",
+      "c13",
+      "c14",
+      "c15",
+      "c17",
+      "c18",
+      "c19",
+      "c20",
+      "c21",
+      "c22",
+      "c23",
+      "c24",
+      "c25"
+    ],
+    "plaintext_alphabet": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "u",
+      "v",
+      "w",
+      "x",
+      "y",
+      "z"
+    ],
+    "candidate_count_total": 1030185,
+    "pattern_compatible_type_count": 5531,
+    "missing_candidate_count": 665,
+    "lexicon_raw_entry_count": 6273,
+    "lexicon_unique_normalized_count": 6273,
+    "lexicon_usable_count": 6273,
+    "lexicon_rejected_out_of_alphabet_count": 0,
+    "cipher_type_count": 6196,
+    "total_weight": 392590952,
+    "infeasibility_certified": false,
+    "config": {
+      "objective": "integer weighted exact lexicon word hits",
+      "pattern_constraint": "equal length and first-occurrence equality pattern",
+      "mapping_kind": "one fixed injective ciphertext-symbol to plaintext-symbol map",
+      "tie_rule": "lexicographically smallest visited feasible key after maximum score, using sorted ciphertext-symbol order",
+      "node_budget": 10000,
+      "symbol_order": [
+        "c14",
+        "c09",
+        "c20",
+        "c24",
+        "c13",
+        "c11",
+        "c00",
+        "c22",
+        "c15",
+        "c05",
+        "c17",
+        "c19",
+        "c01",
+        "c06",
+        "c08",
+        "c18",
+        "c12",
+        "c02",
+        "c07",
+        "c25",
+        "c23",
+        "c03",
+        "c04",
+        "c21"
+      ],
+      "bound": "sum of weights with a compatible pattern candidate, maximized over unsearched frontier nodes",
+      "bound_engine": "bitset",
+      "score_certified_definition": "true when a feasible score has equal integer lower and upper bounds",
+      "search_exhausted_definition": "true when no unsearched frontier remains after expansion or valid bound pruning; it does not mean every feasible key was visited"
+    }
+  },
+  "score_proof": {
+    "solver_score": 259426929,
+    "lower_bound": 259426929,
+    "upper_bound": 259426929,
+    "score_certified": true,
+    "derived_score_from_key": 259426929,
+    "derived_score_matches_solver": true,
+    "interpretation": "Bounds prove the optimum objective score only when score_certified is true."
+  },
+  "objective": {
+    "weight_formula": "count*T+N",
+    "normalization_formula": "2*T*N",
+    "T_type_count": 6196,
+    "N_token_count": 31681,
+    "denominator": 392590952,
+    "weights_total": 392590952,
+    "weights_match_denominator": true,
+    "score_from_key": 259426929,
+    "normalized_score": 0.6608072032184786,
+    "fit_hits": {
+      "token_hits": 27405,
+      "type_hits": 2829,
+      "token_hit_rate": 0.865029512957293,
+      "type_hit_rate": 0.4565848934796643
+    }
+  },
+  "ambiguity": {
+    "incumbent_score": 259426929,
+    "cipher_symbol_count": 24,
+    "plaintext_symbol_count": 26,
+    "covered_symbol_count": 21,
+    "symbols_outside_positive_hits": [
+      "c03",
+      "c04",
+      "c21"
+    ],
+    "keys_preserving_current_hits": 60,
+    "guarantee": "Every counted key scores at least as high as the supplied key.",
+    "optimum_condition": "If the supplied score is certified optimal, every counted key is also optimal.",
+    "limit": "This count can omit other keys with equal or higher scores. It does not identify a historical key.",
+    "optimal_key_count_lower_bound": 60,
+    "interpretation": "A count of one does not prove a unique key. The count is a lower bound on keys that preserve the current positive-weight hits."
+  },
+  "reference_accuracy": {
+    "lexicon_hits": {
+      "token_count": 31152,
+      "type_count": 6024,
+      "token_hits": 26261,
+      "type_hits": 2458,
+      "token_hit_rate": 0.8429956343091937,
+      "type_hit_rate": 0.40803452855245687,
+      "mapped_token_count": 31152,
+      "mapped_type_count": 6024,
+      "unmapped_token_count": 0,
+      "unmapped_type_count": 0,
+      "unmapped_symbol_occurrences": 0
+    },
+    "exact_character_correct": 130084,
+    "total_character_units": 130084,
+    "exact_character_accuracy": 1.0,
+    "exact_word_correct": 31152,
+    "total_word_count": 31152,
+    "exact_word_accuracy": 1.0,
+    "fully_mapped_token_count": 31152,
+    "unmapped_token_count": 0,
+    "unmapped_type_count": 0,
+    "unmapped_symbol_occurrences": 0,
+    "key_exact_correct": 21,
+    "key_exact_total": 24,
+    "key_exact_accuracy": 0.875,
+    "key_recovery_scope": "reference test plaintext and fitted key symbols only"
+  },
+  "key_record_sha256": "7c2b2452bb909066bc78c77028945c34c900312cab4db66be4694fe36e3f71a1",
+  "input_sha256": {
+    "reference_manifest": "f261b781f150991e3305aae5057a94dc91afd8e59c58bb22ff199347f5ce3e6d",
+    "reference_sources": {
+      "it_old-ud-train.conllu": "9e94e25d826632a005adc2a8a1daa88f46bdd1509d56090b4c82d27779e1a5e0",
+      "it_old-ud-dev.conllu": "6c900aecef3abebfe87c4e5d5c9880326cc69b8122e62ec95ef6c50fbe4e6e0b",
+      "it_old-ud-test.conllu": "19dc1ecf5bfffd552130be63c3dab02d1dd9b9e6a6d4bc31ace0fe6494ebdf89"
+    }
+  },
+  "code_sha256": {
+    "experiments/lexicon/run_pilot.py": "2eb25cdeb4fdf8ef167a3f10c2463b1ef61c23b1dd7e34a3aea9368c6edf69e5",
+    "experiments/lexicon/solver.py": "d560df778f43615a36ffe43989e9c85cfab4c09263fab1f377f9fccc73592fd8",
+    "experiments/lexicon/ambiguity.py": "297c8b318fcac6053bd26856b4393ec440b24d5eca1c9bf52f8e6d5f2d7825f2",
+    "experiments/lexicon/bitset_bound.py": "4bd025e026dccfbaff7a7bc0dad61c6292ab7046b21620b14442df538fc31ef9",
+    "src/voynich/corpus.py": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+    "src/voynich/reference.py": "97e173c761b137d3653a827315b62a68af3e96abd189afdecc46e9759d2b94d9",
+    "src/voynich/groups.py": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0"
+  },
+  "limits": [
+    "The solver receives encrypted validation counts and the train-only lexicon.",
+    "The planted key is not a solver argument, branch-order input, or tuning value.",
+    "Reference accuracy is a known-control measure and does not describe manuscript evidence.",
+    "Unmapped units are counted. The runner does not repair a key."
+  ]
+}
