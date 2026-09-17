@@ -1,0 +1,89 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "experiments.local_cyclic.run_frozen"
+  ],
+  "external_supervisor": {
+    "retry_count": 0,
+    "terminate_grace_seconds": 5,
+    "termination_scope": "process_group",
+    "wall_seconds": 60
+  },
+  "files": [
+    {
+      "path": "docs/plans/vms-local-cyclic-falsification-v1.md",
+      "sha256": "6ec9de7e56a6722023b69668c3700bab48ce8accc3ac2e4ebfb528cf2541c95c"
+    },
+    {
+      "path": "experiments/local_cyclic/__init__.py",
+      "sha256": "3a3412a6cebd828098ad8e907cea7b32bb38db18c9757d3fa28899fca9a90e84"
+    },
+    {
+      "path": "experiments/local_cyclic/certificate.py",
+      "sha256": "b6ce40d04fd2325e7500be3c9445970ba63853c8b0a00a8bc0c9c73f254821c2"
+    },
+    {
+      "path": "experiments/local_cyclic/test_certificate.py",
+      "sha256": "449ac8d378512bc2deeb4432a33ad23276ec4489872718c10162d778b3028a25"
+    },
+    {
+      "path": "experiments/local_cyclic/run_frozen.py",
+      "sha256": "da5c6460944d21cf3fa44ed097199eb2473e161f06658de055382952500980c9"
+    },
+    {
+      "path": "experiments/local_cyclic/test_run_frozen.py",
+      "sha256": "3090a0a14944b6a9e78c08d61a81a6b05ab2d7bbc6c28d094c845faa1cec39a5"
+    },
+    {
+      "path": "experiments/homophonic/units.py",
+      "sha256": "fc321f7cc59bf91aed1061d9fb72b531125ab9255ae171167de0bbe289c59760"
+    },
+    {
+      "path": "experiments/homophonic/test_units.py",
+      "sha256": "a6f7ca23a6377d95836c53b543c1e339cc47358cdf2e76fa5ec79fbea6a53209"
+    },
+    {
+      "path": "src/voynich/__init__.py",
+      "sha256": "b102a07c0172d042de5a70dd819dfcdc53d17531835288acc48b05f10a954bf6"
+    },
+    {
+      "path": "src/voynich/corpus.py",
+      "sha256": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2"
+    },
+    {
+      "path": "data/source_manifest.json",
+      "sha256": "77c9f755ed47c19ccfe3ef92b7699953d5d5e9ada729492662c94154d3d2f4f1"
+    },
+    {
+      "path": "data/raw/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc"
+    },
+    {
+      "path": "data/raw/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"
+    }
+  ],
+  "outputs": [
+    "results/vms-local-cyclic-falsification-v1/ZL3b-n-raw_eva.json",
+    "results/vms-local-cyclic-falsification-v1/ZL3b-n-visual_six.json",
+    "results/vms-local-cyclic-falsification-v1/IT2a-n-raw_eva.json",
+    "results/vms-local-cyclic-falsification-v1/IT2a-n-visual_six.json"
+  ],
+  "protocol": "vms-local-cyclic-falsification-v1",
+  "runtime": {
+    "implementation": "CPython",
+    "platform": "Linux-7.2.3-arch1-3-x86_64-with-glibc2.44",
+    "python": "3.14.7"
+  },
+  "schema_version": 1,
+  "source_ids": [
+    "ZL3b-n",
+    "IT2a-n"
+  ],
+  "uncertain_spaces": "split",
+  "unitizations": [
+    "raw_eva",
+    "visual_six"
+  ]
+}
