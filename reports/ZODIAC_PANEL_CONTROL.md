@@ -46,12 +46,14 @@ The result below concerns the released table vectors. It does not certify their 
 
 ## Fixed method
 
-We kept the source's polarity, shift 23, and light-panel-first order.
+We kept the polarity in the released table vector.
+We kept shift 23 and the light-panel-first order.
 For zero-based position `j`, the prediction is `table[(j - 23) % 30]`.
 The score counts equal observed and predicted values at known positions.
 Unknown positions remain fixed and contribute no score.
 
-The control splits each shifted table at the physical-panel boundaries specified by the release:
+The control splits each shifted table at panel boundaries inherited from the release.
+These position assignments are not independently image-certified.
 
 | Sign | First panel | Second panel |
 |---|---|---|
