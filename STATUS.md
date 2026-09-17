@@ -17,6 +17,7 @@ The [Celsus partition report](reports/CELSUS_PARTITIONS.md) records 101,715 word
 The [Celsus model report](reports/CELSUS_MODEL.md) records an incomplete known-cipher search and failed exact-recovery gates.
 The [Italian search report](reports/HOMOPHONIC_SEARCH_DEVELOPMENT.md) records local-search improvements and remaining score bounds.
 The [cyclic pairing report](reports/CYCLIC_PAIRING.md) identifies 23 forced Latin pairs and 21 forced Italian pairs without plaintext-letter assignments.
+The [local cyclic test](reports/LOCAL_CYCLIC.md) rejects the exact cyclic emitter on two fixed transcription unitizations. Both image checks remain uncertain.
 
 The current work includes:
 

@@ -132,6 +132,7 @@ All manuscript analyses remain exploratory. A new partition does not make previo
 - [Celsus model result](reports/CELSUS_MODEL.md)
 - [Celsus model run plan](docs/plans/celsus-model-run-v1.md)
 - [Cyclic pairing results](reports/CYCLIC_PAIRING.md)
+- [Local cyclic manuscript test](reports/LOCAL_CYCLIC.md)
 - [Cyclic pairing control protocol](docs/plans/cyclic-pairing-control-v1.md)
 - [Cyclic emitter constraints](docs/research/cyclic-emitter-pairing.md)
 - [Observed pair classes](docs/research/observed-pair-quotient.md)

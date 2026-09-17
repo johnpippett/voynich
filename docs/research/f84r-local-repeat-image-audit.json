@@ -1,0 +1,80 @@
+{
+  "schema": "f84r-local-repeat-image-audit-v1",
+  "research_date": "2026-09-17",
+  "scope": "Predetermined first visual_six certificate in source order on f84r for each source.",
+  "protocol": {
+    "plan": "docs/plans/vms-local-cyclic-falsification-v1.md",
+    "unitization": "visual_six",
+    "source_files": [
+      "data/raw/ZL3b-n.txt",
+      "data/raw/IT2a-n.txt"
+    ],
+    "extractor": "experiments/local_cyclic/certificate.py",
+    "raw_word_strings_published": false
+  },
+  "source_image": {
+    "folio": "f84r",
+    "local_file": "assets/yale-folio-84r.jpg",
+    "canvas_id": "1006226",
+    "canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006226",
+    "full_image_url": "https://collections.library.yale.edu/iiif/2/1006226/full/full/0/default.jpg",
+    "width": 2753,
+    "height": 3745,
+    "sha256": "7e8fa7c29b6c6ab462ad5359bdabfcd60505622700f6e5cb18478d20cbd79fbe"
+  },
+  "coordinate_system": {
+    "origin": "top_left",
+    "units": "source_image_pixels",
+    "box_format": "[x, y, width, height]",
+    "boxes_are_review_boxes": true
+  },
+  "audits": [
+    {
+      "source_file": "data/raw/ZL3b-n.txt",
+      "source_record_index": 3213,
+      "source_line_number": 5053,
+      "transcriber": "ZL",
+      "folio": "f84r",
+      "locus": "f84r.13,@P0",
+      "candidate_word_index": 2,
+      "unit_index": 3,
+      "unit": "e",
+      "unit_span": [3, 4],
+      "visual_location": "first body line below the upper green pool; third candidate on that line",
+      "candidate_review_box": [500, 790, 300, 180],
+      "repeat_review_box": [620, 790, 120, 180],
+      "positional_uncertainty_pixels": 60,
+      "location_status": "image_located",
+      "image_status": "image_uncertain",
+      "evidence": "The line and candidate region are visible. The selected source span is not independently separable into two atomic units from the image.",
+      "limitation": "Visible strokes can belong to a larger glyph or ligature. The image does not establish the source unit boundary or linguistic unit identity."
+    },
+    {
+      "source_file": "data/raw/IT2a-n.txt",
+      "source_record_index": 3200,
+      "source_line_number": 3368,
+      "transcriber": "IT",
+      "folio": "f84r",
+      "locus": "f84r.6,@Ln",
+      "candidate_word_index": 0,
+      "unit_index": 2,
+      "unit": "i",
+      "unit_span": [2, 3],
+      "visual_location": "upper label band above the figures; broad central review area",
+      "candidate_review_box": [1250, 300, 650, 250],
+      "repeat_review_box": null,
+      "positional_uncertainty_pixels": 120,
+      "location_status": "image_uncertain",
+      "image_status": "image_uncertain",
+      "evidence": "The upper label band is visible, but source order does not supply a unique pixel coordinate for this label. Neighboring label runs prevent a confident isolation of the selected span.",
+      "limitation": "The image does not establish two atomic units, a glyph boundary, or a split between a glyph and a ligature."
+    }
+  ],
+  "conclusion": {
+    "image_verified_atomic_repeats": 0,
+    "image_uncertain_records": 2,
+    "image_not_checked_records": 0,
+    "data_level_result": "The fixed visual_six certificates remain source-unit results. The image audit provides no independent palaeographic certificate.",
+    "next_manual_step": "Annotate visible stroke groups and boundary uncertainty for each fixed review box before making any glyph-level claim."
+  }
+}

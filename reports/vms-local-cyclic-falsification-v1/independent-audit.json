@@ -1,0 +1,151 @@
+{
+  "checks": {
+    "adjacency_is_word_local": true,
+    "all_ordered_locations": true,
+    "counts_exclusions_status": true,
+    "eligible_span_roundtrip": true,
+    "freeze_pins": true,
+    "independent_longest_match": true,
+    "output_hash_pins": true,
+    "source_identity": true
+  },
+  "inputs": {
+    "freeze": {
+      "bytes": 2812,
+      "sha256": "6514e43c78bccd5c6b26b8f68aaa973beb6181926d4135d8553c9d6501c0d79a"
+    },
+    "frozen_file_count": 13,
+    "frozen_file_hashes_verified": true,
+    "output_hashes": {
+      "results/vms-local-cyclic-falsification-v1/IT2a-n-raw_eva.json": {
+        "bytes": 2252106,
+        "sha256": "9d9b81693e42ad1583aee2b4aa36666c14808fc7aecf0464623f0358376cdfcf"
+      },
+      "results/vms-local-cyclic-falsification-v1/IT2a-n-visual_six.json": {
+        "bytes": 2708314,
+        "sha256": "2c965e16c4c5d87d33e6b13785be8558ebd6f8f2baea0586a36b7a7763a1bc2a"
+      },
+      "results/vms-local-cyclic-falsification-v1/ZL3b-n-raw_eva.json": {
+        "bytes": 1975586,
+        "sha256": "2af91ca875012d417eb053dfeb2184eb9ac11ee3d035f7f203b397c2a3718365"
+      },
+      "results/vms-local-cyclic-falsification-v1/ZL3b-n-visual_six.json": {
+        "bytes": 2391469,
+        "sha256": "02ed1bec32df7f2de2cac8c5dd506682e8730deb436cd89575d2fa8a1545f091"
+      }
+    },
+    "source_hashes": {
+      "IT2a-n": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "ZL3b-n": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc"
+    }
+  },
+  "limitations": [
+    "This is an independent arithmetic audit, not an independent eligibility audit.",
+    "It uses no source data outside the frozen files.",
+    "The result tests only the declared local certificate and two fixed unitizations."
+  ],
+  "records": {
+    "IT2a-n/raw_eva": {
+      "artifact_bytes": 2252106,
+      "artifact_sha256": "9d9b81693e42ad1583aee2b4aa36666c14808fc7aecf0464623f0358376cdfcf",
+      "certificate_location_count": 9383,
+      "certificate_locations_sha256": "92414c7522060ff6287047361c2ea1c7549a2f389a04b87d72b42f78fa16af74",
+      "counts": {
+        "adjacent_pair_count": 140339,
+        "affected_word_count": 8722,
+        "certificate_count": 9383,
+        "eligible_unit_count": 175013,
+        "eligible_word_count": 34674,
+        "record_count": 5215
+      },
+      "excluded_word_counts": {
+        "diagram_marker": 712,
+        "inline_control": 1529,
+        "uncertain_reading": 129
+      },
+      "source_id": "IT2a-n",
+      "status": "falsified_for_fixed_track",
+      "unitization": "raw_eva"
+    },
+    "IT2a-n/visual_six": {
+      "artifact_bytes": 2708314,
+      "artifact_sha256": "2c965e16c4c5d87d33e6b13785be8558ebd6f8f2baea0586a36b7a7763a1bc2a",
+      "certificate_location_count": 9306,
+      "certificate_locations_sha256": "373091f53bb66fb76341dc99271c07703ee5ee8f1e931c129c744aa5515c42bb",
+      "counts": {
+        "adjacent_pair_count": 122338,
+        "affected_word_count": 8649,
+        "certificate_count": 9306,
+        "eligible_unit_count": 157012,
+        "eligible_word_count": 34674,
+        "record_count": 5215
+      },
+      "excluded_word_counts": {
+        "diagram_marker": 712,
+        "inline_control": 1529,
+        "uncertain_reading": 129
+      },
+      "source_id": "IT2a-n",
+      "status": "falsified_for_fixed_track",
+      "unitization": "visual_six"
+    },
+    "ZL3b-n/raw_eva": {
+      "artifact_bytes": 1975586,
+      "artifact_sha256": "2af91ca875012d417eb053dfeb2184eb9ac11ee3d035f7f203b397c2a3718365",
+      "certificate_location_count": 8228,
+      "certificate_locations_sha256": "90541b1d46a4ac43e0ac799ddbdfb34cec0b87ec8a32ce27864aecc423de8940",
+      "counts": {
+        "adjacent_pair_count": 122028,
+        "affected_word_count": 7649,
+        "certificate_count": 8228,
+        "eligible_unit_count": 151359,
+        "eligible_word_count": 29331,
+        "record_count": 5385
+      },
+      "excluded_word_counts": {
+        "apostrophe": 24,
+        "diagram_marker": 578,
+        "high_ascii": 82,
+        "inline_control": 2186,
+        "ligature": 326,
+        "uncertain_reading": 764,
+        "uncertain_space": 4970,
+        "uppercase": 1
+      },
+      "source_id": "ZL3b-n",
+      "status": "falsified_for_fixed_track",
+      "unitization": "raw_eva"
+    },
+    "ZL3b-n/visual_six": {
+      "artifact_bytes": 2391469,
+      "artifact_sha256": "02ed1bec32df7f2de2cac8c5dd506682e8730deb436cd89575d2fa8a1545f091",
+      "certificate_location_count": 8215,
+      "certificate_locations_sha256": "2f2cfedae86dae345d950a5a65b054c1b7b75ecf73bedb97353900191d3f6d5f",
+      "counts": {
+        "adjacent_pair_count": 106311,
+        "affected_word_count": 7637,
+        "certificate_count": 8215,
+        "eligible_unit_count": 135642,
+        "eligible_word_count": 29331,
+        "record_count": 5385
+      },
+      "excluded_word_counts": {
+        "apostrophe": 24,
+        "diagram_marker": 578,
+        "high_ascii": 82,
+        "inline_control": 2186,
+        "ligature": 326,
+        "uncertain_reading": 764,
+        "uncertain_space": 4970,
+        "uppercase": 1
+      },
+      "source_id": "ZL3b-n",
+      "status": "falsified_for_fixed_track",
+      "unitization": "visual_six"
+    }
+  },
+  "schema_version": 1,
+  "shared_eligibility": "Eligibility uses the frozen IVTFF parser and strict extract_word_spans. Unitization and adjacency arithmetic are independent.",
+  "status": "PASS",
+  "verification": "vms-local-cyclic-falsification-independent-audit"
+}
