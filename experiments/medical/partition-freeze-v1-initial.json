@@ -18,7 +18,7 @@
     },
     {
       "path": "experiments/medical/test_run_partition.py",
-      "sha256": "813d9e6a998990819fb2567dd379e6e35a70f03fce5030a2c9c3cfd05ab84b37"
+      "sha256": "fb4215524296e3a2df506157b41206d3ebe5d267347a142b99bee25de5cdc75f"
     },
     {
       "path": "src/voynich/__init__.py",

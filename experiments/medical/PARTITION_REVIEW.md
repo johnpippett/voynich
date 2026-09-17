@@ -2,13 +2,18 @@
 
 Review date: 2026-09-17.
 
-This review uses temporary synthetic fixtures only. It does not parse the
-Celsus XML, read source projection output, or create a Celsus result.
+The initial local tests copied and hashed cached XML and JSONL files.
+They did not parse those files or run the production partition.
+GitHub run `35215708917` failed because those cached files were absent.
+The final fixture creates synthetic bytes and patches only test hash constants.
+
+This final review uses temporary synthetic fixtures only. It does not read
+repository source or projection data, parse Celsus XML, or create a result.
 
 Reviewed hashes:
 
 - `experiments/medical/run_partition.py`: `3ca15135530e266eb7c973e161532a36d72c8b04f1215c035827e78c37ef39eb`
-- `experiments/medical/test_run_partition.py`: `fb4215524296e3a2df506157b41206d3ebe5d267347a142b99bee25de5cdc75f`
+- `experiments/medical/test_run_partition.py`: `813d9e6a998990819fb2567dd379e6e35a70f03fce5030a2c9c3cfd05ab84b37`
 - `docs/plans/celsus-reference-control-v1.md`: `cccbf455dc8ec98b040beec13786f212d741219e58f68354601eccca18169dbe`
 
 ## Result
@@ -60,4 +65,5 @@ Ran 19 tests ... OK
 Python bytecode compilation passed for both modules and their tests.
 
 No source mutation, source parsing, adapter run on Celsus records, or output
-publication was performed.
+publication was performed. The production runner hash is unchanged by the
+fixture correction.
