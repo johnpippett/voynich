@@ -30,3 +30,9 @@ jobs:
         run: PYTHONPATH=src:. python -m unittest discover -s experiments/optimal_set -p 'test_*.py' -v
       - name: Run medical projection tests
         run: PYTHONPATH=src:. python -m unittest discover -s experiments/medical -p 'test_*.py' -v
+      - name: Run pivot-group bound tests
+        run: PYTHONPATH=src:. python -m unittest discover -s experiments/group_bound -p 'test_*.py' -v
+      - name: Run lexical local-search tests
+        run: PYTHONPATH=src:. python -m unittest discover -s experiments/lexical_warmstart -p 'test_*.py' -v
+      - name: Run search-development tests
+        run: PYTHONPATH=src:. python -m unittest discover -s experiments/search_development -p 'test_*.py' -v
