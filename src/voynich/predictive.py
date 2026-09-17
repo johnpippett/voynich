@@ -34,7 +34,7 @@ _SPLIT_BUCKETS = {
 
 
 def _group_from_folio(folio: Any) -> str:
-    """Return the shared conservative folio group for one folio identifier."""
+    """Return the shared source-backed bifolio group for one folio identifier."""
 
     return group_id(folio)
 
@@ -356,7 +356,7 @@ def _config(seed: int) -> dict[str, Any]:
         "split_buckets": {
             name: list(buckets) for name, buckets in _SPLIT_BUCKETS.items()
         },
-        "split_group": "conservative folio group; candidate foldout unions are not a complete codicology map",
+        "split_group": "source Q/B bifolio group; complete provider metadata; no independent conservation examination",
         "grouping_config": dict(GROUPING_CONFIG),
         "fit_split": "train",
         "validation_split": "validation",

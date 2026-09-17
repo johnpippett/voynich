@@ -164,5 +164,6 @@
     "folio": "84r",
     "source": "Yale Digital Collections, Beinecke MS 408",
     "attachment_policy": "Private attachment metadata is not distributed."
-  }
+  },
+  "grouping_status_note": "The grouping discussion is historical. Use data/bifolio_manifest.json for the current provider Q/B grouping."
 }

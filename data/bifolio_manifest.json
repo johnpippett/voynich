@@ -1,0 +1,8406 @@
+{
+  "schema_version": "bifolio-manifest-v1",
+  "generated_on": "2026-09-16",
+  "metadata_only": true,
+  "source_text_included": false,
+  "scope": {
+    "purpose": "Map every source page header to its IVTFF bifolio key without copying source text.",
+    "canonical_source": "data/raw/ZL3b-n.txt",
+    "cross_checked_source": "data/raw/IT2a-n.txt",
+    "provider_metadata_scope": "Complete for the page headers and locus records in both source files."
+  },
+  "definitions": {
+    "Q": {
+      "name": "quire number",
+      "specification": "IVTFF Table 6, $Q: quire number 1 through 20, encoded A through T; P (16) and R (18) are unused.",
+      "source_url": "https://voynich.nu/software/ivtt/IVTFF_format.pdf",
+      "spec_location": "Section 6.3, Table 6, PDF pages 19-20 (one-based), Q and B rows."
+    },
+    "B": {
+      "name": "bifolio number within quire",
+      "specification": "IVTFF Table 6, $B: bifolio number within quire, counted outside to inside.",
+      "source_url": "https://voynich.nu/software/ivtt/IVTFF_format.pdf",
+      "spec_location": "Section 6.3, Table 6, PDF pages 19-20 (one-based), Q and B rows."
+    },
+    "group_key": "(Q,B)",
+    "representative": "Minimum numeric folio present in the group. fRos has no single numeric folio and uses its related 85/86 group."
+  },
+  "evidence": [
+    {
+      "type": "format_specification",
+      "source": "https://voynich.nu/software/ivtt/IVTFF_format.pdf",
+      "claim": "The specification defines Q and B as quire and bifolio metadata.",
+      "location": "Section 6.3, Table 6, PDF pages 19-20 (one-based), Q and B rows."
+    },
+    {
+      "type": "official_catalog",
+      "source": "https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.htm",
+      "claim": "Yale records the folding counts and calls f85r-f86v one sextuple-folio folding leaf.",
+      "location": "Physical description and collation, lines 34-45 and 70-74"
+    },
+    {
+      "type": "specialist_codicology",
+      "source": "https://voynich.nu/descr.html",
+      "claim": "The specialist description identifies f85 and f86 as one multiple-foldout.",
+      "location": "Lines 59-61"
+    },
+    {
+      "type": "specialist_quire_schemata",
+      "sources": [
+        "https://voynich.nu/q09/index.html",
+        "https://voynich.nu/q09/schema09.gif",
+        "https://voynich.nu/q10/index.html",
+        "https://voynich.nu/q10/schema10.gif",
+        "https://voynich.nu/q11/index.html",
+        "https://voynich.nu/q11/schema11.gif",
+        "https://voynich.nu/q14/index.html",
+        "https://voynich.nu/q14/schema14.gif",
+        "https://voynich.nu/q15/index.html",
+        "https://voynich.nu/q15/schema15.gif",
+        "https://voynich.nu/q17/index.html",
+        "https://voynich.nu/q17/schema17.gif",
+        "https://voynich.nu/q19/index.html",
+        "https://voynich.nu/q19/schema19.gif"
+      ],
+      "claim": "The specialist quire pages and schemata support the scoped foldout and bifolio relations."
+    }
+  ],
+  "source_files": [
+    {
+      "path": "data/raw/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "format_header": "#=IVTFF Eva- 2.0 M 5",
+      "version": "3b",
+      "line_count": 8510,
+      "byte_count": 411671,
+      "page_header_count": 227,
+      "unique_page_name_count": 227,
+      "locus_record_count": 5385,
+      "numeric_folio_count": 102,
+      "qb_group_count": 52,
+      "all_locus_records_have_qb": true
+    },
+    {
+      "path": "data/raw/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "format_header": "#=IVTFF EvaT 2.0 M 3",
+      "version": "2a",
+      "line_count": 5444,
+      "byte_count": 342104,
+      "page_header_count": 225,
+      "unique_page_name_count": 225,
+      "locus_record_count": 5215,
+      "numeric_folio_count": 102,
+      "qb_group_count": 52,
+      "all_locus_records_have_qb": true
+    }
+  ],
+  "cross_corpus_agreement": {
+    "shared_page_name_count": 225,
+    "ZL3b_only_page_names": [
+      "f116v",
+      "fRos"
+    ],
+    "IT2a_only_page_names": [],
+    "shared_page_QB_mismatches": [],
+    "shared_page_header_metadata_fields_checked": [
+      "Q",
+      "B",
+      "P",
+      "F",
+      "I",
+      "L",
+      "H",
+      "C",
+      "X"
+    ],
+    "shared_page_header_metadata_mismatches": [],
+    "numeric_folio_QB_conflicts_in_ZL3b": [],
+    "all_ZL3b_locus_records_have_QB": true,
+    "all_IT2a_locus_records_have_QB": true,
+    "note": "ZL3b adds fRos and f116v page headers. Shared page headers agree on all checked variables.",
+    "groups_with_source_page_count_difference": [
+      {
+        "group_key": "N/1",
+        "ZL3b_page_headers": 7,
+        "IT2a_page_headers": 6
+      },
+      {
+        "group_key": "T/1",
+        "ZL3b_page_headers": 4,
+        "IT2a_page_headers": 3
+      }
+    ]
+  },
+  "groups": [
+    {
+      "group_key": "A/1",
+      "Q": "A",
+      "B": "1",
+      "quire_number": 1,
+      "representative_numeric_folio": 1,
+      "numeric_folios_present": [
+        1,
+        8
+      ],
+      "page_names": [
+        "f1r",
+        "f1v",
+        "f8r",
+        "f8v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "A/2",
+      "Q": "A",
+      "B": "2",
+      "quire_number": 1,
+      "representative_numeric_folio": 2,
+      "numeric_folios_present": [
+        2,
+        7
+      ],
+      "page_names": [
+        "f2r",
+        "f2v",
+        "f7r",
+        "f7v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "A/3",
+      "Q": "A",
+      "B": "3",
+      "quire_number": 1,
+      "representative_numeric_folio": 3,
+      "numeric_folios_present": [
+        3,
+        6
+      ],
+      "page_names": [
+        "f3r",
+        "f3v",
+        "f6r",
+        "f6v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "A/4",
+      "Q": "A",
+      "B": "4",
+      "quire_number": 1,
+      "representative_numeric_folio": 4,
+      "numeric_folios_present": [
+        4,
+        5
+      ],
+      "page_names": [
+        "f4r",
+        "f4v",
+        "f5r",
+        "f5v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "B/1",
+      "Q": "B",
+      "B": "1",
+      "quire_number": 2,
+      "representative_numeric_folio": 9,
+      "numeric_folios_present": [
+        9,
+        16
+      ],
+      "page_names": [
+        "f9r",
+        "f9v",
+        "f16r",
+        "f16v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "B/2",
+      "Q": "B",
+      "B": "2",
+      "quire_number": 2,
+      "representative_numeric_folio": 10,
+      "numeric_folios_present": [
+        10,
+        15
+      ],
+      "page_names": [
+        "f10r",
+        "f10v",
+        "f15r",
+        "f15v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "B/3",
+      "Q": "B",
+      "B": "3",
+      "quire_number": 2,
+      "representative_numeric_folio": 11,
+      "numeric_folios_present": [
+        11,
+        14
+      ],
+      "page_names": [
+        "f11r",
+        "f11v",
+        "f14r",
+        "f14v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "B/4",
+      "Q": "B",
+      "B": "4",
+      "quire_number": 2,
+      "representative_numeric_folio": 13,
+      "numeric_folios_present": [
+        13
+      ],
+      "page_names": [
+        "f13r",
+        "f13v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 2,
+        "IT2a-n.txt": 2
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "C/1",
+      "Q": "C",
+      "B": "1",
+      "quire_number": 3,
+      "representative_numeric_folio": 17,
+      "numeric_folios_present": [
+        17,
+        24
+      ],
+      "page_names": [
+        "f17r",
+        "f17v",
+        "f24r",
+        "f24v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "C/2",
+      "Q": "C",
+      "B": "2",
+      "quire_number": 3,
+      "representative_numeric_folio": 18,
+      "numeric_folios_present": [
+        18,
+        23
+      ],
+      "page_names": [
+        "f18r",
+        "f18v",
+        "f23r",
+        "f23v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "C/3",
+      "Q": "C",
+      "B": "3",
+      "quire_number": 3,
+      "representative_numeric_folio": 19,
+      "numeric_folios_present": [
+        19,
+        22
+      ],
+      "page_names": [
+        "f19r",
+        "f19v",
+        "f22r",
+        "f22v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "C/4",
+      "Q": "C",
+      "B": "4",
+      "quire_number": 3,
+      "representative_numeric_folio": 20,
+      "numeric_folios_present": [
+        20,
+        21
+      ],
+      "page_names": [
+        "f20r",
+        "f20v",
+        "f21r",
+        "f21v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "D/1",
+      "Q": "D",
+      "B": "1",
+      "quire_number": 4,
+      "representative_numeric_folio": 25,
+      "numeric_folios_present": [
+        25,
+        32
+      ],
+      "page_names": [
+        "f25r",
+        "f25v",
+        "f32r",
+        "f32v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "D/2",
+      "Q": "D",
+      "B": "2",
+      "quire_number": 4,
+      "representative_numeric_folio": 26,
+      "numeric_folios_present": [
+        26,
+        31
+      ],
+      "page_names": [
+        "f26r",
+        "f26v",
+        "f31r",
+        "f31v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "D/3",
+      "Q": "D",
+      "B": "3",
+      "quire_number": 4,
+      "representative_numeric_folio": 27,
+      "numeric_folios_present": [
+        27,
+        30
+      ],
+      "page_names": [
+        "f27r",
+        "f27v",
+        "f30r",
+        "f30v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "D/4",
+      "Q": "D",
+      "B": "4",
+      "quire_number": 4,
+      "representative_numeric_folio": 28,
+      "numeric_folios_present": [
+        28,
+        29
+      ],
+      "page_names": [
+        "f28r",
+        "f28v",
+        "f29r",
+        "f29v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "E/1",
+      "Q": "E",
+      "B": "1",
+      "quire_number": 5,
+      "representative_numeric_folio": 33,
+      "numeric_folios_present": [
+        33,
+        40
+      ],
+      "page_names": [
+        "f33r",
+        "f33v",
+        "f40r",
+        "f40v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "E/2",
+      "Q": "E",
+      "B": "2",
+      "quire_number": 5,
+      "representative_numeric_folio": 34,
+      "numeric_folios_present": [
+        34,
+        39
+      ],
+      "page_names": [
+        "f34r",
+        "f34v",
+        "f39r",
+        "f39v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "E/3",
+      "Q": "E",
+      "B": "3",
+      "quire_number": 5,
+      "representative_numeric_folio": 35,
+      "numeric_folios_present": [
+        35,
+        38
+      ],
+      "page_names": [
+        "f35r",
+        "f35v",
+        "f38r",
+        "f38v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "E/4",
+      "Q": "E",
+      "B": "4",
+      "quire_number": 5,
+      "representative_numeric_folio": 36,
+      "numeric_folios_present": [
+        36,
+        37
+      ],
+      "page_names": [
+        "f36r",
+        "f36v",
+        "f37r",
+        "f37v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "F/1",
+      "Q": "F",
+      "B": "1",
+      "quire_number": 6,
+      "representative_numeric_folio": 41,
+      "numeric_folios_present": [
+        41,
+        48
+      ],
+      "page_names": [
+        "f41r",
+        "f41v",
+        "f48r",
+        "f48v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "F/2",
+      "Q": "F",
+      "B": "2",
+      "quire_number": 6,
+      "representative_numeric_folio": 42,
+      "numeric_folios_present": [
+        42,
+        47
+      ],
+      "page_names": [
+        "f42r",
+        "f42v",
+        "f47r",
+        "f47v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "F/3",
+      "Q": "F",
+      "B": "3",
+      "quire_number": 6,
+      "representative_numeric_folio": 43,
+      "numeric_folios_present": [
+        43,
+        46
+      ],
+      "page_names": [
+        "f43r",
+        "f43v",
+        "f46r",
+        "f46v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "F/4",
+      "Q": "F",
+      "B": "4",
+      "quire_number": 6,
+      "representative_numeric_folio": 44,
+      "numeric_folios_present": [
+        44,
+        45
+      ],
+      "page_names": [
+        "f44r",
+        "f44v",
+        "f45r",
+        "f45v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "G/1",
+      "Q": "G",
+      "B": "1",
+      "quire_number": 7,
+      "representative_numeric_folio": 49,
+      "numeric_folios_present": [
+        49,
+        56
+      ],
+      "page_names": [
+        "f49r",
+        "f49v",
+        "f56r",
+        "f56v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "G/2",
+      "Q": "G",
+      "B": "2",
+      "quire_number": 7,
+      "representative_numeric_folio": 50,
+      "numeric_folios_present": [
+        50,
+        55
+      ],
+      "page_names": [
+        "f50r",
+        "f50v",
+        "f55r",
+        "f55v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "G/3",
+      "Q": "G",
+      "B": "3",
+      "quire_number": 7,
+      "representative_numeric_folio": 51,
+      "numeric_folios_present": [
+        51,
+        54
+      ],
+      "page_names": [
+        "f51r",
+        "f51v",
+        "f54r",
+        "f54v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "G/4",
+      "Q": "G",
+      "B": "4",
+      "quire_number": 7,
+      "representative_numeric_folio": 52,
+      "numeric_folios_present": [
+        52,
+        53
+      ],
+      "page_names": [
+        "f52r",
+        "f52v",
+        "f53r",
+        "f53v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "H/1",
+      "Q": "H",
+      "B": "1",
+      "quire_number": 8,
+      "representative_numeric_folio": 57,
+      "numeric_folios_present": [
+        57,
+        66
+      ],
+      "page_names": [
+        "f57r",
+        "f57v",
+        "f66r",
+        "f66v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "H/2",
+      "Q": "H",
+      "B": "2",
+      "quire_number": 8,
+      "representative_numeric_folio": 58,
+      "numeric_folios_present": [
+        58,
+        65
+      ],
+      "page_names": [
+        "f58r",
+        "f58v",
+        "f65r",
+        "f65v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "I/1",
+      "Q": "I",
+      "B": "1",
+      "quire_number": 9,
+      "representative_numeric_folio": 67,
+      "numeric_folios_present": [
+        67,
+        68
+      ],
+      "page_names": [
+        "f67r1",
+        "f67r2",
+        "f67v2",
+        "f67v1",
+        "f68r1",
+        "f68r2",
+        "f68r3",
+        "f68v3",
+        "f68v2",
+        "f68v1"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 10,
+        "IT2a-n.txt": 10
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "J/1",
+      "Q": "J",
+      "B": "1",
+      "quire_number": 10,
+      "representative_numeric_folio": 69,
+      "numeric_folios_present": [
+        69,
+        70
+      ],
+      "page_names": [
+        "f69r",
+        "f69v",
+        "f70r1",
+        "f70r2",
+        "f70v2",
+        "f70v1"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 6,
+        "IT2a-n.txt": 6
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "K/1",
+      "Q": "K",
+      "B": "1",
+      "quire_number": 11,
+      "representative_numeric_folio": 71,
+      "numeric_folios_present": [
+        71,
+        72
+      ],
+      "page_names": [
+        "f71r",
+        "f71v",
+        "f72r1",
+        "f72r2",
+        "f72r3",
+        "f72v3",
+        "f72v2",
+        "f72v1"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 8,
+        "IT2a-n.txt": 8
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "L/1",
+      "Q": "L",
+      "B": "1",
+      "quire_number": 12,
+      "representative_numeric_folio": 73,
+      "numeric_folios_present": [
+        73
+      ],
+      "page_names": [
+        "f73r",
+        "f73v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 2,
+        "IT2a-n.txt": 2
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "M/1",
+      "Q": "M",
+      "B": "1",
+      "quire_number": 13,
+      "representative_numeric_folio": 75,
+      "numeric_folios_present": [
+        75,
+        84
+      ],
+      "page_names": [
+        "f75r",
+        "f75v",
+        "f84r",
+        "f84v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "M/2",
+      "Q": "M",
+      "B": "2",
+      "quire_number": 13,
+      "representative_numeric_folio": 76,
+      "numeric_folios_present": [
+        76,
+        83
+      ],
+      "page_names": [
+        "f76r",
+        "f76v",
+        "f83r",
+        "f83v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "M/3",
+      "Q": "M",
+      "B": "3",
+      "quire_number": 13,
+      "representative_numeric_folio": 77,
+      "numeric_folios_present": [
+        77,
+        82
+      ],
+      "page_names": [
+        "f77r",
+        "f77v",
+        "f82r",
+        "f82v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "M/4",
+      "Q": "M",
+      "B": "4",
+      "quire_number": 13,
+      "representative_numeric_folio": 78,
+      "numeric_folios_present": [
+        78,
+        81
+      ],
+      "page_names": [
+        "f78r",
+        "f78v",
+        "f81r",
+        "f81v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "M/5",
+      "Q": "M",
+      "B": "5",
+      "quire_number": 13,
+      "representative_numeric_folio": 79,
+      "numeric_folios_present": [
+        79,
+        80
+      ],
+      "page_names": [
+        "f79r",
+        "f79v",
+        "f80r",
+        "f80v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "N/1",
+      "Q": "N",
+      "B": "1",
+      "quire_number": 14,
+      "representative_numeric_folio": 85,
+      "numeric_folios_present": [
+        85,
+        86
+      ],
+      "page_names": [
+        "f85r1",
+        "f85r2",
+        "fRos",
+        "f86v4",
+        "f86v6",
+        "f86v5",
+        "f86v3"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 7,
+        "IT2a-n.txt": 6
+      },
+      "source_metadata_match": false
+    },
+    {
+      "group_key": "O/1",
+      "Q": "O",
+      "B": "1",
+      "quire_number": 15,
+      "representative_numeric_folio": 87,
+      "numeric_folios_present": [
+        87,
+        90
+      ],
+      "page_names": [
+        "f87r",
+        "f87v",
+        "f90r1",
+        "f90r2",
+        "f90v2",
+        "f90v1"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 6,
+        "IT2a-n.txt": 6
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "O/2",
+      "Q": "O",
+      "B": "2",
+      "quire_number": 15,
+      "representative_numeric_folio": 88,
+      "numeric_folios_present": [
+        88,
+        89
+      ],
+      "page_names": [
+        "f88r",
+        "f88v",
+        "f89r1",
+        "f89r2",
+        "f89v2",
+        "f89v1"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 6,
+        "IT2a-n.txt": 6
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "Q/1",
+      "Q": "Q",
+      "B": "1",
+      "quire_number": 17,
+      "representative_numeric_folio": 93,
+      "numeric_folios_present": [
+        93,
+        96
+      ],
+      "page_names": [
+        "f93r",
+        "f93v",
+        "f96r",
+        "f96v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "Q/2",
+      "Q": "Q",
+      "B": "2",
+      "quire_number": 17,
+      "representative_numeric_folio": 94,
+      "numeric_folios_present": [
+        94,
+        95
+      ],
+      "page_names": [
+        "f94r",
+        "f94v",
+        "f95r1",
+        "f95r2",
+        "f95v2",
+        "f95v1"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 6,
+        "IT2a-n.txt": 6
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "S/1",
+      "Q": "S",
+      "B": "1",
+      "quire_number": 19,
+      "representative_numeric_folio": 99,
+      "numeric_folios_present": [
+        99,
+        102
+      ],
+      "page_names": [
+        "f99r",
+        "f99v",
+        "f102r1",
+        "f102r2",
+        "f102v2",
+        "f102v1"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 6,
+        "IT2a-n.txt": 6
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "S/2",
+      "Q": "S",
+      "B": "2",
+      "quire_number": 19,
+      "representative_numeric_folio": 100,
+      "numeric_folios_present": [
+        100,
+        101
+      ],
+      "page_names": [
+        "f100r",
+        "f100v",
+        "f101r",
+        "f101v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "T/1",
+      "Q": "T",
+      "B": "1",
+      "quire_number": 20,
+      "representative_numeric_folio": 103,
+      "numeric_folios_present": [
+        103,
+        116
+      ],
+      "page_names": [
+        "f103r",
+        "f103v",
+        "f116r",
+        "f116v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 3
+      },
+      "source_metadata_match": false
+    },
+    {
+      "group_key": "T/2",
+      "Q": "T",
+      "B": "2",
+      "quire_number": 20,
+      "representative_numeric_folio": 104,
+      "numeric_folios_present": [
+        104,
+        115
+      ],
+      "page_names": [
+        "f104r",
+        "f104v",
+        "f115r",
+        "f115v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "T/3",
+      "Q": "T",
+      "B": "3",
+      "quire_number": 20,
+      "representative_numeric_folio": 105,
+      "numeric_folios_present": [
+        105,
+        114
+      ],
+      "page_names": [
+        "f105r",
+        "f105v",
+        "f114r",
+        "f114v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "T/4",
+      "Q": "T",
+      "B": "4",
+      "quire_number": 20,
+      "representative_numeric_folio": 106,
+      "numeric_folios_present": [
+        106,
+        113
+      ],
+      "page_names": [
+        "f106r",
+        "f106v",
+        "f113r",
+        "f113v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "T/5",
+      "Q": "T",
+      "B": "5",
+      "quire_number": 20,
+      "representative_numeric_folio": 107,
+      "numeric_folios_present": [
+        107,
+        112
+      ],
+      "page_names": [
+        "f107r",
+        "f107v",
+        "f112r",
+        "f112v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    },
+    {
+      "group_key": "T/6",
+      "Q": "T",
+      "B": "6",
+      "quire_number": 20,
+      "representative_numeric_folio": 108,
+      "numeric_folios_present": [
+        108,
+        111
+      ],
+      "page_names": [
+        "f108r",
+        "f108v",
+        "f111r",
+        "f111v"
+      ],
+      "page_header_count_by_source": {
+        "ZL3b-n.txt": 4,
+        "IT2a-n.txt": 4
+      },
+      "source_metadata_match": true
+    }
+  ],
+  "page_records": [
+    {
+      "page_name": "f1r",
+      "numeric_folio": 1,
+      "side": "r",
+      "panel": null,
+      "group_key": "A/1",
+      "representative_numeric_folio": 1,
+      "header_variables": {
+        "Q": "A",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "T",
+        "L": "A",
+        "H": "1",
+        "C": "1",
+        "X": "V"
+      },
+      "source_header_line": 5,
+      "IT2a": {
+        "header_line": 5,
+        "header_variables": {
+          "Q": "A",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "T",
+          "L": "A",
+          "H": "1",
+          "C": "1",
+          "X": "V"
+        }
+      }
+    },
+    {
+      "page_name": "f1v",
+      "numeric_folio": 1,
+      "side": "v",
+      "panel": null,
+      "group_key": "A/1",
+      "representative_numeric_folio": 1,
+      "header_variables": {
+        "Q": "A",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1",
+        "X": "C"
+      },
+      "source_header_line": 57,
+      "IT2a": {
+        "header_line": 34,
+        "header_variables": {
+          "Q": "A",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1",
+          "X": "C"
+        }
+      }
+    },
+    {
+      "page_name": "f8r",
+      "numeric_folio": 8,
+      "side": "r",
+      "panel": null,
+      "group_key": "A/1",
+      "representative_numeric_folio": 1,
+      "header_variables": {
+        "Q": "A",
+        "P": "O",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 351,
+      "IT2a": {
+        "header_line": 206,
+        "header_variables": {
+          "Q": "A",
+          "P": "O",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f8v",
+      "numeric_folio": 8,
+      "side": "v",
+      "panel": null,
+      "group_key": "A/1",
+      "representative_numeric_folio": 1,
+      "header_variables": {
+        "Q": "A",
+        "P": "P",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 384,
+      "IT2a": {
+        "header_line": 228,
+        "header_variables": {
+          "Q": "A",
+          "P": "P",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f2r",
+      "numeric_folio": 2,
+      "side": "r",
+      "panel": null,
+      "group_key": "A/2",
+      "representative_numeric_folio": 2,
+      "header_variables": {
+        "Q": "A",
+        "P": "C",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 79,
+      "IT2a": {
+        "header_line": 45,
+        "header_variables": {
+          "Q": "A",
+          "P": "C",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f2v",
+      "numeric_folio": 2,
+      "side": "v",
+      "panel": null,
+      "group_key": "A/2",
+      "representative_numeric_folio": 2,
+      "header_variables": {
+        "Q": "A",
+        "P": "D",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1",
+        "X": "O"
+      },
+      "source_header_line": 104,
+      "IT2a": {
+        "header_line": 59,
+        "header_variables": {
+          "Q": "A",
+          "P": "D",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1",
+          "X": "O"
+        }
+      }
+    },
+    {
+      "page_name": "f7r",
+      "numeric_folio": 7,
+      "side": "r",
+      "panel": null,
+      "group_key": "A/2",
+      "representative_numeric_folio": 2,
+      "header_variables": {
+        "Q": "A",
+        "P": "M",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 312,
+      "IT2a": {
+        "header_line": 185,
+        "header_variables": {
+          "Q": "A",
+          "P": "M",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f7v",
+      "numeric_folio": 7,
+      "side": "v",
+      "panel": null,
+      "group_key": "A/2",
+      "representative_numeric_folio": 2,
+      "header_variables": {
+        "Q": "A",
+        "P": "N",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 332,
+      "IT2a": {
+        "header_line": 196,
+        "header_variables": {
+          "Q": "A",
+          "P": "N",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f3r",
+      "numeric_folio": 3,
+      "side": "r",
+      "panel": null,
+      "group_key": "A/3",
+      "representative_numeric_folio": 3,
+      "header_variables": {
+        "Q": "A",
+        "P": "E",
+        "F": "c",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 122,
+      "IT2a": {
+        "header_line": 68,
+        "header_variables": {
+          "Q": "A",
+          "P": "E",
+          "F": "c",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f3v",
+      "numeric_folio": 3,
+      "side": "v",
+      "panel": null,
+      "group_key": "A/3",
+      "representative_numeric_folio": 3,
+      "header_variables": {
+        "Q": "A",
+        "P": "F",
+        "F": "c",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 154,
+      "IT2a": {
+        "header_line": 89,
+        "header_variables": {
+          "Q": "A",
+          "P": "F",
+          "F": "c",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f6r",
+      "numeric_folio": 6,
+      "side": "r",
+      "panel": null,
+      "group_key": "A/3",
+      "representative_numeric_folio": 3,
+      "header_variables": {
+        "Q": "A",
+        "P": "K",
+        "F": "x",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 257,
+      "IT2a": {
+        "header_line": 148,
+        "header_variables": {
+          "Q": "A",
+          "P": "K",
+          "F": "x",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f6v",
+      "numeric_folio": 6,
+      "side": "v",
+      "panel": null,
+      "group_key": "A/3",
+      "representative_numeric_folio": 3,
+      "header_variables": {
+        "Q": "A",
+        "P": "L",
+        "F": "x",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 280,
+      "IT2a": {
+        "header_line": 163,
+        "header_variables": {
+          "Q": "A",
+          "P": "L",
+          "F": "x",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f4r",
+      "numeric_folio": 4,
+      "side": "r",
+      "panel": null,
+      "group_key": "A/4",
+      "representative_numeric_folio": 4,
+      "header_variables": {
+        "Q": "A",
+        "P": "G",
+        "F": "d",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1",
+        "X": "C"
+      },
+      "source_header_line": 178,
+      "IT2a": {
+        "header_line": 104,
+        "header_variables": {
+          "Q": "A",
+          "P": "G",
+          "F": "d",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1",
+          "X": "C"
+        }
+      }
+    },
+    {
+      "page_name": "f4v",
+      "numeric_folio": 4,
+      "side": "v",
+      "panel": null,
+      "group_key": "A/4",
+      "representative_numeric_folio": 4,
+      "header_variables": {
+        "Q": "A",
+        "P": "H",
+        "F": "d",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 201,
+      "IT2a": {
+        "header_line": 118,
+        "header_variables": {
+          "Q": "A",
+          "P": "H",
+          "F": "d",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f5r",
+      "numeric_folio": 5,
+      "side": "r",
+      "panel": null,
+      "group_key": "A/4",
+      "representative_numeric_folio": 4,
+      "header_variables": {
+        "Q": "A",
+        "P": "I",
+        "F": "w",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 225,
+      "IT2a": {
+        "header_line": 133,
+        "header_variables": {
+          "Q": "A",
+          "P": "I",
+          "F": "w",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f5v",
+      "numeric_folio": 5,
+      "side": "v",
+      "panel": null,
+      "group_key": "A/4",
+      "representative_numeric_folio": 4,
+      "header_variables": {
+        "Q": "A",
+        "P": "J",
+        "F": "w",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 242,
+      "IT2a": {
+        "header_line": 141,
+        "header_variables": {
+          "Q": "A",
+          "P": "J",
+          "F": "w",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f9r",
+      "numeric_folio": 9,
+      "side": "r",
+      "panel": null,
+      "group_key": "B/1",
+      "representative_numeric_folio": 9,
+      "header_variables": {
+        "Q": "B",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 412,
+      "IT2a": {
+        "header_line": 246,
+        "header_variables": {
+          "Q": "B",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f9v",
+      "numeric_folio": 9,
+      "side": "v",
+      "panel": null,
+      "group_key": "B/1",
+      "representative_numeric_folio": 9,
+      "header_variables": {
+        "Q": "B",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1",
+        "X": "C"
+      },
+      "source_header_line": 432,
+      "IT2a": {
+        "header_line": 257,
+        "header_variables": {
+          "Q": "B",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1",
+          "X": "C"
+        }
+      }
+    },
+    {
+      "page_name": "f16r",
+      "numeric_folio": 16,
+      "side": "r",
+      "panel": null,
+      "group_key": "B/1",
+      "representative_numeric_folio": 9,
+      "header_variables": {
+        "Q": "B",
+        "P": "O",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 647,
+      "IT2a": {
+        "header_line": 381,
+        "header_variables": {
+          "Q": "B",
+          "P": "O",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f16v",
+      "numeric_folio": 16,
+      "side": "v",
+      "panel": null,
+      "group_key": "B/1",
+      "representative_numeric_folio": 9,
+      "header_variables": {
+        "Q": "B",
+        "P": "P",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 670,
+      "IT2a": {
+        "header_line": 395,
+        "header_variables": {
+          "Q": "B",
+          "P": "P",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f10r",
+      "numeric_folio": 10,
+      "side": "r",
+      "panel": null,
+      "group_key": "B/2",
+      "representative_numeric_folio": 10,
+      "header_variables": {
+        "Q": "B",
+        "P": "C",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 455,
+      "IT2a": {
+        "header_line": 270,
+        "header_variables": {
+          "Q": "B",
+          "P": "C",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f10v",
+      "numeric_folio": 10,
+      "side": "v",
+      "panel": null,
+      "group_key": "B/2",
+      "representative_numeric_folio": 10,
+      "header_variables": {
+        "Q": "B",
+        "P": "D",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 476,
+      "IT2a": {
+        "header_line": 283,
+        "header_variables": {
+          "Q": "B",
+          "P": "D",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f15r",
+      "numeric_folio": 15,
+      "side": "r",
+      "panel": null,
+      "group_key": "B/2",
+      "representative_numeric_folio": 10,
+      "header_variables": {
+        "Q": "B",
+        "P": "M",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 603,
+      "IT2a": {
+        "header_line": 352,
+        "header_variables": {
+          "Q": "B",
+          "P": "M",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f15v",
+      "numeric_folio": 15,
+      "side": "v",
+      "panel": null,
+      "group_key": "B/2",
+      "representative_numeric_folio": 10,
+      "header_variables": {
+        "Q": "B",
+        "P": "N",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 626,
+      "IT2a": {
+        "header_line": 368,
+        "header_variables": {
+          "Q": "B",
+          "P": "N",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f11r",
+      "numeric_folio": 11,
+      "side": "r",
+      "panel": null,
+      "group_key": "B/3",
+      "representative_numeric_folio": 11,
+      "header_variables": {
+        "Q": "B",
+        "P": "E",
+        "F": "c",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 492,
+      "IT2a": {
+        "header_line": 291,
+        "header_variables": {
+          "Q": "B",
+          "P": "E",
+          "F": "c",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f11v",
+      "numeric_folio": 11,
+      "side": "v",
+      "panel": null,
+      "group_key": "B/3",
+      "representative_numeric_folio": 11,
+      "header_variables": {
+        "Q": "B",
+        "P": "F",
+        "F": "c",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 508,
+      "IT2a": {
+        "header_line": 299,
+        "header_variables": {
+          "Q": "B",
+          "P": "F",
+          "F": "c",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f14r",
+      "numeric_folio": 14,
+      "side": "r",
+      "panel": null,
+      "group_key": "B/3",
+      "representative_numeric_folio": 11,
+      "header_variables": {
+        "Q": "B",
+        "P": "K",
+        "F": "x",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 564,
+      "IT2a": {
+        "header_line": 328,
+        "header_variables": {
+          "Q": "B",
+          "P": "K",
+          "F": "x",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f14v",
+      "numeric_folio": 14,
+      "side": "v",
+      "panel": null,
+      "group_key": "B/3",
+      "representative_numeric_folio": 11,
+      "header_variables": {
+        "Q": "B",
+        "P": "L",
+        "F": "x",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 586,
+      "IT2a": {
+        "header_line": 342,
+        "header_variables": {
+          "Q": "B",
+          "P": "L",
+          "F": "x",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f13r",
+      "numeric_folio": 13,
+      "side": "r",
+      "panel": null,
+      "group_key": "B/4",
+      "representative_numeric_folio": 13,
+      "header_variables": {
+        "Q": "B",
+        "P": "I",
+        "F": "w",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 526,
+      "IT2a": {
+        "header_line": 306,
+        "header_variables": {
+          "Q": "B",
+          "P": "I",
+          "F": "w",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f13v",
+      "numeric_folio": 13,
+      "side": "v",
+      "panel": null,
+      "group_key": "B/4",
+      "representative_numeric_folio": 13,
+      "header_variables": {
+        "Q": "B",
+        "P": "J",
+        "F": "w",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 545,
+      "IT2a": {
+        "header_line": 317,
+        "header_variables": {
+          "Q": "B",
+          "P": "J",
+          "F": "w",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f17r",
+      "numeric_folio": 17,
+      "side": "r",
+      "panel": null,
+      "group_key": "C/1",
+      "representative_numeric_folio": 17,
+      "header_variables": {
+        "Q": "C",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1",
+        "X": "O"
+      },
+      "source_header_line": 692,
+      "IT2a": {
+        "header_line": 409,
+        "header_variables": {
+          "Q": "C",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1",
+          "X": "O"
+        }
+      }
+    },
+    {
+      "page_name": "f17v",
+      "numeric_folio": 17,
+      "side": "v",
+      "panel": null,
+      "group_key": "C/1",
+      "representative_numeric_folio": 17,
+      "header_variables": {
+        "Q": "C",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 717,
+      "IT2a": {
+        "header_line": 422,
+        "header_variables": {
+          "Q": "C",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f24r",
+      "numeric_folio": 24,
+      "side": "r",
+      "panel": null,
+      "group_key": "C/1",
+      "representative_numeric_folio": 17,
+      "header_variables": {
+        "Q": "C",
+        "P": "O",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 998,
+      "IT2a": {
+        "header_line": 605,
+        "header_variables": {
+          "Q": "C",
+          "P": "O",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f24v",
+      "numeric_folio": 24,
+      "side": "v",
+      "panel": null,
+      "group_key": "C/1",
+      "representative_numeric_folio": 17,
+      "header_variables": {
+        "Q": "C",
+        "P": "P",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1025,
+      "IT2a": {
+        "header_line": 626,
+        "header_variables": {
+          "Q": "C",
+          "P": "P",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f18r",
+      "numeric_folio": 18,
+      "side": "r",
+      "panel": null,
+      "group_key": "C/2",
+      "representative_numeric_folio": 18,
+      "header_variables": {
+        "Q": "C",
+        "P": "C",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 749,
+      "IT2a": {
+        "header_line": 446,
+        "header_variables": {
+          "Q": "C",
+          "P": "C",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f18v",
+      "numeric_folio": 18,
+      "side": "v",
+      "panel": null,
+      "group_key": "C/2",
+      "representative_numeric_folio": 18,
+      "header_variables": {
+        "Q": "C",
+        "P": "D",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 771,
+      "IT2a": {
+        "header_line": 461,
+        "header_variables": {
+          "Q": "C",
+          "P": "D",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f23r",
+      "numeric_folio": 23,
+      "side": "r",
+      "panel": null,
+      "group_key": "C/2",
+      "representative_numeric_folio": 18,
+      "header_variables": {
+        "Q": "C",
+        "P": "M",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 957,
+      "IT2a": {
+        "header_line": 580,
+        "header_variables": {
+          "Q": "C",
+          "P": "M",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f23v",
+      "numeric_folio": 23,
+      "side": "v",
+      "panel": null,
+      "group_key": "C/2",
+      "representative_numeric_folio": 18,
+      "header_variables": {
+        "Q": "C",
+        "P": "N",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 978,
+      "IT2a": {
+        "header_line": 592,
+        "header_variables": {
+          "Q": "C",
+          "P": "N",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f19r",
+      "numeric_folio": 19,
+      "side": "r",
+      "panel": null,
+      "group_key": "C/3",
+      "representative_numeric_folio": 19,
+      "header_variables": {
+        "Q": "C",
+        "P": "E",
+        "F": "c",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 789,
+      "IT2a": {
+        "header_line": 472,
+        "header_variables": {
+          "Q": "C",
+          "P": "E",
+          "F": "c",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f19v",
+      "numeric_folio": 19,
+      "side": "v",
+      "panel": null,
+      "group_key": "C/3",
+      "representative_numeric_folio": 19,
+      "header_variables": {
+        "Q": "C",
+        "P": "F",
+        "F": "c",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 810,
+      "IT2a": {
+        "header_line": 486,
+        "header_variables": {
+          "Q": "C",
+          "P": "F",
+          "F": "c",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f22r",
+      "numeric_folio": 22,
+      "side": "r",
+      "panel": null,
+      "group_key": "C/3",
+      "representative_numeric_folio": 19,
+      "header_variables": {
+        "Q": "C",
+        "P": "K",
+        "F": "x",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 910,
+      "IT2a": {
+        "header_line": 549,
+        "header_variables": {
+          "Q": "C",
+          "P": "K",
+          "F": "x",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f22v",
+      "numeric_folio": 22,
+      "side": "v",
+      "panel": null,
+      "group_key": "C/3",
+      "representative_numeric_folio": 19,
+      "header_variables": {
+        "Q": "C",
+        "P": "L",
+        "F": "x",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 933,
+      "IT2a": {
+        "header_line": 563,
+        "header_variables": {
+          "Q": "C",
+          "P": "L",
+          "F": "x",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f20r",
+      "numeric_folio": 20,
+      "side": "r",
+      "panel": null,
+      "group_key": "C/4",
+      "representative_numeric_folio": 20,
+      "header_variables": {
+        "Q": "C",
+        "P": "G",
+        "F": "d",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1",
+        "X": "C"
+      },
+      "source_header_line": 832,
+      "IT2a": {
+        "header_line": 501,
+        "header_variables": {
+          "Q": "C",
+          "P": "G",
+          "F": "d",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1",
+          "X": "C"
+        }
+      }
+    },
+    {
+      "page_name": "f20v",
+      "numeric_folio": 20,
+      "side": "v",
+      "panel": null,
+      "group_key": "C/4",
+      "representative_numeric_folio": 20,
+      "header_variables": {
+        "Q": "C",
+        "P": "H",
+        "F": "d",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 855,
+      "IT2a": {
+        "header_line": 515,
+        "header_variables": {
+          "Q": "C",
+          "P": "H",
+          "F": "d",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f21r",
+      "numeric_folio": 21,
+      "side": "r",
+      "panel": null,
+      "group_key": "C/4",
+      "representative_numeric_folio": 20,
+      "header_variables": {
+        "Q": "C",
+        "P": "I",
+        "F": "w",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 874,
+      "IT2a": {
+        "header_line": 527,
+        "header_variables": {
+          "Q": "C",
+          "P": "I",
+          "F": "w",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f21v",
+      "numeric_folio": 21,
+      "side": "v",
+      "panel": null,
+      "group_key": "C/4",
+      "representative_numeric_folio": 20,
+      "header_variables": {
+        "Q": "C",
+        "P": "J",
+        "F": "w",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 895,
+      "IT2a": {
+        "header_line": 540,
+        "header_variables": {
+          "Q": "C",
+          "P": "J",
+          "F": "w",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f25r",
+      "numeric_folio": 25,
+      "side": "r",
+      "panel": null,
+      "group_key": "D/1",
+      "representative_numeric_folio": 25,
+      "header_variables": {
+        "Q": "D",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1051,
+      "IT2a": {
+        "header_line": 643,
+        "header_variables": {
+          "Q": "D",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f25v",
+      "numeric_folio": 25,
+      "side": "v",
+      "panel": null,
+      "group_key": "D/1",
+      "representative_numeric_folio": 25,
+      "header_variables": {
+        "Q": "D",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1066,
+      "IT2a": {
+        "header_line": 651,
+        "header_variables": {
+          "Q": "D",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f32r",
+      "numeric_folio": 32,
+      "side": "r",
+      "panel": null,
+      "group_key": "D/1",
+      "representative_numeric_folio": 25,
+      "header_variables": {
+        "Q": "D",
+        "P": "O",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1",
+        "X": "C"
+      },
+      "source_header_line": 1316,
+      "IT2a": {
+        "header_line": 801,
+        "header_variables": {
+          "Q": "D",
+          "P": "O",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1",
+          "X": "C"
+        }
+      }
+    },
+    {
+      "page_name": "f32v",
+      "numeric_folio": 32,
+      "side": "v",
+      "panel": null,
+      "group_key": "D/1",
+      "representative_numeric_folio": 25,
+      "header_variables": {
+        "Q": "D",
+        "P": "P",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1345,
+      "IT2a": {
+        "header_line": 821,
+        "header_variables": {
+          "Q": "D",
+          "P": "P",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f26r",
+      "numeric_folio": 26,
+      "side": "r",
+      "panel": null,
+      "group_key": "D/2",
+      "representative_numeric_folio": 26,
+      "header_variables": {
+        "Q": "D",
+        "P": "C",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1081,
+      "IT2a": {
+        "header_line": 659,
+        "header_variables": {
+          "Q": "D",
+          "P": "C",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f26v",
+      "numeric_folio": 26,
+      "side": "v",
+      "panel": null,
+      "group_key": "D/2",
+      "representative_numeric_folio": 26,
+      "header_variables": {
+        "Q": "D",
+        "P": "D",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1101,
+      "IT2a": {
+        "header_line": 670,
+        "header_variables": {
+          "Q": "D",
+          "P": "D",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f31r",
+      "numeric_folio": 31,
+      "side": "r",
+      "panel": null,
+      "group_key": "D/2",
+      "representative_numeric_folio": 26,
+      "header_variables": {
+        "Q": "D",
+        "P": "M",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1270,
+      "IT2a": {
+        "header_line": 772,
+        "header_variables": {
+          "Q": "D",
+          "P": "M",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f31v",
+      "numeric_folio": 31,
+      "side": "v",
+      "panel": null,
+      "group_key": "D/2",
+      "representative_numeric_folio": 26,
+      "header_variables": {
+        "Q": "D",
+        "P": "N",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1296,
+      "IT2a": {
+        "header_line": 789,
+        "header_variables": {
+          "Q": "D",
+          "P": "N",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f27r",
+      "numeric_folio": 27,
+      "side": "r",
+      "panel": null,
+      "group_key": "D/3",
+      "representative_numeric_folio": 27,
+      "header_variables": {
+        "Q": "D",
+        "P": "E",
+        "F": "c",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1118,
+      "IT2a": {
+        "header_line": 680,
+        "header_variables": {
+          "Q": "D",
+          "P": "E",
+          "F": "c",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f27v",
+      "numeric_folio": 27,
+      "side": "v",
+      "panel": null,
+      "group_key": "D/3",
+      "representative_numeric_folio": 27,
+      "header_variables": {
+        "Q": "D",
+        "P": "F",
+        "F": "c",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1140,
+      "IT2a": {
+        "header_line": 694,
+        "header_variables": {
+          "Q": "D",
+          "P": "F",
+          "F": "c",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f30r",
+      "numeric_folio": 30,
+      "side": "r",
+      "panel": null,
+      "group_key": "D/3",
+      "representative_numeric_folio": 27,
+      "header_variables": {
+        "Q": "D",
+        "P": "K",
+        "F": "x",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1228,
+      "IT2a": {
+        "header_line": 746,
+        "header_variables": {
+          "Q": "D",
+          "P": "K",
+          "F": "x",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f30v",
+      "numeric_folio": 30,
+      "side": "v",
+      "panel": null,
+      "group_key": "D/3",
+      "representative_numeric_folio": 27,
+      "header_variables": {
+        "Q": "D",
+        "P": "L",
+        "F": "x",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1251,
+      "IT2a": {
+        "header_line": 760,
+        "header_variables": {
+          "Q": "D",
+          "P": "L",
+          "F": "x",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f28r",
+      "numeric_folio": 28,
+      "side": "r",
+      "panel": null,
+      "group_key": "D/4",
+      "representative_numeric_folio": 28,
+      "header_variables": {
+        "Q": "D",
+        "P": "G",
+        "F": "d",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1155,
+      "IT2a": {
+        "header_line": 703,
+        "header_variables": {
+          "Q": "D",
+          "P": "G",
+          "F": "d",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f28v",
+      "numeric_folio": 28,
+      "side": "v",
+      "panel": null,
+      "group_key": "D/4",
+      "representative_numeric_folio": 28,
+      "header_variables": {
+        "Q": "D",
+        "P": "H",
+        "F": "d",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1172,
+      "IT2a": {
+        "header_line": 713,
+        "header_variables": {
+          "Q": "D",
+          "P": "H",
+          "F": "d",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f29r",
+      "numeric_folio": 29,
+      "side": "r",
+      "panel": null,
+      "group_key": "D/4",
+      "representative_numeric_folio": 28,
+      "header_variables": {
+        "Q": "D",
+        "P": "I",
+        "F": "w",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1190,
+      "IT2a": {
+        "header_line": 723,
+        "header_variables": {
+          "Q": "D",
+          "P": "I",
+          "F": "w",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f29v",
+      "numeric_folio": 29,
+      "side": "v",
+      "panel": null,
+      "group_key": "D/4",
+      "representative_numeric_folio": 28,
+      "header_variables": {
+        "Q": "D",
+        "P": "J",
+        "F": "w",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1207,
+      "IT2a": {
+        "header_line": 733,
+        "header_variables": {
+          "Q": "D",
+          "P": "J",
+          "F": "w",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f33r",
+      "numeric_folio": 33,
+      "side": "r",
+      "panel": null,
+      "group_key": "E/1",
+      "representative_numeric_folio": 33,
+      "header_variables": {
+        "Q": "E",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1368,
+      "IT2a": {
+        "header_line": 833,
+        "header_variables": {
+          "Q": "E",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f33v",
+      "numeric_folio": 33,
+      "side": "v",
+      "panel": null,
+      "group_key": "E/1",
+      "representative_numeric_folio": 33,
+      "header_variables": {
+        "Q": "E",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1382,
+      "IT2a": {
+        "header_line": 841,
+        "header_variables": {
+          "Q": "E",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f40r",
+      "numeric_folio": 40,
+      "side": "r",
+      "panel": null,
+      "group_key": "E/1",
+      "representative_numeric_folio": 33,
+      "header_variables": {
+        "Q": "E",
+        "P": "O",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1681,
+      "IT2a": {
+        "header_line": 1028,
+        "header_variables": {
+          "Q": "E",
+          "P": "O",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f40v",
+      "numeric_folio": 40,
+      "side": "v",
+      "panel": null,
+      "group_key": "E/1",
+      "representative_numeric_folio": 33,
+      "header_variables": {
+        "Q": "E",
+        "P": "P",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1701,
+      "IT2a": {
+        "header_line": 1040,
+        "header_variables": {
+          "Q": "E",
+          "P": "P",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f34r",
+      "numeric_folio": 34,
+      "side": "r",
+      "panel": null,
+      "group_key": "E/2",
+      "representative_numeric_folio": 34,
+      "header_variables": {
+        "Q": "E",
+        "P": "C",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1403,
+      "IT2a": {
+        "header_line": 853,
+        "header_variables": {
+          "Q": "E",
+          "P": "C",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f34v",
+      "numeric_folio": 34,
+      "side": "v",
+      "panel": null,
+      "group_key": "E/2",
+      "representative_numeric_folio": 34,
+      "header_variables": {
+        "Q": "E",
+        "P": "D",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1432,
+      "IT2a": {
+        "header_line": 869,
+        "header_variables": {
+          "Q": "E",
+          "P": "D",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f39r",
+      "numeric_folio": 39,
+      "side": "r",
+      "panel": null,
+      "group_key": "E/2",
+      "representative_numeric_folio": 34,
+      "header_variables": {
+        "Q": "E",
+        "P": "M",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1631,
+      "IT2a": {
+        "header_line": 996,
+        "header_variables": {
+          "Q": "E",
+          "P": "M",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f39v",
+      "numeric_folio": 39,
+      "side": "v",
+      "panel": null,
+      "group_key": "E/2",
+      "representative_numeric_folio": 34,
+      "header_variables": {
+        "Q": "E",
+        "P": "N",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1658,
+      "IT2a": {
+        "header_line": 1013,
+        "header_variables": {
+          "Q": "E",
+          "P": "N",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f35r",
+      "numeric_folio": 35,
+      "side": "r",
+      "panel": null,
+      "group_key": "E/3",
+      "representative_numeric_folio": 35,
+      "header_variables": {
+        "Q": "E",
+        "P": "E",
+        "F": "c",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1452,
+      "IT2a": {
+        "header_line": 881,
+        "header_variables": {
+          "Q": "E",
+          "P": "E",
+          "F": "c",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f35v",
+      "numeric_folio": 35,
+      "side": "v",
+      "panel": null,
+      "group_key": "E/3",
+      "representative_numeric_folio": 35,
+      "header_variables": {
+        "Q": "E",
+        "P": "F",
+        "F": "c",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1476,
+      "IT2a": {
+        "header_line": 897,
+        "header_variables": {
+          "Q": "E",
+          "P": "F",
+          "F": "c",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f38r",
+      "numeric_folio": 38,
+      "side": "r",
+      "panel": null,
+      "group_key": "E/3",
+      "representative_numeric_folio": 35,
+      "header_variables": {
+        "Q": "E",
+        "P": "K",
+        "F": "x",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1602,
+      "IT2a": {
+        "header_line": 980,
+        "header_variables": {
+          "Q": "E",
+          "P": "K",
+          "F": "x",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f38v",
+      "numeric_folio": 38,
+      "side": "v",
+      "panel": null,
+      "group_key": "E/3",
+      "representative_numeric_folio": 35,
+      "header_variables": {
+        "Q": "E",
+        "P": "L",
+        "F": "x",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1615,
+      "IT2a": {
+        "header_line": 987,
+        "header_variables": {
+          "Q": "E",
+          "P": "L",
+          "F": "x",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f36r",
+      "numeric_folio": 36,
+      "side": "r",
+      "panel": null,
+      "group_key": "E/4",
+      "representative_numeric_folio": 36,
+      "header_variables": {
+        "Q": "E",
+        "P": "G",
+        "F": "d",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1506,
+      "IT2a": {
+        "header_line": 919,
+        "header_variables": {
+          "Q": "E",
+          "P": "G",
+          "F": "d",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f36v",
+      "numeric_folio": 36,
+      "side": "v",
+      "panel": null,
+      "group_key": "E/4",
+      "representative_numeric_folio": 36,
+      "header_variables": {
+        "Q": "E",
+        "P": "H",
+        "F": "d",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1524,
+      "IT2a": {
+        "header_line": 929,
+        "header_variables": {
+          "Q": "E",
+          "P": "H",
+          "F": "d",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f37r",
+      "numeric_folio": 37,
+      "side": "r",
+      "panel": null,
+      "group_key": "E/4",
+      "representative_numeric_folio": 36,
+      "header_variables": {
+        "Q": "E",
+        "P": "I",
+        "F": "w",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1547,
+      "IT2a": {
+        "header_line": 944,
+        "header_variables": {
+          "Q": "E",
+          "P": "I",
+          "F": "w",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f37v",
+      "numeric_folio": 37,
+      "side": "v",
+      "panel": null,
+      "group_key": "E/4",
+      "representative_numeric_folio": 36,
+      "header_variables": {
+        "Q": "E",
+        "P": "J",
+        "F": "w",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1569,
+      "IT2a": {
+        "header_line": 956,
+        "header_variables": {
+          "Q": "E",
+          "P": "J",
+          "F": "w",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f41r",
+      "numeric_folio": 41,
+      "side": "r",
+      "panel": null,
+      "group_key": "F/1",
+      "representative_numeric_folio": 41,
+      "header_variables": {
+        "Q": "F",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "B",
+        "H": "5",
+        "C": "2"
+      },
+      "source_header_line": 1730,
+      "IT2a": {
+        "header_line": 1060,
+        "header_variables": {
+          "Q": "F",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "B",
+          "H": "5",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f41v",
+      "numeric_folio": 41,
+      "side": "v",
+      "panel": null,
+      "group_key": "F/1",
+      "representative_numeric_folio": 41,
+      "header_variables": {
+        "Q": "F",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "B",
+        "H": "5",
+        "C": "2"
+      },
+      "source_header_line": 1751,
+      "IT2a": {
+        "header_line": 1072,
+        "header_variables": {
+          "Q": "F",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "B",
+          "H": "5",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f48r",
+      "numeric_folio": 48,
+      "side": "r",
+      "panel": null,
+      "group_key": "F/1",
+      "representative_numeric_folio": 41,
+      "header_variables": {
+        "Q": "F",
+        "P": "O",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "B",
+        "H": "5",
+        "C": "2"
+      },
+      "source_header_line": 2054,
+      "IT2a": {
+        "header_line": 1261,
+        "header_variables": {
+          "Q": "F",
+          "P": "O",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "B",
+          "H": "5",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f48v",
+      "numeric_folio": 48,
+      "side": "v",
+      "panel": null,
+      "group_key": "F/1",
+      "representative_numeric_folio": 41,
+      "header_variables": {
+        "Q": "F",
+        "P": "P",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "B",
+        "H": "5",
+        "C": "2"
+      },
+      "source_header_line": 2071,
+      "IT2a": {
+        "header_line": 1271,
+        "header_variables": {
+          "Q": "F",
+          "P": "P",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "B",
+          "H": "5",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f42r",
+      "numeric_folio": 42,
+      "side": "r",
+      "panel": null,
+      "group_key": "F/2",
+      "representative_numeric_folio": 42,
+      "header_variables": {
+        "Q": "F",
+        "P": "C",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1768,
+      "IT2a": {
+        "header_line": 1081,
+        "header_variables": {
+          "Q": "F",
+          "P": "C",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f42v",
+      "numeric_folio": 42,
+      "side": "v",
+      "panel": null,
+      "group_key": "F/2",
+      "representative_numeric_folio": 42,
+      "header_variables": {
+        "Q": "F",
+        "P": "D",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1803,
+      "IT2a": {
+        "header_line": 1105,
+        "header_variables": {
+          "Q": "F",
+          "P": "D",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f47r",
+      "numeric_folio": 47,
+      "side": "r",
+      "panel": null,
+      "group_key": "F/2",
+      "representative_numeric_folio": 42,
+      "header_variables": {
+        "Q": "F",
+        "P": "M",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 2010,
+      "IT2a": {
+        "header_line": 1234,
+        "header_variables": {
+          "Q": "F",
+          "P": "M",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f47v",
+      "numeric_folio": 47,
+      "side": "v",
+      "panel": null,
+      "group_key": "F/2",
+      "representative_numeric_folio": 42,
+      "header_variables": {
+        "Q": "F",
+        "P": "N",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 2030,
+      "IT2a": {
+        "header_line": 1246,
+        "header_variables": {
+          "Q": "F",
+          "P": "N",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f43r",
+      "numeric_folio": 43,
+      "side": "r",
+      "panel": null,
+      "group_key": "F/3",
+      "representative_numeric_folio": 43,
+      "header_variables": {
+        "Q": "F",
+        "P": "E",
+        "F": "c",
+        "B": "3",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1828,
+      "IT2a": {
+        "header_line": 1122,
+        "header_variables": {
+          "Q": "F",
+          "P": "E",
+          "F": "c",
+          "B": "3",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f43v",
+      "numeric_folio": 43,
+      "side": "v",
+      "panel": null,
+      "group_key": "F/3",
+      "representative_numeric_folio": 43,
+      "header_variables": {
+        "Q": "F",
+        "P": "F",
+        "F": "c",
+        "B": "3",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1852,
+      "IT2a": {
+        "header_line": 1137,
+        "header_variables": {
+          "Q": "F",
+          "P": "F",
+          "F": "c",
+          "B": "3",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f46r",
+      "numeric_folio": 46,
+      "side": "r",
+      "panel": null,
+      "group_key": "F/3",
+      "representative_numeric_folio": 43,
+      "header_variables": {
+        "Q": "F",
+        "P": "K",
+        "F": "x",
+        "B": "3",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1962,
+      "IT2a": {
+        "header_line": 1204,
+        "header_variables": {
+          "Q": "F",
+          "P": "K",
+          "F": "x",
+          "B": "3",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f46v",
+      "numeric_folio": 46,
+      "side": "v",
+      "panel": null,
+      "group_key": "F/3",
+      "representative_numeric_folio": 43,
+      "header_variables": {
+        "Q": "F",
+        "P": "L",
+        "F": "x",
+        "B": "3",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 1989,
+      "IT2a": {
+        "header_line": 1220,
+        "header_variables": {
+          "Q": "F",
+          "P": "L",
+          "F": "x",
+          "B": "3",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f44r",
+      "numeric_folio": 44,
+      "side": "r",
+      "panel": null,
+      "group_key": "F/4",
+      "representative_numeric_folio": 44,
+      "header_variables": {
+        "Q": "F",
+        "P": "G",
+        "F": "d",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1878,
+      "IT2a": {
+        "header_line": 1154,
+        "header_variables": {
+          "Q": "F",
+          "P": "G",
+          "F": "d",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f44v",
+      "numeric_folio": 44,
+      "side": "v",
+      "panel": null,
+      "group_key": "F/4",
+      "representative_numeric_folio": 44,
+      "header_variables": {
+        "Q": "F",
+        "P": "H",
+        "F": "d",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1899,
+      "IT2a": {
+        "header_line": 1166,
+        "header_variables": {
+          "Q": "F",
+          "P": "H",
+          "F": "d",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f45r",
+      "numeric_folio": 45,
+      "side": "r",
+      "panel": null,
+      "group_key": "F/4",
+      "representative_numeric_folio": 44,
+      "header_variables": {
+        "Q": "F",
+        "P": "I",
+        "F": "w",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1921,
+      "IT2a": {
+        "header_line": 1180,
+        "header_variables": {
+          "Q": "F",
+          "P": "I",
+          "F": "w",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f45v",
+      "numeric_folio": 45,
+      "side": "v",
+      "panel": null,
+      "group_key": "F/4",
+      "representative_numeric_folio": 44,
+      "header_variables": {
+        "Q": "F",
+        "P": "J",
+        "F": "w",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 1941,
+      "IT2a": {
+        "header_line": 1192,
+        "header_variables": {
+          "Q": "F",
+          "P": "J",
+          "F": "w",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f49r",
+      "numeric_folio": 49,
+      "side": "r",
+      "panel": null,
+      "group_key": "G/1",
+      "representative_numeric_folio": 49,
+      "header_variables": {
+        "Q": "G",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 2092,
+      "IT2a": {
+        "header_line": 1283,
+        "header_variables": {
+          "Q": "G",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f49v",
+      "numeric_folio": 49,
+      "side": "v",
+      "panel": null,
+      "group_key": "G/1",
+      "representative_numeric_folio": 49,
+      "header_variables": {
+        "Q": "G",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1",
+        "X": "S"
+      },
+      "source_header_line": 2124,
+      "IT2a": {
+        "header_line": 1305,
+        "header_variables": {
+          "Q": "G",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1",
+          "X": "S"
+        }
+      }
+    },
+    {
+      "page_name": "f56r",
+      "numeric_folio": 56,
+      "side": "r",
+      "panel": null,
+      "group_key": "G/1",
+      "representative_numeric_folio": 49,
+      "header_variables": {
+        "Q": "G",
+        "P": "O",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 2433,
+      "IT2a": {
+        "header_line": 1516,
+        "header_variables": {
+          "Q": "G",
+          "P": "O",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f56v",
+      "numeric_folio": 56,
+      "side": "v",
+      "panel": null,
+      "group_key": "G/1",
+      "representative_numeric_folio": 49,
+      "header_variables": {
+        "Q": "G",
+        "P": "P",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 2462,
+      "IT2a": {
+        "header_line": 1536,
+        "header_variables": {
+          "Q": "G",
+          "P": "P",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f50r",
+      "numeric_folio": 50,
+      "side": "r",
+      "panel": null,
+      "group_key": "G/2",
+      "representative_numeric_folio": 50,
+      "header_variables": {
+        "Q": "G",
+        "P": "C",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 2189,
+      "IT2a": {
+        "header_line": 1358,
+        "header_variables": {
+          "Q": "G",
+          "P": "C",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f50v",
+      "numeric_folio": 50,
+      "side": "v",
+      "panel": null,
+      "group_key": "G/2",
+      "representative_numeric_folio": 50,
+      "header_variables": {
+        "Q": "G",
+        "P": "D",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 2207,
+      "IT2a": {
+        "header_line": 1369,
+        "header_variables": {
+          "Q": "G",
+          "P": "D",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f55r",
+      "numeric_folio": 55,
+      "side": "r",
+      "panel": null,
+      "group_key": "G/2",
+      "representative_numeric_folio": 50,
+      "header_variables": {
+        "Q": "G",
+        "P": "M",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 2390,
+      "IT2a": {
+        "header_line": 1489,
+        "header_variables": {
+          "Q": "G",
+          "P": "M",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f55v",
+      "numeric_folio": 55,
+      "side": "v",
+      "panel": null,
+      "group_key": "G/2",
+      "representative_numeric_folio": 50,
+      "header_variables": {
+        "Q": "G",
+        "P": "N",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 2411,
+      "IT2a": {
+        "header_line": 1503,
+        "header_variables": {
+          "Q": "G",
+          "P": "N",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f51r",
+      "numeric_folio": 51,
+      "side": "r",
+      "panel": null,
+      "group_key": "G/3",
+      "representative_numeric_folio": 51,
+      "header_variables": {
+        "Q": "G",
+        "P": "E",
+        "F": "c",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 2226,
+      "IT2a": {
+        "header_line": 1381,
+        "header_variables": {
+          "Q": "G",
+          "P": "E",
+          "F": "c",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f51v",
+      "numeric_folio": 51,
+      "side": "v",
+      "panel": null,
+      "group_key": "G/3",
+      "representative_numeric_folio": 51,
+      "header_variables": {
+        "Q": "G",
+        "P": "F",
+        "F": "c",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 2249,
+      "IT2a": {
+        "header_line": 1397,
+        "header_variables": {
+          "Q": "G",
+          "P": "F",
+          "F": "c",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f54r",
+      "numeric_folio": 54,
+      "side": "r",
+      "panel": null,
+      "group_key": "G/3",
+      "representative_numeric_folio": 51,
+      "header_variables": {
+        "Q": "G",
+        "P": "K",
+        "F": "x",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 2345,
+      "IT2a": {
+        "header_line": 1459,
+        "header_variables": {
+          "Q": "G",
+          "P": "K",
+          "F": "x",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f54v",
+      "numeric_folio": 54,
+      "side": "v",
+      "panel": null,
+      "group_key": "G/3",
+      "representative_numeric_folio": 51,
+      "header_variables": {
+        "Q": "G",
+        "P": "L",
+        "F": "x",
+        "B": "3",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 2366,
+      "IT2a": {
+        "header_line": 1472,
+        "header_variables": {
+          "Q": "G",
+          "P": "L",
+          "F": "x",
+          "B": "3",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f52r",
+      "numeric_folio": 52,
+      "side": "r",
+      "panel": null,
+      "group_key": "G/4",
+      "representative_numeric_folio": 52,
+      "header_variables": {
+        "Q": "G",
+        "P": "G",
+        "F": "d",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 2270,
+      "IT2a": {
+        "header_line": 1411,
+        "header_variables": {
+          "Q": "G",
+          "P": "G",
+          "F": "d",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f52v",
+      "numeric_folio": 52,
+      "side": "v",
+      "panel": null,
+      "group_key": "G/4",
+      "representative_numeric_folio": 52,
+      "header_variables": {
+        "Q": "G",
+        "P": "H",
+        "F": "d",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 2286,
+      "IT2a": {
+        "header_line": 1420,
+        "header_variables": {
+          "Q": "G",
+          "P": "H",
+          "F": "d",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f53r",
+      "numeric_folio": 53,
+      "side": "r",
+      "panel": null,
+      "group_key": "G/4",
+      "representative_numeric_folio": 52,
+      "header_variables": {
+        "Q": "G",
+        "P": "I",
+        "F": "w",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 2308,
+      "IT2a": {
+        "header_line": 1435,
+        "header_variables": {
+          "Q": "G",
+          "P": "I",
+          "F": "w",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f53v",
+      "numeric_folio": 53,
+      "side": "v",
+      "panel": null,
+      "group_key": "G/4",
+      "representative_numeric_folio": 52,
+      "header_variables": {
+        "Q": "G",
+        "P": "J",
+        "F": "w",
+        "B": "4",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "1"
+      },
+      "source_header_line": 2325,
+      "IT2a": {
+        "header_line": 1445,
+        "header_variables": {
+          "Q": "G",
+          "P": "J",
+          "F": "w",
+          "B": "4",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f57r",
+      "numeric_folio": 57,
+      "side": "r",
+      "panel": null,
+      "group_key": "H/1",
+      "representative_numeric_folio": 57,
+      "header_variables": {
+        "Q": "H",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "B",
+        "H": "5",
+        "C": "2"
+      },
+      "source_header_line": 2487,
+      "IT2a": {
+        "header_line": 1553,
+        "header_variables": {
+          "Q": "H",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "B",
+          "H": "5",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f57v",
+      "numeric_folio": 57,
+      "side": "v",
+      "panel": null,
+      "group_key": "H/1",
+      "representative_numeric_folio": 57,
+      "header_variables": {
+        "Q": "H",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "C",
+        "H": "1"
+      },
+      "source_header_line": 2506,
+      "IT2a": {
+        "header_line": 1565,
+        "header_variables": {
+          "Q": "H",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "C",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f66r",
+      "numeric_folio": 66,
+      "side": "r",
+      "panel": null,
+      "group_key": "H/1",
+      "representative_numeric_folio": 57,
+      "header_variables": {
+        "Q": "H",
+        "P": "G",
+        "F": "z",
+        "B": "1",
+        "I": "T",
+        "L": "B",
+        "H": "5",
+        "X": "O"
+      },
+      "source_header_line": 2676,
+      "IT2a": {
+        "header_line": 1670,
+        "header_variables": {
+          "Q": "H",
+          "P": "G",
+          "F": "z",
+          "B": "1",
+          "I": "T",
+          "L": "B",
+          "H": "5",
+          "X": "O"
+        }
+      }
+    },
+    {
+      "page_name": "f66v",
+      "numeric_folio": 66,
+      "side": "v",
+      "panel": null,
+      "group_key": "H/1",
+      "representative_numeric_folio": 57,
+      "header_variables": {
+        "Q": "H",
+        "P": "H",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "B",
+        "H": "5"
+      },
+      "source_header_line": 2789,
+      "IT2a": {
+        "header_line": 1753,
+        "header_variables": {
+          "Q": "H",
+          "P": "H",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "B",
+          "H": "5"
+        }
+      }
+    },
+    {
+      "page_name": "f58r",
+      "numeric_folio": 58,
+      "side": "r",
+      "panel": null,
+      "group_key": "H/2",
+      "representative_numeric_folio": 58,
+      "header_variables": {
+        "Q": "H",
+        "P": "C",
+        "F": "b",
+        "B": "2",
+        "I": "S",
+        "L": "A",
+        "H": "3"
+      },
+      "source_header_line": 2535,
+      "IT2a": {
+        "header_line": 1579,
+        "header_variables": {
+          "Q": "H",
+          "P": "C",
+          "F": "b",
+          "B": "2",
+          "I": "S",
+          "L": "A",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f58v",
+      "numeric_folio": 58,
+      "side": "v",
+      "panel": null,
+      "group_key": "H/2",
+      "representative_numeric_folio": 58,
+      "header_variables": {
+        "Q": "H",
+        "P": "D",
+        "F": "b",
+        "B": "2",
+        "I": "S",
+        "L": "A",
+        "H": "3"
+      },
+      "source_header_line": 2592,
+      "IT2a": {
+        "header_line": 1621,
+        "header_variables": {
+          "Q": "H",
+          "P": "D",
+          "F": "b",
+          "B": "2",
+          "I": "S",
+          "L": "A",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f65r",
+      "numeric_folio": 65,
+      "side": "r",
+      "panel": null,
+      "group_key": "H/2",
+      "representative_numeric_folio": 58,
+      "header_variables": {
+        "Q": "H",
+        "P": "E",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "H": "3"
+      },
+      "source_header_line": 2649,
+      "IT2a": {
+        "header_line": 1661,
+        "header_variables": {
+          "Q": "H",
+          "P": "E",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f65v",
+      "numeric_folio": 65,
+      "side": "v",
+      "panel": null,
+      "group_key": "H/2",
+      "representative_numeric_folio": 58,
+      "header_variables": {
+        "Q": "H",
+        "P": "F",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "H": "3"
+      },
+      "source_header_line": 2658,
+      "IT2a": {
+        "header_line": 1663,
+        "header_variables": {
+          "Q": "H",
+          "P": "F",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f67r1",
+      "numeric_folio": 67,
+      "side": "r",
+      "panel": 1,
+      "group_key": "I/1",
+      "representative_numeric_folio": 67,
+      "header_variables": {
+        "Q": "I",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "A",
+        "H": "4"
+      },
+      "source_header_line": 2815,
+      "IT2a": {
+        "header_line": 1767,
+        "header_variables": {
+          "Q": "I",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "A",
+          "H": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f67r2",
+      "numeric_folio": 67,
+      "side": "r",
+      "panel": 2,
+      "group_key": "I/1",
+      "representative_numeric_folio": 67,
+      "header_variables": {
+        "Q": "I",
+        "P": "C",
+        "F": "a",
+        "B": "1",
+        "I": "A",
+        "H": "4"
+      },
+      "source_header_line": 2848,
+      "IT2a": {
+        "header_line": 1787,
+        "header_variables": {
+          "Q": "I",
+          "P": "C",
+          "F": "a",
+          "B": "1",
+          "I": "A",
+          "H": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f67v2",
+      "numeric_folio": 67,
+      "side": "v",
+      "panel": 2,
+      "group_key": "I/1",
+      "representative_numeric_folio": 67,
+      "header_variables": {
+        "Q": "I",
+        "P": "E",
+        "F": "a",
+        "B": "1",
+        "I": "C",
+        "H": "4"
+      },
+      "source_header_line": 2948,
+      "IT2a": {
+        "header_line": 1862,
+        "header_variables": {
+          "Q": "I",
+          "P": "E",
+          "F": "a",
+          "B": "1",
+          "I": "C",
+          "H": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f67v1",
+      "numeric_folio": 67,
+      "side": "v",
+      "panel": 1,
+      "group_key": "I/1",
+      "representative_numeric_folio": 67,
+      "header_variables": {
+        "Q": "I",
+        "P": "F",
+        "F": "a",
+        "B": "1",
+        "I": "A",
+        "H": "4"
+      },
+      "source_header_line": 3007,
+      "IT2a": {
+        "header_line": 1883,
+        "header_variables": {
+          "Q": "I",
+          "P": "F",
+          "F": "a",
+          "B": "1",
+          "I": "A",
+          "H": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f68r1",
+      "numeric_folio": 68,
+      "side": "r",
+      "panel": 1,
+      "group_key": "I/1",
+      "representative_numeric_folio": 67,
+      "header_variables": {
+        "Q": "I",
+        "P": "H",
+        "F": "z",
+        "B": "1",
+        "I": "A",
+        "H": "4"
+      },
+      "source_header_line": 3052,
+      "IT2a": {
+        "header_line": 1913,
+        "header_variables": {
+          "Q": "I",
+          "P": "H",
+          "F": "z",
+          "B": "1",
+          "I": "A",
+          "H": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f68r2",
+      "numeric_folio": 68,
+      "side": "r",
+      "panel": 2,
+      "group_key": "I/1",
+      "representative_numeric_folio": 67,
+      "header_variables": {
+        "Q": "I",
+        "P": "I",
+        "F": "z",
+        "B": "1",
+        "I": "A",
+        "H": "4"
+      },
+      "source_header_line": 3103,
+      "IT2a": {
+        "header_line": 1951,
+        "header_variables": {
+          "Q": "I",
+          "P": "I",
+          "F": "z",
+          "B": "1",
+          "I": "A",
+          "H": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f68r3",
+      "numeric_folio": 68,
+      "side": "r",
+      "panel": 3,
+      "group_key": "I/1",
+      "representative_numeric_folio": 67,
+      "header_variables": {
+        "Q": "I",
+        "P": "J",
+        "F": "z",
+        "B": "1",
+        "I": "A",
+        "H": "4"
+      },
+      "source_header_line": 3155,
+      "IT2a": {
+        "header_line": 1983,
+        "header_variables": {
+          "Q": "I",
+          "P": "J",
+          "F": "z",
+          "B": "1",
+          "I": "A",
+          "H": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f68v3",
+      "numeric_folio": 68,
+      "side": "v",
+      "panel": 3,
+      "group_key": "I/1",
+      "representative_numeric_folio": 67,
+      "header_variables": {
+        "Q": "I",
+        "P": "L",
+        "F": "z",
+        "B": "1",
+        "I": "C",
+        "H": "4"
+      },
+      "source_header_line": 3195,
+      "IT2a": {
+        "header_line": 2006,
+        "header_variables": {
+          "Q": "I",
+          "P": "L",
+          "F": "z",
+          "B": "1",
+          "I": "C",
+          "H": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f68v2",
+      "numeric_folio": 68,
+      "side": "v",
+      "panel": 2,
+      "group_key": "I/1",
+      "representative_numeric_folio": 67,
+      "header_variables": {
+        "Q": "I",
+        "P": "M",
+        "F": "z",
+        "B": "1",
+        "I": "A",
+        "H": "4"
+      },
+      "source_header_line": 3232,
+      "IT2a": {
+        "header_line": 2026,
+        "header_variables": {
+          "Q": "I",
+          "P": "M",
+          "F": "z",
+          "B": "1",
+          "I": "A",
+          "H": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f68v1",
+      "numeric_folio": 68,
+      "side": "v",
+      "panel": 1,
+      "group_key": "I/1",
+      "representative_numeric_folio": 67,
+      "header_variables": {
+        "Q": "I",
+        "P": "N",
+        "F": "z",
+        "B": "1",
+        "I": "A",
+        "H": "4"
+      },
+      "source_header_line": 3261,
+      "IT2a": {
+        "header_line": 2045,
+        "header_variables": {
+          "Q": "I",
+          "P": "N",
+          "F": "z",
+          "B": "1",
+          "I": "A",
+          "H": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f69r",
+      "numeric_folio": 69,
+      "side": "r",
+      "panel": null,
+      "group_key": "J/1",
+      "representative_numeric_folio": 69,
+      "header_variables": {
+        "Q": "J",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "C",
+        "H": "4"
+      },
+      "source_header_line": 3283,
+      "IT2a": {
+        "header_line": 2056,
+        "header_variables": {
+          "Q": "J",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "C",
+          "H": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f69v",
+      "numeric_folio": 69,
+      "side": "v",
+      "panel": null,
+      "group_key": "J/1",
+      "representative_numeric_folio": 69,
+      "header_variables": {
+        "Q": "J",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "C",
+        "H": "4"
+      },
+      "source_header_line": 3349,
+      "IT2a": {
+        "header_line": 2106,
+        "header_variables": {
+          "Q": "J",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "C",
+          "H": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f70r1",
+      "numeric_folio": 70,
+      "side": "r",
+      "panel": 1,
+      "group_key": "J/1",
+      "representative_numeric_folio": 69,
+      "header_variables": {
+        "Q": "J",
+        "P": "D",
+        "F": "z",
+        "B": "1",
+        "I": "C",
+        "H": "4"
+      },
+      "source_header_line": 3389,
+      "IT2a": {
+        "header_line": 2138,
+        "header_variables": {
+          "Q": "J",
+          "P": "D",
+          "F": "z",
+          "B": "1",
+          "I": "C",
+          "H": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f70r2",
+      "numeric_folio": 70,
+      "side": "r",
+      "panel": 2,
+      "group_key": "J/1",
+      "representative_numeric_folio": 69,
+      "header_variables": {
+        "Q": "J",
+        "P": "E",
+        "F": "z",
+        "B": "1",
+        "I": "C",
+        "H": "4"
+      },
+      "source_header_line": 3422,
+      "IT2a": {
+        "header_line": 2158,
+        "header_variables": {
+          "Q": "J",
+          "P": "E",
+          "F": "z",
+          "B": "1",
+          "I": "C",
+          "H": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f70v2",
+      "numeric_folio": 70,
+      "side": "v",
+      "panel": 2,
+      "group_key": "J/1",
+      "representative_numeric_folio": 69,
+      "header_variables": {
+        "Q": "J",
+        "P": "G",
+        "F": "z",
+        "B": "1",
+        "I": "Z",
+        "H": "4",
+        "X": "M"
+      },
+      "source_header_line": 3454,
+      "IT2a": {
+        "header_line": 2178,
+        "header_variables": {
+          "Q": "J",
+          "P": "G",
+          "F": "z",
+          "B": "1",
+          "I": "Z",
+          "H": "4",
+          "X": "M"
+        }
+      }
+    },
+    {
+      "page_name": "f70v1",
+      "numeric_folio": 70,
+      "side": "v",
+      "panel": 1,
+      "group_key": "J/1",
+      "representative_numeric_folio": 69,
+      "header_variables": {
+        "Q": "J",
+        "P": "H",
+        "F": "z",
+        "B": "1",
+        "I": "Z",
+        "H": "4",
+        "X": "M"
+      },
+      "source_header_line": 3511,
+      "IT2a": {
+        "header_line": 2212,
+        "header_variables": {
+          "Q": "J",
+          "P": "H",
+          "F": "z",
+          "B": "1",
+          "I": "Z",
+          "H": "4",
+          "X": "M"
+        }
+      }
+    },
+    {
+      "page_name": "f71r",
+      "numeric_folio": 71,
+      "side": "r",
+      "panel": null,
+      "group_key": "K/1",
+      "representative_numeric_folio": 71,
+      "header_variables": {
+        "Q": "K",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "Z",
+        "H": "4",
+        "X": "M"
+      },
+      "source_header_line": 3544,
+      "IT2a": {
+        "header_line": 2230,
+        "header_variables": {
+          "Q": "K",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "Z",
+          "H": "4",
+          "X": "M"
+        }
+      }
+    },
+    {
+      "page_name": "f71v",
+      "numeric_folio": 71,
+      "side": "v",
+      "panel": null,
+      "group_key": "K/1",
+      "representative_numeric_folio": 71,
+      "header_variables": {
+        "Q": "K",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "Z",
+        "H": "4",
+        "X": "M"
+      },
+      "source_header_line": 3574,
+      "IT2a": {
+        "header_line": 2249,
+        "header_variables": {
+          "Q": "K",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "Z",
+          "H": "4",
+          "X": "M"
+        }
+      }
+    },
+    {
+      "page_name": "f72r1",
+      "numeric_folio": 72,
+      "side": "r",
+      "panel": 1,
+      "group_key": "K/1",
+      "representative_numeric_folio": 71,
+      "header_variables": {
+        "Q": "K",
+        "P": "D",
+        "F": "z",
+        "B": "1",
+        "I": "Z",
+        "H": "4",
+        "X": "M"
+      },
+      "source_header_line": 3615,
+      "IT2a": {
+        "header_line": 2268,
+        "header_variables": {
+          "Q": "K",
+          "P": "D",
+          "F": "z",
+          "B": "1",
+          "I": "Z",
+          "H": "4",
+          "X": "M"
+        }
+      }
+    },
+    {
+      "page_name": "f72r2",
+      "numeric_folio": 72,
+      "side": "r",
+      "panel": 2,
+      "group_key": "K/1",
+      "representative_numeric_folio": 71,
+      "header_variables": {
+        "Q": "K",
+        "P": "E",
+        "F": "z",
+        "B": "1",
+        "I": "Z",
+        "H": "4",
+        "X": "M"
+      },
+      "source_header_line": 3644,
+      "IT2a": {
+        "header_line": 2287,
+        "header_variables": {
+          "Q": "K",
+          "P": "E",
+          "F": "z",
+          "B": "1",
+          "I": "Z",
+          "H": "4",
+          "X": "M"
+        }
+      }
+    },
+    {
+      "page_name": "f72r3",
+      "numeric_folio": 72,
+      "side": "r",
+      "panel": 3,
+      "group_key": "K/1",
+      "representative_numeric_folio": 71,
+      "header_variables": {
+        "Q": "K",
+        "P": "F",
+        "F": "z",
+        "B": "1",
+        "I": "Z",
+        "H": "4",
+        "X": "M"
+      },
+      "source_header_line": 3694,
+      "IT2a": {
+        "header_line": 2320,
+        "header_variables": {
+          "Q": "K",
+          "P": "F",
+          "F": "z",
+          "B": "1",
+          "I": "Z",
+          "H": "4",
+          "X": "M"
+        }
+      }
+    },
+    {
+      "page_name": "f72v3",
+      "numeric_folio": 72,
+      "side": "v",
+      "panel": 3,
+      "group_key": "K/1",
+      "representative_numeric_folio": 71,
+      "header_variables": {
+        "Q": "K",
+        "P": "H",
+        "F": "z",
+        "B": "1",
+        "I": "Z",
+        "H": "4",
+        "X": "M"
+      },
+      "source_header_line": 3741,
+      "IT2a": {
+        "header_line": 2355,
+        "header_variables": {
+          "Q": "K",
+          "P": "H",
+          "F": "z",
+          "B": "1",
+          "I": "Z",
+          "H": "4",
+          "X": "M"
+        }
+      }
+    },
+    {
+      "page_name": "f72v2",
+      "numeric_folio": 72,
+      "side": "v",
+      "panel": 2,
+      "group_key": "K/1",
+      "representative_numeric_folio": 71,
+      "header_variables": {
+        "Q": "K",
+        "P": "I",
+        "F": "z",
+        "B": "1",
+        "I": "Z",
+        "H": "4",
+        "X": "M"
+      },
+      "source_header_line": 3787,
+      "IT2a": {
+        "header_line": 2389,
+        "header_variables": {
+          "Q": "K",
+          "P": "I",
+          "F": "z",
+          "B": "1",
+          "I": "Z",
+          "H": "4",
+          "X": "M"
+        }
+      }
+    },
+    {
+      "page_name": "f72v1",
+      "numeric_folio": 72,
+      "side": "v",
+      "panel": 1,
+      "group_key": "K/1",
+      "representative_numeric_folio": 71,
+      "header_variables": {
+        "Q": "K",
+        "P": "J",
+        "F": "z",
+        "B": "1",
+        "I": "Z",
+        "H": "4",
+        "X": "M"
+      },
+      "source_header_line": 3833,
+      "IT2a": {
+        "header_line": 2423,
+        "header_variables": {
+          "Q": "K",
+          "P": "J",
+          "F": "z",
+          "B": "1",
+          "I": "Z",
+          "H": "4",
+          "X": "M"
+        }
+      }
+    },
+    {
+      "page_name": "f73r",
+      "numeric_folio": 73,
+      "side": "r",
+      "panel": null,
+      "group_key": "L/1",
+      "representative_numeric_folio": 73,
+      "header_variables": {
+        "Q": "L",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "Z",
+        "H": "4",
+        "X": "M"
+      },
+      "source_header_line": 3881,
+      "IT2a": {
+        "header_line": 2457,
+        "header_variables": {
+          "Q": "L",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "Z",
+          "H": "4",
+          "X": "M"
+        }
+      }
+    },
+    {
+      "page_name": "f73v",
+      "numeric_folio": 73,
+      "side": "v",
+      "panel": null,
+      "group_key": "L/1",
+      "representative_numeric_folio": 73,
+      "header_variables": {
+        "Q": "L",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "Z",
+        "H": "4",
+        "X": "M"
+      },
+      "source_header_line": 3927,
+      "IT2a": {
+        "header_line": 2491,
+        "header_variables": {
+          "Q": "L",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "Z",
+          "H": "4",
+          "X": "M"
+        }
+      }
+    },
+    {
+      "page_name": "f75r",
+      "numeric_folio": 75,
+      "side": "r",
+      "panel": null,
+      "group_key": "M/1",
+      "representative_numeric_folio": 75,
+      "header_variables": {
+        "Q": "M",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 3976,
+      "IT2a": {
+        "header_line": 2525,
+        "header_variables": {
+          "Q": "M",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f75v",
+      "numeric_folio": 75,
+      "side": "v",
+      "panel": null,
+      "group_key": "M/1",
+      "representative_numeric_folio": 75,
+      "header_variables": {
+        "Q": "M",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4041,
+      "IT2a": {
+        "header_line": 2579,
+        "header_variables": {
+          "Q": "M",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f84r",
+      "numeric_folio": 84,
+      "side": "r",
+      "panel": null,
+      "group_key": "M/1",
+      "representative_numeric_folio": 75,
+      "header_variables": {
+        "Q": "M",
+        "P": "S",
+        "F": "z",
+        "B": "1",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 5034,
+      "IT2a": {
+        "header_line": 3362,
+        "header_variables": {
+          "Q": "M",
+          "P": "S",
+          "F": "z",
+          "B": "1",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f84v",
+      "numeric_folio": 84,
+      "side": "v",
+      "panel": null,
+      "group_key": "M/1",
+      "representative_numeric_folio": 75,
+      "header_variables": {
+        "Q": "M",
+        "P": "T",
+        "F": "z",
+        "B": "1",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 5096,
+      "IT2a": {
+        "header_line": 3410,
+        "header_variables": {
+          "Q": "M",
+          "P": "T",
+          "F": "z",
+          "B": "1",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f76r",
+      "numeric_folio": 76,
+      "side": "r",
+      "panel": null,
+      "group_key": "M/2",
+      "representative_numeric_folio": 76,
+      "header_variables": {
+        "Q": "M",
+        "P": "C",
+        "F": "b",
+        "B": "2",
+        "I": "T",
+        "L": "B",
+        "H": "2",
+        "C": "2",
+        "X": "S"
+      },
+      "source_header_line": 4130,
+      "IT2a": {
+        "header_line": 2650,
+        "header_variables": {
+          "Q": "M",
+          "P": "C",
+          "F": "b",
+          "B": "2",
+          "I": "T",
+          "L": "B",
+          "H": "2",
+          "C": "2",
+          "X": "S"
+        }
+      }
+    },
+    {
+      "page_name": "f76v",
+      "numeric_folio": 76,
+      "side": "v",
+      "panel": null,
+      "group_key": "M/2",
+      "representative_numeric_folio": 76,
+      "header_variables": {
+        "Q": "M",
+        "P": "D",
+        "F": "b",
+        "B": "2",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4199,
+      "IT2a": {
+        "header_line": 2707,
+        "header_variables": {
+          "Q": "M",
+          "P": "D",
+          "F": "b",
+          "B": "2",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f83r",
+      "numeric_folio": 83,
+      "side": "r",
+      "panel": null,
+      "group_key": "M/2",
+      "representative_numeric_folio": 76,
+      "header_variables": {
+        "Q": "M",
+        "P": "Q",
+        "F": "y",
+        "B": "2",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4919,
+      "IT2a": {
+        "header_line": 3270,
+        "header_variables": {
+          "Q": "M",
+          "P": "Q",
+          "F": "y",
+          "B": "2",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f83v",
+      "numeric_folio": 83,
+      "side": "v",
+      "panel": null,
+      "group_key": "M/2",
+      "representative_numeric_folio": 76,
+      "header_variables": {
+        "Q": "M",
+        "P": "R",
+        "F": "y",
+        "B": "2",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4990,
+      "IT2a": {
+        "header_line": 3326,
+        "header_variables": {
+          "Q": "M",
+          "P": "R",
+          "F": "y",
+          "B": "2",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f77r",
+      "numeric_folio": 77,
+      "side": "r",
+      "panel": null,
+      "group_key": "M/3",
+      "representative_numeric_folio": 77,
+      "header_variables": {
+        "Q": "M",
+        "P": "E",
+        "F": "c",
+        "B": "3",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4252,
+      "IT2a": {
+        "header_line": 2749,
+        "header_variables": {
+          "Q": "M",
+          "P": "E",
+          "F": "c",
+          "B": "3",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f77v",
+      "numeric_folio": 77,
+      "side": "v",
+      "panel": null,
+      "group_key": "M/3",
+      "representative_numeric_folio": 77,
+      "header_variables": {
+        "Q": "M",
+        "P": "F",
+        "F": "c",
+        "B": "3",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4314,
+      "IT2a": {
+        "header_line": 2800,
+        "header_variables": {
+          "Q": "M",
+          "P": "F",
+          "F": "c",
+          "B": "3",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f82r",
+      "numeric_folio": 82,
+      "side": "r",
+      "panel": null,
+      "group_key": "M/3",
+      "representative_numeric_folio": 77,
+      "header_variables": {
+        "Q": "M",
+        "P": "O",
+        "F": "x",
+        "B": "3",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4798,
+      "IT2a": {
+        "header_line": 3175,
+        "header_variables": {
+          "Q": "M",
+          "P": "O",
+          "F": "x",
+          "B": "3",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f82v",
+      "numeric_folio": 82,
+      "side": "v",
+      "panel": null,
+      "group_key": "M/3",
+      "representative_numeric_folio": 77,
+      "header_variables": {
+        "Q": "M",
+        "P": "P",
+        "F": "x",
+        "B": "3",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4856,
+      "IT2a": {
+        "header_line": 3221,
+        "header_variables": {
+          "Q": "M",
+          "P": "P",
+          "F": "x",
+          "B": "3",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f78r",
+      "numeric_folio": 78,
+      "side": "r",
+      "panel": null,
+      "group_key": "M/4",
+      "representative_numeric_folio": 78,
+      "header_variables": {
+        "Q": "M",
+        "P": "G",
+        "F": "d",
+        "B": "4",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4374,
+      "IT2a": {
+        "header_line": 2846,
+        "header_variables": {
+          "Q": "M",
+          "P": "G",
+          "F": "d",
+          "B": "4",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f78v",
+      "numeric_folio": 78,
+      "side": "v",
+      "panel": null,
+      "group_key": "M/4",
+      "representative_numeric_folio": 78,
+      "header_variables": {
+        "Q": "M",
+        "P": "H",
+        "F": "d",
+        "B": "4",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4433,
+      "IT2a": {
+        "header_line": 2894,
+        "header_variables": {
+          "Q": "M",
+          "P": "H",
+          "F": "d",
+          "B": "4",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f81r",
+      "numeric_folio": 81,
+      "side": "r",
+      "panel": null,
+      "group_key": "M/4",
+      "representative_numeric_folio": 78,
+      "header_variables": {
+        "Q": "M",
+        "P": "M",
+        "F": "w",
+        "B": "4",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4719,
+      "IT2a": {
+        "header_line": 3114,
+        "header_variables": {
+          "Q": "M",
+          "P": "M",
+          "F": "w",
+          "B": "4",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f81v",
+      "numeric_folio": 81,
+      "side": "v",
+      "panel": null,
+      "group_key": "M/4",
+      "representative_numeric_folio": 78,
+      "header_variables": {
+        "Q": "M",
+        "P": "N",
+        "F": "w",
+        "B": "4",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4760,
+      "IT2a": {
+        "header_line": 3146,
+        "header_variables": {
+          "Q": "M",
+          "P": "N",
+          "F": "w",
+          "B": "4",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f79r",
+      "numeric_folio": 79,
+      "side": "r",
+      "panel": null,
+      "group_key": "M/5",
+      "representative_numeric_folio": 79,
+      "header_variables": {
+        "Q": "M",
+        "P": "I",
+        "F": "e",
+        "B": "5",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4475,
+      "IT2a": {
+        "header_line": 2927,
+        "header_variables": {
+          "Q": "M",
+          "P": "I",
+          "F": "e",
+          "B": "5",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f79v",
+      "numeric_folio": 79,
+      "side": "v",
+      "panel": null,
+      "group_key": "M/5",
+      "representative_numeric_folio": 79,
+      "header_variables": {
+        "Q": "M",
+        "P": "J",
+        "F": "e",
+        "B": "5",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4535,
+      "IT2a": {
+        "header_line": 2972,
+        "header_variables": {
+          "Q": "M",
+          "P": "J",
+          "F": "e",
+          "B": "5",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f80r",
+      "numeric_folio": 80,
+      "side": "r",
+      "panel": null,
+      "group_key": "M/5",
+      "representative_numeric_folio": 79,
+      "header_variables": {
+        "Q": "M",
+        "P": "K",
+        "F": "v",
+        "B": "5",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4593,
+      "IT2a": {
+        "header_line": 3015,
+        "header_variables": {
+          "Q": "M",
+          "P": "K",
+          "F": "v",
+          "B": "5",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f80v",
+      "numeric_folio": 80,
+      "side": "v",
+      "panel": null,
+      "group_key": "M/5",
+      "representative_numeric_folio": 79,
+      "header_variables": {
+        "Q": "M",
+        "P": "L",
+        "F": "v",
+        "B": "5",
+        "I": "B",
+        "L": "B",
+        "H": "2",
+        "C": "2"
+      },
+      "source_header_line": 4660,
+      "IT2a": {
+        "header_line": 3069,
+        "header_variables": {
+          "Q": "M",
+          "P": "L",
+          "F": "v",
+          "B": "5",
+          "I": "B",
+          "L": "B",
+          "H": "2",
+          "C": "2"
+        }
+      }
+    },
+    {
+      "page_name": "f85r1",
+      "numeric_folio": 85,
+      "side": "r",
+      "panel": 1,
+      "group_key": "N/1",
+      "representative_numeric_folio": 85,
+      "header_variables": {
+        "Q": "N",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "T",
+        "L": "B",
+        "H": "2",
+        "C": "3"
+      },
+      "source_header_line": 5161,
+      "IT2a": {
+        "header_line": 3462,
+        "header_variables": {
+          "Q": "N",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "T",
+          "L": "B",
+          "H": "2",
+          "C": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f85r2",
+      "numeric_folio": 85,
+      "side": "r",
+      "panel": 2,
+      "group_key": "N/1",
+      "representative_numeric_folio": 85,
+      "header_variables": {
+        "Q": "N",
+        "P": "C",
+        "F": "a",
+        "B": "1",
+        "I": "C",
+        "L": "B",
+        "H": "2",
+        "C": "3"
+      },
+      "source_header_line": 5214,
+      "IT2a": {
+        "header_line": 3498,
+        "header_variables": {
+          "Q": "N",
+          "P": "C",
+          "F": "a",
+          "B": "1",
+          "I": "C",
+          "L": "B",
+          "H": "2",
+          "C": "3"
+        }
+      }
+    },
+    {
+      "page_name": "fRos",
+      "numeric_folio": null,
+      "related_numeric_folios": [
+        85,
+        86
+      ],
+      "side": null,
+      "panel": null,
+      "alias": "Rosettes composite page",
+      "group_key": "N/1",
+      "representative_numeric_folio": 85,
+      "header_variables": {
+        "Q": "N",
+        "P": "D",
+        "B": "1",
+        "I": "C",
+        "L": "B",
+        "H": "4",
+        "C": "3"
+      },
+      "source_header_line": 5253,
+      "IT2a": null
+    },
+    {
+      "page_name": "f86v4",
+      "numeric_folio": 86,
+      "side": "v",
+      "panel": 4,
+      "group_key": "N/1",
+      "representative_numeric_folio": 85,
+      "header_variables": {
+        "Q": "N",
+        "P": "N",
+        "F": "z",
+        "B": "1",
+        "I": "C",
+        "L": "B",
+        "H": "2",
+        "C": "3"
+      },
+      "source_header_line": 5453,
+      "IT2a": {
+        "header_line": 3523,
+        "header_variables": {
+          "Q": "N",
+          "P": "N",
+          "F": "z",
+          "B": "1",
+          "I": "C",
+          "L": "B",
+          "H": "2",
+          "C": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f86v6",
+      "numeric_folio": 86,
+      "side": "v",
+      "panel": 6,
+      "group_key": "N/1",
+      "representative_numeric_folio": 85,
+      "header_variables": {
+        "Q": "N",
+        "P": "O",
+        "F": "z",
+        "B": "1",
+        "I": "T",
+        "L": "B",
+        "H": "2",
+        "C": "3"
+      },
+      "source_header_line": 5476,
+      "IT2a": {
+        "header_line": 3533,
+        "header_variables": {
+          "Q": "N",
+          "P": "O",
+          "F": "z",
+          "B": "1",
+          "I": "T",
+          "L": "B",
+          "H": "2",
+          "C": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f86v5",
+      "numeric_folio": 86,
+      "side": "v",
+      "panel": 5,
+      "group_key": "N/1",
+      "representative_numeric_folio": 85,
+      "header_variables": {
+        "Q": "N",
+        "P": "P",
+        "F": "z",
+        "B": "1",
+        "I": "T",
+        "L": "B",
+        "H": "2",
+        "C": "3"
+      },
+      "source_header_line": 5531,
+      "IT2a": {
+        "header_line": 3579,
+        "header_variables": {
+          "Q": "N",
+          "P": "P",
+          "F": "z",
+          "B": "1",
+          "I": "T",
+          "L": "B",
+          "H": "2",
+          "C": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f86v3",
+      "numeric_folio": 86,
+      "side": "v",
+      "panel": 3,
+      "group_key": "N/1",
+      "representative_numeric_folio": 85,
+      "header_variables": {
+        "Q": "N",
+        "P": "Q",
+        "F": "z",
+        "B": "1",
+        "I": "C",
+        "L": "B",
+        "H": "2",
+        "C": "3"
+      },
+      "source_header_line": 5582,
+      "IT2a": {
+        "header_line": 3619,
+        "header_variables": {
+          "Q": "N",
+          "P": "Q",
+          "F": "z",
+          "B": "1",
+          "I": "C",
+          "L": "B",
+          "H": "2",
+          "C": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f87r",
+      "numeric_folio": 87,
+      "side": "r",
+      "panel": null,
+      "group_key": "O/1",
+      "representative_numeric_folio": 87,
+      "header_variables": {
+        "Q": "O",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "4"
+      },
+      "source_header_line": 5638,
+      "IT2a": {
+        "header_line": 3656,
+        "header_variables": {
+          "Q": "O",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f87v",
+      "numeric_folio": 87,
+      "side": "v",
+      "panel": null,
+      "group_key": "O/1",
+      "representative_numeric_folio": 87,
+      "header_variables": {
+        "Q": "O",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "4"
+      },
+      "source_header_line": 5662,
+      "IT2a": {
+        "header_line": 3673,
+        "header_variables": {
+          "Q": "O",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f90r1",
+      "numeric_folio": 90,
+      "side": "r",
+      "panel": 1,
+      "group_key": "O/1",
+      "representative_numeric_folio": 87,
+      "header_variables": {
+        "Q": "O",
+        "P": "L",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 5944,
+      "IT2a": {
+        "header_line": 3870,
+        "header_variables": {
+          "Q": "O",
+          "P": "L",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f90r2",
+      "numeric_folio": 90,
+      "side": "r",
+      "panel": 2,
+      "group_key": "O/1",
+      "representative_numeric_folio": 87,
+      "header_variables": {
+        "Q": "O",
+        "P": "M",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 5960,
+      "IT2a": {
+        "header_line": 3880,
+        "header_variables": {
+          "Q": "O",
+          "P": "M",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f90v2",
+      "numeric_folio": 90,
+      "side": "v",
+      "panel": 2,
+      "group_key": "O/1",
+      "representative_numeric_folio": 87,
+      "header_variables": {
+        "Q": "O",
+        "P": "O",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 5973,
+      "IT2a": {
+        "header_line": 3887,
+        "header_variables": {
+          "Q": "O",
+          "P": "O",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f90v1",
+      "numeric_folio": 90,
+      "side": "v",
+      "panel": 1,
+      "group_key": "O/1",
+      "representative_numeric_folio": 87,
+      "header_variables": {
+        "Q": "O",
+        "P": "P",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 5991,
+      "IT2a": {
+        "header_line": 3896,
+        "header_variables": {
+          "Q": "O",
+          "P": "P",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f88r",
+      "numeric_folio": 88,
+      "side": "r",
+      "panel": null,
+      "group_key": "O/2",
+      "representative_numeric_folio": 88,
+      "header_variables": {
+        "Q": "O",
+        "P": "C",
+        "F": "b",
+        "B": "2",
+        "I": "P",
+        "L": "A",
+        "H": "1",
+        "C": "4"
+      },
+      "source_header_line": 5687,
+      "IT2a": {
+        "header_line": 3690,
+        "header_variables": {
+          "Q": "O",
+          "P": "C",
+          "F": "b",
+          "B": "2",
+          "I": "P",
+          "L": "A",
+          "H": "1",
+          "C": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f88v",
+      "numeric_folio": 88,
+      "side": "v",
+      "panel": null,
+      "group_key": "O/2",
+      "representative_numeric_folio": 88,
+      "header_variables": {
+        "Q": "O",
+        "P": "D",
+        "F": "b",
+        "B": "2",
+        "I": "P",
+        "L": "A",
+        "H": "1",
+        "C": "4"
+      },
+      "source_header_line": 5735,
+      "IT2a": {
+        "header_line": 3722,
+        "header_variables": {
+          "Q": "O",
+          "P": "D",
+          "F": "b",
+          "B": "2",
+          "I": "P",
+          "L": "A",
+          "H": "1",
+          "C": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f89r1",
+      "numeric_folio": 89,
+      "side": "r",
+      "panel": 1,
+      "group_key": "O/2",
+      "representative_numeric_folio": 88,
+      "header_variables": {
+        "Q": "O",
+        "P": "F",
+        "F": "y",
+        "B": "2",
+        "I": "P",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 5778,
+      "IT2a": {
+        "header_line": 3753,
+        "header_variables": {
+          "Q": "O",
+          "P": "F",
+          "F": "y",
+          "B": "2",
+          "I": "P",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f89r2",
+      "numeric_folio": 89,
+      "side": "r",
+      "panel": 2,
+      "group_key": "O/2",
+      "representative_numeric_folio": 88,
+      "header_variables": {
+        "Q": "O",
+        "P": "G",
+        "F": "y",
+        "B": "2",
+        "I": "P",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 5817,
+      "IT2a": {
+        "header_line": 3781,
+        "header_variables": {
+          "Q": "O",
+          "P": "G",
+          "F": "y",
+          "B": "2",
+          "I": "P",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f89v2",
+      "numeric_folio": 89,
+      "side": "v",
+      "panel": 2,
+      "group_key": "O/2",
+      "representative_numeric_folio": 88,
+      "header_variables": {
+        "Q": "O",
+        "P": "I",
+        "F": "y",
+        "B": "2",
+        "I": "P",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 5867,
+      "IT2a": {
+        "header_line": 3816,
+        "header_variables": {
+          "Q": "O",
+          "P": "I",
+          "F": "y",
+          "B": "2",
+          "I": "P",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f89v1",
+      "numeric_folio": 89,
+      "side": "v",
+      "panel": 1,
+      "group_key": "O/2",
+      "representative_numeric_folio": 88,
+      "header_variables": {
+        "Q": "O",
+        "P": "J",
+        "F": "y",
+        "B": "2",
+        "I": "P",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 5909,
+      "IT2a": {
+        "header_line": 3845,
+        "header_variables": {
+          "Q": "O",
+          "P": "J",
+          "F": "y",
+          "B": "2",
+          "I": "P",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f93r",
+      "numeric_folio": 93,
+      "side": "r",
+      "panel": null,
+      "group_key": "Q/1",
+      "representative_numeric_folio": 93,
+      "header_variables": {
+        "Q": "Q",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "4"
+      },
+      "source_header_line": 6015,
+      "IT2a": {
+        "header_line": 3908,
+        "header_variables": {
+          "Q": "Q",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f93v",
+      "numeric_folio": 93,
+      "side": "v",
+      "panel": null,
+      "group_key": "Q/1",
+      "representative_numeric_folio": 93,
+      "header_variables": {
+        "Q": "Q",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "4"
+      },
+      "source_header_line": 6055,
+      "IT2a": {
+        "header_line": 3941,
+        "header_variables": {
+          "Q": "Q",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f96r",
+      "numeric_folio": 96,
+      "side": "r",
+      "panel": null,
+      "group_key": "Q/1",
+      "representative_numeric_folio": 93,
+      "header_variables": {
+        "Q": "Q",
+        "P": "K",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "4"
+      },
+      "source_header_line": 6185,
+      "IT2a": {
+        "header_line": 4019,
+        "header_variables": {
+          "Q": "Q",
+          "P": "K",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f96v",
+      "numeric_folio": 96,
+      "side": "v",
+      "panel": null,
+      "group_key": "Q/1",
+      "representative_numeric_folio": 93,
+      "header_variables": {
+        "Q": "Q",
+        "P": "L",
+        "F": "z",
+        "B": "1",
+        "I": "H",
+        "L": "A",
+        "H": "1",
+        "C": "4"
+      },
+      "source_header_line": 6206,
+      "IT2a": {
+        "header_line": 4033,
+        "header_variables": {
+          "Q": "Q",
+          "P": "L",
+          "F": "z",
+          "B": "1",
+          "I": "H",
+          "L": "A",
+          "H": "1",
+          "C": "4"
+        }
+      }
+    },
+    {
+      "page_name": "f94r",
+      "numeric_folio": 94,
+      "side": "r",
+      "panel": null,
+      "group_key": "Q/2",
+      "representative_numeric_folio": 94,
+      "header_variables": {
+        "Q": "Q",
+        "P": "C",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "3",
+        "C": "5"
+      },
+      "source_header_line": 6072,
+      "IT2a": {
+        "header_line": 3952,
+        "header_variables": {
+          "Q": "Q",
+          "P": "C",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "3",
+          "C": "5"
+        }
+      }
+    },
+    {
+      "page_name": "f94v",
+      "numeric_folio": 94,
+      "side": "v",
+      "panel": null,
+      "group_key": "Q/2",
+      "representative_numeric_folio": 94,
+      "header_variables": {
+        "Q": "Q",
+        "P": "D",
+        "F": "b",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "3",
+        "C": "5"
+      },
+      "source_header_line": 6089,
+      "IT2a": {
+        "header_line": 3962,
+        "header_variables": {
+          "Q": "Q",
+          "P": "D",
+          "F": "b",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "3",
+          "C": "5"
+        }
+      }
+    },
+    {
+      "page_name": "f95r1",
+      "numeric_folio": 95,
+      "side": "r",
+      "panel": 1,
+      "group_key": "Q/2",
+      "representative_numeric_folio": 94,
+      "header_variables": {
+        "Q": "Q",
+        "P": "F",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "3",
+        "C": "5"
+      },
+      "source_header_line": 6110,
+      "IT2a": {
+        "header_line": 3975,
+        "header_variables": {
+          "Q": "Q",
+          "P": "F",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "3",
+          "C": "5"
+        }
+      }
+    },
+    {
+      "page_name": "f95r2",
+      "numeric_folio": 95,
+      "side": "r",
+      "panel": 2,
+      "group_key": "Q/2",
+      "representative_numeric_folio": 94,
+      "header_variables": {
+        "Q": "Q",
+        "P": "G",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "3",
+        "C": "5"
+      },
+      "source_header_line": 6129,
+      "IT2a": {
+        "header_line": 3987,
+        "header_variables": {
+          "Q": "Q",
+          "P": "G",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "3",
+          "C": "5"
+        }
+      }
+    },
+    {
+      "page_name": "f95v2",
+      "numeric_folio": 95,
+      "side": "v",
+      "panel": 2,
+      "group_key": "Q/2",
+      "representative_numeric_folio": 94,
+      "header_variables": {
+        "Q": "Q",
+        "P": "I",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "3",
+        "C": "5"
+      },
+      "source_header_line": 6146,
+      "IT2a": {
+        "header_line": 3997,
+        "header_variables": {
+          "Q": "Q",
+          "P": "I",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "3",
+          "C": "5"
+        }
+      }
+    },
+    {
+      "page_name": "f95v1",
+      "numeric_folio": 95,
+      "side": "v",
+      "panel": 1,
+      "group_key": "Q/2",
+      "representative_numeric_folio": 94,
+      "header_variables": {
+        "Q": "Q",
+        "P": "J",
+        "F": "y",
+        "B": "2",
+        "I": "H",
+        "L": "B",
+        "H": "3",
+        "C": "5"
+      },
+      "source_header_line": 6161,
+      "IT2a": {
+        "header_line": 4005,
+        "header_variables": {
+          "Q": "Q",
+          "P": "J",
+          "F": "y",
+          "B": "2",
+          "I": "H",
+          "L": "B",
+          "H": "3",
+          "C": "5"
+        }
+      }
+    },
+    {
+      "page_name": "f99r",
+      "numeric_folio": 99,
+      "side": "r",
+      "panel": null,
+      "group_key": "S/1",
+      "representative_numeric_folio": 99,
+      "header_variables": {
+        "Q": "S",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "P",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 6232,
+      "IT2a": {
+        "header_line": 4047,
+        "header_variables": {
+          "Q": "S",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "P",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f99v",
+      "numeric_folio": 99,
+      "side": "v",
+      "panel": null,
+      "group_key": "S/1",
+      "representative_numeric_folio": 99,
+      "header_variables": {
+        "Q": "S",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "P",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 6303,
+      "IT2a": {
+        "header_line": 4100,
+        "header_variables": {
+          "Q": "S",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "P",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f102r1",
+      "numeric_folio": 102,
+      "side": "r",
+      "panel": 1,
+      "group_key": "S/1",
+      "representative_numeric_folio": 99,
+      "header_variables": {
+        "Q": "S",
+        "P": "L",
+        "F": "z",
+        "B": "1",
+        "I": "P",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 6517,
+      "IT2a": {
+        "header_line": 4236,
+        "header_variables": {
+          "Q": "S",
+          "P": "L",
+          "F": "z",
+          "B": "1",
+          "I": "P",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f102r2",
+      "numeric_folio": 102,
+      "side": "r",
+      "panel": 2,
+      "group_key": "S/1",
+      "representative_numeric_folio": 99,
+      "header_variables": {
+        "Q": "S",
+        "P": "M",
+        "F": "z",
+        "B": "1",
+        "I": "P",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 6543,
+      "IT2a": {
+        "header_line": 4254,
+        "header_variables": {
+          "Q": "S",
+          "P": "M",
+          "F": "z",
+          "B": "1",
+          "I": "P",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f102v2",
+      "numeric_folio": 102,
+      "side": "v",
+      "panel": 2,
+      "group_key": "S/1",
+      "representative_numeric_folio": 99,
+      "header_variables": {
+        "Q": "S",
+        "P": "O",
+        "F": "z",
+        "B": "1",
+        "I": "P",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 6576,
+      "IT2a": {
+        "header_line": 4275,
+        "header_variables": {
+          "Q": "S",
+          "P": "O",
+          "F": "z",
+          "B": "1",
+          "I": "P",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f102v1",
+      "numeric_folio": 102,
+      "side": "v",
+      "panel": 1,
+      "group_key": "S/1",
+      "representative_numeric_folio": 99,
+      "header_variables": {
+        "Q": "S",
+        "P": "P",
+        "F": "z",
+        "B": "1",
+        "I": "P",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 6627,
+      "IT2a": {
+        "header_line": 4315,
+        "header_variables": {
+          "Q": "S",
+          "P": "P",
+          "F": "z",
+          "B": "1",
+          "I": "P",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f100r",
+      "numeric_folio": 100,
+      "side": "r",
+      "panel": null,
+      "group_key": "S/2",
+      "representative_numeric_folio": 100,
+      "header_variables": {
+        "Q": "S",
+        "P": "C",
+        "F": "b",
+        "B": "2",
+        "I": "P",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 6366,
+      "IT2a": {
+        "header_line": 4145,
+        "header_variables": {
+          "Q": "S",
+          "P": "C",
+          "F": "b",
+          "B": "2",
+          "I": "P",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f100v",
+      "numeric_folio": 100,
+      "side": "v",
+      "panel": null,
+      "group_key": "S/2",
+      "representative_numeric_folio": 100,
+      "header_variables": {
+        "Q": "S",
+        "P": "D",
+        "F": "b",
+        "B": "2",
+        "I": "P",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 6411,
+      "IT2a": {
+        "header_line": 4173,
+        "header_variables": {
+          "Q": "S",
+          "P": "D",
+          "F": "b",
+          "B": "2",
+          "I": "P",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f101r",
+      "numeric_folio": 101,
+      "side": "r",
+      "panel": null,
+      "group_key": "S/2",
+      "representative_numeric_folio": 100,
+      "header_variables": {
+        "Q": "S",
+        "P": "E",
+        "F": "y",
+        "B": "2",
+        "I": "P",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 6447,
+      "IT2a": {
+        "header_line": 4196,
+        "header_variables": {
+          "Q": "S",
+          "P": "E",
+          "F": "y",
+          "B": "2",
+          "I": "P",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f101v",
+      "numeric_folio": 101,
+      "side": "v",
+      "panel": null,
+      "group_key": "S/2",
+      "representative_numeric_folio": 100,
+      "header_variables": {
+        "Q": "S",
+        "P": "H",
+        "F": "y",
+        "B": "2",
+        "I": "P",
+        "L": "A",
+        "H": "1"
+      },
+      "source_header_line": 6471,
+      "IT2a": {
+        "header_line": 4207,
+        "header_variables": {
+          "Q": "S",
+          "P": "H",
+          "F": "y",
+          "B": "2",
+          "I": "P",
+          "L": "A",
+          "H": "1"
+        }
+      }
+    },
+    {
+      "page_name": "f103r",
+      "numeric_folio": 103,
+      "side": "r",
+      "panel": null,
+      "group_key": "T/1",
+      "representative_numeric_folio": 103,
+      "header_variables": {
+        "Q": "T",
+        "P": "A",
+        "F": "a",
+        "B": "1",
+        "I": "S",
+        "L": "B",
+        "H": "3",
+        "C": "X"
+      },
+      "source_header_line": 6665,
+      "IT2a": {
+        "header_line": 4339,
+        "header_variables": {
+          "Q": "T",
+          "P": "A",
+          "F": "a",
+          "B": "1",
+          "I": "S",
+          "L": "B",
+          "H": "3",
+          "C": "X"
+        }
+      }
+    },
+    {
+      "page_name": "f103v",
+      "numeric_folio": 103,
+      "side": "v",
+      "panel": null,
+      "group_key": "T/1",
+      "representative_numeric_folio": 103,
+      "header_variables": {
+        "Q": "T",
+        "P": "B",
+        "F": "a",
+        "B": "1",
+        "I": "S",
+        "L": "B",
+        "H": "3",
+        "C": "X"
+      },
+      "source_header_line": 6763,
+      "IT2a": {
+        "header_line": 4394,
+        "header_variables": {
+          "Q": "T",
+          "P": "B",
+          "F": "a",
+          "B": "1",
+          "I": "S",
+          "L": "B",
+          "H": "3",
+          "C": "X"
+        }
+      }
+    },
+    {
+      "page_name": "f116r",
+      "numeric_folio": 116,
+      "side": "r",
+      "panel": null,
+      "group_key": "T/1",
+      "representative_numeric_folio": 103,
+      "header_variables": {
+        "Q": "T",
+        "P": "W",
+        "F": "z",
+        "B": "1",
+        "I": "S",
+        "L": "B",
+        "H": "3"
+      },
+      "source_header_line": 8425,
+      "IT2a": {
+        "header_line": 5394,
+        "header_variables": {
+          "Q": "T",
+          "P": "W",
+          "F": "z",
+          "B": "1",
+          "I": "S",
+          "L": "B",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f116v",
+      "numeric_folio": 116,
+      "side": "v",
+      "panel": null,
+      "group_key": "T/1",
+      "representative_numeric_folio": 103,
+      "header_variables": {
+        "Q": "T",
+        "P": "X",
+        "F": "z",
+        "B": "1",
+        "I": "T",
+        "H": "3",
+        "X": "V"
+      },
+      "source_header_line": 8499,
+      "IT2a": null
+    },
+    {
+      "page_name": "f104r",
+      "numeric_folio": 104,
+      "side": "r",
+      "panel": null,
+      "group_key": "T/2",
+      "representative_numeric_folio": 104,
+      "header_variables": {
+        "Q": "T",
+        "P": "C",
+        "F": "b",
+        "B": "2",
+        "I": "S",
+        "L": "B",
+        "H": "3",
+        "C": "X"
+      },
+      "source_header_line": 6842,
+      "IT2a": {
+        "header_line": 4441,
+        "header_variables": {
+          "Q": "T",
+          "P": "C",
+          "F": "b",
+          "B": "2",
+          "I": "S",
+          "L": "B",
+          "H": "3",
+          "C": "X"
+        }
+      }
+    },
+    {
+      "page_name": "f104v",
+      "numeric_folio": 104,
+      "side": "v",
+      "panel": null,
+      "group_key": "T/2",
+      "representative_numeric_folio": 104,
+      "header_variables": {
+        "Q": "T",
+        "P": "D",
+        "F": "b",
+        "B": "2",
+        "I": "S",
+        "L": "B",
+        "H": "3",
+        "C": "X"
+      },
+      "source_header_line": 6919,
+      "IT2a": {
+        "header_line": 4487,
+        "header_variables": {
+          "Q": "T",
+          "P": "D",
+          "F": "b",
+          "B": "2",
+          "I": "S",
+          "L": "B",
+          "H": "3",
+          "C": "X"
+        }
+      }
+    },
+    {
+      "page_name": "f115r",
+      "numeric_folio": 115,
+      "side": "r",
+      "panel": null,
+      "group_key": "T/2",
+      "representative_numeric_folio": 104,
+      "header_variables": {
+        "Q": "T",
+        "P": "U",
+        "F": "y",
+        "B": "2",
+        "I": "S",
+        "L": "B",
+        "H": "@"
+      },
+      "source_header_line": 8271,
+      "IT2a": {
+        "header_line": 5302,
+        "header_variables": {
+          "Q": "T",
+          "P": "U",
+          "F": "y",
+          "B": "2",
+          "I": "S",
+          "L": "B",
+          "H": "@"
+        }
+      }
+    },
+    {
+      "page_name": "f115v",
+      "numeric_folio": 115,
+      "side": "v",
+      "panel": null,
+      "group_key": "T/2",
+      "representative_numeric_folio": 104,
+      "header_variables": {
+        "Q": "T",
+        "P": "V",
+        "F": "y",
+        "B": "2",
+        "I": "S",
+        "L": "B",
+        "H": "3"
+      },
+      "source_header_line": 8348,
+      "IT2a": {
+        "header_line": 5348,
+        "header_variables": {
+          "Q": "T",
+          "P": "V",
+          "F": "y",
+          "B": "2",
+          "I": "S",
+          "L": "B",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f105r",
+      "numeric_folio": 105,
+      "side": "r",
+      "panel": null,
+      "group_key": "T/3",
+      "representative_numeric_folio": 105,
+      "header_variables": {
+        "Q": "T",
+        "P": "E",
+        "F": "c",
+        "B": "3",
+        "I": "S",
+        "L": "B",
+        "H": "3",
+        "C": "Y"
+      },
+      "source_header_line": 6995,
+      "IT2a": {
+        "header_line": 4532,
+        "header_variables": {
+          "Q": "T",
+          "P": "E",
+          "F": "c",
+          "B": "3",
+          "I": "S",
+          "L": "B",
+          "H": "3",
+          "C": "Y"
+        }
+      }
+    },
+    {
+      "page_name": "f105v",
+      "numeric_folio": 105,
+      "side": "v",
+      "panel": null,
+      "group_key": "T/3",
+      "representative_numeric_folio": 105,
+      "header_variables": {
+        "Q": "T",
+        "P": "F",
+        "F": "c",
+        "B": "3",
+        "I": "S",
+        "L": "B",
+        "H": "3",
+        "C": "Y"
+      },
+      "source_header_line": 7058,
+      "IT2a": {
+        "header_line": 4570,
+        "header_variables": {
+          "Q": "T",
+          "P": "F",
+          "F": "c",
+          "B": "3",
+          "I": "S",
+          "L": "B",
+          "H": "3",
+          "C": "Y"
+        }
+      }
+    },
+    {
+      "page_name": "f114r",
+      "numeric_folio": 114,
+      "side": "r",
+      "panel": null,
+      "group_key": "T/3",
+      "representative_numeric_folio": 105,
+      "header_variables": {
+        "Q": "T",
+        "P": "S",
+        "F": "x",
+        "B": "3",
+        "I": "S",
+        "L": "B",
+        "H": "3"
+      },
+      "source_header_line": 8123,
+      "IT2a": {
+        "header_line": 5214,
+        "header_variables": {
+          "Q": "T",
+          "P": "S",
+          "F": "x",
+          "B": "3",
+          "I": "S",
+          "L": "B",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f114v",
+      "numeric_folio": 114,
+      "side": "v",
+      "panel": null,
+      "group_key": "T/3",
+      "representative_numeric_folio": 105,
+      "header_variables": {
+        "Q": "T",
+        "P": "T",
+        "F": "x",
+        "B": "3",
+        "I": "S",
+        "L": "B",
+        "H": "3"
+      },
+      "source_header_line": 8200,
+      "IT2a": {
+        "header_line": 5260,
+        "header_variables": {
+          "Q": "T",
+          "P": "T",
+          "F": "x",
+          "B": "3",
+          "I": "S",
+          "L": "B",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f106r",
+      "numeric_folio": 106,
+      "side": "r",
+      "panel": null,
+      "group_key": "T/4",
+      "representative_numeric_folio": 106,
+      "header_variables": {
+        "Q": "T",
+        "P": "G",
+        "F": "d",
+        "B": "4",
+        "I": "S",
+        "L": "B",
+        "H": "3",
+        "C": "X"
+      },
+      "source_header_line": 7122,
+      "IT2a": {
+        "header_line": 4609,
+        "header_variables": {
+          "Q": "T",
+          "P": "G",
+          "F": "d",
+          "B": "4",
+          "I": "S",
+          "L": "B",
+          "H": "3",
+          "C": "X"
+        }
+      }
+    },
+    {
+      "page_name": "f106v",
+      "numeric_folio": 106,
+      "side": "v",
+      "panel": null,
+      "group_key": "T/4",
+      "representative_numeric_folio": 106,
+      "header_variables": {
+        "Q": "T",
+        "P": "H",
+        "F": "d",
+        "B": "4",
+        "I": "S",
+        "L": "B",
+        "H": "3",
+        "C": "X"
+      },
+      "source_header_line": 7205,
+      "IT2a": {
+        "header_line": 4656,
+        "header_variables": {
+          "Q": "T",
+          "P": "H",
+          "F": "d",
+          "B": "4",
+          "I": "S",
+          "L": "B",
+          "H": "3",
+          "C": "X"
+        }
+      }
+    },
+    {
+      "page_name": "f113r",
+      "numeric_folio": 113,
+      "side": "r",
+      "panel": null,
+      "group_key": "T/4",
+      "representative_numeric_folio": 106,
+      "header_variables": {
+        "Q": "T",
+        "P": "Q",
+        "F": "w",
+        "B": "4",
+        "I": "S",
+        "L": "B",
+        "H": "3"
+      },
+      "source_header_line": 7949,
+      "IT2a": {
+        "header_line": 5112,
+        "header_variables": {
+          "Q": "T",
+          "P": "Q",
+          "F": "w",
+          "B": "4",
+          "I": "S",
+          "L": "B",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f113v",
+      "numeric_folio": 113,
+      "side": "v",
+      "panel": null,
+      "group_key": "T/4",
+      "representative_numeric_folio": 106,
+      "header_variables": {
+        "Q": "T",
+        "P": "R",
+        "F": "w",
+        "B": "4",
+        "I": "S",
+        "L": "B",
+        "H": "3"
+      },
+      "source_header_line": 8038,
+      "IT2a": {
+        "header_line": 5164,
+        "header_variables": {
+          "Q": "T",
+          "P": "R",
+          "F": "w",
+          "B": "4",
+          "I": "S",
+          "L": "B",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f107r",
+      "numeric_folio": 107,
+      "side": "r",
+      "panel": null,
+      "group_key": "T/5",
+      "representative_numeric_folio": 107,
+      "header_variables": {
+        "Q": "T",
+        "P": "I",
+        "F": "e",
+        "B": "5",
+        "I": "S",
+        "L": "B",
+        "H": "3"
+      },
+      "source_header_line": 7287,
+      "IT2a": {
+        "header_line": 4704,
+        "header_variables": {
+          "Q": "T",
+          "P": "I",
+          "F": "e",
+          "B": "5",
+          "I": "S",
+          "L": "B",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f107v",
+      "numeric_folio": 107,
+      "side": "v",
+      "panel": null,
+      "group_key": "T/5",
+      "representative_numeric_folio": 107,
+      "header_variables": {
+        "Q": "T",
+        "P": "J",
+        "F": "e",
+        "B": "5",
+        "I": "S",
+        "L": "B",
+        "H": "3"
+      },
+      "source_header_line": 7373,
+      "IT2a": {
+        "header_line": 4756,
+        "header_variables": {
+          "Q": "T",
+          "P": "J",
+          "F": "e",
+          "B": "5",
+          "I": "S",
+          "L": "B",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f112r",
+      "numeric_folio": 112,
+      "side": "r",
+      "panel": null,
+      "group_key": "T/5",
+      "representative_numeric_folio": 107,
+      "header_variables": {
+        "Q": "T",
+        "P": "O",
+        "F": "v",
+        "B": "5",
+        "I": "S",
+        "L": "B",
+        "H": "3"
+      },
+      "source_header_line": 7794,
+      "IT2a": {
+        "header_line": 5018,
+        "header_variables": {
+          "Q": "T",
+          "P": "O",
+          "F": "v",
+          "B": "5",
+          "I": "S",
+          "L": "B",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f112v",
+      "numeric_folio": 112,
+      "side": "v",
+      "panel": null,
+      "group_key": "T/5",
+      "representative_numeric_folio": 107,
+      "header_variables": {
+        "Q": "T",
+        "P": "P",
+        "F": "v",
+        "B": "5",
+        "I": "S",
+        "L": "B",
+        "H": "3"
+      },
+      "source_header_line": 7868,
+      "IT2a": {
+        "header_line": 5064,
+        "header_variables": {
+          "Q": "T",
+          "P": "P",
+          "F": "v",
+          "B": "5",
+          "I": "S",
+          "L": "B",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f108r",
+      "numeric_folio": 108,
+      "side": "r",
+      "panel": null,
+      "group_key": "T/6",
+      "representative_numeric_folio": 108,
+      "header_variables": {
+        "Q": "T",
+        "P": "K",
+        "F": "f",
+        "B": "6",
+        "I": "S",
+        "L": "B",
+        "H": "3"
+      },
+      "source_header_line": 7457,
+      "IT2a": {
+        "header_line": 4806,
+        "header_variables": {
+          "Q": "T",
+          "P": "K",
+          "F": "f",
+          "B": "6",
+          "I": "S",
+          "L": "B",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f108v",
+      "numeric_folio": 108,
+      "side": "v",
+      "panel": null,
+      "group_key": "T/6",
+      "representative_numeric_folio": 108,
+      "header_variables": {
+        "Q": "T",
+        "P": "L",
+        "F": "f",
+        "B": "6",
+        "I": "S",
+        "L": "B",
+        "H": "3"
+      },
+      "source_header_line": 7543,
+      "IT2a": {
+        "header_line": 4857,
+        "header_variables": {
+          "Q": "T",
+          "P": "L",
+          "F": "f",
+          "B": "6",
+          "I": "S",
+          "L": "B",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f111r",
+      "numeric_folio": 111,
+      "side": "r",
+      "panel": null,
+      "group_key": "T/6",
+      "representative_numeric_folio": 108,
+      "header_variables": {
+        "Q": "T",
+        "P": "M",
+        "F": "u",
+        "B": "6",
+        "I": "S",
+        "L": "B",
+        "H": "3"
+      },
+      "source_header_line": 7627,
+      "IT2a": {
+        "header_line": 4911,
+        "header_variables": {
+          "Q": "T",
+          "P": "M",
+          "F": "u",
+          "B": "6",
+          "I": "S",
+          "L": "B",
+          "H": "3"
+        }
+      }
+    },
+    {
+      "page_name": "f111v",
+      "numeric_folio": 111,
+      "side": "v",
+      "panel": null,
+      "group_key": "T/6",
+      "representative_numeric_folio": 108,
+      "header_variables": {
+        "Q": "T",
+        "P": "N",
+        "F": "u",
+        "B": "6",
+        "I": "S",
+        "L": "B",
+        "H": "3"
+      },
+      "source_header_line": 7710,
+      "IT2a": {
+        "header_line": 4966,
+        "header_variables": {
+          "Q": "T",
+          "P": "N",
+          "F": "u",
+          "B": "6",
+          "I": "S",
+          "L": "B",
+          "H": "3"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "This is complete with respect to the provider Q/B metadata in these two source files.",
+    "It is not an independent conservation examination. It accepts the source metadata and specialist schemata.",
+    "It does not assign missing folios that have no page header in either source file.",
+    "A Yale canvas remains an image capture. This manifest does not infer a text reading.",
+    "Use whole-quire grouping only as a conservative fallback when Q/B metadata is unavailable."
+  ]
+}

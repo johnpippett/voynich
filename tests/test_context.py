@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import hashlib
 import pathlib
 import sys
 import unittest
@@ -12,6 +11,7 @@ PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
 from voynich.context import run_context
+from voynich.groups import group_id, grouping_config, split_bucket
 
 
 def _record(folio: str, tokens: list[str], locus: str = "1", **extra: object) -> dict:
@@ -28,10 +28,10 @@ def _record(folio: str, tokens: list[str], locus: str = "1", **extra: object) ->
 
 
 def _folio_for_bucket(bucket: int) -> str:
-    for number in range(1, 500):
-        digest = hashlib.sha256(f"voynich-408-v1:{number}".encode()).digest()
-        if int.from_bytes(digest[:8], "big") % 10 == bucket:
-            return f"f{number}r"
+    for number in grouping_config()["folio_map"]:
+        folio = f"f{number}r"
+        if split_bucket(group_id(folio)) == bucket:
+            return folio
     raise AssertionError(f"no folio for bucket {bucket}")
 
 

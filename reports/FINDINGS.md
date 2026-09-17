@@ -1,5 +1,8 @@
 # Initial findings
 
+Historical report: Stage 2 supersedes the prediction partitions below.
+Read the [current findings](STAGE2.md) for the corrected grouping and later experiments.
+
 **The project does not show a decipherment.**
 
 These experiments measure features of two existing transcriptions.

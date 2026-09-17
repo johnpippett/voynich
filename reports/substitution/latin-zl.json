@@ -1,0 +1,1978 @@
+{
+  "status": "exploratory_search_not_a_translation",
+  "language": "latin_llct",
+  "source": "ZL3b-n.txt",
+  "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+  "source_manifest_sha256": "77c9f755ed47c19ccfe3ef92b7699953d5d5e9ada729492662c94154d3d2f4f1",
+  "parser": {
+    "uncertain_spaces": "split",
+    "paragraph_kind_prefix": "P",
+    "policy": "Complete nonempty paragraph loci without excluded tokens or diagram interruptions."
+  },
+  "sample_filter": {
+    "sequential_categories": [
+      "not_paragraph",
+      "no_accepted_tokens",
+      "excluded_tokens",
+      "diagram_interruption",
+      "eligible"
+    ],
+    "counts": {
+      "not_paragraph": {
+        "records": 1255,
+        "accepted_words": 3700,
+        "excluded_tokens": 251
+      },
+      "no_accepted_tokens": {
+        "records": 3,
+        "accepted_words": 0,
+        "excluded_tokens": 3
+      },
+      "excluded_tokens": {
+        "records": 780,
+        "accepted_words": 6279,
+        "excluded_tokens": 883
+      },
+      "diagram_interruption": {
+        "records": 470,
+        "accepted_words": 3945,
+        "excluded_tokens": 0
+      },
+      "eligible": {
+        "records": 2877,
+        "accepted_words": 23965,
+        "excluded_tokens": 0
+      }
+    },
+    "limit": "Complete-line selection can change the distribution of accepted words."
+  },
+  "reference_metadata": {
+    "reference_manifest_sha256": "f261b781f150991e3305aae5057a94dc91afd8e59c58bb22ff199347f5ce3e6d",
+    "source_files": {
+      "la_llct-ud-train.conllu": {
+        "sha256": "8aabc8735c7a623a9e4820e13861a87459dd0fb5b2d238f0583854143526a643",
+        "extraction": {
+          "surface_tokens": 194128,
+          "accepted_words": 165291,
+          "excluded_surface_tokens": 28837,
+          "multiword_tokens": 15,
+          "skipped_component_rows": 30,
+          "empty_nodes": 0,
+          "sentences": 7289,
+          "explicit_documents": 0
+        }
+      },
+      "la_llct-ud-dev.conllu": {
+        "sha256": "040457f2e47265a5676c83ce236e1d625af41eda8f779812841e8ba84e28480c",
+        "extraction": {
+          "surface_tokens": 24186,
+          "accepted_words": 20682,
+          "excluded_surface_tokens": 3504,
+          "multiword_tokens": 3,
+          "skipped_component_rows": 6,
+          "empty_nodes": 0,
+          "sentences": 850,
+          "explicit_documents": 0
+        }
+      },
+      "la_llct-ud-test.conllu": {
+        "sha256": "81d9f57de66d83303ad4df54a60cd445ac089b50070d369831a632b4cf948e64",
+        "extraction": {
+          "surface_tokens": 24077,
+          "accepted_words": 20711,
+          "excluded_surface_tokens": 3366,
+          "multiword_tokens": 2,
+          "skipped_component_rows": 4,
+          "empty_nodes": 0,
+          "sentences": 884,
+          "explicit_documents": 0
+        }
+      }
+    },
+    "normalization": "NFKD casefold; remove combining marks; accept whole ASCII a-z forms only; preserve MWT surface forms; exclude empty nodes.",
+    "document_split": {
+      "36:1047": "train",
+      "36:1048": "train",
+      "36:1049": "train",
+      "36:1050": "train",
+      "36:1051": "train",
+      "36:1052": "train",
+      "36:1053": "train",
+      "36:1056": "train",
+      "36:1057": "train",
+      "36:1058": "train",
+      "36:1059": "train",
+      "36:1060": "train",
+      "36:1061": "train",
+      "36:1063": "train",
+      "36:1064": "train",
+      "36:1065": "train",
+      "36:1067": "train",
+      "37:1070": "train",
+      "37:1071": "train",
+      "37:1077": "train",
+      "37:1078": "train",
+      "37:1080": "train",
+      "37:1081": "train",
+      "37:1086": "train",
+      "37:1087": "train",
+      "37:1088": "train",
+      "37:1090": "train",
+      "38:1097": "train",
+      "38:1099": "train",
+      "38:1101": "train",
+      "38:1102": "train",
+      "38:1103": "train",
+      "38:1104": "train",
+      "38:1107": "train",
+      "38:1111": "train",
+      "38:1116": "train",
+      "38:1118": "train",
+      "38:1119": "train",
+      "38:1120": "train",
+      "38:1121": "train",
+      "38:1122": "train",
+      "38:1123": "train",
+      "38:1125": "train",
+      "39:1126": "train",
+      "39:1128": "train",
+      "39:1129": "train",
+      "39:1131": "train",
+      "39:1132": "train",
+      "39:1140": "train",
+      "39:1141": "train",
+      "39:1145": "train",
+      "39:1147": "train",
+      "39:1152": "train",
+      "39:1153": "train",
+      "39:1154": "train",
+      "40:1157": "train",
+      "40:1159": "train",
+      "40:1160": "train",
+      "40:1161": "train",
+      "40:1162": "train",
+      "40:1164": "train",
+      "40:1165": "train",
+      "40:1167": "train",
+      "40:1173": "train",
+      "40:1174": "train",
+      "40:1176": "train",
+      "40:1177": "train",
+      "40:1178": "train",
+      "40:1179": "train",
+      "40:1180": "train",
+      "40:1181": "train",
+      "40:1182": "train",
+      "40:1183": "train",
+      "40:1184": "train",
+      "40:1185": "train",
+      "72:1": "train",
+      "72:23": "train",
+      "72:25": "train",
+      "72:26": "train",
+      "72:27": "train",
+      "72:31": "train",
+      "72:33": "train",
+      "72:34": "train",
+      "72:35": "train",
+      "72:40": "train",
+      "72:42": "train",
+      "72:43": "train",
+      "72:44": "train",
+      "72:45": "train",
+      "72:46": "train",
+      "72:47": "train",
+      "72:48": "train",
+      "72:50": "train",
+      "72:7": "train",
+      "73:10": "train",
+      "73:11": "train",
+      "73:12": "train",
+      "73:13": "train",
+      "73:14": "train",
+      "73:16": "train",
+      "73:17": "train",
+      "73:18": "train",
+      "73:19": "train",
+      "73:2": "train",
+      "73:20": "train",
+      "73:21": "train",
+      "73:22": "train",
+      "73:23": "train",
+      "73:24": "train",
+      "73:26": "train",
+      "73:27": "train",
+      "73:3": "train",
+      "73:30": "train",
+      "73:31": "train",
+      "73:35": "train",
+      "73:37": "train",
+      "73:4": "train",
+      "73:40": "train",
+      "73:41": "train",
+      "73:43": "train",
+      "73:44": "train",
+      "73:46": "train",
+      "73:5": "train",
+      "73:6": "train",
+      "73:7": "train",
+      "73:8": "train",
+      "73:9": "train",
+      "74:11": "train",
+      "74:14": "train",
+      "74:17": "train",
+      "74:18": "train",
+      "74:19": "train",
+      "74:2": "train",
+      "74:20": "train",
+      "74:21": "train",
+      "74:22": "train",
+      "74:23": "train",
+      "74:27": "train",
+      "74:3": "train",
+      "74:30": "train",
+      "74:31": "train",
+      "74:32": "train",
+      "74:36": "train",
+      "74:37": "train",
+      "74:40": "train",
+      "74:43": "train",
+      "74:44": "train",
+      "74:45": "train",
+      "74:49": "train",
+      "74:6": "train",
+      "74:7": "train",
+      "75:1": "train",
+      "75:15": "train",
+      "75:18": "train",
+      "75:2": "train",
+      "75:25": "train",
+      "75:27": "train",
+      "75:28": "train",
+      "75:29": "train",
+      "75:30": "train",
+      "75:31": "train",
+      "75:34": "train",
+      "75:35": "train",
+      "75:38": "train",
+      "75:39": "train",
+      "75:40": "train",
+      "75:44": "train",
+      "75:45": "train",
+      "75:46": "train",
+      "75:47": "train",
+      "75:5": "train",
+      "75:50": "train",
+      "75:7": "train",
+      "75:8": "train",
+      "75:9": "train",
+      "76:1": "train",
+      "76:13": "train",
+      "76:17": "train",
+      "76:26": "train",
+      "76:27": "train",
+      "76:28": "train",
+      "76:34": "train",
+      "76:37": "train",
+      "76:43": "train",
+      "76:44": "train",
+      "76:5": "train",
+      "76:6": "train",
+      "76:7": "train",
+      "77:13": "train",
+      "77:17": "train",
+      "77:18": "train",
+      "77:19": "train",
+      "77:20": "train",
+      "77:28": "train",
+      "77:29": "train",
+      "77:3": "train",
+      "77:30": "train",
+      "77:31": "train",
+      "77:32": "train",
+      "77:33": "train",
+      "77:39": "train",
+      "77:40": "train",
+      "77:41": "train",
+      "77:42": "train",
+      "77:44": "train",
+      "77:45": "train",
+      "77:50": "train",
+      "77:8": "train",
+      "78:13": "train",
+      "78:14": "train",
+      "78:15": "train",
+      "78:16": "train",
+      "78:19": "train",
+      "78:20": "train",
+      "78:22": "train",
+      "78:23": "train",
+      "78:24": "train",
+      "78:26": "train",
+      "78:28": "train",
+      "78:29": "train",
+      "78:30": "train",
+      "78:31": "train",
+      "78:32": "train",
+      "78:33": "train",
+      "78:34": "train",
+      "78:35": "train",
+      "78:36": "train",
+      "78:37": "train",
+      "78:38": "train",
+      "78:39": "train",
+      "78:4": "train",
+      "78:41": "train",
+      "78:45": "train",
+      "78:48": "train",
+      "79:1": "train",
+      "79:10": "train",
+      "79:14": "train",
+      "79:15": "train",
+      "79:16": "train",
+      "79:17": "train",
+      "79:18": "train",
+      "79:19": "train",
+      "79:2": "train",
+      "79:20": "train",
+      "79:21": "train",
+      "79:22": "train",
+      "79:23": "train",
+      "79:24": "train",
+      "79:25": "train",
+      "79:26": "train",
+      "79:29": "train",
+      "79:3": "train",
+      "79:30": "train",
+      "79:32": "train",
+      "79:34": "train",
+      "79:35": "train",
+      "79:36": "train",
+      "79:37": "train",
+      "79:38": "train",
+      "79:39": "train",
+      "79:40": "train",
+      "79:41": "train",
+      "79:42": "train",
+      "79:43": "train",
+      "79:44": "train",
+      "79:45": "train",
+      "79:46": "train",
+      "79:47": "train",
+      "79:49": "train",
+      "79:5": "train",
+      "79:6": "train",
+      "79:8": "train",
+      "80:10": "train",
+      "80:12": "train",
+      "80:17": "train",
+      "80:19": "train",
+      "80:2": "train",
+      "80:23": "train",
+      "80:24": "train",
+      "80:25": "train",
+      "80:26": "train",
+      "80:28": "train",
+      "80:29": "train",
+      "80:3": "train",
+      "80:30": "train",
+      "80:31": "train",
+      "80:32": "train",
+      "80:33": "train",
+      "80:34": "train",
+      "80:35": "train",
+      "80:4": "train",
+      "80:40": "train",
+      "80:47": "train",
+      "80:48": "train",
+      "80:49": "train",
+      "80:5": "train",
+      "80:50": "train",
+      "80:6": "train",
+      "80:7": "train",
+      "80:8": "train",
+      "81:1": "train",
+      "81:10": "train",
+      "81:11": "train",
+      "81:12": "train",
+      "81:2": "train",
+      "81:25": "train",
+      "81:27": "train",
+      "81:28": "train",
+      "81:29": "train",
+      "81:36": "train",
+      "81:38": "train",
+      "81:44": "train",
+      "81:45": "train",
+      "81:50": "train",
+      "81:6": "train",
+      "81:8": "train",
+      "81:9": "train",
+      "82:12": "train",
+      "82:13": "train",
+      "82:14": "train",
+      "82:21": "train",
+      "82:22": "train",
+      "82:23": "train",
+      "82:24": "train",
+      "82:25": "train",
+      "82:34": "train",
+      "82:38": "train",
+      "82:39": "train",
+      "82:40": "train",
+      "82:41": "train",
+      "82:42": "train",
+      "82:43": "train",
+      "82:44": "train",
+      "82:45": "train",
+      "82:46": "train",
+      "82:47": "train",
+      "82:5": "train",
+      "82:6": "train",
+      "82:7": "train",
+      "82:8": "train",
+      "83:1": "train",
+      "83:10": "train",
+      "83:11": "train",
+      "83:12": "train",
+      "83:13": "train",
+      "83:14": "train",
+      "83:15": "train",
+      "83:16": "train",
+      "83:17": "train",
+      "83:18": "train",
+      "83:19": "train",
+      "83:2": "train",
+      "83:20": "train",
+      "83:21": "train",
+      "83:22": "train",
+      "83:23": "train",
+      "83:24": "train",
+      "83:25": "train",
+      "83:26": "train",
+      "83:27": "train",
+      "83:28": "train",
+      "83:29": "train",
+      "83:3": "train",
+      "83:30": "train",
+      "83:31": "train",
+      "83:32": "train",
+      "83:33": "train",
+      "83:34": "train",
+      "83:35": "train",
+      "83:36": "train",
+      "83:37": "train",
+      "83:38": "train",
+      "83:39": "train",
+      "83:40": "train",
+      "83:41": "train",
+      "83:42": "train",
+      "83:43": "train",
+      "83:44": "train",
+      "83:45": "train",
+      "83:46": "train",
+      "83:5": "train",
+      "83:6": "train",
+      "83:7": "train",
+      "83:8": "train",
+      "83:9": "train",
+      "84:1": "train",
+      "84:10": "train",
+      "84:11": "train",
+      "84:12": "train",
+      "84:13": "train",
+      "84:14": "train",
+      "84:15": "train",
+      "84:17": "train",
+      "84:18": "train",
+      "84:19": "train",
+      "84:2": "train",
+      "84:20": "train",
+      "84:22": "train",
+      "84:23": "train",
+      "84:24": "train",
+      "84:25": "train",
+      "84:26": "train",
+      "84:28": "train",
+      "84:29": "train",
+      "84:3": "train",
+      "84:30": "train",
+      "84:31": "train",
+      "84:32": "train",
+      "84:34": "train",
+      "84:35": "train",
+      "84:36": "train",
+      "84:37": "train",
+      "84:38": "train",
+      "84:39": "train",
+      "84:4": "train",
+      "84:40": "train",
+      "84:41": "train",
+      "84:42": "validation",
+      "84:43": "validation",
+      "84:44": "validation",
+      "84:46": "validation",
+      "84:47": "validation",
+      "84:5": "train",
+      "84:6": "train",
+      "84:7": "train",
+      "84:8": "train",
+      "84:9": "train",
+      "85:1": "validation",
+      "85:10": "validation",
+      "85:11": "validation",
+      "85:12": "validation",
+      "85:13": "validation",
+      "85:14": "validation",
+      "85:15": "validation",
+      "85:16": "validation",
+      "85:17": "validation",
+      "85:18": "validation",
+      "85:19": "validation",
+      "85:2": "validation",
+      "85:20": "validation",
+      "85:21": "validation",
+      "85:22": "validation",
+      "85:23": "validation",
+      "85:24": "validation",
+      "85:26": "validation",
+      "85:27": "validation",
+      "85:28": "validation",
+      "85:29": "validation",
+      "85:3": "validation",
+      "85:30": "validation",
+      "85:31": "validation",
+      "85:32": "validation",
+      "85:33": "validation",
+      "85:34": "validation",
+      "85:35": "validation",
+      "85:36": "validation",
+      "85:37": "validation",
+      "85:38": "validation",
+      "85:39": "validation",
+      "85:4": "validation",
+      "85:41": "validation",
+      "85:42": "validation",
+      "85:43": "validation",
+      "85:45": "validation",
+      "85:46": "validation",
+      "85:47": "test",
+      "85:48": "test",
+      "85:49": "test",
+      "85:5": "validation",
+      "85:6": "validation",
+      "85:7": "validation",
+      "85:8": "validation",
+      "85:9": "validation",
+      "86:1": "test",
+      "86:10": "test",
+      "86:11": "test",
+      "86:12": "test",
+      "86:13": "test",
+      "86:14": "test",
+      "86:15": "test",
+      "86:16": "test",
+      "86:17": "test",
+      "86:18": "test",
+      "86:19": "test",
+      "86:2": "test",
+      "86:20": "test",
+      "86:21": "test",
+      "86:22": "test",
+      "86:23": "test",
+      "86:24": "test",
+      "86:25": "test",
+      "86:26": "test",
+      "86:27": "test",
+      "86:28": "test",
+      "86:29": "test",
+      "86:3": "test",
+      "86:30": "test",
+      "86:31": "test",
+      "86:32": "test",
+      "86:33": "test",
+      "86:34": "test",
+      "86:35": "test",
+      "86:36": "test",
+      "86:37": "test",
+      "86:39": "test",
+      "86:4": "test",
+      "86:40": "test",
+      "86:41": "test",
+      "86:42": "test",
+      "86:43": "test",
+      "86:44": "test",
+      "86:45": "test",
+      "86:46": "test",
+      "86:47": "test",
+      "86:48": "test",
+      "86:49": "test",
+      "86:5": "test",
+      "86:50": "test",
+      "86:7": "test",
+      "86:8": "test",
+      "86:9": "test"
+    },
+    "split_counts": {
+      "train": {
+        "sentences": 7289,
+        "words": 165291,
+        "documents": 422
+      },
+      "validation": {
+        "sentences": 718,
+        "words": 19969,
+        "documents": 48
+      },
+      "test": {
+        "sentences": 755,
+        "words": 19931,
+        "documents": 51
+      }
+    },
+    "duplicate_or_empty_exclusions": {
+      "train": {
+        "sentences": 0,
+        "words": 0
+      },
+      "validation": {
+        "sentences": 132,
+        "words": 713
+      },
+      "test": {
+        "sentences": 129,
+        "words": 780
+      }
+    },
+    "limit": "Exact normalized duplicate sentences are removed across partitions. Near duplicates remain. Dante partitions are canticles of one work by one author."
+  },
+  "grouping": {
+    "version": "ivtff-bifolio-metadata-v3",
+    "manifest": {
+      "path": "data/bifolio_manifest.json",
+      "schema_version": "bifolio-manifest-v1",
+      "sha256": "998cb3d6c8327ff0bdf786d52968fa3bec9f5fa9b05ba7ae56065fc9639fad72"
+    },
+    "manifest_path": "data/bifolio_manifest.json",
+    "manifest_schema_version": "bifolio-manifest-v1",
+    "manifest_sha256": "998cb3d6c8327ff0bdf786d52968fa3bec9f5fa9b05ba7ae56065fc9639fad72",
+    "manifest_hash": "998cb3d6c8327ff0bdf786d52968fa3bec9f5fa9b05ba7ae56065fc9639fad72",
+    "group_key": "(Q,B)",
+    "representative": "Minimum numeric folio in each (Q,B) group.",
+    "group_count": 52,
+    "numeric_folio_count": 102,
+    "aliases": {
+      "fRos": "85"
+    },
+    "folio_map": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "4",
+      "6": "3",
+      "7": "2",
+      "8": "1",
+      "9": "9",
+      "10": "10",
+      "11": "11",
+      "13": "13",
+      "14": "11",
+      "15": "10",
+      "16": "9",
+      "17": "17",
+      "18": "18",
+      "19": "19",
+      "20": "20",
+      "21": "20",
+      "22": "19",
+      "23": "18",
+      "24": "17",
+      "25": "25",
+      "26": "26",
+      "27": "27",
+      "28": "28",
+      "29": "28",
+      "30": "27",
+      "31": "26",
+      "32": "25",
+      "33": "33",
+      "34": "34",
+      "35": "35",
+      "36": "36",
+      "37": "36",
+      "38": "35",
+      "39": "34",
+      "40": "33",
+      "41": "41",
+      "42": "42",
+      "43": "43",
+      "44": "44",
+      "45": "44",
+      "46": "43",
+      "47": "42",
+      "48": "41",
+      "49": "49",
+      "50": "50",
+      "51": "51",
+      "52": "52",
+      "53": "52",
+      "54": "51",
+      "55": "50",
+      "56": "49",
+      "57": "57",
+      "58": "58",
+      "65": "58",
+      "66": "57",
+      "67": "67",
+      "68": "67",
+      "69": "69",
+      "70": "69",
+      "71": "71",
+      "72": "71",
+      "73": "73",
+      "75": "75",
+      "76": "76",
+      "77": "77",
+      "78": "78",
+      "79": "79",
+      "80": "79",
+      "81": "78",
+      "82": "77",
+      "83": "76",
+      "84": "75",
+      "85": "85",
+      "86": "85",
+      "87": "87",
+      "88": "88",
+      "89": "88",
+      "90": "87",
+      "93": "93",
+      "94": "94",
+      "95": "94",
+      "96": "93",
+      "99": "99",
+      "100": "100",
+      "101": "100",
+      "102": "99",
+      "103": "103",
+      "104": "104",
+      "105": "105",
+      "106": "106",
+      "107": "107",
+      "108": "108",
+      "111": "108",
+      "112": "107",
+      "113": "106",
+      "114": "105",
+      "115": "104",
+      "116": "103"
+    },
+    "components": [
+      {
+        "group": "1",
+        "group_key": "A/1",
+        "representative_numeric_folio": 1,
+        "numeric_folios": [
+          1,
+          8
+        ]
+      },
+      {
+        "group": "2",
+        "group_key": "A/2",
+        "representative_numeric_folio": 2,
+        "numeric_folios": [
+          2,
+          7
+        ]
+      },
+      {
+        "group": "3",
+        "group_key": "A/3",
+        "representative_numeric_folio": 3,
+        "numeric_folios": [
+          3,
+          6
+        ]
+      },
+      {
+        "group": "4",
+        "group_key": "A/4",
+        "representative_numeric_folio": 4,
+        "numeric_folios": [
+          4,
+          5
+        ]
+      },
+      {
+        "group": "9",
+        "group_key": "B/1",
+        "representative_numeric_folio": 9,
+        "numeric_folios": [
+          9,
+          16
+        ]
+      },
+      {
+        "group": "10",
+        "group_key": "B/2",
+        "representative_numeric_folio": 10,
+        "numeric_folios": [
+          10,
+          15
+        ]
+      },
+      {
+        "group": "11",
+        "group_key": "B/3",
+        "representative_numeric_folio": 11,
+        "numeric_folios": [
+          11,
+          14
+        ]
+      },
+      {
+        "group": "13",
+        "group_key": "B/4",
+        "representative_numeric_folio": 13,
+        "numeric_folios": [
+          13
+        ]
+      },
+      {
+        "group": "17",
+        "group_key": "C/1",
+        "representative_numeric_folio": 17,
+        "numeric_folios": [
+          17,
+          24
+        ]
+      },
+      {
+        "group": "18",
+        "group_key": "C/2",
+        "representative_numeric_folio": 18,
+        "numeric_folios": [
+          18,
+          23
+        ]
+      },
+      {
+        "group": "19",
+        "group_key": "C/3",
+        "representative_numeric_folio": 19,
+        "numeric_folios": [
+          19,
+          22
+        ]
+      },
+      {
+        "group": "20",
+        "group_key": "C/4",
+        "representative_numeric_folio": 20,
+        "numeric_folios": [
+          20,
+          21
+        ]
+      },
+      {
+        "group": "25",
+        "group_key": "D/1",
+        "representative_numeric_folio": 25,
+        "numeric_folios": [
+          25,
+          32
+        ]
+      },
+      {
+        "group": "26",
+        "group_key": "D/2",
+        "representative_numeric_folio": 26,
+        "numeric_folios": [
+          26,
+          31
+        ]
+      },
+      {
+        "group": "27",
+        "group_key": "D/3",
+        "representative_numeric_folio": 27,
+        "numeric_folios": [
+          27,
+          30
+        ]
+      },
+      {
+        "group": "28",
+        "group_key": "D/4",
+        "representative_numeric_folio": 28,
+        "numeric_folios": [
+          28,
+          29
+        ]
+      },
+      {
+        "group": "33",
+        "group_key": "E/1",
+        "representative_numeric_folio": 33,
+        "numeric_folios": [
+          33,
+          40
+        ]
+      },
+      {
+        "group": "34",
+        "group_key": "E/2",
+        "representative_numeric_folio": 34,
+        "numeric_folios": [
+          34,
+          39
+        ]
+      },
+      {
+        "group": "35",
+        "group_key": "E/3",
+        "representative_numeric_folio": 35,
+        "numeric_folios": [
+          35,
+          38
+        ]
+      },
+      {
+        "group": "36",
+        "group_key": "E/4",
+        "representative_numeric_folio": 36,
+        "numeric_folios": [
+          36,
+          37
+        ]
+      },
+      {
+        "group": "41",
+        "group_key": "F/1",
+        "representative_numeric_folio": 41,
+        "numeric_folios": [
+          41,
+          48
+        ]
+      },
+      {
+        "group": "42",
+        "group_key": "F/2",
+        "representative_numeric_folio": 42,
+        "numeric_folios": [
+          42,
+          47
+        ]
+      },
+      {
+        "group": "43",
+        "group_key": "F/3",
+        "representative_numeric_folio": 43,
+        "numeric_folios": [
+          43,
+          46
+        ]
+      },
+      {
+        "group": "44",
+        "group_key": "F/4",
+        "representative_numeric_folio": 44,
+        "numeric_folios": [
+          44,
+          45
+        ]
+      },
+      {
+        "group": "49",
+        "group_key": "G/1",
+        "representative_numeric_folio": 49,
+        "numeric_folios": [
+          49,
+          56
+        ]
+      },
+      {
+        "group": "50",
+        "group_key": "G/2",
+        "representative_numeric_folio": 50,
+        "numeric_folios": [
+          50,
+          55
+        ]
+      },
+      {
+        "group": "51",
+        "group_key": "G/3",
+        "representative_numeric_folio": 51,
+        "numeric_folios": [
+          51,
+          54
+        ]
+      },
+      {
+        "group": "52",
+        "group_key": "G/4",
+        "representative_numeric_folio": 52,
+        "numeric_folios": [
+          52,
+          53
+        ]
+      },
+      {
+        "group": "57",
+        "group_key": "H/1",
+        "representative_numeric_folio": 57,
+        "numeric_folios": [
+          57,
+          66
+        ]
+      },
+      {
+        "group": "58",
+        "group_key": "H/2",
+        "representative_numeric_folio": 58,
+        "numeric_folios": [
+          58,
+          65
+        ]
+      },
+      {
+        "group": "67",
+        "group_key": "I/1",
+        "representative_numeric_folio": 67,
+        "numeric_folios": [
+          67,
+          68
+        ]
+      },
+      {
+        "group": "69",
+        "group_key": "J/1",
+        "representative_numeric_folio": 69,
+        "numeric_folios": [
+          69,
+          70
+        ]
+      },
+      {
+        "group": "71",
+        "group_key": "K/1",
+        "representative_numeric_folio": 71,
+        "numeric_folios": [
+          71,
+          72
+        ]
+      },
+      {
+        "group": "73",
+        "group_key": "L/1",
+        "representative_numeric_folio": 73,
+        "numeric_folios": [
+          73
+        ]
+      },
+      {
+        "group": "75",
+        "group_key": "M/1",
+        "representative_numeric_folio": 75,
+        "numeric_folios": [
+          75,
+          84
+        ]
+      },
+      {
+        "group": "76",
+        "group_key": "M/2",
+        "representative_numeric_folio": 76,
+        "numeric_folios": [
+          76,
+          83
+        ]
+      },
+      {
+        "group": "77",
+        "group_key": "M/3",
+        "representative_numeric_folio": 77,
+        "numeric_folios": [
+          77,
+          82
+        ]
+      },
+      {
+        "group": "78",
+        "group_key": "M/4",
+        "representative_numeric_folio": 78,
+        "numeric_folios": [
+          78,
+          81
+        ]
+      },
+      {
+        "group": "79",
+        "group_key": "M/5",
+        "representative_numeric_folio": 79,
+        "numeric_folios": [
+          79,
+          80
+        ]
+      },
+      {
+        "group": "85",
+        "group_key": "N/1",
+        "representative_numeric_folio": 85,
+        "numeric_folios": [
+          85,
+          86
+        ]
+      },
+      {
+        "group": "87",
+        "group_key": "O/1",
+        "representative_numeric_folio": 87,
+        "numeric_folios": [
+          87,
+          90
+        ]
+      },
+      {
+        "group": "88",
+        "group_key": "O/2",
+        "representative_numeric_folio": 88,
+        "numeric_folios": [
+          88,
+          89
+        ]
+      },
+      {
+        "group": "93",
+        "group_key": "Q/1",
+        "representative_numeric_folio": 93,
+        "numeric_folios": [
+          93,
+          96
+        ]
+      },
+      {
+        "group": "94",
+        "group_key": "Q/2",
+        "representative_numeric_folio": 94,
+        "numeric_folios": [
+          94,
+          95
+        ]
+      },
+      {
+        "group": "99",
+        "group_key": "S/1",
+        "representative_numeric_folio": 99,
+        "numeric_folios": [
+          99,
+          102
+        ]
+      },
+      {
+        "group": "100",
+        "group_key": "S/2",
+        "representative_numeric_folio": 100,
+        "numeric_folios": [
+          100,
+          101
+        ]
+      },
+      {
+        "group": "103",
+        "group_key": "T/1",
+        "representative_numeric_folio": 103,
+        "numeric_folios": [
+          103,
+          116
+        ]
+      },
+      {
+        "group": "104",
+        "group_key": "T/2",
+        "representative_numeric_folio": 104,
+        "numeric_folios": [
+          104,
+          115
+        ]
+      },
+      {
+        "group": "105",
+        "group_key": "T/3",
+        "representative_numeric_folio": 105,
+        "numeric_folios": [
+          105,
+          114
+        ]
+      },
+      {
+        "group": "106",
+        "group_key": "T/4",
+        "representative_numeric_folio": 106,
+        "numeric_folios": [
+          106,
+          113
+        ]
+      },
+      {
+        "group": "107",
+        "group_key": "T/5",
+        "representative_numeric_folio": 107,
+        "numeric_folios": [
+          107,
+          112
+        ]
+      },
+      {
+        "group": "108",
+        "group_key": "T/6",
+        "representative_numeric_folio": 108,
+        "numeric_folios": [
+          108,
+          111
+        ]
+      }
+    ],
+    "complete_provider_coverage": true,
+    "independent_conservation_verification": false,
+    "independent_conservation_verification_note": "No independent conservation examination was performed; this grouping uses provider Q/B metadata.",
+    "evidence": {
+      "manifest": "data/bifolio_manifest.json",
+      "provider_scope": "Complete for page headers and locus records in both source files.",
+      "format_specification": {
+        "url": "https://voynich.nu/software/ivtt/IVTFF_format.pdf",
+        "location": "Section 6.3, Table 6, PDF pages 19-20 (one-based), Q and B rows."
+      },
+      "cross_corpus_agreement": {
+        "shared_page_name_count": 225,
+        "shared_page_QB_mismatches": [],
+        "all_ZL3b_locus_records_have_QB": true,
+        "all_IT2a_locus_records_have_QB": true
+      }
+    },
+    "source_sha256": {
+      "data/raw/ZL3b-n.txt": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "data/raw/IT2a-n.txt": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"
+    },
+    "source_files": [
+      {
+        "path": "data/raw/ZL3b-n.txt",
+        "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc"
+      },
+      {
+        "path": "data/raw/IT2a-n.txt",
+        "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"
+      }
+    ],
+    "split_hash_salt": "voynich-bifolio-408-v3:",
+    "split_hash_algorithm": "sha256",
+    "split_hash_bytes": 8,
+    "split_bucket_modulus": 10,
+    "legacy_foldout_metadata": {
+      "components": [
+        [
+          69,
+          70
+        ],
+        [
+          71,
+          72
+        ],
+        [
+          85,
+          86
+        ],
+        [
+          88,
+          89,
+          90
+        ],
+        [
+          94,
+          95
+        ],
+        [
+          100,
+          101,
+          102
+        ]
+      ],
+      "confirmed_cross_number_foldout": [
+        85,
+        86
+      ],
+      "role": "Historical exploratory metadata only; the complete Q/B map above controls grouping."
+    },
+    "conservative_components": [
+      [
+        69,
+        70
+      ],
+      [
+        71,
+        72
+      ],
+      [
+        85,
+        86
+      ],
+      [
+        88,
+        89,
+        90
+      ],
+      [
+        94,
+        95
+      ],
+      [
+        100,
+        101,
+        102
+      ]
+    ],
+    "candidate_components": [
+      [
+        69,
+        70
+      ],
+      [
+        71,
+        72
+      ],
+      [
+        88,
+        89,
+        90
+      ],
+      [
+        94,
+        95
+      ],
+      [
+        100,
+        101,
+        102
+      ]
+    ],
+    "confirmed_cross_number_foldout": [
+      85,
+      86
+    ]
+  },
+  "shuffle": {
+    "unit": "raw EVA code point",
+    "within_word": true,
+    "preserves": [
+      "word count",
+      "word order",
+      "word lengths",
+      "character multiset per word"
+    ],
+    "partition_seeds": {
+      "train": 408,
+      "validation": 409,
+      "test": 410
+    },
+    "generator": "Python random.Random, one sequential shuffle per word"
+  },
+  "group_manifest": {
+    "1": "train",
+    "10": "test",
+    "100": "train",
+    "103": "train",
+    "104": "train",
+    "105": "train",
+    "106": "test",
+    "107": "train",
+    "108": "validation",
+    "11": "test",
+    "13": "train",
+    "17": "test",
+    "18": "train",
+    "19": "validation",
+    "2": "train",
+    "20": "validation",
+    "25": "test",
+    "26": "train",
+    "27": "train",
+    "28": "test",
+    "3": "test",
+    "33": "train",
+    "34": "train",
+    "35": "train",
+    "36": "train",
+    "4": "train",
+    "41": "train",
+    "42": "train",
+    "43": "train",
+    "44": "train",
+    "49": "train",
+    "50": "train",
+    "51": "train",
+    "52": "train",
+    "57": "test",
+    "58": "test",
+    "67": "train",
+    "69": "train",
+    "75": "test",
+    "76": "train",
+    "77": "test",
+    "78": "train",
+    "79": "train",
+    "85": "test",
+    "87": "train",
+    "88": "train",
+    "9": "train",
+    "93": "test",
+    "94": "train",
+    "99": "train"
+  },
+  "sample_words": {
+    "train": 14523,
+    "validation": 2280,
+    "test": 7162
+  },
+  "key_record_sha256": "35595b82f7474e56a887bbd824111cc26eb0657189a5bc181177d75029c23889",
+  "key_frozen_before_test_scoring": true,
+  "fits": {
+    "observed": {
+      "status": "ok",
+      "config": {
+        "seed": 408,
+        "iterations": 2000,
+        "restarts": 8,
+        "start_temperature": 0.02,
+        "order": 3,
+        "add_alpha": 0.1,
+        "mapping_kind": "injective",
+        "key_direction": "ciphertext_symbol_to_plaintext_symbol",
+        "word_boundaries": "preserved; no cross-word transitions",
+        "initialization": "frequency-ranked first start plus randomized starts",
+        "objective": "Fixed-boundary conditional character n-gram objective: P(next symbol | previous order symbols), with add-alpha smoothing. Scores are weighted n-gram evidence, not a composite full-probability claim.",
+        "temperature_units": "total objective bits, scaled from bits per predicted symbol",
+        "temperature_schedule": "linear decay to zero over each restart",
+        "train_only_model": true
+      },
+      "alphabet": {
+        "cipher_size": 24,
+        "plaintext_size": 26,
+        "cipher_symbols": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "t",
+          "u",
+          "x",
+          "y",
+          "z"
+        ],
+        "plaintext_symbols": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "t",
+          "u",
+          "v",
+          "w",
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "key": {
+        "a": "u",
+        "b": "w",
+        "c": "h",
+        "d": "n",
+        "e": "m",
+        "f": "v",
+        "g": "y",
+        "h": "o",
+        "i": "l",
+        "j": "j",
+        "k": "r",
+        "l": "t",
+        "m": "b",
+        "n": "i",
+        "o": "a",
+        "p": "g",
+        "q": "p",
+        "r": "s",
+        "s": "c",
+        "t": "d",
+        "u": "q",
+        "x": "f",
+        "y": "e",
+        "z": "k"
+      },
+      "score": {
+        "negative_log2_probability": 437146.7620325191,
+        "bits_per_symbol": 4.986446006279661,
+        "perplexity": 31.700770616836568,
+        "word_count": 14523,
+        "predicted_symbols": 87667,
+        "eos_count": 14523,
+        "unknown_cipher_symbols": 0,
+        "missing_key_types": 0,
+        "missing_key_symbols": [],
+        "cipher_alphabet_size": 24,
+        "key_coverage": 1.0
+      },
+      "recovery_metrics": {
+        "key_coverage": 1.0,
+        "key_coverage_assigned_types": 24,
+        "key_coverage_total_types": 24,
+        "key_assignment_accuracy": null,
+        "key_assignment_correct": null,
+        "key_assignment_total": null,
+        "exact_character_accuracy": null,
+        "exact_character_correct": null,
+        "exact_character_total": null,
+        "exact_word_accuracy": null,
+        "exact_word_correct": null,
+        "exact_word_total": null,
+        "reference_key_provided": false
+      },
+      "search": {
+        "restarts_completed": 8,
+        "proposed_moves": 16000,
+        "accepted_moves": 3862,
+        "best_objective": 437146.76203251904,
+        "restart_best_objectives": [
+          437146.76203251904,
+          460038.18246608437,
+          456516.8246803989,
+          479991.761664789,
+          460490.61055865657,
+          489642.70575240016,
+          477006.6774519273,
+          491867.9931749977
+        ],
+        "selected_restart": 0
+      }
+    },
+    "within_word_shuffle": {
+      "status": "ok",
+      "config": {
+        "seed": 408,
+        "iterations": 2000,
+        "restarts": 8,
+        "start_temperature": 0.02,
+        "order": 3,
+        "add_alpha": 0.1,
+        "mapping_kind": "injective",
+        "key_direction": "ciphertext_symbol_to_plaintext_symbol",
+        "word_boundaries": "preserved; no cross-word transitions",
+        "initialization": "frequency-ranked first start plus randomized starts",
+        "objective": "Fixed-boundary conditional character n-gram objective: P(next symbol | previous order symbols), with add-alpha smoothing. Scores are weighted n-gram evidence, not a composite full-probability claim.",
+        "temperature_units": "total objective bits, scaled from bits per predicted symbol",
+        "temperature_schedule": "linear decay to zero over each restart",
+        "train_only_model": true
+      },
+      "alphabet": {
+        "cipher_size": 24,
+        "plaintext_size": 26,
+        "cipher_symbols": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "t",
+          "u",
+          "x",
+          "y",
+          "z"
+        ],
+        "plaintext_symbols": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "t",
+          "u",
+          "v",
+          "w",
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "key": {
+        "a": "i",
+        "b": "t",
+        "c": "k",
+        "d": "v",
+        "e": "g",
+        "f": "l",
+        "g": "n",
+        "h": "h",
+        "i": "o",
+        "j": "y",
+        "k": "p",
+        "l": "d",
+        "m": "r",
+        "n": "f",
+        "o": "a",
+        "p": "c",
+        "q": "q",
+        "r": "s",
+        "s": "u",
+        "t": "m",
+        "u": "b",
+        "x": "x",
+        "y": "e",
+        "z": "z"
+      },
+      "score": {
+        "negative_log2_probability": 543457.9566754192,
+        "bits_per_symbol": 6.199116619428282,
+        "perplexity": 73.47169328898181,
+        "word_count": 14523,
+        "predicted_symbols": 87667,
+        "eos_count": 14523,
+        "unknown_cipher_symbols": 0,
+        "missing_key_types": 0,
+        "missing_key_symbols": [],
+        "cipher_alphabet_size": 24,
+        "key_coverage": 1.0
+      },
+      "recovery_metrics": {
+        "key_coverage": 1.0,
+        "key_coverage_assigned_types": 24,
+        "key_coverage_total_types": 24,
+        "key_assignment_accuracy": null,
+        "key_assignment_correct": null,
+        "key_assignment_total": null,
+        "exact_character_accuracy": null,
+        "exact_character_correct": null,
+        "exact_character_total": null,
+        "exact_word_accuracy": null,
+        "exact_word_correct": null,
+        "exact_word_total": null,
+        "reference_key_provided": false
+      },
+      "search": {
+        "restarts_completed": 8,
+        "proposed_moves": 16000,
+        "accepted_moves": 6020,
+        "best_objective": 543457.9566754199,
+        "restart_best_objectives": [
+          545484.7541863414,
+          545508.5549578777,
+          544260.924043613,
+          544681.957670642,
+          546554.3424227233,
+          543590.0454453918,
+          543457.9566754199,
+          546083.2147629556
+        ],
+        "selected_restart": 6
+      }
+    }
+  },
+  "scores": {
+    "train": {
+      "observed": {
+        "negative_log2_probability": 437146.7620325217,
+        "bits_per_symbol": 4.986446006279691,
+        "perplexity": 31.700770616837232,
+        "word_count": 14523,
+        "predicted_symbols": 87667,
+        "eos_count": 14523,
+        "unknown_cipher_symbols": 0,
+        "missing_key_types": 0,
+        "missing_key_symbols": [],
+        "cipher_alphabet_size": 24,
+        "key_coverage": 1.0,
+        "evaluation_split": "train",
+        "partial_key_coverage": false
+      },
+      "observed_lexicon": {
+        "tokens": 14523,
+        "fully_mapped_tokens": 14523,
+        "reference_vocabulary_hits": 1586,
+        "reference_vocabulary_hit_rate": 0.1092060868966467
+      },
+      "shuffled": {
+        "negative_log2_probability": 543457.9566753865,
+        "bits_per_symbol": 6.199116619427909,
+        "perplexity": 73.47169328896281,
+        "word_count": 14523,
+        "predicted_symbols": 87667,
+        "eos_count": 14523,
+        "unknown_cipher_symbols": 0,
+        "missing_key_types": 0,
+        "missing_key_symbols": [],
+        "cipher_alphabet_size": 24,
+        "key_coverage": 1.0,
+        "evaluation_split": "train",
+        "partial_key_coverage": false
+      },
+      "shuffled_lexicon": {
+        "tokens": 14523,
+        "fully_mapped_tokens": 14523,
+        "reference_vocabulary_hits": 989,
+        "reference_vocabulary_hit_rate": 0.06809887764236039
+      },
+      "identity": {
+        "negative_log2_probability": 565062.1566351145,
+        "bits_per_symbol": 6.4455514233989355,
+        "perplexity": 87.15741018425238,
+        "word_count": 14523,
+        "predicted_symbols": 87667,
+        "eos_count": 14523,
+        "unknown_cipher_symbols": 0,
+        "missing_key_types": 0,
+        "missing_key_symbols": [],
+        "cipher_alphabet_size": 24,
+        "key_coverage": 1.0,
+        "evaluation_split": "train",
+        "partial_key_coverage": false
+      }
+    },
+    "validation": {
+      "observed": {
+        "negative_log2_probability": 69977.00396947454,
+        "bits_per_symbol": 4.9667828780945795,
+        "perplexity": 31.271637869647822,
+        "word_count": 2280,
+        "predicted_symbols": 14089,
+        "eos_count": 2280,
+        "unknown_cipher_symbols": 0,
+        "missing_key_types": 0,
+        "missing_key_symbols": [],
+        "cipher_alphabet_size": 20,
+        "key_coverage": 1.0,
+        "evaluation_split": "validation",
+        "partial_key_coverage": false
+      },
+      "observed_lexicon": {
+        "tokens": 2280,
+        "fully_mapped_tokens": 2280,
+        "reference_vocabulary_hits": 218,
+        "reference_vocabulary_hit_rate": 0.0956140350877193
+      },
+      "shuffled": {
+        "negative_log2_probability": 87624.47714655663,
+        "bits_per_symbol": 6.219353903510301,
+        "perplexity": 74.50957369650304,
+        "word_count": 2280,
+        "predicted_symbols": 14089,
+        "eos_count": 2280,
+        "unknown_cipher_symbols": 0,
+        "missing_key_types": 0,
+        "missing_key_symbols": [],
+        "cipher_alphabet_size": 20,
+        "key_coverage": 1.0,
+        "evaluation_split": "validation",
+        "partial_key_coverage": false
+      },
+      "shuffled_lexicon": {
+        "tokens": 2280,
+        "fully_mapped_tokens": 2280,
+        "reference_vocabulary_hits": 116,
+        "reference_vocabulary_hit_rate": 0.05087719298245614
+      },
+      "identity": {
+        "negative_log2_probability": 90759.63285833683,
+        "bits_per_symbol": 6.441878973549353,
+        "perplexity": 86.93582893303474,
+        "word_count": 2280,
+        "predicted_symbols": 14089,
+        "eos_count": 2280,
+        "unknown_cipher_symbols": 0,
+        "missing_key_types": 0,
+        "missing_key_symbols": [],
+        "cipher_alphabet_size": 20,
+        "key_coverage": 1.0,
+        "evaluation_split": "validation",
+        "partial_key_coverage": false
+      }
+    },
+    "test": {
+      "observed": {
+        "negative_log2_probability": 218043.75797753158,
+        "bits_per_symbol": 5.037514046241835,
+        "perplexity": 32.843000846102,
+        "word_count": 7162,
+        "predicted_symbols": 43284,
+        "eos_count": 7162,
+        "unknown_cipher_symbols": 1,
+        "missing_key_types": 1,
+        "missing_key_symbols": [
+          "v"
+        ],
+        "cipher_alphabet_size": 22,
+        "key_coverage": 0.9545454545454546,
+        "evaluation_split": "test",
+        "partial_key_coverage": true
+      },
+      "observed_lexicon": {
+        "tokens": 7162,
+        "fully_mapped_tokens": 7161,
+        "reference_vocabulary_hits": 776,
+        "reference_vocabulary_hit_rate": 0.10834962301033231
+      },
+      "shuffled": {
+        "negative_log2_probability": 268211.676285172,
+        "bits_per_symbol": 6.196554761232141,
+        "perplexity": 73.34134208222162,
+        "word_count": 7162,
+        "predicted_symbols": 43284,
+        "eos_count": 7162,
+        "unknown_cipher_symbols": 1,
+        "missing_key_types": 1,
+        "missing_key_symbols": [
+          "v"
+        ],
+        "cipher_alphabet_size": 22,
+        "key_coverage": 0.9545454545454546,
+        "evaluation_split": "test",
+        "partial_key_coverage": true
+      },
+      "shuffled_lexicon": {
+        "tokens": 7162,
+        "fully_mapped_tokens": 7161,
+        "reference_vocabulary_hits": 514,
+        "reference_vocabulary_hit_rate": 0.07176766266406032
+      },
+      "identity": {
+        "negative_log2_probability": 280445.0209793427,
+        "bits_per_symbol": 6.4791844787760535,
+        "perplexity": 89.21315031637107,
+        "word_count": 7162,
+        "predicted_symbols": 43284,
+        "eos_count": 7162,
+        "unknown_cipher_symbols": 1,
+        "missing_key_types": 1,
+        "missing_key_symbols": [
+          "v"
+        ],
+        "cipher_alphabet_size": 22,
+        "key_coverage": 0.9545454545454546,
+        "evaluation_split": "test",
+        "partial_key_coverage": true
+      }
+    }
+  },
+  "limits": [
+    "This search uses raw EVA units and fixed split-policy word boundaries.",
+    "The language model uses within-word characters only. Word permutation leaves its objective unchanged.",
+    "The known-cipher trials calibrate search power. They do not establish the manuscript encoding or language.",
+    "One unit-shuffle trial is not a false-positive-rate estimate.",
+    "A failed heuristic search does not exhaust all possible keys.",
+    "These manuscript data have been inspected in prior exploratory analyses."
+  ],
+  "random_key_test_baseline": {
+    "seed": 409,
+    "scores_bits_per_symbol": [
+      6.396154617048407,
+      6.208909736571158,
+      6.67869968798352,
+      6.721919147738648,
+      6.895185679913397,
+      6.468123144264633,
+      6.856793077105761,
+      6.7084708500016745,
+      6.426766630948305,
+      6.398381999421172,
+      6.472379845597496,
+      6.7283282180461255,
+      6.452592027343759,
+      6.627495829012648,
+      6.408754387222995,
+      6.976514273363476,
+      6.657700670917576,
+      6.623169447598457,
+      6.784001027422689,
+      6.7215930631382905,
+      6.761977764957594,
+      6.607383565415889,
+      6.59787468799995,
+      6.48059503272635,
+      6.672722529922386,
+      6.829553088115836,
+      6.59587796633168,
+      6.624410634135328,
+      6.467921661267677,
+      6.734301732472205,
+      6.526082218806996,
+      6.492687019488872
+    ],
+    "minimum": 6.208909736571158,
+    "maximum": 6.976514273363476
+  },
+  "code_sha256": {
+    "scripts/run_voynich_substitution.py": "7e5e779677e149b35e68bf64f2df34608b751544fd126049ea7c1f9ce94e03cd",
+    "src/voynich/corpus.py": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+    "src/voynich/reference.py": "97e173c761b137d3653a827315b62a68af3e96abd189afdecc46e9759d2b94d9",
+    "src/voynich/substitution.py": "3c246844b9adcd003d593eff97b53c6a3d1f54bc1fd76bc8e5145345aadf3332",
+    "src/voynich/groups.py": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0"
+  }
+}

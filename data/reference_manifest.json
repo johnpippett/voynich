@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-09-16",
+  "provider": "Universal Dependencies",
+  "release": "UD 2.18",
+  "raw_output_dir": "data/raw/reference",
+  "extraction_defaults": {
+    "format": "CoNLL-U",
+    "split_order": [
+      "train",
+      "dev",
+      "test"
+    ],
+    "comments": "Ignore comment lines.",
+    "multiword_tokens": "Keep a surface FORM that contains a Unicode letter or number. Skip all covered integer component IDs.",
+    "empty_nodes": "Skip IDs with a decimal point.",
+    "integer_rows": "Keep FORM unless UPOS is PUNCT or FORM is underscore.",
+    "output": "Write one non-empty sentence per line. Join forms with one ASCII space. Write UTF-8 with LF line endings.",
+    "normalization": "Preserve source Unicode. Apply any NFKD, casefold, or ASCII-letter filter in the analysis runner and record exclusions there."
+  },
+  "analysis_normalization": {
+    "steps": [
+      "NFKD",
+      "casefold",
+      "remove combining marks",
+      "accept the complete form only when it matches [a-z]+"
+    ],
+    "rejected_forms": "Reject the complete form when it contains an apostrophe, hyphen, digit, or unsupported ligature. Do not split it.",
+    "source_interface": "The analysis runner reads raw CoNLL-U. It preserves multiword-token surface forms, skips covered integer components and empty nodes, and retains source sentence headers."
+  },
+  "corpora": [
+    {
+      "id": "latin_llct",
+      "language": "Latin",
+      "period": "AD 774-897",
+      "genre": "Legal documentary charters",
+      "description": "The LLCT2 treebank contains 521 Early Medieval Latin charters from Tuscany. Its language is a non-standard variety of Latin.",
+      "provider_page": "https://universaldependencies.org/treebanks/la_llct/index.html",
+      "repository": "https://github.com/UniversalDependencies/UD_Latin-LLCT",
+      "tag": "r2.18",
+      "commit": "df63d06c5a7788b457f50bf37526146e9225c27d",
+      "commit_url": "https://github.com/UniversalDependencies/UD_Latin-LLCT/tree/df63d06c5a7788b457f50bf37526146e9225c27d",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_accessed": "2026-09-16",
+      "caveats": [
+        "The corpus is legal documentary prose, not a general sample of Medieval Latin.",
+        "The source page reports a non-standard variety with spelling, morphology, and syntax that differ from Classical and Medieval Latin.",
+        "The UD release omits 223 converted sentences from the original LLCT2 corpus, as stated in its README.",
+        "The README says that the standard split keeps each charter in one split. Use the # reference charter key when you verify this boundary."
+      ],
+      "files": [
+        {
+          "name": "la_llct-ud-train.conllu",
+          "role": "conllu",
+          "split": "train",
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Latin-LLCT/df63d06c5a7788b457f50bf37526146e9225c27d/la_llct-ud-train.conllu",
+          "sha256": "8aabc8735c7a623a9e4820e13861a87459dd0fb5b2d238f0583854143526a643"
+        },
+        {
+          "name": "la_llct-ud-dev.conllu",
+          "role": "conllu",
+          "split": "dev",
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Latin-LLCT/df63d06c5a7788b457f50bf37526146e9225c27d/la_llct-ud-dev.conllu",
+          "sha256": "040457f2e47265a5676c83ce236e1d625af41eda8f779812841e8ba84e28480c"
+        },
+        {
+          "name": "la_llct-ud-test.conllu",
+          "role": "conllu",
+          "split": "test",
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Latin-LLCT/df63d06c5a7788b457f50bf37526146e9225c27d/la_llct-ud-test.conllu",
+          "sha256": "81d9f57de66d83303ad4df54a60cd445ac089b50070d369831a632b4cf948e64"
+        },
+        {
+          "name": "README.md",
+          "role": "readme",
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Latin-LLCT/df63d06c5a7788b457f50bf37526146e9225c27d/README.md",
+          "sha256": "eb3daaa3c8d7e4f3d1ea222bdacef989553714c10f6ebf68cb2dd93e1e2789f8"
+        },
+        {
+          "name": "LICENSE.txt",
+          "role": "license",
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Latin-LLCT/df63d06c5a7788b457f50bf37526146e9225c27d/LICENSE.txt",
+          "sha256": "899b1804a12ebc090b96339614eede1b64b686721b650a71430b55b5235f7f79"
+        }
+      ],
+      "extraction": {
+        "split_order": [
+          "train",
+          "dev",
+          "test"
+        ],
+        "output": {
+          "path": "latin_llct.txt",
+          "sha256": "3a49a6c7c3ebced466cac92e7aa53dd20661e20ac54a54836c2c0107db394a4c",
+          "counts": {
+            "input_sentence_count": 9023,
+            "input_syntactic_rows": 242411,
+            "punctuation_rows_excluded": 35265,
+            "mwt_rows_retained": 20,
+            "covered_component_rows_skipped": 40,
+            "empty_nodes_skipped": 0,
+            "output_sentence_count": 9023,
+            "output_token_count": 207126
+          }
+        }
+      }
+    },
+    {
+      "id": "italian_old",
+      "language": "Old Italian",
+      "period": "Approximately 1306-1321",
+      "genre": "Literary poetry",
+      "description": "The treebank contains Dante Alighieri's Comedy in Old Italian, specifically Florentine, based on the 1994 Petrocchi edition.",
+      "provider_page": "https://universaldependencies.org/treebanks/it_old/index.html",
+      "repository": "https://github.com/UniversalDependencies/UD_Italian-Old",
+      "tag": "r2.18",
+      "commit": "2c1361d621dafa7c465da0947f73765caaf743af",
+      "commit_url": "https://github.com/UniversalDependencies/UD_Italian-Old/tree/2c1361d621dafa7c465da0947f73765caaf743af",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_accessed": "2026-09-16",
+      "caveats": [
+        "The corpus is one literary work by one author. It is not a broad sample of Old Italian.",
+        "The provider page says that the treebank remains under revision. The pinned commit fixes the input for this project.",
+        "Its poetry, Florentine variety, and edited spelling do not match an unknown Voynich genre or writing system by default.",
+        "Each of Inferno, Purgatorio, and Paradiso occurs in the standard train, dev, and test files. Group by canticle before model evaluation."
+      ],
+      "files": [
+        {
+          "name": "it_old-ud-train.conllu",
+          "role": "conllu",
+          "split": "train",
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Italian-Old/2c1361d621dafa7c465da0947f73765caaf743af/it_old-ud-train.conllu",
+          "sha256": "9e94e25d826632a005adc2a8a1daa88f46bdd1509d56090b4c82d27779e1a5e0"
+        },
+        {
+          "name": "it_old-ud-dev.conllu",
+          "role": "conllu",
+          "split": "dev",
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Italian-Old/2c1361d621dafa7c465da0947f73765caaf743af/it_old-ud-dev.conllu",
+          "sha256": "6c900aecef3abebfe87c4e5d5c9880326cc69b8122e62ec95ef6c50fbe4e6e0b"
+        },
+        {
+          "name": "it_old-ud-test.conllu",
+          "role": "conllu",
+          "split": "test",
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Italian-Old/2c1361d621dafa7c465da0947f73765caaf743af/it_old-ud-test.conllu",
+          "sha256": "19dc1ecf5bfffd552130be63c3dab02d1dd9b9e6a6d4bc31ace0fe6494ebdf89"
+        },
+        {
+          "name": "README.md",
+          "role": "readme",
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Italian-Old/2c1361d621dafa7c465da0947f73765caaf743af/README.md",
+          "sha256": "1796c08e68d943ca458642d334165a192705455586cc6d35ccd83382ffe1d1a5"
+        },
+        {
+          "name": "LICENSE.txt",
+          "role": "license",
+          "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_Italian-Old/2c1361d621dafa7c465da0947f73765caaf743af/LICENSE.txt",
+          "sha256": "899b1804a12ebc090b96339614eede1b64b686721b650a71430b55b5235f7f79"
+        }
+      ],
+      "extraction": {
+        "split_order": [
+          "train",
+          "dev",
+          "test"
+        ],
+        "output": {
+          "path": "italian_old.txt",
+          "sha256": "0d8d698b7c1ef90a2f0d34fed8b862cac7f8b0f42e67daa3db31118612282766",
+          "counts": {
+            "input_sentence_count": 3419,
+            "input_syntactic_rows": 122024,
+            "punctuation_rows_excluded": 17390,
+            "mwt_rows_retained": 2936,
+            "covered_component_rows_skipped": 5900,
+            "empty_nodes_skipped": 306,
+            "output_sentence_count": 3419,
+            "output_token_count": 101670
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "status": "stage2_research_verified_locally_not_a_decipherment",
+  "created_utc": "2026-09-17T05:32:28.947598+00:00",
+  "python": "3.14.7",
+  "test_suite": {
+    "command": "PYTHONPATH=src python -m unittest discover -s tests -q",
+    "tests_run": 85,
+    "passed": 85,
+    "scope": "Local environment with pinned Naibbe table present."
+  },
+  "protocol": {
+    "path": "docs/plans/run-design-v3.md",
+    "sha256": "9bc4e8cc4990bb2f604df3ac96e501c2549bc99616b6c8eec209ad799cfc9b44"
+  },
+  "source_checks": [
+    {
+      "path": "data/raw/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "matches": true
+    },
+    {
+      "path": "data/raw/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "matches": true
+    }
+  ],
+  "code_hash_comparisons": {
+    "checked": 82,
+    "all_match": true
+  },
+  "structural_repeat": {
+    "runs": [
+      "results/bifolio-v3-publication/zl-split",
+      "results/bifolio-v3-publication/zl-repeat"
+    ],
+    "complete_analysis_equal": true,
+    "removed_field": "provenance.created_utc",
+    "canonical_json_sha256": "35fcf2bcc0a683881a0f8bea288a6473f4cd577610b36c7a8d2e04925091d855",
+    "portable_complete_analysis_sha256": "7ce1e8e885e1a874c1e50dc09eff0a524825d3382fecb241863d0bdc8339c7e1",
+    "portable_normalization": "Remove created_utc and reduce source_path to basename. Keep all other fields."
+  },
+  "substitution_reporting_correction": {
+    "repeated_runs": 4,
+    "keys_identical": true,
+    "numerical_scores_identical": true,
+    "search_records_identical": true,
+    "changes": "Correct split labels and add filter, parser, source-manifest, and shuffle metadata."
+  },
+  "measurement_artifacts": {
+    "reports/bifolio-v3/it-split.json": "e35d97609f22fa093e6afcb7f317c9ff45d6d03a66c4caccd9450ed06ff3a05d",
+    "reports/bifolio-v3/zl-join.json": "f5115ff0b9b658d56fba265084c14c19f3b261433633ae687800418d681b9b22",
+    "reports/bifolio-v3/zl-split.json": "a81f04d8156eb540796ec55abb9deea83b39373a536b8971831dc9d771921271",
+    "reports/naibbe-join.json": "e1436f424c52e0430b37c182e4f2bf6c32230776315e6eba0b013139335288c6",
+    "reports/naibbe-split.json": "470d9d5f1621d0a49bbd0c66716e9ac747c1ed18e336374457985a3f2d726543",
+    "reports/reference-invariants.json": "5660e7816627c577a133294ed5b1881fd5523785c3aa246749674ef116b57f92",
+    "reports/substitution/italian-32keys.json": "f6db257d1b7d6a50253bbfdfa3a084970a2b14511fca342a82f212f0cfde979c",
+    "reports/substitution/italian-it.json": "5f9e0b2edaf69fae05441511869b3f241631304505f8551556a071a3417377d2",
+    "reports/substitution/italian-it.keys.json": "1f1c0e471efed9e978e4e83e8d9f7ddda4d7891cff5baa9ba69028287301ce97",
+    "reports/substitution/italian-zl.json": "8c1329b1edbbebf6eb5845facd56430e5c3ebd64b0c1dfb4530b5806bcb5ca37",
+    "reports/substitution/italian-zl.keys.json": "3cf336c53d003d561098f74d2019e0e70eeb3ef5f69e5cc1f561125c4b6db57a",
+    "reports/substitution/latin-32keys.json": "bb13785647c9dd094110d0be84188c0d056d828fcfa9ad2963d6224baa66ecb7",
+    "reports/substitution/latin-it.json": "09d5d76cc1c447af081b7f188da94d9fbe6fb9c8b82f73ee025282b09fac0555",
+    "reports/substitution/latin-it.keys.json": "d9560ac594817645a0f0210e02573ddf1569def0f35106d0c301b218c777e3b2",
+    "reports/substitution/latin-zl.json": "30a722fab85d21db3f8177a8f71043bb37b4ad1e1ca2bad7556760a792d0d1e5",
+    "reports/substitution/latin-zl.keys.json": "35595b82f7474e56a887bbd824111cc26eb0657189a5bc181177d75029c23889",
+    "reports/substitution-inventory.json": "04b41371a2c0bef16519ea0a4d1566d0b7905526eff87a1fb1f73d0b0d78fa12"
+  },
+  "external_validation": false,
+  "limits": [
+    "The repeated key controls use the same text partitions. They are not independent text samples.",
+    "No false-positive rate or decipherment is established.",
+    "The grouping uses provider metadata. No independent conservation examination was performed."
+  ],
+  "public_clone_check": {
+    "status": "pending"
+  },
+  "offline_distribution_test": {
+    "method": "Copy repository source, scripts, tests, metadata, and design without ignored downloads.",
+    "tests_run": 85,
+    "passed": 84,
+    "skipped": 1,
+    "skip_reason": "The optional published Naibbe table test requires its pinned download."
+  },
+  "report_generator_sha256": "5072f9fdd4a8a445dd65b3fb78602e98ce63a2cf75507e5c47362a8d5a5e08f3",
+  "bifolio_citation_correction": {
+    "manifest_sha256": "998cb3d6c8327ff0bdf786d52968fa3bec9f5fa9b05ba7ae56065fc9639fad72",
+    "table_location": "IVTFF Table 6, PDF pages 19-20, one-based.",
+    "group_assignments_unchanged": true,
+    "repeated_structural_runs": 4,
+    "repeated_substitution_runs": 4,
+    "numerical_results_unchanged": true
+  }
+}

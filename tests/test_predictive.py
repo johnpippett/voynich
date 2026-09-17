@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import hashlib
 import pathlib
 import sys
 import unittest
@@ -12,6 +11,7 @@ PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
 from voynich.predictive import run_predictive
+from voynich.groups import split_bucket
 
 
 def _record(folio: str, tokens: list[str], locus: str = "1") -> dict:
@@ -25,8 +25,7 @@ def _record(folio: str, tokens: list[str], locus: str = "1") -> dict:
 
 
 def _bucket(leaf: str) -> int:
-    digest = hashlib.sha256(f"voynich-408-v1:{leaf}".encode()).digest()
-    return int.from_bytes(digest[:8], "big") % 10
+    return split_bucket(leaf)
 
 
 class PredictiveBehaviorTests(unittest.TestCase):
@@ -36,7 +35,7 @@ class PredictiveBehaviorTests(unittest.TestCase):
             _record("f86v2", ["same_foldout_group"]),
             _record("fRos", ["rosette_panel"]),
             _record("f1r1", ["train"]),
-            _record("f2r1", ["validation"]),
+            _record("f19r1", ["validation"]),
         ]
 
         result = run_predictive(records)
@@ -45,18 +44,18 @@ class PredictiveBehaviorTests(unittest.TestCase):
 
         self.assertEqual(manifest["train"]["groups"], ["1"])
         self.assertEqual(manifest["train"]["folios"], ["f1r1"])
-        self.assertEqual(manifest["validation"]["groups"], ["2"])
+        self.assertEqual(manifest["validation"]["groups"], ["19"])
         self.assertEqual(manifest["test"]["groups"], ["85"])
         self.assertEqual(manifest["test"]["folios"], ["f85r1", "f86v2", "fRos"])
         self.assertEqual(manifest["train"]["bucket"], _bucket("1"))
-        self.assertEqual(manifest["validation"]["bucket"], _bucket("2"))
+        self.assertEqual(manifest["validation"]["bucket"], _bucket("19"))
         self.assertEqual(manifest["test"]["bucket"], _bucket("85"))
         self.assertEqual(manifest["grouping_config"]["confirmed_cross_number_foldout"], [85, 86])
         self.assertEqual(result["counts"]["groups"]["train"], 1)
         self.assertEqual(result["counts"]["leaves"]["train"], 1)
 
     def test_grouped_and_raw_nulls_declare_different_units(self) -> None:
-        result = run_predictive([_record("f1r1", ["cthch"]), _record("f7r1", ["cthch"])])
+        result = run_predictive([_record("f1r1", ["cthch"]), _record("f3r1", ["cthch"])])
         null = result["config"]["shuffled_null"]["per_unitization"]
 
         self.assertEqual(null["raw_eva"]["shuffled_units"], "single raw characters")
@@ -68,7 +67,7 @@ class PredictiveBehaviorTests(unittest.TestCase):
         result = run_predictive(
             [
                 dict(_record("f1r1", ["abc"]), excluded_tokens=1),
-                _record("f7r1", ["abc"]),
+                _record("f3r1", ["abc"]),
             ]
         )
 
@@ -81,7 +80,7 @@ class PredictiveBehaviorTests(unittest.TestCase):
         result = run_predictive(
             [
                 _record("f1r1", ["aba", "abb"]),
-                _record("f7r1", ["aba"]),
+                _record("f3r1", ["aba"]),
             ]
         )
 
@@ -99,7 +98,7 @@ class PredictiveBehaviorTests(unittest.TestCase):
         result = run_predictive(
             [
                 _record("f1r1", ["aaaa", "aa"]),
-                _record("f7r1", ["az"]),
+                _record("f3r1", ["az"]),
             ]
         )
 
@@ -117,7 +116,7 @@ class PredictiveBehaviorTests(unittest.TestCase):
         result = run_predictive(
             [
                 _record("f1r1", ["aba"] * 40),
-                _record("f7r1", ["aba"] * 4),
+                _record("f3r1", ["aba"] * 4),
             ]
         )
 
@@ -132,7 +131,7 @@ class PredictiveBehaviorTests(unittest.TestCase):
         result = run_predictive(
             [
                 _record("f1r1", ["abca", "dddd"]),
-                _record("f7r1", ["abca"]),
+                _record("f3r1", ["abca"]),
             ]
         )
 

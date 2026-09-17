@@ -1,0 +1,58 @@
+{
+  "schema": "voynich-naibbe-source-manifest-v1",
+  "as_of": "2026-09-16",
+  "purpose": "Pin the published Naibbe table and controls for fixed-table compatibility checks.",
+  "analysis_boundary": "This manifest supports token compatibility and known-plaintext controls. It does not authorize table fitting, language-based plaintext selection, or a decipherment claim.",
+  "article": {
+    "doi_url": "https://doi.org/10.1080/01611194.2025.2566408",
+    "citation": "Michael A. Greshko, The Naibbe Cipher: A Substitution Cipher That Encrypts Latin and Italian as Voynich Manuscript-Like Ciphertext, Cryptologia, 2025.",
+    "direct_access_observed": "Publisher HTML and PDF requests returned HTTP 403 during the 2026-09-16 review.",
+    "local_text_capture_sha256": "db1dd142807fc52e549543b85d5ac6e9b908d7371d5102c0484ede663a69abcd",
+    "local_capture_limit": "The local text capture came from an accessible text rendition. It is not a redistributable article copy."
+  },
+  "supplement": {
+    "doi_url": "https://doi.org/10.6084/m9.figshare.30730162",
+    "api_url": "https://api.figshare.com/v2/articles/30730162",
+    "file": "ucry_a_2566408_sm8589.pdf",
+    "file_sha256": "210bb31729b64b29d0e1112c5b414d29625ca540581baee2d67456a5dd5c071f",
+    "license": "CC BY 4.0"
+  },
+  "repository": {
+    "url": "https://github.com/greshko/naibbe-cipher",
+    "commit": "f2675ec5dd275268bc64dd48ea64fc0e0e9827a2",
+    "table_file": "data/raw/naibbe/naibbe-cipher/references/naibbe_tables.csv",
+    "table_sha256": "4e7cfd54b7ec66515d39a51e11ec97e8e19b643b0b189124eebc3982e707dcec",
+    "code_files": [
+      "naibbe.py",
+      "naibbe_v2.py",
+      "decrypt_naibbe.py"
+    ],
+    "license_notes": [
+      "README describes a modified MIT condition with an article citation requirement.",
+      "The top-level LICENSE file contains standard MIT text.",
+      "Preserve the copyright notice and article citation. Check each file before reuse."
+    ]
+  },
+  "zenodo": {
+    "doi_url": "https://doi.org/10.5281/zenodo.16415087",
+    "file": "Naibbe Cipher.xlsx",
+    "file_sha256": "890835df665d33b96228d4a587030fee2bc1637783dc627b4e6aa584186cadcd",
+    "record_license": "CC BY 4.0"
+  },
+  "vms_inputs": [
+    {
+      "id": "ZL3b",
+      "path": "data/raw/ZL3b-n.txt",
+      "url": "https://www.voynich.nu/data/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "license_note": "The source page states no open licence. Keep attribution and verify permission before redistribution."
+    },
+    {
+      "id": "IT2a",
+      "path": "data/raw/IT2a-n.txt",
+      "url": "https://www.voynich.nu/data/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "license_note": "The source page states no open licence. Keep attribution and verify permission before redistribution."
+    }
+  ]
+}

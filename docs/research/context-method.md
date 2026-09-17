@@ -1,5 +1,8 @@
 # Word-context experiment
 
+Historical document: this file records work before the Stage 2 grouping correction.
+See [Stage 2 methods](stage2-methods.md) for the current implementation and [results](../../reports/STAGE2.md) for measurements.
+
 Status: exploratory method, version 1, 2026-09-16.
 
 This experiment asks whether a preceding token helps predict the next token in

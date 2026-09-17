@@ -1,5 +1,8 @@
 # Physical foldout groups
 
+Historical document: this file records work before the Stage 2 grouping correction.
+See [Stage 2 methods](stage2-methods.md) for the current implementation and [results](../../reports/STAGE2.md) for measurements.
+
 ## Decision
 
 Yale directly supports one physical folded group that crosses numeric folios `85` and `86`.

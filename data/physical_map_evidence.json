@@ -1,0 +1,1211 @@
+{
+  "schema_version": "physical-map-evidence-v1",
+  "audit_date": "2026-09-16",
+  "scope": {
+    "project": "Voynich manuscript split review",
+    "folio_ranges": [
+      [
+        67,
+        72
+      ],
+      [
+        85,
+        90
+      ],
+      [
+        93,
+        102
+      ]
+    ],
+    "candidate_ranges": [
+      [
+        69,
+        70
+      ],
+      [
+        71,
+        72
+      ],
+      [
+        85,
+        86
+      ],
+      [
+        88,
+        89,
+        90
+      ],
+      [
+        94,
+        95
+      ],
+      [
+        100,
+        101,
+        102
+      ]
+    ],
+    "purpose": "Map physical bifolia and folded leaves without treating opened image captures as leaf identities."
+  },
+  "sources": [
+    {
+      "id": "yale_catalog_ms408",
+      "authority": "Yale University, Beinecke Rare Book and Manuscript Library",
+      "type": "detailed manuscript catalog",
+      "url": "https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.htm",
+      "checked": "2026-09-16",
+      "evidence": [
+        "The catalog records five double-folio, three triple-folio, one quadruple-folio, and one sextuple-folio folding leaves.",
+        "It lists Quire XIV as a sextuple fold-out, Quire XV as one triple and one double fold-out, Quire XVI as one double fold-out, and Quire XVII as two double fold-outs.",
+        "It identifies ff.85r-86v as one sextuple-folio folding leaf."
+      ],
+      "line_anchors": [
+        "34-45",
+        "70-74"
+      ]
+    },
+    {
+      "id": "yale_iiif_manifest_2002046",
+      "authority": "Yale University, Beinecke Rare Book and Manuscript Library",
+      "type": "IIIF Presentation 3 manifest",
+      "url": "https://collections.library.yale.edu/manifests/2002046",
+      "checked": "2026-09-16",
+      "manifest_type": "IIIF Presentation 3",
+      "item_count": 213,
+      "evidence": [
+        "The manifest labels composite captures and partial captures. It does not expose a physical-leaf identifier.",
+        "It explicitly labels canvases 1006228-1006230 as parts of the 85-86 foldout and canvas 1006231 as 85v and 86r foldout."
+      ]
+    },
+    {
+      "id": "rz_description",
+      "authority": "René Zandbergen, Voynich MS pages",
+      "type": "specialist codicological description",
+      "url": "https://voynich.nu/descr.html",
+      "checked": "2026-09-16",
+      "evidence": [
+        "It identifies f85 and f86 as one multiple-foldout with a horizontal crease.",
+        "It defines the panel-numbering convention used by the quire pages."
+      ],
+      "line_anchors": [
+        "59-61"
+      ]
+    },
+    {
+      "id": "rz_origin",
+      "authority": "René Zandbergen, Voynich MS pages",
+      "type": "specialist codicological description",
+      "url": "https://voynich.nu/extra/sp_origin.html",
+      "checked": "2026-09-16",
+      "evidence": [
+        "It states that Quire 9 is one very wide foldout of folios 67 and 68.",
+        "It describes f67 as two panels wide and f68 as three panels wide."
+      ],
+      "line_anchors": [
+        "33-36",
+        "59-66"
+      ]
+    },
+    {
+      "id": "rz_ivtff",
+      "authority": "René Zandbergen and collaborators, IVTFF format specification",
+      "type": "specialist format and page-definition record",
+      "url": "https://voynich.nu/software/ivtt/IVTFF_format.pdf",
+      "checked": "2026-09-16",
+      "evidence": [
+        "It defines a standard bifolio and distinguishes extra-fold foldouts.",
+        "It states that f85 and f86 form one bifolio with six panels and one Rosettes drawing across f85v and f86r.",
+        "It lists f85r1, f85r2, fRos, and the four f86v panels as the page names for the quire.",
+        "It defines $Q as the quire number, encoded A-T for quires 1-20 with P and R unused.",
+        "It defines $B as the bifolio number within a quire, counted outside to inside."
+      ],
+      "line_anchors": [
+        "253-293",
+        "487-491"
+      ],
+      "page_variables_numbering": "one-based",
+      "physical_description_pages": [
+        11,
+        12
+      ],
+      "page_variables_pages": [
+        19,
+        20
+      ],
+      "page_numbering": "one-based"
+    },
+    {
+      "id": "rz_quire_09",
+      "authority": "René Zandbergen, Voynich MS pages",
+      "type": "specialist quire description and schema",
+      "url": "https://voynich.nu/q09/index.html",
+      "schema_url": "https://voynich.nu/q09/schema09.gif",
+      "checked": "2026-09-16",
+      "evidence": [
+        "It states that Quire 9 contains one bifolio composed of folios 67 and 68.",
+        "It identifies f67 and f68 as folding folios with two and three panels."
+      ],
+      "line_anchors": [
+        "11-16",
+        "105-108"
+      ]
+    },
+    {
+      "id": "rz_quire_10",
+      "authority": "René Zandbergen, Voynich MS pages",
+      "type": "specialist quire description and schema",
+      "url": "https://voynich.nu/q10/index.html",
+      "schema_url": "https://voynich.nu/q10/schema10.gif",
+      "checked": "2026-09-16",
+      "evidence": [
+        "It states that Quire 10 contains one bifolio composed of folios 69 and 70.",
+        "It identifies f70 as the foldout folio."
+      ],
+      "line_anchors": [
+        "12-17",
+        "60-63"
+      ]
+    },
+    {
+      "id": "rz_quire_11",
+      "authority": "René Zandbergen, Voynich MS pages",
+      "type": "specialist quire description and schema",
+      "url": "https://voynich.nu/q11/index.html",
+      "schema_url": "https://voynich.nu/q11/schema11.gif",
+      "checked": "2026-09-16",
+      "evidence": [
+        "It states that Quire 11 contains one bifolio composed of folios 71 and 72.",
+        "It identifies f72 as a triple fold-out folio."
+      ],
+      "line_anchors": [
+        "12-17",
+        "59-62"
+      ]
+    },
+    {
+      "id": "rz_quire_14",
+      "authority": "René Zandbergen, Voynich MS pages",
+      "type": "specialist quire description and schema",
+      "url": "https://voynich.nu/q14/index.html",
+      "schema_url": "https://voynich.nu/q14/schema14.gif",
+      "checked": "2026-09-16",
+      "evidence": [
+        "It identifies the Rosettes page as the double foldout spanning f85v and f86r."
+      ],
+      "line_anchors": [
+        "62-65"
+      ]
+    },
+    {
+      "id": "rz_quire_15",
+      "authority": "René Zandbergen, Voynich MS pages",
+      "type": "specialist quire description and schema",
+      "url": "https://voynich.nu/q15/index.html",
+      "schema_url": "https://voynich.nu/q15/schema15.gif",
+      "checked": "2026-09-16",
+      "evidence": [
+        "It states that Quire 15 contains folios 87 through 90 and that f89 and f90 are foldout folios.",
+        "Its schema shows f87 paired with f90 and f88 paired with f89."
+      ],
+      "line_anchors": [
+        "12-17",
+        "146-149",
+        "309-312"
+      ]
+    },
+    {
+      "id": "rz_quire_17",
+      "authority": "René Zandbergen, Voynich MS pages",
+      "type": "specialist quire description and schema",
+      "url": "https://voynich.nu/q17/index.html",
+      "schema_url": "https://voynich.nu/q17/schema17.gif",
+      "checked": "2026-09-16",
+      "evidence": [
+        "It states that Quire 17 contains folios 93 through 96 and that f95 is a foldout folio.",
+        "Its schema shows f93 paired with f96 and f94 paired with f95."
+      ],
+      "line_anchors": [
+        "12-17",
+        "111-114"
+      ]
+    },
+    {
+      "id": "rz_quire_19",
+      "authority": "René Zandbergen, Voynich MS pages",
+      "type": "specialist quire description and schema",
+      "url": "https://voynich.nu/q19/index.html",
+      "schema_url": "https://voynich.nu/q19/schema19.gif",
+      "checked": "2026-09-16",
+      "evidence": [
+        "It states that Quire 19 contains folios 99 through 102 and that f101 and f102 are foldout folios.",
+        "It says f101 text crosses its vertical fold.",
+        "Its schema shows f99 paired with f102 and f100 paired with f101."
+      ],
+      "line_anchors": [
+        "12-17",
+        "213-216",
+        "324-327"
+      ]
+    }
+  ],
+  "yale_manifest": {
+    "source_ref": "yale_iiif_manifest_2002046",
+    "url": "https://collections.library.yale.edu/manifests/2002046",
+    "manifest_type": "IIIF Presentation 3",
+    "item_count": 213,
+    "items": [
+      {
+        "canvas": "1006194",
+        "label": "67r",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006194",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006194",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006194/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006195",
+        "label": "67v",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006195",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006195",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006195/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006196",
+        "label": "68r",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006196",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006196",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006196/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006197",
+        "label": "68v",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006197",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006197",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006197/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006199",
+        "label": "69v and 70r",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006199",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006199",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006199/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006200",
+        "label": "70v (part)",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006200",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006200",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006201",
+        "label": "70v (part)",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006201",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006201",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006201/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006203",
+        "label": "71v and 72r",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006203",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006203",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006204",
+        "label": "72v (part)",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006204",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006204",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006205",
+        "label": "72v (part)",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006205",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006205",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006228",
+        "label": "85r (part) (part of 85-86 foldout)",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006228",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006228",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006228/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006229",
+        "label": "85r (part) 86v (part) (part of 85-86 foldout)",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006229",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006229",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006229/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006230",
+        "label": "86v (part) (part of 85-86 foldout)",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006230",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006230",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006230/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006231",
+        "label": "85v and 86r (foldout)",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006231",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006231",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006231/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006233",
+        "label": "88v and 89r",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006233",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006233",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006233/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006234",
+        "label": "89v (part)",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006234",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006234",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006234/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006235",
+        "label": "89v (part) and 90r",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006235",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006235",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006235/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006236",
+        "label": "90r",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006236",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006236",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006236/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006237",
+        "label": "90v (part)",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006237",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006237",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006237/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006241",
+        "label": "94v and 95r",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006241",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006241",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006241/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006242",
+        "label": "95v (part)",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006242",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006242",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006242/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006243",
+        "label": "95v",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006243",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006243",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006243/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006249",
+        "label": "100v and 101r",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006249",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006249",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006249/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006250",
+        "label": "101v (part)",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006250",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006250",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006250/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006251",
+        "label": "101v (part) and 102r",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006251",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006251",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006251/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006252",
+        "label": "102v (part)",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006252",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006252",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006252/full/full/0/default.jpg"
+      },
+      {
+        "canvas": "1006253",
+        "label": "102v (part)",
+        "manifest_canvas_url": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006253",
+        "catalog_url": "https://collections.library.yale.edu/catalog/2002046?child_oid=1006253",
+        "iiif_full_image": "https://collections.library.yale.edu/iiif/2/1006253/full/full/0/default.jpg"
+      }
+    ]
+  },
+  "physical_components": [
+    {
+      "folios": [
+        67,
+        68
+      ],
+      "representative_numeric_folio": 67,
+      "structure": "one bifolio; both folios fold out",
+      "foldout_panels": {
+        "67": 2,
+        "68": 3
+      },
+      "confidence": "high",
+      "status": "supported",
+      "source_refs": [
+        "rz_quire_09",
+        "rz_origin",
+        "yale_iiif_manifest_2002046"
+      ],
+      "source_observation": "The Quire 9 description states one bifolio composed of 67 and 68. The schema shows the foldout panels.",
+      "ivtff_key": {
+        "Q": "I",
+        "quire_number": 9,
+        "B": "1"
+      },
+      "source_header_counts": {
+        "IT2a-n.txt": 10,
+        "ZL3b-n.txt": 10
+      },
+      "source_locus_counts": {
+        "IT2a-n.txt": 279,
+        "ZL3b-n.txt": 281
+      }
+    },
+    {
+      "folios": [
+        69,
+        70
+      ],
+      "representative_numeric_folio": 69,
+      "structure": "one bifolio; f70 foldout",
+      "confidence": "high",
+      "status": "supported",
+      "source_refs": [
+        "rz_quire_10",
+        "yale_iiif_manifest_2002046"
+      ],
+      "source_observation": "The Quire 10 description states one bifolio composed of 69 and 70.",
+      "ivtff_key": {
+        "Q": "J",
+        "quire_number": 10,
+        "B": "1"
+      },
+      "source_header_counts": {
+        "IT2a-n.txt": 6,
+        "ZL3b-n.txt": 6
+      },
+      "source_locus_counts": {
+        "IT2a-n.txt": 168,
+        "ZL3b-n.txt": 168
+      }
+    },
+    {
+      "folios": [
+        71,
+        72
+      ],
+      "representative_numeric_folio": 71,
+      "structure": "one bifolio; f72 triple foldout",
+      "confidence": "high",
+      "status": "supported",
+      "source_refs": [
+        "rz_quire_11",
+        "yale_iiif_manifest_2002046"
+      ],
+      "source_observation": "The Quire 11 description states one bifolio composed of 71 and 72.",
+      "ivtff_key": {
+        "Q": "K",
+        "quire_number": 11,
+        "B": "1"
+      },
+      "source_header_counts": {
+        "IT2a-n.txt": 8,
+        "ZL3b-n.txt": 8
+      },
+      "source_locus_counts": {
+        "IT2a-n.txt": 219,
+        "ZL3b-n.txt": 219
+      }
+    },
+    {
+      "folios": [
+        85,
+        86
+      ],
+      "representative_numeric_folio": 85,
+      "structure": "one bifolio with one horizontal and two vertical folds; six panels",
+      "confidence": "high",
+      "status": "supported",
+      "source_refs": [
+        "yale_catalog_ms408",
+        "rz_quire_14",
+        "rz_ivtff",
+        "yale_iiif_manifest_2002046"
+      ],
+      "source_observation": "Yale calls 85r-86v one sextuple-folio folding leaf. The IVTFF record describes one six-panel bifolio with fRos across f85v and f86r.",
+      "aliases": {
+        "fRos": "85/86 composite page"
+      },
+      "ivtff_key": {
+        "Q": "N",
+        "quire_number": 14,
+        "B": "1"
+      },
+      "source_header_counts": {
+        "IT2a-n.txt": 6,
+        "ZL3b-n.txt": 7
+      },
+      "source_locus_counts": {
+        "IT2a-n.txt": 188,
+        "ZL3b-n.txt": 348
+      }
+    },
+    {
+      "folios": [
+        87,
+        90
+      ],
+      "representative_numeric_folio": 87,
+      "structure": "one bifolio; f90 foldout",
+      "confidence": "high",
+      "status": "supported_from_schema",
+      "source_refs": [
+        "rz_quire_15",
+        "yale_iiif_manifest_2002046"
+      ],
+      "source_observation": "The Quire 15 schema connects f87 to the f90 foldout. The Yale f89v/f90r composite is a facing image, not a sheet identifier.",
+      "ivtff_key": {
+        "Q": "O",
+        "quire_number": 15,
+        "B": "1"
+      },
+      "source_header_counts": {
+        "IT2a-n.txt": 6,
+        "ZL3b-n.txt": 6
+      },
+      "source_locus_counts": {
+        "IT2a-n.txt": 66,
+        "ZL3b-n.txt": 66
+      }
+    },
+    {
+      "folios": [
+        88,
+        89
+      ],
+      "representative_numeric_folio": 88,
+      "structure": "one bifolio; f89 foldout",
+      "confidence": "high",
+      "status": "supported_from_schema",
+      "source_refs": [
+        "rz_quire_15",
+        "yale_iiif_manifest_2002046"
+      ],
+      "source_observation": "The Quire 15 schema connects f88 to the f89 foldout. Yale canvas 1006233 shows 88v and 89r on this bifolio side.",
+      "ivtff_key": {
+        "Q": "O",
+        "quire_number": 15,
+        "B": "2"
+      },
+      "source_header_counts": {
+        "IT2a-n.txt": 6,
+        "ZL3b-n.txt": 6
+      },
+      "source_locus_counts": {
+        "IT2a-n.txt": 174,
+        "ZL3b-n.txt": 173
+      }
+    },
+    {
+      "folios": [
+        93,
+        96
+      ],
+      "representative_numeric_folio": 93,
+      "structure": "one bifolio",
+      "confidence": "high",
+      "status": "supported_from_schema",
+      "source_refs": [
+        "rz_quire_17"
+      ],
+      "source_observation": "The Quire 17 schema connects f93 to f96.",
+      "ivtff_key": {
+        "Q": "Q",
+        "quire_number": 17,
+        "B": "1"
+      },
+      "source_header_counts": {
+        "IT2a-n.txt": 4,
+        "ZL3b-n.txt": 4
+      },
+      "source_locus_counts": {
+        "IT2a-n.txt": 68,
+        "ZL3b-n.txt": 68
+      }
+    },
+    {
+      "folios": [
+        94,
+        95
+      ],
+      "representative_numeric_folio": 94,
+      "structure": "one bifolio; f95 foldout",
+      "confidence": "high",
+      "status": "supported_from_schema",
+      "source_refs": [
+        "rz_quire_17",
+        "yale_iiif_manifest_2002046"
+      ],
+      "source_observation": "The Quire 17 schema connects f94 to the f95 foldout. Yale canvas 1006241 is labelled 94v and 95r.",
+      "ivtff_key": {
+        "Q": "Q",
+        "quire_number": 17,
+        "B": "2"
+      },
+      "source_header_counts": {
+        "IT2a-n.txt": 6,
+        "ZL3b-n.txt": 6
+      },
+      "source_locus_counts": {
+        "IT2a-n.txt": 61,
+        "ZL3b-n.txt": 61
+      }
+    },
+    {
+      "folios": [
+        99,
+        102
+      ],
+      "representative_numeric_folio": 99,
+      "structure": "one bifolio; f102 foldout",
+      "confidence": "high",
+      "status": "supported_from_schema",
+      "source_refs": [
+        "rz_quire_19",
+        "yale_iiif_manifest_2002046"
+      ],
+      "source_observation": "The Quire 19 schema connects f99 to the f102 foldout. Yale canvas 1006251 is a facing image across two bifolios.",
+      "ivtff_key": {
+        "Q": "S",
+        "quire_number": 19,
+        "B": "1"
+      },
+      "source_header_counts": {
+        "IT2a-n.txt": 6,
+        "ZL3b-n.txt": 6
+      },
+      "source_locus_counts": {
+        "IT2a-n.txt": 195,
+        "ZL3b-n.txt": 198
+      }
+    },
+    {
+      "folios": [
+        100,
+        101
+      ],
+      "representative_numeric_folio": 100,
+      "structure": "one bifolio; f101 has a fold and one design on each side crosses it",
+      "confidence": "high",
+      "status": "supported_from_schema",
+      "source_refs": [
+        "rz_quire_19",
+        "yale_iiif_manifest_2002046"
+      ],
+      "source_observation": "The Quire 19 schema connects f100 to f101. The Quire 19 page says f101 text crosses its fold. Yale canvas 1006249 is labelled 100v and 101r.",
+      "ivtff_key": {
+        "Q": "S",
+        "quire_number": 19,
+        "B": "2"
+      },
+      "source_header_counts": {
+        "IT2a-n.txt": 4,
+        "ZL3b-n.txt": 4
+      },
+      "source_locus_counts": {
+        "IT2a-n.txt": 87,
+        "ZL3b-n.txt": 87
+      }
+    }
+  ],
+  "canvas_relations": [
+    {
+      "captured_folios": [
+        69,
+        70
+      ],
+      "canvas": "1006199",
+      "yale_label": "69v and 70r",
+      "physical_interpretation": "same side of the supported 69/70 bifolio",
+      "source_refs": [
+        "yale_iiif_manifest_2002046",
+        "rz_quire_10"
+      ]
+    },
+    {
+      "captured_folios": [
+        71,
+        72
+      ],
+      "canvas": "1006203",
+      "yale_label": "71v and 72r",
+      "physical_interpretation": "same side of the supported 71/72 bifolio",
+      "source_refs": [
+        "yale_iiif_manifest_2002046",
+        "rz_quire_11"
+      ]
+    },
+    {
+      "captured_folios": [
+        85,
+        86
+      ],
+      "canvas": "1006231",
+      "yale_label": "85v and 86r (foldout)",
+      "physical_interpretation": "one six-panel folded bifolio; part of fRos",
+      "source_refs": [
+        "yale_iiif_manifest_2002046",
+        "yale_catalog_ms408",
+        "rz_ivtff"
+      ]
+    },
+    {
+      "captured_folios": [
+        88,
+        89
+      ],
+      "canvas": "1006233",
+      "yale_label": "88v and 89r",
+      "physical_interpretation": "same side of the 88/89 bifolio",
+      "source_refs": [
+        "yale_iiif_manifest_2002046",
+        "rz_quire_15"
+      ]
+    },
+    {
+      "captured_folios": [
+        89,
+        90
+      ],
+      "canvas": "1006235",
+      "yale_label": "89v (part) and 90r",
+      "physical_interpretation": "opened facing image across the 88/89 and 87/90 bifolios; not one sheet",
+      "source_refs": [
+        "yale_iiif_manifest_2002046",
+        "rz_quire_15"
+      ]
+    },
+    {
+      "captured_folios": [
+        94,
+        95
+      ],
+      "canvas": "1006241",
+      "yale_label": "94v and 95r",
+      "physical_interpretation": "same side of the 94/95 bifolio",
+      "source_refs": [
+        "yale_iiif_manifest_2002046",
+        "rz_quire_17"
+      ]
+    },
+    {
+      "captured_folios": [
+        100,
+        101
+      ],
+      "canvas": "1006249",
+      "yale_label": "100v and 101r",
+      "physical_interpretation": "same side of the 100/101 bifolio",
+      "source_refs": [
+        "yale_iiif_manifest_2002046",
+        "rz_quire_19"
+      ]
+    },
+    {
+      "captured_folios": [
+        101,
+        102
+      ],
+      "canvas": "1006251",
+      "yale_label": "101v (part) and 102r",
+      "physical_interpretation": "opened facing image across the 100/101 and 99/102 bifolios; not one sheet",
+      "source_refs": [
+        "yale_iiif_manifest_2002046",
+        "rz_quire_19"
+      ]
+    }
+  ],
+  "corrections_to_conservative_candidates": [
+    {
+      "existing_candidate": [
+        88,
+        89,
+        90
+      ],
+      "exact_components": [
+        [
+          88,
+          89
+        ],
+        [
+          87,
+          90
+        ]
+      ],
+      "action": "split_for_physical_map",
+      "reason": "Quire 15 schema shows two bifolios. Canvas 1006235 crosses them."
+    },
+    {
+      "existing_candidate": [
+        100,
+        101,
+        102
+      ],
+      "exact_components": [
+        [
+          100,
+          101
+        ],
+        [
+          99,
+          102
+        ]
+      ],
+      "action": "split_for_physical_map",
+      "reason": "Quire 19 schema shows two bifolios. Canvas 1006251 crosses them."
+    },
+    {
+      "existing_candidate": null,
+      "exact_components": [
+        [
+          67,
+          68
+        ],
+        [
+          93,
+          96
+        ]
+      ],
+      "action": "add_supported_components",
+      "reason": "The scoped source schemata support these additional conjugate-leaf unions."
+    }
+  ],
+  "exact_numeric_components_for_scope": [
+    [
+      67,
+      68
+    ],
+    [
+      69,
+      70
+    ],
+    [
+      71,
+      72
+    ],
+    [
+      85,
+      86
+    ],
+    [
+      87,
+      90
+    ],
+    [
+      88,
+      89
+    ],
+    [
+      93,
+      96
+    ],
+    [
+      94,
+      95
+    ],
+    [
+      99,
+      102
+    ],
+    [
+      100,
+      101
+    ]
+  ],
+  "aliases": {
+    "fRos": {
+      "maps_to_components": [
+        [
+          85,
+          86
+        ]
+      ],
+      "meaning": "A composite page name for the Rosettes drawing across f85v and f86r.",
+      "source_refs": [
+        "rz_ivtff",
+        "rz_quire_14",
+        "yale_iiif_manifest_2002046"
+      ]
+    }
+  },
+  "bounded_unknowns": [
+    "This audit does not map every normal bifolio outside the scoped foldout ranges.",
+    "The Yale catalog gives quire-level folding counts but warns that foldout foliation is not always consistent.",
+    "A Yale composite canvas is an opened capture. It is not a physical-leaf identifier.",
+    "The exact physical map should not be extended from numeric adjacency or image width alone.",
+    "A panel or drawing resemblance does not provide a reading of the manuscript text."
+  ],
+  "next_manual_check": "Mark binding edges, fold creases, folio numbers, and panel boundaries on full-resolution Yale images. Then assert that no exact component crosses a split partition.",
+  "ivtff_bifolio_metadata": {
+    "specification": {
+      "source_ref": "rz_ivtff",
+      "url": "https://voynich.nu/software/ivtt/IVTFF_format.pdf",
+      "section": "6.3, Table 6",
+      "definitions": {
+        "$Q": "Quire number, encoded A-T for quire numbers 1-20; P (16) and R (18) are unused.",
+        "$B": "Bifolio number within quire. Counted outside to inside."
+      },
+      "key_rule": "For a source page header, (Q,B) is the bifolio key within the manuscript quire.",
+      "page_numbering": "one-based",
+      "pages": [
+        19,
+        20
+      ]
+    },
+    "source_files": [
+      {
+        "path": "data/raw/IT2a-n.txt",
+        "version": "2a",
+        "format_header": "#=IVTFF EvaT 2.0 M 3",
+        "page_headers_checked": 62,
+        "unique_page_names_checked": 62,
+        "numeric_folios_checked": 20,
+        "selected_locus_records_checked": 1505,
+        "source_q_groups_total": 18,
+        "source_qb_groups_total": 52,
+        "missing_scope_folios": [],
+        "missing_qb_metadata": 0,
+        "qb_mismatch_components": 0,
+        "fRos_headers": 0
+      },
+      {
+        "path": "data/raw/ZL3b-n.txt",
+        "version": "3b",
+        "format_header": "#=IVTFF Eva- 2.0 M 5",
+        "page_headers_checked": 63,
+        "unique_page_names_checked": 63,
+        "numeric_folios_checked": 20,
+        "selected_locus_records_checked": 1669,
+        "source_q_groups_total": 18,
+        "source_qb_groups_total": 52,
+        "missing_scope_folios": [],
+        "missing_qb_metadata": 0,
+        "qb_mismatch_components": 0,
+        "fRos_headers": 1,
+        "fRos_key": {
+          "Q": "N",
+          "B": "1"
+        }
+      }
+    ],
+    "component_coverage": {
+      "audited_components": 10,
+      "numeric_folios_expected": 20,
+      "numeric_folios_present_in_each_source": 20,
+      "components_matching_qb_in_each_source": 10,
+      "components_with_qb_mismatch": 0,
+      "components_with_missing_metadata": 0,
+      "selected_page_headers": {
+        "IT2a-n.txt": 62,
+        "ZL3b-n.txt": 63
+      },
+      "selected_locus_records": {
+        "IT2a-n.txt": 1505,
+        "ZL3b-n.txt": 1669
+      }
+    },
+    "q_only_fallback": {
+      "source_q_groups_total": 18,
+      "source_qb_groups_total": 52,
+      "all_audited_components_contained_by_one_q_group": true,
+      "overmerged_q_groups_in_scope": [
+        {
+          "Q": "O",
+          "quire_number": 15,
+          "components": [
+            [
+              87,
+              90
+            ],
+            [
+              88,
+              89
+            ]
+          ]
+        },
+        {
+          "Q": "Q",
+          "quire_number": 17,
+          "components": [
+            [
+              93,
+              96
+            ],
+            [
+              94,
+              95
+            ]
+          ]
+        },
+        {
+          "Q": "S",
+          "quire_number": 19,
+          "components": [
+            [
+              99,
+              102
+            ],
+            [
+              100,
+              101
+            ]
+          ]
+        }
+      ],
+      "status": "conservative_fallback_only"
+    },
+    "header_line_examples": [
+      {
+        "folios": [
+          67,
+          68
+        ],
+        "source": "data/raw/ZL3b-n.txt",
+        "line": 2815,
+        "page": "f67r1",
+        "Q": "I",
+        "B": "1"
+      },
+      {
+        "folios": [
+          69,
+          70
+        ],
+        "source": "data/raw/ZL3b-n.txt",
+        "line": 3283,
+        "page": "f69r",
+        "Q": "J",
+        "B": "1"
+      },
+      {
+        "folios": [
+          71,
+          72
+        ],
+        "source": "data/raw/ZL3b-n.txt",
+        "line": 3544,
+        "page": "f71r",
+        "Q": "K",
+        "B": "1"
+      },
+      {
+        "folios": [
+          85,
+          86
+        ],
+        "source": "data/raw/ZL3b-n.txt",
+        "line": 5161,
+        "page": "f85r1",
+        "Q": "N",
+        "B": "1"
+      },
+      {
+        "folios": [
+          85,
+          86
+        ],
+        "source": "data/raw/ZL3b-n.txt",
+        "line": 5253,
+        "page": "fRos",
+        "Q": "N",
+        "B": "1"
+      },
+      {
+        "folios": [
+          87,
+          90
+        ],
+        "source": "data/raw/ZL3b-n.txt",
+        "line": 5638,
+        "page": "f87r",
+        "Q": "O",
+        "B": "1"
+      },
+      {
+        "folios": [
+          88,
+          89
+        ],
+        "source": "data/raw/ZL3b-n.txt",
+        "line": 5687,
+        "page": "f88r",
+        "Q": "O",
+        "B": "2"
+      },
+      {
+        "folios": [
+          93,
+          96
+        ],
+        "source": "data/raw/ZL3b-n.txt",
+        "line": 6015,
+        "page": "f93r",
+        "Q": "Q",
+        "B": "1"
+      },
+      {
+        "folios": [
+          94,
+          95
+        ],
+        "source": "data/raw/ZL3b-n.txt",
+        "line": 6072,
+        "page": "f94r",
+        "Q": "Q",
+        "B": "2"
+      },
+      {
+        "folios": [
+          99,
+          102
+        ],
+        "source": "data/raw/ZL3b-n.txt",
+        "line": 6232,
+        "page": "f99r",
+        "Q": "S",
+        "B": "1"
+      },
+      {
+        "folios": [
+          100,
+          101
+        ],
+        "source": "data/raw/ZL3b-n.txt",
+        "line": 6366,
+        "page": "f100r",
+        "Q": "S",
+        "B": "2"
+      }
+    ],
+    "manifest_note": "The complete metadata-only Q/B map is in data/bifolio_manifest.json. It contains 52 provider Q/B groups and 227 ZL3b page headers."
+  },
+  "full_bifolio_manifest": "data/bifolio_manifest.json"
+}

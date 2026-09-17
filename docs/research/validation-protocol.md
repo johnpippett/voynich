@@ -2,6 +2,11 @@
 
 Status: predeclared research protocol, version 1.0, 2026-09-16.
 
+Stage 2 note: the protocol below preserves the original proposal and first-stage implementation status.
+Its provisional grouping is historical. The current implementation uses 52 source Q/B groups.
+See the [Stage 2 methods](stage2-methods.md) and [results](../../reports/STAGE2.md).
+The proposed confirmation gates below remain unmet. The pilot does not claim to implement all of them.
+
 This protocol tests proposed readings of the Voynich manuscript. It separates
 exploration from confirmation. It treats a reading as a model that must predict
 text that the researcher did not use during development.

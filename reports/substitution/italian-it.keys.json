@@ -1,0 +1,49 @@
+{
+  "keys": {
+    "observed": {
+      "a": "a",
+      "c": "b",
+      "d": "s",
+      "e": "l",
+      "f": "v",
+      "g": "z",
+      "h": "u",
+      "i": "t",
+      "k": "m",
+      "l": "r",
+      "m": "h",
+      "n": "i",
+      "o": "o",
+      "p": "f",
+      "q": "c",
+      "r": "n",
+      "s": "p",
+      "t": "d",
+      "x": "q",
+      "y": "e"
+    },
+    "within_word_shuffle": {
+      "a": "o",
+      "c": "p",
+      "d": "n",
+      "e": "r",
+      "f": "z",
+      "g": "h",
+      "h": "e",
+      "i": "u",
+      "k": "d",
+      "l": "l",
+      "m": "v",
+      "n": "b",
+      "o": "a",
+      "p": "g",
+      "q": "c",
+      "r": "s",
+      "s": "t",
+      "t": "m",
+      "x": "x",
+      "y": "i"
+    }
+  },
+  "selection": "Lowest training objective only; no validation or test key selection."
+}

@@ -1,0 +1,93 @@
+{
+  "code_sha256": {
+    "scripts/check_naibbe_compatibility.py": "a11b94b9989dc1303022bfd0c520a22d019b7c8af9044d77456049c8c0331760",
+    "src/voynich/corpus.py": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+    "src/voynich/naibbe.py": "6c3dc144c4222bd6443167674f89a19927205faaf9c2fde48c99fcc54b043188"
+  },
+  "controlled_example": {
+    "candidate_counts": [
+      1,
+      1
+    ],
+    "config": {
+      "collision_policy": "unigram",
+      "deck_size": 52,
+      "max_retries": 10000,
+      "normalize": true,
+      "respacing_denominator": 36,
+      "respacing_numerator": 17,
+      "weights": {
+        "alpha": 20,
+        "beta1": 8,
+        "beta2": 8,
+        "beta3": 8,
+        "gamma1": 4,
+        "gamma2": 4
+      }
+    },
+    "plaintext": "arma",
+    "seed": 0,
+    "tokens": [
+      "olcheedy",
+      "aiiined"
+    ],
+    "units": [
+      "ar",
+      "ma"
+    ]
+  },
+  "limits": [
+    "The table file is a fixed published artifact. This run does not fit it to VMS tokens.",
+    "The published tables used Voynich features during construction. Compatibility is not independent evidence of a historical cipher.",
+    "Counts test token compatibility. They do not select a plaintext language or prove a cipher.",
+    "Candidate counts retain table choices. No language model ranks or removes candidates.",
+    "The forward control does not simulate output space-removal joins."
+  ],
+  "manifest_sha256": "532a1db80d170437cb190a0220791ad5c241ca184d9a27da7672cb73c25418ea",
+  "sources": {
+    "IT2a": {
+      "candidate_ambiguous_token_count": 14733,
+      "candidate_ambiguous_type_count": 185,
+      "excluded_token_count": 160,
+      "latent_table_ambiguous_token_count": 318,
+      "max_candidate_count": 4,
+      "mean_candidate_count": 1.2387245424931805,
+      "no_parse_token_count": 7964,
+      "no_parse_type_count": 5054,
+      "parseable_token_count": 29795,
+      "parseable_type_count": 2972,
+      "plaintext_ambiguous_token_count": 14733,
+      "record_count": 5215,
+      "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "token_count": 37759,
+      "type_count": 8026,
+      "uncertain_spaces": "join"
+    },
+    "ZL3b": {
+      "candidate_ambiguous_token_count": 13193,
+      "candidate_ambiguous_type_count": 182,
+      "excluded_token_count": 1132,
+      "latent_table_ambiguous_token_count": 276,
+      "max_candidate_count": 4,
+      "mean_candidate_count": 1.1805610880327775,
+      "no_parse_token_count": 8777,
+      "no_parse_type_count": 5884,
+      "parseable_token_count": 26369,
+      "parseable_type_count": 2839,
+      "plaintext_ambiguous_token_count": 13193,
+      "record_count": 5385,
+      "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "token_count": 35146,
+      "type_count": 8723,
+      "uncertain_spaces": "join"
+    }
+  },
+  "status": "fixed_table_compatibility_only",
+  "table": {
+    "alphabet_size": 23,
+    "bigram_catalog_size": 18935,
+    "path": "data/raw/naibbe/naibbe-cipher/references/naibbe_tables.csv",
+    "row_count": 414,
+    "sha256": "4e7cfd54b7ec66515d39a51e11ec97e8e19b643b0b189124eebc3982e707dcec"
+  }
+}

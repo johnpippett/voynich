@@ -1,13 +1,16 @@
 {
-  "schema_version": "1.0",
-  "status": "predeclared",
+  "schema_version": "1.1",
+  "status": "model_families_with_exploratory_stage2_status",
   "date": "2026-09-16",
   "stage": "future_confirmatory_decoder",
   "scope": "Competing explanations for the Voynich manuscript text. These are testable model families, not claims that a family is true.",
   "general_rules": {
-    "primary_inputs": ["ZL EVA IVTFF", "IT EVA IVTFF"],
-    "split_unit": "Future confirmatory split: physical leaf or complete folded-leaf group. Current exploratory split: canonical folio_group.",
-    "required_split": "Held-out physical-group manifest with exact assignments recorded. The current exploratory split uses canonical folio_group keys and is approximately 70/10/20 for train, validation, and test.",
+    "primary_inputs": [
+      "ZL EVA IVTFF",
+      "IT EVA IVTFF"
+    ],
+    "split_unit": "Current exploratory split: source Q/B bifolio group, with the minimum numeric folio as its key.",
+    "required_split": "Record exact physical group assignments. The current provider map has 52 groups: 35 train, 4 validation, and 13 test. Eligible paragraph models use 50 groups.",
     "test_use": "The test partition is evaluated once after model and exception rules are frozen.",
     "minimum_evidence": [
       "held-out prediction",
@@ -17,20 +20,13 @@
       "independent reproduction"
     ],
     "interpretive_limit": "Failure to decode does not prove that the manuscript lacks meaning. Regularity does not prove a language.",
-    "current_stage": "Exploratory structural tests only. The current parser handles basic EVA with strict rejection and the split and join spacing policies. It does not implement the other uncertainty modes, character spans, foldout grouping, or a decoder. It does not decode a language or produce a translation.",
-    "current_folio_group_unions": [
-      "69/70",
-      "71/72",
-      "85/86",
-      "88/89/90",
-      "94/95",
-      "100/101/102"
-    ],
-    "folio_group_version": "conservative-foldout-groups-v2",
+    "current_stage": "Exploratory structural tests, fixed raw-EVA substitution searches, and fixed Naibbe table compatibility. No validated key, plaintext language, or translation.",
+    "current_folio_group_unions": "See data/bifolio_manifest.json for all 52 Q/B groups.",
+    "folio_group_version": "ivtff-bifolio-metadata-v3",
     "folio_group_aliases": {
       "fRos": "85"
     },
-    "folio_group_limit": "These conservative unions keep candidate cross-number relations together. The 85/86 union has direct Yale support. The mapping does not identify every physical sheet.",
+    "folio_group_limit": "Complete provider Q/B metadata coverage. Independent conservation verification remains outstanding. These manuscript data have been inspected before.",
     "character_null": "The raw-EVA null shuffles code points within each token. The grouped null shuffles declared grouped units and keeps each unit's internal order."
   },
   "proposed_solution_gates": [
@@ -64,8 +60,18 @@
         "The method fails on a planted substitution control.",
         "The apparent gain disappears under transcript or uncertainty changes."
       ],
-      "required_experiments": ["E1", "E2", "E3", "E4"],
-      "required_nulls": ["N1", "N2", "N5", "N6"]
+      "required_experiments": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "required_nulls": [
+        "N1",
+        "N2",
+        "N5",
+        "N6"
+      ]
     },
     {
       "id": "H2",
@@ -89,8 +95,18 @@
         "No stable positional roles remain after group-preserving null tests.",
         "The method cannot recover a planted syllabic control."
       ],
-      "required_experiments": ["E1", "E2", "E3", "E4"],
-      "required_nulls": ["N1", "N2", "N5", "N6"]
+      "required_experiments": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "required_nulls": [
+        "N1",
+        "N2",
+        "N5",
+        "N6"
+      ]
     },
     {
       "id": "H3",
@@ -116,8 +132,18 @@
         "A language-model score improves without stable mapping or morphology.",
         "The method fails on its planted control but produces a result for the manuscript."
       ],
-      "required_experiments": ["E1", "E2", "E3", "E4"],
-      "required_nulls": ["N1", "N2", "N5", "N6"],
+      "required_experiments": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "required_nulls": [
+        "N1",
+        "N2",
+        "N5",
+        "N6"
+      ],
       "historic_language_rule": "A candidate language must have independent evidence for the manuscript period and setting. Plausible output alone is not evidence."
     },
     {
@@ -142,8 +168,17 @@
         "The generator uses a growing exception list or memorizes physical groups.",
         "Matched surrogates fail to reproduce the claimed structural result."
       ],
-      "required_experiments": ["E1", "E2", "E3", "E4"],
-      "required_nulls": ["N1", "N2", "N6"],
+      "required_experiments": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "required_nulls": [
+        "N1",
+        "N2",
+        "N6"
+      ],
       "interpretive_limit": "Support for this family does not prove that the manuscript has no meaning. It only shows that a nonsemantic or procedural model remains competitive."
     }
   ],
@@ -151,38 +186,77 @@
     {
       "id": "N1",
       "name": "within-group word-order shuffle",
-      "preserves": ["physical-group sizes", "word counts", "token frequencies", "token lengths"],
-      "destroys": ["word order", "long-range sequence structure"]
+      "preserves": [
+        "physical-group sizes",
+        "word counts",
+        "token frequencies",
+        "token lengths"
+      ],
+      "destroys": [
+        "word order",
+        "long-range sequence structure"
+      ]
     },
     {
       "id": "N2",
       "name": "within-token character-order shuffle",
-      "preserves": ["character multiset per token", "token length"],
-      "destroys": ["within-token order"]
+      "preserves": [
+        "character multiset per token",
+        "token length"
+      ],
+      "destroys": [
+        "within-token order"
+      ]
     },
     {
       "id": "N3",
       "name": "physical-group section-label shuffle",
-      "preserves": ["section-label counts"],
-      "destroys": ["group-to-section association"]
+      "preserves": [
+        "section-label counts"
+      ],
+      "destroys": [
+        "group-to-section association"
+      ]
     },
     {
       "id": "N4",
       "name": "cross-transcript pairing shuffle",
-      "preserves": ["ZL group counts", "IT group counts", "locus counts"],
-      "destroys": ["true ZL-IT locus pairing"]
+      "preserves": [
+        "ZL group counts",
+        "IT group counts",
+        "locus counts"
+      ],
+      "destroys": [
+        "true ZL-IT locus pairing"
+      ]
     },
     {
       "id": "N5",
       "name": "planted known-language cipher",
-      "preserves": ["declared cipher family", "known source language"],
-      "tests": ["recovery power", "false-negative rate", "exception accounting"]
+      "preserves": [
+        "declared cipher family",
+        "known source language"
+      ],
+      "tests": [
+        "recovery power",
+        "false-negative rate",
+        "exception accounting"
+      ]
     },
     {
       "id": "N6",
       "name": "matched generative surrogate",
-      "preserves": ["group sizes", "word lengths", "character frequencies", "declared low-order transitions"],
-      "destroys": ["source-language lexicon", "source-language semantics"]
+      "preserves": [
+        "group sizes",
+        "word lengths",
+        "character frequencies",
+        "declared low-order transitions"
+      ],
+      "destroys": [
+        "source-language lexicon",
+        "source-language semantics"
+      ]
     }
-  ]
+  ],
+  "historical_registry": "docs/research/hypotheses-v1.json"
 }

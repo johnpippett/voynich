@@ -55,3 +55,39 @@ operation. Code, identifiers, URLs, and JSON keys remain literal.
   objective and the requirements for the next stage.
 
 No result values or result links were added during this review.
+
+## Stage 2 scope
+
+This review also covers [stage2-methods.md](stage2-methods.md). It applies the
+same selected Issue 9 rules and dictionary checks to the reference-corpus
+partition wording, the raw-EVA substitution method, the planted-control
+limits, and the source-backed Q/B grouping description.
+
+The review confirms that the document separates the implemented pilot from
+the future proposal. It records the completed calibration batches, states
+that they use multiple keys on the same text, gives no false-positive estimate,
+and reports no result values or Voynich solution claim.
+
+## Generated Stage 2 report
+
+This review also covers [STAGE2.md](../../reports/STAGE2.md) and
+[build_stage2_summary.py](../../scripts/build_stage2_summary.py). It applies
+the same Issue 9 rules and dictionary checks to the aggregate result prose.
+
+The report separates 52 global groups from the 50 paragraph groups used by
+the prediction models. It reports the word bootstrap intervals and the
+32-key controls. It states the one-symbol partial-key limit and the lack of a
+false-positive estimate.
+
+The report labels Naibbe counts as fixed-table compatibility. It records the
+circular table construction, candidate ambiguity, and no unique plaintext.
+It preserves code, identifiers, paths, URLs, and result values.
+
+## Primary-agent publication review
+
+The primary agent reviewed the README, status, report generator, and final Stage 2 report.
+The review used Issue 9 word rules, sentence limits, and descriptive-writing rules.
+Technical terms retain their cryptanalysis, statistics, and software meanings.
+The report now defines candidate ambiguity, omitted-word counts, and score denominators.
+It also gives complete commands for the known-cipher and manuscript searches.
+The historical documents and current methods have separate status notes.

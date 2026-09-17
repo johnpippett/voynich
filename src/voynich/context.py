@@ -72,7 +72,7 @@ class _Model:
 
 
 def _group_id(record: dict) -> str:
-    """Return the conservative folio group for one record."""
+    """Return the source-backed bifolio group for one record."""
 
     return group_id(record.get("folio", ""))
 
@@ -101,7 +101,7 @@ def _record_token_count(record: dict) -> int:
 
 
 def _manifest(records: list[dict]) -> tuple[dict, dict[str, str]]:
-    """Build the conservative folio-group manifest and split map."""
+    """Build the source-backed bifolio-group manifest and split map."""
 
     group_rows: dict[str, dict[str, object]] = {}
     split_records: dict[str, list[int]] = {split: [] for split in _SPLITS}
@@ -126,7 +126,7 @@ def _manifest(records: list[dict]) -> tuple[dict, dict[str, str]]:
     manifest: dict[str, object] = {
         "grouping_config": dict(_GROUPING_CONFIG),
         "hash_prefix": _SPLIT_HASH_PREFIX,
-        "rule": "conservative folio group; bucket 0/1=test, 2=validation, 3..9=train",
+        "rule": "source-backed bifolio group; bucket 0/1=test, 2=validation, 3..9=train",
     }
     for split in _SPLITS:
         groups = [
@@ -637,7 +637,7 @@ def run_context(records: list[dict], seed: int = 408, bootstraps: int = 499) -> 
             "bootstraps": bootstraps,
             "grouping_config": dict(_GROUPING_CONFIG),
             "split_hash_prefix": _SPLIT_HASH_PREFIX,
-            "split_rule": "conservative folio group; bucket 0/1=test, 2=validation, 3..9=train",
+            "split_rule": "source-backed bifolio group; bucket 0/1=test, 2=validation, 3..9=train",
             "tau": _TAU,
             "bigram_tau": _TAU,
             "add_alpha": _ADD_ALPHA,
@@ -666,6 +666,6 @@ def run_context(records: list[dict], seed: int = 408, bootstraps: int = 499) -> 
             "It does not establish a language, meaning, authorship, or a translation. "
             "Conditioning on paragraph lines, tokenization, transcription choices, "
             "folio groups, and exclusion of diagram interruptions can confound "
-            "the order comparison; the conservative folio groups do not provide a complete codicology map."
+            "the order comparison. The Q/B map covers all provider pages but has no independent conservation verification."
         ),
     }

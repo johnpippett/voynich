@@ -1,0 +1,321 @@
+{
+  "status": "conditional_inventory_constraint_not_decipherment",
+  "plaintext_alphabet": "abcdefghijklmnopqrstuvwxyz",
+  "compound_units": [
+    "cth",
+    "ckh",
+    "cph",
+    "cfh",
+    "ch",
+    "sh",
+    "iin",
+    "in"
+  ],
+  "space_policy": "split",
+  "source_runs": {
+    "ZL3b-n.txt": {
+      "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "samples": {
+        "accepted_paragraph_tokens": {
+          "records": 4130,
+          "words": 34189,
+          "unitizations": {
+            "raw_eva": {
+              "alphabet_size": 25,
+              "unit_counts": {
+                "a": 12570,
+                "b": 13,
+                "c": 11981,
+                "d": 11647,
+                "e": 17736,
+                "f": 407,
+                "g": 95,
+                "h": 16259,
+                "i": 10830,
+                "j": 8,
+                "k": 9866,
+                "l": 9348,
+                "m": 900,
+                "n": 5733,
+                "o": 21875,
+                "p": 1464,
+                "q": 5250,
+                "r": 6367,
+                "s": 6341,
+                "t": 5899,
+                "u": 7,
+                "v": 1,
+                "x": 18,
+                "y": 15827,
+                "z": 3
+              },
+              "injective_map_to_ascii_lowercase_feasible": true
+            },
+            "grouped": {
+              "alphabet_size": 33,
+              "unit_counts": {
+                "a": 12570,
+                "b": 13,
+                "c": 86,
+                "cfh": 64,
+                "ch": 9922,
+                "ckh": 851,
+                "cph": 193,
+                "cth": 865,
+                "d": 11647,
+                "e": 17736,
+                "f": 343,
+                "g": 95,
+                "h": 176,
+                "i": 1243,
+                "iin": 3968,
+                "in": 1651,
+                "j": 8,
+                "k": 9015,
+                "l": 9348,
+                "m": 900,
+                "n": 114,
+                "o": 21875,
+                "p": 1271,
+                "q": 5250,
+                "r": 6367,
+                "s": 2153,
+                "sh": 4188,
+                "t": 5034,
+                "u": 7,
+                "v": 1,
+                "x": 18,
+                "y": 15827,
+                "z": 3
+              },
+              "injective_map_to_ascii_lowercase_feasible": false
+            }
+          }
+        },
+        "complete_uninterrupted_lines": {
+          "records": 2877,
+          "words": 23965,
+          "unitizations": {
+            "raw_eva": {
+              "alphabet_size": 25,
+              "unit_counts": {
+                "a": 9049,
+                "b": 6,
+                "c": 8179,
+                "d": 8154,
+                "e": 13208,
+                "f": 249,
+                "g": 47,
+                "h": 11221,
+                "i": 7711,
+                "j": 4,
+                "k": 7147,
+                "l": 6848,
+                "m": 621,
+                "n": 4073,
+                "o": 15288,
+                "p": 1041,
+                "q": 4019,
+                "r": 4419,
+                "s": 4419,
+                "t": 4112,
+                "u": 5,
+                "v": 1,
+                "x": 12,
+                "y": 11241,
+                "z": 1
+              },
+              "injective_map_to_ascii_lowercase_feasible": true
+            },
+            "grouped": {
+              "alphabet_size": 33,
+              "unit_counts": {
+                "a": 9049,
+                "b": 6,
+                "c": 36,
+                "cfh": 37,
+                "ch": 6826,
+                "ckh": 605,
+                "cph": 119,
+                "cth": 556,
+                "d": 8154,
+                "e": 13208,
+                "f": 212,
+                "g": 47,
+                "h": 121,
+                "i": 914,
+                "iin": 2786,
+                "in": 1225,
+                "j": 4,
+                "k": 6542,
+                "l": 6848,
+                "m": 621,
+                "n": 62,
+                "o": 15288,
+                "p": 922,
+                "q": 4019,
+                "r": 4419,
+                "s": 1462,
+                "sh": 2957,
+                "t": 3556,
+                "u": 5,
+                "v": 1,
+                "x": 12,
+                "y": 11241,
+                "z": 1
+              },
+              "injective_map_to_ascii_lowercase_feasible": false
+            }
+          }
+        }
+      }
+    },
+    "IT2a-n.txt": {
+      "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "samples": {
+        "accepted_paragraph_tokens": {
+          "records": 4118,
+          "words": 34411,
+          "unitizations": {
+            "raw_eva": {
+              "alphabet_size": 21,
+              "unit_counts": {
+                "a": 12723,
+                "c": 12324,
+                "d": 11891,
+                "e": 18107,
+                "f": 436,
+                "g": 74,
+                "h": 16633,
+                "i": 11015,
+                "k": 10055,
+                "l": 9478,
+                "m": 999,
+                "n": 5840,
+                "o": 22577,
+                "p": 1495,
+                "q": 5347,
+                "r": 6557,
+                "s": 6594,
+                "t": 6069,
+                "x": 25,
+                "y": 16081,
+                "z": 2
+              },
+              "injective_map_to_ascii_lowercase_feasible": true
+            },
+            "grouped": {
+              "alphabet_size": 29,
+              "unit_counts": {
+                "a": 12723,
+                "c": 119,
+                "cfh": 69,
+                "ch": 10143,
+                "ckh": 881,
+                "cph": 203,
+                "cth": 909,
+                "d": 11891,
+                "e": 18107,
+                "f": 367,
+                "g": 74,
+                "h": 170,
+                "i": 1315,
+                "iin": 3999,
+                "in": 1702,
+                "k": 9174,
+                "l": 9478,
+                "m": 999,
+                "n": 139,
+                "o": 22577,
+                "p": 1292,
+                "q": 5347,
+                "r": 6557,
+                "s": 2336,
+                "sh": 4258,
+                "t": 5160,
+                "x": 25,
+                "y": 16081,
+                "z": 2
+              },
+              "injective_map_to_ascii_lowercase_feasible": false
+            }
+          }
+        },
+        "complete_uninterrupted_lines": {
+          "records": 3438,
+          "words": 28500,
+          "unitizations": {
+            "raw_eva": {
+              "alphabet_size": 21,
+              "unit_counts": {
+                "a": 10832,
+                "c": 9957,
+                "d": 9910,
+                "e": 15931,
+                "f": 358,
+                "g": 46,
+                "h": 13571,
+                "i": 9250,
+                "k": 8548,
+                "l": 8123,
+                "m": 801,
+                "n": 4918,
+                "o": 18610,
+                "p": 1260,
+                "q": 4726,
+                "r": 5404,
+                "s": 5387,
+                "t": 5011,
+                "x": 23,
+                "y": 13478,
+                "z": 1
+              },
+              "injective_map_to_ascii_lowercase_feasible": true
+            },
+            "grouped": {
+              "alphabet_size": 29,
+              "unit_counts": {
+                "a": 10832,
+                "c": 81,
+                "cfh": 45,
+                "ch": 8274,
+                "ckh": 733,
+                "cph": 147,
+                "cth": 677,
+                "d": 9910,
+                "e": 15931,
+                "f": 313,
+                "g": 46,
+                "h": 137,
+                "i": 1116,
+                "iin": 3312,
+                "in": 1510,
+                "k": 7815,
+                "l": 8123,
+                "m": 801,
+                "n": 96,
+                "o": 18610,
+                "p": 1113,
+                "q": 4726,
+                "r": 5404,
+                "s": 1829,
+                "sh": 3558,
+                "t": 4334,
+                "x": 23,
+                "y": 13478,
+                "z": 1
+              },
+              "injective_map_to_ascii_lowercase_feasible": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "limit": "The cardinality result assumes distinct transcription units require distinct plaintext letters. It does not test other segmentations or encoding families.",
+  "code_sha256": {
+    "scripts/check_substitution_inventory.py": "ff95b9f0261363cfe8089fe1c71748755bb2cd95804619a20bde33318efc30e9",
+    "src/voynich/corpus.py": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+    "src/voynich/predictive.py": "43eca0975fe3bb759d5c26d00297552986f73cf41bf01e1d151d4d3e52194bf5"
+  }
+}
