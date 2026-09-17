@@ -4,6 +4,22 @@ The objective is to explain the Voynich manuscript's writing system and recover 
 That objective remains unresolved.
 The project has no validated key, plaintext language, or translation.
 
+## Current findings and stopped branches
+
+The [local word-memory test](reports/LOCAL_MEMORY.md) found no useful prediction gain from the observed word order.
+Both transcriptions selected zero weight for exact repetition.
+The edit model did not retain a useful advantage under the two word-order controls.
+This result applies only to the specified vocabulary, raw EVA units, context windows, and group split.
+It does not reject language or all copying processes.
+We stopped this model branch without further parameter changes.
+
+The synthetic cyclic quotient-recovery branch is also stopped.
+Its unfinished development files produced no new manuscript result.
+More solver work would not resolve the missing historical mapping.
+
+Further experiments must state which competing explanations their results can distinguish.
+Code, tests, and publications are supporting work. They are not decipherment results.
+
 ## Completed research
 
 The [complete-key report](reports/OPTIMAL_SET.md) contains the Latin letter-recovery development result.

@@ -6,6 +6,9 @@ It keeps source records and compares observations with explicit statistical cont
 **This project has not deciphered the manuscript.**
 It has no validated key, plaintext language, or translation.
 
+The latest [manuscript test](reports/LOCAL_MEMORY.md) found no useful prediction gain from local word memory.
+We stopped that model branch. The [research status](STATUS.md) records this result and the remaining limits.
+
 Read the [complete-key results](reports/OPTIMAL_SET.md), [assignment results](reports/IDENTIFIABILITY.md), and [research status](STATUS.md).
 
 The [homophonic model](experiments/homophonic/README.md) permits several cipher
