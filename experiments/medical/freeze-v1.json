@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "path": "docs/plans/celsus-projection-v1.md",
+      "sha256": "3f9dcb864c9302d220d0fe1cafbc869ef9422724221fe38860f9481e3ff28efa"
+    },
+    {
+      "path": "experiments/medical/tei_projection.py",
+      "sha256": "d736f77a172854de0ada730d1775d36ae02691e5e0ee547931e8208120dfbadc"
+    },
+    {
+      "path": "experiments/medical/run_projection.py",
+      "sha256": "810f9083c1f38ddae272e38e68b494295527c0bed95dd7be2e6f93dfb18f6581"
+    },
+    {
+      "path": "experiments/medical/test_tei_projection.py",
+      "sha256": "c190fe6a748a4df77a2d1e55faf21f0232c0fb64a68ee41d2d752cdcb2f937ed"
+    },
+    {
+      "path": "experiments/medical/test_run_projection.py",
+      "sha256": "09e54635b7c2fe618e874661548b426b9b2698f1e7c5f98d1fb35e7dfcb3a4ff"
+    }
+  ],
+  "protocol": "celsus-projection-v1",
+  "schema_version": 1
+}

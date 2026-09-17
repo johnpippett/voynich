@@ -28,3 +28,5 @@ jobs:
         run: PYTHONPATH=src:. python -m unittest discover -s experiments/identifiability -p 'test_*.py' -v
       - name: Run optimal-set experiment tests
         run: PYTHONPATH=src:. python -m unittest discover -s experiments/optimal_set -p 'test_*.py' -v
+      - name: Run medical projection tests
+        run: PYTHONPATH=src:. python -m unittest discover -s experiments/medical -p 'test_*.py' -v
