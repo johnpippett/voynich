@@ -6,11 +6,12 @@ The project has no validated key, plaintext language, or translation.
 
 ## Current findings and stopped branches
 
-The [fixed-expansion test](reports/TRIPLET_BOUNDARIES.md) gives an exact constraint on one three-digit code model.
-It assumes fixed expansion lengths and a fixed boundary contribution that restores the same code phase after each selected word.
+The [fixed-expansion test](reports/LINE_TRIPLET_BOUNDARIES.md) gives an exact constraint on one three-digit code model.
+It assumes fixed expansion lengths and shared space and line-ending contributions that restore the same code phase after each selected line.
 Every represented training-unit length must then be divisible by three, separately in Currier A and B in both sources.
 The result permits lengths zero, three, six, and larger multiples. It identifies no digit values or plaintext.
-It does not apply to arbitrary spaces, variable padding, other unit inventories, or context-dependent expansions.
+
+Spaces need not mark plaintext words. Variable padding, independent line phases, other unit inventories, and context-dependent expansions remain outside this model.
 The [source audit](docs/research/anchor-audit.md) also records the stopped Hannig and gallows-continuation checks.
 
 The [cross-boundary test](reports/BOUNDARY_PREDICTION.md) finds transferable prediction between recorded word parts.

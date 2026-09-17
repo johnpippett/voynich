@@ -97,6 +97,9 @@ No broad claim of a first discovery is made.
 The plan stopped this branch after the specified constraints.
 No digit values, new sign decomposition, or translation were fitted.
 
+A separate [line-boundary experiment](LINE_TRIPLET_BOUNDARIES.md) removes the word-closure assumption.
+It finds the same divisibility constraint under a fixed common-phase condition at format-selected text lines.
+
 ## Records
 
 The [public certificates](triplet-boundary-certificates.json) contain the coefficient matrices, column order, and source locations.

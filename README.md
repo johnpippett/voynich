@@ -6,8 +6,10 @@ It keeps source records and compares observations with explicit statistical cont
 **This project has not deciphered the manuscript.**
 It has no validated key, plaintext language, or translation.
 
-The [fixed-expansion test](reports/TRIPLET_BOUNDARIES.md) constrains a three-digit code model with a fixed word-boundary phase.
-Under those assumptions, every tested training-unit length must be divisible by three. This supplies no letter values or plaintext.
+The [fixed-expansion test](reports/LINE_TRIPLET_BOUNDARIES.md) constrains a three-digit code model.
+It assumes a common line-boundary phase within each source and Currier class.
+Under the report's assumptions, every tested training-unit length must be divisible by three. This supplies no letter values or plaintext.
+
 The earlier [boundary test](reports/BOUNDARY_PREDICTION.md) finds a relation between adjacent word parts.
 That fixed relation does not transfer unchanged [across line breaks](reports/CROSS_LINE_TRANSFER.md).
 The [local word-memory branch](reports/LOCAL_MEMORY.md) is stopped.
