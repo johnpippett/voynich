@@ -1,0 +1,484 @@
+{
+  "baseline_checks": {
+    "bounds_equal_target": true,
+    "fit_input": {
+      "sha256": "eb03e98b086b9f8bc883f349afaee968bfeaeee8c95be5f66bec320e54b419b2",
+      "token_count": 19969,
+      "type_count": 9636,
+      "unit_count": 46
+    },
+    "lower_bound": 370396722,
+    "objective": {
+      "N_token_count": 19969,
+      "T_type_count": 9636,
+      "denominator": 384842568,
+      "fit_hits": {
+        "token_hit_rate": 0.9753618108067504,
+        "token_hits": 19477,
+        "type_hit_rate": 0.9495641344956414,
+        "type_hits": 9150
+      },
+      "normalization_formula": "2*T*N",
+      "normalized_score": 0.962462972651196,
+      "score_from_key": 370396722,
+      "weight_formula": "count*T+N",
+      "weights_match_denominator": true,
+      "weights_total": 384842568
+    },
+    "reconstructed_selected_objective": {
+      "N_token_count": 19969,
+      "T_type_count": 9636,
+      "denominator": 384842568,
+      "fit_hits": {
+        "token_hit_rate": 0.9753618108067504,
+        "token_hits": 19477,
+        "type_hit_rate": 0.9495641344956414,
+        "type_hits": 9150
+      },
+      "normalization_formula": "2*T*N",
+      "normalized_score": 0.962462972651196,
+      "score_from_key": 370396722,
+      "weight_formula": "count*T+N",
+      "weights_match_denominator": true,
+      "weights_total": 384842568
+    },
+    "score": 370396722,
+    "score_certified": true,
+    "selected_map_is_run_incumbent": true,
+    "source_certificate_is_external_to_assessment": true,
+    "stream_checks": {
+      "cipher_test": {
+        "expected_sha256": "e1c489fd3f203ece66960717e952980f5ac39ebcff136d8dcd6764171ad2dcba",
+        "matches": true,
+        "reconstructed_sha256": "e1c489fd3f203ece66960717e952980f5ac39ebcff136d8dcd6764171ad2dcba"
+      },
+      "cipher_train": {
+        "expected_sha256": "3906d15a34654d1d7d0b2950a77bf978f490dda5b827739f5cd0ac57d9aff913",
+        "matches": true,
+        "reconstructed_sha256": "3906d15a34654d1d7d0b2950a77bf978f490dda5b827739f5cd0ac57d9aff913"
+      },
+      "cipher_validation": {
+        "expected_sha256": "eb03e98b086b9f8bc883f349afaee968bfeaeee8c95be5f66bec320e54b419b2",
+        "matches": true,
+        "reconstructed_sha256": "eb03e98b086b9f8bc883f349afaee968bfeaeee8c95be5f66bec320e54b419b2"
+      },
+      "plaintext_test": {
+        "expected_sha256": "47330a0ee868341cfbc0b657ab0b63e275de16e0c73e6cc711e6891c3279d50b",
+        "matches": true,
+        "reconstructed_sha256": "47330a0ee868341cfbc0b657ab0b63e275de16e0c73e6cc711e6891c3279d50b"
+      },
+      "plaintext_train": {
+        "expected_sha256": "f01b9b66b70075af62feb09ea6a8cc52841730ef48ed0ef38590759af19400c7",
+        "matches": true,
+        "reconstructed_sha256": "f01b9b66b70075af62feb09ea6a8cc52841730ef48ed0ef38590759af19400c7"
+      },
+      "plaintext_validation": {
+        "expected_sha256": "2e050c7fe395a2d98b579d4361763ef45129be0ad1e2a6db8bbae9b6fe207402",
+        "matches": true,
+        "reconstructed_sha256": "2e050c7fe395a2d98b579d4361763ef45129be0ad1e2a6db8bbae9b6fe207402"
+      }
+    },
+    "upper_bound": 370396722
+  },
+  "c40_reconstruction": {
+    "alternate_fit_score": 370396722,
+    "alternate_key_capacity_valid": true,
+    "alternate_key_changed_from": "j",
+    "alternate_key_changed_to": "w",
+    "alternate_key_changed_unit": "c40",
+    "alternate_test_metrics": {
+      "character_correct": 111048,
+      "character_total": 111052,
+      "errors_by_unit": {
+        "c40": 4
+      },
+      "token_correct": 19927,
+      "token_total": 19931
+    },
+    "c40_capacity_domain": [
+      "j",
+      "w",
+      "y",
+      "z"
+    ],
+    "c40_query_legal_alternatives": [
+      "w",
+      "y",
+      "z"
+    ],
+    "interpretation": "The changed c40 witness reaches the supplied target. Capacity facts do not enumerate all global optima.",
+    "method": "Rebuild Latin train, validation, and test words from the pinned reference partitions; encrypt with seeded cap2 key; score with objective_summary. No BitsetBound construction.",
+    "reference_counts": {
+      "test_tokens": 19931,
+      "train_lexicon_types": 8512,
+      "train_tokens": 165291,
+      "validation_cipher_types": 9636,
+      "validation_tokens": 19969
+    },
+    "residual_capacity_after_removing_c40": {
+      "j": 2,
+      "w": 2,
+      "y": 2,
+      "z": 1
+    },
+    "residual_capacity_from_selected_map": {
+      "j": 1,
+      "w": 2,
+      "y": 2,
+      "z": 1
+    },
+    "selected_and_alternate_fit_hits_equal": true,
+    "selected_fit_score": 370396722,
+    "selected_test_metrics": {
+      "character_correct": 111048,
+      "character_total": 111052,
+      "errors_by_unit": {
+        "c40": 4
+      },
+      "token_correct": 19927,
+      "token_total": 19931
+    },
+    "target": 370396722
+  },
+  "decision_checks": {
+    "all_forced_records": {
+      "classification": "forced_at_certified_optimum",
+      "count": 45,
+      "lower_bound_histogram": {
+        "1413129": 1,
+        "3458749": 44
+      },
+      "proof_kind": "search_exhausted_no_witness",
+      "raw_status": "infeasible",
+      "search_exhausted": true,
+      "upper_bound_below_target": true,
+      "upper_bound_histogram": {
+        "370110552": 44,
+        "370367117": 1
+      }
+    },
+    "c40": {
+      "changed_to": "w",
+      "classification": "ambiguous",
+      "forbidden_letters": [
+        "j"
+      ],
+      "incumbent_letter": "j",
+      "raw_nodes": 0,
+      "raw_status": "feasible",
+      "raw_upper_bound": 384812963,
+      "warm_witness_matches_query_witness": true,
+      "witness_score": 370396722
+    },
+    "counts": {
+      "ambiguous": 1,
+      "forced_at_certified_optimum": 45
+    },
+    "status_counts": {
+      "feasible": 1,
+      "infeasible": 45,
+      "unknown": 0
+    }
+  },
+  "diagnostic_checks": {
+    "reconstructed_post_query_diagnostics": {
+      "ambiguous": {
+        "test_correct": 0,
+        "test_errors": 4,
+        "test_positions": 4,
+        "unit_assignments_correct": 0,
+        "unit_count": 1
+      },
+      "forced_at_certified_optimum": {
+        "test_correct": 111048,
+        "test_errors": 0,
+        "test_positions": 111048,
+        "unit_assignments_correct": 45,
+        "unit_count": 45
+      },
+      "unobserved": {
+        "test_correct": 0,
+        "test_errors": 0,
+        "test_positions": 0,
+        "unit_assignments_correct": 0,
+        "unit_count": 0
+      },
+      "unresolved": {
+        "test_correct": 0,
+        "test_errors": 0,
+        "test_positions": 0,
+        "unit_assignments_correct": 0,
+        "unit_count": 0
+      }
+    },
+    "reported_post_query_diagnostics": {
+      "ambiguous": {
+        "test_correct": 0,
+        "test_errors": 4,
+        "test_positions": 4,
+        "unit_assignments_correct": 0,
+        "unit_count": 1
+      },
+      "forced_at_certified_optimum": {
+        "test_correct": 111048,
+        "test_errors": 0,
+        "test_positions": 111048,
+        "unit_assignments_correct": 45,
+        "unit_count": 45
+      },
+      "unobserved": {
+        "test_correct": 0,
+        "test_errors": 0,
+        "test_positions": 0,
+        "unit_assignments_correct": 0,
+        "unit_count": 0
+      },
+      "unresolved": {
+        "test_correct": 0,
+        "test_errors": 0,
+        "test_positions": 0,
+        "unit_assignments_correct": 0,
+        "unit_count": 0
+      }
+    },
+    "reported_post_query_diagnostics_match_reconstruction": true,
+    "selected_map_test_character_correct": 111048,
+    "selected_map_test_character_total": 111052,
+    "selected_map_test_token_correct": 19927,
+    "selected_map_test_token_total": 19931,
+    "test_error_units": {
+      "c40": 4
+    }
+  },
+  "hash_checks": {
+    "all_query_hashes_match_decisions": true,
+    "assessment_decisions_hash_matches": true,
+    "baseline_key_path": "reports/homophonic-feasibility-v1/latin-cold.keys.json",
+    "baseline_key_sha256": "965774da55e1ace6522a184a0040f63563c508e0d690270b9d726f6dd7575bb2",
+    "baseline_report_path": "reports/homophonic-feasibility-v1/latin-cold.json",
+    "baseline_report_sha256": "923dba00df53ff05ca88e91362ea44c693d66b8f0824071d85cc5b0d984ba77e",
+    "certificate_key_hash_matches": true,
+    "certificate_report_hash_matches": true,
+    "decisions_sha256": "607585729d72be0e3bbaaaadabc74225b774b66540ea08f061d0d0459edcfa3d",
+    "protocol_separation": {
+      "baseline_protocol_matches_report": true,
+      "baseline_protocol_path": "docs/plans/visual-homophonic-pilot.md",
+      "baseline_protocol_sha256": "0e6a6edf5e0172f5e7a0f1fbf2f7ede8b9b181c7180aa616de58f44ae04d1249",
+      "baseline_solver_implementation_commit": "ce8b626ab3cf8147829716f7828dff7fceba6cde",
+      "identifiability_freeze_commit": "f7dbb21d4281f440b05542be0fbd8eec638136fe",
+      "identifiability_protocol_matches_run": true,
+      "identifiability_protocol_path": "docs/plans/optimal-key-identifiability-v1.md",
+      "identifiability_protocol_sha256": "ba61e56ff7730531f946450ac86b910842fc313bb52b7b34b415391125d6046d",
+      "protocols_are_distinct": true,
+      "runner_source_matches_identifiability_freeze": true
+    },
+    "query_hash_mismatches": [],
+    "source_hashes": [
+      {
+        "baseline_solver_commit_sha256": "f10f4d643d0dbe87e192102d7fc3d59cb0b3e71cb53b35e506ec1c9f0d1a9223",
+        "current_sha256": "f10f4d643d0dbe87e192102d7fc3d59cb0b3e71cb53b35e506ec1c9f0d1a9223",
+        "identifiability_freeze_sha256": "f10f4d643d0dbe87e192102d7fc3d59cb0b3e71cb53b35e506ec1c9f0d1a9223",
+        "matches_baseline_solver_freeze": true,
+        "matches_current": true,
+        "matches_identifiability_freeze": true,
+        "path": "experiments/homophonic/ambiguity.py",
+        "recorded_sha256": "f10f4d643d0dbe87e192102d7fc3d59cb0b3e71cb53b35e506ec1c9f0d1a9223"
+      },
+      {
+        "baseline_solver_commit_sha256": "acc88067d1350180d7704db39b1d7f70070dd5a703dc07b27b98b090d6294ea5",
+        "current_sha256": "acc88067d1350180d7704db39b1d7f70070dd5a703dc07b27b98b090d6294ea5",
+        "identifiability_freeze_sha256": "acc88067d1350180d7704db39b1d7f70070dd5a703dc07b27b98b090d6294ea5",
+        "matches_baseline_solver_freeze": true,
+        "matches_current": true,
+        "matches_identifiability_freeze": true,
+        "path": "experiments/homophonic/anneal.py",
+        "recorded_sha256": "acc88067d1350180d7704db39b1d7f70070dd5a703dc07b27b98b090d6294ea5"
+      },
+      {
+        "baseline_solver_commit_sha256": "8ab50b9700497cc493e0ba79a9fc6d452cf95e5b8c7d9d19d0de08b567000f76",
+        "current_sha256": "8ab50b9700497cc493e0ba79a9fc6d452cf95e5b8c7d9d19d0de08b567000f76",
+        "identifiability_freeze_sha256": "8ab50b9700497cc493e0ba79a9fc6d452cf95e5b8c7d9d19d0de08b567000f76",
+        "matches_baseline_solver_freeze": true,
+        "matches_current": true,
+        "matches_identifiability_freeze": true,
+        "path": "experiments/homophonic/bitset_bound.py",
+        "recorded_sha256": "8ab50b9700497cc493e0ba79a9fc6d452cf95e5b8c7d9d19d0de08b567000f76"
+      },
+      {
+        "baseline_solver_commit_sha256": "4845d1de4e766c5d63b23919bab2715db24b431ba502112494e477a1740fd896",
+        "current_sha256": "4845d1de4e766c5d63b23919bab2715db24b431ba502112494e477a1740fd896",
+        "identifiability_freeze_sha256": "4845d1de4e766c5d63b23919bab2715db24b431ba502112494e477a1740fd896",
+        "matches_baseline_solver_freeze": true,
+        "matches_current": true,
+        "matches_identifiability_freeze": true,
+        "path": "experiments/homophonic/controls.py",
+        "recorded_sha256": "4845d1de4e766c5d63b23919bab2715db24b431ba502112494e477a1740fd896"
+      },
+      {
+        "baseline_solver_commit_sha256": "65f81693336a3c705281ed711b45881a19a0adc34b715a29188dc1361d86be63",
+        "current_sha256": "65f81693336a3c705281ed711b45881a19a0adc34b715a29188dc1361d86be63",
+        "identifiability_freeze_sha256": "65f81693336a3c705281ed711b45881a19a0adc34b715a29188dc1361d86be63",
+        "matches_baseline_solver_freeze": true,
+        "matches_current": true,
+        "matches_identifiability_freeze": true,
+        "path": "experiments/homophonic/run_controls.py",
+        "recorded_sha256": "65f81693336a3c705281ed711b45881a19a0adc34b715a29188dc1361d86be63"
+      },
+      {
+        "baseline_solver_commit_sha256": "5e5b0d1bd21dcdf850d9154c088065d2cd6174671083dc6b5b935282da0c2760",
+        "current_sha256": "5e5b0d1bd21dcdf850d9154c088065d2cd6174671083dc6b5b935282da0c2760",
+        "identifiability_freeze_sha256": "5e5b0d1bd21dcdf850d9154c088065d2cd6174671083dc6b5b935282da0c2760",
+        "matches_baseline_solver_freeze": true,
+        "matches_current": true,
+        "matches_identifiability_freeze": true,
+        "path": "experiments/homophonic/solver.py",
+        "recorded_sha256": "5e5b0d1bd21dcdf850d9154c088065d2cd6174671083dc6b5b935282da0c2760"
+      },
+      {
+        "baseline_solver_commit_sha256": null,
+        "current_sha256": "e043aa38e7e40800f5e03af4a35e5931965eecd374f38e8bcf7a799caeb868c0",
+        "identifiability_freeze_sha256": "e043aa38e7e40800f5e03af4a35e5931965eecd374f38e8bcf7a799caeb868c0",
+        "matches_baseline_solver_freeze": null,
+        "matches_current": true,
+        "matches_identifiability_freeze": true,
+        "path": "experiments/identifiability/assess.py",
+        "recorded_sha256": "e043aa38e7e40800f5e03af4a35e5931965eecd374f38e8bcf7a799caeb868c0"
+      },
+      {
+        "baseline_solver_commit_sha256": null,
+        "current_sha256": "84351d57aff0676a07da97618ff9736c4a50071a3a9b69934cd71e0fa0c0a762",
+        "identifiability_freeze_sha256": "84351d57aff0676a07da97618ff9736c4a50071a3a9b69934cd71e0fa0c0a762",
+        "matches_baseline_solver_freeze": null,
+        "matches_current": true,
+        "matches_identifiability_freeze": true,
+        "path": "experiments/identifiability/run_assessment.py",
+        "recorded_sha256": "84351d57aff0676a07da97618ff9736c4a50071a3a9b69934cd71e0fa0c0a762"
+      },
+      {
+        "baseline_solver_commit_sha256": null,
+        "current_sha256": "f4699b0a32ee383c414a8ffe155fc0a4fe1aac65ce2a2225fd9ff3a3225436c8",
+        "identifiability_freeze_sha256": "f4699b0a32ee383c414a8ffe155fc0a4fe1aac65ce2a2225fd9ff3a3225436c8",
+        "matches_baseline_solver_freeze": null,
+        "matches_current": true,
+        "matches_identifiability_freeze": true,
+        "path": "experiments/identifiability/threshold.py",
+        "recorded_sha256": "f4699b0a32ee383c414a8ffe155fc0a4fe1aac65ce2a2225fd9ff3a3225436c8"
+      },
+      {
+        "baseline_solver_commit_sha256": "2eb25cdeb4fdf8ef167a3f10c2463b1ef61c23b1dd7e34a3aea9368c6edf69e5",
+        "current_sha256": "2eb25cdeb4fdf8ef167a3f10c2463b1ef61c23b1dd7e34a3aea9368c6edf69e5",
+        "identifiability_freeze_sha256": "2eb25cdeb4fdf8ef167a3f10c2463b1ef61c23b1dd7e34a3aea9368c6edf69e5",
+        "matches_baseline_solver_freeze": true,
+        "matches_current": true,
+        "matches_identifiability_freeze": true,
+        "path": "experiments/lexicon/run_pilot.py",
+        "recorded_sha256": "2eb25cdeb4fdf8ef167a3f10c2463b1ef61c23b1dd7e34a3aea9368c6edf69e5"
+      },
+      {
+        "baseline_solver_commit_sha256": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+        "current_sha256": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+        "identifiability_freeze_sha256": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+        "matches_baseline_solver_freeze": true,
+        "matches_current": true,
+        "matches_identifiability_freeze": true,
+        "path": "src/voynich/corpus.py",
+        "recorded_sha256": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2"
+      },
+      {
+        "baseline_solver_commit_sha256": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0",
+        "current_sha256": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0",
+        "identifiability_freeze_sha256": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0",
+        "matches_baseline_solver_freeze": true,
+        "matches_current": true,
+        "matches_identifiability_freeze": true,
+        "path": "src/voynich/groups.py",
+        "recorded_sha256": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0"
+      },
+      {
+        "baseline_solver_commit_sha256": "97e173c761b137d3653a827315b62a68af3e96abd189afdecc46e9759d2b94d9",
+        "current_sha256": "97e173c761b137d3653a827315b62a68af3e96abd189afdecc46e9759d2b94d9",
+        "identifiability_freeze_sha256": "97e173c761b137d3653a827315b62a68af3e96abd189afdecc46e9759d2b94d9",
+        "matches_baseline_solver_freeze": true,
+        "matches_current": true,
+        "matches_identifiability_freeze": true,
+        "path": "src/voynich/reference.py",
+        "recorded_sha256": "97e173c761b137d3653a827315b62a68af3e96abd189afdecc46e9759d2b94d9"
+      },
+      {
+        "baseline_solver_commit_sha256": "3c246844b9adcd003d593eff97b53c6a3d1f54bc1fd76bc8e5145345aadf3332",
+        "current_sha256": "3c246844b9adcd003d593eff97b53c6a3d1f54bc1fd76bc8e5145345aadf3332",
+        "identifiability_freeze_sha256": "3c246844b9adcd003d593eff97b53c6a3d1f54bc1fd76bc8e5145345aadf3332",
+        "matches_baseline_solver_freeze": true,
+        "matches_current": true,
+        "matches_identifiability_freeze": true,
+        "path": "src/voynich/substitution.py",
+        "recorded_sha256": "3c246844b9adcd003d593eff97b53c6a3d1f54bc1fd76bc8e5145345aadf3332"
+      }
+    ],
+    "source_summary": {
+      "all_match_current": true,
+      "all_match_identifiability_freeze": true,
+      "baseline_source_count": 11,
+      "baseline_sources_match_baseline_solver_freeze": true,
+      "identifiability_source_count": 3,
+      "mismatches": [],
+      "recorded_count": 14
+    }
+  },
+  "kind": "identifiability_record_audit",
+  "limitations": [
+    "The assessment trusts the supplied global optimum certificate. It does not prove that certificate.",
+    "The forced labels are conditional on the finite objective, alphabet, capacity, lexicon, and certificate.",
+    "The c40 result proves a conditional alternative witness. It does not count all optimal maps or rank candidates.",
+    "The queries test one unit at a time. Separate witnesses need not occur in one map.",
+    "This audit uses existing Latin reference data and adds no independent VMS measurement."
+  ],
+  "reproducible_checks": [
+    "Count 49 JSON inputs before writing this audit: run.json, assessment.json, decisions.json, and 46 unit records.",
+    "Hash every unit record and compare it with decisions.json query_sha256.",
+    "Hash all 14 paths in run.json provenance.code_sha256 and compare with the current source and the identifiability freeze commit.",
+    "Compare the 11 baseline source hashes with the baseline solver freeze commit.",
+    "Compare the two distinct protocol hashes with their recorded paths.",
+    "Reconstruct streams and selected and c40-alternate scores from the existing Latin reference partitions.",
+    "Recompute test character and token diagnostics by unit class.",
+    "Check every query fingerprint, target, capacity, empty constraints, and incumbent-specific forbidden value."
+  ],
+  "review_date": "2026-09-17",
+  "run_binding": {
+    "all_query_constraints_empty": true,
+    "capacity": 2,
+    "family": "cap2",
+    "forbidden_constraints_match_incumbent": true,
+    "kind": "reference_assignment_identifiability",
+    "language": "latin_llct",
+    "node_budget_per_query": 1000,
+    "problem_fingerprint": "05df3d40e478d73cebac63f282d17f897d013f8337111ab5533c2233d5eb6190",
+    "query_domain_fingerprint_count": 1,
+    "query_fingerprint_count": 46,
+    "query_search_settings_fingerprint_count": 1,
+    "search_settings_fingerprint": "f091e95035971776ef52278ee4410ae8ac724fdf3e77a4fed0884c9ff6378660",
+    "seed": 7000,
+    "target": 370396722
+  },
+  "scope": {
+    "baseline": "reports/homophonic-feasibility-v1/latin-cold.json",
+    "data_mode": "existing Latin reference partitions; no VMS data",
+    "frozen_runner": "experiments/identifiability/run_assessment.py",
+    "input_directory": "reports/identifiability-v1-latin",
+    "input_json_count": 49,
+    "large_bitset_bound_built": false,
+    "query_record_count": 46
+  },
+  "status": "verified_with_limits",
+  "verification": {
+    "identifiability_tests": {
+      "command": "PYTHONPATH=src:. python -m unittest discover -s experiments/identifiability -p 'test_*.py' -q",
+      "status": "passed",
+      "tests": 33
+    },
+    "py_compile": {
+      "command": "python -m py_compile experiments/identifiability/run_assessment.py experiments/identifiability/assess.py experiments/identifiability/threshold.py",
+      "status": "passed"
+    }
+  }
+}

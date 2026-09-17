@@ -6,13 +6,13 @@ It keeps source records and compares observations with explicit statistical cont
 **This project has not deciphered the manuscript.**
 It has no validated key, plaintext language, or translation.
 
-Read the [homophonic controls](reports/HOMOPHONIC.md), [lexicon bounds](reports/LEXICON.md), and [research status](STATUS.md).
+Read the [assignment results](reports/IDENTIFIABILITY.md), [homophonic controls](reports/HOMOPHONIC.md), and [research status](STATUS.md).
 
 The [homophonic model](experiments/homophonic/README.md) permits several cipher
 units per plaintext letter. Its first four controls failed the exact-recovery
 checks. Manuscript use remains deferred.
-The [assignment study](docs/plans/optimal-key-identifiability-v1.md) will test
-which Latin control assignments are necessary to attain its certified score.
+The [assignment study](reports/IDENTIFIABILITY.md) proves that 45 Latin control
+assignments are necessary to attain its certified dictionary score. One remains ambiguous.
 The [initial findings](reports/FINDINGS.md) remain available as historical results.
 Stage 2 replaces their prediction partitions with source-backed bifolio groups.
 
@@ -23,6 +23,8 @@ The [folio report](docs/research/folio.md) gives the identification evidence.
 
 - Both Latin homophonic controls reached a certified dictionary optimum but missed four of 111,052 test characters.
 - At least four keys attain that Latin optimum. The selected map matches 45 of 46 observed assignments.
+- All 45 forced assignments match the planted control map. They cover 111,048 test characters without errors.
+- The remaining ambiguous assignment accounts for all four test errors. This follow-up does not change the failed recovery check.
 - The Italian homophonic controls recovered 43.35% and 66.48% of test characters. Their optimum scores remain unknown.
 - The new lexicon pilot bounds the training score at 35.51% or less in four fixed substitution problems.
 - That score averages token and type hit rates. The bounds apply only to the declared word lists, raw EVA units, and injective keys.
@@ -73,6 +75,7 @@ The [verification record](reports/stage2-verification.json) records the checks f
 A new run does not update that record.
 The [lexicon verification record](reports/lexicon-verification.json) covers the earlier solver and its public-source reproduction.
 The [homophonic verification record](reports/homophonic-verification.json) covers the four new controls.
+The [assignment verification record](reports/identifiability-verification.json) covers the conditional assignment study.
 
 ## Data and scope
 

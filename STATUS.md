@@ -6,7 +6,8 @@ The project has no validated key, plaintext language, or translation.
 
 ## Completed research
 
-The [homophonic report](reports/HOMOPHONIC.md) contains the latest controls and their limits.
+The [assignment report](reports/IDENTIFIABILITY.md) contains the latest conditional assignment results.
+The [homophonic report](reports/HOMOPHONIC.md) contains the preceding controls and their limits.
 The [lexicon report](reports/LEXICON.md) contains the earlier manuscript bounds.
 The [Stage 2 report](reports/STAGE2.md) contains the earlier controlled searches.
 The [initial report](reports/FINDINGS.md) preserves the earlier exploratory results.
@@ -23,11 +24,18 @@ The current work includes:
 - Global score bounds for four fixed lexicon and manuscript-training problems.
 - Exact test-text recovery for two lexicon controls, with explicit key-ambiguity counts.
 - Four homophonic controls with frozen settings, saved maps, recovery errors, and score bounds.
+- Complete alternative-assignment queries for all 46 fitted units in the Latin homophonic control.
 
 The Latin homophonic controls reached a certified dictionary optimum with four test character errors.
 At least four keys attain that optimum. Certification does not establish the correct key.
 The Italian controls stopped with unequal bounds and incomplete recovery.
 All four controls failed their declared exact-recovery checks.
+
+The assignment study proves that 45 selected assignments are necessary to attain the certified Latin dictionary score.
+The remaining assignment is ambiguous. All four test errors occur at this unit.
+The forced assignments cover 111,048 test characters without errors.
+These results concern one finite objective and domain. They do not identify a manuscript key.
+The study follows an inspected control failure and is not blind validation.
 
 Separate AI-agent tasks performed implementation and code review within this project.
 These checks do not constitute external scholarly validation.
