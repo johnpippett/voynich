@@ -87,6 +87,79 @@
       "sha256": "3efa8c43e5b4348f303a528c81adf435f0111ea752fe9f0f6241478b60987fa6",
       "byte_count": 9103,
       "review_scope": "Image-unavailable placeholder; not a manuscript or printed key image."
+    },
+    {
+      "id": "meister-ulb-record",
+      "url": "https://sammlungen.ulb.uni-muenster.de/id/3075984",
+      "sha256": "1130f3e2e67237a8e1e206b9a9466fee237b90a8b2a6a9106bf6fbb62b3570ca",
+      "byte_count": 20426,
+      "review_scope": "Library metadata for the 1902 edition; original archive document not checked."
+    },
+    {
+      "id": "meister-ulb-complete-pdf",
+      "url": "https://sammlungen.ulb.uni-muenster.de/download/pdf/3075984.pdf",
+      "sha256": "8cc91d4ed9ba4c7bf0ca6be46f2cc2d30e9a217366ff34d7d4ab02bfeb688cd6",
+      "byte_count": 17927155,
+      "review_scope": {
+        "printed_pages": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "pdf_pages": [
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44
+        ],
+        "cipher_table_pages": [
+          30,
+          31
+        ],
+        "remaining_pages": "Not reviewed. No cipher-sign transcription or Voynich fit."
+      }
+    },
+    {
+      "id": "meister-ulb-image-manifest",
+      "url": "https://sammlungen.ulb.uni-muenster.de/i3f/v20/3075984/manifest",
+      "sha256": "ff2046609bb25036e3706307ab0855dcc50f44a5b62295de13a42fff9bfc28eb",
+      "byte_count": 67904,
+      "review_scope": "Metadata and canvas identities for the reviewed pages; PDF page positions differ from manifest positions."
+    },
+    {
+      "id": "treccani-ippolita-sforza",
+      "url": "https://www.treccani.it/enciclopedia/ippolita-sforza_(Dizionario-Biografico)/",
+      "sha256": "295f982ab97fa5d49496a5f31f705d233aebf0b318de7297225fed5a638b1060",
+      "byte_count": 186214,
+      "review_scope": "Treccani, Dizionario Biografico degli Italiani, vol. 92 (2018), Ippolita Sforza; birth, 1465 marriage, and Calabria title chronology."
+    },
+    {
+      "id": "treccani-alfonso-ii-d-aragona",
+      "url": "https://www.treccani.it/enciclopedia/alfonso-ii-d-aragona-re-di-napoli_(Dizionario-Biografico)/",
+      "sha256": "678510bc269df4b49d50d824bb314e4e0d6922ebcf907e0a0c33edfd28b94946",
+      "byte_count": 179278,
+      "review_scope": "Treccani, Dizionario Biografico degli Italiani, vol. 2 (1960), Alfonso II; Ferrante became king in 1458, Alfonso received Duke of Calabria title, 1465 marriage."
+    },
+    {
+      "id": "neal-fontana-page-wayback-raw",
+      "url": "https://web.archive.org/web/20180215201648id_/http://philipneal.net/voynichsources/fontana_cipher_manuscripts",
+      "sha256": "ac78964c61178953dfd7fba8457d2f9070ee5d0986034fe6593f9e4e0c3fb0a4",
+      "byte_count": 18487,
+      "review_scope": "Raw response for the same author page; it contains no key table or attached transcription."
+    },
+    {
+      "id": "google-books-page-35-response",
+      "url": "https://books.google.com/books?id=no1IAQAAIAAJ&pg=PA35",
+      "sha256": "7cf5669aa1d7b57df15c18d0fe3276a9c01f76217cbac4f70e724a3af74aa2fe",
+      "byte_count": 305123,
+      "review_scope": "This is a metadata page, not a page image or text preview. It exposes no cipher key."
     }
   ],
   "additional_review_scope": "A separate source task inspected Fontana folios 1r–2v in each codex. Its eight image files and hashes remain in the local source archive.",
@@ -94,8 +167,29 @@
     {
       "url": "https://philipneal.net/voynichsources/fontana_cipher_manuscripts/",
       "body_captured": false,
-      "result": "The source task and primary agent could not retrieve this page. No claim relies on its body."
+      "result": "The first check could not retrieve the live page. A later check downloaded an archived 2018 copy, recorded separately."
+    },
+    {
+      "url": "https://books.google.com/books?id=no1IAQAAIAAJ&pg=PA35&output=html_text",
+      "body_captured": false,
+      "result": "HTTP 403. No key page was reviewed. Other page requests returned metadata or access errors."
+    },
+    {
+      "url": "https://archiviodistatomilano.cultura.gov.it/",
+      "body_captured": false,
+      "result": "web open timed out; curl -IL timed out after 20 seconds. No archive catalogue or item record inspected."
+    },
+    {
+      "url": "https://sias.archivi.beniculturali.it/",
+      "body_captured": false,
+      "result": "web open returned restricted URL. No catalogue record inspected."
+    },
+    {
+      "url": "https://siusa-archivi.cultura.gov.it/",
+      "body_captured": false,
+      "result": "web open timed out. No catalogue record inspected."
     }
   ],
-  "interpretation_limit": "No external Voynich sign correspondence or validated translation follows from these records."
+  "interpretation_limit": "No external Voynich sign correspondence or validated translation follows from these records.",
+  "later_review_scope": "Meister printed pages 25–31 were inspected as images. Two AI tasks separately checked the key boundaries and conditional historical chronology. The Fontana access task inspected no new image or PDF pages."
 }

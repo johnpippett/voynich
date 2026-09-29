@@ -9,7 +9,9 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
-The [historical source check](docs/research/historical-key-comparisons-2026-09-29.md) records Fontana cipher pages and access limits for a reported 1448 key.
+The [historical source check](docs/research/historical-key-comparisons-2026-09-29.md) now includes a complete printed key from Meister's 1902 book.
+Its printed 1448 date remains uncertain because named titles have later dates under specific identifications.
+The neighboring 1483 key has separate rules. Fontana's complete sign assignments remain outside the reviewed sources.
 It supplies no fixed correspondence with Voynich signs.
 The reviewed Pahlavi proposal leaves reading choices unresolved in its continuous-text example.
 
