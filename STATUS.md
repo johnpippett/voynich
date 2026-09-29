@@ -9,6 +9,10 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [historical source check](docs/research/historical-key-comparisons-2026-09-29.md) records Fontana cipher pages and access limits for a reported 1448 key.
+It supplies no fixed correspondence with Voynich signs.
+The reviewed Pahlavi proposal leaves reading choices unresolved in its continuous-text example.
+
 The [Hebrew source check](docs/research/hebrew-key-audit-2026-09-29.md) confirms a fixed consonant transliteration on eleven artificial inputs.
 Its word-generation prompt receives the decoded target before it requests alternatives.
 Those matches cannot independently establish meanings. The paper reports that its fixed output does not read as Hebrew.

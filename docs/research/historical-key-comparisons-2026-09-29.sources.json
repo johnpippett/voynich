@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "capture_date": "2026-09-29",
+  "sources": [
+    {
+      "id": "bsb-cod-icon-242-facsimile",
+      "url": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00013084/manifest",
+      "sha256": "f334d66a877806ccbb76e0d110b98a062300a0bc29c380eeb4a998571cc362f6",
+      "byte_count": 169063,
+      "review_scope": "Institutional metadata and canvas labels; not a decoded text."
+    },
+    {
+      "id": "bnf-nal-635-facsimile",
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10023795x/manifest.json",
+      "sha256": "4b1bb796fad2eddf9de2915ac450fa633a1cb1f0015d566d86f3fe1692e4cacc",
+      "byte_count": 316635,
+      "review_scope": "Institutional metadata and canvas labels; not a decoded text."
+    },
+    {
+      "id": "battisti-1984-bibliographic-record",
+      "url": "https://books.google.com/books/about/Le_macchine_cifrate_di_Giovanni_Fontana.html?id=no1IAQAAIAAJ",
+      "sha256": "ed8743e7b855696a09f96fc39f565c1bbba200831edcba6f11fb3875dfd3861d",
+      "byte_count": 106196,
+      "review_scope": "Bibliographic record only; no key pages or full text."
+    },
+    {
+      "id": "fontana-1r",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00013084_00006/full/full/0/default.jpg",
+      "sha256": "fe1dd4371d52d1e7ab1b3b2fd8b13246fc04e306e665a7e5ffabf28ea99831cc",
+      "byte_count": 1796838,
+      "review_scope": "Primary agent inspected the complete page image; no full plaintext mapping was read."
+    },
+    {
+      "id": "fontana-1v",
+      "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00013084_00007/full/full/0/default.jpg",
+      "sha256": "295ae2fa4a1ad1a2d16278a3a28bab823f6515e0e88520e767661dc7d1691e7f",
+      "byte_count": 1823224,
+      "review_scope": "Primary agent inspected the complete page image; no full plaintext mapping was read."
+    },
+    {
+      "id": "herrmann-pahlavi-v2",
+      "url": "https://arxiv.org/pdf/1709.01634v2",
+      "sha256": "f56d0f861084e3b31196f351d3bf643044ac4e3d20c828aa410f618694ff746e",
+      "byte_count": 7332394,
+      "review_scope": {
+        "pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          13,
+          14,
+          15
+        ],
+        "table_or_text_images": [
+          4,
+          6,
+          13,
+          14,
+          15
+        ],
+        "remaining_pages": "Not reviewed."
+      }
+    },
+    {
+      "id": "meister-1902-pa30",
+      "url": "https://books.google.com/books?jscmd=SearchWithinVolume2&q=1448+die+14+martii&vid=tI_k5mqTS2IC",
+      "sha256": "899fe9ae4625bf6fd0b0068084559ac81dd66c590fc1ed9b78a9211407bb35d5",
+      "byte_count": 704,
+      "review_scope": "Page 30 search excerpt only; cipher signs are not reliable."
+    },
+    {
+      "id": "meister-1902-pa31",
+      "url": "https://books.google.com/books?jscmd=SearchWithinVolume2&q=Quicquid+positum+fuerit&vid=tI_k5mqTS2IC",
+      "sha256": "fafdf3d86ea41aa4bbae015191e79f1ae1f0f18286794a0f6f67c9803e42328c",
+      "byte_count": 491,
+      "review_scope": "Page 31 search excerpt only; not a complete rule table."
+    },
+    {
+      "id": "meister-1902-PA30",
+      "url": "https://books.google.com/books/content?id=tI_k5mqTS2IC&pg=PA30&img=1&zoom=3&hl=en&source=gbs_api",
+      "sha256": "3efa8c43e5b4348f303a528c81adf435f0111ea752fe9f0f6241478b60987fa6",
+      "byte_count": 9103,
+      "review_scope": "Image-unavailable placeholder; not a manuscript or printed key image."
+    }
+  ],
+  "additional_review_scope": "A separate source task inspected Fontana folios 1r–2v in each codex. Its eight image files and hashes remain in the local source archive.",
+  "access_limits": [
+    {
+      "url": "https://philipneal.net/voynichsources/fontana_cipher_manuscripts/",
+      "body_captured": false,
+      "result": "The source task and primary agent could not retrieve this page. No claim relies on its body."
+    }
+  ],
+  "interpretation_limit": "No external Voynich sign correspondence or validated translation follows from these records."
+}
