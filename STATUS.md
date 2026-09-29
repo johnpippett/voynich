@@ -18,6 +18,11 @@ The historical ingredient-set comparison cannot select pairs between written for
 A recent sign-unit study measures class-letter agreement, which differs from complete plaintext recovery.
 These source checks supply no verified manuscript key or translation.
 
+The [further source study](docs/research/further-key-routes-2026-09-29.md) separates Preedy's structural scores from verification of meanings.
+The examined ATA sound tables are not final and leave reading choices unresolved.
+A documented Florentine cipher gives a historical state rule, but no assignment to Voynich signs.
+No new manuscript fit followed these source findings.
+
 The [integer line-phase study](reports/LINE_PHASE_LATTICE.md) extends the earlier modulo-three condition to every finite block size in five training tracks.
 Both class-A sources pass under both unit representations. The IT class-B visual track also passes.
 Three other tracks reached the fixed 4,096-bit limit and remain inconclusive.

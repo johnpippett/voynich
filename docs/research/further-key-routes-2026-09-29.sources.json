@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-29",
+  "capture_root": "results/key-route-screen-2026-09-29",
+  "sources": [
+    {
+      "file": "preedy/key.html",
+      "url": "https://voynichmanuscriptdecoded.com/key/index.html",
+      "sha256": "6df5366e16074476bb79b82111f21a9f13d52045407cfc05fba470ed13279ae1",
+      "bytes": 3841
+    },
+    {
+      "file": "preedy/key-sheet-gid-477789757-content.html",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQPqvGKr5N0flRCPpKzyRwJCw1DRAYnULOiH3hhQFBrZQU1awAqjXxM1vv6HeUxLC0eu08JzuRfWFiI/pubhtml/sheet?headers=false&gid=477789757",
+      "sha256": "3a882230c6588aa15bc7a3d33eb96f7e508d8f80a2d80d15083098f50b1e7163",
+      "bytes": 81518
+    },
+    {
+      "file": "preedy/Preedy_BSI_Report.pdf",
+      "url": "https://voynichmanuscriptdecoded.com/research/Preedy_BSI_Report.pdf",
+      "sha256": "961deaaf3536ae1ed0704d967bf6b3d740ddaac296df95a3fff945992e02c14f",
+      "bytes": 111173
+    },
+    {
+      "file": "preedy/Preedy_Codebook_Transfer_Report.pdf",
+      "url": "https://voynichmanuscriptdecoded.com/research/Preedy_Codebook_Transfer_Report.pdf",
+      "sha256": "349628df9d7fd52878012e84250413cb3dbb762738d990370f86ebc89d0c938a",
+      "bytes": 9926
+    },
+    {
+      "file": "ata/arda-2025-phonetic-range-4071.pdf",
+      "url": "https://www.turkicresearch.com/files/articles/4071.pdf",
+      "sha256": "2c3a5962f51fa6ada1719a181eef9dd4aa5891144af04cf9c35055766244c5f5",
+      "bytes": 3666999
+    },
+    {
+      "file": "ata/arda-2025-current-tables-3070.pdf",
+      "url": "https://www.turkicresearch.com/files/articles/3070.pdf",
+      "sha256": "226209ef3bcd77e451181b764a1adaddd4e6d52aae79bbdc09881fc8ea7b72dc",
+      "bytes": 3595867
+    },
+    {
+      "file": "historical/florentine-cipher.pdf",
+      "url": "https://dspace.ut.ee/bitstreams/40aeef0d-efa0-482f-8040-ead396b2dfc2/download",
+      "sha256": "90c3df19dafaf48e27b2f0e7d7701b243fca9f3ad5a46114b38fa2bd5af8ff6c",
+      "bytes": 1567217
+    }
+  ]
+}
