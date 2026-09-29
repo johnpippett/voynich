@@ -1,8 +1,9 @@
 # Voynich research
 
-Research is paused at the owner's request, dated 2026-09-17.
-Do not start new research runs or extend stopped studies until the owner asks to resume.
-The [pause record](docs/research/pause-record-2026-09-17.md) gives the current state and retained work.
+The owner asked to continue research on 2026-09-29.
+The [continuation record](docs/research/continuation-record-2026-09-29.md) defines the current work.
+The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earlier state and retained work.
+Do not restart a stopped branch without a new question and a fixed method that can answer it.
 
 This repository is public. Do not include personal information, private contact
 details, local user paths, credentials, or attachment metadata.

@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-29",
+  "files": {
+    "data/bifolio_manifest.json": "998cb3d6c8327ff0bdf786d52968fa3bec9f5fa9b05ba7ae56065fc9639fad72",
+    "data/source_manifest.json": "77c9f755ed47c19ccfe3ef92b7699953d5d5e9ada729492662c94154d3d2f4f1",
+    "docs/plans/line-phase-lattice-v1.md": "4a62103172924ca91aa5c6ef8d94331b362b082fe60b2ee4eb25a0a9a46377a8",
+    "experiments/homophonic/units.py": "fc321f7cc59bf91aed1061d9fb72b531125ab9255ae171167de0bbe289c59760",
+    "reports/line-triplet-boundary-certificates.json": "4f1d10c45efd69c4e99ca5abb64531ffb0bbc70a6d5990aaf787da3cc982d085",
+    "scripts/check_line_phase_freeze.py": "791551146e2675293801bb6fe7a290de04167fa8f58db95c782183e5ad95f489",
+    "scripts/check_line_phase_lattice.py": "42d81f49e34b56af1f8cac543c5d26439c1ffab72c01fdda2d0b221a1959a1b7",
+    "scripts/line_phase_lattice.py": "e034ed8240859e91d844c21d833511d1938afc72a6227b0f8be35ace187163d3",
+    "scripts/run_line_phase_lattice.py": "78a9a1ecb3b2df09dea09a492e2278f7e9ffc34dbe310a80b23bec3fdbf94f1a",
+    "scripts/verify_line_phase_sources.py": "50b400580c1f190b03aa09201a0404da459a8efdd997dac1d12ade9c9c486efc",
+    "src/voynich/__init__.py": "b102a07c0172d042de5a70dd819dfcdc53d17531835288acc48b05f10a954bf6",
+    "src/voynich/corpus.py": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+    "src/voynich/groups.py": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0"
+  },
+  "schema": "line-phase-lattice-freeze-v1",
+  "sources": {
+    "IT": {
+      "path": "data/raw/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"
+    },
+    "ZL": {
+      "path": "data/raw/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc"
+    }
+  }
+}

@@ -1,0 +1,836 @@
+{
+  "arithmetic_checks": {
+    "checks": [
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "build",
+            "<temporary>/coprime_rows.input.json",
+            "<temporary>/coprime_rows.certificate.json"
+          ],
+          "elapsed_seconds": 0.076027,
+          "input_sha256": "bcee8c0a528364091580c3dbcf99b0dafb7f3209e4017190d2ce461d25b77209",
+          "output_exists": true,
+          "output_sha256": "2ec8982777afaafaf73cfb1c2ce2e6da146cf5a615b2afd30e0b1305d2f9cae5",
+          "pivots": [
+            1
+          ],
+          "returncode": 0,
+          "status": "certified",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "built: certified\n",
+          "stdout_sha256": "dfbba55e4caba8bab849e6214d2e9008ce5f28c068e7a3a1f203053684c170b0",
+          "timed_out": false
+        },
+        "expected": {
+          "output_exists": true,
+          "pivots": [
+            1
+          ],
+          "returncode": 0,
+          "status": "certified"
+        },
+        "name": "coprime_rows",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "verify",
+            "<temporary>/verify_coprime_rows.proof.json"
+          ],
+          "elapsed_seconds": 0.056483,
+          "proof_sha256": "c59b79265a5bd76041e63aaa1c159aa87bf9936020bf26f5287687692c289988",
+          "returncode": 0,
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "verified\n",
+          "stdout_sha256": "672eb8316fec83f94119a4193f9fc552513d56a147502f8be4830e017d817831",
+          "timed_out": false
+        },
+        "expected": {
+          "verify_accepts": true
+        },
+        "name": "verify_coprime_rows",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "build",
+            "<temporary>/unimodular_matrix.input.json",
+            "<temporary>/unimodular_matrix.certificate.json"
+          ],
+          "elapsed_seconds": 0.067955,
+          "input_sha256": "1c6dff40cb7243ef0912c53c2507afa84992e81e78ecb6c974256b53393823be",
+          "output_exists": true,
+          "output_sha256": "a1147386970581bc977d487e619a6956bbf840f90491a0071eaa37eefb2cdab5",
+          "pivots": [
+            1,
+            1
+          ],
+          "returncode": 0,
+          "status": "certified",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "built: certified\n",
+          "stdout_sha256": "dfbba55e4caba8bab849e6214d2e9008ce5f28c068e7a3a1f203053684c170b0",
+          "timed_out": false
+        },
+        "expected": {
+          "output_exists": true,
+          "pivots": [
+            1,
+            1
+          ],
+          "returncode": 0,
+          "status": "certified"
+        },
+        "name": "unimodular_matrix",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "verify",
+            "<temporary>/verify_unimodular_matrix.proof.json"
+          ],
+          "elapsed_seconds": 0.051251,
+          "proof_sha256": "a569a2c4d959b28d8531fb0162b51ec6ff6277908bce1f33e2db39fcf8627507",
+          "returncode": 0,
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "verified\n",
+          "stdout_sha256": "672eb8316fec83f94119a4193f9fc552513d56a147502f8be4830e017d817831",
+          "timed_out": false
+        },
+        "expected": {
+          "verify_accepts": true
+        },
+        "name": "verify_unimodular_matrix",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "build",
+            "<temporary>/full_lattice_without_unit_minor.input.json",
+            "<temporary>/full_lattice_without_unit_minor.certificate.json"
+          ],
+          "elapsed_seconds": 0.053952,
+          "input_sha256": "5209565cf373ec8d4f2febfe0528a6077dc6cf5b4488a261048678914de3bb05",
+          "output_exists": true,
+          "output_sha256": "9d2f73bfdf2ddcb95b1752bec51af577535bfaec1996cb5bb3c3f0d00e6e87b0",
+          "pivots": [
+            1,
+            1
+          ],
+          "returncode": 0,
+          "status": "certified",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "built: certified\n",
+          "stdout_sha256": "dfbba55e4caba8bab849e6214d2e9008ce5f28c068e7a3a1f203053684c170b0",
+          "timed_out": false
+        },
+        "expected": {
+          "output_exists": true,
+          "pivots": [
+            1,
+            1
+          ],
+          "returncode": 0,
+          "status": "certified"
+        },
+        "name": "full_lattice_without_unit_minor",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "verify",
+            "<temporary>/verify_full_lattice_without_unit_minor.proof.json"
+          ],
+          "elapsed_seconds": 0.066303,
+          "proof_sha256": "814ba76c3ca678658c6490d2ba9ecaed7147588eba2a38baf65c606fda83af21",
+          "returncode": 0,
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "verified\n",
+          "stdout_sha256": "672eb8316fec83f94119a4193f9fc552513d56a147502f8be4830e017d817831",
+          "timed_out": false
+        },
+        "expected": {
+          "verify_accepts": true
+        },
+        "name": "verify_full_lattice_without_unit_minor",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "build",
+            "<temporary>/proper_sublattice.input.json",
+            "<temporary>/proper_sublattice.certificate.json"
+          ],
+          "elapsed_seconds": 0.066545,
+          "input_sha256": "61aa694897526536be2e549021eca45cdd2298af8d3fa7db9494a028447af3b9",
+          "output_exists": true,
+          "output_sha256": "ace537b5546589905576dffb9723a5d25154cc035aed4cd7c557c15e09354d09",
+          "pivots": [
+            2
+          ],
+          "returncode": 0,
+          "status": "not_certified",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "built: not_certified\n",
+          "stdout_sha256": "ff27db7a0eef1b2baefd6e323b54faba473d463bdfdffdfe7a1a00eab622ae2e",
+          "timed_out": false
+        },
+        "expected": {
+          "output_exists": true,
+          "pivots": [
+            2
+          ],
+          "returncode": 0,
+          "status": "not_certified"
+        },
+        "name": "proper_sublattice",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "verify",
+            "<temporary>/verify_proper_sublattice.proof.json"
+          ],
+          "elapsed_seconds": 0.065654,
+          "proof_sha256": "88edf24617006d2f4bad8347088afa66cd2406145f76ec269312035c6e51abe0",
+          "returncode": 2,
+          "stderr": "error: certificate status is not certified\n",
+          "stderr_sha256": "f212cf377abfa775695c7a9c221a12088f2ec4166ef437562f3b3ccdcf1e8413",
+          "stdout": "",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timed_out": false
+        },
+        "expected": {
+          "verify_accepts": false
+        },
+        "name": "verify_proper_sublattice",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "build",
+            "<temporary>/proper_sublattice_full_rank_mod_three.input.json",
+            "<temporary>/proper_sublattice_full_rank_mod_three.certificate.json"
+          ],
+          "elapsed_seconds": 0.065879,
+          "input_sha256": "903e6e230c3d58023c9dfe2a61236db1c1b49b03c34dd104292c302096de21b3",
+          "output_exists": true,
+          "output_sha256": "97439d255d6336ddcfd0ea41738bcde2a2fd41263e760ac3a34e589a3d38f054",
+          "pivots": [
+            1,
+            2
+          ],
+          "returncode": 0,
+          "status": "not_certified",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "built: not_certified\n",
+          "stdout_sha256": "ff27db7a0eef1b2baefd6e323b54faba473d463bdfdffdfe7a1a00eab622ae2e",
+          "timed_out": false
+        },
+        "expected": {
+          "output_exists": true,
+          "pivots": [
+            1,
+            2
+          ],
+          "returncode": 0,
+          "status": "not_certified"
+        },
+        "name": "proper_sublattice_full_rank_mod_three",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "verify",
+            "<temporary>/verify_proper_sublattice_full_rank_mod_three.proof.json"
+          ],
+          "elapsed_seconds": 0.049177,
+          "proof_sha256": "a3cc7072e71ee35f701372d2d00141a10a876d2c6e65f22b6594daafbde83c36",
+          "returncode": 2,
+          "stderr": "error: certificate status is not certified\n",
+          "stderr_sha256": "f212cf377abfa775695c7a9c221a12088f2ec4166ef437562f3b3ccdcf1e8413",
+          "stdout": "",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timed_out": false
+        },
+        "expected": {
+          "verify_accepts": false
+        },
+        "name": "verify_proper_sublattice_full_rank_mod_three",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "build",
+            "<temporary>/rank_deficient.input.json",
+            "<temporary>/rank_deficient.certificate.json"
+          ],
+          "elapsed_seconds": 0.050335,
+          "input_sha256": "ca38c35e2744087931e2f0ba8ffa2904797338a220001ffa6fe624420c70bc60",
+          "output_exists": true,
+          "output_sha256": "eee81f3634708512861a32e4dc4319bc054fb2a8a25c833e75499d09fda53bfe",
+          "pivots": [
+            1
+          ],
+          "returncode": 0,
+          "status": "not_certified",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "built: not_certified\n",
+          "stdout_sha256": "ff27db7a0eef1b2baefd6e323b54faba473d463bdfdffdfe7a1a00eab622ae2e",
+          "timed_out": false
+        },
+        "expected": {
+          "output_exists": true,
+          "pivots": [
+            1
+          ],
+          "returncode": 0,
+          "status": "not_certified"
+        },
+        "name": "rank_deficient",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "verify",
+            "<temporary>/verify_rank_deficient.proof.json"
+          ],
+          "elapsed_seconds": 0.066379,
+          "proof_sha256": "f612ce123612da29e12ec65306add175c05aa23dd2a75bf97895e5300301279f",
+          "returncode": 2,
+          "stderr": "error: certificate status is not certified\n",
+          "stderr_sha256": "f212cf377abfa775695c7a9c221a12088f2ec4166ef437562f3b3ccdcf1e8413",
+          "stdout": "",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timed_out": false
+        },
+        "expected": {
+          "verify_accepts": false
+        },
+        "name": "verify_rank_deficient",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "build",
+            "<temporary>/negative_entries.input.json",
+            "<temporary>/negative_entries.certificate.json"
+          ],
+          "elapsed_seconds": 0.070435,
+          "input_sha256": "1bd954074694a9148ce90f2beffcc4445d620f4d669ddab3dd247b7ae734bd5b",
+          "output_exists": true,
+          "output_sha256": "8a64795c1e094b36c9beaec184c3f76dc1ae76f6fcf513eca1ef48a9dd352314",
+          "pivots": [
+            1
+          ],
+          "returncode": 0,
+          "status": "certified",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "built: certified\n",
+          "stdout_sha256": "dfbba55e4caba8bab849e6214d2e9008ce5f28c068e7a3a1f203053684c170b0",
+          "timed_out": false
+        },
+        "expected": {
+          "output_exists": true,
+          "pivots": [
+            1
+          ],
+          "returncode": 0,
+          "status": "certified"
+        },
+        "name": "negative_entries",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "verify",
+            "<temporary>/verify_negative_entries.proof.json"
+          ],
+          "elapsed_seconds": 0.070684,
+          "proof_sha256": "6a6c4060c6789bf56253e1b36a7a67e44757620e5f0914296d71418dd9296ba5",
+          "returncode": 0,
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "verified\n",
+          "stdout_sha256": "672eb8316fec83f94119a4193f9fc552513d56a147502f8be4830e017d817831",
+          "timed_out": false
+        },
+        "expected": {
+          "verify_accepts": true
+        },
+        "name": "verify_negative_entries",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "build",
+            "<temporary>/bit_limit.input.json",
+            "<temporary>/bit_limit.certificate.json"
+          ],
+          "elapsed_seconds": 0.063576,
+          "input_sha256": "0ef6a9638a1844e049fdd41ccbc310473f9c629d879d67085bfbf203370ca578",
+          "output_exists": true,
+          "output_sha256": "dd35d9cda017dc4e6df52a1b8d3506db7a3c7b5bbc85ba54e3af8e5f4e07e550",
+          "pivots": [],
+          "returncode": 0,
+          "status": "not_certified",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "built: not_certified\n",
+          "stdout_sha256": "ff27db7a0eef1b2baefd6e323b54faba473d463bdfdffdfe7a1a00eab622ae2e",
+          "timed_out": false
+        },
+        "expected": {
+          "output_exists": true,
+          "pivots": [],
+          "returncode": 0,
+          "status": "not_certified"
+        },
+        "name": "bit_limit",
+        "passed": true
+      },
+      {
+        "actual": {
+          "reason": "an intermediate integer exceeded the 4,096-bit limit"
+        },
+        "expected": {
+          "noncertified_reason_present": true
+        },
+        "name": "bit_limit_reason",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "build",
+            "<temporary>/builder_product_limit.input.json",
+            "<temporary>/builder_product_limit.certificate.json"
+          ],
+          "elapsed_seconds": 0.059104,
+          "input_sha256": "a228eedbc34d08c78b160262ba114615cc8058a676589b5ee17078748589a63b",
+          "output_exists": true,
+          "output_sha256": "138be6412650400bdaa262bc3c5b6ba1b31b10f769bd828cb7e9549d073c7c1f",
+          "pivots": [
+            1,
+            1
+          ],
+          "returncode": 0,
+          "status": "not_certified",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "built: not_certified\n",
+          "stdout_sha256": "ff27db7a0eef1b2baefd6e323b54faba473d463bdfdffdfe7a1a00eab622ae2e",
+          "timed_out": false
+        },
+        "expected": {
+          "output_exists": true,
+          "pivots": [
+            1,
+            1
+          ],
+          "returncode": 0,
+          "status": "not_certified"
+        },
+        "name": "builder_product_limit",
+        "passed": true
+      },
+      {
+        "actual": {
+          "reason": "an intermediate integer exceeded the 4,096-bit limit"
+        },
+        "expected": {
+          "noncertified_bit_limit_reason": true
+        },
+        "name": "builder_product_limit_reason",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "verify",
+            "<temporary>/verify_builder_product_limit.proof.json"
+          ],
+          "elapsed_seconds": 0.057487,
+          "proof_sha256": "000c4642b9837b227969ca5015051c009fdcf9fd96512e83bba2ea13fcd16881",
+          "returncode": 2,
+          "stderr": "error: certificate status is not certified\n",
+          "stderr_sha256": "f212cf377abfa775695c7a9c221a12088f2ec4166ef437562f3b3ccdcf1e8413",
+          "stdout": "",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timed_out": false
+        },
+        "expected": {
+          "verify_accepts": false
+        },
+        "name": "verify_builder_product_limit",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "build",
+            "<temporary>/malformed_json.input.json",
+            "<temporary>/malformed_json.certificate.json"
+          ],
+          "elapsed_seconds": 0.060513,
+          "input_sha256": "8f9302f65614f26c0ac129b3a69b2617d858989920ca60be65da649dc4b34118",
+          "output_exists": false,
+          "returncode": 2,
+          "stderr": "error: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\n",
+          "stderr_sha256": "0ff55156d89f76264f3f7cf2b3d93e17831268327d1592eebfcef8011eb5a818",
+          "stdout": "",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timed_out": false
+        },
+        "expected": {
+          "output_exists": false,
+          "returncode_nonzero": true
+        },
+        "name": "malformed_json",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "build",
+            "<temporary>/empty_rows.input.json",
+            "<temporary>/empty_rows.certificate.json"
+          ],
+          "elapsed_seconds": 0.074717,
+          "input_sha256": "1633902c6cbba5e7770dbed172df754a25078bb76efe1f23474edc87f1a47655",
+          "output_exists": false,
+          "returncode": 2,
+          "stderr": "error: rows must be a non-empty list\n",
+          "stderr_sha256": "6cbfaec24cf5988a765cf2f1fe9838f7a9662b55344514abccc3b0fd754f61c6",
+          "stdout": "",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timed_out": false
+        },
+        "expected": {
+          "output_exists": false,
+          "returncode_nonzero": true
+        },
+        "name": "empty_rows",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "build",
+            "<temporary>/ragged_rows.input.json",
+            "<temporary>/ragged_rows.certificate.json"
+          ],
+          "elapsed_seconds": 0.07046,
+          "input_sha256": "79f3556f2cd2ade2476d4235c1d4558c4911e0183b5756269dc768da2e4500e0",
+          "output_exists": false,
+          "returncode": 2,
+          "stderr": "error: all rows must have the same column count\n",
+          "stderr_sha256": "e24601c9c7e021d51e40830d9b9dc231244aac24d20c40e03b18c1a333622180",
+          "stdout": "",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timed_out": false
+        },
+        "expected": {
+          "output_exists": false,
+          "returncode_nonzero": true
+        },
+        "name": "ragged_rows",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "build",
+            "<temporary>/boolean_entry.input.json",
+            "<temporary>/boolean_entry.certificate.json"
+          ],
+          "elapsed_seconds": 0.065037,
+          "input_sha256": "21d2bcf12afae59e9079e1fe395a4557e21080adf17c1d1e61a04f91fe5f875b",
+          "output_exists": false,
+          "returncode": 2,
+          "stderr": "error: entry at row 0, column 0 must be an integer\n",
+          "stderr_sha256": "e54be5d7b8d7204a6194fdd7c14be5d178c40f1cd975ce136b54feac0de95d2e",
+          "stdout": "",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timed_out": false
+        },
+        "expected": {
+          "output_exists": false,
+          "returncode_nonzero": true
+        },
+        "name": "boolean_entry",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "build",
+            "<temporary>/float_entry.input.json",
+            "<temporary>/float_entry.certificate.json"
+          ],
+          "elapsed_seconds": 0.059085,
+          "input_sha256": "b39c68065c5f804ed0624be88f7a0b1b28f09831369fd3e469e9232268e2c643",
+          "output_exists": false,
+          "returncode": 2,
+          "stderr": "error: entry at row 0, column 0 must be an integer\n",
+          "stderr_sha256": "e54be5d7b8d7204a6194fdd7c14be5d178c40f1cd975ce136b54feac0de95d2e",
+          "stdout": "",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timed_out": false
+        },
+        "expected": {
+          "output_exists": false,
+          "returncode_nonzero": true
+        },
+        "name": "float_entry",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "verify",
+            "<temporary>/verify_hand_checked_proof.proof.json"
+          ],
+          "elapsed_seconds": 0.062556,
+          "proof_sha256": "3b4403a75521b03699e513b7f605f14a72d8d8b12a46f61a321677e4b3b3cf93",
+          "returncode": 0,
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "verified\n",
+          "stdout_sha256": "672eb8316fec83f94119a4193f9fc552513d56a147502f8be4830e017d817831",
+          "timed_out": false
+        },
+        "expected": {
+          "verify_accepts": true
+        },
+        "name": "verify_hand_checked_proof",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "verify",
+            "<temporary>/verify_bounded_products.proof.json"
+          ],
+          "elapsed_seconds": 0.062908,
+          "proof_sha256": "e5e6518197efbbd200b3a25e54e5ad1dbc5b1d08346c4fd7c9d26f6efcd776ce",
+          "returncode": 2,
+          "stderr": "error: an intermediate integer exceeded the 4,096-bit limit\n",
+          "stderr_sha256": "7daa8610fb55a85b15806007bd31676380970d9575db68661eb5a5d3a9d5281c",
+          "stdout": "",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timed_out": false
+        },
+        "expected": {
+          "verify_accepts": false
+        },
+        "name": "verify_bounded_products",
+        "passed": true
+      },
+      {
+        "actual": {
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "verify",
+            "<temporary>/verify_tampered_proof.proof.json"
+          ],
+          "elapsed_seconds": 0.050683,
+          "proof_sha256": "3e12d19acf824b444f492ec4fc755f8c5fe7b093694618875cd1fdf29e131236",
+          "returncode": 2,
+          "stderr": "error: left_inverse multiplied by support_rows is not identity\n",
+          "stderr_sha256": "ffd5ff55e9f952bdebf24d33bd2d08d63d34d7e04d047768a7917b0fe81f153c",
+          "stdout": "",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timed_out": false
+        },
+        "expected": {
+          "verify_accepts": false
+        },
+        "name": "verify_tampered_proof",
+        "passed": true
+      },
+      {
+        "actual": {
+          "after_sha256": "59721d867b5d9a749c3f6be66bbbf90b7faa690e5ce37982c563fc01128bd265",
+          "before_sha256": "59721d867b5d9a749c3f6be66bbbf90b7faa690e5ce37982c563fc01128bd265",
+          "command": [
+            "python",
+            "scripts/line_phase_lattice.py",
+            "build",
+            "<temporary>/existing_output.input.json",
+            "<temporary>/existing_output.certificate.json"
+          ],
+          "elapsed_seconds": 0.048108,
+          "returncode": 2,
+          "stderr": "error: [Errno 17] File exists: '<temporary>/existing_output.certificate.json'\n",
+          "stderr_sha256": "3b5e5873ec7414c9a9b189f9ba1ce659180ce1afb104a81b82a6a7e2d849bdf7",
+          "stdout": "",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "timed_out": false
+        },
+        "expected": {
+          "output_unchanged": true,
+          "returncode_nonzero": true
+        },
+        "name": "exclusive_output",
+        "passed": true
+      }
+    ],
+    "code_sha256": {
+      "results/line-phase-lattice-e2e-v1/failure-modes.md": "ec10373289ec5073028e1f90ef56c2a45c6a369e8a3b6e580a8aa1a71ef9c944",
+      "scripts/check_line_phase_lattice.py": "42d81f49e34b56af1f8cac543c5d26439c1ffab72c01fdda2d0b221a1959a1b7",
+      "scripts/line_phase_lattice.py": "e034ed8240859e91d844c21d833511d1938afc72a6227b0f8be35ace187163d3"
+    },
+    "format": "line-phase-lattice-e2e-v1",
+    "initial_failure_sha256": "2ceaa1a703cfc92411fa2d34017da25070ec87de8eb614a3c98a7ffc447ffba0",
+    "passed": true,
+    "recorded_at_utc": "2026-09-29T20:24:56.034179+00:00",
+    "setup": {
+      "command": "python scripts/check_line_phase_lattice.py",
+      "dependencies": "Python standard library only",
+      "resource_limits": {
+        "integer_bits": 4096,
+        "seconds_per_build": 600
+      },
+      "runtime": "3.14.7",
+      "source_data_used": false,
+      "tie_rule": "lowest active row slot breaks equal-absolute-pivot ties"
+    }
+  },
+  "freeze_after": {
+    "actual": {
+      "freeze_file_set_error": true,
+      "output_exists": false,
+      "returncode": 1
+    },
+    "expected": "Nonzero exit, freeze file set error, no output directory.",
+    "passed": true,
+    "rerun": "python scripts/check_line_phase_freeze.py NEW_RECEIPT.json",
+    "runner_sha256": "78a9a1ecb3b2df09dea09a492e2278f7e9ffc34dbe310a80b23bec3fdbf94f1a",
+    "schema": "line-phase-freeze-e2e-v1",
+    "setup": "Empty files and sources in a temporary freeze.",
+    "steps": [
+      "Run the source command with a new output directory.",
+      "Require rejection before output creation."
+    ]
+  },
+  "freeze_before": {
+    "actual": {
+      "freeze_file_set_error": false,
+      "output_exists": true,
+      "returncode": 0
+    },
+    "expected": "Nonzero exit, freeze file set error, no output directory.",
+    "passed": false,
+    "rerun": "python scripts/check_line_phase_freeze.py NEW_RECEIPT.json",
+    "runner_sha256": "b6f3342360229604bebf00b4885b98beaaee2a9ade6a6d968c01c26f746484ad",
+    "schema": "line-phase-freeze-e2e-v1",
+    "setup": "Empty files and sources in a temporary freeze.",
+    "steps": [
+      "Run the source command with a new output directory.",
+      "Require rejection before output creation."
+    ]
+  },
+  "records": {
+    "arithmetic_final": {
+      "local_path": "results/line-phase-lattice-e2e-v1/passed-run-20260929T202456034794Z.json",
+      "passed": true,
+      "sha256": "b9141006aaa9630b26d7e6ca78d02ec9084b0ca2951df88c38a3d5a91dd40b47"
+    },
+    "arithmetic_initial": {
+      "local_path": "results/line-phase-lattice-e2e-v1/initial-failure.json",
+      "passed": false,
+      "sha256": "2ceaa1a703cfc92411fa2d34017da25070ec87de8eb614a3c98a7ffc447ffba0"
+    },
+    "arithmetic_resource_before": {
+      "local_path": "results/line-phase-lattice-e2e-v1/failed-run-20260929T201920157590Z.json",
+      "passed": false,
+      "sha256": "51431693a6b0ee289c70b9d79f8af15430e2115f1bbd56e1da34f3d4bb6d5f7e"
+    },
+    "freeze_after": {
+      "local_path": "results/line-phase-lattice-v1/freeze-gate-after.json",
+      "passed": true,
+      "sha256": "7fae5c21d2b84bb98ce962d6fe6e1d748b8afc7427282aadd2a445709b6813db"
+    },
+    "freeze_before": {
+      "local_path": "results/line-phase-lattice-v1/freeze-gate-before.json",
+      "passed": false,
+      "sha256": "461330e0797cf1dbc2ec22ffa7862e2b3a4ca27408338a79f8f25269df59d66f"
+    }
+  },
+  "schema": "line-phase-e2e-record-v1"
+}

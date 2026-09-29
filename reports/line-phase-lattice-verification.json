@@ -1,0 +1,227 @@
+{
+  "coverage": {
+    "integer_proofs_verified": 5,
+    "matrices_verified": 8,
+    "resource_stops_inconclusive": 3
+  },
+  "created_at_utc": "2026-09-29T20:33:34+00:00",
+  "input_hashes": {
+    "baseline_sha256": "4f1d10c45efd69c4e99ca5abb64531ffb0bbc70a6d5990aaf787da3cc982d085",
+    "freeze_sha256": "3cc44e6d92e975ccb71b52e2f5074a9d84e75b61bd6ceac33d34a6263ec7114c",
+    "frozen_files": {
+      "data/bifolio_manifest.json": "998cb3d6c8327ff0bdf786d52968fa3bec9f5fa9b05ba7ae56065fc9639fad72",
+      "data/source_manifest.json": "77c9f755ed47c19ccfe3ef92b7699953d5d5e9ada729492662c94154d3d2f4f1",
+      "docs/plans/line-phase-lattice-v1.md": "4a62103172924ca91aa5c6ef8d94331b362b082fe60b2ee4eb25a0a9a46377a8",
+      "experiments/homophonic/units.py": "fc321f7cc59bf91aed1061d9fb72b531125ab9255ae171167de0bbe289c59760",
+      "reports/line-triplet-boundary-certificates.json": "4f1d10c45efd69c4e99ca5abb64531ffb0bbc70a6d5990aaf787da3cc982d085",
+      "scripts/check_line_phase_freeze.py": "791551146e2675293801bb6fe7a290de04167fa8f58db95c782183e5ad95f489",
+      "scripts/check_line_phase_lattice.py": "42d81f49e34b56af1f8cac543c5d26439c1ffab72c01fdda2d0b221a1959a1b7",
+      "scripts/line_phase_lattice.py": "e034ed8240859e91d844c21d833511d1938afc72a6227b0f8be35ace187163d3",
+      "scripts/run_line_phase_lattice.py": "78a9a1ecb3b2df09dea09a492e2278f7e9ffc34dbe310a80b23bec3fdbf94f1a",
+      "scripts/verify_line_phase_sources.py": "50b400580c1f190b03aa09201a0404da459a8efdd997dac1d12ade9c9c486efc",
+      "src/voynich/__init__.py": "b102a07c0172d042de5a70dd819dfcdc53d17531835288acc48b05f10a954bf6",
+      "src/voynich/corpus.py": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+      "src/voynich/groups.py": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0"
+    },
+    "result_sha256": "7ec896e4495153f7bccde16f9100bb9f63051013bad22a517e4c4cb6370219cd",
+    "sources": {
+      "IT": {
+        "path": "data/raw/IT2a-n.txt",
+        "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"
+      },
+      "ZL": {
+        "path": "data/raw/ZL3b-n.txt",
+        "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc"
+      }
+    }
+  },
+  "limits": [
+    "Resource stops give no integer-lattice conclusion.",
+    "The receipt does not establish glyph readings, a historical code, or plaintext."
+  ],
+  "schema": "line-phase-partial-independent-verification-v1",
+  "setup": {
+    "command_template": "python scripts/verify_line_phase_partial.py --freeze experiments/line_phase/freeze-v1.json --results reports/line-phase-lattice-v1 --output results/line-phase-lattice-verification-v1/partial-receipt.json",
+    "frozen_verifier_sha256": "50b400580c1f190b03aa09201a0404da459a8efdd997dac1d12ade9c9c486efc",
+    "method": "independent source reconstruction via frozen verifier helpers; direct integer certificate products",
+    "partial_driver_sha256": "fad850b0f399f1a60435662b68b3c7d00c995723e03a6bafde97c3ad85022801",
+    "python_version": "3.14.7"
+  },
+  "status": "verified_partial",
+  "verified_sources": [
+    {
+      "exclusion_counts": {
+        "current_locator": 256,
+        "fewer_than_three_words": 17,
+        "missing_class": 49,
+        "next_locator": 63,
+        "no_next_on_folio": 149,
+        "non_paragraph_kind": 1428,
+        "parser_rejection": 639,
+        "strict_spelling": 1494
+      },
+      "path": "data/raw/ZL3b-n.txt",
+      "selected_lines": 1290,
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "source": "ZL"
+    },
+    {
+      "exclusion_counts": {
+        "current_locator": 256,
+        "fewer_than_three_words": 16,
+        "missing_class": 49,
+        "next_locator": 59,
+        "no_next_on_folio": 151,
+        "non_paragraph_kind": 1259,
+        "nonconsecutive_next_locus": 4,
+        "parser_rejection": 55,
+        "strict_spelling": 508
+      },
+      "path": "data/raw/IT2a-n.txt",
+      "selected_lines": 2858,
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "source": "IT"
+    }
+  ],
+  "verified_tracks": [
+    {
+      "certificate_sha256": "b249452c9337b2c1400842c8b036f668f9ca3c0d5834682e39dca01391bafbc0",
+      "checks": [
+        "alphabet and nuisance-column order",
+        "source-order integer matrix hash",
+        "prior modulo-three unique matrix hash",
+        "support indexes, rows, and source references",
+        "direct integer multiplication B A = I"
+      ],
+      "identity_products_checked": 676,
+      "integer_matrix_sha256": "9ac1d22c4dba55b5a12dd67984363720077b3a263a6fa4ceb2d21f332aaaaa73",
+      "prior_modulo_three_matrix_sha256": "fb8be7c1ab1695df9cde589f6717930a875eb2f8415380a1414abb7d6f40b1a7",
+      "selection_sha256": "6dc3cddd004d73ebb1a8de2ad628dc2d962f280f3dda9c0db7c604df8f14c6b3",
+      "status": "certified_integer_left_inverse",
+      "support_rows": 28,
+      "track": "ZL-A-visual"
+    },
+    {
+      "certificate_sha256": "aa1e6c834435808dc5f22be92044244f2fb4521831e5c14e13d316d67c885418",
+      "checks": [
+        "alphabet and nuisance-column order",
+        "source-order integer matrix hash",
+        "prior modulo-three unique matrix hash",
+        "support indexes, rows, and source references",
+        "direct integer multiplication B A = I"
+      ],
+      "identity_products_checked": 529,
+      "integer_matrix_sha256": "da94735911d779980aec49fbdaebed4d0a803d1386a00a47cf02ffece3d3d00f",
+      "prior_modulo_three_matrix_sha256": "4cfb1803dd8fc756040f5aa41929b989057bf32ee8826a155f87a36d238d4d4d",
+      "selection_sha256": "6dc3cddd004d73ebb1a8de2ad628dc2d962f280f3dda9c0db7c604df8f14c6b3",
+      "status": "certified_integer_left_inverse",
+      "support_rows": 26,
+      "track": "ZL-A-raw"
+    },
+    {
+      "certificate_sha256": "766c21dea12c9d94a0d4f7c063facb644afcbcfeb7c81df990e5e7a8f1055724",
+      "checks": [
+        "source selection",
+        "integer matrix hash",
+        "prior modulo-three hash",
+        "stop metadata and certificate hash"
+      ],
+      "columns": 27,
+      "integer_matrix_sha256": "9b55aaa813f7ee24713537a4b952e825b790412c349600d296c3d9ef972eef84",
+      "prior_modulo_three_matrix_sha256": "c6826257958f1dd1441d53b5a81a404f65a8d6172a7ef105bba7192e0d6b739a",
+      "reason": "an intermediate integer exceeded the 4,096-bit limit",
+      "selection_sha256": "29a94699053e4635cfd6751ee64814b1194ee53d12bed3a55e2ba03fbf321503",
+      "status": "inconclusive_resource_stop",
+      "support_rows": 0,
+      "track": "ZL-B-visual",
+      "training_lines": 539
+    },
+    {
+      "certificate_sha256": "cd1982b6408402282ee96b43497cd4416e840bf7acd772fa772c37c229b8bafa",
+      "checks": [
+        "source selection",
+        "integer matrix hash",
+        "prior modulo-three hash",
+        "stop metadata and certificate hash"
+      ],
+      "columns": 23,
+      "integer_matrix_sha256": "80540cfee264ff8ba8bbb0d6ced2de492a4bd054420c6342286c0b3168446843",
+      "prior_modulo_three_matrix_sha256": "443fb058ca259b247143d412b9b56367c9351afb93937f50d600f368c100373e",
+      "reason": "an intermediate integer exceeded the 4,096-bit limit",
+      "selection_sha256": "29a94699053e4635cfd6751ee64814b1194ee53d12bed3a55e2ba03fbf321503",
+      "status": "inconclusive_resource_stop",
+      "support_rows": 0,
+      "track": "ZL-B-raw",
+      "training_lines": 539
+    },
+    {
+      "certificate_sha256": "0a2d281143c4b2bcdaa683779498dcfdd0125ad0e2453da0c1327456d1b610da",
+      "checks": [
+        "alphabet and nuisance-column order",
+        "source-order integer matrix hash",
+        "prior modulo-three unique matrix hash",
+        "support indexes, rows, and source references",
+        "direct integer multiplication B A = I"
+      ],
+      "identity_products_checked": 729,
+      "integer_matrix_sha256": "7129d7b177ad35c911ae4116ef5917743b7961497605f2981d53c500f25345c7",
+      "prior_modulo_three_matrix_sha256": "86c935e9a8f62422e8f22efe1b3cf4d96fd05758a0be03fdc3417269d1367738",
+      "selection_sha256": "c93ef583ca4d29c5f4a0de76a26ad41d6cc3d525e4307b25286fc5298c2e0bfd",
+      "status": "certified_integer_left_inverse",
+      "support_rows": 29,
+      "track": "IT-A-visual"
+    },
+    {
+      "certificate_sha256": "d318d25b9adc323245f50952b7bbe9ce8c2a9c8404e8f2d2522c13fff1af7947",
+      "checks": [
+        "alphabet and nuisance-column order",
+        "source-order integer matrix hash",
+        "prior modulo-three unique matrix hash",
+        "support indexes, rows, and source references",
+        "direct integer multiplication B A = I"
+      ],
+      "identity_products_checked": 441,
+      "integer_matrix_sha256": "f02c2b5d678270e005dbbe476f5752525e44e9bc40e28b549706cae3ba6818bf",
+      "prior_modulo_three_matrix_sha256": "023a4e55cead6f8edcb8698f5a40445aad4a2fc6a2752c19f08a28b526490ffc",
+      "selection_sha256": "c93ef583ca4d29c5f4a0de76a26ad41d6cc3d525e4307b25286fc5298c2e0bfd",
+      "status": "certified_integer_left_inverse",
+      "support_rows": 22,
+      "track": "IT-A-raw"
+    },
+    {
+      "certificate_sha256": "f3bc0bd754713f8e23f70c2fa6302496ea687296c38af297ec82fc485104f6f9",
+      "checks": [
+        "alphabet and nuisance-column order",
+        "source-order integer matrix hash",
+        "prior modulo-three unique matrix hash",
+        "support indexes, rows, and source references",
+        "direct integer multiplication B A = I"
+      ],
+      "identity_products_checked": 784,
+      "integer_matrix_sha256": "5e09a8ebd4f1178cc1e7c35d3f570845cd983cd76163dea2c2a9e25ac93cbf40",
+      "prior_modulo_three_matrix_sha256": "d20b9dedf5f3aab2a79c598e15e0e4b293c647d3180a5c759afdddf318860aa9",
+      "selection_sha256": "87668fa3367e6267d0319c2805b9efd5e995dcbc2ab346af9765eef56c1a6528",
+      "status": "certified_integer_left_inverse",
+      "support_rows": 31,
+      "track": "IT-B-visual"
+    },
+    {
+      "certificate_sha256": "b48627631b085e904d2c945e9ea4f5a5fb6e561d356078e0f1c19e57c8e8a5ff",
+      "checks": [
+        "source selection",
+        "integer matrix hash",
+        "prior modulo-three hash",
+        "stop metadata and certificate hash"
+      ],
+      "columns": 22,
+      "integer_matrix_sha256": "3cf67fd0da929dce2fd67a09c963bfc3051169b00adc735ac8f0b3b90158523a",
+      "prior_modulo_three_matrix_sha256": "9d471a4fc87e815fb7cc1cb347c13e3848f538d3a660da427ab254969bd3c16b",
+      "reason": "an intermediate integer exceeded the 4,096-bit limit",
+      "selection_sha256": "87668fa3367e6267d0319c2805b9efd5e995dcbc2ab346af9765eef56c1a6528",
+      "status": "inconclusive_resource_stop",
+      "support_rows": 0,
+      "track": "IT-B-raw",
+      "training_lines": 1255
+    }
+  ]
+}

@@ -40,3 +40,33 @@ jobs:
         run: PYTHONPATH=src:. python -m unittest discover -s experiments/cyclic_pairing -t . -p 'test_*.py' -v
       - name: Run local cyclic certificate tests
         run: PYTHONPATH=src:. python -m unittest discover -s experiments/local_cyclic -t . -p 'test_*.py' -v
+      - name: Run line-phase command checks
+        run: |
+          python scripts/check_line_phase_lattice.py
+          python scripts/check_line_phase_freeze.py results/line-phase-freeze-ci.json
+      - name: Check public line-phase certificates
+        run: |
+          python - <<'PY'
+          import hashlib, json, pathlib, sys
+          sys.path.insert(0, 'scripts')
+          from line_phase_lattice import verify_certificate
+          root = pathlib.Path('reports/line-phase-lattice-v1')
+          result = json.loads((root / 'result.json').read_text())
+          proved = stopped = 0
+          for source in result['sources']:
+              for track in source['tracks']:
+                  path = root / track['certificate_file']
+                  assert hashlib.sha256(path.read_bytes()).hexdigest() == track['certificate_sha256']
+                  proof = json.loads(path.read_text())
+                  assert proof['status'] == track['status']
+                  if proof['status'] == 'certified':
+                      verify_certificate(proof)
+                      proved += 1
+                  else:
+                      assert proof['status'] == 'not_certified'
+                      assert proof['reason'] == 'an intermediate integer exceeded the 4,096-bit limit'
+                      assert not proof['support_rows'] and not proof['left_inverse']
+                      stopped += 1
+          assert (proved, stopped) == (5, 3)
+          print(f'{proved} proofs checked; {stopped} resource stops preserved')
+          PY

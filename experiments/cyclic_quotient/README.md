@@ -14,6 +14,7 @@ In particular, runner validation, receipt status, and process-group behavior nee
 At the pause, all 31 synthetic tests in this directory passed.
 These tests do not validate real-corpus execution or close the recorded review findings.
 
-Research is paused. Do not execute the source-control runner until the owner asks to resume and a new review authorizes the run.
+Research continued on 2026-09-29, but this draft remains stopped.
+A new review must authorize any source-control run.
 The [run design](../../docs/plans/cyclic-quotient-run-v1.md) describes intended behavior, not a completed release.
 The [research pause record](../../docs/research/pause-record-2026-09-17.md) gives the project outcome.

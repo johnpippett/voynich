@@ -3,11 +3,20 @@
 The objective is to explain the Voynich manuscript's writing system and recover its content where possible.
 That objective remains unresolved.
 The project has no validated key, plaintext language, or translation.
-Research is paused at the owner's request, dated 2026-09-17.
-No further experiment will start until the owner asks to resume.
-The [pause record](docs/research/pause-record-2026-09-17.md) distinguishes findings from unfinished development.
+The owner asked to continue research on 2026-09-29.
+The [continuation record](docs/research/continuation-record-2026-09-29.md) defines the selected work and outstanding limits.
+The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earlier findings and unfinished development.
 
 ## Current findings and stopped branches
+
+The [integer line-phase study](reports/LINE_PHASE_LATTICE.md) extends the earlier modulo-three condition to every finite block size in five training tracks.
+Both class-A sources pass under both unit representations. The IT class-B visual track also passes.
+Three other tracks reached the fixed 4,096-bit limit and remain inconclusive.
+Under the fixed common-phase model, each represented length and shared contribution must be a multiple of the chosen block size.
+This necessary condition supplies no symbol values or plaintext. The study stops without changed limits or additional data.
+
+The [source refresh](docs/research/source-availability-2026-09-29.md) found a newer zodiac replication archive.
+It does not restore the original answer CSV files. The Caspari–Faccini supplement remains absent from the checked listings.
 
 A [zodiac degree-alignment control](reports/ZODIAC_PANEL_CONTROL.md) tests a published figure-attribute sequence while preserving each physical panel's class counts.
 The fixed alignment has 52 matches among 78 known positions. Its exact conditional p-value is 0.42044.

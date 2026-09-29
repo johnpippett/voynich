@@ -6,9 +6,14 @@ It keeps source records and compares observations with explicit statistical cont
 **This project has not deciphered the manuscript.**
 It has no validated key, plaintext language, or translation.
 
-**Research is paused at the owner's request, dated 2026-09-17.**
-The [pause record](docs/research/pause-record-2026-09-17.md) summarizes the findings, limits, and retained unfinished work.
+**The owner asked to continue research on 2026-09-29.**
+The [continuation record](docs/research/continuation-record-2026-09-29.md) defines the selected work and remaining limits.
+The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earlier findings and unfinished work.
 The [current status](STATUS.md) records the completed experiments and stopped branches.
+
+The [integer line-phase study](reports/LINE_PHASE_LATTICE.md) extends a fixed expansion constraint to every finite code-block size in five tracks.
+Three other tracks reached the declared integer-size limit and remain inconclusive.
+The result identifies no symbol values or plaintext.
 
 The [fixed-expansion test](reports/LINE_TRIPLET_BOUNDARIES.md) constrains a three-digit code model.
 It assumes a common line-boundary phase within each source and Currier class.

@@ -1,0 +1,67 @@
+{
+  "archive": {
+    "bytes": 3271637,
+    "entries": 333,
+    "local_capture": "results/resumption-source-audit-2026-09-29/voynich_replication_v1.1.zip",
+    "readme_lines": "102-110",
+    "readme_path": "voynich_replication/README.md",
+    "sha256": "c01688ebd93e9f6dc99a06dee26f13e27f71054c6672a0cbcc43af32f2865fc2",
+    "url": "https://zenodo.org/api/records/22874165/files/voynich_replication_v1.zip/content"
+  },
+  "responses": [
+    {
+      "bytes": 4368,
+      "current_record_id": "8b4we_v1",
+      "http_status": 200,
+      "local_capture": "results/resumption-source-audit-2026-09-29/api-responses/osf-preprint.json",
+      "sha256": "4bbc631afcc3b33faa7a8f938cb1932566fc0a17ce3b5a4c3c458e444789d54b",
+      "url": "https://api.osf.io/v2/preprints/8b4we_v1/"
+    },
+    {
+      "bytes": 2058,
+      "current_record_id": "8b4we_v1",
+      "http_status": 200,
+      "local_capture": "results/resumption-source-audit-2026-09-29/api-responses/osf-preprint-storage.json",
+      "sha256": "443eaea38066700f124c5dce2ecb9f5cbef837d8edd1be258e74e90ebf05e0b9",
+      "url": "https://api.osf.io/v2/preprints/8b4we_v1/files/osfstorage/"
+    },
+    {
+      "bytes": 128,
+      "current_record_id": "aq7nj",
+      "http_status": 200,
+      "local_capture": "results/resumption-source-audit-2026-09-29/api-responses/osf-project-storage.json",
+      "sha256": "337a5845bf62ccbe2bee6d47834c9d6317bc033ab935af60bc66d75c688ef71a",
+      "url": "https://api.osf.io/v2/nodes/aq7nj/files/osfstorage/"
+    },
+    {
+      "bytes": 128,
+      "current_record_id": "aq7nj",
+      "http_status": 200,
+      "local_capture": "results/resumption-source-audit-2026-09-29/api-responses/osf-project-children.json",
+      "sha256": "337a5845bf62ccbe2bee6d47834c9d6317bc033ab935af60bc66d75c688ef71a",
+      "url": "https://api.osf.io/v2/nodes/aq7nj/children/"
+    },
+    {
+      "bytes": 4729,
+      "current_record_id": "item_3644902",
+      "http_status": 200,
+      "local_capture": "results/resumption-source-audit-2026-09-29/api-responses/mpg-item.json",
+      "sha256": "d890dd6ba132cc45acd07d621d8b121ad88981c11c2fa722d6119fdd17faed85",
+      "url": "https://pure.mpg.de/rest/items/item_3644902"
+    },
+    {
+      "archive_file": "voynich_replication_v1.zip",
+      "bytes": 7845,
+      "concept_doi": "10.5281/zenodo.21761982",
+      "current_record_id": "22874165",
+      "doi": "10.5281/zenodo.22874165",
+      "http_status": 200,
+      "local_capture": "results/resumption-source-audit-2026-09-29/api-responses/zenodo-concept-latest.json",
+      "publication_date": "2026-09-21",
+      "sha256": "5f22c1eb693a8660274467479220e56a551cf1b0b8470fe7ce773ffd3d2e9d3b",
+      "url": "https://zenodo.org/api/records/21761982/versions/latest",
+      "version": "v1.1"
+    }
+  ],
+  "retrieved_date": "2026-09-29"
+}

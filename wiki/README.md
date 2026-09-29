@@ -1,4 +1,12 @@
-# Project Wiki
+# Project wiki
+
+## Project summary
+
+Voynich contains reproducible statistical research on Beinecke MS 408. The project has no decipherment or validated translation. The owner asked to continue research on 2026-09-29.
+
+## Topic notes
+
+- [21.14 Integer Line Phases](<20-29 Implementation & Operations/21 Implementation Notes/21.14 Integer Line Phases.md>).
 
 This repo keeps durable project documentation in decimal-numbered markdown files.
 Use it as the canonical record of what changed, why, and how to verify it.
