@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "method": "Separate direct source-field calculation without the corpus parser or prior result files.",
+  "primary_result_sha256": "3d29e4100d51f24f16a82561adcc839179fd71505d84738cb0ee3af7201c6f66",
+  "separate_script_sha256": "09af34b3202dbf5f1d5aa725d5ecc5276f3c041bc70a1832341bf356bf71f15e",
+  "separate_private_receipt_sha256": "e44abae562d70b0cc09d154a2e51bd2c6107a27f5d80f66e1d21e54266863656",
+  "plan_sha256": "2b1f6afd73f266aedfe40fafe601e334142029313602b071ffb33a6c8b91e8a6",
+  "checks": [
+    {
+      "track": "ZL-split",
+      "region_token_counts_and_types_equal": true,
+      "all_locus_exclusions_and_space_flags_equal": true,
+      "all_three_intersections_equal": true
+    },
+    {
+      "track": "ZL-join",
+      "region_token_counts_and_types_equal": true,
+      "all_locus_exclusions_and_space_flags_equal": true,
+      "all_three_intersections_equal": true
+    },
+    {
+      "track": "IT-split",
+      "region_token_counts_and_types_equal": true,
+      "all_locus_exclusions_and_space_flags_equal": true,
+      "all_three_intersections_equal": true
+    },
+    {
+      "track": "IT-join",
+      "region_token_counts_and_types_equal": true,
+      "all_locus_exclusions_and_space_flags_equal": true,
+      "all_three_intersections_equal": true
+    }
+  ],
+  "limitation": "Both calculations use the same selected loci and source readings. This is a software check, not external verification of manuscript readings."
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "command": "PYTHONPATH=src python scripts/check_solar_lunar_names.py results/solar-lunar-name-check-v1/replay.json",
+  "new_downloads": [
+    {
+      "url": "https://www.voynich.nu/data/ZL3b-n.txt",
+      "sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "bytes": 411671
+    },
+    {
+      "url": "https://www.voynich.nu/data/IT2a-n.txt",
+      "sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "bytes": 342104
+    }
+  ],
+  "result_sha256": "3d29e4100d51f24f16a82561adcc839179fd71505d84738cb0ee3af7201c6f66",
+  "result_equals_original": true,
+  "existing_output_refused_unchanged": true,
+  "altered_source_rejected_without_output": true,
+  "public_script_sha256": "f92b55e528256e813a276bd6b77d345f24dc764f118205eb2f892a3a83d8509c",
+  "readme_sha256": "a108d2bb55f81d1a9dfec37989675a3c8793847c0c88a38193fbb4029f5afaca"
+}

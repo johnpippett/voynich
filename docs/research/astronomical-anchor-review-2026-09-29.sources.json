@@ -1,0 +1,60 @@
+{
+  "capture_date": "2026-09-29",
+  "sources": [
+    {
+      "url": "https://www.voynich.ninja/thread-4089.html",
+      "sha256": "488e0364b424ababae951ca620a82f5bc4e4bfe8c988f5c05f995b16af6bbc63",
+      "bytes": 16995
+    },
+    {
+      "url": "https://www.voynich.ninja/archive/index.php/thread-4089-2.html",
+      "sha256": "193eb40c0ad04a803f8d46fa64563e674e9ff68dda5cdac5e739e75ba7427b27",
+      "bytes": 24231
+    },
+    {
+      "url": "https://www.voynich.ninja/archive/index.php/thread-4089-15.html",
+      "sha256": "92b16df150b1e3db09f59db7e33e0850affd48668eefb4ddc72ab7d7ef0076bb",
+      "bytes": 20478
+    },
+    {
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8451098g/f53/full/1800,/0/native.jpg",
+      "sha256": "2ca9e3ddbe2b0783dffa8cbca482d7abaccab5f89c30d58a3ee66daf28c3e0c7",
+      "bytes": 672293
+    },
+    {
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b8451098g/manifest.json",
+      "sha256": "e5ec22fa93addd67233085359b3f2e06454918f4fc68c93e6003564bba24d779",
+      "bytes": 380296
+    },
+    {
+      "url": "https://collections.library.yale.edu/iiif/2/1006197/full/2200,/0/default.jpg",
+      "sha256": "63bb14964190d8035a6c037ee4c2eb8d0fe5322b6b431445f3ae2276c90ce2cb",
+      "bytes": 475697
+    },
+    {
+      "url": "https://iiif.biblissima.fr/collections/manifest/4d402953e89fb48aa4313a55aace72bcb1b4c80d",
+      "sha256": "b19bedac0c50a985a94004817d600dbeb03409035f418b1a4e21d54980e2b6eb",
+      "bytes": 79785
+    },
+    {
+      "url": "https://web.archive.org/web/20160410123428id_/http://ellievelinska.blogspot.com/2014/06/the-voynich-manuscript-geocentric-model.html",
+      "sha256": "eb21b3a17e05dac72f36eb2168cf1d6899dd10ef072405ec4c094f2c61f1888c",
+      "bytes": 143849
+    },
+    {
+      "url": "https://ceur-ws.org/Vol-3313/keynote2.pdf",
+      "sha256": "cd56145b65b802b2503151957cd9e1ecf0846e992212b6ce6210e0a84f6bc14a",
+      "bytes": 14072730
+    },
+    {
+      "url": "https://manuscriptroadtrip.wordpress.com/2024/09/08/multispectral-imaging-and-the-voynich-manuscript/",
+      "sha256": "4ffc4490871b40331bdb3b3d6f0a62c75a726fb21dcb4890316b71831460da5a",
+      "bytes": 221274
+    },
+    {
+      "url": "https://library.yale.edu/sites/default/files/2026-06/voynich_analysis.pdf",
+      "sha256": "99aab11b73599e24d8391d24a36f45fed90c70dfc21861e0773e0bbff58af78b",
+      "bytes": 6059189
+    }
+  ]
+}

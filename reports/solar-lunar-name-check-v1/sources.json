@@ -1,0 +1,62 @@
+{
+  "capture_date": "2026-09-29",
+  "sources": [
+    {
+      "url": "https://www.voynich.nu/q09/index.html",
+      "sha256": "56b592284239fbd4d2ffabac2c534207c2e8a6da00ce4570d526544b9793f977",
+      "bytes": 29525
+    },
+    {
+      "url": "https://collections.library.yale.edu/iiif/2/1006196/full/full/0/default.jpg",
+      "sha256": "4b0f31d1e08b8f026886aa599232b7dfcd33417b1eef43a44e619c3ebd21faa5",
+      "width": 7993,
+      "height": 3828,
+      "bytes": 7286292
+    },
+    {
+      "url": "https://collections.library.yale.edu/iiif/2/1006196/950,540,600,530/full/0/default.jpg",
+      "sha256": "182aec764304c7f258242cbb5f59f8838139c7d43071c0f06d375bc02a77f916",
+      "source_region": "950,540,600,530",
+      "bytes": 68112
+    },
+    {
+      "url": "https://collections.library.yale.edu/iiif/2/1006196/900,2300,650,680/full/0/default.jpg",
+      "sha256": "0904f99846aa71065d2c94b7c5dbf8e0742fab208bb130e88ef332142e8439cf",
+      "source_region": "900,2300,650,680",
+      "bytes": 104225
+    },
+    {
+      "url": "https://collections.library.yale.edu/iiif/2/1006196/3220,670,640,520/full/0/default.jpg",
+      "sha256": "ad3609f0f42017147e2112d1740f90d3bc90e69dc4adc326f30c215c4f1f8ee1",
+      "source_region": "3220,670,640,520",
+      "bytes": 79546
+    },
+    {
+      "url": "https://collections.library.yale.edu/iiif/2/1006196/3140,2240,740,670/full/0/default.jpg",
+      "sha256": "aac7e3158a64618dc1c3a3b7d3595367e082c920bc4300c062ec85c0bbe68d4f",
+      "source_region": "3140,2240,740,670",
+      "bytes": 132335
+    },
+    {
+      "url": "https://collections.library.yale.edu/iiif/2/1006196/5520,1410,800,760/full/0/default.jpg",
+      "sha256": "4fc114e633949cdc20326eae0afbd72ce603c7194339c74668a66fc0528535e7",
+      "source_region": "5520,1410,800,760",
+      "bytes": 161087
+    },
+    {
+      "url": "https://www.voynich.nu/q09/f068r1_tr.txt",
+      "sha256": "5dd7fa3409fa53d2770c2edc7d1b5b7559ea7a88a03df111461fdcea0f929403",
+      "bytes": 6749
+    },
+    {
+      "url": "https://www.voynich.nu/q09/f068r2_tr.txt",
+      "sha256": "d71861cc69401794a5f020ed8ffa726efce1b60fd6ade2854749e6f3bbe8d3fd",
+      "bytes": 8371
+    },
+    {
+      "url": "https://www.voynich.nu/q09/f068r3_tr.txt",
+      "sha256": "be83cd076f90fcbfc2755cba59c2d8473c086d233d43e1008984691a562fea81",
+      "bytes": 7259
+    }
+  ]
+}

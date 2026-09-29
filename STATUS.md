@@ -9,6 +9,14 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [Sun and Moon name check](reports/SOLAR_LUNAR_NAMES.md) finds no common complete word for either fixed pair of figures.
+Both transcriptions give empty intersections under both uncertain-space rules.
+The result concerns accepted tokens on one foldout. Uncertain readings and circular boundaries limit the conclusion.
+The exact-name branch stops without a candidate name or sign value.
+
+The [astronomical source review](docs/research/astronomical-anchor-review-2026-09-29.md) establishes no fixed planet or sector name correspondence.
+It also confirms a 2009 ink sample from f116v, without resolving the external locus's hand or writing layer.
+
 The [candidate-key audit](docs/research/candidate-key-audit-2026-09-29.md) checks the current ZFD corpus decoder and its evidence.
 Three of four guide examples disagree with the current corpus decoder.
 A control changes all four glosses without a change to the confidence scores.

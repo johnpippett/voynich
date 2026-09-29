@@ -109,6 +109,11 @@ Prediction: palaeographic and ink-layer review should classify the item as a
 separate hand or explain why it belongs to the main script. Matching hand and
 ink would remove the exclusion.
 
+The [2026-09-29 source review](astronomical-anchor-review-2026-09-29.md#material-evidence-for-f116v) confirms a 2009 ink sample from f116v.
+The report gives sample coordinates but records no photograph.
+Its chemical findings do not identify the selected locus's hand, exact date, or writing layer.
+The exclusion remains. Chemical similarity alone does not establish a plaintext anchor.
+
 ### 5. Later ownership material on `f1r`
 
 The right-margin alphabet-like columns and bottom ownership inscription are

@@ -1,0 +1,318 @@
+{
+  "schema_version": 1,
+  "plan_sha256": "2b1f6afd73f266aedfe40fafe601e334142029313602b071ffb33a6c8b91e8a6",
+  "script_sha256": "f92b55e528256e813a276bd6b77d345f24dc764f118205eb2f892a3a83d8509c",
+  "parser_sha256": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+  "private_result_sha256": "3d29e4100d51f24f16a82561adcc839179fd71505d84738cb0ee3af7201c6f66",
+  "source_text_included": false,
+  "tracks": {
+    "ZL-split": {
+      "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "regions": {
+        "sun1": {
+          "loci": [
+            "f68r1.5,@Pb",
+            "f68r1.6,+Pb",
+            "f68r1.7,+Pb"
+          ],
+          "accepted_tokens": 3,
+          "accepted_types": 3,
+          "excluded_tokens": 0,
+          "uncertain_space_loci": []
+        },
+        "sun2": {
+          "loci": [
+            "f68r2.31,@Cc"
+          ],
+          "accepted_tokens": 11,
+          "accepted_types": 9,
+          "excluded_tokens": 1,
+          "uncertain_space_loci": [
+            "f68r2.31,@Cc"
+          ]
+        },
+        "moon1": {
+          "loci": [
+            "f68r1.37,@Cc"
+          ],
+          "accepted_tokens": 4,
+          "accepted_types": 4,
+          "excluded_tokens": 1,
+          "uncertain_space_loci": []
+        },
+        "moon2": {
+          "loci": [
+            "f68r2.6,@Cc"
+          ],
+          "accepted_tokens": 6,
+          "accepted_types": 6,
+          "excluded_tokens": 2,
+          "uncertain_space_loci": []
+        },
+        "moon3": {
+          "loci": [
+            "f68r3.22,@Cc"
+          ],
+          "accepted_tokens": 10,
+          "accepted_types": 10,
+          "excluded_tokens": 0,
+          "uncertain_space_loci": []
+        }
+      },
+      "comparisons": {
+        "sun": {
+          "regions": [
+            "sun1",
+            "sun2"
+          ],
+          "candidate_count": 0
+        },
+        "moon_pair": {
+          "regions": [
+            "moon1",
+            "moon2"
+          ],
+          "candidate_count": 0
+        },
+        "moon_all": {
+          "regions": [
+            "moon1",
+            "moon2",
+            "moon3"
+          ],
+          "candidate_count": 0
+        }
+      }
+    },
+    "ZL-join": {
+      "source_sha256": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+      "regions": {
+        "sun1": {
+          "loci": [
+            "f68r1.5,@Pb",
+            "f68r1.6,+Pb",
+            "f68r1.7,+Pb"
+          ],
+          "accepted_tokens": 3,
+          "accepted_types": 3,
+          "excluded_tokens": 0,
+          "uncertain_space_loci": []
+        },
+        "sun2": {
+          "loci": [
+            "f68r2.31,@Cc"
+          ],
+          "accepted_tokens": 10,
+          "accepted_types": 9,
+          "excluded_tokens": 1,
+          "uncertain_space_loci": [
+            "f68r2.31,@Cc"
+          ]
+        },
+        "moon1": {
+          "loci": [
+            "f68r1.37,@Cc"
+          ],
+          "accepted_tokens": 4,
+          "accepted_types": 4,
+          "excluded_tokens": 1,
+          "uncertain_space_loci": []
+        },
+        "moon2": {
+          "loci": [
+            "f68r2.6,@Cc"
+          ],
+          "accepted_tokens": 6,
+          "accepted_types": 6,
+          "excluded_tokens": 2,
+          "uncertain_space_loci": []
+        },
+        "moon3": {
+          "loci": [
+            "f68r3.22,@Cc"
+          ],
+          "accepted_tokens": 10,
+          "accepted_types": 10,
+          "excluded_tokens": 0,
+          "uncertain_space_loci": []
+        }
+      },
+      "comparisons": {
+        "sun": {
+          "regions": [
+            "sun1",
+            "sun2"
+          ],
+          "candidate_count": 0
+        },
+        "moon_pair": {
+          "regions": [
+            "moon1",
+            "moon2"
+          ],
+          "candidate_count": 0
+        },
+        "moon_all": {
+          "regions": [
+            "moon1",
+            "moon2",
+            "moon3"
+          ],
+          "candidate_count": 0
+        }
+      }
+    },
+    "IT-split": {
+      "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "regions": {
+        "sun1": {
+          "loci": [
+            "f68r1.5,@Pb",
+            "f68r1.6,+Pb",
+            "f68r1.7,+Pb"
+          ],
+          "accepted_tokens": 3,
+          "accepted_types": 3,
+          "excluded_tokens": 0,
+          "uncertain_space_loci": []
+        },
+        "sun2": {
+          "loci": [
+            "f68r2.31,@Cc"
+          ],
+          "accepted_tokens": 11,
+          "accepted_types": 11,
+          "excluded_tokens": 0,
+          "uncertain_space_loci": []
+        },
+        "moon1": {
+          "loci": [
+            "f68r1.37,@Cc"
+          ],
+          "accepted_tokens": 4,
+          "accepted_types": 4,
+          "excluded_tokens": 1,
+          "uncertain_space_loci": []
+        },
+        "moon2": {
+          "loci": [
+            "f68r2.6,@Cc"
+          ],
+          "accepted_tokens": 7,
+          "accepted_types": 7,
+          "excluded_tokens": 1,
+          "uncertain_space_loci": []
+        },
+        "moon3": {
+          "loci": [
+            "f68r3.22,@Cc"
+          ],
+          "accepted_tokens": 10,
+          "accepted_types": 10,
+          "excluded_tokens": 0,
+          "uncertain_space_loci": []
+        }
+      },
+      "comparisons": {
+        "sun": {
+          "regions": [
+            "sun1",
+            "sun2"
+          ],
+          "candidate_count": 0
+        },
+        "moon_pair": {
+          "regions": [
+            "moon1",
+            "moon2"
+          ],
+          "candidate_count": 0
+        },
+        "moon_all": {
+          "regions": [
+            "moon1",
+            "moon2",
+            "moon3"
+          ],
+          "candidate_count": 0
+        }
+      }
+    },
+    "IT-join": {
+      "source_sha256": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5",
+      "regions": {
+        "sun1": {
+          "loci": [
+            "f68r1.5,@Pb",
+            "f68r1.6,+Pb",
+            "f68r1.7,+Pb"
+          ],
+          "accepted_tokens": 3,
+          "accepted_types": 3,
+          "excluded_tokens": 0,
+          "uncertain_space_loci": []
+        },
+        "sun2": {
+          "loci": [
+            "f68r2.31,@Cc"
+          ],
+          "accepted_tokens": 11,
+          "accepted_types": 11,
+          "excluded_tokens": 0,
+          "uncertain_space_loci": []
+        },
+        "moon1": {
+          "loci": [
+            "f68r1.37,@Cc"
+          ],
+          "accepted_tokens": 4,
+          "accepted_types": 4,
+          "excluded_tokens": 1,
+          "uncertain_space_loci": []
+        },
+        "moon2": {
+          "loci": [
+            "f68r2.6,@Cc"
+          ],
+          "accepted_tokens": 7,
+          "accepted_types": 7,
+          "excluded_tokens": 1,
+          "uncertain_space_loci": []
+        },
+        "moon3": {
+          "loci": [
+            "f68r3.22,@Cc"
+          ],
+          "accepted_tokens": 10,
+          "accepted_types": 10,
+          "excluded_tokens": 0,
+          "uncertain_space_loci": []
+        }
+      },
+      "comparisons": {
+        "sun": {
+          "regions": [
+            "sun1",
+            "sun2"
+          ],
+          "candidate_count": 0
+        },
+        "moon_pair": {
+          "regions": [
+            "moon1",
+            "moon2"
+          ],
+          "candidate_count": 0
+        },
+        "moon_all": {
+          "regions": [
+            "moon1",
+            "moon2",
+            "moon3"
+          ],
+          "candidate_count": 0
+        }
+      }
+    }
+  }
+}
