@@ -6,6 +6,7 @@ Voynich contains reproducible statistical research on Beinecke MS 408. The proje
 
 ## Topic notes
 
+- [21.15 Candidate Key Audits](<20-29 Implementation & Operations/21 Implementation Notes/21.15 Candidate Key Audits.md>).
 - [21.14 Integer Line Phases](<20-29 Implementation & Operations/21 Implementation Notes/21.14 Integer Line Phases.md>).
 
 This repo keeps durable project documentation in decimal-numbered markdown files.

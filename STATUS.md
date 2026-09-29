@@ -9,6 +9,15 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [candidate-key audit](docs/research/candidate-key-audit-2026-09-29.md) checks the current ZFD corpus decoder and its evidence.
+Three of four guide examples disagree with the current corpus decoder.
+A control changes all four glosses without a change to the confidence scores.
+The fixed sample line is absent from both pinned f88r transcriptions under the specified checks.
+The corpus check tests repeatable output. A separate statistical test uses another decoder and lexicon configuration.
+The historical ingredient-set comparison cannot select pairs between written forms and meanings by itself.
+A recent sign-unit study measures class-letter agreement, which differs from complete plaintext recovery.
+These source checks supply no verified manuscript key or translation.
+
 The [integer line-phase study](reports/LINE_PHASE_LATTICE.md) extends the earlier modulo-three condition to every finite block size in five training tracks.
 Both class-A sources pass under both unit representations. The IT class-B visual track also passes.
 Three other tracks reached the fixed 4,096-bit limit and remain inconclusive.

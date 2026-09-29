@@ -1,0 +1,20 @@
+{
+  "schema": "zfd-clean-replay-v1",
+  "setup_command_sha256": "2466d45b3d706b3f54cf5e55dc4fc655a1fc3da85c6a0fb6b92bbe9f51933252",
+  "reproduction_readme_sha256": "a94ca0e58c12af487edd48d5b0d76e6fd8aef8b885ba86d48b077d9e7b6401db",
+  "script_sha256": "8e5721101149be32184a4125769c66244d3f69a008fbe9c631438f0d951c8c2f",
+  "result_sha256": "0f5d46e0e7965ceb1d1d73aa4d44508130c9bfa30a4bf4e777e0a0446f884b80",
+  "fresh_external_downloads": 5,
+  "transcription_inputs": "Copied the two pinned source files; their SHA-256 checks passed.",
+  "setup_exit_code": 0,
+  "audit_exit_code": 0,
+  "scientific_and_setup_fields_agree": true,
+  "comparison_ignored_fields": [
+    "command"
+  ],
+  "scope": "Fresh temporary tree, published setup command, current audit script.",
+  "original_record_sha256": "e576237e43f63657118315894527093065b2e0a995f18b171bbc7173a2c5f45f",
+  "published_readme_sha256": "cfd37d9e85c6efa5356d13e8712577cbe93983897a9645da8595b05247fe87ac",
+  "published_setup_command_unchanged": true,
+  "documentation_change": "Replace obtain with get and divide one paragraph. The tested command remains unchanged."
+}

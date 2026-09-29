@@ -1,0 +1,26 @@
+{
+  "method": "literal AST table and regex replacement; direct raw source rows; no decoder import",
+  "script_sha256": "c27b49e3cfa6ec69f3c2e6abeeb6c40a31b4653c82941c070617ac614287b8b7",
+  "source_sha256": {
+    "zfd_decoder_v2.py": "ec2e252a9c4c8f92a2ce4af12fd8c7689857be15d27fc5efd2e82bdfc16b5f39",
+    "ZL3b-n.txt": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+    "IT2a-n.txt": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"
+  },
+  "guide_inputs_actual_outputs": {
+    "qokeedy": "kosteedy",
+    "chedy": "hedy",
+    "shol": "šol",
+    "daiin": "daiin"
+  },
+  "raw_source_check": {
+    "ZL3b-n.txt": {
+      "f88r_records": 31,
+      "records_with_literal_sequence": 0
+    },
+    "IT2a-n.txt": {
+      "f88r_records": 31,
+      "records_with_literal_sequence": 0
+    }
+  },
+  "limit": "This check does not independently reproduce the parser eligibility filters."
+}

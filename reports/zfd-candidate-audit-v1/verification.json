@@ -1,0 +1,38 @@
+{
+  "schema": "zfd-candidate-e2e-verification-v1",
+  "script_sha256": "8e5721101149be32184a4125769c66244d3f69a008fbe9c631438f0d951c8c2f",
+  "source_plan_sha256": "2331bb8c7a5dc6df26771ec06bc33558fa34315875105e436d1dc2e09ce85b24",
+  "result_sha256": "0f5d46e0e7965ceb1d1d73aa4d44508130c9bfa30a4bf4e777e0a0446f884b80",
+  "replay_sha256": "449ef4e4df33975972300437ba6ca666495acaf879b5683fac7a964a4c3ab04c",
+  "guard_failure_sha256": "57609cda9d908f3c5929628966576e147402d953d2ab0344bbaba948c08ad025",
+  "independent_literal_receipt_sha256": "a9c3686979b618db6adaca0e242951fc01a57170eca1b93765ff2183aeb0324e",
+  "checks": {
+    "fixed_audit_complete": true,
+    "replay_same_except_command": true,
+    "existing_output_rejected_unchanged": true,
+    "changed_source_rejected_before_import": true,
+    "preimplementation_schema_satisfied": true,
+    "independent_literal_mapping_agrees": true,
+    "independent_raw_source_counts_agree": true,
+    "changed_gloss_flag_recorded": true,
+    "receipt_correction_preserves_scientific_values": true
+  },
+  "setup": "Python standard library; two pinned transcriptions and five reviewed external source files.",
+  "steps": [
+    "Run the fixed audit to a new output file.",
+    "Repeat with another new output path and compare all fields except command.",
+    "Try the first output path again; require exit 2 and unchanged bytes.",
+    "Copy the script and pinned inputs to a temporary tree. Append a newline to the copied README source.",
+    "Run that copy; require exit 1, a hash failure, and no decoder import or example output.",
+    "Compare the independent AST-table and direct source-line calculation with the audit output."
+  ],
+  "limits": [
+    "Independent literal verification does not reproduce the parser eligibility filters.",
+    "These checks validate the audit operation, not a manuscript translation."
+  ],
+  "correction": {
+    "initial_script_sha256": "32828d93ff356f0b4aa88d0968808dabc303d3551ec75a3dd2d339850bf0b113",
+    "initial_result_sha256": "f3e5f7a461ba13dbda62cbccc8e09efc20a06fbe1b49451c303e59bd65286aae",
+    "change": "Add the required Boolean gloss_changed field. Keep the existing count and all scientific values."
+  }
+}

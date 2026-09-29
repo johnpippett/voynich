@@ -1,0 +1,124 @@
+{
+  "schema": "zfd-candidate-e2e-expectations-v1",
+  "phase": "pre-implementation",
+  "plan_sha256": "2331bb8c7a5dc6df26771ec06bc33558fa34315875105e436d1dc2e09ce85b24",
+  "addendum_sha256": "d64d337d7a379ac3e4e1ad4beada5206e8f12ef0edbca7c0a453ceb53b12381a",
+  "scope": "fixed ZFD source and output audit; no corpus regeneration or alternate candidate",
+  "setup": {
+    "runtime": "Python standard library",
+    "decoder": "pinned zfd_decoder_v2.py imported after hash checks with bytecode writes disabled; module main is not called",
+    "inputs": [
+      "pinned guide and lexicon files",
+      "two source files named by data/source_manifest.json"
+    ],
+    "output": "new exclusive JSON receipt under the ignored zfd-replication results directory"
+  },
+  "steps": [
+    {
+      "id": "source-guards",
+      "expect": "Frozen plan, addendum, external source manifest commit and relevant source hashes, local transcript manifest entries, and transcript bytes all match pins before decoder import."
+    },
+    {
+      "id": "guide-examples",
+      "expect": "Call eva_to_croatian on qokeedy, chedy, shol, daiin and compare exact outputs to kostedi, hedi, šol, dain."
+    },
+    {
+      "id": "decomposition",
+      "expect": "Record decomposition, residue, confidence, classification, recognized-character numerator/denominator, and resolution counters for the same four tokens."
+    },
+    {
+      "id": "semantic-control",
+      "expect": "Deep-copy the lexicon; replace only string values in meaning_en, meaning_hr, latin, latin_full, grammatical_function with unique opaque labels. Forms, keys, ordering, and all other values remain equal."
+    },
+    {
+      "id": "counterfactual",
+      "expect": "Matched forms, residues, confidence, classifications, code scores, and resolution counters agree. Generated glosses are compared separately and a changed-gloss flag is recorded."
+    },
+    {
+      "id": "f88r",
+      "expect": "Parse both pinned sources in split mode. Restrict to f88r P0 lines. Record exact consecutive-token and raw dot-separated substring counts, eligible line/token counts, exclusions, and source/locus provenance. Emit no raw line text."
+    },
+    {
+      "id": "receipt",
+      "expect": "Record setup, exact rerun command, plan/script/source hashes, each check result, counts, limits, and failure reasons. Do not include full transcription or full translation text."
+    }
+  ],
+  "expected_literal_outputs": [
+    {
+      "input": "qokeedy",
+      "guide_output": "kostedi"
+    },
+    {
+      "input": "chedy",
+      "guide_output": "hedi"
+    },
+    {
+      "input": "shol",
+      "guide_output": "šol"
+    },
+    {
+      "input": "daiin",
+      "guide_output": "dain"
+    }
+  ],
+  "failure_modes": [
+    "Any frozen hash or commit mismatch stops the run before decoder import.",
+    "Missing or malformed source, lexicon, or manifest stops the run with a recorded error.",
+    "Decoder import error or import-time side effect stops the run; module main must not run and no bytecode file may be written.",
+    "Any exact guide output mismatch is reported for that example. It does not reject every version or Croatian.",
+    "Semantic replacement changes any key, form, non-semantic value, order, decomposition, residue, confidence, classification, score, or resolution counter.",
+    "f88r selection includes a non-P0 record, uncertain separator, unreadable marker, or excluded token as eligible.",
+    "The output file exists; the run must fail without replacing it.",
+    "Receipt includes a complete source line, a complete translation, or private local path."
+  ],
+  "claim_limits": [
+    "The four guide examples are known examples, not blind validation.",
+    "Code scores measure character matching; they are not correctness probabilities.",
+    "Metric agreement after semantic replacement tests confidence independence from those meaning labels; it does not show that any label is false.",
+    "The f88r check covers only the fixed folio, exact order, exact spelling, and two pinned sources.",
+    "This audit does not validate a manuscript key, language, or translation."
+  ],
+  "runner_interface": "python scripts/check_zfd_candidate.py --output results/key-candidate-search-2026-09-29/zfd-replication/<new-name>.json",
+  "output_schema": {
+    "required_top_level": [
+      "schema",
+      "status",
+      "setup",
+      "command",
+      "plan_sha256",
+      "script_sha256",
+      "source_hashes",
+      "checks",
+      "guide_examples",
+      "decomposition_metrics",
+      "counterfactual",
+      "f88r",
+      "claim_limits",
+      "failures"
+    ],
+    "guide_example_fields": [
+      "input",
+      "guide_output",
+      "observed_output",
+      "exact_match",
+      "components",
+      "residue",
+      "confidence",
+      "classification",
+      "code_score"
+    ],
+    "f88r_fields": [
+      "sources",
+      "eligible_p0_lines",
+      "eligible_tokens",
+      "excluded_lines",
+      "excluded_tokens",
+      "comma_lines",
+      "unreadable_marker_lines",
+      "token_sequence_occurrences",
+      "token_sequence_loci",
+      "raw_literal_occurrences",
+      "raw_literal_loci"
+    ]
+  }
+}

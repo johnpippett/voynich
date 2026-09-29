@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-29",
+  "zfd": {
+    "repository": "https://github.com/denoflore/ZFD",
+    "commit": "3f030a9293b8db15dc2c7b0d0e7c703e71711f62",
+    "files": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/README.md",
+        "sha256": "e6de15a20da1496e5271b5039290dca4c2dedc617fa97647733ac03a525e6057",
+        "bytes": 72956
+      },
+      {
+        "path": "GETTING_STARTED.md",
+        "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/GETTING_STARTED.md",
+        "sha256": "fcf7c0bf7ff3d5c4671a95278f6910d65767cbf890ebe5acb3e1ca9ef4a69dbe",
+        "bytes": 6173
+      },
+      {
+        "path": "06_Pipelines/regenerate_corpus.py",
+        "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/06_Pipelines/regenerate_corpus.py",
+        "sha256": "ebf24d65d9a4909d5954f2e5fa0725752d074119a15c2c80108f39510f276f46",
+        "bytes": 4286
+      },
+      {
+        "path": "06_Pipelines/zfd_decoder_v2.py",
+        "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/06_Pipelines/zfd_decoder_v2.py",
+        "sha256": "ec2e252a9c4c8f92a2ce4af12fd8c7689857be15d27fc5efd2e82bdfc16b5f39",
+        "bytes": 20744
+      },
+      {
+        "path": "08_Final_Proofs/Master_Key/unified_lexicon_v3.json",
+        "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/08_Final_Proofs/Master_Key/unified_lexicon_v3.json",
+        "sha256": "d8fbb8487806c3f9ba648f83b235a12c4e2cae78faa4e70449cc6c140ec063d2",
+        "bytes": 96854
+      },
+      {
+        "path": "validation/blind_decode_test/run_test_v3.py",
+        "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/validation/blind_decode_test/run_test_v3.py",
+        "sha256": "371857359028d09b154bc63488361a51389524a049fb68e2bd966cb628707600",
+        "bytes": 8211
+      },
+      {
+        "path": "zfd_decoder/src/pipeline.py",
+        "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/zfd_decoder/src/pipeline.py",
+        "sha256": "c44b7601988aaa434891b769119a9d1414c7d6b8895e0933db4acdebbd14e79a",
+        "bytes": 12699
+      },
+      {
+        "path": "validation/corpus_comparison/V27_TRIPLE_PROVENANCE_LOCK_REPORT.md",
+        "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/validation/corpus_comparison/V27_TRIPLE_PROVENANCE_LOCK_REPORT.md",
+        "sha256": "24827a817c96c1cbfcdc8dfc6acd9b3dbbf56f5b2d6b280eba624f3454d8bffb",
+        "bytes": 30318
+      },
+      {
+        "path": "validation/corpus_comparison/V27_INGREDIENT_CROSSMATCH.md",
+        "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/validation/corpus_comparison/V27_INGREDIENT_CROSSMATCH.md",
+        "sha256": "623cc72b50e1d10b993a2fa5b8ff078bbe346a1d058dbbc12b01aec8eb7d5b4b",
+        "bytes": 7805
+      }
+    ]
+  },
+  "unit_study": {
+    "paper": "arXiv:2608.17096v1",
+    "files": [
+      {
+        "path": "paper.html",
+        "url": "https://arxiv.org/html/2608.17096v1",
+        "sha256": "cd47d210047503a054cd3a39b76f9ae1a67e0239514603dabe8dbec440a137b5",
+        "bytes": 437265
+      },
+      {
+        "path": "ancillary/voynich_decipherment_repro_bundle/decipherment_attack_v6/output/validation_results.json",
+        "url": "https://arxiv.org/src/2608.17096v1/anc/voynich_decipherment_repro_bundle/decipherment_attack_v6/output/validation_results.json",
+        "sha256": "2d5d96098dea935a393ba7f199407aed8ec4405f0911cf5b1b32092bf0b7a416",
+        "bytes": 2762
+      },
+      {
+        "path": "ancillary/voynich_decipherment_repro_bundle/decipherment_attack_v6/validate_synthetics.py",
+        "url": "https://arxiv.org/src/2608.17096v1/anc/voynich_decipherment_repro_bundle/decipherment_attack_v6/validate_synthetics.py",
+        "sha256": "84c63abd3a5a35d61f404945c0606426e9c9122650928f85df471d2d4e57878a",
+        "bytes": 6978
+      }
+    ]
+  }
+}

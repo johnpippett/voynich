@@ -1,0 +1,84 @@
+{
+  "repository": "https://github.com/denoflore/ZFD",
+  "commit": "3f030a9293b8db15dc2c7b0d0e7c703e71711f62",
+  "commit_date_utc": "2026-08-25T23:54:49Z",
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/README.md",
+      "http_status": 200,
+      "bytes": 72956,
+      "sha256": "e6de15a20da1496e5271b5039290dca4c2dedc617fa97647733ac03a525e6057"
+    },
+    {
+      "path": "METHODOLOGY.md",
+      "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/METHODOLOGY.md",
+      "http_status": 200,
+      "bytes": 12973,
+      "sha256": "9a0fe9b687776b7acd331972289f8e88862bf29c07e5ff1ea84d83d1f796efaa"
+    },
+    {
+      "path": "GETTING_STARTED.md",
+      "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/GETTING_STARTED.md",
+      "http_status": 200,
+      "bytes": 6173,
+      "sha256": "fcf7c0bf7ff3d5c4671a95278f6910d65767cbf890ebe5acb3e1ca9ef4a69dbe"
+    },
+    {
+      "path": "mapping/FINAL_CHARACTER_MAP_v1.md",
+      "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/mapping/FINAL_CHARACTER_MAP_v1.md",
+      "http_status": 200,
+      "bytes": 11731,
+      "sha256": "1c9a2e2705a0e5fa71d1dddc7ada613843c2419ec418e9a048a952e5cba93b0c"
+    },
+    {
+      "path": "mapping/GLYPH_MAPPING_GLAGOLITIC_VOYNICH.md",
+      "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/mapping/GLYPH_MAPPING_GLAGOLITIC_VOYNICH.md",
+      "http_status": 200,
+      "bytes": 8705,
+      "sha256": "763ee1ac0f3abeb1a19f6bf13f919bdfa27d00699644c428cdc1eb655c990cde"
+    },
+    {
+      "path": "06_Pipelines/zfd_decoder_v2.py",
+      "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/06_Pipelines/zfd_decoder_v2.py",
+      "http_status": 200,
+      "bytes": 20744,
+      "sha256": "ec2e252a9c4c8f92a2ce4af12fd8c7689857be15d27fc5efd2e82bdfc16b5f39"
+    },
+    {
+      "path": "06_Pipelines/build_unified_lexicon.py",
+      "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/06_Pipelines/build_unified_lexicon.py",
+      "http_status": 200,
+      "bytes": 27514,
+      "sha256": "15e69a0c210220271512f8170c2ab5dff7d7163c6587c3b0d18cc010a9c8553c"
+    },
+    {
+      "path": "zfd_decoder/src/tokenizer.py",
+      "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/zfd_decoder/src/tokenizer.py",
+      "http_status": 200,
+      "bytes": 2306,
+      "sha256": "29d36eeeb18e58d745e0f749bd5ba251a768cec872e0f6ea4e23255379461dbb"
+    },
+    {
+      "path": "05_Case_Studies/CASE_STUDIES.md",
+      "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/05_Case_Studies/CASE_STUDIES.md",
+      "http_status": 200,
+      "bytes": 8698,
+      "sha256": "234c7689f9d1ee4cb3592009b8c468151399fff55015c971b633dfff45a75fb3"
+    },
+    {
+      "path": "translations/PIPELINE_SUMMARY_v3.json",
+      "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/translations/PIPELINE_SUMMARY_v3.json",
+      "http_status": 200,
+      "bytes": 22211,
+      "sha256": "39c53fd979a8e0b64a88971f6c2f99cf492d730d768f25080421612196b03547"
+    },
+    {
+      "path": "08_Final_Proofs/Master_Key/unified_lexicon_v3.json",
+      "url": "https://raw.githubusercontent.com/denoflore/ZFD/3f030a9293b8db15dc2c7b0d0e7c703e71711f62/08_Final_Proofs/Master_Key/unified_lexicon_v3.json",
+      "http_status": 200,
+      "bytes": 96854,
+      "sha256": "d8fbb8487806c3f9ba648f83b235a12c4e2cae78faa4e70449cc6c140ec063d2"
+    }
+  ]
+}

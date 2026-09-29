@@ -1,0 +1,308 @@
+{
+  "schema": "zfd-candidate-audit-v1",
+  "status": "completed_with_mismatch",
+  "setup": {
+    "runtime": "3.14.7",
+    "decoder_main_called": false,
+    "bytecode_writes_disabled": true,
+    "corpus_regeneration": false
+  },
+  "command": "python scripts/check_zfd_candidate.py --output results/key-candidate-search-2026-09-29/zfd-replication/run-03.json",
+  "plan_sha256": "2331bb8c7a5dc6df26771ec06bc33558fa34315875105e436d1dc2e09ce85b24",
+  "script_sha256": "8e5721101149be32184a4125769c66244d3f69a008fbe9c631438f0d951c8c2f",
+  "source_hashes": {
+    "results/key-candidate-search-2026-09-29/zfd-replication/plan.md": "2331bb8c7a5dc6df26771ec06bc33558fa34315875105e436d1dc2e09ce85b24",
+    "results/key-candidate-search-2026-09-29/zfd-replication/version-addendum.md": "d64d337d7a379ac3e4e1ad4beada5206e8f12ef0edbca7c0a453ceb53b12381a",
+    "results/key-candidate-search-2026-09-29/zfd-replication/e2e-expectations.json": "408e7fc99d083431805e5149937af076d815b57b39e1bf84784ae18bc814082e",
+    "results/key-candidate-search-2026-09-29/source-refresh/source-manifest.json": "6d62052b0ceb50246d32b2e912195e38ce1f0edaee41443515e5195b5f1958b8",
+    "data/source_manifest.json": "77c9f755ed47c19ccfe3ef92b7699953d5d5e9ada729492662c94154d3d2f4f1",
+    "src/voynich/corpus.py": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+    "results/key-candidate-search-2026-09-29/source-refresh/README.md": "e6de15a20da1496e5271b5039290dca4c2dedc617fa97647733ac03a525e6057",
+    "results/key-candidate-search-2026-09-29/source-refresh/GETTING_STARTED.md": "fcf7c0bf7ff3d5c4671a95278f6910d65767cbf890ebe5acb3e1ca9ef4a69dbe",
+    "results/key-candidate-search-2026-09-29/source-refresh/06_Pipelines/zfd_decoder_v2.py": "ec2e252a9c4c8f92a2ce4af12fd8c7689857be15d27fc5efd2e82bdfc16b5f39",
+    "results/key-candidate-search-2026-09-29/source-refresh/08_Final_Proofs/Master_Key/unified_lexicon_v3.json": "d8fbb8487806c3f9ba648f83b235a12c4e2cae78faa4e70449cc6c140ec063d2",
+    "results/key-candidate-search-2026-09-29/source-refresh/canonical/06_Pipelines/regenerate_corpus.py": "ebf24d65d9a4909d5954f2e5fa0725752d074119a15c2c80108f39510f276f46",
+    "data/raw/ZL3b-n.txt": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+    "data/raw/IT2a-n.txt": "7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5"
+  },
+  "checks": [
+    {
+      "name": "hash:results/key-candidate-search-2026-09-29/zfd-replication/plan.md",
+      "passed": true
+    },
+    {
+      "name": "hash:results/key-candidate-search-2026-09-29/zfd-replication/version-addendum.md",
+      "passed": true
+    },
+    {
+      "name": "hash:results/key-candidate-search-2026-09-29/zfd-replication/e2e-expectations.json",
+      "passed": true
+    },
+    {
+      "name": "hash:results/key-candidate-search-2026-09-29/source-refresh/source-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "hash:data/source_manifest.json",
+      "passed": true
+    },
+    {
+      "name": "hash:src/voynich/corpus.py",
+      "passed": true
+    },
+    {
+      "name": "hash:results/key-candidate-search-2026-09-29/source-refresh/README.md",
+      "passed": true
+    },
+    {
+      "name": "hash:results/key-candidate-search-2026-09-29/source-refresh/GETTING_STARTED.md",
+      "passed": true
+    },
+    {
+      "name": "hash:results/key-candidate-search-2026-09-29/source-refresh/06_Pipelines/zfd_decoder_v2.py",
+      "passed": true
+    },
+    {
+      "name": "hash:results/key-candidate-search-2026-09-29/source-refresh/08_Final_Proofs/Master_Key/unified_lexicon_v3.json",
+      "passed": true
+    },
+    {
+      "name": "hash:results/key-candidate-search-2026-09-29/source-refresh/canonical/06_Pipelines/regenerate_corpus.py",
+      "passed": true
+    },
+    {
+      "name": "hash:data/raw/ZL3b-n.txt",
+      "passed": true
+    },
+    {
+      "name": "hash:data/raw/IT2a-n.txt",
+      "passed": true
+    },
+    {
+      "name": "pinned_external_commit",
+      "passed": true
+    },
+    {
+      "name": "source_import_without_main",
+      "passed": true
+    },
+    {
+      "name": "unique_semantic_labels",
+      "passed": true
+    },
+    {
+      "name": "only_semantic_strings_changed",
+      "passed": true
+    },
+    {
+      "name": "token_decoder_transliteration",
+      "passed": true
+    },
+    {
+      "name": "four_decompositions_per_decoder",
+      "passed": true
+    },
+    {
+      "name": "guide_output:qokeedy",
+      "passed": false
+    },
+    {
+      "name": "guide_output:chedy",
+      "passed": false
+    },
+    {
+      "name": "guide_output:shol",
+      "passed": true
+    },
+    {
+      "name": "guide_output:daiin",
+      "passed": false
+    },
+    {
+      "name": "counterfactual_metrics_equal",
+      "passed": true
+    },
+    {
+      "name": "counterfactual_counters_equal",
+      "passed": true
+    }
+  ],
+  "guide_examples": [
+    {
+      "input": "qokeedy",
+      "guide_output": "kostedi",
+      "observed_output": "kosteedy",
+      "exact_match": false,
+      "components": {
+        "operator": "ko",
+        "state": null,
+        "stem": "st",
+        "suffix": "edy",
+        "latin_match": null
+      },
+      "residue": "e",
+      "confidence": 0.88,
+      "classification": "fully_resolved",
+      "code_score": {
+        "matched_characters": 7,
+        "token_characters": 8,
+        "fraction": 0.875,
+        "exact_latin_special_score": false
+      }
+    },
+    {
+      "input": "chedy",
+      "guide_output": "hedi",
+      "observed_output": "hedy",
+      "exact_match": false,
+      "components": {
+        "operator": "he",
+        "state": null,
+        "stem": null,
+        "suffix": "y",
+        "latin_match": null
+      },
+      "residue": "d",
+      "confidence": 0.75,
+      "classification": "fully_resolved",
+      "code_score": {
+        "matched_characters": 3,
+        "token_characters": 4,
+        "fraction": 0.75,
+        "exact_latin_special_score": false
+      }
+    },
+    {
+      "input": "shol",
+      "guide_output": "šol",
+      "observed_output": "šol",
+      "exact_match": true,
+      "components": {
+        "operator": "š",
+        "state": null,
+        "stem": "ol",
+        "suffix": null,
+        "latin_match": null
+      },
+      "residue": "",
+      "confidence": 1.0,
+      "classification": "fully_resolved",
+      "code_score": {
+        "matched_characters": 3,
+        "token_characters": 3,
+        "fraction": 1.0,
+        "exact_latin_special_score": false
+      }
+    },
+    {
+      "input": "daiin",
+      "guide_output": "dain",
+      "observed_output": "daiin",
+      "exact_match": false,
+      "components": {
+        "operator": "da",
+        "state": null,
+        "stem": null,
+        "suffix": "in",
+        "latin_match": "da"
+      },
+      "residue": "i",
+      "confidence": 0.8,
+      "classification": "fully_resolved",
+      "code_score": {
+        "matched_characters": 4,
+        "token_characters": 5,
+        "fraction": 0.8,
+        "exact_latin_special_score": false
+      }
+    }
+  ],
+  "decomposition_metrics": {
+    "resolution_counters": {
+      "total_words": 4,
+      "fully_resolved": 4,
+      "partially_resolved": 0,
+      "unknown": 0,
+      "latin_detected": 1
+    }
+  },
+  "counterfactual": {
+    "semantic_string_values_replaced": 1019,
+    "semantic_label_count_unique": 1019,
+    "only_semantic_strings_changed": true,
+    "all_metrics_equal": true,
+    "resolution_counters_equal": true,
+    "transliteration_equal": true,
+    "glosses_changed_count": 4,
+    "gloss_changed": true,
+    "control_resolution_counters": {
+      "total_words": 4,
+      "fully_resolved": 4,
+      "partially_resolved": 0,
+      "unknown": 0,
+      "latin_detected": 1
+    }
+  },
+  "f88r": {
+    "sources": [
+      {
+        "source": "ZL3b-n.txt",
+        "f88r_records": 31,
+        "raw_records": 31,
+        "p0_lines": 16,
+        "eligible_p0_lines": 11,
+        "eligible_tokens": 84,
+        "excluded_lines": 5,
+        "excluded_tokens": 2,
+        "comma_lines": 4,
+        "unreadable_marker_lines": 0,
+        "uncertain_reading_lines": 2,
+        "token_sequence_occurrences": 0,
+        "token_sequence_loci": [],
+        "raw_literal_occurrences": 0,
+        "raw_literal_loci": []
+      },
+      {
+        "source": "IT2a-n.txt",
+        "f88r_records": 31,
+        "raw_records": 31,
+        "p0_lines": 16,
+        "eligible_p0_lines": 16,
+        "eligible_tokens": 134,
+        "excluded_lines": 0,
+        "excluded_tokens": 0,
+        "comma_lines": 0,
+        "unreadable_marker_lines": 0,
+        "uncertain_reading_lines": 0,
+        "token_sequence_occurrences": 0,
+        "token_sequence_loci": [],
+        "raw_literal_occurrences": 0,
+        "raw_literal_loci": []
+      }
+    ],
+    "token_scope": "Unambiguous P0 lines on f88r only, zero excluded tokens.",
+    "raw_scope": "Direct physical f88r source records, all locus kinds, no line joining.",
+    "f88r_records": 62,
+    "raw_records": 62,
+    "p0_lines": 32,
+    "eligible_p0_lines": 27,
+    "eligible_tokens": 218,
+    "excluded_lines": 5,
+    "excluded_tokens": 2,
+    "comma_lines": 4,
+    "unreadable_marker_lines": 0,
+    "uncertain_reading_lines": 2,
+    "token_sequence_occurrences": 0,
+    "raw_literal_occurrences": 0,
+    "token_sequence_loci": [],
+    "raw_literal_loci": []
+  },
+  "failures": [],
+  "claim_limits": [
+    "Known guide examples are not blind validation.",
+    "Code scores do not measure translation correctness.",
+    "Equal scores do not show that meaning labels are false.",
+    "The source check uses one fixed sequence on f88r in two transcriptions.",
+    "No manuscript key, language, or translation is validated."
+  ]
+}
