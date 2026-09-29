@@ -1,0 +1,8 @@
+{
+  "method": "Separate manual code review without executing the decoder or reading the primary result.",
+  "plan_sha256": "f27fffdd3a4c385817142ef7083fa2d46256e07944d5c45a5a6659cc1a71a7da",
+  "all_eleven_expected_decoder_values_agree": true,
+  "prompt_expectations_agree": true,
+  "raw_eva_field_is_not_interpolated": true,
+  "limitation": "An AI source review does not validate Hebrew meaning."
+}

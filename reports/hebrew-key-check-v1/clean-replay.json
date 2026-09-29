@@ -1,0 +1,20 @@
+{
+  "new_downloads": [
+    {
+      "file": "full_decode.py",
+      "url": "https://raw.githubusercontent.com/antenore/voynich-toolkit/cb137630762908517636b7f9ffb98bc5fe0dc05e/src/voynich_toolkit/full_decode.py",
+      "sha256": "c20f552a83ca8b6b619a182bedd43bafbc982cdc627bbbba9152c24552fbe3d6",
+      "byte_count": 16918
+    },
+    {
+      "file": "crib_attack.py",
+      "url": "https://raw.githubusercontent.com/antenore/voynich-toolkit/cb137630762908517636b7f9ffb98bc5fe0dc05e/src/voynich_toolkit/crib_attack.py",
+      "sha256": "d3b3453689178064d91a49f06f102ac76c331c81f2293e8ff7e8884542de2d15",
+      "byte_count": 50000
+    }
+  ],
+  "result_byte_identical": true,
+  "result_sha256": "fb6255da4463856d3aa497b8d594ac4d674f5ccbea314142e4d887f339c5e5ef",
+  "checker_sha256": "dff4eebc7abd8cf3e5f39e85f4b0dca42a033180993a1b0371c9a0b838fae9bc",
+  "readme_sha256": "18452821c6afc7d4a009ca5e020deee3fe3b47a47fcc834b6903e2783cba0804"
+}

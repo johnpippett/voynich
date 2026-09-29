@@ -1,0 +1,7 @@
+{
+  "repeat_output_identical": true,
+  "existing_output_refused_unchanged": true,
+  "changed_source_refused_without_output": true,
+  "changed_plan_refused_without_output": true,
+  "result_sha256": "fb6255da4463856d3aa497b8d594ac4d674f5ccbea314142e4d887f339c5e5ef"
+}

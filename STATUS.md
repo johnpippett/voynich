@@ -9,6 +9,11 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [Hebrew source check](docs/research/hebrew-key-audit-2026-09-29.md) confirms a fixed consonant transliteration on eleven artificial inputs.
+Its word-generation prompt receives the decoded target before it requests alternatives.
+Those matches cannot independently establish meanings. The paper reports that its fixed output does not read as Hebrew.
+The check establishes no manuscript key or translation.
+
 The [Sun and Moon name check](reports/SOLAR_LUNAR_NAMES.md) finds no common complete word for either fixed pair of figures.
 Both transcriptions give empty intersections under both uncertain-space rules.
 The result concerns accepted tokens on one foldout. Uncertain readings and circular boundaries limit the conclusion.

@@ -86,6 +86,30 @@ The initial position cancels after the first ordinary letter.
 Every sign sequence produces an index sequence under any fixed sign order.
 This transform alone cannot select the correct order or demonstrate plaintext recovery.
 
+## Additional state-rule constraints
+
+A further source review examined the damaged alphabet and the transition rule.
+The visible plaintext row has fifteen entries, from `f` through `u`.
+If its missing left part is `a b c d e`, the reconstructed alphabet has twenty entries and ends in `u`.
+The paper does not state this complete alphabet or its size.
+This reconstruction does not recover the missing cipher signs.
+
+For two equal consecutive ordinary cipher signs, their ranks cancel in the equation above.
+The second plaintext index is therefore `m - 1`, regardless of the cipher-sign order.
+Under the reconstructed twenty-entry plaintext alphabet, that index is `u`.
+
+For a cipher pattern `A B A`, the two plaintext indices after the first sign are `x` and `y`:
+
+```text
+x + y = -2                     (mod m)
+```
+
+For `A B A B`, those indices are `x, y, x`.
+These are necessary conditions for the stated transition rule. They do not determine a cipher-sign order.
+Null signs must first be removed, and the pattern must not cross a reset or a whole-word code.
+Uncertain sign units also prevent direct application to raw EVA repeats.
+No new manuscript query or alphabet fit followed this derivation.
+
 ## Verification and decision
 
 The [source manifest](further-key-routes-2026-09-29.sources.json) records source URLs, SHA-256 hashes, and byte counts.

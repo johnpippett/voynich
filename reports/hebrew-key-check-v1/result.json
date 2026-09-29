@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "plan_sha256": "f27fffdd3a4c385817142ef7083fa2d46256e07944d5c45a5a6659cc1a71a7da",
+  "script_sha256": "dff4eebc7abd8cf3e5f39e85f4b0dca42a033180993a1b0371c9a0b838fae9bc",
+  "source_sha256": {
+    "full_decode.py": "c20f552a83ca8b6b619a182bedd43bafbc982cdc627bbbba9152c24552fbe3d6",
+    "crib_attack.py": "d3b3453689178064d91a49f06f102ac76c331c81f2293e8ff7e8884542de2d15"
+  },
+  "decoder_cases": [
+    {
+      "input": "qoa",
+      "expected": "y",
+      "actual": "y",
+      "expected_unknown": 0,
+      "actual_unknown": 0,
+      "passed": true
+    },
+    {
+      "input": "qa",
+      "expected": "y",
+      "actual": "y",
+      "expected_unknown": 0,
+      "actual_unknown": 0,
+      "passed": true
+    },
+    {
+      "input": "oa",
+      "expected": "yw",
+      "actual": "yw",
+      "expected_unknown": 0,
+      "actual_unknown": 0,
+      "passed": true
+    },
+    {
+      "input": "an",
+      "expected": "by",
+      "actual": "by",
+      "expected_unknown": 0,
+      "actual_unknown": 0,
+      "passed": true
+    },
+    {
+      "input": "ar",
+      "expected": "sy",
+      "actual": "sy",
+      "expected_unknown": 0,
+      "actual_unknown": 0,
+      "passed": true
+    },
+    {
+      "input": "aii",
+      "expected": "sy",
+      "actual": "sy",
+      "expected_unknown": 0,
+      "actual_unknown": 0,
+      "passed": true
+    },
+    {
+      "input": "aiii",
+      "expected": "rhy",
+      "actual": "rhy",
+      "expected_unknown": 0,
+      "actual_unknown": 0,
+      "passed": true
+    },
+    {
+      "input": "ach",
+      "expected": "ky",
+      "actual": "ky",
+      "expected_unknown": 0,
+      "actual_unknown": 0,
+      "passed": true
+    },
+    {
+      "input": "az",
+      "expected": "?y",
+      "actual": "?y",
+      "expected_unknown": 1,
+      "actual_unknown": 1,
+      "passed": true
+    },
+    {
+      "input": "q",
+      "expected": "?",
+      "actual": "?",
+      "expected_unknown": 1,
+      "actual_unknown": 1,
+      "passed": true
+    },
+    {
+      "input": "qo",
+      "expected": "",
+      "actual": "",
+      "expected_unknown": 0,
+      "actual_unknown": 0,
+      "passed": true
+    }
+  ],
+  "prompt_checks": {
+    "target_decode_in_prompt": true,
+    "target_position_and_length_in_prompt": true,
+    "context_in_prompt": true,
+    "target_only_change_matches": true,
+    "context_only_change_matches": true
+  },
+  "prompt_sha256": "7494ecc7d4dc7acd5cdf11313a0594fb27c1d4c8be826a6c08a3f4a616e3ff24",
+  "changed_word_prompt_sha256": "78d0cdda01ff1819714deb5d75901eab2d2e1e144bfc68ce750f4e383b21e5fd",
+  "changed_context_prompt_sha256": "fca5f09210c74bb4cab3ae516e80ad97a984c2f69d2a940fc04b07aa45e9935d",
+  "scope": "Artificial inputs; Hebrew output and prompt construction only. No manuscript, API, generated candidate, or translation test.",
+  "passed": true
+}

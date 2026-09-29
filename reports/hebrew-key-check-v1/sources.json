@@ -1,0 +1,36 @@
+{
+  "source_commit": "cb137630762908517636b7f9ffb98bc5fe0dc05e",
+  "capture_date": "2026-09-29",
+  "sources": [
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/antenore/voynich-toolkit/cb137630762908517636b7f9ffb98bc5fe0dc05e/README.md",
+      "sha256": "01af408ef1d77367a024cd959e3cfbea522bf4c8f1d815c5f5e2a5242e9a2e73",
+      "byte_count": 13937
+    },
+    {
+      "file": "paper.pdf",
+      "url": "https://raw.githubusercontent.com/antenore/voynich-toolkit/cb137630762908517636b7f9ffb98bc5fe0dc05e/paper/paper.pdf",
+      "sha256": "626109f191e6186b63de24e807b9c9142aff0011f88ba4fe7b0a4249fdeae85f",
+      "byte_count": 432166
+    },
+    {
+      "file": "decode_all_pages.py",
+      "url": "https://raw.githubusercontent.com/antenore/voynich-toolkit/cb137630762908517636b7f9ffb98bc5fe0dc05e/scripts/decode_all_pages.py",
+      "sha256": "18a80e7f81a8b7e107234d7377f59240b2a418b24df7128feeedda1ac579659e",
+      "byte_count": 10392
+    },
+    {
+      "file": "full_decode.py",
+      "url": "https://raw.githubusercontent.com/antenore/voynich-toolkit/cb137630762908517636b7f9ffb98bc5fe0dc05e/src/voynich_toolkit/full_decode.py",
+      "sha256": "c20f552a83ca8b6b619a182bedd43bafbc982cdc627bbbba9152c24552fbe3d6",
+      "byte_count": 16918
+    },
+    {
+      "file": "crib_attack.py",
+      "url": "https://raw.githubusercontent.com/antenore/voynich-toolkit/cb137630762908517636b7f9ffb98bc5fe0dc05e/src/voynich_toolkit/crib_attack.py",
+      "sha256": "d3b3453689178064d91a49f06f102ac76c331c81f2293e8ff7e8884542de2d15",
+      "byte_count": 50000
+    }
+  ]
+}
