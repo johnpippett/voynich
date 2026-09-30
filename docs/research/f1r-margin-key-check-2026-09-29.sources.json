@@ -1,0 +1,147 @@
+{
+  "audit_date": "2026-09-29",
+  "type": "Source and image check. No manuscript corpus run or external decoder execution.",
+  "candidate_posts": [
+    {
+      "url": "https://www.voynich.ninja/thread-6027.html",
+      "final_url": "https://www.voynich.ninja/thread-6027.html",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "size_bytes": 28027,
+      "sha256": "c799139e773b54a9b271815945960ebc1f122a9a5fdb34d0d285267206b74610"
+    },
+    {
+      "url": "https://www.voynich.ninja/thread-6027-page-2.html",
+      "final_url": "https://www.voynich.ninja/thread-6027-page-2.html",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "size_bytes": 5083,
+      "sha256": "4a0b85c94a1151cf4da83485a08227ea789a01c00c11a175c2e81f636d1a736b"
+    }
+  ],
+  "petersen_2017": {
+    "source_url": "https://voynichportal.com/2017/03/18/vms-f1r-column-text-updated-chart/",
+    "author": "J.K. Petersen",
+    "post_date": "2017-03-18",
+    "html_capture_sha256": "a0897053f208953f7c224248424e64e6060fd391158ed97cbb948800fc009cbd",
+    "html_capture_bytes": 53174,
+    "capture_limit": "Successful HTML retrieval URL was not retained. Source content was checked against the selected post.",
+    "chart": {
+      "original_url": "https://voynichportal.com/wp-content/uploads/2017/03/Voy-f1rColumns2.png",
+      "retrieval_url": "https://i0.wp.com/voynichportal.com/wp-content/uploads/2017/03/Voy-f1rColumns2.png",
+      "sha256": "6b88ca3ffece12224788d13b4b55e13be362ff505d5cd78d117ad54dc66e264e",
+      "bytes": 394280,
+      "width": 1163,
+      "height": 849
+    },
+    "access_limit": "Initial web and direct requests failed. The linked chart loaded from the WordPress image service."
+  },
+  "davis_2024": {
+    "url": "https://manuscriptroadtrip.wordpress.com/2024/09/08/multispectral-imaging-and-the-voynich-manuscript/",
+    "final_url": "https://manuscriptroadtrip.wordpress.com/2024/09/08/multispectral-imaging-and-the-voynich-manuscript/",
+    "status": 200,
+    "sha256": "2c30bbfc6cd3d82a6057bdf7ab0e452f266115e872e29f34711b8d0ac4501482",
+    "bytes": 214707,
+    "retrieved_utc": "2026-09-30T01:56:29.511255+00:00",
+    "author": "Lisa Fagin Davis",
+    "post_date": "2024-09-08",
+    "examined_section": "f1r",
+    "images": [
+      {
+        "url": "https://manuscriptroadtrip.wordpress.com/wp-content/uploads/2024/09/voynich_01r_bands01-12_rf_cal_r6g4b1-1.jpg",
+        "status": 200,
+        "sha256": "bdc96043c598be5cba4bed5b59606594a5860b4d439ca8d5b54f5b83d328534e",
+        "bytes": 632333,
+        "filename": "voynich_01r_bands01-12_rf_cal_r6g4b1-1.jpg"
+      },
+      {
+        "url": "https://manuscriptroadtrip.wordpress.com/wp-content/uploads/2024/09/screenshot-696.png",
+        "status": 200,
+        "sha256": "977daedbb3bd76fcd0eb38fed09c88ff65045ec0049ad8f3bd4a2e98b587e69b",
+        "bytes": 747218,
+        "filename": "screenshot-696.png"
+      },
+      {
+        "url": "https://manuscriptroadtrip.wordpress.com/wp-content/uploads/2024/09/screenshot-691.png",
+        "status": 200,
+        "sha256": "0df593a5d8de295008ea8f55039f2c8713d32192d13f4785e2927e8a1038d23d",
+        "bytes": 2084711,
+        "filename": "screenshot-691.png"
+      },
+      {
+        "url": "https://manuscriptroadtrip.wordpress.com/wp-content/uploads/2024/09/1r-vs-marci-12.09.1640.png",
+        "status": 200,
+        "sha256": "e7aa2b28e15fb7478649663de320674f8fdb2deaa8e00a9b63106c1c9b7e1aa3",
+        "bytes": 737630,
+        "filename": "1r-vs-marci-12.09.1640.png"
+      }
+    ],
+    "image_credit": "The Lazarus Project and The Chester F. Carlson Center for Imaging Science at Rochester Institute of Technology",
+    "manuscript": "Beinecke Rare Book & Manuscript Library MS 408, f1r",
+    "limit": "Published f1r images only. Complete spectral archive not examined."
+  },
+  "yale_f1r": {
+    "manifest_url": "https://collections.library.yale.edu/manifests/2002046",
+    "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+    "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006076",
+    "canvas_label": {
+      "none": [
+        "1r"
+      ]
+    },
+    "image_url": "https://collections.library.yale.edu/iiif/2/1006076/full/full/0/default.jpg",
+    "image_sha256": "d02e73e9d81daa461d39beda0340b2acccadcd9db898605fc00b4f126e3e60bf",
+    "image_bytes": 2309265,
+    "width": 2972,
+    "height": 3766,
+    "retrieved_utc": "2026-09-30T01:46:32.150223+00:00"
+  },
+  "yale_regions": [
+    {
+      "name": "upper-margin",
+      "region": [
+        2200,
+        250,
+        650,
+        1300
+      ],
+      "url": "https://collections.library.yale.edu/iiif/2/1006076/2200,250,650,1300/full/0/default.jpg",
+      "sha256": "da4692a485d4c0bcd6407bd47ec13d63af7403f72ab757202771ae7aed73ebf8",
+      "bytes": 188640
+    },
+    {
+      "name": "lower-margin",
+      "region": [
+        2200,
+        1550,
+        650,
+        1250
+      ],
+      "url": "https://collections.library.yale.edu/iiif/2/1006076/2200,1550,650,1250/full/0/default.jpg",
+      "sha256": "16d5ef0aab7d164e4f89df4a146d087cb101a43ac98aede5c76fb795029ca143",
+      "bytes": 187745
+    }
+  ],
+  "predecessor_2016": {
+    "url": "https://voynichportal.com/2016/10/24/reconsidering-the-columns/",
+    "error": "The read operation timed out",
+    "retrieved_utc": "2026-09-30T01:54:55.586247+00:00"
+  },
+  "quire_reference": {
+    "url": "https://www.voynich.nu/q01/index.html",
+    "capture_type": "Web-extracted page viewed by both tasks. Local observation record, not original HTML.",
+    "local_observation_sha256": "87accc8ad5ee1c68df12bec8963ee0258a51d35102e15a292e062375a4ae31c5",
+    "examined_section": "f1r"
+  },
+  "scope_changes": [
+    "Ordinary-light limits led to the linked 2024 multispectral study.",
+    "The 2016 predecessor article was selected after examination of the 2017 chart; its retrieval failed.",
+    "Two discovery queries found the selected 2024 account; other candidate records were not followed."
+  ],
+  "software_check": {
+    "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+    "tests": 85,
+    "result": "pass",
+    "log_sha256": "24f84a5f2c3b7d44c5b41da0186cff06a1cfa470640de75fd76e82518e29c0d7"
+  }
+}

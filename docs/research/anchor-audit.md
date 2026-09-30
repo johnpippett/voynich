@@ -23,7 +23,7 @@ image is reproduced here.
 | 2 | Repeated `Lz` labels: `otaly` at `f70v2.15,&Lz`, `f72v3.31,&Lz`, `f73r.6,@Lz`; `okeody` at `f72v2.15,&Lz`, `f73r.7,&Lz`, `f73v.6,@Lz`; `okam` at `f72r2.25,&Lz`, `f72v3.4,&Lz`. | Use as an equality baseline only for a declared context-independent or same-state mapping. Permit fixed context- or state-dependent mappings. Hold meaning. |
 | 3 | Zodiac `Lz` inventories on `f70v2`, `f70v1`, `f71r`, `f71v`, `f72r1`, `f72r2`, `f72r3`, `f72v3`, `f72v2`, `f72v1`, and `f73r`. | Use for corpus partition and label segmentation. Hold sign names as semantics. |
 | 4 | Mixed-script external locus `<f116v.1,@Lx>`. | Hold outside the primary decoder until hand and layer are resolved. |
-| 5 | Later ownership and alphabet-like material on `f1r`. | Reject as a plaintext anchor. Keep for provenance controls. |
+| 5 | Ownership inscription and alphabet-like columns on `f1r`. | Reject as known plaintext. Keep the column attribution separate from the ownership inscription. |
 | 6 | Possible colour or Latin-script marks on `f1v` and `f4r`. | Hold for ink and pigment analysis only. |
 | 7 | Overwritten or disputed marginal writing near the figure on `f66r`. | Reject as a plaintext anchor. Keep as a negative control. |
 
@@ -114,20 +114,19 @@ The report gives sample coordinates but records no photograph.
 Its chemical findings do not identify the selected locus's hand, exact date, or writing layer.
 The exclusion remains. Chemical similarity alone does not establish a plaintext anchor.
 
-### 5. Later ownership material on `f1r`
+### 5. Ownership inscription and margin columns on `f1r`
 
-The right-margin alphabet-like columns and bottom ownership inscription are
-later-owner material. They provide provenance evidence, not a main-script
-reading. The columns could be an owner alphabet, a decryption attempt, or a
-later copy.
+The bottom ownership inscription and the right-margin columns are separate items.
+Davis's 2024 account attributes the columns to Marci. Its proposed date depends on that attribution.
+The preliminary transcription has unresolved entries. Neither item supplies validated plaintext for the main script.
 
 Sources: [quire 1](https://www.voynich.nu/q01/index.html),
 [Yale IIIF manifest](https://collections.library.yale.edu/manifests/2002046), and
 [Voynich.nu ownership record](https://voynich.nu/extra/sinapius_books.html).
 
-Prediction: image review should place the marks in a later layer or hand and
-exclude them from body and label corpora. Original-ink continuity would require
-a new layer decision.
+The [2026-09-29 source check](f1r-margin-key-check-2026-09-29.md) examines the handwriting chart, newer multispectral transcription, and recent substitution claim.
+Keep the columns outside the primary body and label corpora.
+A candidate key test needs fixed readings and explicit treatment of unresolved entries before any plaintext test.
 
 ### 6. Possible colour-related marks
 
