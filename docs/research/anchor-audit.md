@@ -341,7 +341,7 @@ and [Han (2011)](https://www.as.up.krakow.pl/jvs/library/2-7-2011-05-25/pansyvm.
 
 Before extraction, the plan fixed all three pages and the first token of the first P-kind record on each page.
 The permitted EVA units were `k y d r m n sh s o a in iin e ee`.
-This list comes from the text layer of Bax's Appendix 1; its glyph images were not independently checked.
+The initial list came from the text layer of Bax's Appendix 1, before a separate image check.
 The gate tested complete unit coverage before any comparison with plant names.
 
 | Folio | Opening word in both sources | Complete coverage |
@@ -365,6 +365,10 @@ This is a coverage limit for the specified partial map, not a rejection of the b
 No plant name or plaintext was recovered.
 The local records remain in `results/bax-partial-key-v1/`.
 The corrected result has SHA-256 `00b128b7b294e7189aeb9b3c18192cff471cfebad897ee3173730aac85aeecd3`.
+
+The [later source-image check](plant-input-and-color-audit-2026-09-29.md#bax-appendix-1-source-image-check) shows all fourteen EVA labels on pages 56–57.
+The table has no EVA `ch` or `f` entry. Its proposed `/tʃ/` sound for `sh` does not add an EVA `ch` entry.
+The image check does not change the coverage result. This check added no new sign assignment or name comparison.
 
 ## Hannig reading-rule check
 

@@ -1,0 +1,1204 @@
+{
+  "candidate": "key",
+  "categories": {
+    "blue_tag": {
+      "distinct_group_count": 2,
+      "folio_count": 3,
+      "folios_with_key": [],
+      "key_count": 0,
+      "token_count": 289
+    },
+    "no_blue_tag": {
+      "distinct_group_count": 9,
+      "folio_count": 31,
+      "folios_with_key": [
+        "f50v",
+        "f96v"
+      ],
+      "key_count": 2,
+      "token_count": 2711
+    }
+  },
+  "discovery_folios": [
+    {
+      "folio": "f10v",
+      "group_id": "10"
+    },
+    {
+      "folio": "f11r",
+      "group_id": "11"
+    },
+    {
+      "folio": "f11v",
+      "group_id": "11"
+    },
+    {
+      "folio": "f13r",
+      "group_id": "13"
+    },
+    {
+      "folio": "f14r",
+      "group_id": "11"
+    },
+    {
+      "folio": "f14v",
+      "group_id": "11"
+    },
+    {
+      "folio": "f15r",
+      "group_id": "10"
+    },
+    {
+      "folio": "f15v",
+      "group_id": "10"
+    },
+    {
+      "folio": "f16r",
+      "group_id": "9"
+    },
+    {
+      "folio": "f16v",
+      "group_id": "9"
+    },
+    {
+      "folio": "f17r",
+      "group_id": "17"
+    },
+    {
+      "folio": "f17v",
+      "group_id": "17"
+    },
+    {
+      "folio": "f18r",
+      "group_id": "18"
+    },
+    {
+      "folio": "f19r",
+      "group_id": "19"
+    },
+    {
+      "folio": "f1v",
+      "group_id": "1"
+    },
+    {
+      "folio": "f20r",
+      "group_id": "20"
+    },
+    {
+      "folio": "f20v",
+      "group_id": "20"
+    },
+    {
+      "folio": "f21r",
+      "group_id": "20"
+    },
+    {
+      "folio": "f22r",
+      "group_id": "19"
+    },
+    {
+      "folio": "f22v",
+      "group_id": "19"
+    },
+    {
+      "folio": "f23r",
+      "group_id": "18"
+    },
+    {
+      "folio": "f24r",
+      "group_id": "17"
+    },
+    {
+      "folio": "f25r",
+      "group_id": "25"
+    },
+    {
+      "folio": "f25v",
+      "group_id": "25"
+    },
+    {
+      "folio": "f26r",
+      "group_id": "26"
+    },
+    {
+      "folio": "f27r",
+      "group_id": "27"
+    },
+    {
+      "folio": "f27v",
+      "group_id": "27"
+    },
+    {
+      "folio": "f28r",
+      "group_id": "28"
+    },
+    {
+      "folio": "f28v",
+      "group_id": "28"
+    },
+    {
+      "folio": "f29r",
+      "group_id": "28"
+    },
+    {
+      "folio": "f29v",
+      "group_id": "28"
+    },
+    {
+      "folio": "f2r",
+      "group_id": "2"
+    },
+    {
+      "folio": "f2v",
+      "group_id": "2"
+    },
+    {
+      "folio": "f30r",
+      "group_id": "27"
+    },
+    {
+      "folio": "f30v",
+      "group_id": "27"
+    },
+    {
+      "folio": "f31r",
+      "group_id": "26"
+    },
+    {
+      "folio": "f32r",
+      "group_id": "25"
+    },
+    {
+      "folio": "f32v",
+      "group_id": "25"
+    },
+    {
+      "folio": "f33r",
+      "group_id": "33"
+    },
+    {
+      "folio": "f33v",
+      "group_id": "33"
+    },
+    {
+      "folio": "f34r",
+      "group_id": "34"
+    },
+    {
+      "folio": "f34v",
+      "group_id": "34"
+    },
+    {
+      "folio": "f35r",
+      "group_id": "35"
+    },
+    {
+      "folio": "f35v",
+      "group_id": "35"
+    },
+    {
+      "folio": "f36r",
+      "group_id": "36"
+    },
+    {
+      "folio": "f36v",
+      "group_id": "36"
+    },
+    {
+      "folio": "f37r",
+      "group_id": "36"
+    },
+    {
+      "folio": "f37v",
+      "group_id": "36"
+    },
+    {
+      "folio": "f38r",
+      "group_id": "35"
+    },
+    {
+      "folio": "f38v",
+      "group_id": "35"
+    },
+    {
+      "folio": "f39r",
+      "group_id": "34"
+    },
+    {
+      "folio": "f39v",
+      "group_id": "34"
+    },
+    {
+      "folio": "f3r",
+      "group_id": "3"
+    },
+    {
+      "folio": "f40r",
+      "group_id": "33"
+    },
+    {
+      "folio": "f40v",
+      "group_id": "33"
+    },
+    {
+      "folio": "f41v",
+      "group_id": "41"
+    },
+    {
+      "folio": "f42v",
+      "group_id": "42"
+    },
+    {
+      "folio": "f43r",
+      "group_id": "43"
+    },
+    {
+      "folio": "f43v",
+      "group_id": "43"
+    },
+    {
+      "folio": "f44r",
+      "group_id": "44"
+    },
+    {
+      "folio": "f45r",
+      "group_id": "44"
+    },
+    {
+      "folio": "f45v",
+      "group_id": "44"
+    },
+    {
+      "folio": "f46r",
+      "group_id": "43"
+    },
+    {
+      "folio": "f46v",
+      "group_id": "43"
+    },
+    {
+      "folio": "f47r",
+      "group_id": "42"
+    },
+    {
+      "folio": "f47v",
+      "group_id": "42"
+    },
+    {
+      "folio": "f48v",
+      "group_id": "41"
+    },
+    {
+      "folio": "f4r",
+      "group_id": "4"
+    },
+    {
+      "folio": "f4v",
+      "group_id": "4"
+    },
+    {
+      "folio": "f5r",
+      "group_id": "4"
+    },
+    {
+      "folio": "f6r",
+      "group_id": "3"
+    },
+    {
+      "folio": "f6v",
+      "group_id": "3"
+    },
+    {
+      "folio": "f7r",
+      "group_id": "2"
+    },
+    {
+      "folio": "f7v",
+      "group_id": "2"
+    },
+    {
+      "folio": "f8r",
+      "group_id": "1"
+    },
+    {
+      "folio": "f8v",
+      "group_id": "1"
+    },
+    {
+      "folio": "f9r",
+      "group_id": "9"
+    },
+    {
+      "folio": "f9v",
+      "group_id": "9"
+    }
+  ],
+  "discovery_groups": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "9",
+    "10",
+    "11",
+    "13",
+    "17",
+    "18",
+    "19",
+    "20",
+    "25",
+    "26",
+    "27",
+    "28",
+    "33",
+    "34",
+    "35",
+    "36",
+    "41",
+    "42",
+    "43",
+    "44"
+  ],
+  "folio_decisions": [
+    {
+      "decision": "excluded",
+      "folio": "f10r",
+      "group_id": "10",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f10v",
+      "group_id": "10",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f11r",
+      "group_id": "11",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f11v",
+      "group_id": "11",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f13r",
+      "group_id": "13",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f13v",
+      "group_id": "13",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f14r",
+      "group_id": "11",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f14v",
+      "group_id": "11",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f15r",
+      "group_id": "10",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f15v",
+      "group_id": "10",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f16r",
+      "group_id": "9",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f16v",
+      "group_id": "9",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f17r",
+      "group_id": "17",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f17v",
+      "group_id": "17",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f18r",
+      "group_id": "18",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f18v",
+      "group_id": "18",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f19r",
+      "group_id": "19",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f19v",
+      "group_id": "19",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f1v",
+      "group_id": "1",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f20r",
+      "group_id": "20",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f20v",
+      "group_id": "20",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f21r",
+      "group_id": "20",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f21v",
+      "group_id": "20",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f22r",
+      "group_id": "19",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f22v",
+      "group_id": "19",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f23r",
+      "group_id": "18",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f23v",
+      "group_id": "18",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f24r",
+      "group_id": "17",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f24v",
+      "group_id": "17",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f25r",
+      "group_id": "25",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f25v",
+      "group_id": "25",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f26r",
+      "group_id": "26",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f26v",
+      "group_id": "26",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f27r",
+      "group_id": "27",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f27v",
+      "group_id": "27",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f28r",
+      "group_id": "28",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f28v",
+      "group_id": "28",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f29r",
+      "group_id": "28",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f29v",
+      "group_id": "28",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f2r",
+      "group_id": "2",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f2v",
+      "group_id": "2",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f30r",
+      "group_id": "27",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f30v",
+      "group_id": "27",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f31r",
+      "group_id": "26",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f31v",
+      "group_id": "26",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f32r",
+      "group_id": "25",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f32v",
+      "group_id": "25",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f33r",
+      "group_id": "33",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f33v",
+      "group_id": "33",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f34r",
+      "group_id": "34",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f34v",
+      "group_id": "34",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f35r",
+      "group_id": "35",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f35v",
+      "group_id": "35",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f36r",
+      "group_id": "36",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f36v",
+      "group_id": "36",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f37r",
+      "group_id": "36",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f37v",
+      "group_id": "36",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f38r",
+      "group_id": "35",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f38v",
+      "group_id": "35",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f39r",
+      "group_id": "34",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f39v",
+      "group_id": "34",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f3r",
+      "group_id": "3",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f40r",
+      "group_id": "33",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f40v",
+      "group_id": "33",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f41r",
+      "group_id": "41",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f41v",
+      "group_id": "41",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f42r",
+      "group_id": "42",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f42v",
+      "group_id": "42",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f43r",
+      "group_id": "43",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f43v",
+      "group_id": "43",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f44r",
+      "group_id": "44",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f44v",
+      "group_id": "44",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f45r",
+      "group_id": "44",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f45v",
+      "group_id": "44",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f46r",
+      "group_id": "43",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f46v",
+      "group_id": "43",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f47r",
+      "group_id": "42",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f47v",
+      "group_id": "42",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f48r",
+      "group_id": "41",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f48v",
+      "group_id": "41",
+      "reason": "discovery_group"
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f49r",
+      "group_id": "49",
+      "key_count": 0,
+      "token_count": 118
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f49v",
+      "group_id": "49",
+      "key_count": 0,
+      "token_count": 139
+    },
+    {
+      "decision": "excluded",
+      "folio": "f4r",
+      "group_id": "4",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f4v",
+      "group_id": "4",
+      "reason": "discovery_group"
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f50r",
+      "group_id": "50",
+      "key_count": 0,
+      "token_count": 97
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f50v",
+      "group_id": "50",
+      "key_count": 1,
+      "token_count": 98
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f51r",
+      "group_id": "51",
+      "key_count": 0,
+      "token_count": 86
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f51v",
+      "group_id": "51",
+      "key_count": 0,
+      "token_count": 75
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f52r",
+      "group_id": "52",
+      "key_count": 0,
+      "token_count": 64
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f52v",
+      "group_id": "52",
+      "key_count": 0,
+      "token_count": 75
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f53r",
+      "group_id": "52",
+      "key_count": 0,
+      "token_count": 54
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f53v",
+      "group_id": "52",
+      "key_count": 0,
+      "token_count": 74
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f54r",
+      "group_id": "51",
+      "key_count": 0,
+      "token_count": 102
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f54v",
+      "group_id": "51",
+      "key_count": 0,
+      "token_count": 92
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f55r",
+      "group_id": "50",
+      "key_count": 0,
+      "token_count": 126
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f55v",
+      "group_id": "50",
+      "key_count": 0,
+      "token_count": 94
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f56r",
+      "group_id": "49",
+      "key_count": 0,
+      "token_count": 103
+    },
+    {
+      "category": "blue_tag",
+      "decision": "kept",
+      "folio": "f56v",
+      "group_id": "49",
+      "key_count": 0,
+      "token_count": 87
+    },
+    {
+      "decision": "excluded",
+      "folio": "f5r",
+      "group_id": "4",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f65r",
+      "group_id": "58",
+      "reason": "missing_text"
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f65v",
+      "group_id": "58",
+      "key_count": 0,
+      "token_count": 39
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f66v",
+      "group_id": "57",
+      "key_count": 0,
+      "token_count": 118
+    },
+    {
+      "decision": "excluded",
+      "folio": "f6r",
+      "group_id": "3",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f6v",
+      "group_id": "3",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f7r",
+      "group_id": "2",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f7v",
+      "group_id": "2",
+      "reason": "discovery_group"
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f87r",
+      "group_id": "87",
+      "key_count": 0,
+      "token_count": 104
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f87v",
+      "group_id": "87",
+      "key_count": 0,
+      "token_count": 81
+    },
+    {
+      "decision": "excluded",
+      "folio": "f8r",
+      "group_id": "1",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f8v",
+      "group_id": "1",
+      "reason": "discovery_group"
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f90r1",
+      "group_id": "87",
+      "key_count": 0,
+      "token_count": 71
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f90r2",
+      "group_id": "87",
+      "key_count": 0,
+      "token_count": 44
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f90v1",
+      "group_id": "87",
+      "key_count": 0,
+      "token_count": 80
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f90v2",
+      "group_id": "87",
+      "key_count": 0,
+      "token_count": 64
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f93r",
+      "group_id": "93",
+      "key_count": 0,
+      "token_count": 165
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f93v",
+      "group_id": "93",
+      "key_count": 0,
+      "token_count": 72
+    },
+    {
+      "category": "blue_tag",
+      "decision": "kept",
+      "folio": "f94r",
+      "group_id": "94",
+      "key_count": 0,
+      "token_count": 81
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f94v",
+      "group_id": "94",
+      "key_count": 0,
+      "token_count": 91
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f95r1",
+      "group_id": "94",
+      "key_count": 0,
+      "token_count": 103
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f95r2",
+      "group_id": "94",
+      "key_count": 0,
+      "token_count": 81
+    },
+    {
+      "category": "blue_tag",
+      "decision": "kept",
+      "folio": "f95v1",
+      "group_id": "94",
+      "key_count": 0,
+      "token_count": 121
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f95v2",
+      "group_id": "94",
+      "key_count": 0,
+      "token_count": 62
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f96r",
+      "group_id": "93",
+      "key_count": 0,
+      "token_count": 81
+    },
+    {
+      "category": "no_blue_tag",
+      "decision": "kept",
+      "folio": "f96v",
+      "group_id": "93",
+      "key_count": 1,
+      "token_count": 58
+    },
+    {
+      "decision": "excluded",
+      "folio": "f9r",
+      "group_id": "9",
+      "reason": "discovery_group"
+    },
+    {
+      "decision": "excluded",
+      "folio": "f9v",
+      "group_id": "9",
+      "reason": "discovery_group"
+    }
+  ],
+  "grouping": {
+    "bifolio_manifest_sha256": "998cb3d6c8327ff0bdf786d52968fa3bec9f5fa9b05ba7ae56065fc9639fad72",
+    "group_code_sha256": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0",
+    "independent_conservation_verification": false,
+    "version": "ivtff-bifolio-metadata-v3"
+  },
+  "manifest_sha256": "d58f30c47e43a06dea93a413d25165a05076149fc28cee5925863e22ea9905d8",
+  "plan_sha256": "bfd6126b2f1420dd576dae6f46f5bffc1b7187a88c5f82c0b04ae31a1e6a48a8",
+  "schema_version": 1,
+  "script_sha256": "828a05b9f6efe7e27d62f8f754991b7cdf61bef77bd190f5f151f1b495b08154",
+  "source_hashes": {
+    "color_tags": "603a6ec9b618d88cca774027bdfb0b54a169648ad5cc700a4eb1a2d5c7b5b353",
+    "corpus": "f11df385f851ef6d07cca4ab4a65c26c5e9e6dc9d47f6d94ad741ae0b7ba55e0",
+    "plant_features": "a13d5a4acb843299c191ebc5faea6e6cfb06e44ea026f2f6e5a4363be0447434"
+  },
+  "status": "complete"
+}

@@ -1,0 +1,551 @@
+{
+  "cases": [
+    {
+      "checks": [
+        {
+          "expected": 0,
+          "name": "first_cli_exit",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "expected": 0,
+          "name": "second_cli_exit",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "expected": "complete",
+          "name": "status",
+          "observed": "complete",
+          "passed": true
+        },
+        {
+          "expected": "bfd6126b2f1420dd576dae6f46f5bffc1b7187a88c5f82c0b04ae31a1e6a48a8",
+          "name": "plan_hash",
+          "observed": "bfd6126b2f1420dd576dae6f46f5bffc1b7187a88c5f82c0b04ae31a1e6a48a8",
+          "passed": true
+        },
+        {
+          "expected": [
+            "color_tags",
+            "corpus",
+            "plant_features"
+          ],
+          "name": "source_hash_roles",
+          "observed": [
+            "color_tags",
+            "corpus",
+            "plant_features"
+          ],
+          "passed": true
+        },
+        {
+          "expected": [
+            {
+              "folio": "f1r",
+              "group_id": "1"
+            }
+          ],
+          "name": "discovery_folio_and_group",
+          "observed": [
+            {
+              "folio": "f1r",
+              "group_id": "1"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "expected": [
+            "f1v",
+            "f49r",
+            "f50r",
+            "f51r",
+            "f52r",
+            "f8r"
+          ],
+          "name": "all_color_folios_recorded",
+          "observed": [
+            "f1v",
+            "f49r",
+            "f50r",
+            "f51r",
+            "f52r",
+            "f8r"
+          ],
+          "passed": true
+        },
+        {
+          "expected": {
+            "f1v": "discovery_group",
+            "f8r": "discovery_group"
+          },
+          "name": "discovery_group_exclusions",
+          "observed": {
+            "f1v": "discovery_group",
+            "f8r": "discovery_group"
+          },
+          "passed": true
+        },
+        {
+          "expected": "nonherbal",
+          "name": "nonherbal_exclusion",
+          "observed": "nonherbal",
+          "passed": true
+        },
+        {
+          "expected": "missing_text",
+          "name": "missing_text_exclusion",
+          "observed": "missing_text",
+          "passed": true
+        },
+        {
+          "expected": [
+            "f49r",
+            "f50r"
+          ],
+          "name": "kept_folios",
+          "observed": [
+            "f49r",
+            "f50r"
+          ],
+          "passed": true
+        },
+        {
+          "expected": {
+            "f49r": {
+              "category": "blue_tag",
+              "group_id": "49",
+              "key_count": 2,
+              "token_count": 3
+            },
+            "f50r": {
+              "category": "no_blue_tag",
+              "group_id": "50",
+              "key_count": 0,
+              "token_count": 2
+            }
+          },
+          "name": "kept_folio_details",
+          "observed": {
+            "f49r": {
+              "category": "blue_tag",
+              "group_id": "49",
+              "key_count": 2,
+              "token_count": 3
+            },
+            "f50r": {
+              "category": "no_blue_tag",
+              "group_id": "50",
+              "key_count": 0,
+              "token_count": 2
+            }
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "distinct_group_count": 1,
+            "folio_count": 1,
+            "folios_with_key": [
+              "f49r"
+            ],
+            "key_count": 2,
+            "token_count": 3
+          },
+          "name": "blue_totals",
+          "observed": {
+            "distinct_group_count": 1,
+            "folio_count": 1,
+            "folios_with_key": [
+              "f49r"
+            ],
+            "key_count": 2,
+            "token_count": 3
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "distinct_group_count": 1,
+            "folio_count": 1,
+            "folios_with_key": [],
+            "key_count": 0,
+            "token_count": 2
+          },
+          "name": "other_totals",
+          "observed": {
+            "distinct_group_count": 1,
+            "folio_count": 1,
+            "folios_with_key": [],
+            "key_count": 0,
+            "token_count": 2
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "f49r": 2,
+            "f50r": 0
+          },
+          "name": "substring_control",
+          "observed": {
+            "f49r": 2,
+            "f50r": 0
+          },
+          "passed": true
+        },
+        {
+          "expected": false,
+          "name": "no_machine_paths",
+          "observed": false,
+          "passed": true
+        },
+        {
+          "expected": "767d43478f6f2236bdc09c20e785e6652381617843ba9810d8bd311be756655b",
+          "name": "deterministic_result_bytes",
+          "observed": "767d43478f6f2236bdc09c20e785e6652381617843ba9810d8bd311be756655b",
+          "passed": true
+        }
+      ],
+      "name": "fixed_fixture_and_repeatability",
+      "passed": true
+    },
+    {
+      "checks": [
+        {
+          "expected": 0,
+          "name": "foreign_code_not_run",
+          "observed": 0,
+          "passed": true
+        },
+        {
+          "expected": "complete",
+          "name": "status",
+          "observed": "complete",
+          "passed": true
+        },
+        {
+          "expected": "bfd6126b2f1420dd576dae6f46f5bffc1b7187a88c5f82c0b04ae31a1e6a48a8",
+          "name": "plan_hash",
+          "observed": "bfd6126b2f1420dd576dae6f46f5bffc1b7187a88c5f82c0b04ae31a1e6a48a8",
+          "passed": true
+        },
+        {
+          "expected": [
+            "color_tags",
+            "corpus",
+            "plant_features"
+          ],
+          "name": "source_hash_roles",
+          "observed": [
+            "color_tags",
+            "corpus",
+            "plant_features"
+          ],
+          "passed": true
+        },
+        {
+          "expected": [
+            {
+              "folio": "f1r",
+              "group_id": "1"
+            }
+          ],
+          "name": "discovery_folio_and_group",
+          "observed": [
+            {
+              "folio": "f1r",
+              "group_id": "1"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "expected": [
+            "f1v",
+            "f49r",
+            "f50r",
+            "f51r",
+            "f52r",
+            "f8r"
+          ],
+          "name": "all_color_folios_recorded",
+          "observed": [
+            "f1v",
+            "f49r",
+            "f50r",
+            "f51r",
+            "f52r",
+            "f8r"
+          ],
+          "passed": true
+        },
+        {
+          "expected": {
+            "f1v": "discovery_group",
+            "f8r": "discovery_group"
+          },
+          "name": "discovery_group_exclusions",
+          "observed": {
+            "f1v": "discovery_group",
+            "f8r": "discovery_group"
+          },
+          "passed": true
+        },
+        {
+          "expected": "nonherbal",
+          "name": "nonherbal_exclusion",
+          "observed": "nonherbal",
+          "passed": true
+        },
+        {
+          "expected": "missing_text",
+          "name": "missing_text_exclusion",
+          "observed": "missing_text",
+          "passed": true
+        },
+        {
+          "expected": [
+            "f49r",
+            "f50r"
+          ],
+          "name": "kept_folios",
+          "observed": [
+            "f49r",
+            "f50r"
+          ],
+          "passed": true
+        },
+        {
+          "expected": {
+            "f49r": {
+              "category": "blue_tag",
+              "group_id": "49",
+              "key_count": 2,
+              "token_count": 3
+            },
+            "f50r": {
+              "category": "no_blue_tag",
+              "group_id": "50",
+              "key_count": 0,
+              "token_count": 2
+            }
+          },
+          "name": "kept_folio_details",
+          "observed": {
+            "f49r": {
+              "category": "blue_tag",
+              "group_id": "49",
+              "key_count": 2,
+              "token_count": 3
+            },
+            "f50r": {
+              "category": "no_blue_tag",
+              "group_id": "50",
+              "key_count": 0,
+              "token_count": 2
+            }
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "distinct_group_count": 1,
+            "folio_count": 1,
+            "folios_with_key": [
+              "f49r"
+            ],
+            "key_count": 2,
+            "token_count": 3
+          },
+          "name": "blue_totals",
+          "observed": {
+            "distinct_group_count": 1,
+            "folio_count": 1,
+            "folios_with_key": [
+              "f49r"
+            ],
+            "key_count": 2,
+            "token_count": 3
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "distinct_group_count": 1,
+            "folio_count": 1,
+            "folios_with_key": [],
+            "key_count": 0,
+            "token_count": 2
+          },
+          "name": "other_totals",
+          "observed": {
+            "distinct_group_count": 1,
+            "folio_count": 1,
+            "folios_with_key": [],
+            "key_count": 0,
+            "token_count": 2
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "f49r": 2,
+            "f50r": 0
+          },
+          "name": "substring_control",
+          "observed": {
+            "f49r": 2,
+            "f50r": 0
+          },
+          "passed": true
+        },
+        {
+          "expected": false,
+          "name": "no_machine_paths",
+          "observed": false,
+          "passed": true
+        }
+      ],
+      "name": "foreign_execution_control",
+      "passed": true
+    },
+    {
+      "checks": [
+        {
+          "expected": {
+            "nonzero": true,
+            "output_created": false
+          },
+          "name": "altered_source_rejected_without_output",
+          "observed": {
+            "exit_code": 2,
+            "output_created": false
+          },
+          "passed": true
+        }
+      ],
+      "name": "altered_source",
+      "passed": true
+    },
+    {
+      "checks": [
+        {
+          "expected": {
+            "nonzero": true,
+            "output_created": false
+          },
+          "name": "dynamic_map_rejected_without_output",
+          "observed": {
+            "exit_code": 2,
+            "output_created": false
+          },
+          "passed": true
+        }
+      ],
+      "name": "dynamic_map",
+      "passed": true
+    },
+    {
+      "checks": [
+        {
+          "expected": {
+            "bytes_unchanged": true,
+            "nonzero": true
+          },
+          "name": "existing_output_rejected_unchanged",
+          "observed": {
+            "bytes_unchanged": true,
+            "exit_code": 2
+          },
+          "passed": true
+        }
+      ],
+      "name": "existing_output",
+      "passed": true
+    },
+    {
+      "checks": [
+        {
+          "expected": {
+            "nonzero": true,
+            "output_created": false
+          },
+          "name": "malformed_selected_text_rejected_without_output",
+          "observed": {
+            "exit_code": 2,
+            "output_created": false
+          },
+          "passed": true
+        }
+      ],
+      "name": "malformed_selected_text",
+      "passed": true
+    }
+  ],
+  "command_template": "python scripts/check_blue_word_transfer.py MANIFEST SOURCE_ROOT NEW_OUTPUT",
+  "earlier_failures": [
+    {
+      "artifact": "red-initial/receipt.json",
+      "sha256": "5b404430ba42a146d9a6df7e87a9dcac4da4feafcda5c25ee49b414292c7176a",
+      "status": "expected_preimplementation_failure",
+      "valid_receipt": true
+    },
+    {
+      "artifact": "red-fixed-schema/receipt.json",
+      "sha256": "fae195915782bdb304a5548a288242600ea14e2c0f2a38696dd8ba5e54f26765",
+      "status": "expected_preimplementation_failure",
+      "valid_receipt": true
+    }
+  ],
+  "fixture_correction": {
+    "correction": "Use sentence rows and a folio metadata map before command implementation.",
+    "first_fixture_error": "The first artificial input used a folios container that the released source does not use.",
+    "later_harness_error": "The malformed-word case still referred to the old container. Corrected that reference without changing expected counts.",
+    "production_count_before_corrections": false
+  },
+  "fixture_schema": "Top-level sentences list and folio-keyed metadata map.",
+  "harness_command_template": "python scripts/test_blue_word_transfer_e2e.py NEW_ARTIFACT_DIR",
+  "harness_sha256": "f6fd6e5e645fa675b6d9d0d96c49e3c9366a9f464a158bc71c7d6c75cbe7cc7d",
+  "limits": "These checks test the command on artificial inputs. They do not run the production count.",
+  "plan_sha256": "bfd6126b2f1420dd576dae6f46f5bffc1b7187a88c5f82c0b04ae31a1e6a48a8",
+  "preimplementation_failure": {
+    "command_template": "python scripts/check_blue_word_transfer.py MANIFEST SOURCE_ROOT NEW_OUTPUT",
+    "earlier_failures": [
+      {
+        "artifact": "red-initial/receipt.json",
+        "sha256": "5b404430ba42a146d9a6df7e87a9dcac4da4feafcda5c25ee49b414292c7176a",
+        "status": "expected_preimplementation_failure",
+        "valid_receipt": true
+      }
+    ],
+    "fixture_schema": "Top-level sentences list and folio-keyed metadata map.",
+    "harness_command_template": "python scripts/test_blue_word_transfer_e2e.py NEW_ARTIFACT_DIR",
+    "limits": "This run checks only the pre-implementation failure. It makes no corpus count.",
+    "plan_sha256": "bfd6126b2f1420dd576dae6f46f5bffc1b7187a88c5f82c0b04ae31a1e6a48a8",
+    "schema": "blue-word-transfer-e2e-v1",
+    "schema_correction": "The first red artifact used an invented folios map. This rerun uses the reviewed sentences and metadata shape.",
+    "setup": "Synthetic six-folio source fixture; no production corpus is read.",
+    "status": "expected_preimplementation_failure",
+    "steps": [
+      {
+        "expected": "The command must fail before its implementation exists.",
+        "name": "real_cli_before_implementation",
+        "observed": {
+          "cli_file_present": false,
+          "exit_code": 2,
+          "result_created": false
+        },
+        "passed": true
+      }
+    ],
+    "test_script_sha256": "ab7d5e7436b7895c89d3db2545e24bad1f9b871913333020461bf46cb6ae4d3e"
+  },
+  "schema": "blue-word-transfer-e2e-v1",
+  "script_sha256": "828a05b9f6efe7e27d62f8f754991b7cdf61bef77bd190f5f151f1b495b08154",
+  "setup": "Synthetic six-folio source fixture; no production corpus is read.",
+  "status": "complete",
+  "test_script_sha256": "f6fd6e5e645fa675b6d9d0d96c49e3c9366a9f464a158bc71c7d6c75cbe7cc7d"
+}

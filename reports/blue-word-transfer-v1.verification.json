@@ -1,0 +1,11 @@
+{
+  "status": "matched",
+  "primary_result_sha256": "a72f3078f79a2dc2901ba06ce1c9cad3b1e484e1ef1d78c543c25afc117426f0",
+  "separate_script_sha256": "6a541bae388b6449af2f0bfd39dd64630ef860880fa6d687f15c6c01167d61bd",
+  "separate_result_sha256": "f8c905087042ea48f278bd47c77034d26b9b0a8dbeb55d6419d761d37a903c86",
+  "discovery_pairs_matched": 78,
+  "folio_decisions_matched": 126,
+  "categories_matched": 2,
+  "shared_dependency": "The calculators use the same checked project group_id function.",
+  "limits": "This confirms the source-conditional count. It is not another transcription or a test of the proposed meaning."
+}

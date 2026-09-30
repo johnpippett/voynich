@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "sources": [
+    {
+      "project": "mruckman1/voynich",
+      "commit": "59472f00905ad923258bf529ea1420b35694ffa3",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/mruckman1/voynich/59472f00905ad923258bf529ea1420b35694ffa3/README.md",
+      "sha256": "381e977aded38ca209d11dfa60a8b0c30a965dc517230ac2d562852e8f6f4455",
+      "size_bytes": 50472
+    },
+    {
+      "project": "mruckman1/voynich",
+      "commit": "59472f00905ad923258bf529ea1420b35694ffa3",
+      "path": "METHODOLOGY.md",
+      "url": "https://raw.githubusercontent.com/mruckman1/voynich/59472f00905ad923258bf529ea1420b35694ffa3/METHODOLOGY.md",
+      "sha256": "a990e15bdba7ed6f27bd1be43603e7e999850502cdd8bcea7e0ab67073ec7a68",
+      "size_bytes": 67010
+    },
+    {
+      "project": "mruckman1/voynich",
+      "commit": "59472f00905ad923258bf529ea1420b35694ffa3",
+      "path": "src/voynich/core/config.py",
+      "url": "https://raw.githubusercontent.com/mruckman1/voynich/59472f00905ad923258bf529ea1420b35694ffa3/src/voynich/core/config.py",
+      "sha256": "79afe1fe37ada05a34118c57060e2f13f8086b4afc7a1ce53a7d98cc64bda1a9",
+      "size_bytes": 4023
+    },
+    {
+      "project": "mruckman1/voynich",
+      "commit": "59472f00905ad923258bf529ea1420b35694ffa3",
+      "path": "src/voynich/modules/phase11/phonetic_skeletonizer.py",
+      "url": "https://raw.githubusercontent.com/mruckman1/voynich/59472f00905ad923258bf529ea1420b35694ffa3/src/voynich/modules/phase11/phonetic_skeletonizer.py",
+      "sha256": "7b0b5bc4c8a2d6ecc0c614abd02678da7268060351f68b69e81c08d13793f418",
+      "size_bytes": 2134
+    },
+    {
+      "project": "mruckman1/voynich",
+      "commit": "59472f00905ad923258bf529ea1420b35694ffa3",
+      "path": "src/voynich/core/foundation.py",
+      "url": "https://raw.githubusercontent.com/mruckman1/voynich/59472f00905ad923258bf529ea1420b35694ffa3/src/voynich/core/foundation.py",
+      "sha256": "0a191a605def070ce6ce22fcfcb86c4350a053a2486b9a16e01485dd7e7c4e5a",
+      "size_bytes": 3254
+    },
+    {
+      "project": "mruckman1/voynich",
+      "commit": "59472f00905ad923258bf529ea1420b35694ffa3",
+      "path": "src/voynich/core/folio_illustration_priors.py",
+      "url": "https://raw.githubusercontent.com/mruckman1/voynich/59472f00905ad923258bf529ea1420b35694ffa3/src/voynich/core/folio_illustration_priors.py",
+      "sha256": "c413ccf33595d4a7bb5e8ab2e3a0b031dda154fb0fababb2c6a201460f85f974",
+      "size_bytes": 3328
+    },
+    {
+      "project": "mruckman1/voynich",
+      "commit": "59472f00905ad923258bf529ea1420b35694ffa3",
+      "path": "src/voynich/modules/phase13/illustration_correlation.py",
+      "url": "https://raw.githubusercontent.com/mruckman1/voynich/59472f00905ad923258bf529ea1420b35694ffa3/src/voynich/modules/phase13/illustration_correlation.py",
+      "sha256": "37e63b1a1779b23141a2a4785afa7b76906e226999f3f5309caf1be743a56e4e",
+      "size_bytes": 17970
+    },
+    {
+      "project": "mruckman1/voynich",
+      "commit": "59472f00905ad923258bf529ea1420b35694ffa3",
+      "path": "src/voynich/phases/phase13.py",
+      "url": "https://raw.githubusercontent.com/mruckman1/voynich/59472f00905ad923258bf529ea1420b35694ffa3/src/voynich/phases/phase13.py",
+      "sha256": "285584cc1ba8c9bc387719d9422a3a4143d1756ae0cd41c946e0afb98206cb6c",
+      "size_bytes": 11183
+    },
+    {
+      "project": "mruckman1/voynich",
+      "commit": "59472f00905ad923258bf529ea1420b35694ffa3",
+      "path": "src/voynich/modules/phase12/budgeted_csp.py",
+      "url": "https://raw.githubusercontent.com/mruckman1/voynich/59472f00905ad923258bf529ea1420b35694ffa3/src/voynich/modules/phase12/budgeted_csp.py",
+      "sha256": "b64e68747aee2b691a6f3388c6da28c550d1699b8d107c9b81a863c7985b3f6e",
+      "size_bytes": 12167
+    },
+    {
+      "project": "mruckman1/voynich",
+      "commit": "59472f00905ad923258bf529ea1420b35694ffa3",
+      "path": "src/voynich/modules/phase12/ngram_mask_solver.py",
+      "url": "https://raw.githubusercontent.com/mruckman1/voynich/59472f00905ad923258bf529ea1420b35694ffa3/src/voynich/modules/phase12/ngram_mask_solver.py",
+      "sha256": "893f5367ecba7d2ba36d4990236834c6c41b2ca9282a0bb98bd5ddbc8c12602d",
+      "size_bytes": 47374
+    },
+    {
+      "project": "geoffitect/voynich",
+      "commit": "860d278a6fa72a39605a11513716e56298411d47",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/geoffitect/voynich/860d278a6fa72a39605a11513716e56298411d47/README.md",
+      "sha256": "c7a6cc37e7646fd67531eb55d586196ecec52a4ab84b9c78b07772ba0c24d42c",
+      "size_bytes": 5723
+    },
+    {
+      "project": "geoffitect/voynich",
+      "commit": "860d278a6fa72a39605a11513716e56298411d47",
+      "path": "reports/PROGRESS.md",
+      "url": "https://raw.githubusercontent.com/geoffitect/voynich/860d278a6fa72a39605a11513716e56298411d47/reports/PROGRESS.md",
+      "sha256": "700135f1437892c1d2b932040b9ed2bf25804b8172719e4bfa45f8aa219c0262",
+      "size_bytes": 19253
+    },
+    {
+      "project": "geoffitect/voynich",
+      "commit": "860d278a6fa72a39605a11513716e56298411d47",
+      "path": "scripts/04_content/plant_features.py",
+      "url": "https://raw.githubusercontent.com/geoffitect/voynich/860d278a6fa72a39605a11513716e56298411d47/scripts/04_content/plant_features.py",
+      "sha256": "a13d5a4acb843299c191ebc5faea6e6cfb06e44ea026f2f6e5a4363be0447434",
+      "size_bytes": 18123
+    },
+    {
+      "project": "geoffitect/voynich",
+      "commit": "860d278a6fa72a39605a11513716e56298411d47",
+      "path": "scripts/04_content/color_crossref.py",
+      "url": "https://raw.githubusercontent.com/geoffitect/voynich/860d278a6fa72a39605a11513716e56298411d47/scripts/04_content/color_crossref.py",
+      "sha256": "603a6ec9b618d88cca774027bdfb0b54a169648ad5cc700a4eb1a2d5c7b5b353",
+      "size_bytes": 17578
+    },
+    {
+      "project": "geoffitect/voynich",
+      "commit": "860d278a6fa72a39605a11513716e56298411d47",
+      "path": "data/analysis/plant_analysis.json",
+      "url": "https://raw.githubusercontent.com/geoffitect/voynich/860d278a6fa72a39605a11513716e56298411d47/data/analysis/plant_analysis.json",
+      "sha256": "eed66ddbaa992a39406da561b925a5ff887921bd6b32e08ab45463c2fec00f01",
+      "size_bytes": 77490
+    },
+    {
+      "project": "geoffitect/voynich",
+      "commit": "860d278a6fa72a39605a11513716e56298411d47",
+      "path": "data/analysis/color_crossref.json",
+      "url": "https://raw.githubusercontent.com/geoffitect/voynich/860d278a6fa72a39605a11513716e56298411d47/data/analysis/color_crossref.json",
+      "sha256": "178125387861cd7a47a060856194e935f447038bb7401121fec765b89842b614",
+      "size_bytes": 25411
+    },
+    {
+      "project": "geoffitect/voynich",
+      "commit": "860d278a6fa72a39605a11513716e56298411d47",
+      "path": "data/transcription/voynich_nlp.json",
+      "url": "https://raw.githubusercontent.com/geoffitect/voynich/860d278a6fa72a39605a11513716e56298411d47/data/transcription/voynich_nlp.json",
+      "sha256": "f11df385f851ef6d07cca4ab4a65c26c5e9e6dc9d47f6d94ad741ae0b7ba55e0",
+      "size_bytes": 1329482
+    },
+    {
+      "title": "A proposed partial decoding of the Voynich script",
+      "version": "Version 1, January 2014",
+      "url": "https://stephenbax.net/wp-content/uploads/2014/01/Voynich-a-provisional-partial-decoding-BAX.pdf",
+      "sha256": "bdac04fb06fb94e7af33fda9d9539e603725da7b91f116aed1e79b83b78fef67",
+      "page_count": 62,
+      "reviewed_pages": [
+        1,
+        14,
+        56,
+        57
+      ],
+      "access": "Canonical PDF returned HTTP 403. Google Viewer supplied a cached copy with matching title, version, and date.",
+      "images": [
+        {
+          "pdf_page": 56,
+          "sha256": "456765ae2ae1adb449d408cd563e54f0c91b404a7ec8bd6d97be5188cd77f435"
+        },
+        {
+          "pdf_page": 57,
+          "sha256": "2909cad2630a7c29dffceb7bc18fece61553fccfc5b7c55a5823cedd7798f80d"
+        }
+      ],
+      "retrieval_url": "https://docs.google.com/gview?embedded=1&url=https%3A%2F%2Fstephenbax.net%2Fwp-content%2Fuploads%2F2014%2F01%2FVoynich-a-provisional-partial-decoding-BAX.pdf"
+    }
+  ]
+}

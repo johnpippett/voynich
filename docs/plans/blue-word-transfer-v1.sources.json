@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "repository_commit": "860d278a6fa72a39605a11513716e56298411d47",
+  "sources": {
+    "plant_features": {
+      "path": "scripts/04_content/plant_features.py",
+      "sha256": "a13d5a4acb843299c191ebc5faea6e6cfb06e44ea026f2f6e5a4363be0447434",
+      "url": "https://raw.githubusercontent.com/geoffitect/voynich/860d278a6fa72a39605a11513716e56298411d47/scripts/04_content/plant_features.py"
+    },
+    "color_tags": {
+      "path": "scripts/04_content/color_crossref.py",
+      "sha256": "603a6ec9b618d88cca774027bdfb0b54a169648ad5cc700a4eb1a2d5c7b5b353",
+      "url": "https://raw.githubusercontent.com/geoffitect/voynich/860d278a6fa72a39605a11513716e56298411d47/scripts/04_content/color_crossref.py"
+    },
+    "corpus": {
+      "path": "data/transcription/voynich_nlp.json",
+      "sha256": "f11df385f851ef6d07cca4ab4a65c26c5e9e6dc9d47f6d94ad741ae0b7ba55e0",
+      "url": "https://raw.githubusercontent.com/geoffitect/voynich/860d278a6fa72a39605a11513716e56298411d47/data/transcription/voynich_nlp.json"
+    }
+  }
+}
