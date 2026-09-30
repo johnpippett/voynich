@@ -1,0 +1,252 @@
+{
+  "date": "2026-09-30",
+  "earlier_source_comparison": {
+    "scope": "Opening Latin words and source-folio relation only.",
+    "sha256": "295ae2fa4a1ad1a2d16278a3a28bab823f6515e0e88520e767661dc7d1691e7f",
+    "url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00013084_00007/full/full/0/default.jpg"
+  },
+  "files": [
+    {
+      "bytes": 48772,
+      "kind": "retrieved_source_body",
+      "path": "bsb00015141-details.html",
+      "sha256": "b6624cf80ed9d4fdadfc1f8ea924e55ef2fb9cbaf2c022d436674e10155a8f01",
+      "source_url": "https://www.digitale-sammlungen.de/de/details/bsb00015141"
+    },
+    {
+      "bytes": 100065,
+      "kind": "retrieved_source_body",
+      "path": "bsb00015141-manifest.json",
+      "sha256": "d3e6dce6422a10bdfcc0f38789173f12338c415d2cd415f820513ec60dce6423",
+      "source_url": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00015141/manifest"
+    },
+    {
+      "bytes": 27319,
+      "kind": "retrieved_source_body",
+      "path": "bsb00015141-view.html",
+      "sha256": "91ce570dbdb8522ec8f01f5f6f910b1d984c4edeb2d4251454b3f7d1c67662a3",
+      "source_url": "https://www.digitale-sammlungen.de/de/view/bsb00015141"
+    },
+    {
+      "bytes": 426,
+      "kind": "retrieved_source_body",
+      "path": "ocr-03-Iar.html",
+      "sha256": "1c0a750aefdbf94c14ec3a2f99f23eec7f7b80048fc08dc7d76fca950bf9996d",
+      "source_url": "https://api.digitale-sammlungen.de/ocr/bsb00015141/3"
+    },
+    {
+      "bytes": 426,
+      "kind": "retrieved_source_body",
+      "path": "ocr-04-Iav.html",
+      "sha256": "5a8fc1c97e5941a3e8d9902ee79a7f26f62c25ca8c66fc3dc097f06816f30787",
+      "source_url": "https://api.digitale-sammlungen.de/ocr/bsb00015141/4"
+    },
+    {
+      "bytes": 489,
+      "kind": "retrieved_source_body",
+      "path": "ocr-05-Ir.html",
+      "sha256": "993742e639ed548e2fb5af365bf97a7977ae847794c8cebd7c9661ded33639f2",
+      "source_url": "https://api.digitale-sammlungen.de/ocr/bsb00015141/5"
+    },
+    {
+      "bytes": 426,
+      "kind": "retrieved_source_body",
+      "path": "ocr-06-Iv.html",
+      "sha256": "22dc6af2e1b3f0c32aa354ed8f23598025c3f538793d402368378fffefdf0eee",
+      "source_url": "https://api.digitale-sammlungen.de/ocr/bsb00015141/6"
+    },
+    {
+      "bytes": 12204,
+      "kind": "retrieved_source_body",
+      "path": "ocr-07-1r.html",
+      "sha256": "3a74bb4bc0d4ec3404cc61a2357ecb20d9a2999920e2686bcd4449857220fda1",
+      "source_url": "https://api.digitale-sammlungen.de/ocr/bsb00015141/7"
+    },
+    {
+      "bytes": 1700,
+      "kind": "retrieved_source_body",
+      "path": "ocr-08-1v.html",
+      "sha256": "74c657af520c8f0216c32398310e8db2498baa349cf11800819575914a51f701",
+      "source_url": "https://api.digitale-sammlungen.de/ocr/bsb00015141/8"
+    },
+    {
+      "bytes": 5815,
+      "kind": "retrieved_source_body",
+      "path": "ocr-09-2r.html",
+      "sha256": "d438e28b0d1159c4165a10adb34076c0ac93f673b7f4e3bc25115791e436b241",
+      "source_url": "https://api.digitale-sammlungen.de/ocr/bsb00015141/9"
+    },
+    {
+      "bytes": 2780,
+      "kind": "retrieved_source_body",
+      "path": "ocr-10-2v.html",
+      "sha256": "3bdb8a19e007907928893d9c9b028bff79fe54bcdc56af31a40d7d41f4b9871f",
+      "source_url": "https://api.digitale-sammlungen.de/ocr/bsb00015141/10"
+    },
+    {
+      "bytes": 965370,
+      "kind": "retrieved_source_body",
+      "path": "page-1r.jpg",
+      "sha256": "48695491c68a884e34a5573d945e93aa65ce4f8f98be26d8b6c255d61672b6d7",
+      "source_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00015141_00007/full/full/0/default.jpg"
+    },
+    {
+      "bytes": 685671,
+      "kind": "retrieved_source_body",
+      "path": "page-1v.jpg",
+      "sha256": "2b193f485f8e9c6c85997fbc9530754fa7ea6a69a49100bd72f3d4ed384ae060",
+      "source_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00015141_00008/full/full/0/default.jpg"
+    },
+    {
+      "bytes": 760869,
+      "kind": "retrieved_source_body",
+      "path": "page-2r.jpg",
+      "sha256": "7cfddff5e912ff843dd8afb8a6cfaac73c0444e3e75887d4cbe4a0d8884485cb",
+      "source_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00015141_00009/full/full/0/default.jpg"
+    },
+    {
+      "bytes": 676677,
+      "kind": "retrieved_source_body",
+      "path": "page-2v.jpg",
+      "sha256": "26c284d94d708eb482d4a6ce87758e129f0a1bb505cdba5505a20ff8a4133fa2",
+      "source_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00015141_00010/full/full/0/default.jpg"
+    },
+    {
+      "bytes": 631110,
+      "kind": "retrieved_source_body",
+      "path": "page-Iar.jpg",
+      "sha256": "6b2fe66a8ef33b54ca0fb96a8e409aa1919979db948a883735dcef3eaba5820d",
+      "source_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00015141_00003/full/full/0/default.jpg"
+    },
+    {
+      "bytes": 611529,
+      "kind": "retrieved_source_body",
+      "path": "page-Iav.jpg",
+      "sha256": "c3eccac9a539455061e401d202e18cce727d762caf92fc9b6434895106ac0afe",
+      "source_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00015141_00004/full/full/0/default.jpg"
+    },
+    {
+      "bytes": 1050930,
+      "kind": "retrieved_source_body",
+      "path": "page-Ir.jpg",
+      "sha256": "4ea79594495aabd47361136ffbc15a2c7a66af13f9525e0259497a3c862d4db7",
+      "source_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00015141_00005/full/full/0/default.jpg"
+    },
+    {
+      "bytes": 653097,
+      "kind": "retrieved_source_body",
+      "path": "page-Iv.jpg",
+      "sha256": "03ad6230c905b895df83055f74514535a68273f15bdde6bae5225abad9f45b2d",
+      "source_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00015141_00006/full/full/0/default.jpg"
+    },
+    {
+      "bytes": 1916,
+      "kind": "audit_note_or_selection_record",
+      "path": "page-selection.json",
+      "sha256": "a7c4c0cb395bea83e4904c34dfa6c562f5deb35a8e34b4e19ff77e71362d6b8a"
+    },
+    {
+      "bytes": 1311,
+      "kind": "audit_note_or_selection_record",
+      "path": "scope.json",
+      "sha256": "479909aa40bf3e7e68528e6e04d4e2edf7d5496970099a5343a6567fa1757db8"
+    },
+    {
+      "bytes": 345,
+      "kind": "audit_note_or_selection_record",
+      "path": "search-api-failure.json",
+      "sha256": "096540add37824e3f190c478062bf105f7c106a6caf91aeeb0c785ed71c98270"
+    },
+    {
+      "bytes": 1639,
+      "kind": "audit_note_or_selection_record",
+      "path": "search-navigation.json",
+      "sha256": "b340ac5454a6415a0e36806b30533409d490d76b17a019623f9dab3e1decfec5"
+    }
+  ],
+  "manifest_index": [
+    {
+      "canvas": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00015141/canvas/5",
+      "folio": "Ir (0005)",
+      "image_reviewed": "page-Ir.jpg",
+      "range": "Titelkommentar"
+    },
+    {
+      "canvas": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00015141/canvas/7",
+      "folio": "1r (0007)",
+      "image_reviewed": "page-1r.jpg",
+      "range": "Lateinische Transkription"
+    }
+  ],
+  "review_limits": [
+    "The review covers canvases 3 through 10 and the index, not all 45 leaves.",
+    "No sign-value table or cipher-to-plaintext alignment was established.",
+    "The opening Latin paragraph correspondence is a visual source check, not a full text comparison.",
+    "The later Oportet paragraph remains an unverified candidate plaintext.",
+    "This source gives no Voynich sign assignments."
+  ],
+  "reviewed_canvases": [
+    {
+      "canvas": 3,
+      "folio": "Iar",
+      "image": "page-Iar.jpg",
+      "review": "visual inspection"
+    },
+    {
+      "canvas": 4,
+      "folio": "Iav",
+      "image": "page-Iav.jpg",
+      "review": "visual inspection"
+    },
+    {
+      "canvas": 5,
+      "folio": "Ir",
+      "image": "page-Ir.jpg",
+      "review": "visual inspection; title-commentary range"
+    },
+    {
+      "canvas": 6,
+      "folio": "Iv",
+      "image": "page-Iv.jpg",
+      "review": "visual inspection"
+    },
+    {
+      "canvas": 7,
+      "folio": "1r",
+      "image": "page-1r.jpg",
+      "review": "visual inspection; transcription range"
+    },
+    {
+      "canvas": 8,
+      "folio": "1v",
+      "image": "page-1v.jpg",
+      "review": "visual inspection"
+    },
+    {
+      "canvas": 9,
+      "folio": "2r",
+      "image": "page-2r.jpg",
+      "review": "visual inspection"
+    },
+    {
+      "canvas": 10,
+      "folio": "2v",
+      "image": "page-2v.jpg",
+      "review": "visual inspection"
+    }
+  ],
+  "source_record": {
+    "access": "Metadata, IIIF manifest, per-canvas OCR, and page images captured. The linked Search API URL returned HTTP 404; see search-api-failure.json.",
+    "creator": "Heinrich Schulte",
+    "date": "1910",
+    "extent": "45 leaves, paper",
+    "iiif_manifest_url": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb00015141/manifest",
+    "official_record_url": "https://www.digitale-sammlungen.de/de/details/bsb00015141",
+    "official_viewer_url": "https://www.digitale-sammlungen.de/de/view/bsb00015141",
+    "title": "Transkription der Geheimschrift in des Johannes de Fontana Bellicorum instrumentorum liber - BSB Cod.icon. 242 a"
+  },
+  "verification": {
+    "captured_file_hashes_and_sizes_matched": 23,
+    "new_source_manifest_sha256": "c9210700230384c13bf817736b78d987a121baec9baecc14d1698c3d63ad6610"
+  }
+}

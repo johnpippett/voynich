@@ -9,6 +9,15 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [visual-unit inventory](docs/research/visual-unit-inventory-2026-09-30.md) finds 30 distinct labels in ZL training under the fixed six-compound tokenizer.
+That count rules out a total injective map to 26 letters under this representation.
+A published 23-form list covers about 99.8 percent of both training cohorts. This is coverage, not reading accuracy.
+No key search followed this inventory count.
+
+The [Fontana source check](docs/research/fontana-transcription-source-2026-09-30.md) found Schulte's digitized 1910 transcription.
+The opening page points to the original source folio, but the reviewed material supplies no complete sign-value table.
+The candidate Latin text still needs cipher-position alignment and a separate passage check.
+
 The [manuscript pilot without spaces](reports/SPACEFREE_MANUSCRIPT_PILOT.md) failed its fixed rule for a later reading study.
 All four 26-letter artificial controls passed before the manuscript stage.
 The ZL test mean cost was 4.421693, above the Latin baseline of 2.708901.

@@ -1,0 +1,387 @@
+{
+  "cohort_report": "reports/spacefree-manuscript-pilot-v1.json",
+  "common_coverage": {
+    "IT": {
+      "test": {
+        "absent_common_units": [],
+        "common_unit_fraction": 0.9981627778798456,
+        "outside_unit_count": 70,
+        "outside_units": [
+          "c",
+          "h",
+          "x",
+          "z"
+        ],
+        "unit_count": 38101
+      },
+      "train": {
+        "absent_common_units": [],
+        "common_unit_fraction": 0.9980229982857644,
+        "outside_unit_count": 158,
+        "outside_units": [
+          "c",
+          "h",
+          "x"
+        ],
+        "unit_count": 79919
+      },
+      "validation": {
+        "absent_common_units": [],
+        "common_unit_fraction": 0.9989303995721598,
+        "outside_unit_count": 14,
+        "outside_units": [
+          "c",
+          "h",
+          "x"
+        ],
+        "unit_count": 13089
+      }
+    },
+    "ZL": {
+      "test": {
+        "absent_common_units": [],
+        "common_unit_fraction": 0.9985519748598188,
+        "outside_unit_count": 47,
+        "outside_units": [
+          "b",
+          "c",
+          "h",
+          "j",
+          "v"
+        ],
+        "unit_count": 32458
+      },
+      "train": {
+        "absent_common_units": [],
+        "common_unit_fraction": 0.998032366803435,
+        "outside_unit_count": 129,
+        "outside_units": [
+          "b",
+          "c",
+          "h",
+          "j",
+          "u",
+          "x",
+          "z"
+        ],
+        "unit_count": 65561
+      },
+      "validation": {
+        "absent_common_units": [
+          "g"
+        ],
+        "common_unit_fraction": 0.9990600620359056,
+        "outside_unit_count": 10,
+        "outside_units": [
+          "c",
+          "h",
+          "u",
+          "x"
+        ],
+        "unit_count": 10639
+      }
+    }
+  },
+  "common_units_in_source_order": [
+    "o",
+    "y",
+    "a",
+    "e",
+    "ch",
+    "sh",
+    "k",
+    "t",
+    "f",
+    "p",
+    "ckh",
+    "cth",
+    "cfh",
+    "cph",
+    "d",
+    "s",
+    "r",
+    "l",
+    "i",
+    "n",
+    "m",
+    "g",
+    "q"
+  ],
+  "date": "2026-09-30",
+  "independent_audit": {
+    "evidence_sha256": {
+      "audit-note.md": "1cc2c9f9c4504a29e21403a4a69872618282fe58c566c7bd47937ff70efd3842",
+      "check_inventory_e2e.py": "201c00d823643114c9450fbb79cbfe961c0c8e07168047f988b9132395c807fe",
+      "common23-comparison.json": "eb15538c4ad58f0eb2e8b15570e183fb5f7f6bbb841b48aca8c60cb4ea00abbb",
+      "common23-independent-counts.json": "f3f2495ae0b6a05c75d27a2f7844d5e7a7fbea767806fd8e54fea760c5ec61f0",
+      "comparison.json": "c297cc8f1174829a8b96114835f0536417251e48668d4c0b1e54a7c65ece455e",
+      "e2e-check.json": "bf19d054f2e168e666646db6143f88ccb6e21753e641175f19746a28f956a653",
+      "independent-counts.json": "e6f2157c50cf65e800c5d448633e7745e93afe01774b011114cf967437fa0d13",
+      "inventory_audit.py": "01bfb2825b392e284c6a3fe13a4258463df627c203539da454407ca5a6bf0e2d"
+    },
+    "scope": "Separate compound scanner, six inventories, and common-list coverage.",
+    "shared_inputs": "Earlier audited normalized streams, word lengths, cohort selection, and partitions.",
+    "status": "passed"
+  },
+  "limits": [
+    "The normalized labels need not be linguistic letters.",
+    "All outside units remain in the coverage denominator.",
+    "No key search or reading claim followed these counts."
+  ],
+  "prior_private_input_sha256": "3e9149be0fa3e22366e436208b28aa3f50f01b8d47638c9a9b2e1642e6a8c188",
+  "private_evidence_sha256": {
+    "common23-plan.md": "5c7ae73cdfbabd590d2ea145c67e81f8db72101d4fc49fac752e1874211626f0",
+    "common23-result.json": "304bdbca494991b78d315104107e64934586a93824d6adb6caf356508d9ad328",
+    "inputs.json": "a9efdcb5c1a0c3ff60522f238a0e8d4d7803a9bd1ffb9b8493e29910c13e981c",
+    "plan.md": "859f88676625439f43eb28e6551f8326024e86ead06f297da838a539a95927a5",
+    "probe.py": "448bc09c683be5a621ad76a0a36c77f42d1249802305d135bc073e75baa34c51",
+    "result.json": "72aed413824001d86d97ced83ac57500aaa5629d9628f98ceb956cf8821f76d6"
+  },
+  "results": {
+    "IT": {
+      "test": {
+        "distinct_unit_count": 27,
+        "more_than_26_labels": true,
+        "observed_units": [
+          "a",
+          "c",
+          "cfh",
+          "ch",
+          "ckh",
+          "cph",
+          "cth",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "sh",
+          "t",
+          "x",
+          "y",
+          "z"
+        ],
+        "ordered_units_sha256": "9124b8dafa4d263117898d4d3d58bdfacf23a31f330f2d16563d4c0b4c2aab6b",
+        "raw_character_count": 42390,
+        "raw_stream_sha256": "1d0b3c364dad76a57eb2c071117bdf331197bcae628f9a5a232c6f02c1a8a6c9",
+        "unit_count": 38101,
+        "word_count": 8272
+      },
+      "train": {
+        "distinct_unit_count": 26,
+        "more_than_26_labels": false,
+        "observed_units": [
+          "a",
+          "c",
+          "cfh",
+          "ch",
+          "ckh",
+          "cph",
+          "cth",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "sh",
+          "t",
+          "x",
+          "y"
+        ],
+        "ordered_units_sha256": "5d6acc7073d8fa4840a3ad91db8dbf0254293e925ec33d7656f41c1d9d219d64",
+        "raw_character_count": 89225,
+        "raw_stream_sha256": "a029882cbff9e55edf1c31e3c10abb7a90dc11bf646075873811da72bc8bfa35",
+        "unit_count": 79919,
+        "word_count": 17450
+      },
+      "validation": {
+        "distinct_unit_count": 26,
+        "more_than_26_labels": false,
+        "observed_units": [
+          "a",
+          "c",
+          "cfh",
+          "ch",
+          "ckh",
+          "cph",
+          "cth",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "sh",
+          "t",
+          "x",
+          "y"
+        ],
+        "ordered_units_sha256": "b08f73d6d3d427c612ee0d8a174e64e5dfe0f514baa5555383618a333a2ee3b1",
+        "raw_character_count": 14530,
+        "raw_stream_sha256": "02a303dc41c0e9f27af7ab9c7a8945457216a225c73bbcc1e76a70957b81bcec",
+        "unit_count": 13089,
+        "word_count": 2778
+      }
+    },
+    "ZL": {
+      "test": {
+        "distinct_unit_count": 28,
+        "more_than_26_labels": true,
+        "observed_units": [
+          "a",
+          "b",
+          "c",
+          "cfh",
+          "ch",
+          "ckh",
+          "cph",
+          "cth",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "sh",
+          "t",
+          "v",
+          "y"
+        ],
+        "ordered_units_sha256": "cc765f2b89c34182524dd7b0988766c2a1d8b9baa6332d6220b8de4ead66f0eb",
+        "raw_character_count": 36122,
+        "raw_stream_sha256": "52882b819146f5419cea7237be2941ac6fa03c935f106686026c2b6364bb254b",
+        "unit_count": 32458,
+        "word_count": 7162
+      },
+      "train": {
+        "distinct_unit_count": 30,
+        "more_than_26_labels": true,
+        "observed_units": [
+          "a",
+          "b",
+          "c",
+          "cfh",
+          "ch",
+          "ckh",
+          "cph",
+          "cth",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "sh",
+          "t",
+          "u",
+          "x",
+          "y",
+          "z"
+        ],
+        "ordered_units_sha256": "e22db43fb5075a97e5d38bb8e15c3843f9e19af12b0ead7d3066fb3e01dc4fac",
+        "raw_character_count": 73144,
+        "raw_stream_sha256": "4c3b52b8179c59cd5f08a0fff74183411eb5b8196aeae98e32ed5073f8acae00",
+        "unit_count": 65561,
+        "word_count": 14523
+      },
+      "validation": {
+        "distinct_unit_count": 26,
+        "more_than_26_labels": false,
+        "observed_units": [
+          "a",
+          "c",
+          "cfh",
+          "ch",
+          "ckh",
+          "cph",
+          "cth",
+          "d",
+          "e",
+          "f",
+          "h",
+          "i",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "sh",
+          "t",
+          "u",
+          "x",
+          "y"
+        ],
+        "ordered_units_sha256": "947041c36a40520ed02fa5bc813ebb3c71c428f3f7048bd4d59a403f993a489e",
+        "raw_character_count": 11809,
+        "raw_stream_sha256": "05f63b1bb1e56d0b45deb5c170d4b1611ad792cc47c5506d1215e0e3dcd286b6",
+        "unit_count": 10639,
+        "word_count": 2280
+      }
+    }
+  },
+  "schema_version": 1,
+  "source_pdf_sha256": "6bb5e9103da8da403d847fa7df979b64b23690dc71b13121788fe1b21aa3f6d2",
+  "tokenizer": "experiments/homophonic/units.py",
+  "tokenizer_sha256": "fc321f7cc59bf91aed1061d9fb72b531125ab9255ae171167de0bbe289c59760",
+  "train_only_decision": {
+    "IT": {
+      "total_injective_map_to_26_impossible_by_cardinality": false
+    },
+    "ZL": {
+      "total_injective_map_to_26_impossible_by_cardinality": true
+    }
+  }
+}

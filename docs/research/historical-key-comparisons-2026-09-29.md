@@ -30,6 +30,11 @@ It calls Fontana's cipher a simple substitution cipher but gives no sign values 
 Further requests to the 1984 edition returned metadata or access errors, without readable book pages.
 Pages 35–38 remain a search lead, not a confirmed key location.
 
+A [later source check](fontana-transcription-source-2026-09-30.md) found a digitized 1910 transcription by Heinrich Schulte.
+Its opening page points to Fontana folio 1v and contains a candidate Latin reading.
+The opening words also appear in text already visible in Latin. The inspected pages give no complete sign-value table.
+The source is a new research lead, without a verified cipher-to-plaintext alignment or Voynich assignment.
+
 ## Meister: complete printed tables and an unresolved date
 
 [Meister's 1902 book, pages 30–31](https://books.google.com/books?id=tI_k5mqTS2IC&pg=PA30), gives another source to examine.
