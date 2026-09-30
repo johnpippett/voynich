@@ -1,0 +1,314 @@
+{
+  "date": "2026-09-30",
+  "paper": {
+    "author": "James R. Child",
+    "title": "Again, the Voynich Manuscript",
+    "reported_year": 2007,
+    "date_limit": "Search references report 2007. No printed publication date was verified.",
+    "pdf_pages": 14,
+    "source_url": "https://web.archive.org/web/20090616205410if_/http://voynichmanuscript.net:80/voynichpaper.pdf"
+  },
+  "private_evidence_directory": "results/child-later-source-2026-09-30/",
+  "scope": {
+    "record_file": "scope.json",
+    "record_sha256": "2a498dfa142910b3b115d4ce8d7da22a54d48be7f96b7b0e7d439623639e412f",
+    "created_utc": "2026-09-30T13:24:29.024651+00:00",
+    "target": "James R. Child, Again, the Voynich Manuscript; reported year 2007",
+    "question": "Does this later paper supply a complete operational map or reading procedure beyond the incomplete 1976 proposal?",
+    "limits": {
+      "search_queries": 2,
+      "other_external_retrieval_operations": 6,
+      "detailed_method_pages": 8
+    },
+    "counting": "Every open, click, download, and screenshot attempt counts, including failures. Local reads and renders do not count.",
+    "selection": "Select detailed pages after navigation and before method review. Use search snippets only for navigation.",
+    "boundaries": [
+      "No manuscript decoding or source program execution.",
+      "No further 1976 source download attempt.",
+      "No paid access, login, borrowing, external contact, or access-control bypass.",
+      "No new fit for stopped models.",
+      "Do not reject a method because access fails."
+    ]
+  },
+  "access_log": {
+    "searches": [
+      "\"James Child\" \"Again\" \"Voynich\" 2007",
+      "\"voynichpaper.pdf\" Child"
+    ],
+    "retrievals": [
+      {
+        "label": "archive",
+        "url": "https://web.archive.org/web/20090616205410/http://voynichmanuscript.net/voynichpaper.pdf",
+        "final_url": "https://web.archive.org/web/20090616205410/http://voynichmanuscript.net/voynichpaper.pdf",
+        "status": 200,
+        "content_type": "text/html",
+        "file": "archive.html",
+        "bytes": 8954,
+        "sha256": "04f2aea1eba461196a823fbaa0e9223846c2a75a64ef6f116c55dad10a77847b",
+        "retrieved_utc": "2026-09-30T13:24:58.721415+00:00"
+      },
+      {
+        "label": "current",
+        "url": "https://voynichmanuscript.net/voynichpaper.pdf",
+        "error": "URLError: <urlopen error timed out>",
+        "retrieved_utc": "2026-09-30T13:25:58.287300+00:00"
+      },
+      {
+        "label": "archive-playback",
+        "url": "https://web.archive.org/web/20090616205410if_/http://voynichmanuscript.net:80/voynichpaper.pdf",
+        "status": 200,
+        "reason": "Exact playback iframe URL in saved archive page",
+        "final_url": "https://web.archive.org/web/20090616205410if_/http://voynichmanuscript.net:80/voynichpaper.pdf",
+        "content_type": "application/pdf",
+        "file": "paper-2007.pdf",
+        "bytes": 6208441,
+        "sha256": "774525b82e8e89ed225b2bb0ba9a4a0fd9295abd8ea7f5bea508d3de71bf9b62",
+        "retrieved_utc": "2026-09-30T13:26:53.708958+00:00"
+      }
+    ]
+  },
+  "selection": {
+    "selected_utc": "2026-09-30T13:28:47.876709+00:00",
+    "navigation": "Fourteen low-resolution page images in a contact sheet; no OCR text was available.",
+    "detailed_pdf_pages": [
+      1,
+      6,
+      7,
+      8,
+      9,
+      12,
+      13,
+      14
+    ],
+    "selection_reason": "Title, f76r discussion on pages 6 through 9, author qualifications and sound discussion on pages 12 through 13, and final table on page 14.",
+    "not_detailed": [
+      2,
+      3,
+      4,
+      5,
+      10,
+      11
+    ],
+    "limits": "No claim about validation or rules on pages outside this selection. No new reading from manuscript images.",
+    "pdf_sha256": "774525b82e8e89ed225b2bb0ba9a4a0fd9295abd8ea7f5bea508d3de71bf9b62",
+    "record_file": "selection.json",
+    "record_sha256": "77857a7f77e459a249a8c006e594a5752bb37855e16c80101590b90cff5dc782"
+  },
+  "review": {
+    "reviewed_utc": "2026-09-30T13:37:06.678460+00:00",
+    "source_sha256": "774525b82e8e89ed225b2bb0ba9a4a0fd9295abd8ea7f5bea508d3de71bf9b62",
+    "page_number_basis": "One-based PDF pages; the reviewed pages after the title also display matching page numbers.",
+    "detailed_pdf_pages": [
+      1,
+      6,
+      7,
+      8,
+      9,
+      12,
+      13,
+      14
+    ],
+    "observations": [
+      {
+        "pdf_pages": [
+          14
+        ],
+        "claim": "The table has 21 data rows, including one unknown entry. It pairs manuscript shapes with transliteration labels and proposed sound values."
+      },
+      {
+        "pdf_pages": [
+          12,
+          14
+        ],
+        "claim": "Some values depend on position and neighboring sounds. These include initial g, positional h functions, and the shape discussed at the end of page 12."
+      },
+      {
+        "pdf_pages": [
+          13,
+          14
+        ],
+        "claim": "The m label has a possible initial n value. The author says more examples are necessary to assess this possibility."
+      },
+      {
+        "pdf_pages": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "claim": "The f76r discussion gives a partial opening gloss and a qualified interpretation about pronunciation. The reference to Goths is an assumption."
+      },
+      {
+        "pdf_pages": [
+          8,
+          9
+        ],
+        "claim": "The author says other content words lack obvious Germanic matches and that English translation would be too speculative."
+      },
+      {
+        "pdf_pages": [
+          12,
+          13
+        ],
+        "claim": "The author leaves some assigned letter values uncertain and exact word meanings unresolved."
+      }
+    ],
+    "interpretation": "A real proposed table and some context rules are available. The selected pages do not establish independently validated continuous text.",
+    "limits": [
+      "No equivalents assigned in the Extensible Voynich Alphabet (EVA), a transcription system for written shapes.",
+      "No manuscript coverage measured.",
+      "Sound-value uncertainty alone does not disprove a fixed sign-to-label map.",
+      "No claim about rules or validation on pages outside the detailed selection.",
+      "Historical linguistic and dating claims were not validated.",
+      "No later website method was examined.",
+      "No new manuscript decoding or model fit."
+    ],
+    "record_file": "root-review.json",
+    "record_sha256": "d1aba999874011c47b24b60968a407a6261c477de9f27629a68eb2581a054e49"
+  },
+  "source_hash_verification": "Both retained response files match their recorded byte counts and SHA-256 hashes.",
+  "reproduction": [
+    "Get the archived PDF through the recorded playback URL.",
+    "Verify the 6208441-byte file and its SHA-256 hash before comparison.",
+    "Render and examine PDF pages 1, 6 through 9, and 12 through 14.",
+    "Compare the table, context rules, author qualifications, and f76r interpretations with the review record.",
+    "Keep proposed word meanings separate from verified manuscript content."
+  ],
+  "verification": {
+    "project_tests": {
+      "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "tests": 85,
+      "result": "OK",
+      "log_sha256": "ce9e2e7a46b4121f081958fc0ef2c8bb52c244ed4ec8f6cf6f745d9d216310e2"
+    },
+    "separate_AI_table_review": {
+      "file": "table-audit.md",
+      "sha256": "644ffd6b06340b34687f058fc3c836a85c2dae7e1973f7546a40507955370540",
+      "detailed_pdf_pages": [
+        12,
+        13,
+        14
+      ],
+      "result": "Agrees about 21 rows, one unknown entry, some context rules, and explicit uncertainty about values and exact word meanings.",
+      "limit": "The other AI reader left several handwritten labels unclear. This is source inspection, not scholarly validation of the proposed reading."
+    },
+    "separate_AI_render_hashes": {
+      "12": "a867d2a3230841888d841eb63b24a11968a38476a283638ffd98977b8d2fcf9f",
+      "13": "7bfdd6f13c76d48ef12f24979354b2abbca4dbeb299fb84fbfefecdbd864dffb",
+      "14": "2ab8cc403b0ff7f3e46742bb56b66ad8315ea93bae48a6a48cd10523c30fb01e"
+    },
+    "publication_review": {
+      "file": "publication-review.md",
+      "sha256": "11ebf411d9646e113e0a3f57c46fc2a50cab22a6525dd6604163410eae40f37e",
+      "result": "No factual, scope, or privacy blocker in the assigned material. Root corrected spacing, clarity, and active-voice issues before publication."
+    }
+  },
+  "decision": "Preserve the candidate table and its limits. No validated key or translation resulted.",
+  "levitov_access_review": {
+    "date": "2026-09-30",
+    "scope": {
+      "author": "Leo Levitov",
+      "title": "Solution of the Voynich Manuscript: A Liturgical Manual for the Endura Rite of the Cathari Heresy, the Cult of Isis",
+      "publisher": "Aegean Park Press",
+      "year": 1987,
+      "isbn_search_results": [
+        "0894121499",
+        "0894121480"
+      ]
+    },
+    "search_queries_used": 2,
+    "search_queries": [
+      {
+        "query": "\"Solution of the Voynich Manuscript\" \"Leo Levitov\" 1987 full text",
+        "domains": [],
+        "result": "Google Books and bibliographic records; no full copy shown."
+      },
+      {
+        "query": "\"Solution of the Voynich Manuscript\" \"Leo Levitov\" 1987 book preview full copy",
+        "domains": [
+          "archive.org",
+          "books.google.com",
+          "openlibrary.org",
+          "hathitrust.org"
+        ],
+        "result": "Google Books record says no preview is available. No open full copy appeared in the visible results."
+      }
+    ],
+    "external_retrieval_operations_used": 5,
+    "external_retrieval_limit": 6,
+    "retrievals": [
+      {
+        "url": "https://books.google.com/books/about/Solution_of_the_Voynich_Manuscript.html?id=CnsRAQAAIAAJ",
+        "operation": "open",
+        "result": "Opened metadata page. It lists Aegean Park Press, 1987, and 176 pages. An other-edition link says no preview is available.",
+        "primary_text": false
+      },
+      {
+        "url": "https://openlibrary.org/books/OL8237257M/Solution_of_the_Voynich_Manuscript?show_page_status=1",
+        "operation": "open",
+        "result": "Request timed out. No page content was retrieved.",
+        "primary_text": false
+      },
+      {
+        "url": "https://books.google.co.uk/books/about/Solution_of_the_Voynich_Manuscript.html?hl=en&id=zgUtngEACAAJ&output=html_text",
+        "operation": "open",
+        "result": "HTTP 403 Forbidden.",
+        "primary_text": false
+      },
+      {
+        "url": "https://books.google.com/books?id=zgUtngEACAAJ",
+        "operation": "open",
+        "result": "Opened metadata page. An other-edition link says snippet view. The returned text contains no book pages.",
+        "primary_text": false
+      },
+      {
+        "url": "https://books.google.com/books?cad=1&id=CnsRAQAAIAAJ&source=gbs_book_other_versions_r",
+        "operation": "click",
+        "result": "The alternate-edition link returned to the record that says no preview is available.",
+        "primary_text": false
+      }
+    ],
+    "metadata_note": "Google Books lists 176 pages. An Open Library search-result record lists 182 pages. The primary book was not available to check its physical extent.",
+    "primary_source_acquired": false,
+    "source_files": [],
+    "method_review": {
+      "pages_selected": [],
+      "key_rules_reviewed": false,
+      "sign_units_reviewed": false,
+      "historical_basis_reviewed": false,
+      "continuous_reading_reviewed": false,
+      "reason": "No primary method pages were accessible through the checked routes."
+    },
+    "preserved_web_result_text": [
+      {
+        "capture_type": "web-rendered tool result text copied from existing task history",
+        "relative_path": "google-books-response-turn303view0.txt",
+        "bytes": 5186,
+        "sha256": "9d6f76bb8ad7e235efa055de068867cfe6de091c091e6ce1fc463297ef03eec7",
+        "raw_html": false,
+        "book_page_content": false
+      },
+      {
+        "capture_type": "web-rendered tool result text copied from existing task history",
+        "relative_path": "google-books-response-turn305view0.txt",
+        "bytes": 2227,
+        "sha256": "0551f4c0c6099ebf239f1f5bd3dbfc1ebb96700d1a85569d063a8264d5e47f0e",
+        "raw_html": false,
+        "book_page_content": false
+      },
+      {
+        "capture_type": "web-rendered tool result text copied from existing task history",
+        "relative_path": "google-books-response-turn306view0.txt",
+        "bytes": 5161,
+        "sha256": "645aa0993ca4b5cd082eaa75a46ba85e912679728f3e8ebbbfb1c04d10612706",
+        "raw_html": false,
+        "book_page_content": false
+      }
+    ],
+    "source_html_or_book_scan_preserved": false,
+    "private_evidence_directory": "results/levitov-primary-source-2026-09-30/",
+    "capture_verification": "All three saved tool-text captures match their recorded byte counts and SHA-256 hashes.",
+    "catalogue_label_limit": "The snippet-view and no-preview labels appear with other-edition links. Neither inspected record supplied primary method pages."
+  }
+}
