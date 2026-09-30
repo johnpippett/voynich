@@ -294,7 +294,7 @@
     ],
     "crop_command_template": "magick bnf-f8r.jpg -crop {width}x{height}+{x}+{y} +repage {path}",
     "replay": "Both crop RGB pixel streams matched a repeat in an empty temporary directory. PNG file hashes identify the original crops.",
-    "selection": "First two cipher lines above the red Latin heading. Folio and rules fixed before download; crop rectangles fixed after layout view and before readings.",
+    "selection": "First two cipher lines above the red Latin heading. The primary agent fixed the folio and rules before download. It fixed crop rectangles after the layout view and before the readings.",
     "records": [
       {
         "file": "scope.json",
@@ -329,7 +329,7 @@
       "continuous_reading": false
     },
     "limits": [
-      "Exploratory input check; no numeric agreement threshold declared.",
+      "Exploratory input check. The method had no numeric agreement threshold.",
       "Primary agent had seen other published folio readings and neighboring chapter titles. No proposed f8r reading was consulted.",
       "Some marks approach crop edges. No changed crop or reader retry followed.",
       "Partial records do not validate letter readings or establish source unreadability."
