@@ -1,0 +1,227 @@
+{
+  "date": "2026-09-30",
+  "scope": "Three author pages, all five tutorial pages, and materials pages 4-8. No manuscript decoding.",
+  "sources": [
+    {
+      "file": "the-writing-system-of-the-voynich-text.html",
+      "url": "https://www.voynichcode.org/the-writing-system-of-the-voynich-text/",
+      "final_url": "https://www.voynichcode.org/the-writing-system-of-the-voynich-text/",
+      "status": 200,
+      "bytes": 53469,
+      "sha256": "6c68e5b2a1b06233217d26c8559d5dd6f2d845e975dfe5994836e3601ab19fd7",
+      "pdf_links": []
+    },
+    {
+      "file": "tutorial-materials.html",
+      "url": "https://www.voynichcode.org/tutorial-materials/",
+      "final_url": "https://www.voynichcode.org/tutorial-materials/",
+      "status": 200,
+      "bytes": 52241,
+      "sha256": "b9d794c59325276d5f3ac18e3eb5d66ba54403aa24131422db30b04cbdd071c7",
+      "pdf_links": [
+        "https%3A%2F%2Fwww.voynichcode.org%2Fwp-content%2Fuploads%2F2024%2F08%2Fvoynichcode_video_tutorial.pdf",
+        "https://www.voynichcode.org/wp-content/uploads/2024/08/voynichcode_video_tutorial.pdf"
+      ]
+    },
+    {
+      "file": "voynich-codebreaking-tutorial.html",
+      "url": "https://www.voynichcode.org/voynich-codebreaking-tutorial/",
+      "final_url": "https://www.voynichcode.org/voynich-codebreaking-tutorial/",
+      "status": 200,
+      "bytes": 52327,
+      "sha256": "355813d8c8576d3f82b024279b8dc5068a97c3eb2a5ba93acc3e9eb9be6649a1",
+      "pdf_links": [
+        "https%3A%2F%2Fwww.voynichcode.org%2Fwp-content%2Fuploads%2F2024%2F08%2FVoynich_codebreaking_tutorial.pdf",
+        "https://www.voynichcode.org/wp-content/uploads/2024/08/Voynich_codebreaking_tutorial.pdf"
+      ]
+    },
+    {
+      "file": "materials.pdf",
+      "url": "https://www.voynichcode.org/wp-content/uploads/2024/08/voynichcode_video_tutorial.pdf",
+      "final_url": "https://www.voynichcode.org/wp-content/uploads/2024/08/voynichcode_video_tutorial.pdf",
+      "status": 200,
+      "bytes": 4058205,
+      "sha256": "92c74f7f4bc6954840973f93548b8e1209491227b6d3d040905f2a969857180b",
+      "pages": 15,
+      "retrieved_utc": "2026-09-30T11:49:22.076798+00:00"
+    },
+    {
+      "file": "tutorial.pdf",
+      "url": "https://www.voynichcode.org/wp-content/uploads/2024/08/Voynich_codebreaking_tutorial.pdf",
+      "final_url": "https://www.voynichcode.org/wp-content/uploads/2024/08/Voynich_codebreaking_tutorial.pdf",
+      "status": 200,
+      "bytes": 1116367,
+      "sha256": "b831d6252c339796dd51c7a792d24aff75dd9b7decc24eb0d8c720cc1d76164c",
+      "pages": 5,
+      "retrieved_utc": "2026-09-30T11:49:21.787135+00:00"
+    }
+  ],
+  "detailed_pdf_pages": {
+    "tutorial.pdf": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "materials.pdf": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "render_command": "pdftoppm -f PAGE -l PAGE -r 145 -png INPUT.pdf OUTPUT_PREFIX",
+  "render_records": [
+    {
+      "file": "renders/materials-page-04.png",
+      "sha256": "75d98f8046b6e6fb548e925aac77771cde146e62a8b5fafab17dc6a96efe8f65",
+      "width": 1599,
+      "height": 1199
+    },
+    {
+      "file": "renders/materials-page-05.png",
+      "sha256": "6e6023dfa857c88d13b29742493a640fc83a73ac873a709ac4bb4f08f5644a6d",
+      "width": 1599,
+      "height": 1199
+    },
+    {
+      "file": "renders/materials-page-06.png",
+      "sha256": "264bd3715763defe0e671cd8cdba65d823cbb9f9efdb7c04547712746c6d8666",
+      "width": 1599,
+      "height": 1199
+    },
+    {
+      "file": "renders/materials-page-07.png",
+      "sha256": "09a3d8e258fd33b9acdd7e52803829cc552be27626364a826016970d486157f6",
+      "width": 1599,
+      "height": 1199
+    },
+    {
+      "file": "renders/materials-page-08.png",
+      "sha256": "9e16d979feea8237ece493d4e1cff9abe4a04e2c16a9afdc43b9c31700e03d41",
+      "width": 1599,
+      "height": 1199
+    },
+    {
+      "file": "renders/tutorial-page-1.png",
+      "sha256": "e585e384480fb99330206d9bba19daac848f41f86c88cd03d8b470d2b5be15a2",
+      "width": 1199,
+      "height": 1696
+    },
+    {
+      "file": "renders/tutorial-page-2.png",
+      "sha256": "963f5864ced8c53e01628f933358dbbecbc0e6f7994c0656c11417d802aaae0b",
+      "width": 1199,
+      "height": 1696
+    },
+    {
+      "file": "renders/tutorial-page-3.png",
+      "sha256": "072b56c0141c854df696b3b047ce2c10448e7fc0a178b670e44c5649b2be561e",
+      "width": 1199,
+      "height": 1696
+    },
+    {
+      "file": "renders/tutorial-page-4.png",
+      "sha256": "95b6fdfe7411d1827ffb2550f8ae101f61a79199e5035841d378ab636453bf92",
+      "width": 1199,
+      "height": 1696
+    },
+    {
+      "file": "renders/tutorial-page-5.png",
+      "sha256": "7a34780e6bf59cb5457b82abdbaa3fdceac6f620b84ddebed07d8fe4dc8689bb",
+      "width": 1199,
+      "height": 1696
+    }
+  ],
+  "local_record_hashes": [
+    {
+      "file": "scope.json",
+      "sha256": "2fc35087bb3185da35a98511436e68b7b7c27bd9b2010d5a1751d0767d52c981"
+    },
+    {
+      "file": "page-selection.json",
+      "sha256": "5538e56987c2b8d7ad9e691d18971dc1ece2a0a3c1de9ea36b31b25f18b77583"
+    },
+    {
+      "file": "method-audit.md",
+      "sha256": "829af73949e8237d20e8e9d6298a17630a07adc2efce242b62f7b2f97fb2e873"
+    },
+    {
+      "file": "method-audit.json",
+      "sha256": "e87113292ab27d7ec1fd0031681314abcfe0ea17b3e497f76cd4654472fad9eb"
+    },
+    {
+      "file": "method-audit-addendum.md",
+      "sha256": "0dd10e2bb018cd493583deecc9efc7c89ca80a220f4dc7e0a946ede180d79df0"
+    },
+    {
+      "file": "method-audit-addendum.json",
+      "sha256": "c71f0785af87286efa7efd90e374547a9c23162b74ef796c46fd9d8417e88ef7"
+    },
+    {
+      "file": "root-review.json",
+      "sha256": "aefd6e9f5892ca2e8df106751b450c54fe9f1506ac08b5b41ca3fe6cb561b00a"
+    },
+    {
+      "file": "cappelli-scope.json",
+      "sha256": "d9418003d98b91d382a4bcedf33435d0122394d2d7e556eb460a24e79d20ac03"
+    },
+    {
+      "file": "cappelli-legacy-source.json",
+      "sha256": "73e35b779e84731f54dbd16f67e77a1ccf47119afce58c790275ad834b1d09e0"
+    },
+    {
+      "file": "cappelli-access-failure.json",
+      "sha256": "885b148e1d5a32cbc1497258ed0f1d70284669f7f8b236be2d27f195b64f4937"
+    }
+  ],
+  "checks": {
+    "five_primary_source_hashes_and_sizes_match": true,
+    "ten_page_images_reviewed_by_primary_agent": true,
+    "tutorial_reviewed_separately_by_another_AI_task": true,
+    "blind_reading": false,
+    "project_tests": {
+      "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+      "passed": 85,
+      "failed": 0,
+      "output_sha256": "1ab13a8e9faa07fe2581dbcf9209d426e3354bcd7a62d537f74ae99602ca7812"
+    }
+  },
+  "cappelli_access": {
+    "edition_cited": "Cappelli, The elements of abbreviation in medieval Latin paleography, University of Kansas Libraries, 1982",
+    "legacy_response": {
+      "file": "sources/cappelli-legacy-response.html",
+      "url": "https://kuscholarworks.ku.edu/bitstream/handle/1808/1821/47cappelli.pdf",
+      "final_url": "https://kuscholarworks.ku.edu/bitstream/handle/1808/1821/47cappelli.pdf",
+      "status": 200,
+      "bytes": 827,
+      "sha256": "71419109f24d2bad8f5b687f2f0a572c6ec7602e407e75dc61465de3626cf56e",
+      "retrieved_utc": "2026-09-30T11:54:46.783829+00:00",
+      "media_note": "HTTP 200 body was an 827-byte DSpace HTML shell, not PDF. pdftotext failed. No source text was read."
+    },
+    "alternate_attempts": [
+      {
+        "url": "https://core.ac.uk/download/pdf/213385262.pdf",
+        "status": 403
+      },
+      {
+        "url": "https://files01.core.ac.uk/download/pdf/213385262.pdf",
+        "status": 403,
+        "client": "web tool"
+      },
+      {
+        "url": "https://bms-du-chatillonnais.e-monsite.com/medias/files/latin-abreviations-medievales-pour-la-paleographie.pdf",
+        "status": 403
+      }
+    ],
+    "result": "No usable handbook PDF obtained. No detailed content finding."
+  },
+  "limits": [
+    "Custom-font characters are not verified EVA.",
+    "The apparent same-sign comparison concerns printed forms, not a new manuscript transcription.",
+    "No independent validation of meanings resulted.",
+    "The book and unselected slides were not audited."
+  ]
+}

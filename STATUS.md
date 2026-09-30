@@ -9,6 +9,10 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [Altrideicktus source check](docs/research/altrideicktus-reading-method-check-2026-09-30.md) found incomplete selection rules in its printed reading method.
+One abbreviation sign receives different expansions in the partial key and worked example, without a stated rule for that change.
+The examined material does not independently validate the proposed meanings. No manuscript decoding run followed.
+
 The [CMM source check](docs/research/cmm-reading-method-check-2026-09-30.md) found that its lexicon score uses the decoder's own output vocabulary.
 Both input filters accept an English description from its translation guide in a fixed calculation.
 Its sensitivity comparison also uses different processing paths. These findings supply no independent support for the assigned meanings.
