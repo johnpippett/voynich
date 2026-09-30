@@ -1,0 +1,185 @@
+{
+  "audit_date": "2026-09-29",
+  "audit_type": "Source inspection. No external decoder execution or manuscript corpus processing.",
+  "sources": [
+    {
+      "repository": "https://github.com/leonvlegels/Voynich",
+      "commit": "ba3ffea6d517721b389e22af3a67f78db3674e73",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/leonvlegels/Voynich/ba3ffea6d517721b389e22af3a67f78db3674e73/README.md",
+      "sha256": "ffff505ea23f777ab0ebbed23effa3f190cadc039260eaff1909ac7e9e44eaec",
+      "size_bytes": 1362
+    },
+    {
+      "repository": "https://github.com/leonvlegels/Voynich",
+      "commit": "ba3ffea6d517721b389e22af3a67f78db3674e73",
+      "path": "HANDOFF.md",
+      "url": "https://raw.githubusercontent.com/leonvlegels/Voynich/ba3ffea6d517721b389e22af3a67f78db3674e73/HANDOFF.md",
+      "sha256": "a7933311b29829971717a2f990d0524382d442ced7d93da0a8d576b0b21a40b9",
+      "size_bytes": 11885
+    },
+    {
+      "repository": "https://github.com/leonvlegels/Voynich",
+      "commit": "ba3ffea6d517721b389e22af3a67f78db3674e73",
+      "path": "voynich_folio_decode.py",
+      "url": "https://raw.githubusercontent.com/leonvlegels/Voynich/ba3ffea6d517721b389e22af3a67f78db3674e73/voynich_folio_decode.py",
+      "sha256": "fa5a2920f2052bf33cd1bc16a03504185b0c92713083f0459dc26dd00573e201",
+      "size_bytes": 31964
+    },
+    {
+      "repository": "Lackadaisical-Security/Voynich-Script-Decoded",
+      "commit": "c499311b8fb43351c91b03908948eaa9b1cdd18a",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/Lackadaisical-Security/Voynich-Script-Decoded/c499311b8fb43351c91b03908948eaa9b1cdd18a/README.md",
+      "sha256": "d9610768696819231f05f44cb7766205b45140c455a5eeff2ad065e2faf7a117",
+      "size_bytes": 16830
+    },
+    {
+      "repository": "Lackadaisical-Security/Voynich-Script-Decoded",
+      "commit": "c499311b8fb43351c91b03908948eaa9b1cdd18a",
+      "path": "ultimate_voynich_translator.py",
+      "url": "https://raw.githubusercontent.com/Lackadaisical-Security/Voynich-Script-Decoded/c499311b8fb43351c91b03908948eaa9b1cdd18a/ultimate_voynich_translator.py",
+      "sha256": "df6028dec9be8730053657de16059bab88bc5f582ecf7350b009cb65204d5e0c",
+      "size_bytes": 31826
+    },
+    {
+      "repository": "Lackadaisical-Security/Voynich-Script-Decoded",
+      "commit": "c499311b8fb43351c91b03908948eaa9b1cdd18a",
+      "path": "voynich_translator_final.py",
+      "url": "https://raw.githubusercontent.com/Lackadaisical-Security/Voynich-Script-Decoded/c499311b8fb43351c91b03908948eaa9b1cdd18a/voynich_translator_final.py",
+      "sha256": "49138982939ec4a5a8f746c48b76fbc1bc87b82e19a9fee77be07a0f5ee8b2a1",
+      "size_bytes": 5639
+    },
+    {
+      "repository": "Lackadaisical-Security/Voynich-Script-Decoded",
+      "commit": "c499311b8fb43351c91b03908948eaa9b1cdd18a",
+      "path": "REPRODUCTION_METHODOLOGY.md",
+      "url": "https://raw.githubusercontent.com/Lackadaisical-Security/Voynich-Script-Decoded/c499311b8fb43351c91b03908948eaa9b1cdd18a/REPRODUCTION_METHODOLOGY.md",
+      "sha256": "d2b4591dc480813942310a9817e17011bedbe7baa3b1ec3b6e2cbe7535f96629",
+      "size_bytes": 15196
+    },
+    {
+      "repository": "Lackadaisical-Security/Voynich-Script-Decoded",
+      "commit": "c499311b8fb43351c91b03908948eaa9b1cdd18a",
+      "path": "REPRODUCTION_VALIDATION_REPORT.md",
+      "url": "https://raw.githubusercontent.com/Lackadaisical-Security/Voynich-Script-Decoded/c499311b8fb43351c91b03908948eaa9b1cdd18a/REPRODUCTION_VALIDATION_REPORT.md",
+      "sha256": "6ece42b0085af838e24accab94691a9417828aaf0d71a1fa78c6bdb47e45e654",
+      "size_bytes": 5371
+    },
+    {
+      "repository": "Lackadaisical-Security/Voynich-Script-Decoded",
+      "commit": "c499311b8fb43351c91b03908948eaa9b1cdd18a",
+      "path": "STATISTICAL_VALIDATION_FINAL.md",
+      "url": "https://raw.githubusercontent.com/Lackadaisical-Security/Voynich-Script-Decoded/c499311b8fb43351c91b03908948eaa9b1cdd18a/STATISTICAL_VALIDATION_FINAL.md",
+      "sha256": "39e63b9cba91a923a0d79a08099ca19d1a4b0d28165cfd91e7a2a24934782bd0",
+      "size_bytes": 12478
+    }
+  ],
+  "italian_tree": {
+    "commit": "ba3ffea6d517721b389e22af3a67f78db3674e73",
+    "url": "https://api.github.com/repos/leonvlegels/Voynich/git/trees/ba3ffea6d517721b389e22af3a67f78db3674e73?recursive=1",
+    "sha256": "b12499a0a3c3ef2bf820ea4dca5f75bc15f46ba617ab7f11b30d2dc43913c69c",
+    "size_bytes": 3125,
+    "retrieved_utc": "2026-09-30T00:40:02.007257+00:00",
+    "truncated": false,
+    "entry_count": 13,
+    "paths": [
+      "HANDOFF.md",
+      "Handoff.md",
+      "LICENSE",
+      "README.md",
+      "data",
+      "data/voynich_eva_takahashi.txt",
+      "generate_corpus.py",
+      "results",
+      "results/voynich_corpus.json",
+      "voynich_corpus.json",
+      "voynich_folio_decode.py",
+      "voynich_reader.html",
+      "voynich_wordnet_bridge.py"
+    ],
+    "absent_paths_named_in_handoff": [
+      "analysis/voynich_reverse_match.py",
+      "analysis/voynich_phoneme_map.py"
+    ],
+    "limit": "Other repository file contents were not inspected. No global absence claim about alignment data follows from path names."
+  },
+  "article": {
+    "author": "Gerard Cheshire",
+    "title": "The Language and Writing System of MS408 (Voynich) Explained",
+    "version": "Romance Studies 37(1), 2019",
+    "doi_url": "https://doi.org/10.1080/02639904.2019.1599566",
+    "official_record_url": "https://research-information.bris.ac.uk/en/publications/the-language-and-writing-system-of-ms408-voynich-explained/",
+    "captured_copy_url": "https://jannaludlow.co.uk/Assets_pdf_files/Ang_Voynich.pdf",
+    "sha256": "adde0c34ee9cfad2b1452dfe8e78b5f99e6de909b74b90e1281f05a0f4e9ee41",
+    "size_bytes": 9694140,
+    "pdf_pages": 39,
+    "provenance": "Mirror copy with article DOI and journal header. Publisher and university PDF requests returned HTTP 403.",
+    "initial_scope_failure": {
+      "page_limit": 8,
+      "text_pages_exposed_2019_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "text_pages_exposed_2017_zero_based": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "total_pages_exposed": 30,
+      "images_inspected": 0,
+      "limit": "Not a complete conversion-rule audit. No whole-source absence claim."
+    },
+    "follow_up": {
+      "pages_selected_before_rendering": [
+        7,
+        17,
+        18
+      ],
+      "images": [
+        {
+          "pdf_page": 7,
+          "printed_page": 6,
+          "sha256": "9d70b9d1c22c24c217226a6baa679bcc703becd7365d9774d3a3b95166676f1a"
+        },
+        {
+          "pdf_page": 17,
+          "printed_page": 16,
+          "sha256": "c130642befad59b682e792cfe98d944d2a94bcb75a6011e40dddbbe7229e8fe2"
+        },
+        {
+          "pdf_page": 18,
+          "printed_page": 17,
+          "sha256": "9d79d06ff0c285236c77838272ae76bf4f0d650023c8d53a6277c27a2c712a73"
+        }
+      ],
+      "purpose": "Check the visual-judgment statement and the Figure 34 description and folio caption.",
+      "limit": "Positive observations only. Does not remove the initial scope failure or establish a complete conversion table."
+    }
+  }
+}
