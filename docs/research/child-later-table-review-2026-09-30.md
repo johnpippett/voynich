@@ -81,6 +81,7 @@ The [research index](https://www.voynichproject.org/work/) calls the work a proo
 The [folio 106v page](https://www.voynichproject.org/research/106v/) states that it selects 13 of 47 lines for analysis.
 This review examined its HTML prose but did not acquire the images for its thirteen selected lines.
 It did not measure coverage or compare those images with the original manuscript.
+A [separate example review](child-example-check-2026-09-30.md) subsequently compared the first two images with the website tables.
 
 The website review used ten retrieval operations and no search queries.
 The initial limit was six operations. A recorded amendment permitted ten after the entry page revealed image-based navigation and content.

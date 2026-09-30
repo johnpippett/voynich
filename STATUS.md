@@ -9,6 +9,10 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [Child example review](docs/research/child-example-check-2026-09-30.md) compares the first two website examples with the proposed tables.
+Some normalized drawings agree with the tables; other groups remain unresolved. The comparison does not validate transcription accuracy or meaning.
+A separate Stojko search found catalogue information but no primary method pages. That method remains unassessed.
+
 The [Child follow-up](docs/research/child-later-table-review-2026-09-30.md) now covers the complete archived paper and selected website material.
 The website supplies tables of characters and compound signs, but describes its readings as a proof of concept with tentative meanings.
 It also limits uncertainty marks in its presentation. No validated translation resulted.

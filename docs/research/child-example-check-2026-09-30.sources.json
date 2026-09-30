@@ -1,0 +1,258 @@
+{
+  "date": "2026-09-30",
+  "question": "Do the first two published f106v example images follow the website character and compound tables?",
+  "private_evidence_directory": "results/child-example-consistency-2026-09-30/",
+  "scope": {
+    "record": {
+      "file": "results/child-example-consistency-2026-09-30/scope.json",
+      "bytes": 1669,
+      "sha256": "5eb6c663b843a0a439990bcb955e9f299f783061d07eb70b6738095ee4f4a57e"
+    },
+    "created_utc": "2026-09-30T14:03:06.956384+00:00",
+    "question": "Do the first two published f106v example images follow the website character and compound tables?",
+    "selection": "The first two example image links in saved research-106v.html, before reading the images.",
+    "image_urls": [
+      "https://www.voynichproject.org/research/106v/106-1.jpg",
+      "https://www.voynichproject.org/research/106v/106-2.jpg"
+    ],
+    "table_sources": [
+      {
+        "file": "results/child-complete-method-2026-09-30/cypher.jpg",
+        "sha256": "af0b3c92da7986c731bdcda33ddad1a395bcab6970700408ca238c64fe6043b7"
+      },
+      {
+        "file": "results/child-complete-method-2026-09-30/digraphs.jpg",
+        "sha256": "09038a520b74ae0ba6d113a5ab4e2d0889518b1eb108b2f26239b39f05ce42fb"
+      }
+    ],
+    "limits": {
+      "search_queries": 0,
+      "external_image_retrievals": 2,
+      "example_images": 2
+    },
+    "comparison_rules": [
+      "Compare source shapes, proposed transliterations, and explicit table rules.",
+      "Record matched, unresolved, and conflicting items separately.",
+      "Do not repair a mismatch with an invented sign value, language rule, or word boundary.",
+      "An unclear shape or diacritic remains unresolved.",
+      "The published expected outputs are visible: this is not a blind reading or an independent translation test."
+    ],
+    "boundaries": [
+      "No original-manuscript reading, EVA mapping, glossary fitting, corpus run, or stopped-study retry.",
+      "No meaning claim follows from table agreement.",
+      "Do not infer failure of the whole method from unread images or unclear signs.",
+      "No additional image retrieval or automatic replacement sample."
+    ]
+  },
+  "retrievals": [
+    {
+      "url": "https://www.voynichproject.org/research/106v/106-1.jpg",
+      "requested_utc": "2026-09-30T14:03:06.956528+00:00",
+      "status": 200,
+      "final_url": "https://www.voynichproject.org/research/106v/106-1.jpg",
+      "content_type": "image/jpeg",
+      "file": "106-1.jpg",
+      "bytes": 383146,
+      "sha256": "e5e6794bde86689b3532f64ab78ab5aed825252f7a5b1e7f922ecea5e3db907b"
+    },
+    {
+      "url": "https://www.voynichproject.org/research/106v/106-2.jpg",
+      "requested_utc": "2026-09-30T14:03:07.421177+00:00",
+      "status": 200,
+      "final_url": "https://www.voynichproject.org/research/106v/106-2.jpg",
+      "content_type": "image/jpeg",
+      "file": "106-2.jpg",
+      "bytes": 322934,
+      "sha256": "1e3e52cc2d1847174a9d5ac39e24143cabde03b817811407c38dcc10205f3b6b"
+    }
+  ],
+  "tables": [
+    {
+      "url": "https://www.voynichproject.org/cypher/cypher.jpg",
+      "file": "results/child-complete-method-2026-09-30/cypher.jpg",
+      "bytes": 705478,
+      "sha256": "af0b3c92da7986c731bdcda33ddad1a395bcab6970700408ca238c64fe6043b7"
+    },
+    {
+      "url": "https://www.voynichproject.org/cypher/digraphs.jpg",
+      "file": "results/child-complete-method-2026-09-30/digraphs.jpg",
+      "bytes": 691217,
+      "sha256": "09038a520b74ae0ba6d113a5ab4e2d0889518b1eb108b2f26239b39f05ce42fb"
+    }
+  ],
+  "reviews": [
+    {
+      "file": "results/child-example-consistency-2026-09-30/root-review.md",
+      "bytes": 4181,
+      "sha256": "5c8841d584032c7ec379b123ea64fd9c857732814fdca4752c288f45081f8535"
+    },
+    {
+      "file": "results/child-example-consistency-2026-09-30/line-2-audit.md",
+      "bytes": 2586,
+      "sha256": "95a79778014d7effa674b3fd3247f2c4400c8a1e517d98c09bdc682de2523b3f"
+    }
+  ],
+  "findings": [
+    "Some normalized drawings agree with character values and position rules in the tables.",
+    "Other compound boundaries and diacritics remain unresolved.",
+    "Agreement concerns the author's normalized drawings, not the accuracy of the manuscript transcription.",
+    "Expected outputs were visible. No blind reading or independently validated meaning resulted."
+  ],
+  "verification": {
+    "source_hashes": "passed",
+    "project_test_command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+    "project_tests": 85,
+    "test_exit_code": 0,
+    "test_log": {
+      "file": "results/child-example-consistency-2026-09-30/project-tests.log",
+      "bytes": 12303,
+      "sha256": "0397f5da700e762edc42991357c41597f6a7dbfa048a7e8d47072b034b57557f"
+    },
+    "limits": "The software tests do not validate the proposed readings."
+  },
+  "stojko_access_review": {
+    "private_evidence_directory": "results/stojko-primary-source-2026-09-30/",
+    "source_record": {
+      "file": "results/stojko-primary-source-2026-09-30/sources.json",
+      "bytes": 6773,
+      "sha256": "0cf70b8da88374b3a4b58602f5e386a49c67d996c8429c9f7037b86ddd759ef3"
+    },
+    "scope_record": {
+      "file": "results/stojko-primary-source-2026-09-30/scope.md",
+      "bytes": 1478,
+      "sha256": "0eb6814069a9fb651a7fe6d7b85bdc274842ffbf63bce9476edc82f08b96ef5a"
+    },
+    "review_record": {
+      "file": "results/stojko-primary-source-2026-09-30/audit.md",
+      "bytes": 2414,
+      "sha256": "27dc396de0a9563a7558a0401a7740799f293cb6c4be4cf28c6a77a1dd64abe7"
+    },
+    "primary_source_acquired": false,
+    "method_assessed": false,
+    "search_limits": {
+      "search_queries": 2,
+      "other_retrieval_operations": 6
+    },
+    "search_queries": [
+      {
+        "query": "\"John Stojko\" \"Letters to God's Eye\" 1978 full text",
+        "domains": "unrestricted",
+        "result_note": "Metadata and secondary results only. No primary text identified."
+      },
+      {
+        "query": "\"Letters to God's Eye\" \"John Stojko\" 1978 book preview scan",
+        "domains": [
+          "archive.org",
+          "books.google.com",
+          "openlibrary.org",
+          "hathitrust.org",
+          "worldcat.org"
+        ],
+        "result_note": "No primary text identified. Catalog records, a secondary bibliography, and a seller listing appeared."
+      }
+    ],
+    "retrieval_attempts": [
+      {
+        "operation": 1,
+        "route": "Open Google Books record",
+        "status": "Google Books returned a page to the nested call, but local encoding failed before output. No page text from this attempt is recoverable."
+      },
+      {
+        "operation": 2,
+        "route": "Open Google Books record",
+        "status": "Google Books returned a page to the nested call, but local encoding failed before output. No page text from this attempt is recoverable."
+      },
+      {
+        "operation": 3,
+        "route": "Open Google Books record",
+        "status": "Captured in a malformed UTF-8 file; exact returned text was recovered with the reversible transform documented in capture-encoding-incident.md."
+      },
+      {
+        "operation": 4,
+        "route": "Google Books Find in a library",
+        "status": "Captured in a malformed UTF-8 file; exact returned error text was recovered with the reversible transform documented in capture-encoding-incident.md. HTTP 400."
+      },
+      {
+        "operation": 5,
+        "route": "Open WorldCat record",
+        "status": "Captured in a malformed UTF-8 file; exact returned text was recovered with the reversible transform documented in capture-encoding-incident.md."
+      },
+      {
+        "operation": 6,
+        "route": "Unused",
+        "status": "Not attempted."
+      }
+    ],
+    "captures": {
+      "google_books": {
+        "url": "https://books.google.com/books/about/Letters_to_God_s_Eye.html?id=TAhhAAAACAAJ",
+        "retrieved_at_utc": "2026-09-30T14:04:39.301471Z",
+        "capture_file": "retrieval-01-google-books.recovered.json",
+        "capture_bytes": 4222,
+        "capture_sha256": "d437b551c63822579ebf0bc079ed1a33a54f9cfe6e53bc33944891876bdb703c",
+        "source_bytes_saved": false,
+        "source_sha256": null,
+        "tool_return_bytes": 3429,
+        "tool_return_sha256": "ac2c1271e66fbaf03957bde3d0ca2ad9aa498103a65357a69b72297ac066fa90",
+        "recovered_from_invalid_capture": "retrieval-01-google-books.json"
+      },
+      "google_books_library_route": {
+        "retrieved_at_utc": "2026-09-30T14:04:45.404350Z",
+        "capture_file": "retrieval-02-library-route.recovered.json",
+        "capture_bytes": 1094,
+        "capture_sha256": "cf0a8c0a289a50eb8c31daad6ecd244778db3b75a73124738390397a35d6951f",
+        "source_bytes_saved": false,
+        "source_sha256": null,
+        "tool_return_bytes": 325,
+        "tool_return_sha256": "b27ea975b82c5302a27c5f6db1fea1f5966ce699945b8dd741670801abb23473",
+        "recovered_from_invalid_capture": "retrieval-02-library-route.json",
+        "route": "Google Books Find in a library link to WorldCat OCLC 11621558"
+      },
+      "worldcat": {
+        "url": "https://search.worldcat.org/title/Letters-to-God%27s-eye-%3A-the-Voynich-manuscript-for-the-first-time-deciphered-and-translated-into-English/oclc/11621558",
+        "retrieved_at_utc": "2026-09-30T14:05:04.284594Z",
+        "capture_file": "retrieval-03-worldcat.recovered.json",
+        "capture_bytes": 3740,
+        "capture_sha256": "a9349fbe81d693ae40eba1a8b809ee12564176533c22a82d8410c2d0594b85fb",
+        "source_bytes_saved": false,
+        "source_sha256": null,
+        "tool_return_bytes": 2940,
+        "tool_return_sha256": "ea00d0f929902b81363ce2514be37e523f1afbcf061a0fecfe52b996e6292a2e",
+        "recovered_from_invalid_capture": "retrieval-03-worldcat.json"
+      }
+    },
+    "invalid_capture_files_preserved": {
+      "google_books": {
+        "file": "retrieval-01-google-books.json",
+        "bytes": 9234,
+        "sha256": "40da5a8ceea1069eccf6316d2125f9524946f6e5313b77a76e6cca32b21ed1bd",
+        "status": "Preserved unchanged; invalid JSON caused by the encoding defect recorded in capture-encoding-incident.md."
+      },
+      "google_books_library_route": {
+        "file": "retrieval-02-library-route.json",
+        "bytes": 987,
+        "sha256": "9ef90459a8bdce5d859d31b903e0e52a74ee7e13d926ab545e14a2d7aaf24ee7",
+        "status": "Preserved unchanged; invalid JSON caused by the encoding defect recorded in capture-encoding-incident.md."
+      },
+      "worldcat": {
+        "file": "retrieval-03-worldcat.json",
+        "bytes": 8121,
+        "sha256": "4979a287e4cea66b487f7be6ae7d4674c3ed4c9e784e6b0469e4a74375ea53bb",
+        "status": "Preserved unchanged; invalid JSON caused by the encoding defect recorded in capture-encoding-incident.md."
+      }
+    },
+    "capture_recovery": {
+      "incident_record": "capture-encoding-incident.md",
+      "exact_text_recovered": true,
+      "reversible_transform": "Read each invalid UTF-8 file as text, encode that mojibake text as UTF-16BE, then decode those bytes as UTF-16LE. Parse the resulting JSON string. This reverses the original big-endian-hex/little-endian-decode byte swap.",
+      "validation": "The recovered JSON wrappers parse. Each tool_return_text has actual newline and U+E200/U+E202/U+E201 marker characters after one JSON parse; it does not retain literal backslash-n or backslash-u-e-200 text. The coordinator independently used UTF-16LE encode then UTF-16BE decode and confirmed exact equality for all three strings. Source bytes remain unavailable."
+    },
+    "incident_record": {
+      "file": "results/stojko-primary-source-2026-09-30/capture-encoding-incident.md",
+      "bytes": 2151,
+      "sha256": "36e8b9c36daa649407ea06636323f5f72588aa074b4ffa71276e6aa436b1fe79"
+    },
+    "hash_note": "capture_sha256 identifies each corrected local JSON capture. tool_return_sha256 identifies exact returned text inside that capture. Original source bytes were not saved, so source_sha256 is null. Original malformed captures remain unchanged and are listed separately.",
+    "root_verification": "The inverse byte-swap conversion reproduced all three returned text fields exactly. The corrected JSON files parse; their byte counts and hashes agree."
+  }
+}
