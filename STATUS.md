@@ -26,10 +26,14 @@ This version stops without further tuning or a reading study. An isolated replay
 A separate direct-count audit passed for source positions, maps, scores, coverage, and decisions.
 
 The [Fontana source check](docs/research/fontana-transcription-source-2026-09-30.md) found Schulte's digitized 1910 transcription.
-The opening page points to the original source folio, but the reviewed material supplies no complete sign-value table.
-The candidate Latin text still needs cipher-position alignment and a separate passage check.
+The opening page points to the original source folio. The candidate Latin text still needs cipher-position alignment and a separate passage check.
 A bounded AI reading attempt stopped because it supplied no stable cipher sequence.
 The incomplete records remain unchanged. No sign-value assignment or repeated reading followed.
+
+A [later primary-source check](docs/research/fontana-published-alphabet-2026-09-30.md) found Omont's printed alphabet for the Paris manuscript.
+The 1897 journal scan shows 23 sign-to-letter pairs and an abbreviation rule.
+Another AI check agreed about the table. A new excerpt reader supplied no usable sign sequence.
+No reading score, use on Munich text, or Voynich assignment followed.
 
 The [manuscript pilot without spaces](reports/SPACEFREE_MANUSCRIPT_PILOT.md) failed its fixed rule for a later reading study.
 All four 26-letter artificial controls passed before the manuscript stage.
@@ -68,8 +72,8 @@ The attempt stops without a manuscript experiment. A clean replay reproduced all
 
 The [historical source check](docs/research/historical-key-comparisons-2026-09-29.md) now includes a complete printed key from Meister's 1902 book.
 Its printed 1448 date remains uncertain because named titles have later dates under specific identifications.
-The neighboring 1483 key has separate rules. Fontana's complete sign assignments remain outside the reviewed sources.
-It supplies no fixed correspondence with Voynich signs.
+The neighboring 1483 key has separate rules. Omont's Fontana alphabet is now available in a separate source check.
+Neither historical source supplies a fixed correspondence with Voynich signs.
 The reviewed Pahlavi proposal leaves reading choices unresolved in its continuous-text example.
 
 The [Hebrew source check](docs/research/hebrew-key-audit-2026-09-29.md) confirms a fixed consonant transliteration on eleven artificial inputs.

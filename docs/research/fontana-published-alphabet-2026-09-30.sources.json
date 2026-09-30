@@ -1,0 +1,239 @@
+{
+  "date": "2026-09-30",
+  "result": "Found a published 23-pair cipher alphabet for the Paris Secretum manuscript. No Voynich assignments.",
+  "sources": [
+    {
+      "file": "source-search/bax.body",
+      "url": "https://stephenbax.net/?p=1198",
+      "final_url": "https://stephenbax.net/?p=1198",
+      "http_status": 403,
+      "bytes": 1355,
+      "sha256": "18078255614e04b59110611ee6127ba4e022ce6fe6e0bde9250cb21ce85cda7a",
+      "role": "Discovery source or retained access failure."
+    },
+    {
+      "file": "source-search/cipher_mysteries.body",
+      "url": "https://ciphermysteries.com/2008/12/06/review-of-le-macchine-cifrate-di-giovanni-fontana",
+      "final_url": "https://ciphermysteries.com/2008/12/06/review-of-le-macchine-cifrate-di-giovanni-fontana",
+      "http_status": 200,
+      "bytes": 155772,
+      "sha256": "b070c435397694230ececd6e26a5c1f05b1ade67b1c3f62223107ebcf936739a",
+      "role": "Discovery source or retained access failure."
+    },
+    {
+      "file": "source-search/persee.body",
+      "url": "https://www.persee.fr/doc/scrip_0036-9772_1982_num_36_2_1268?pageId=T1_227",
+      "final_url": "https://www.persee.fr/doc/scrip_0036-9772_1982_num_36_2_1268?pageId=T1_227",
+      "http_status": 200,
+      "bytes": 96699,
+      "sha256": "9499893ae80f6033099bd96c8e7e74b97a8a5e06d4a3b3eaaea5f870bddaf6cb",
+      "role": "Discovery source or retained access failure."
+    },
+    {
+      "file": "source-search/omont_link.body",
+      "url": "https://www.voynich.net/neal/omont.html",
+      "final_url": "https://www.voynich.net/neal/omont.html",
+      "http_status": 404,
+      "bytes": 1251,
+      "sha256": "4c13d452dd5d49671bd93ca32f2b4f85c78e39b6ab0ad1f38d98ed267f8fd896",
+      "role": "Discovery source or retained access failure."
+    },
+    {
+      "file": "omont/persee-article.html",
+      "url": "https://www.persee.fr/doc/bec_0373-6237_1897_num_58_1_447898",
+      "final_url": "https://www.persee.fr/doc/bec_0373-6237_1897_num_58_1_447898",
+      "http_status": 200,
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 81490,
+      "sha256": "dda03be003247ed161239d3c418a8f5c27b313da680635aae687634d28974c28",
+      "retrieved_utc": "2026-09-30T10:55:50.296542+00:00"
+    },
+    {
+      "file": "omont/archive-metadata.json",
+      "url": "https://archive.org/metadata/bibliothquedel58sociuoft",
+      "final_url": "https://archive.org/metadata/bibliothquedel58sociuoft",
+      "http_status": 200,
+      "content_type": "application/json",
+      "bytes": 144325,
+      "sha256": "334b1041df6f8dc159a92ec39744def057094c3a90f3c66a8c3bfd00f6085c44",
+      "retrieved_utc": "2026-09-30T10:55:51.306760+00:00"
+    },
+    {
+      "file": "omont/journal-volume.pdf",
+      "url": "https://archive.org/download/bibliothquedel58sociuoft/bibliothquedel58sociuoft.pdf",
+      "final_url": "https://dn790009.ca.archive.org/0/items/bibliothquedel58sociuoft/bibliothquedel58sociuoft.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "bytes": 45870102,
+      "sha256": "9f5b2d8c7b95f4e0387cd55be1565a3f537fa7269dda7ebda6f19749bdf62f94",
+      "retrieved_utc": "2026-09-30T10:56:18.235148+00:00"
+    }
+  ],
+  "reused_source": {
+    "file": "2025-vito-cryptography-italy.pdf",
+    "url": "https://www.nam-sism.org/Articoli/Articoli%202025/NAM%20N.%2021.%207.%20VITO%20La%20crittografia%20diplomatica%20e%20militare%20nell%27Italia%20del%20Quattrocento.pdf",
+    "bytes": 2008784,
+    "sha256": "b38ed10a537fc5e66a57cfa34736fbed68f2ce52e15d03f18b2552c6f1f18006",
+    "printed_pages": [
+      262,
+      263,
+      264
+    ],
+    "pdf_pages": [
+      16,
+      17,
+      18
+    ]
+  },
+  "primary_article": {
+    "author": "Henri Omont",
+    "title": "Un traité de physique et d’alchimie du XVe siècle en écriture cryptographique",
+    "journal": "Bibliothèque de l’École des chartes",
+    "year": 1897,
+    "volume": 58,
+    "printed_pages": [
+      253,
+      254,
+      255,
+      256,
+      257,
+      258
+    ],
+    "pdf_pages": [
+      259,
+      260,
+      263,
+      264,
+      265,
+      266
+    ],
+    "plate_pdf_page": 262,
+    "alphabet_printed_page": 254,
+    "alphabet_pdf_page": 260,
+    "letter_labels": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "u",
+      "x",
+      "y",
+      "z"
+    ],
+    "pairs": 23
+  },
+  "visual_sources": [
+    {
+      "file": "omont/page-260.png",
+      "bytes": 675870,
+      "sha256": "c1e3dff95ea21220fd0961eea90033c2d5c6035edf04b781175c2f646a5d02e1"
+    },
+    {
+      "file": "omont/plate-262.png",
+      "bytes": 1042856,
+      "sha256": "fe695f64eb6b706fa935229de1bb372bef699780e607069fa2dfd386873a2ac5"
+    },
+    {
+      "file": "omont/table-crop-260.png",
+      "bytes": 43749,
+      "sha256": "5c06aa501143e5946dc55f31f07278384cacba145e3c43c94a8381760896f68e"
+    },
+    {
+      "file": "omont/line-crop-262.png",
+      "bytes": 32634,
+      "sha256": "267040f03b7621d2c410d10a0d3ccfa2a1de7a44063a28af044a7ebb9acca158"
+    },
+    {
+      "file": "vito-16.png",
+      "bytes": 377267,
+      "sha256": "d18c715475d9f02a2847e6a79bdae0483e2bc4208cdd30669f10f374a7fc120c"
+    },
+    {
+      "file": "vito-17.png",
+      "bytes": 889847,
+      "sha256": "8cb1c187c1a3d509b8be73b7f831994bdd584dd8b5143c886527aeaaff535dee"
+    },
+    {
+      "file": "vito-18.png",
+      "bytes": 396939,
+      "sha256": "153b36f51de4f5ebf11dbc40f3bd1266ba129a2886fddf60d3e9485d07a51904"
+    }
+  ],
+  "limits": [
+    "The historical alphabet is not a Voynich key.",
+    "The primary agent had seen the article readings before selecting the small input check.",
+    "The original AI reading records remain unchanged.",
+    "The initial search and its access failures remain recorded.",
+    "The Persée source masks illustrations; the full journal scan was obtained separately from Internet Archive."
+  ],
+  "reader_check": {
+    "scope": "First complete entry in the lower-left manuscript panel, including its wrapped continuation.",
+    "source_pdf_page": 262,
+    "selection_limit": "The primary agent saw the published reading before selection. The fresh reader did not receive it.",
+    "inputs": [
+      {
+        "file": "omont/table-crop-260.png",
+        "pdf_page": 260,
+        "dpi": 400,
+        "rectangle_xywh": [
+          430,
+          1300,
+          1460,
+          230
+        ],
+        "sha256": "5c06aa501143e5946dc55f31f07278384cacba145e3c43c94a8381760896f68e"
+      },
+      {
+        "file": "omont/line-crop-262.png",
+        "pdf_page": 262,
+        "dpi": 400,
+        "rectangle_xywh": [
+          500,
+          2100,
+          650,
+          120
+        ],
+        "sha256": "267040f03b7621d2c410d10a0d3ccfa2a1de7a44063a28af044a7ebb9acca158"
+      }
+    ],
+    "result": "No usable sign sequence. No match score or abbreviation expansion. No retry.",
+    "local_record_sha256": "5a6b06e36b7bed33d7e5f30cf58a82e2db998eb8263bd155cea0093cf77acc4f"
+  },
+  "table_review": {
+    "agreement": "Primary and another AI visual record agree on 23 labels and column alignment.",
+    "local_record_sha256": "977170fd0cc80e61ec87f93939834ad62ad3d4b9902fa4fc25acf34353ff13f2"
+  },
+  "source_hash_checks": {
+    "new_captures": 7,
+    "retained_http_error_bodies": 2,
+    "earlier_pdf": 1,
+    "total": 8,
+    "status": "passed"
+  },
+  "rendering": {
+    "complete_pages_dpi": {
+      "omont/page-260.png": 200,
+      "omont/plate-262.png": 200,
+      "vito-16.png": 170,
+      "vito-17.png": 170,
+      "vito-18.png": 170
+    },
+    "crop_rectangles": "Coordinates are pixels at the recorded dpi; x and y start at the upper-left page corner.",
+    "crop_command_template": "pdftoppm -f PAGE -l PAGE -r DPI -x X -y Y -W WIDTH -H HEIGHT -png SOURCE.pdf PREFIX"
+  }
+}

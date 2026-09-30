@@ -35,6 +35,11 @@ Its opening page points to Fontana folio 1v and contains a candidate Latin readi
 The opening words also appear in text already visible in Latin. The inspected pages give no complete sign-value table.
 The source is a new research lead, without a verified cipher-to-plaintext alignment or Voynich assignment.
 
+A [subsequent primary-source check](fontana-published-alphabet-2026-09-30.md) found Omont's 1897 printed alphabet for the Paris manuscript.
+It gives 23 cipher signs with Latin labels and an abbreviation rule. This changes the earlier table-access limit.
+Another AI task agreed about the printed pairs, but an excerpt-reading task supplied no usable sign sequence.
+No use on Munich or Voynich text followed.
+
 ## Meister: complete printed tables and an unresolved date
 
 [Meister's 1902 book, pages 30–31](https://books.google.com/books?id=tI_k5mqTS2IC&pg=PA30), gives another source to examine.

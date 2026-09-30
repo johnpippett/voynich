@@ -84,3 +84,7 @@ Vito distinguishes supplied and extra letters in his own readings.
 This review examined the text on printed pages 262–264, without a figure analysis or an independent comparison of those editions.
 These source claims do not establish Schulte's treatment of every sign.
 They show why a readable Latin transcript must not automatically become an exact letter-by-letter target.
+
+A [later source check](fontana-published-alphabet-2026-09-30.md) found Omont's printed 23-pair alphabet for the Paris manuscript.
+That check also examined Vito's pages visually and recorded his changes to word spacing.
+The earlier AI reading records remain unchanged. The later report keeps the published alphabet separate from an unsuccessful excerpt-reading check.
