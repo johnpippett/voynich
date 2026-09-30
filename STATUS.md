@@ -9,6 +9,11 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [Kiltau source check](docs/research/kiltau-hebrew-aramaic-source-check-2026-09-30.md) found a conflict between rule R2 and its listed `or` output.
+The published validation definitions differ about prediction timing. The site lists blind validation by specialists outside the project with status `pending`.
+The external dictionary entry examined does not give the selected physician sense.
+This audit supplies no key or translation. No decoder execution followed.
+
 The [visual-unit inventory](docs/research/visual-unit-inventory-2026-09-30.md) finds 30 distinct labels in ZL training under the fixed six-compound tokenizer.
 That count rules out a total injective map to 26 letters under this representation.
 A published 23-form list covers about 99.8 percent of both training cohorts. This is coverage, not reading accuracy.

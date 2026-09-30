@@ -1,0 +1,159 @@
+{
+  "audit_date": "2026-09-30",
+  "candidate_source": "https://voynich.kiltau.com/",
+  "candidate_version": "9.11.0",
+  "method": "Static source comparison; no decoder execution.",
+  "sources": [
+    {
+      "file": "home.html",
+      "url": "https://voynich.kiltau.com/",
+      "final_url": "https://voynich.kiltau.com/",
+      "http_status": 200,
+      "bytes": 121560,
+      "sha256": "547f18b32acb4a1570733adb42a16c62fa40ade2d588e08f89323e64c4712672",
+      "retrieved_utc": "2026-09-30T10:29:38.745614+00:00"
+    },
+    {
+      "file": "methodology.html",
+      "url": "https://voynich.kiltau.com/methodology",
+      "final_url": "https://voynich.kiltau.com/methodology",
+      "http_status": 200,
+      "bytes": 238265,
+      "sha256": "1039f56995b157efa528b372d740bdda11f92a5f3af02d311f520175debfda11",
+      "retrieved_utc": "2026-09-30T10:29:38.745614+00:00"
+    },
+    {
+      "file": "validation.html",
+      "url": "https://voynich.kiltau.com/validation",
+      "final_url": "https://voynich.kiltau.com/validation",
+      "http_status": 200,
+      "bytes": 141056,
+      "sha256": "6846f9f0ea9680c3c649815cdd737f1d3fc5e78c4f47bb05394b0e0705bf9a61",
+      "retrieved_utc": "2026-09-30T10:29:38.745614+00:00"
+    },
+    {
+      "file": "api.md",
+      "url": "https://voynich.kiltau.com/api.md",
+      "final_url": "https://voynich.kiltau.com/api.md",
+      "http_status": 200,
+      "bytes": 39123,
+      "sha256": "56c587ada7d87093ee70a6f4e07f09155d9add9bc72848adb11fde71a6eae649",
+      "retrieved_utc": "2026-09-30T10:29:38.745614+00:00"
+    },
+    {
+      "file": "lexicon.json",
+      "url": "https://voynich.kiltau.com/api/lexicon",
+      "final_url": "https://voynich.kiltau.com/api/lexicon",
+      "http_status": 200,
+      "bytes": 260060,
+      "sha256": "c6bfa41e3760aff6b2f6c9338d5770d0761661cedd604004ab44cdb23d968e17"
+    },
+    {
+      "file": "jastrow-sar.json",
+      "url": "https://www.sefaria.org/api/words/%D7%A9%D6%B7%D7%82%D7%A8?lexicon=Jastrow%20Dictionary",
+      "final_url": "https://www.sefaria.org/api/words/%D7%A9%D6%B7%D7%82%D7%A8?lexicon=Jastrow%20Dictionary",
+      "http_status": 200,
+      "bytes": 40083,
+      "sha256": "273f5d70b6d6c6bd31ea92bc22a78365ffb5fa5f4a2206c73d43ee43a9e515be"
+    },
+    {
+      "file": "jastrow-al.json",
+      "url": "https://www.sefaria.org/api/words/%D7%A2%D6%B7%D7%9C?lexicon=Jastrow%20Dictionary",
+      "final_url": "https://www.sefaria.org/api/words/%D7%A2%D6%B7%D7%9C?lexicon=Jastrow%20Dictionary",
+      "http_status": 200,
+      "bytes": 170070,
+      "sha256": "2f0ad5cf384bf3c5952d0e95eaaef9eb9007578e1edef6adcdb4220efb936910"
+    },
+    {
+      "file": "jastrow-din.json",
+      "url": "https://www.sefaria.org/api/words/%D7%93%D6%B4%D6%BC%D7%99%D7%9F?lexicon=Jastrow%20Dictionary",
+      "final_url": "https://www.sefaria.org/api/words/%D7%93%D6%B4%D6%BC%D7%99%D7%9F?lexicon=Jastrow%20Dictionary",
+      "http_status": 200,
+      "bytes": 48702,
+      "sha256": "751f23ef376ede39323a1585ac437302737e30c02a185910c855b4136b004620"
+    },
+    {
+      "file": "mapping/api-mapping.json",
+      "url": "https://voynich.kiltau.com/api/mapping",
+      "bytes": 2611,
+      "sha256": "1b252528461605112c3c21eadf4b01c32bc1c1aa87186747bdfd6430d72e738a",
+      "http_status": null,
+      "capture_note": "Successful curl request; exact HTTP status and capture time were not recorded."
+    },
+    {
+      "file": "mapping/api-rules.json",
+      "url": "https://voynich.kiltau.com/api/rules",
+      "bytes": 697594,
+      "sha256": "cb963c670aba95e2e737ad7d6429960553c72804cd731337d9fe21f95c1ced5d",
+      "http_status": null,
+      "capture_note": "Successful curl request; exact HTTP status and capture time were not recorded."
+    }
+  ],
+  "selectors": {
+    "rules": [
+      "R2",
+      "R19",
+      "R40",
+      "R43"
+    ],
+    "lexicon_eva": [
+      "or",
+      "sar",
+      "al",
+      "daiindy"
+    ],
+    "dictionary_entries": [
+      {
+        "file": "jastrow-sar.json",
+        "parent_lexicon": "Jastrow Dictionary",
+        "rid": "U01906",
+        "headword": "שַׂר"
+      },
+      {
+        "file": "jastrow-al.json",
+        "parent_lexicon": "Jastrow Dictionary",
+        "rid": "P00757",
+        "headword": "עַל"
+      },
+      {
+        "file": "jastrow-din.json",
+        "parent_lexicon": "Jastrow Dictionary",
+        "rid": "D00635",
+        "headword": "דִּין II"
+      }
+    ],
+    "validation_sections": [
+      "backwards-test",
+      "backtest-panel-typeI",
+      "backtest-panel-typeII",
+      "open-problems"
+    ],
+    "api_section": "GET /api/backtest"
+  },
+  "verified_counts": {
+    "source_bodies": 10,
+    "mapping_rows": 31,
+    "prefixes": 12,
+    "rule_records": 60,
+    "lexicon_entries": 549,
+    "lexicon_at_least_three_stars": 423,
+    "lexicon_at_least_three_stars_excluding_candidates": 419
+  },
+  "limits": [
+    "Root saw the proposed words before this review. No blind result is claimed.",
+    "Corpus occurrence counts and reported test results were not reproduced.",
+    "Dictionary senses do not establish EVA assignments.",
+    "No independent specialist reading was obtained.",
+    "The dictionary API returned several dictionaries; selection used the named lexicon and entry identifier.",
+    "Direct dictionary GET requests succeeded; the web reader failed on the same URLs.",
+    "The capture time is recorded only for the initial four sources."
+  ],
+  "activity": {
+    "additional_get_endpoints": 6,
+    "external_dictionary_endpoints": 3,
+    "computational_api_calls": 0,
+    "decoder_runs": 0,
+    "new_sign_values": 0
+  },
+  "decision": "No reading experiment follows this source audit. Rule precedence and independent meaning evidence remain necessary."
+}
