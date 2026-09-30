@@ -5,6 +5,9 @@ The visible lower digits agree with a previously reported 12-step cycle.
 A proposed forward letter shift includes five letters from the worksheet, but gives 30 possible outputs.
 This check does not give a unique reading, Strong's complete method, or a validated key.
 
+A [later input check](strong-input-reproducibility-check-2026-09-29.md) did not meet the fixed agreement requirement for another calculation.
+The partial result below does not give a repeatable source-reading procedure.
+
 ## Source and scope
 
 The source is the [99-page scanned collection](https://web.archive.org/web/20061215213410id_/http://internet.cybermesa.com:80/~galethog/Voynich/Strong.pdf).

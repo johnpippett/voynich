@@ -1,0 +1,151 @@
+{
+  "status": "Input requirements were not met. No new cipher arithmetic or translation test was run.",
+  "source_pdf": {
+    "url": "https://web.archive.org/web/20061215213410id_/http://internet.cybermesa.com:80/~galethog/Voynich/Strong.pdf",
+    "bytes": 11393665,
+    "sha256": "33424b24695908088293a7a7e21693dd85e5fad394a354e877227e001634121c",
+    "pdf_pages": [
+      75,
+      82,
+      83
+    ]
+  },
+  "crop_scale_long_edge_pixels": 4000,
+  "selected_regions": [
+    {
+      "page": 83,
+      "role": "First main line layout and row-index eligibility",
+      "x": 0,
+      "y": 0,
+      "width": 4000,
+      "height": 520
+    },
+    {
+      "page": 82,
+      "role": "Upper marks and drawn signs; proposed-text band excluded",
+      "x": 0,
+      "y": 1530,
+      "width": 4000,
+      "height": 320
+    },
+    {
+      "page": 82,
+      "role": "Lower-number band; proposed-text band excluded",
+      "x": 0,
+      "y": 2010,
+      "width": 4000,
+      "height": 170
+    },
+    {
+      "page": 75,
+      "role": "Existing row-1 shape reference, left half",
+      "x": 0,
+      "y": 160,
+      "width": 2000,
+      "height": 380
+    },
+    {
+      "page": 75,
+      "role": "Existing row-1 shape reference, right half",
+      "x": 2000,
+      "y": 160,
+      "width": 2000,
+      "height": 380
+    }
+  ],
+  "selection_history": [
+    "The first complete main line on page83 was selected before detailed layout inspection.",
+    "Its missing per-sign upper indices failed the fixed row-1 requirement.",
+    "A separate consistency question then used the previously seen page82 line with the same five classes and forward arithmetic.",
+    "Two new readers received input bands without the proposed-text band. The primary reader had prior exposure to the proposed text."
+  ],
+  "input_requirement": [
+    "Both readers agree on sign boundaries and the fixed visual class.",
+    "Both agree on upper value1 and a known lower digit aligned to the sign.",
+    "The six triangular marks previously unresolved remain unresolved.",
+    "Unsupported forms and disagreements do not enter the arithmetic."
+  ],
+  "reader_record_summary": {
+    "reader_a_after_correction": {
+      "group_segment_counts": [
+        6,
+        4,
+        6,
+        6,
+        1,
+        5,
+        3,
+        6
+      ],
+      "recorded_segments": 37,
+      "known_upper_values": 0,
+      "assigned_lower_digits": 0,
+      "correction": "Groups 1 and 2 replace the original groups; original groups 3 through 8 remain unchanged."
+    },
+    "reader_b": {
+      "group_segment_counts": [
+        6,
+        5,
+        7,
+        6,
+        2,
+        5,
+        3,
+        6
+      ],
+      "recorded_segments": 40
+    },
+    "eligible_positions": 0,
+    "segment_count_limit": "Segment counts describe reader records, not verified counts of source signs."
+  },
+  "record_hashes": {
+    "scope.json": "8d072e9afdcbae191910ecea64e6f1029e94d3509de0d768a4a239ab5a884ca3",
+    "consistency-scope.json": "2e2a2e291285695b92df3857d67f3f85f1f56e92bfd0aff5a864bbb07ccb3a58",
+    "input-a/transcription.json": "1f5dead5306394aecd776ea964b11f9a5672e46e1e3de7e7335687c062e22cae",
+    "input-a/corrected-transcription.json": "82fe9ca0d5a7406e9a0f2b734b2548684cac309ebb930957219a3ffe7b1522b1",
+    "input-b/transcription.json": "bfe9e768953486c5e63bdbf59c64e5c5687821216f006f23a1a19a19ea42cf03",
+    "page-82-inputs.png": "a3bff6cd118a5e056f7663ed5a8efdac97c9948b47079d4f4aaca503af1675e4",
+    "page-82-digits.png": "68fbdff9f3313b85a518625b921e12aa3e674b1031d5ed502cc2bbdc5b37dfbe",
+    "page-83-top.png": "0ddd3c78b1f041d6cac9b8dceb0a09a6f0c94bba25620b0b683eb2b8784c40ee"
+  },
+  "review_errors": [
+    "The first A record put ordinal positions in handwritten-value fields. The correction replaced those fields with unresolved values.",
+    "The corrected A source hash was incomplete. This manifest uses hashes computed from the source files.",
+    "Sign boundaries and some lower-digit readings differed between records. No preferred values were substituted."
+  ],
+  "arithmetic_status": "The prepared local checker did not process source-derived records. No candidate-column intersection or transfer score is reported.",
+  "linked_reply_scope": {
+    "starting_url": "https://voynich.net/Arch/2004/08/msg00279.html",
+    "selection": "Two explicit Follow-Ups links in the starting message.",
+    "new_search_queries": 0,
+    "new_pages": 2,
+    "sources": [
+      {
+        "url": "https://voynich.net/Arch/2004/08/msg00281.html",
+        "http_status": 200,
+        "bytes": 6371,
+        "sha256": "e7ed9c104a8d817bae7a710b8e25b47c3e250606c94ba8c13b680efa67a4d601"
+      },
+      {
+        "url": "https://voynich.net/Arch/2004/08/msg00287.html",
+        "http_status": 200,
+        "bytes": 4609,
+        "sha256": "adfe12044d2e48f3054ab22530864cc12bb93a26dad3e423061365c4d97c5a01"
+      }
+    ]
+  },
+  "decision": "The broad input descriptions do not support the planned comparison. A more precise input method or a source with explicit rules is required.",
+  "limits": [
+    "This is a source-reading and method check, not external scholarly validation.",
+    "The failed agreement requirement does not prove that the source is unreadable or that all Strong procedures fail.",
+    "No manuscript corpus was decoded. No new EVA sign assignment was made."
+  ],
+  "verification": {
+    "independent_gate_review_sha256": "389079352573905597d47ce102ab18118e77affa2ca4dcc0496ec443c3e8d102",
+    "outcome": "The independent count check confirms zero eligible positions and the recorded metadata error.",
+    "required_project_tests": {
+      "passed": 85,
+      "exit_code": 0
+    }
+  }
+}
