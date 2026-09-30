@@ -1,0 +1,68 @@
+{
+  "date": "2026-09-30",
+  "result": "stopped_before_alignment",
+  "scope": "Original Fontana folio 1r sign row and first cipher line on folio 1v; first two lines of Schulte folio 1r paragraph 2.",
+  "root_exposure": "The primary agent had seen both pages and the candidate Latin words before this comparison. The two readers received separate source contexts.",
+  "reader_method": "One visual pass per reader; no revised reading request. Unclear forms remain unresolved.",
+  "observations": {
+    "stable_cipher_sequence": false,
+    "complete_latin_sequence": false,
+    "primary_agent_latin_disagreement": true,
+    "cipher_values_assigned": 0,
+    "separate_passage_test_performed": false,
+    "voynich_values_assigned": 0
+  },
+  "sources": [
+    {
+      "source_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00013084_00006/full/full/0/default.jpg",
+      "sha256": "fe1dd4371d52d1e7ab1b3b2fd8b13246fc04e306e665a7e5ffabf28ea99831cc",
+      "bytes": 1796838
+    },
+    {
+      "source_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00013084_00007/full/full/0/default.jpg",
+      "sha256": "295ae2fa4a1ad1a2d16278a3a28bab823f6515e0e88520e767661dc7d1691e7f",
+      "bytes": 1823224
+    },
+    {
+      "source_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb00015141_00007/full/full/0/default.jpg",
+      "sha256": "48695491c68a884e34a5573d945e93aa65ce4f8f98be26d8b6c255d61672b6d7",
+      "bytes": 965370
+    }
+  ],
+  "local_record_hashes": {
+    "scope.json": "219614dfa610bc0dd06090c09d8b44f803dfd735e2a95018ba2501f3a1bf63a7",
+    "cipher-reader.json": "0cbcd8a872b08c9db775c4e0db3bab79921682e818173a9b3b9523ba4119d4d7",
+    "cipher-reader.md": "4a247257137ef9e71f7a9763c274597ef415ce3cb77d20d54d24edb7d0349d76",
+    "latin-reader.json": "92167c1b654b06086958ec583b7a821f873d65a2d776ec00be30764e32676135",
+    "latin-reader.md": "33c7150a6e3a932f3e906bccdd4436581ad24453e36f349cd0a934147a129602",
+    "root-observations.json": "347d82d96cfa397ab2ca0993d9425b233c48df295d77d4e60a4645c68c55e0fd",
+    "context-review.json": "6fec080d4f6457a713426ee768eff4bcececc8d95c599bf11c735945d5bac177",
+    "integration.json": "3cdd91f7ad6401d0b7efd20bbde8ebff4b052d17c8f60d9391a7b8a426d348a3",
+    "project-tests.log": "92d205f554c426c1de5d0ebc5b2ee999e63ecd1d8f00c65e24fc0d4228792a2a"
+  },
+  "verification": {
+    "source_hash_checks": 6,
+    "source_hash_mismatches": 0,
+    "project_tests_passed": 85
+  },
+  "limits": [
+    "The viewer reduced the full-page images. The cipher reader did not supply stable sign or word boundaries.",
+    "This is a limit of the selected input method, not proof that the source is unreadable.",
+    "No complete historical sign map or Voynich key follows."
+  ],
+  "context_source": {
+    "source_url": "https://www.nam-sism.org/Articoli/Articoli%202025/NAM%20N.%2021.%207.%20VITO%20La%20crittografia%20diplomatica%20e%20militare%20nell%27Italia%20del%20Quattrocento.pdf",
+    "sha256": "b38ed10a537fc5e66a57cfa34736fbed68f2ce52e15d03f18b2552c6f1f18006",
+    "printed_pages": [
+      262,
+      263,
+      264
+    ],
+    "pdf_pages_one_based": [
+      16,
+      17,
+      18
+    ],
+    "review": "Text excerpt only. No figure analysis. A web screenshot request failed."
+  }
+}

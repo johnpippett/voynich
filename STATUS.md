@@ -23,6 +23,8 @@ A separate direct-count audit passed for source positions, maps, scores, coverag
 The [Fontana source check](docs/research/fontana-transcription-source-2026-09-30.md) found Schulte's digitized 1910 transcription.
 The opening page points to the original source folio, but the reviewed material supplies no complete sign-value table.
 The candidate Latin text still needs cipher-position alignment and a separate passage check.
+A bounded AI reading attempt stopped because it supplied no stable cipher sequence.
+The incomplete records remain unchanged. No sign-value assignment or repeated reading followed.
 
 The [manuscript pilot without spaces](reports/SPACEFREE_MANUSCRIPT_PILOT.md) failed its fixed rule for a later reading study.
 All four 26-letter artificial controls passed before the manuscript stage.

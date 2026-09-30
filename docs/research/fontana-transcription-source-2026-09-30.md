@@ -46,3 +46,41 @@ Before you test a key, record each historical sign and its proposed letter value
 Then test those values on a separate source passage.
 Use separate evidence to connect Fontana signs to Voynich signs.
 Keep the first access failures in the [earlier historical source record](historical-key-comparisons-2026-09-29.md).
+
+## Bounded reading attempt
+
+A later attempt used two AI readers with separate source contexts.
+One reader examined the original folio 1r sign row and only the first cipher line on folio 1v.
+The other examined only the first two handwritten lines of Schulte's second paragraph on folio 1r.
+The primary agent had already seen both pages and the candidate Latin words. Its comparison was not blind.
+The method permitted one reading pass per reader and kept unclear forms unresolved.
+
+The cipher reader returned no stable sign inventory or first-line sequence.
+The viewer had reduced both full-page images for display. The reader left the sign and word boundaries unresolved.
+This result limits the selected input method. It does not show that the source is unreadable.
+
+The Latin reader also left uncertain and unreadable text.
+The primary agent disagreed with two proposed word readings after image examination.
+Both reader records remain unchanged. No request for a revised reading followed.
+Without a stable cipher sequence, the comparison stopped before any sign-value assignment or separate-passage test.
+No Voynich values followed.
+
+The [attempt record](fontana-alignment-check-2026-09-30.json) gives the source URLs, file hashes, scope, and result.
+All six recorded source-hash comparisons matched: three scope entries, two cipher-reader entries, and one Latin-reader entry.
+These comparisons cover three unique images. The project suite passed all 85 tests; this software result does not validate a reading.
+Local first-pass records and the comparison receipt remain in `results/fontana-alignment-2026-09-30/`.
+
+To repeat the source examination, obtain the three images from the recorded URLs and compare their SHA-256 values.
+Examine the stated regions and keep uncertain boundaries unresolved. Do not use the incomplete records as a cipher transcription.
+A future attempt needs a stable sign record and explicit abbreviation rules before letter matching.
+Do not repeat this input method with prompted word repairs.
+
+## A limit of later transcriptions
+
+[Marco Vito's 2025 study](https://www.nam-sism.org/Articoli/Articoli%202025/NAM%20N.%2021.%207.%20VITO%20La%20crittografia%20diplomatica%20e%20militare%20nell%27Italia%20del%20Quattrocento.pdf#page=16) describes occasional homophones on printed page 262.
+Here, homophones are different cipher signs with the same letter value.
+On page 263, note 28 says that the 1984 edition corrects writing errors without a note.
+Vito distinguishes supplied and extra letters in his own readings.
+This review examined the text on printed pages 262–264, without a figure analysis or an independent comparison of those editions.
+These source claims do not establish Schulte's treatment of every sign.
+They show why a readable Latin transcript must not automatically become an exact letter-by-letter target.
