@@ -9,6 +9,10 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [Decipherist source check](docs/research/decipherist-reading-method-check-2026-09-30.md) found missing rules between two printed sign sequences and their claimed Italian words.
+Its historical comparisons document medical texts but supply no Voynich sign values.
+The fixed table calculation and another AI source review agree. No manuscript decoding run followed.
+
 The [Simonin source check](docs/research/simonin-reading-method-check-2026-09-30.md) records the author's clarification that proposed meanings remain unconfirmed.
 Its thematic scores do not depend on the assigned meanings, and its content searches examine generated English terms.
 These source findings supply no independently validated reading. No manuscript decoding run followed.

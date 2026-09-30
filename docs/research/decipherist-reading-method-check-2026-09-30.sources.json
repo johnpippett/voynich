@@ -1,0 +1,279 @@
+{
+  "date": "2026-09-30",
+  "scope": "Four article method sections, two printed vocabulary rows, and two historical catalogue records. No manuscript reading or source decoder execution.",
+  "sources": [
+    {
+      "file": "sources/decipherist.html",
+      "url": "https://thedecipherist.com/articles/voynich_manuscript/",
+      "final_url": "https://thedecipherist.com/articles/voynich_manuscript/",
+      "status": 200,
+      "bytes": 109186,
+      "sha256": "2f9c0f65a8b37afbf65b961a7824c5831426bc70b6028557fd055331e4330839",
+      "retrieved_utc": "2026-09-30T12:13:54.105281+00:00"
+    },
+    {
+      "url": "https://cudl.lib.cam.ac.uk/view/MS-DD-00010-00068/80",
+      "error": "HTTP Error 403: Forbidden",
+      "retrieved_utc": "2026-09-30T12:15:49.839760+00:00"
+    },
+    {
+      "file": "sources/bodleian-catalog.html",
+      "url": "https://digital.bodleian.ox.ac.uk/objects/beb0de5a-04fd-4ee7-b622-c3ebdca105ef/",
+      "final_url": "https://digital.bodleian.ox.ac.uk/objects/beb0de5a-04fd-4ee7-b622-c3ebdca105ef/",
+      "status": 200,
+      "bytes": 13907,
+      "sha256": "55224f70cf7c40b433d516a062204fb929597adb7e797fafdc9e3522c1f793f2",
+      "retrieved_utc": "2026-09-30T12:15:50.268003+00:00"
+    },
+    {
+      "file": "sources/bodleian-manifest.json",
+      "url": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/beb0de5a-04fd-4ee7-b622-c3ebdca105ef.json",
+      "final_url": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/beb0de5a-04fd-4ee7-b622-c3ebdca105ef.json",
+      "status": 200,
+      "bytes": 211610,
+      "sha256": "a556fce26c8185bbdccad383346d26fdf1a526e6730e1e943e9b762cec837ce7",
+      "retrieved_utc": "2026-09-30T12:16:28.314717+00:00"
+    },
+    {
+      "file": "sources/cambridge-manifest.json",
+      "url": "https://cudl.lib.cam.ac.uk/iiif/MS-DD-00010-00068",
+      "final_url": "https://cudl.lib.cam.ac.uk/iiif/MS-DD-00010-00068",
+      "status": 200,
+      "bytes": 439629,
+      "sha256": "b778f06be46e2eebed30157ae4fc47722b6e6fb850aa7a014437e68e23142618",
+      "retrieved_utc": "2026-09-30T12:16:28.170248+00:00"
+    }
+  ],
+  "method_sections": [
+    "Confirmed Vocabulary",
+    "Character Mapping Analysis",
+    "The Real \"Cipher Key\"",
+    "THE BREAKTHROUGH: The Loop Symbol"
+  ],
+  "article_source_lines": {
+    "vocabulary": [
+      1525,
+      1537
+    ],
+    "mapping_and_direction": [
+      1551,
+      1580
+    ],
+    "loop_explanation_start": 379,
+    "real_cipher_key_start": 1762
+  },
+  "selection_limit": "The coordinator had seen the examples before selection. This was not a blind reading test.",
+  "literal_table_calculation": {
+    "plan_sha256": "957b057cb33977337c7ac20cd1e8a6896d05d3022c9c27cfe8de20931fe152f3",
+    "rules": {
+      "direction": "Reverse the published Unicode token sequence.",
+      "table_subset": {
+        "o": [
+          "O",
+          "A"
+        ],
+        "a": [
+          "A",
+          ""
+        ],
+        "ꝺ": [
+          "L"
+        ]
+      },
+      "choice": "Enumerate every combination of the listed values; do not choose a convenient value.",
+      "no_unstated_operation": "Do not insert vowels, delete L, or change letter order after reversal."
+    },
+    "cases": [
+      {
+        "id": "pot_row",
+        "printed": "oꝺꝺa",
+        "source_codepoints": [
+          "U+006F",
+          "U+A77A",
+          "U+A77A",
+          "U+0061"
+        ],
+        "reversed": "aꝺꝺo",
+        "all_literal_outputs": [
+          "ALLA",
+          "ALLO",
+          "LLA",
+          "LLO"
+        ],
+        "claimed_word": "OLLA",
+        "claimed_word_in_literal_outputs": false
+      },
+      {
+        "id": "oil_row",
+        "printed": "oꝺꝺo",
+        "source_codepoints": [
+          "U+006F",
+          "U+A77A",
+          "U+A77A",
+          "U+006F"
+        ],
+        "reversed": "oꝺꝺo",
+        "all_literal_outputs": [
+          "ALLA",
+          "ALLO",
+          "OLLA",
+          "OLLO"
+        ],
+        "claimed_word": "OLIO",
+        "claimed_word_in_literal_outputs": false
+      }
+    ],
+    "interpretation_limit": "The article says vowels can be implied or abbreviated. This calculation tests only its explicit table and direction; additional reading rules remain unspecified."
+  },
+  "catalogue_fields": {
+    "cambridge": [
+      "description",
+      "metadata: Abstract",
+      "metadata: Language(s)"
+    ],
+    "bodleian": [
+      "label",
+      "description",
+      "metadata: Language",
+      "metadata: Date Statement"
+    ]
+  },
+  "verification": {
+    "created_utc": "2026-09-30T12:26:51.769796+00:00",
+    "source_checks": [
+      {
+        "file": "sources/decipherist.html",
+        "bytes_match": true,
+        "hash_match": true
+      },
+      {
+        "file": "sources/bodleian-catalog.html",
+        "bytes_match": true,
+        "hash_match": true
+      },
+      {
+        "file": "sources/bodleian-manifest.json",
+        "bytes_match": true,
+        "hash_match": true
+      },
+      {
+        "file": "sources/cambridge-manifest.json",
+        "bytes_match": true,
+        "hash_match": true
+      }
+    ],
+    "literal_table_replay": [
+      {
+        "id": "pot_row",
+        "outputs": [
+          "ALLA",
+          "ALLO",
+          "LLA",
+          "LLO"
+        ],
+        "agrees": true
+      },
+      {
+        "id": "oil_row",
+        "outputs": [
+          "ALLA",
+          "ALLO",
+          "OLLA",
+          "OLLO"
+        ],
+        "agrees": true
+      }
+    ],
+    "worker_input_hashes_verified": 4,
+    "project_tests": {
+      "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+      "passed": 85,
+      "failed": 0,
+      "output_sha256": "a81c58db89909d27d38bcd91db4668e03c70d40856fb3fbb8e3b4a80f78c3722"
+    },
+    "draft_correction": "The Cambridge catalogue says astrology. The draft now says astrological instead of astronomical.",
+    "verification_correction": "The initial log assertion required OK at the end. Buffered test output follows the OK line. The corrected assertion uses the complete result line and test count. The test command exited zero; no test or research input changed."
+  },
+  "discovery_scope": {
+    "queries": [
+      "Voynich manuscript decipherment complete translation fixed key reading method author publication -Preedy -Clausen -Bax -Strong -Hannig",
+      "Voynich manuscript decipherment translation key code repository study",
+      "Voynich manuscript claimed decipherment continuous reading independent validation published method"
+    ],
+    "sources": [
+      {
+        "abstract_url": "https://arxiv.org/abs/1604.04149",
+        "pdf_url": "https://arxiv.org/pdf/1604.04149",
+        "pages_with_content_exposed": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "abstract_url": "https://arxiv.org/abs/2505.02261",
+        "pdf_url": "https://arxiv.org/pdf/2505.02261",
+        "pages_with_content_exposed": [
+          "abstract record only"
+        ]
+      }
+    ],
+    "maximum_content_pages": 6,
+    "content_pages_exposed": 11,
+    "over_limit_by": 5,
+    "source_file_hashes_available": false,
+    "limit": "A worker performed this limited source selection. The coordinator makes no detailed claim about either paper. Unread contents remain unverified."
+  },
+  "records": [
+    {
+      "file": "scope.json",
+      "sha256": "70c7a15e42e1b9e65b2ac647c4ad9de098addf895e5a782c3903075a8d16edf4"
+    },
+    {
+      "file": "decipherist-selection.json",
+      "sha256": "205bba28e6fbe706b056218846d93132121a3eb1ec0d0f1871d8275addecb44b"
+    },
+    {
+      "file": "decipherist-table-plan.json",
+      "sha256": "957b057cb33977337c7ac20cd1e8a6896d05d3022c9c27cfe8de20931fe152f3"
+    },
+    {
+      "file": "decipherist-table-result.json",
+      "sha256": "9cd9178cb6ca916cc0f4a1e5e6d0eb578236b7536ce92cea9dfe5b67743020b6"
+    },
+    {
+      "file": "decipherist-table-audit.md",
+      "sha256": "50e7f7ed94c78c9715f830ea8f5ae15a64c132eb2948dcf45b6a3af6faf711c9"
+    },
+    {
+      "file": "decipherist-table-audit.json",
+      "sha256": "b70d9b63f9836e1a487fb98f5cbfd01c28f2f607ad80e1aba4e628240bc6a407"
+    },
+    {
+      "file": "historical-catalog-review.json",
+      "sha256": "17b32a3e6f733377d10b9c0283d1d73fa0285208c200deea21e176cb0a445171"
+    },
+    {
+      "file": "discovery/discovery.md",
+      "sha256": "5f49d7beef4e90fbaf28837e645c3ae01e01f7d55d7616db01ff9c187b31e2df"
+    },
+    {
+      "file": "discovery/discovery.json",
+      "sha256": "68a7a51dc6a266351e3b0f0c1a037d8b12a5d8dad079540895bf3b9e737b0ac5"
+    },
+    {
+      "file": "integration-review.json",
+      "sha256": "e4828f56e7ae49628974b99e76af2e4dc6f03e9ed3d4775d411a1f088b2d4be5"
+    },
+    {
+      "file": "final-review.md",
+      "sha256": "1ff29bc0cb6342e08bc38d6b7a68240983104517f64991dcd137047ffe9897c8"
+    }
+  ]
+}
