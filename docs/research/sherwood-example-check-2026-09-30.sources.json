@@ -1,0 +1,441 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-30",
+  "purpose": "Check the first printed Sherwood example. This is not a new manuscript reading.",
+  "sources": [
+    {
+      "kind": "live_author_page",
+      "label": "script-and-code",
+      "request_url": "https://www.edithsherwood.com/voynich-script-and-code/index.php",
+      "final_url": "https://www.edithsherwood.com/voynich-script-and-code/index.php",
+      "retrieved_utc": "2026-09-30T15:13:08.045799+00:00",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 15442,
+      "sha256": "4e32b871b6ec541cffb66bbe693151254a7b7017d3c23370ce3dd36ec7a5d90f",
+      "body_file": "results/sherwood-primary-method-2026-09-30/source-search/script-and-code.html",
+      "outcome": "Hosting-provider placeholder titled \"This site is temporarily unavailable\"; not the requested article."
+    },
+    {
+      "kind": "live_author_page",
+      "label": "botanical-plant-anagrams",
+      "request_url": "https://edithsherwood.com/voynich-botanical-plant-anagrams/",
+      "final_url": "https://edithsherwood.com/voynich-botanical-plant-anagrams/",
+      "retrieved_utc": "2026-09-30T15:13:54.223538+00:00",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 15442,
+      "sha256": "4e32b871b6ec541cffb66bbe693151254a7b7017d3c23370ce3dd36ec7a5d90f",
+      "body_file": "results/sherwood-primary-method-2026-09-30/source-search/botanical-plant-anagrams.html",
+      "outcome": "Hosting-provider placeholder titled \"This site is temporarily unavailable\"; not the requested article."
+    },
+    {
+      "kind": "wayback_cdx_lookup",
+      "label": "script-and-code",
+      "request_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.edithsherwood.com%2Fvoynich-script-and-code%2Findex.php&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Clength&filter=statuscode%3A200&filter=mimetype%3Atext%2Fhtml&collapse=digest",
+      "final_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fwww.edithsherwood.com%2Fvoynich-script-and-code%2Findex.php&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Clength&filter=statuscode%3A200&filter=mimetype%3Atext%2Fhtml&collapse=digest",
+      "retrieved_utc": "2026-09-30T15:14:39.503152+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 510,
+      "sha256": "fda592fe6989d6894dea531e8fc122e11d25846e2847777da086531084915f72",
+      "body_file": "results/sherwood-primary-method-2026-09-30/source-search/wayback-cdx-script-and-code.body",
+      "outcome": "Exact-URL CDX response; see raw JSON body."
+    },
+    {
+      "kind": "wayback_cdx_lookup",
+      "label": "botanical-plant-anagrams",
+      "request_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fedithsherwood.com%2Fvoynich-botanical-plant-anagrams%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Clength&filter=statuscode%3A200&filter=mimetype%3Atext%2Fhtml&collapse=digest",
+      "final_url": "https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fedithsherwood.com%2Fvoynich-botanical-plant-anagrams%2F&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Clength&filter=statuscode%3A200&filter=mimetype%3Atext%2Fhtml&collapse=digest",
+      "retrieved_utc": "2026-09-30T15:14:56.711275+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 367,
+      "sha256": "2a8156c853ee8bc8f7b8f79132bb8d16a2ea2488b76746bd36bc1afabc8f8154",
+      "body_file": "results/sherwood-primary-method-2026-09-30/source-search/wayback-cdx-botanical-plant-anagrams.body",
+      "outcome": "Exact-URL CDX response; see raw JSON body."
+    },
+    {
+      "kind": "archived_author_page",
+      "label": "script-and-code-wayback-20190521",
+      "request_url": "https://web.archive.org/web/20190521101312id_/http://www.edithsherwood.com:80/voynich-script-and-code/index.php",
+      "final_url": "https://web.archive.org/web/20190521101312id_/http://www.edithsherwood.com:80/voynich-script-and-code/index.php",
+      "retrieved_utc": "2026-09-30T15:15:41.249886+00:00",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 22617,
+      "sha256": "fe95460018afbf6e42f506a7b8b5698a7d4b4c75cbf2f34a749dbf517e4f42c4",
+      "body_file": "results/sherwood-primary-method-2026-09-30/source-search/script-and-code-wayback-20190521.html",
+      "outcome": "Archived source HTML retained."
+    },
+    {
+      "kind": "archived_author_page",
+      "label": "botanical-plant-anagrams-wayback-20190519",
+      "request_url": "https://web.archive.org/web/20190519191443id_/http://www.edithsherwood.com:80/voynich-botanical-plant-anagrams/",
+      "final_url": "https://web.archive.org/web/20190519191443id_/http://www.edithsherwood.com:80/voynich-botanical-plant-anagrams/",
+      "retrieved_utc": "2026-09-30T15:15:42.124082+00:00",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 49859,
+      "sha256": "dfdce02000ea160d5c132d6a7c2df2d6ed00e2f7b4844aa4977b489f9e3362b4",
+      "body_file": "results/sherwood-primary-method-2026-09-30/source-search/botanical-plant-anagrams-wayback-20190519.html",
+      "outcome": "Archived source HTML retained."
+    },
+    {
+      "kind": "associated_image",
+      "label": "figure-1",
+      "source_relative_src": "images/figure-1.jpg",
+      "request_url": "https://web.archive.org/web/20190519191443id_/http://www.edithsherwood.com:80/voynich-botanical-plant-anagrams/images/figure-1.jpg",
+      "final_url": "https://web.archive.org/web/20181031161325id_/http://edithsherwood.com/voynich-botanical-plant-anagrams/images/figure-1.jpg",
+      "retrieved_utc": "2026-09-30T15:20:15.717055+00:00",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 25246,
+      "sha256": "75447d56ce210b62a83f6f70ede1386897316f6b7246e672d2b36c1b39021fe0",
+      "body_file": "results/sherwood-primary-method-2026-09-30/source-search/figure-1-wayback-20190519.jpg",
+      "outcome": "Archived image captured."
+    },
+    {
+      "kind": "associated_image",
+      "label": "ava-ch",
+      "source_relative_src": "images/letter-ch.jpg",
+      "request_url": "https://web.archive.org/web/20190519191443id_/http://www.edithsherwood.com:80/voynich-botanical-plant-anagrams/images/letter-ch.jpg",
+      "final_url": "https://web.archive.org/web/20181031112946id_/http://edithsherwood.com/voynich-botanical-plant-anagrams/images/letter-ch.jpg",
+      "retrieved_utc": "2026-09-30T15:20:17.734881+00:00",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 3867,
+      "sha256": "643b98f12f018a19d19d12e63077753e00f0add3e1442c726e20f3e723135869",
+      "body_file": "results/sherwood-primary-method-2026-09-30/source-search/ava-ch-wayback-20190519.jpg",
+      "outcome": "Archived image captured."
+    },
+    {
+      "kind": "associated_image",
+      "label": "ava-a",
+      "source_relative_src": "images/letter-a.jpg",
+      "request_url": "https://web.archive.org/web/20190519191443id_/http://www.edithsherwood.com:80/voynich-botanical-plant-anagrams/images/letter-a.jpg",
+      "final_url": "https://web.archive.org/web/20190918062645id_/http://www.edithsherwood.com/voynich-botanical-plant-anagrams/images/letter-a.jpg",
+      "retrieved_utc": "2026-09-30T15:20:20.157281+00:00",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 2639,
+      "sha256": "c0f88880a504c8e0a0969f216a47a17ccc524d26b82c7f926a04461b7c2da3e9",
+      "body_file": "results/sherwood-primary-method-2026-09-30/source-search/ava-a-wayback-20190519.jpg",
+      "outcome": "Archived image captured."
+    },
+    {
+      "kind": "associated_image",
+      "label": "ava-m",
+      "source_relative_src": "images/letter-m.jpg",
+      "request_url": "https://web.archive.org/web/20190519191443id_/http://www.edithsherwood.com:80/voynich-botanical-plant-anagrams/images/letter-m.jpg",
+      "final_url": "https://web.archive.org/web/20181031154814id_/http://edithsherwood.com/voynich-botanical-plant-anagrams/images/letter-m.jpg",
+      "retrieved_utc": "2026-09-30T15:20:20.896682+00:00",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 4884,
+      "sha256": "f2ba2f9c0d2c92dcff373c3d91a3f080fc33de4d4c15f4fa70515e6e90920e77",
+      "body_file": "results/sherwood-primary-method-2026-09-30/source-search/ava-m-wayback-20190519.jpg",
+      "outcome": "Archived image captured."
+    },
+    {
+      "kind": "associated_image",
+      "label": "ava-u",
+      "source_relative_src": "images/letter-u.jpg",
+      "request_url": "https://web.archive.org/web/20190519191443id_/http://www.edithsherwood.com:80/voynich-botanical-plant-anagrams/images/letter-u.jpg",
+      "final_url": "https://web.archive.org/web/20181031152549id_/http://edithsherwood.com/voynich-botanical-plant-anagrams/images/letter-u.jpg",
+      "retrieved_utc": "2026-09-30T15:20:22.506883+00:00",
+      "status": 502,
+      "content_type": "image/jpeg",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "body_file": "results/sherwood-primary-method-2026-09-30/source-search/ava-u-wayback-20190519.jpg",
+      "outcome": "Request failed with HTTP 502; no retry."
+    },
+    {
+      "kind": "associated_image",
+      "label": "ava-s",
+      "source_relative_src": "images/letter-s.jpg",
+      "request_url": "https://web.archive.org/web/20190519191443id_/http://www.edithsherwood.com:80/voynich-botanical-plant-anagrams/images/letter-s.jpg",
+      "final_url": "https://web.archive.org/web/20181031135432id_/http://edithsherwood.com/voynich-botanical-plant-anagrams/images/letter-s.jpg",
+      "retrieved_utc": "2026-09-30T15:20:24.482137+00:00",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 3001,
+      "sha256": "c349e97e37384decb96db3fa82e1c8b7ebd9b8c1aad836bf50f7c0a4cded565a",
+      "body_file": "results/sherwood-primary-method-2026-09-30/source-search/ava-s-wayback-20190519.jpg",
+      "outcome": "Archived image captured."
+    }
+  ],
+  "search_queries": [
+    "site:edithsherwood.com Voynich method key table decoding instructions"
+  ],
+  "limits_and_counts": {
+    "search_queries_max": 3,
+    "search_queries_used": 1,
+    "non_search_retrievals_max": 12,
+    "non_search_retrievals_used": 12,
+    "primary_html_retrievals_max": 4,
+    "primary_html_retrievals_used": 4,
+    "associated_image_requests_used": 6,
+    "associated_source_images_retrieved_successfully": 5,
+    "associated_source_images_failed": 1,
+    "associated_source_images_examined_by_worker": 0,
+    "associated_source_images_examined_by_root_as_reported_to_worker": 5,
+    "complete_table_image_review": false,
+    "associated_source_images_examined_max": 8,
+    "effective_remaining_image_retrieval_budget_from_parent": 6,
+    "associated_source_images_examined_total_as_reported": 5
+  },
+  "selection": {
+    "source_page": "botanical-plant-anagrams-wayback-20190519.html",
+    "location": "First article example; text cites folio 4r, second line, and Figure 1.",
+    "author_printed_sequence": "ccamus",
+    "author_printed_output": "sumac or sumach, depending on whether cc represents c or ch",
+    "expected_output_exposure": "Exposed before the alphabet table and full method; not blind.",
+    "visual_limit": "The `letter-u.jpg` request failed. Figure 1 alone does not independently verify the full printed sequence."
+  },
+  "frozen_input": {
+    "path": "results/sherwood-primary-method-2026-09-30/example-freeze.json",
+    "sha256": "33a2b227eff4ab92eabac90f4b00696371d3e5f04b195ba9812d01916d46dc24",
+    "units": [
+      "cc",
+      "a",
+      "m",
+      "u",
+      "s"
+    ],
+    "allowed_cc_values": [
+      "c",
+      "ch"
+    ],
+    "expected_output_exposed": true,
+    "input_basis": "The author printed ccamus. This check does not independently recover a manuscript transcription."
+  },
+  "calculation": {
+    "operation": "Reverse the unit order, then expand cc using each explicitly allowed value. Do not reverse the letters within cc or ch.",
+    "results": [
+      {
+        "cc_value": "c",
+        "reversed_units": [
+          "s",
+          "u",
+          "m",
+          "a",
+          "cc"
+        ],
+        "output": "sumac",
+        "matches_source_claim": true
+      },
+      {
+        "cc_value": "ch",
+        "reversed_units": [
+          "s",
+          "u",
+          "m",
+          "a",
+          "cc"
+        ],
+        "output": "sumach",
+        "matches_source_claim": true
+      }
+    ],
+    "ordinary_character_reversal": "sumacc",
+    "decision": "Both claimed outputs follow the explicit unit rule, conditional on the author printed input. This does not verify the original signs or proposed plant identity.",
+    "reproduction": "Run the Python block in the accompanying report. Compare stdout with sumac and sumach on separate lines.",
+    "interpretation_limit": "The unit operation interprets this local example. The source does not state a general unit-reversal procedure."
+  },
+  "table_structure": {
+    "source": "Table4 is two HTML tables, with 25 image cells and 25 label cells.",
+    "visual_limit": "The full alphabet was not visually reviewed. Four sign images and Figure1 were viewed.",
+    "correction": "The first extraction omitted the earlier table and included a later example. The original and corrected fragments are retained.",
+    "corrected_structure": "results/sherwood-primary-method-2026-09-30/source-search/table4-structure.json",
+    "failed_structure": "results/sherwood-primary-method-2026-09-30/source-search/table4-structure-incomplete.json"
+  },
+  "review_limits": [
+    "The author printed input is an assumption for this calculation.",
+    "The u sign image request failed with HTTP502.",
+    "Some archive images use capture dates different from the method page.",
+    "No complete alphabet image review, manuscript transcription, independent botanical identification, corpus run, or blind translation test occurred.",
+    "The earlier disk proposal and the botanical anagram method remain separate."
+  ],
+  "verification": {
+    "project_tests": 85,
+    "project_test_command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+    "project_test_exit_code": 0,
+    "calculation_check": "The report code, direct position check, and separate AI review agree on the conditional outputs.",
+    "evidence_location": "results/sherwood-primary-method-2026-09-30"
+  },
+  "retention": "Raw source bodies, source images, and review records remain outside version control. Published hashes identify the retained versions.",
+  "local_artifact_pins": [
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/comparison-scope.md",
+      "bytes": 2512,
+      "sha256": "4ece2a0b875cbff6e241a369ccd6134cf686e7b1d2d11c8f73727b8bfdc7ca5b"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/example-freeze.json",
+      "bytes": 2546,
+      "sha256": "33a2b227eff4ab92eabac90f4b00696371d3e5f04b195ba9812d01916d46dc24"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/independent-review.md",
+      "bytes": 3814,
+      "sha256": "75836d7b524937b614bfa7c04250adc05e319dbdb94f747ddd724e74c0429b0d"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/literal-example-result.json",
+      "bytes": 1044,
+      "sha256": "72629b81dc597eee63ed75e98f613624902d52be50b68cff67dc2bfa382df9ac"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/project-tests.log",
+      "bytes": 12303,
+      "sha256": "8aff04d4d2dbbd857dd3f314fdded962065819ed90ed004b70c7f676a99db7ea"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/reproduction-check.json",
+      "bytes": 949,
+      "sha256": "610c66b2b16c0195851d10f7b866ef89790f59550a1beab66055b88c1de1c9cb"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/review-closure.json",
+      "bytes": 743,
+      "sha256": "112d024038dfbc3b9d37b61c34fa457b0b84868a22e162e85f0049a7c0fa1b3a"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/root-review.json",
+      "bytes": 4076,
+      "sha256": "5bae897299933f8b3c8488fa7ca7fbbc423fe8861b18129efb931c390ea49b47"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/session-entry.txt",
+      "bytes": 202,
+      "sha256": "f4de5c66907c049b8982ea1267de4be5da7b73806c31c3db936d15a5e97f4de9"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/audit.md",
+      "bytes": 2245,
+      "sha256": "0e31b8b22368293db01fa62752c00b14874e584ff6c255fb6e9491af7cb694c4"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/ava-a-wayback-20190519.jpg",
+      "bytes": 2639,
+      "sha256": "c0f88880a504c8e0a0969f216a47a17ccc524d26b82c7f926a04461b7c2da3e9"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/ava-ch-wayback-20190519.jpg",
+      "bytes": 3867,
+      "sha256": "643b98f12f018a19d19d12e63077753e00f0add3e1442c726e20f3e723135869"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/ava-m-wayback-20190519.jpg",
+      "bytes": 4884,
+      "sha256": "f2ba2f9c0d2c92dcff373c3d91a3f080fc33de4d4c15f4fa70515e6e90920e77"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/ava-s-wayback-20190519.jpg",
+      "bytes": 3001,
+      "sha256": "c349e97e37384decb96db3fa82e1c8b7ebd9b8c1aad836bf50f7c0a4cded565a"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/ava-u-wayback-20190519.jpg",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/botanical-plant-anagrams-wayback-20190519.html",
+      "bytes": 49859,
+      "sha256": "dfdce02000ea160d5c132d6a7c2df2d6ed00e2f7b4844aa4977b489f9e3362b4"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/botanical-plant-anagrams.html",
+      "bytes": 15442,
+      "sha256": "4e32b871b6ec541cffb66bbe693151254a7b7017d3c23370ce3dd36ec7a5d90f"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/capture-botanical-plant-anagrams.json",
+      "bytes": 574,
+      "sha256": "099ebbd949644ebe917b2f12b3e66c86f6a0643341664220007cd52dbfabd681"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/capture-script-and-code.json",
+      "bytes": 564,
+      "sha256": "9ba3001b537ffc0d5b2b0a357aa37f4b38d3971738314198d762ef0767fc3831"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/capture-wayback-pages.json",
+      "bytes": 1189,
+      "sha256": "4a73404ea5574da44b99887dee00941cc512ab94df36343d15937a0b504c37dd"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/figure-1-wayback-20190519.jpg",
+      "bytes": 25246,
+      "sha256": "75447d56ce210b62a83f6f70ede1386897316f6b7246e672d2b36c1b39021fe0"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/image-captures.json",
+      "bytes": 4337,
+      "sha256": "59a24f080c6dd9daea6210097471e2653b9db5c4e613ecb5fc5e6deb063bee19"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/scope.json",
+      "bytes": 1782,
+      "sha256": "7dfcdb4629ba795b89e8aad8be3489932b0c02ebdede3f1442276104996321a5"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/script-and-code-wayback-20190521.html",
+      "bytes": 22617,
+      "sha256": "fe95460018afbf6e42f506a7b8b5698a7d4b4c75cbf2f34a749dbf517e4f42c4"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/script-and-code.html",
+      "bytes": 15442,
+      "sha256": "4e32b871b6ec541cffb66bbe693151254a7b7017d3c23370ce3dd36ec7a5d90f"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/source-manifest.json",
+      "bytes": 11464,
+      "sha256": "06aa1851a3cab4b162f70db10d74c6c69a8ca8dae183d704d33a07d7d8dd5b76"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/table4-structure-incomplete.html",
+      "bytes": 11071,
+      "sha256": "fd483fd905d16d1a717dd09063a2adca2f308793113027c7ca4370bdc2da6324"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/table4-structure-incomplete.json",
+      "bytes": 4742,
+      "sha256": "4a5b057758f7f64c1bdc570e392abed971d2bff4fbab0af768b555f4575e2e4c"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/table4-structure.html",
+      "bytes": 2815,
+      "sha256": "29cad24bf378a0f34ce201369bf731978b02910a0e1ba3a950a44cf489f38f95"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/table4-structure.json",
+      "bytes": 4874,
+      "sha256": "3405ed3fea8637e57bc9ccb5714366a1e97e27dee869e7b46a04a95a573bb83a"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/wayback-cdx-botanical-plant-anagrams.body",
+      "bytes": 367,
+      "sha256": "2a8156c853ee8bc8f7b8f79132bb8d16a2ea2488b76746bd36bc1afabc8f8154"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/wayback-cdx-captures.json",
+      "bytes": 1925,
+      "sha256": "6f6a96dc1a12ee1992e5c6a8043f6b4cc6390ad565305c370a828e033cdb8d8d"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/wayback-cdx-script-and-code.body",
+      "bytes": 510,
+      "sha256": "fda592fe6989d6894dea531e8fc122e11d25846e2847777da086531084915f72"
+    },
+    {
+      "path": "results/sherwood-primary-method-2026-09-30/source-search/wiki-recommendation.md",
+      "bytes": 1077,
+      "sha256": "6b072f160a2784478fff03ac6dd4634728f8c8400bc5b7551f1c806ed6bb453e"
+    }
+  ]
+}
