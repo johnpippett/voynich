@@ -1,0 +1,221 @@
+{
+  "audit_date": "2026-09-29",
+  "scope": "Selected sources and code inspection. No manuscript run or execution of supplied code.",
+  "papers": [
+    {
+      "title": "KST",
+      "record_id": 18483132,
+      "concept_record_id": "18483131",
+      "version": "V1.0",
+      "doi": "10.5281/zenodo.18483132",
+      "publication_date": "2026-02-04",
+      "pdf_url": "https://zenodo.org/api/records/18483132/files/Paper_01_KST_Methodology_English_v1_0.pdf/content",
+      "pdf_sha256": "bec86d9b2ca76841462b8ea5be35362c664683e05ae925171c2705193ce54a88",
+      "pdf_bytes": 146821,
+      "examined_pdf_pages": [
+        1,
+        2,
+        3,
+        10,
+        11,
+        12,
+        16,
+        17
+      ],
+      "total_pdf_pages": 17,
+      "metadata_sha256": "d2e8c5a2d259319fc310779d8c3a5d104e656626843c359ac2aafbbf58a8cb4b",
+      "machine_navigation_pages": 17
+    },
+    {
+      "title": "English Abbreviation Hypothesis",
+      "record_id": 18483785,
+      "concept_record_id": "18483784",
+      "version": "V1.0",
+      "doi": "10.5281/zenodo.18483785",
+      "publication_date": "2026-02-04",
+      "pdf_url": "https://zenodo.org/api/records/18483785/files/Paper_02_English_Abbrev_English_v1_0.pdf/content",
+      "pdf_sha256": "c05be774d06f39083227b3a0a88ebf0e7e77c49ba2a5a1d4938341563f163ad2",
+      "pdf_bytes": 155663,
+      "examined_pdf_pages": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ],
+      "total_pdf_pages": 17,
+      "metadata_sha256": "1a221dc2e3b4a44f8c92487df2f1efee987ca9cd9865780ae2e0660b94435846",
+      "machine_navigation_pages": 17
+    }
+  ],
+  "page_images": [
+    {
+      "paper": "English Abbreviation Hypothesis",
+      "pdf_page": 7,
+      "sha256": "56fdd2af30fdc8763e1046d444dd763c63b5446b86cf95c57fcf1e3676c5cd02",
+      "observer": "Primary agent"
+    },
+    {
+      "paper": "English Abbreviation Hypothesis",
+      "pdf_page": 11,
+      "sha256": "340c2fb5fa385fa39945a3689ca41c3ded9c5d44caa2b51c7618a4fa533d0f9d",
+      "observer": "Primary agent"
+    },
+    {
+      "paper": "English Abbreviation Hypothesis",
+      "pdf_page": 5,
+      "sha256": "8ca2490ee984494ed0a1e1e34c8095a5711b9ac2a4e26c241511d489f38c2e58",
+      "observer": "Separate AI task"
+    },
+    {
+      "paper": "English Abbreviation Hypothesis",
+      "pdf_page": 15,
+      "sha256": "8a836117e2a063f6f58d11cfb372fda0423fc9b5479f3814831f65f0956e5b58",
+      "observer": "Separate AI task"
+    }
+  ],
+  "original_repository_access": {
+    "url": "https://github.com/IgnisTerraAI/voynich-kst-verification",
+    "resolved_commit": null,
+    "requests": [
+      {
+        "url": "https://api.github.com/repos/IgnisTerraAI/voynich-kst-verification",
+        "http_status": 404,
+        "sha256": "4f50e254a719a6b1b06b529bdaa08980e4acf0878aad0090cba7771f6ebdf0b9",
+        "byte_count": 118
+      },
+      {
+        "url": "https://github.com/IgnisTerraAI/voynich-kst-verification",
+        "http_status": 404,
+        "sha256": "43380676f23b7f4c272dff3fef858a80c333b8c351ba6bef8e9bdad40b38a56a",
+        "byte_count": 268232
+      },
+      {
+        "url": "https://raw.githubusercontent.com/IgnisTerraAI/voynich-kst-verification/main/README.md",
+        "http_status": 404,
+        "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+        "byte_count": 14
+      },
+      {
+        "url": "https://raw.githubusercontent.com/IgnisTerraAI/voynich-kst-verification/master/README.md",
+        "http_status": 404,
+        "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+        "byte_count": 14
+      }
+    ]
+  },
+  "author_site": {
+    "pages": [
+      {
+        "requested_url": "https://blazecipher.com",
+        "final_url": "https://blazecipher.com",
+        "http_status": 200,
+        "sha256": "ba9aaaad8cc66ac687b8385e0455451a21c2b81edd2fce3d9a68ddac754fe342",
+        "byte_count": 16818
+      },
+      {
+        "requested_url": "https://blazecipher.com/laboratorium.html",
+        "final_url": "https://blazecipher.com/laboratorium",
+        "http_status": 200,
+        "sha256": "7d742ebf6563a91d703858be99f1d68ecf04c095bb47a5442ee2fc8594eb9274",
+        "byte_count": 15310
+      },
+      {
+        "requested_url": "https://blazecipher.com/liber-lucis.html",
+        "final_url": "https://blazecipher.com/liber-lucis",
+        "http_status": 200,
+        "sha256": "c97d70f5eb16f1339493c6766dad0182e93f79b83a78861143f49b32b5fa080e",
+        "byte_count": 26222
+      }
+    ],
+    "corrected_link_source": "https://blazecipher.com/liber-lucis",
+    "corrected_link": "https://github.com/ignisterra-ai/voynich-kst-verification"
+  },
+  "corrected_repository": {
+    "url": "https://github.com/ignisterra-ai/voynich-kst-verification",
+    "commit": "165b96d92d86718de1fd5268a84086b12ae68e1c",
+    "tree_url": "https://api.github.com/repos/ignisterra-ai/voynich-kst-verification/git/trees/165b96d92d86718de1fd5268a84086b12ae68e1c?recursive=1",
+    "tree_sha256": "6013f51eb73a469eacfc49c0c1d27db878da2e39c9dfaabdaa7a838ecff6f324",
+    "tree_entries": 20,
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/ignisterra-ai/voynich-kst-verification/165b96d92d86718de1fd5268a84086b12ae68e1c/README.md",
+        "sha256": "2dbc56104f3e7d3a6228b2c95f13697bcee6f3b2799a34dbc5539a52601764f3",
+        "byte_count": 12298
+      },
+      {
+        "path": "data/dictionary_v15_keys.json",
+        "url": "https://raw.githubusercontent.com/ignisterra-ai/voynich-kst-verification/165b96d92d86718de1fd5268a84086b12ae68e1c/data/dictionary_v15_keys.json",
+        "sha256": "3659b4397ce316c5df0d0ea3c898752594978d61bc9ba5cd19cd9382532bd241",
+        "byte_count": 28187
+      },
+      {
+        "path": "tools/coverage_calculator.py",
+        "url": "https://raw.githubusercontent.com/ignisterra-ai/voynich-kst-verification/165b96d92d86718de1fd5268a84086b12ae68e1c/tools/coverage_calculator.py",
+        "sha256": "3ddbb1b41205742f0d79efe928bbfa19aed3b9a3be3b833264fe4e63b1d7e8a1",
+        "byte_count": 6939
+      },
+      {
+        "path": "docs/KST_Methodology_Public.md",
+        "url": "https://raw.githubusercontent.com/ignisterra-ai/voynich-kst-verification/165b96d92d86718de1fd5268a84086b12ae68e1c/docs/KST_Methodology_Public.md",
+        "sha256": "734141f1e4d610f36a64e753b5e401a764ab49b03b273fc3c7b2c591da1d7d82",
+        "byte_count": 6157
+      }
+    ],
+    "version_limit": "The papers are version1.0. The current repository describes KSTv1.3. This check does not reconstruct the code at paper publication."
+  },
+  "independent_arithmetic": {
+    "source_pages": [
+      5,
+      15
+    ],
+    "result": {
+      "model": "Eight independent, uniform matches from 26 letters",
+      "alphabet_size": 26,
+      "number_of_matches": 8,
+      "denominator": 208827064576,
+      "exact_probability": "1/208827064576",
+      "decimal_probability": "4.78865132750100262559561000033E-12",
+      "reciprocal": 208827064576,
+      "probability_is_below_1e-11": true,
+      "probability_implied_by_one_in_four_trillion": "2.5E-13",
+      "model_probability_divided_by_one_in_four_trillion_probability": "19.1546053100040105023824400013"
+    },
+    "script_sha256": "fe6617f5f7b63f4747ab9a2e1e6f5398dcd828298bffd7fac06d5c01178bb591",
+    "result_sha256": "4c29cafeee2aada41af2accf6d0d26796c359e9b23ab95276dd49bb2103978e3"
+  },
+  "dictionary_check": {
+    "sample_note_present": true,
+    "defined_single_character_count": 25,
+    "excluded_lowercase_latin_letter": "w",
+    "serialized_entries": 384,
+    "parsed_distinct_keys": 383,
+    "duplicate_key": "v",
+    "duplicate_values_equal": true
+  },
+  "code_bound": {
+    "alphabet": "The 25 defined single-character keys.",
+    "type": "Source-code implication, checked independently; not a manuscript coverage result.",
+    "minimum_length": 1,
+    "maximum_length_proved": 11
+  },
+  "scope_changes": [
+    "Followed Paper1 named semantic proposal through concept18483784 to version18483785.",
+    "After the original repository link failed, the author site supplied the corrected link.",
+    "Inspected the corrected tree, README, and three further source files."
+  ],
+  "next_requirement": "A complete fixed decoding specification and independent tests of assigned meanings.",
+  "project_tests": {
+    "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+    "tests": 85,
+    "result": "pass",
+    "log_sha256": "231faa9b3d528b306d6679d62e36c33e1ab5558138ba6f8c7a14a431236e1d1b"
+  },
+  "review_sha256": "08105ecaec8c43c12ab82a4dfaae307850cf4e747fac37e4915517375c12a740"
+}
