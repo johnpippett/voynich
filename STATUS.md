@@ -9,6 +9,11 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [Ulyanenkov and Jama follow-up](docs/research/ulyanenkov-jama-method-check-2026-09-30.md) examines their reading methods beyond the earlier source selection.
+Ulyanenkov supplies a codebook and proposed connected text, but some rule selections remain unresolved.
+Jama reports observations on both sides of folio 91, which Yale lists as missing.
+These sources supply no validated key or translation. No new manuscript decoding run followed.
+
 The [Decipherist source check](docs/research/decipherist-reading-method-check-2026-09-30.md) found missing rules between two printed sign sequences and their claimed Italian words.
 Its historical comparisons document medical texts but supply no Voynich sign values.
 The fixed table calculation and another AI source review agree. No manuscript decoding run followed.
