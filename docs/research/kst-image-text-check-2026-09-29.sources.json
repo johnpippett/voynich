@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "check_date": "2026-09-29",
+  "purpose": "Check whether the published image tests provide independent semantic validation.",
+  "paper3": {
+    "doi": "10.5281/zenodo.18627510",
+    "record_url": "https://zenodo.org/api/records/18627510",
+    "record_sha256": "053e60c76a3db759fc1f02fe62c9d40ac3a2dd51f3284d6728c35874f66be47b",
+    "metadata_version": "V1.0",
+    "pdf_version": "v2.1",
+    "pdf_date": "2026-02-23",
+    "pdf_file": "Paper_03_Image_Text_CrossValidation_English_v2_1.pdf",
+    "url": "https://zenodo.org/api/records/18627510/files/Paper_03_Image_Text_CrossValidation_English_v2_1.pdf/content",
+    "sha256": "8bd9d9ccbd5db57fefedf7faa3ddd2ee269b38d2227c3854d716484f94358b2b",
+    "bytes": 138105,
+    "zenodo_checksum": "md5:496c7950252db4d7a4b2d8e85b8508cc",
+    "page_count": 15,
+    "root_full_text_pages": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "root_initial_pages": [
+      1,
+      2
+    ],
+    "root_visual_pages": [
+      7,
+      9,
+      10,
+      14
+    ],
+    "worker_protocol_pages": [
+      8,
+      9,
+      13,
+      14,
+      15
+    ],
+    "navigation_scope": "Full PDF text indexed for navigation. The protocol worker also saw additional body text. This was not a blind test."
+  },
+  "paper4": {
+    "doi": "10.5281/zenodo.18627514",
+    "record_url": "https://zenodo.org/api/records/18627514",
+    "record_sha256": "0f3c53c6e07b15cc550fc866ecdc57a930726084cf58137cdd714b5afb7dfd60",
+    "metadata_version": "V1.0",
+    "pdf_version": "v2.1",
+    "pdf_date": "2026-02-23",
+    "pdf_file": "Paper_04_Herbal_ABCD_Classification_English_v2_1.pdf",
+    "url": "https://zenodo.org/api/records/18627514/files/Paper_04_Herbal_ABCD_Classification_English_v2_1.pdf/content",
+    "sha256": "22730f4b05dc715bcec5444c9787c44305dad12a3a9e6ab1052cfa1d52fa10c7",
+    "bytes": 120120,
+    "zenodo_checksum": "md5:dbf1bb7b3d54688611017979acf6bcd0",
+    "page_count": 16,
+    "root_full_text_pages": [
+      8,
+      9,
+      10,
+      13,
+      15,
+      16
+    ],
+    "root_header_pages": [
+      3,
+      4
+    ],
+    "root_visual_pages": [
+      9,
+      10
+    ],
+    "worker_initial_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "worker_focused_pages": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      13,
+      15,
+      16
+    ],
+    "scope_limit": "Selected methods, results, and limitations; not a full human review of physical interpretations."
+  },
+  "repository": {
+    "url": "https://github.com/ignisterra-ai/voynich-kst-verification",
+    "commit": "165b96d92d86718de1fd5268a84086b12ae68e1c",
+    "tree_sha256": "6013f51eb73a469eacfc49c0c1d27db878da2e39c9dfaabdaa7a838ecff6f324",
+    "tree_complete": true,
+    "selected_files": [
+      {
+        "path": "docs/Statistical_Claims.md",
+        "url": "https://raw.githubusercontent.com/ignisterra-ai/voynich-kst-verification/165b96d92d86718de1fd5268a84086b12ae68e1c/docs/Statistical_Claims.md",
+        "byte_count": 6135,
+        "sha256": "2082d4d5b86a7d75a5ff75766451660193a27334ea75e59c14631900b1fd11b8"
+      },
+      {
+        "path": "verification/independent_verification.py",
+        "url": "https://raw.githubusercontent.com/ignisterra-ai/voynich-kst-verification/165b96d92d86718de1fd5268a84086b12ae68e1c/verification/independent_verification.py",
+        "byte_count": 13459,
+        "sha256": "12ebcf7de44013c339afb158b845e2d524c9b425cadc60979e281a096aaf7b55"
+      },
+      {
+        "path": "data/section_statistics.csv",
+        "url": "https://raw.githubusercontent.com/ignisterra-ai/voynich-kst-verification/165b96d92d86718de1fd5268a84086b12ae68e1c/data/section_statistics.csv",
+        "byte_count": 396,
+        "sha256": "b530b8eec0b360d22db24c497295ca39f597f9030d128adca7a6910acced0d3f"
+      }
+    ],
+    "supplied_code_executed": false,
+    "limit": "Complete path listing and selected file contents, not all repository file contents."
+  },
+  "yale_image": {
+    "url": "https://collections.library.yale.edu/iiif/2/1006123/full/full/0/default.jpg",
+    "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006123",
+    "label": "25v",
+    "dimensions": [
+      2863,
+      3769
+    ],
+    "bytes": 2476763,
+    "sha256": "0f135a9525a84dfccf038a2221c7178dfbfb3b1a1fe4b6d0f62aeb6e8b655d73",
+    "manifest_url": "https://collections.library.yale.edu/manifests/2002046",
+    "retained_manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+    "canvas_sha256": "a720654df88ed3d40c396c91606cc8fbffa86ae43d2706e101d57715e0cc6940"
+  },
+  "image_review": {
+    "type": "Source verification after reading the candidate interpretation",
+    "not_blind": true,
+    "observations": "Small outlined creature beside the lower plant part; large green pointed forms; brown branching forms below.",
+    "limit": "No word meaning, machine function, or independent prediction established.",
+    "source_selection": "The v2 sequences lookup failed; the actual manifest uses v3 items. Selection completed with the v3 schema."
+  },
+  "conditional_probability": {
+    "source": "Paper4 section3.3 PDFpage9",
+    "specified_model": "Independent page events with P(A primary)=1/4. The product requires independence, which the source does not demonstrate.",
+    "formula": "(3/4)^227",
+    "numerator": 2025465365549235636389379590279612045176776005882811610332067323733925450296747107485272801773488928849912987,
+    "denominator": 46517678354918840995156723704832290198633047083988355858015372747560914439257467092876227245680868195888801382801035387746214504231337984,
+    "value": 4.354184123496912e-29,
+    "interpretation": "Probability of zero A-primary pages under the specified null. No image labels enter this formula.",
+    "no_corpus_run": true
+  },
+  "verification": {
+    "project_command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+    "tests_passed": 85,
+    "log_sha256": "ee9f06f80e2fb738ee53eaa433417335f17652e2a02656bb2ec082f215206a91",
+    "manuscript_decoding": false,
+    "new_sign_values": false,
+    "external_scholarly_validation": false
+  },
+  "access_limits": [
+    "Web reader could not open the two Zenodo URLs or the Yale catalog page.",
+    "Direct Zenodo API downloads and the Yale IIIF image succeeded.",
+    "The complete V15 meanings and manuscript prediction records were not obtained."
+  ],
+  "retention": "Raw downloads and detailed records remain in the ignored result directory.",
+  "render_sha256": {
+    "paper3-page-7": "48a774e9a988f9df20f7866174d161be1663dbbca8ca999260ce510f994e28d0",
+    "paper3-page-9": "67c232020d86a16ce676d5fd99823d55fb89d3d83bd877c84725f99333edcaa3",
+    "paper3-page-10": "d3be3f687b1e0fca20a4fec7d5bf19b2abfb784999ccf2144e5b3d158f6808f7",
+    "paper3-page-14": "24b0956173fed471d8044aee9d1688ccae0e962956981bb455e2dbb5771fc668",
+    "paper4-page-9": "79ff9a9d7c19f6aa509f8c4195a390f4ba1ca8e963575f7d3cb62a9b679cc9c6",
+    "paper4-page-10": "a5bc33aa8bee7f7072d1ac0b09f4a5675b692e54fd80d06e5c995622f321bb1b"
+  }
+}
