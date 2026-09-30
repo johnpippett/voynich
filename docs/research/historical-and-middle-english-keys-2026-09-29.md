@@ -107,10 +107,14 @@ The saved records keep those unsuccessful selections. Printed-to-PDF page offset
 
 ## Strong source access
 
+This section records the initial access failures.
+A later [archived-source check](strong-archived-source-check-2026-09-29.md) obtained publication reprints, worksheets, and a typed correspondence collection.
+
 The [PubMed record](https://pubmed.ncbi.nlm.nih.gov/17740745/) identifies Strong's 1945 article in *Science*, volume 101, pages 608–609.
 The [publisher PDF](https://doi.org/10.1126/science.101.2633.608) request returned HTTP 403.
 The supplied letter-bundle link returned HTTP 404, and one archive-index request timed out.
-No primary PDF page was read. These failures give no conclusion about the contents or completeness of Strong's key.
+No primary PDF page was read in that initial check.
+These failures give no conclusion about the contents or completeness of Strong's key.
 
 Two discovery queries exposed 28 result cards, above the initial five-record limit.
 The worker recorded this failure and issued no further discovery queries.
