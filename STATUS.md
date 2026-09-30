@@ -9,6 +9,10 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [Simonin source check](docs/research/simonin-reading-method-check-2026-09-30.md) records the author's clarification that proposed meanings remain unconfirmed.
+Its thematic scores do not depend on the assigned meanings, and its content searches examine generated English terms.
+These source findings supply no independently validated reading. No manuscript decoding run followed.
+
 The [Altrideicktus source check](docs/research/altrideicktus-reading-method-check-2026-09-30.md) found incomplete selection rules in its printed reading method.
 One abbreviation sign receives different expansions in the partial key and worked example, without a stated rule for that change.
 The examined material does not independently validate the proposed meanings. No manuscript decoding run followed.

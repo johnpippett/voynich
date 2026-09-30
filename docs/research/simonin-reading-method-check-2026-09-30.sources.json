@@ -1,0 +1,278 @@
+{
+  "date": "2026-09-30",
+  "repository": "https://github.com/GSimonin90/voynich-system-decipherment",
+  "commit": "cc9ea7663a5f87b50fe879c650079036c29cc6a3",
+  "scope": "README, six selected method files, repository metadata, and author addendum. No supplied program or corpus execution.",
+  "sources": [
+    {
+      "file": "head.json",
+      "url": "https://api.github.com/repos/GSimonin90/voynich-system-decipherment/commits/main",
+      "final_url": "https://api.github.com/repos/GSimonin90/voynich-system-decipherment/commits/main",
+      "status": 200,
+      "bytes": 5627,
+      "sha256": "d405c47492dadb2ff832b05edcc8df8efff1152a8ab6e2fc4c2420bbcedc6bf9",
+      "retrieved_utc": "2026-09-30T12:02:33.749572+00:00"
+    },
+    {
+      "file": "tree.json",
+      "url": "https://api.github.com/repos/GSimonin90/voynich-system-decipherment/git/trees/cc9ea7663a5f87b50fe879c650079036c29cc6a3?recursive=1",
+      "final_url": "https://api.github.com/repos/GSimonin90/voynich-system-decipherment/git/trees/cc9ea7663a5f87b50fe879c650079036c29cc6a3?recursive=1",
+      "status": 200,
+      "bytes": 15050,
+      "sha256": "6c35e570725e61778c54572a9a6f98d1021cd7583ffdf9ba7cacf8e8bc370439",
+      "retrieved_utc": "2026-09-30T12:02:33.969193+00:00"
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/GSimonin90/voynich-system-decipherment/cc9ea7663a5f87b50fe879c650079036c29cc6a3/README.md",
+      "final_url": "https://raw.githubusercontent.com/GSimonin90/voynich-system-decipherment/cc9ea7663a5f87b50fe879c650079036c29cc6a3/README.md",
+      "status": 200,
+      "bytes": 5990,
+      "sha256": "1ffbf119accad5aac24c73a40247e0b84b663fb780757ca01f6352f22e42e2aa",
+      "retrieved_utc": "2026-09-30T12:02:34.179464+00:00"
+    },
+    {
+      "file": "scripts/10a_translate_folio_advanced.py",
+      "url": "https://raw.githubusercontent.com/GSimonin90/voynich-system-decipherment/cc9ea7663a5f87b50fe879c650079036c29cc6a3/scripts/10a_translate_folio_advanced.py",
+      "final_url": "https://raw.githubusercontent.com/GSimonin90/voynich-system-decipherment/cc9ea7663a5f87b50fe879c650079036c29cc6a3/scripts/10a_translate_folio_advanced.py",
+      "status": 200,
+      "bytes": 16037,
+      "sha256": "278d45317aea7399757c3fa23095c6cbdbf3facf3a9bc07c6f8e78ba75cafdc2",
+      "retrieved_utc": "2026-09-30T12:03:01.533037+00:00"
+    },
+    {
+      "file": "scripts/10b_translate_all_improved.py",
+      "url": "https://raw.githubusercontent.com/GSimonin90/voynich-system-decipherment/cc9ea7663a5f87b50fe879c650079036c29cc6a3/scripts/10b_translate_all_improved.py",
+      "final_url": "https://raw.githubusercontent.com/GSimonin90/voynich-system-decipherment/cc9ea7663a5f87b50fe879c650079036c29cc6a3/scripts/10b_translate_all_improved.py",
+      "status": 200,
+      "bytes": 11940,
+      "sha256": "8a13985794a4607e85799e6085504f2b689bdd47db60dfd35d7fa00830154204",
+      "retrieved_utc": "2026-09-30T12:03:01.547860+00:00"
+    },
+    {
+      "file": "scripts/09_find_specific_benchmarks.py",
+      "url": "https://raw.githubusercontent.com/GSimonin90/voynich-system-decipherment/cc9ea7663a5f87b50fe879c650079036c29cc6a3/scripts/09_find_specific_benchmarks.py",
+      "final_url": "https://raw.githubusercontent.com/GSimonin90/voynich-system-decipherment/cc9ea7663a5f87b50fe879c650079036c29cc6a3/scripts/09_find_specific_benchmarks.py",
+      "status": 200,
+      "bytes": 5535,
+      "sha256": "d7928c2fea53c3c4f8bedab04affa43b9348b17f4bc13bc221072c4bd261b5be",
+      "retrieved_utc": "2026-09-30T12:03:01.531394+00:00"
+    },
+    {
+      "file": "scripts/08a_find_process_signatures_v5.py",
+      "url": "https://raw.githubusercontent.com/GSimonin90/voynich-system-decipherment/cc9ea7663a5f87b50fe879c650079036c29cc6a3/scripts/08a_find_process_signatures_v5.py",
+      "final_url": "https://raw.githubusercontent.com/GSimonin90/voynich-system-decipherment/cc9ea7663a5f87b50fe879c650079036c29cc6a3/scripts/08a_find_process_signatures_v5.py",
+      "status": 200,
+      "bytes": 8404,
+      "sha256": "25212820b5a32c5e8810a672989b9e3d20d90a05f0098583df94b63c9453549f",
+      "retrieved_utc": "2026-09-30T12:03:01.531279+00:00"
+    },
+    {
+      "file": "scripts/02a_thematic_analysis_liftscore.py",
+      "url": "https://raw.githubusercontent.com/GSimonin90/voynich-system-decipherment/cc9ea7663a5f87b50fe879c650079036c29cc6a3/scripts/02a_thematic_analysis_liftscore.py",
+      "final_url": "https://raw.githubusercontent.com/GSimonin90/voynich-system-decipherment/cc9ea7663a5f87b50fe879c650079036c29cc6a3/scripts/02a_thematic_analysis_liftscore.py",
+      "status": 200,
+      "bytes": 5867,
+      "sha256": "9b28093a21da90371299f8e20a51216cfe8db6007748c4b174509dd5c994dc52",
+      "retrieved_utc": "2026-09-30T12:03:01.561580+00:00"
+    },
+    {
+      "file": "data/roots.txt",
+      "url": "https://raw.githubusercontent.com/GSimonin90/voynich-system-decipherment/cc9ea7663a5f87b50fe879c650079036c29cc6a3/data/roots.txt",
+      "final_url": "https://raw.githubusercontent.com/GSimonin90/voynich-system-decipherment/cc9ea7663a5f87b50fe879c650079036c29cc6a3/data/roots.txt",
+      "status": 200,
+      "bytes": 1386,
+      "sha256": "7ec9d2c89e88ed04da1ccf9c49ed49835c0866b727df48348888a00b306d5ab6",
+      "retrieved_utc": "2026-09-30T12:03:01.561513+00:00"
+    },
+    {
+      "file": "addendum-record.json",
+      "url": "https://zenodo.org/api/records/17508081",
+      "final_url": "https://zenodo.org/api/records/17508082",
+      "status": 200,
+      "bytes": 5390,
+      "sha256": "bfb0e12c7f857cf7bb140baaa8c46028283d2b2b91694ccadafbc779a49d7fd7",
+      "retrieved_utc": "2026-09-30T12:03:59.194944+00:00"
+    },
+    {
+      "file": "addendum.pdf",
+      "url": "https://zenodo.org/api/records/17508082/files/addendum.pdf/content",
+      "final_url": "https://zenodo.org/api/records/17508082/files/addendum.pdf/content",
+      "status": 200,
+      "bytes": 61415,
+      "sha256": "76f982f85d4b1bd9e0e22fae8a8b3ce63cb9bc5b29ebcfca33cfb2167d430186",
+      "repository_md5": "md5:cd93ccde605d824260fd48e428c2df13",
+      "repository_md5_match": true,
+      "retrieved_utc": "2026-09-30T12:04:35.487972+00:00"
+    }
+  ],
+  "method_selection": [
+    "scripts/10a_translate_folio_advanced.py",
+    "scripts/10b_translate_all_improved.py",
+    "scripts/09_find_specific_benchmarks.py",
+    "scripts/08a_find_process_signatures_v5.py",
+    "scripts/02a_thematic_analysis_liftscore.py",
+    "data/roots.txt"
+  ],
+  "addendum": {
+    "requested_record": "https://zenodo.org/api/records/17508081",
+    "resolved_record_id": 17508082,
+    "pdf_pages_reviewed": [
+      1,
+      2
+    ],
+    "pdf_date": "2025-11-02",
+    "render_command": "pdftoppm -r 145 -png sources/addendum.pdf renders/addendum",
+    "renders": [
+      {
+        "file": "renders/addendum-1.png",
+        "sha256": "12605ae0be48dd4fc27c9a83f5caaae88d5deb882c6de0554704e6aa17346599",
+        "width": 1199,
+        "height": 1696
+      },
+      {
+        "file": "renders/addendum-2.png",
+        "sha256": "0111e1978d5d0b1d49fe6d99cc35b602bdde6405125c6208f99df17cf6341d37",
+        "width": 1199,
+        "height": 1696
+      }
+    ]
+  },
+  "source_ranges": {
+    "scripts/10a_translate_folio_advanced.py": [
+      [
+        9,
+        27
+      ],
+      [
+        48,
+        196
+      ],
+      [
+        201,
+        305
+      ]
+    ],
+    "scripts/10b_translate_all_improved.py": [
+      [
+        10,
+        28
+      ],
+      [
+        47,
+        173
+      ]
+    ],
+    "scripts/02a_thematic_analysis_liftscore.py": [
+      [
+        8,
+        40
+      ],
+      [
+        54,
+        124
+      ]
+    ],
+    "scripts/09_find_specific_benchmarks.py": [
+      [
+        11,
+        44
+      ],
+      [
+        75,
+        122
+      ]
+    ],
+    "scripts/08a_find_process_signatures_v5.py": [
+      [
+        12,
+        55
+      ],
+      [
+        121,
+        154
+      ]
+    ]
+  },
+  "static_findings": {
+    "thematic_root_count": 33,
+    "thematic_meaning_invariance": "Keep ordered root keys, input, section map and selection rules fixed. Replacing dictionary value strings changes only the displayed Concept field, not numerical counts, scores, or row order.",
+    "thematic_score": "For a reported root with at least ten matches, (section_root_count/section_word_count)/(total_root_count/total_word_count). Empty sections receive zero. Values are formatted to two decimal places.",
+    "denominator": "All parsed words in recognized sections, including words without a root match.",
+    "benchmark_count_unit": "Satisfied signature per Translation line, not distinct paragraph.",
+    "equivalent_predicate_pairs": [
+      [
+        "POSSIBLE DETAILED CALCINATION (Type 1)",
+        "POSSIBLE DETAILED CALCINATION (Type 3)"
+      ],
+      [
+        "POSSIBLE DETAILED CALCINATION (Type 2)",
+        "POSSIBLE DETAILED CALCINATION (Type 4)"
+      ]
+    ],
+    "runtime_measurement": false
+  },
+  "verification": {
+    "captured_source_files": 11,
+    "all_hashes_and_byte_counts_match": true,
+    "separate_AI_reviews": [
+      "translation contract",
+      "metric source"
+    ],
+    "project_tests": {
+      "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+      "passed": 85,
+      "failed": 0,
+      "output_sha256": "0783637a8d6d591c299b86d190391211545e1f10d0fc8c79076946fcc01d685f"
+    }
+  },
+  "records": [
+    {
+      "file": "scope.json",
+      "sha256": "807cc2f0602e1c26608a11a637750e16e6862b25117e44dd92b415af22beb66d"
+    },
+    {
+      "file": "file-selection.json",
+      "sha256": "f300d6432c18bdd7c6d458d6521db8a7bfde0fe6bd19cd247de40cb11dc351a5"
+    },
+    {
+      "file": "addendum-page-selection.json",
+      "sha256": "85c8a44fff9ea3bf90d9846b1cae114b78b9d559e098f73f26c2e986cbac527e"
+    },
+    {
+      "file": "root-source-audit.json",
+      "sha256": "f1c81ad437fae7adbe1b9268711ece5bd27f1d391247826d58343eec4dd1d4ec"
+    },
+    {
+      "file": "translation-contract-audit.md",
+      "sha256": "a306de2e91341954330a84e99b8e8e6ab71af45df766f613df039cfd74598fc4"
+    },
+    {
+      "file": "translation-contract-audit.json",
+      "sha256": "383aede2fa1411e470c8206da2fb4c0cfce2166e2590fc136538be965f01219d"
+    },
+    {
+      "file": "metric-source-audit.md",
+      "sha256": "5567fceef43d6dfd433294358d1757fe673edf10d43f96b5c132261714744320"
+    },
+    {
+      "file": "metric-source-audit.json",
+      "sha256": "be56d7a8f8b27c9e0422c9836436b4afb2c9ee8e91c4dd7ecc8cb3f3fc54733a"
+    },
+    {
+      "file": "integration-review.json",
+      "sha256": "b4dc15b0a89ebade1ce5a9f1909f75fa6e4be09c8b4028572f1a04108d2b5304"
+    },
+    {
+      "file": "source-records-reader-snapshot.json",
+      "sha256": "2b74c8cca6ebd021027f015f5192df0cc7f41b7958d3017eea65db4102b2c368"
+    }
+  ],
+  "limits": [
+    "The author marks semantic interpretations as unconfirmed.",
+    "The post-publication statistical tests were not reproduced.",
+    "The structural claims were not comprehensively validated.",
+    "No manuscript counts, source translation output, or new sign assignments were measured.",
+    "Manual source traces are not runtime tests."
+  ]
+}
