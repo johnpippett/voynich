@@ -12,11 +12,13 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 The [visual-unit inventory](docs/research/visual-unit-inventory-2026-09-30.md) finds 30 distinct labels in ZL training under the fixed six-compound tokenizer.
 That count rules out a total injective map to 26 letters under this representation.
 A published 23-form list covers about 99.8 percent of both training cohorts. This is coverage, not reading accuracy.
-No key search followed this inventory count.
+The inventory count itself supplies no letter values.
 
-A [separate common-unit pilot](docs/plans/common-visual-pilot-v1.md) now has a fixed method and passing synthetic command checks.
-It keeps outside units unknown and requires four artificial controls before manuscript loading.
-The method freeze precedes the first real calibration. No real pilot result was available at that freeze.
+The [separate common-unit pilot](reports/COMMON_VISUAL_PILOT.md) passed all four artificial controls, then failed its fixed Latin-baseline condition.
+The observed ZL test mean was 4.616742, above the Latin reference mean of 2.708901.
+Unknown units stayed in all coverage and score denominators.
+This version stops without further tuning or a reading study. An isolated replay matched all 20 deterministic output files.
+A separate direct-count audit passed for source positions, maps, scores, coverage, and decisions.
 
 The [Fontana source check](docs/research/fontana-transcription-source-2026-09-30.md) found Schulte's digitized 1910 transcription.
 The opening page points to the original source folio, but the reviewed material supplies no complete sign-value table.
