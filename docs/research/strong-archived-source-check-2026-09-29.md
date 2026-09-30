@@ -6,6 +6,9 @@ The worksheets contain partial key material. This check did not establish a repe
 The earlier [source check](historical-and-middle-english-keys-2026-09-29.md#strong-source-access) recorded failed access through other routes.
 Those failures remain part of the record.
 
+A [worksheet follow-up](strong-worksheet-example-check-2026-09-29.md) checks one number sequence and a proposed letter-shift operation.
+It finds partial agreement without a unique output or a validated key.
+
 ## Source identity
 
 An [archived index](https://web.archive.org/web/20070202230441id_/http://internet.cybermesa.com:80/~galethog/Voynich/) identifies a file of Strong's notes, publications, and worksheets.

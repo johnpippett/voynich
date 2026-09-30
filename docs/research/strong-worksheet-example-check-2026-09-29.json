@@ -1,0 +1,357 @@
+{
+  "status": "Exploratory worksheet check. The proposed letters were known before model selection. This is not key validation.",
+  "source": {
+    "url": "https://web.archive.org/web/20061215213410id_/http://internet.cybermesa.com:80/~galethog/Voynich/Strong.pdf",
+    "bytes": 11393665,
+    "sha256": "33424b24695908088293a7a7e21693dd85e5fad394a354e877227e001634121c",
+    "pdf_pages": [
+      75,
+      82
+    ]
+  },
+  "numeric": {
+    "groups": [
+      "13579",
+      "7531",
+      "?7?1357",
+      "97531?",
+      "7?",
+      "13579",
+      "753",
+      "1?7?13"
+    ],
+    "unknown_marker": "?",
+    "candidate_cycle": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      7,
+      5,
+      3,
+      1,
+      4,
+      7,
+      4
+    ],
+    "limits": [
+      "Six triangular marks remain unresolved. Their positions are retained.",
+      "The initial unclear mark is excluded. No value is supplied.",
+      "Only visible marks are included. The final group may continue beyond the boundary.",
+      "The cycle was seen in published discussion before this calculation.",
+      "The comparison advances once per recorded position across group boundaries. It adds no steps for spaces and does not test spacing rules."
+    ]
+  },
+  "shift": {
+    "alphabet": "ABCDEFGHIKLMNOPQRSTUVWX",
+    "row": 1,
+    "positions": [
+      {
+        "position": 2,
+        "source_shape_class": "bench with separate caret above",
+        "candidate_columns": [
+          "G"
+        ],
+        "lower_digit": 1,
+        "target_letters": [
+          "H"
+        ]
+      },
+      {
+        "position": 3,
+        "source_shape_class": "open curve",
+        "candidate_columns": [
+          "H",
+          "S"
+        ],
+        "lower_digit": 3,
+        "target_letters": [
+          "V"
+        ]
+      },
+      {
+        "position": 4,
+        "source_shape_class": "double-loop form",
+        "candidate_columns": [
+          "A",
+          "F",
+          "M"
+        ],
+        "lower_digit": 5,
+        "target_letters": [
+          "R"
+        ]
+      },
+      {
+        "position": 5,
+        "source_shape_class": "closed-loop form",
+        "candidate_columns": [
+          "D",
+          "K",
+          "L",
+          "O",
+          "V"
+        ],
+        "lower_digit": 7,
+        "target_letters": [
+          "U",
+          "V"
+        ]
+      },
+      {
+        "position": 6,
+        "source_shape_class": "hook-like form",
+        "candidate_columns": [
+          "W"
+        ],
+        "lower_digit": 9,
+        "target_letters": [
+          "H"
+        ]
+      }
+    ],
+    "operations": [
+      "add",
+      "subtract"
+    ],
+    "limits": [
+      "Visual classes are assumptions. Similar loop forms may represent different signs.",
+      "The primary reader assigns upper marks to row 1. A separate reader did not confirm their grouping.",
+      "The table headers are assumed to form an ordered intermediate alphabet.",
+      "The lower digits are assumed to be letter offsets.",
+      "The first position is excluded because its lower mark is unclear.",
+      "No candidate letter is selected for its meaning.",
+      "Only first-word positions 2 to 6 are included."
+    ]
+  },
+  "expected": {
+    "numeric": {
+      "sequence": "135797531?7?135797531?7?135797531?7?13",
+      "positions": 38,
+      "known_positions": 32,
+      "unknown_positions": 6,
+      "candidate_cycle_length": 12,
+      "mismatches": [],
+      "compatible_period_lengths": [
+        12,
+        24,
+        36,
+        38
+      ]
+    },
+    "shift": {
+      "alphabet_length": 23,
+      "operations": {
+        "add": {
+          "positions": [
+            {
+              "position": 2,
+              "outputs": [
+                "H"
+              ],
+              "target_letters": [
+                "H"
+              ],
+              "matching_targets": [
+                "H"
+              ]
+            },
+            {
+              "position": 3,
+              "outputs": [
+                "L",
+                "V"
+              ],
+              "target_letters": [
+                "V"
+              ],
+              "matching_targets": [
+                "V"
+              ]
+            },
+            {
+              "position": 4,
+              "outputs": [
+                "F",
+                "L",
+                "R"
+              ],
+              "target_letters": [
+                "R"
+              ],
+              "matching_targets": [
+                "R"
+              ]
+            },
+            {
+              "position": 5,
+              "outputs": [
+                "L",
+                "R",
+                "S",
+                "V",
+                "E"
+              ],
+              "target_letters": [
+                "U",
+                "V"
+              ],
+              "matching_targets": [
+                "V"
+              ]
+            },
+            {
+              "position": 6,
+              "outputs": [
+                "H"
+              ],
+              "target_letters": [
+                "H"
+              ],
+              "matching_targets": [
+                "H"
+              ]
+            }
+          ],
+          "combination_count": 30,
+          "all_targets_compatible": true
+        },
+        "subtract": {
+          "positions": [
+            {
+              "position": 2,
+              "outputs": [
+                "F"
+              ],
+              "target_letters": [
+                "H"
+              ],
+              "matching_targets": []
+            },
+            {
+              "position": 3,
+              "outputs": [
+                "E",
+                "P"
+              ],
+              "target_letters": [
+                "V"
+              ],
+              "matching_targets": []
+            },
+            {
+              "position": 4,
+              "outputs": [
+                "T",
+                "A",
+                "G"
+              ],
+              "target_letters": [
+                "R"
+              ],
+              "matching_targets": []
+            },
+            {
+              "position": 5,
+              "outputs": [
+                "U",
+                "C",
+                "D",
+                "G",
+                "O"
+              ],
+              "target_letters": [
+                "U",
+                "V"
+              ],
+              "matching_targets": [
+                "U"
+              ]
+            },
+            {
+              "position": 6,
+              "outputs": [
+                "N"
+              ],
+              "target_letters": [
+                "H"
+              ],
+              "matching_targets": []
+            }
+          ],
+          "combination_count": 30,
+          "all_targets_compatible": false
+        }
+      }
+    }
+  },
+  "failure_modes": [
+    "An unclear mark is deleted instead of retained.",
+    "A cycle phase changes to improve the result.",
+    "Similar source shapes are treated as proven identical signs.",
+    "The wrong table or alphabet order is used.",
+    "The proposed text controls candidate selection.",
+    "A compatible candidate is reported as a unique output."
+  ],
+  "verification_plan": [
+    "Compare the public calculation with a separate calculation from the fixed private inputs.",
+    "Run the script in a clean directory using only public files.",
+    "Record command, input hashes, result hashes, and exit status.",
+    "Run the required project test suite."
+  ],
+  "discussion_sources": [
+    {
+      "url": "https://voynich.net/Arch/2004/08/msg00279.html",
+      "bytes": 13482,
+      "sha256": "a6322b6f3a3c79dccece9f1b64fc1585e67b40581653180f396df038cf3c4920",
+      "page_metadata": {
+        "title": "VMs: A cryptological assault on Strong's decryption...",
+        "author": "Nick Pelling",
+        "date": "2004-08-13"
+      }
+    },
+    {
+      "url": "https://voynichattacks.wordpress.com/2010/02/26/strongs-cipher/",
+      "bytes": 133028,
+      "sha256": "93a746070455282f16c020b30b56b3479a59613af2317f224e23f699f1fd5514",
+      "page_metadata": {
+        "title": "Strong's Cipher",
+        "date": "2010-02-26",
+        "displayed_author": "JB"
+      }
+    }
+  ],
+  "source_regions": {
+    "render_long_edge_pixels": 4000,
+    "page_75_crops": [
+      {
+        "x": 0,
+        "y": 160,
+        "width": 2000,
+        "height": 380
+      },
+      {
+        "x": 2000,
+        "y": 160,
+        "width": 2000,
+        "height": 380
+      }
+    ],
+    "page_82_crops": [
+      {
+        "x": 0,
+        "y": 1530,
+        "width": 2100,
+        "height": 640
+      },
+      {
+        "x": 2100,
+        "y": 1530,
+        "width": 1900,
+        "height": 640
+      }
+    ],
+    "selection_limit": "These coordinates record the primary review. Earlier rough crops were corrected before transcription."
+  }
+}
