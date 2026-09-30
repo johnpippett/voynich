@@ -14,6 +14,10 @@ That count rules out a total injective map to 26 letters under this representati
 A published 23-form list covers about 99.8 percent of both training cohorts. This is coverage, not reading accuracy.
 No key search followed this inventory count.
 
+A [separate common-unit pilot](docs/plans/common-visual-pilot-v1.md) now has a fixed method and passing synthetic command checks.
+It keeps outside units unknown and requires four artificial controls before manuscript loading.
+The method freeze precedes the first real calibration. No real pilot result was available at that freeze.
+
 The [Fontana source check](docs/research/fontana-transcription-source-2026-09-30.md) found Schulte's digitized 1910 transcription.
 The opening page points to the original source folio, but the reviewed material supplies no complete sign-value table.
 The candidate Latin text still needs cipher-position alignment and a separate passage check.

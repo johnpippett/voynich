@@ -1,0 +1,21 @@
+{
+  "files": {
+    "data/bifolio_manifest.json": "998cb3d6c8327ff0bdf786d52968fa3bec9f5fa9b05ba7ae56065fc9639fad72",
+    "data/reference_manifest.json": "f261b781f150991e3305aae5057a94dc91afd8e59c58bb22ff199347f5ce3e6d",
+    "data/source_manifest.json": "77c9f755ed47c19ccfe3ef92b7699953d5d5e9ada729492662c94154d3d2f4f1",
+    "docs/plans/common-visual-pilot-v1.md": "67cf1dd497525bb97142dde0e8f07d80f12de2b8baf2ca21a486e768b5927ee9",
+    "experiments/common_visual/check_e2e.py": "b6bf3f1a20913adfec962c855ec7b91f93b23eeaa9594beba724a67823f51595",
+    "experiments/common_visual/projection.py": "e44550841b2ba67069f2da60bb7c632644c8b78de733aaf806f9f6e11b0778b4",
+    "experiments/common_visual/run.py": "0f8b9ffbdb6da6caa76f346a19470c2d9aa378f71da8ef6021b46ab58062dadb",
+    "experiments/common_visual/search.py": "9f0060c95ddecb2b6e3c66c9831197dc9e6c5bd404600c376e04c67b6fefbe72",
+    "experiments/homophonic/units.py": "fc321f7cc59bf91aed1061d9fb72b531125ab9255ae171167de0bbe289c59760",
+    "experiments/spacefree_manuscript/run.py": "520b11c2472e00e324b4fddae1cd8144344d9d25f8ae4c8576baf85adc98b665",
+    "experiments/spacefree_substitution/score.py": "675742347cb070c2d2210cef178bd87b195765253307f4181409c8770ac5e19e",
+    "reports/spacefree-manuscript-pilot-v1.json": "b2183df112c17be4c76ba89c0efa8eb9be85478f03d1f39f386ef1ff13d1dd5d",
+    "src/voynich/corpus.py": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+    "src/voynich/groups.py": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0",
+    "src/voynich/reference.py": "97e173c761b137d3653a827315b62a68af3e96abd189afdecc46e9759d2b94d9"
+  },
+  "frozen_at_utc": "2026-09-30T09:28:01.384506+00:00",
+  "schema_version": 1
+}

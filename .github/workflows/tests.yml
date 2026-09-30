@@ -26,6 +26,8 @@ jobs:
         run: python experiments/spacefree_substitution/check_e2e.py
       - name: Run manuscript pilot command checks
         run: python experiments/spacefree_manuscript/check_e2e.py
+      - name: Run common visual-unit command checks
+        run: python experiments/common_visual/check_e2e.py --receipt results/common-visual-e2e-ci.json
       - name: Run lexicon experiment tests
         run: PYTHONPATH=src:. python -m unittest discover -s experiments/lexicon -p 'test_*.py' -v
       - name: Run homophonic experiment tests
