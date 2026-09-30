@@ -1,0 +1,11 @@
+{
+  "files": {
+    "data/reference_manifest.json": "f261b781f150991e3305aae5057a94dc91afd8e59c58bb22ff199347f5ce3e6d",
+    "docs/plans/spacefree-substitution-control-v1.md": "70d054a56490ce3e87089235108d97b98d23a32a5bf71c3153fb664513e18cf2",
+    "experiments/spacefree_substitution/check_e2e.py": "80a0b003f0345cc4e5ae318e1b96ddb042ae5d2e04d52e7419b47282f4e4991f",
+    "experiments/spacefree_substitution/run_control.py": "4a65e7470c85c196f909b5dca27d4036e6c60ad0414e674ae88192e900dbea87",
+    "experiments/spacefree_substitution/score.py": "675742347cb070c2d2210cef178bd87b195765253307f4181409c8770ac5e19e",
+    "src/voynich/reference.py": "97e173c761b137d3653a827315b62a68af3e96abd189afdecc46e9759d2b94d9"
+  },
+  "schema_version": 1
+}

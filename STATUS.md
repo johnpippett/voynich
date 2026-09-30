@@ -9,6 +9,14 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [substitution control without spaces](reports/SPACEFREE_SUBSTITUTION_CONTROL.md) recovered all four planted maps.
+Each control recovered all 22 observed fitting assignments and all 8,192 test characters without errors.
+The complete 23-entry maps also matched. The permutation rule fixes the one assignment absent during fitting.
+No test label was absent during fitting. A separate replay produced all 32 output files with identical bytes.
+
+This is a development control on fixed Latin samples. It supplies no Voynich key or translation.
+No manuscript experiment followed; the earlier stopped studies stay stopped.
+
 The [f1r margin check](docs/research/f1r-margin-key-check-2026-09-29.md#full-resolution-follow-up) now includes two full-resolution processed images from the public multispectral archive.
 The first AI records missed the target columns. One corrected pass supplied no agreed sign-to-letter pair.
 This reading procedure produced no usable shared transcription. It does not show that the columns are unreadable.

@@ -1,0 +1,801 @@
+{
+  "accepted": true,
+  "configuration": {
+    "alphabet": "abcdefghilmnopqrstuvxyz",
+    "mode": "known_key_control",
+    "normalization": {
+      "j": "i",
+      "k": "c",
+      "partition_stream": "Join normalized words without spaces.",
+      "test_characters": 8192,
+      "validation_characters": 8192,
+      "w": "uu"
+    },
+    "planted_seeds": [
+      408,
+      409,
+      410,
+      411
+    ],
+    "protocol": "spacefree-substitution-control-v1",
+    "score": {
+      "alpha": 0.1,
+      "context_lengths": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "weights": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "window_length": 4,
+      "window_policy": "Overlapping; no boundary symbols or padding."
+    },
+    "search": {
+      "first_start": "Pair descending training and fitting symbol counts; ties use alphabet order.",
+      "later_starts": "Shuffle alphabet positions with the search RNG.",
+      "proposal_draw": "rng.sample(range(alphabet_size), 2).",
+      "proposals_per_restart": 2000,
+      "restart_rng": "Fresh Random(408) per control; one stream across its restarts.",
+      "restarts": 8,
+      "seed": 408,
+      "temperature_schedule": "0.02 * all fitting windows, linear to zero at proposal 1999.",
+      "time_limit_seconds": 600,
+      "uphill_acceptance_draw": "Only uphill moves at positive temperature draw rng.random()."
+    }
+  },
+  "controls": [
+    {
+      "accepted": true,
+      "best_key_score_drift": 1.8553691916167736e-10,
+      "complete_key_errors": 0,
+      "complete_key_exact": true,
+      "fit_assignment_errors": 0,
+      "fit_character_errors": 0,
+      "fit_characters": 8192,
+      "fit_ciphertext_sha256": "2633349dc41b820a5ea286f4e282b19b4ff1955a05438d6ad9c9d6f072705115",
+      "fit_cost": 22089.86715666271,
+      "fit_window_count": 8189,
+      "fitted_key": {
+        "a": "v",
+        "b": "g",
+        "c": "a",
+        "d": "n",
+        "e": "l",
+        "f": "f",
+        "g": "c",
+        "h": "e",
+        "i": "y",
+        "l": "m",
+        "m": "s",
+        "n": "u",
+        "o": "o",
+        "p": "r",
+        "q": "b",
+        "r": "x",
+        "s": "p",
+        "t": "d",
+        "u": "h",
+        "v": "t",
+        "x": "i",
+        "y": "q",
+        "z": "z"
+      },
+      "frozen_key_file_sha256": "8668b61bda2364d343a2dd45e827dd1670786f9bf5ef81df27a6217cd2755871",
+      "known_key": {
+        "a": "v",
+        "b": "g",
+        "c": "a",
+        "d": "n",
+        "e": "l",
+        "f": "f",
+        "g": "c",
+        "h": "e",
+        "i": "y",
+        "l": "m",
+        "m": "s",
+        "n": "u",
+        "o": "o",
+        "p": "r",
+        "q": "b",
+        "r": "x",
+        "s": "p",
+        "t": "d",
+        "u": "h",
+        "v": "t",
+        "x": "i",
+        "y": "q",
+        "z": "z"
+      },
+      "largest_restart_score_drift": 8.039933163672686e-10,
+      "mean_fit_cost_per_window": 2.69750484267465,
+      "missing_fit_labels": [
+        "i"
+      ],
+      "observed_fit_labels": 22,
+      "observed_fit_mapping_exact": true,
+      "observed_test_labels": 21,
+      "result_sha256": "aed282070d14c50a0fdf412095a4767a43ef0c32a77047ef77410fa61153254a",
+      "seed": 408,
+      "temperature_start": 163.78,
+      "test_character_errors": 0,
+      "test_characters": 8192,
+      "test_ciphertext_sha256": "339e9176400d6d0093670754a79fa187db24f64856707e261588909a8f411249",
+      "test_labels_absent_from_fit": []
+    },
+    {
+      "accepted": true,
+      "best_key_score_drift": 2.2919266484677792e-10,
+      "complete_key_errors": 0,
+      "complete_key_exact": true,
+      "fit_assignment_errors": 0,
+      "fit_character_errors": 0,
+      "fit_characters": 8192,
+      "fit_ciphertext_sha256": "d2ecd781090cafd1745653b2aa90e7bc841d00828b2503c919c5644f626e92be",
+      "fit_cost": 22089.86715666271,
+      "fit_window_count": 8189,
+      "fitted_key": {
+        "a": "q",
+        "b": "a",
+        "c": "v",
+        "d": "f",
+        "e": "c",
+        "f": "h",
+        "g": "l",
+        "h": "g",
+        "i": "m",
+        "l": "b",
+        "m": "i",
+        "n": "z",
+        "o": "n",
+        "p": "o",
+        "q": "x",
+        "r": "u",
+        "s": "d",
+        "t": "p",
+        "u": "y",
+        "v": "e",
+        "x": "r",
+        "y": "t",
+        "z": "s"
+      },
+      "frozen_key_file_sha256": "190aa82b68c7ed0b3f425b0589fed4b9ba9539cd4e6566a43817040c233ba391",
+      "known_key": {
+        "a": "q",
+        "b": "a",
+        "c": "v",
+        "d": "f",
+        "e": "c",
+        "f": "h",
+        "g": "l",
+        "h": "g",
+        "i": "m",
+        "l": "b",
+        "m": "i",
+        "n": "z",
+        "o": "n",
+        "p": "o",
+        "q": "x",
+        "r": "u",
+        "s": "d",
+        "t": "p",
+        "u": "y",
+        "v": "e",
+        "x": "r",
+        "y": "t",
+        "z": "s"
+      },
+      "largest_restart_score_drift": 7.530616130679846e-10,
+      "mean_fit_cost_per_window": 2.69750484267465,
+      "missing_fit_labels": [
+        "u"
+      ],
+      "observed_fit_labels": 22,
+      "observed_fit_mapping_exact": true,
+      "observed_test_labels": 21,
+      "result_sha256": "6f2c85c424188ed4845936180fd1db04acfd04ebabcb871b1e3d94710c3692a9",
+      "seed": 409,
+      "temperature_start": 163.78,
+      "test_character_errors": 0,
+      "test_characters": 8192,
+      "test_ciphertext_sha256": "e8c142be204ba79d50f73b28b2128ef6f96e77b6d68be0391e7c2325bbbf30e3",
+      "test_labels_absent_from_fit": []
+    },
+    {
+      "accepted": true,
+      "best_key_score_drift": 2.1464074961841106e-10,
+      "complete_key_errors": 0,
+      "complete_key_exact": true,
+      "fit_assignment_errors": 0,
+      "fit_character_errors": 0,
+      "fit_characters": 8192,
+      "fit_ciphertext_sha256": "54557f8b05bf13080f6fda87f37482d18e35be282fc19f808441fb607d134c85",
+      "fit_cost": 22089.86715666271,
+      "fit_window_count": 8189,
+      "fitted_key": {
+        "a": "b",
+        "b": "z",
+        "c": "n",
+        "d": "s",
+        "e": "i",
+        "f": "u",
+        "g": "g",
+        "h": "p",
+        "i": "f",
+        "l": "v",
+        "m": "h",
+        "n": "o",
+        "o": "t",
+        "p": "r",
+        "q": "d",
+        "r": "q",
+        "s": "x",
+        "t": "c",
+        "u": "m",
+        "v": "a",
+        "x": "l",
+        "y": "y",
+        "z": "e"
+      },
+      "frozen_key_file_sha256": "5a5051f320c9f2cd73ee2e8beb41b61757a1fcdf06153c4cb56c01b52a54c5ca",
+      "known_key": {
+        "a": "b",
+        "b": "z",
+        "c": "n",
+        "d": "s",
+        "e": "i",
+        "f": "u",
+        "g": "g",
+        "h": "p",
+        "i": "f",
+        "l": "v",
+        "m": "h",
+        "n": "o",
+        "o": "t",
+        "p": "r",
+        "q": "d",
+        "r": "q",
+        "s": "x",
+        "t": "c",
+        "u": "m",
+        "v": "a",
+        "x": "l",
+        "y": "y",
+        "z": "e"
+      },
+      "largest_restart_score_drift": 5.129550117999315e-10,
+      "mean_fit_cost_per_window": 2.69750484267465,
+      "missing_fit_labels": [
+        "y"
+      ],
+      "observed_fit_labels": 22,
+      "observed_fit_mapping_exact": true,
+      "observed_test_labels": 21,
+      "result_sha256": "2250534f63356fab1a817f92e9303528fbdc06ed0073421acda72842bad00e2c",
+      "seed": 410,
+      "temperature_start": 163.78,
+      "test_character_errors": 0,
+      "test_characters": 8192,
+      "test_ciphertext_sha256": "e09ad32ff0eb18c46ccc75f2ecbd310fe5ef0c3406fe342c714037072e0deb16",
+      "test_labels_absent_from_fit": []
+    },
+    {
+      "accepted": true,
+      "best_key_score_drift": 2.1464074961841106e-10,
+      "complete_key_errors": 0,
+      "complete_key_exact": true,
+      "fit_assignment_errors": 0,
+      "fit_character_errors": 0,
+      "fit_characters": 8192,
+      "fit_ciphertext_sha256": "1d92be09b5f925522b8cdd240d37e4c26d614f7f6590836651a2021857465952",
+      "fit_cost": 22089.86715666271,
+      "fit_window_count": 8189,
+      "fitted_key": {
+        "a": "e",
+        "b": "u",
+        "c": "q",
+        "d": "c",
+        "e": "s",
+        "f": "t",
+        "g": "f",
+        "h": "b",
+        "i": "l",
+        "l": "i",
+        "m": "x",
+        "n": "n",
+        "o": "y",
+        "p": "p",
+        "q": "d",
+        "r": "o",
+        "s": "r",
+        "t": "h",
+        "u": "v",
+        "v": "z",
+        "x": "m",
+        "y": "a",
+        "z": "g"
+      },
+      "frozen_key_file_sha256": "780eaa1e7d4df1465b71965c9a667fcf32d62ea838359d1c069ff94a19a244e9",
+      "known_key": {
+        "a": "e",
+        "b": "u",
+        "c": "q",
+        "d": "c",
+        "e": "s",
+        "f": "t",
+        "g": "f",
+        "h": "b",
+        "i": "l",
+        "l": "i",
+        "m": "x",
+        "n": "n",
+        "o": "y",
+        "p": "p",
+        "q": "d",
+        "r": "o",
+        "s": "r",
+        "t": "h",
+        "u": "v",
+        "v": "z",
+        "x": "m",
+        "y": "a",
+        "z": "g"
+      },
+      "largest_restart_score_drift": 9.604264050722122e-10,
+      "mean_fit_cost_per_window": 2.69750484267465,
+      "missing_fit_labels": [
+        "o"
+      ],
+      "observed_fit_labels": 22,
+      "observed_fit_mapping_exact": true,
+      "observed_test_labels": 21,
+      "result_sha256": "00ae4189fe40487edde714ca45b2214513f516f0c4a8ade921110202b571900c",
+      "seed": 411,
+      "temperature_start": 163.78,
+      "test_character_errors": 0,
+      "test_characters": 8192,
+      "test_ciphertext_sha256": "562765ff627c1de2a00c082aa6d0c6f1e2a0da91a7e4cb2bfd8c548a25fbc27f",
+      "test_labels_absent_from_fit": []
+    }
+  ],
+  "execution": {
+    "command": "timeout --signal=TERM 600s python experiments/spacefree_substitution/run_control.py --freeze docs/plans/spacefree-substitution-control-v1.freeze.json --output results/spacefree-control-2026-09-29/run",
+    "elapsed_seconds": 29.669911,
+    "exit_code": 0,
+    "parent_commit": "330da786ee7750149137a2040d5c28cf170efb26",
+    "python_version": "3.14.7"
+  },
+  "experiment": "spacefree-substitution-control-v1",
+  "freeze": {
+    "files": {
+      "data/reference_manifest.json": "f261b781f150991e3305aae5057a94dc91afd8e59c58bb22ff199347f5ce3e6d",
+      "docs/plans/spacefree-substitution-control-v1.md": "70d054a56490ce3e87089235108d97b98d23a32a5bf71c3153fb664513e18cf2",
+      "experiments/spacefree_substitution/check_e2e.py": "80a0b003f0345cc4e5ae318e1b96ddb042ae5d2e04d52e7419b47282f4e4991f",
+      "experiments/spacefree_substitution/run_control.py": "4a65e7470c85c196f909b5dca27d4036e6c60ad0414e674ae88192e900dbea87",
+      "experiments/spacefree_substitution/score.py": "675742347cb070c2d2210cef178bd87b195765253307f4181409c8770ac5e19e",
+      "src/voynich/reference.py": "97e173c761b137d3653a827315b62a68af3e96abd189afdecc46e9759d2b94d9"
+    },
+    "frozen_at_utc": "2026-09-30T06:30:30.307214+00:00",
+    "local_freeze_only": true,
+    "schema_version": 1,
+    "sha256": "abdccdf13d4abaafa02f4435d14f4ceb8ea84007fb5b3c90acb4c07f9413409a"
+  },
+  "limits": [
+    "Four keys share one fitting and one test sample.",
+    "The streams remove original spaces and can cross document boundaries.",
+    "The corpus is early medieval legal Latin.",
+    "The heuristic score weights have no independent calibration.",
+    "The result supplies no false-positive estimate or global score optimum.",
+    "The reference data appeared in earlier development work.",
+    "No manuscript key, language identity, or translation follows from this control."
+  ],
+  "reference": {
+    "duplicate_or_empty_exclusions": {
+      "test": {
+        "sentences": 129,
+        "words": 780
+      },
+      "train": {
+        "sentences": 0,
+        "words": 0
+      },
+      "validation": {
+        "sentences": 132,
+        "words": 713
+      }
+    },
+    "manifest": "data/reference_manifest.json",
+    "manifest_sha256": "f261b781f150991e3305aae5057a94dc91afd8e59c58bb22ff199347f5ce3e6d",
+    "source_files": {
+      "la_llct-ud-dev.conllu": "040457f2e47265a5676c83ce236e1d625af41eda8f779812841e8ba84e28480c",
+      "la_llct-ud-test.conllu": "81d9f57de66d83303ad4df54a60cd445ac089b50070d369831a632b4cf948e64",
+      "la_llct-ud-train.conllu": "8aabc8735c7a623a9e4820e13861a87459dd0fb5b2d238f0583854143526a643"
+    },
+    "split_counts": {
+      "test": {
+        "documents": 51,
+        "sentences": 755,
+        "words": 19931
+      },
+      "train": {
+        "documents": 422,
+        "sentences": 7289,
+        "words": 165291
+      },
+      "validation": {
+        "documents": 48,
+        "sentences": 718,
+        "words": 19969
+      }
+    },
+    "stream_summaries": {
+      "fitting_plaintext": {
+        "length": 8192,
+        "sha256": "1b49026fbc6daf6657125780a6df9cef09d6667ae3fd9dba8c2f09e24cf1705a"
+      },
+      "test_full": {
+        "length": 111052,
+        "sha256": "12242cb41173a4424fdbf436609637c295b78b6b2f415a5116aa7250803be201"
+      },
+      "test_plaintext": {
+        "length": 8192,
+        "sha256": "5069903be369fdf4cbea116fd8b3e2872503b5475114bfaea56b5e06a8fec939"
+      },
+      "training": {
+        "length": 922901,
+        "sha256": "92c202196ebe52a5a499be7dfafbf9e0ad34cc691941914af52b4bd161c46241"
+      },
+      "validation_full": {
+        "length": 110777,
+        "sha256": "eca000c4750e8ea6bb73e0a6dedd7783c74a80dbc2b80e30d7319568db65f2aa"
+      }
+    }
+  },
+  "schema_version": 1,
+  "scope": "Artificial Latin permutation controls; no manuscript input.",
+  "verification": {
+    "e2e": {
+      "alternative_key_fit_cost": 5.275603639993356,
+      "checks": [
+        "Known permutation and held-out plaintext are recovered.",
+        "Repeated symbols and overlapping windows give the direct score.",
+        "Context totals count only contexts with a target.",
+        "Different test plaintext leaves the fitted key and score unchanged.",
+        "Different known truth for the same ciphertext leaves the fit unchanged.",
+        "All test characters enter recovery counts, including labels absent during fitting.",
+        "Existing output is refused and unchanged.",
+        "An invalid permutation and a bad freeze create no output."
+      ],
+      "command": "python experiments/spacefree_substitution/check_e2e.py",
+      "expected_ciphertext": [
+        "bbbabbba",
+        "bbaa"
+      ],
+      "expected_decoded_test": "aabb",
+      "fixture": {
+        "alphabet": "ab",
+        "fit_plaintext": "aaabaaab",
+        "known_key": {
+          "a": "b",
+          "b": "a"
+        },
+        "test_plaintext": "aabb",
+        "train": "aaab"
+      },
+      "independent_fit_cost": 4.377738583646522,
+      "output_hashes": {
+        "decoded-fitting.txt": "75d7321e048f4d0df3158586e2502688d58f7ba8214a3fedbfe9213854a5e596",
+        "decoded-test.txt": "1f9bc362538ee27a036d344cd8b3a0f5def1900b92169e89ca3cb7e9ac0a1c34",
+        "fitting-ciphertext.txt": "4b59115ad278822d298db9b8558c44a2a036b98d7fa6b36a08e24dcebcfc1105",
+        "fitting-plaintext.txt": "75d7321e048f4d0df3158586e2502688d58f7ba8214a3fedbfe9213854a5e596",
+        "frozen-key.json": "f5fbc84400f17f07559a5872c6cd41968d7461cb9908e47682cc944ac7a2c52d",
+        "model-counts.json": "c2c328ddc468c1b4e1491a35b891a49eefe41bc62960fc5eb76043d128f9fae4",
+        "result.json": "31093dc4de6f9f80d31a3fd795228de5fdeb576ca1f80fc4a3ed46af882db95a",
+        "run-config.json": "95531bd9eb44bc3bb0b156a19e5788f743ad22ade2833addf9053c406f0e1b2c",
+        "stream-records.json": "fe5ba0b3944c25ea8630a98fc05e3bb8b1e6ff52a28b527067b4595040b6bc62",
+        "test-ciphertext.txt": "7fb91c7a909c0ad2429e77187de2bcd9d106a392403749c5ac78bb7c9ed75a77",
+        "test-plaintext.txt": "1f9bc362538ee27a036d344cd8b3a0f5def1900b92169e89ca3cb7e9ac0a1c34",
+        "training-stream.txt": "2147c1367957e51f71a19aeb22b59a370d07d65abb9ca0d4b2743fd10f981366"
+      },
+      "paired_fixtures": {
+        "different-test": {
+          "alphabet": "ab",
+          "fit_plaintext": "aaabaaab",
+          "known_key": {
+            "a": "b",
+            "b": "a"
+          },
+          "test_plaintext": "bbbbaaaa",
+          "train": "aaab"
+        },
+        "different-truth": {
+          "alphabet": "ab",
+          "fit_plaintext": "bbbabbba",
+          "known_key": {
+            "a": "a",
+            "b": "b"
+          },
+          "test_plaintext": "bbaa",
+          "train": "aaab"
+        },
+        "missing-fit-labels": {
+          "alphabet": "abcd",
+          "fit_plaintext": "aaabaaab",
+          "known_key": {
+            "a": "b",
+            "b": "a",
+            "c": "d",
+            "d": "c"
+          },
+          "test_plaintext": "aabbccdd",
+          "train": "aaab"
+        }
+      },
+      "paired_output_hashes": {
+        "different-test": {
+          "decoded-fitting.txt": "75d7321e048f4d0df3158586e2502688d58f7ba8214a3fedbfe9213854a5e596",
+          "decoded-test.txt": "6e5cf99dd2d66a5d39310b4101bd09fba44fb3b361a1960bef833f6d761b3961",
+          "fitting-ciphertext.txt": "4b59115ad278822d298db9b8558c44a2a036b98d7fa6b36a08e24dcebcfc1105",
+          "fitting-plaintext.txt": "75d7321e048f4d0df3158586e2502688d58f7ba8214a3fedbfe9213854a5e596",
+          "frozen-key.json": "f5fbc84400f17f07559a5872c6cd41968d7461cb9908e47682cc944ac7a2c52d",
+          "model-counts.json": "c2c328ddc468c1b4e1491a35b891a49eefe41bc62960fc5eb76043d128f9fae4",
+          "result.json": "674dceb34b853d51c0ed5652e9e506e32e2ee71d6f8b5ac098f1c72523f06085",
+          "run-config.json": "95531bd9eb44bc3bb0b156a19e5788f743ad22ade2833addf9053c406f0e1b2c",
+          "stream-records.json": "7142f987bae9a8afc58cd849d6a7ef1f02c28dd13b97ef7c7c523c8732dd043a",
+          "test-ciphertext.txt": "4222d523438b8396b7c569d9ca3f2cd7a292ca46e4e34cc3dbab3e8acb09501c",
+          "test-plaintext.txt": "6e5cf99dd2d66a5d39310b4101bd09fba44fb3b361a1960bef833f6d761b3961",
+          "training-stream.txt": "2147c1367957e51f71a19aeb22b59a370d07d65abb9ca0d4b2743fd10f981366"
+        },
+        "different-truth": {
+          "decoded-fitting.txt": "75d7321e048f4d0df3158586e2502688d58f7ba8214a3fedbfe9213854a5e596",
+          "decoded-test.txt": "1f9bc362538ee27a036d344cd8b3a0f5def1900b92169e89ca3cb7e9ac0a1c34",
+          "fitting-ciphertext.txt": "4b59115ad278822d298db9b8558c44a2a036b98d7fa6b36a08e24dcebcfc1105",
+          "fitting-plaintext.txt": "4b59115ad278822d298db9b8558c44a2a036b98d7fa6b36a08e24dcebcfc1105",
+          "frozen-key.json": "f5fbc84400f17f07559a5872c6cd41968d7461cb9908e47682cc944ac7a2c52d",
+          "model-counts.json": "c2c328ddc468c1b4e1491a35b891a49eefe41bc62960fc5eb76043d128f9fae4",
+          "result.json": "a5ce9901cd2eddd0b6d7c43a75160b224dbf3560c68fc9c6e7c9b6ad8180f4ce",
+          "run-config.json": "95531bd9eb44bc3bb0b156a19e5788f743ad22ade2833addf9053c406f0e1b2c",
+          "stream-records.json": "4ac8505df4de7b4e6b63ee8c4a231c6259f074d8d4b9f6258340d5b85ca33670",
+          "test-ciphertext.txt": "7fb91c7a909c0ad2429e77187de2bcd9d106a392403749c5ac78bb7c9ed75a77",
+          "test-plaintext.txt": "7fb91c7a909c0ad2429e77187de2bcd9d106a392403749c5ac78bb7c9ed75a77",
+          "training-stream.txt": "2147c1367957e51f71a19aeb22b59a370d07d65abb9ca0d4b2743fd10f981366"
+        },
+        "missing-fit-labels": {
+          "decoded-fitting.txt": "75d7321e048f4d0df3158586e2502688d58f7ba8214a3fedbfe9213854a5e596",
+          "decoded-test.txt": "33fb33c721cedc19e94e3e9a06abd0707dd77a2e031231812fb53b6cbd6ae213",
+          "fitting-ciphertext.txt": "4b59115ad278822d298db9b8558c44a2a036b98d7fa6b36a08e24dcebcfc1105",
+          "fitting-plaintext.txt": "75d7321e048f4d0df3158586e2502688d58f7ba8214a3fedbfe9213854a5e596",
+          "frozen-key.json": "4fcce89b093576b414bd7d0ea96965a08a1e095cc2f1eaa8817f954c71829a0c",
+          "model-counts.json": "1845f1943bf68a0c1e65f439a8c04b984250d772c2053fc1269614774a8965c0",
+          "result.json": "b84f2320dd9949087ab5a71af35a31faa5fd4283a1615dcaa78ead49c5150b23",
+          "run-config.json": "0f121af24130da041e6ca85a2c1542b81ab230a706205c0465f0f088328692d4",
+          "stream-records.json": "d5b7987d91122482b0ddb7166da9076c871924eeff59e88fce472f674ef30fd1",
+          "test-ciphertext.txt": "58c0646c3bef7fef2e9774d9cf6ed51ead4148b3adf594718f1bbadd1de62a67",
+          "test-plaintext.txt": "3c366c395d6a78a23321f1c4103af7ed69fc1e1bc5d32557581861ce599a136f",
+          "training-stream.txt": "2147c1367957e51f71a19aeb22b59a370d07d65abb9ca0d4b2743fd10f981366"
+        }
+      },
+      "setup": "Python standard library; run the command from any directory.",
+      "status": "passed"
+    },
+    "independent": {
+      "limits": [
+        "The existing loader supplies source parsing, normalization, partitions, and duplicate removal.",
+        "Separate AI tasks performed these project checks. They are not external scholarly validation."
+      ],
+      "method": "Separate string counts and score calculation; no import of the new scorer or search code.",
+      "receipt_sha256": "3ffc12a9a29df9f8e7e7e27beeba9c18fa055fa76b461606a12f72b953aa6aa5",
+      "seeds": [
+        {
+          "complete_key_errors": 0,
+          "complete_key_exact": true,
+          "decoded_fit_sha256": "1b49026fbc6daf6657125780a6df9cef09d6667ae3fd9dba8c2f09e24cf1705a",
+          "decoded_test_sha256": "5069903be369fdf4cbea116fd8b3e2872503b5475114bfaea56b5e06a8fec939",
+          "fit_character_errors": 0,
+          "fit_ciphertext_sha256": "2633349dc41b820a5ea286f4e282b19b4ff1955a05438d6ad9c9d6f072705115",
+          "fitted_fit_score": {
+            "mean_cost_per_window": 2.69750484267465,
+            "sum_cost": 22089.86715666271,
+            "window_count": 8189
+          },
+          "fitted_key_assignments": 23,
+          "fitted_key_sha256": "000c4a08f80841c46a36c05e20f3aae69711bc5f3358982e73774ebfeabff407",
+          "known_fit_score": {
+            "mean_cost_per_window": 2.69750484267465,
+            "sum_cost": 22089.86715666271,
+            "window_count": 8189
+          },
+          "known_key_exact": true,
+          "missing_fit_labels": 1,
+          "observed_fit_labels": 22,
+          "observed_fit_mapping_errors": 0,
+          "observed_fit_mapping_exact": true,
+          "reported_fit_score_matches": true,
+          "result_sha256": "aed282070d14c50a0fdf412095a4767a43ef0c32a77047ef77410fa61153254a",
+          "seed": 408,
+          "test_character_errors": 0,
+          "test_ciphertext_sha256": "339e9176400d6d0093670754a79fa187db24f64856707e261588909a8f411249",
+          "test_labels_absent_from_fit": 0
+        },
+        {
+          "complete_key_errors": 0,
+          "complete_key_exact": true,
+          "decoded_fit_sha256": "1b49026fbc6daf6657125780a6df9cef09d6667ae3fd9dba8c2f09e24cf1705a",
+          "decoded_test_sha256": "5069903be369fdf4cbea116fd8b3e2872503b5475114bfaea56b5e06a8fec939",
+          "fit_character_errors": 0,
+          "fit_ciphertext_sha256": "d2ecd781090cafd1745653b2aa90e7bc841d00828b2503c919c5644f626e92be",
+          "fitted_fit_score": {
+            "mean_cost_per_window": 2.69750484267465,
+            "sum_cost": 22089.86715666271,
+            "window_count": 8189
+          },
+          "fitted_key_assignments": 23,
+          "fitted_key_sha256": "fd17bf66ea2c3e0de3c2285631d9de1d906a54091ec545fa9a644f1301dc6322",
+          "known_fit_score": {
+            "mean_cost_per_window": 2.69750484267465,
+            "sum_cost": 22089.86715666271,
+            "window_count": 8189
+          },
+          "known_key_exact": true,
+          "missing_fit_labels": 1,
+          "observed_fit_labels": 22,
+          "observed_fit_mapping_errors": 0,
+          "observed_fit_mapping_exact": true,
+          "reported_fit_score_matches": true,
+          "result_sha256": "6f2c85c424188ed4845936180fd1db04acfd04ebabcb871b1e3d94710c3692a9",
+          "seed": 409,
+          "test_character_errors": 0,
+          "test_ciphertext_sha256": "e8c142be204ba79d50f73b28b2128ef6f96e77b6d68be0391e7c2325bbbf30e3",
+          "test_labels_absent_from_fit": 0
+        },
+        {
+          "complete_key_errors": 0,
+          "complete_key_exact": true,
+          "decoded_fit_sha256": "1b49026fbc6daf6657125780a6df9cef09d6667ae3fd9dba8c2f09e24cf1705a",
+          "decoded_test_sha256": "5069903be369fdf4cbea116fd8b3e2872503b5475114bfaea56b5e06a8fec939",
+          "fit_character_errors": 0,
+          "fit_ciphertext_sha256": "54557f8b05bf13080f6fda87f37482d18e35be282fc19f808441fb607d134c85",
+          "fitted_fit_score": {
+            "mean_cost_per_window": 2.69750484267465,
+            "sum_cost": 22089.86715666271,
+            "window_count": 8189
+          },
+          "fitted_key_assignments": 23,
+          "fitted_key_sha256": "a9b3c45b7e915541b8042a9efe98247ed1b250d8bdfd5f38e366e2aa0423b240",
+          "known_fit_score": {
+            "mean_cost_per_window": 2.69750484267465,
+            "sum_cost": 22089.86715666271,
+            "window_count": 8189
+          },
+          "known_key_exact": true,
+          "missing_fit_labels": 1,
+          "observed_fit_labels": 22,
+          "observed_fit_mapping_errors": 0,
+          "observed_fit_mapping_exact": true,
+          "reported_fit_score_matches": true,
+          "result_sha256": "2250534f63356fab1a817f92e9303528fbdc06ed0073421acda72842bad00e2c",
+          "seed": 410,
+          "test_character_errors": 0,
+          "test_ciphertext_sha256": "e09ad32ff0eb18c46ccc75f2ecbd310fe5ef0c3406fe342c714037072e0deb16",
+          "test_labels_absent_from_fit": 0
+        },
+        {
+          "complete_key_errors": 0,
+          "complete_key_exact": true,
+          "decoded_fit_sha256": "1b49026fbc6daf6657125780a6df9cef09d6667ae3fd9dba8c2f09e24cf1705a",
+          "decoded_test_sha256": "5069903be369fdf4cbea116fd8b3e2872503b5475114bfaea56b5e06a8fec939",
+          "fit_character_errors": 0,
+          "fit_ciphertext_sha256": "1d92be09b5f925522b8cdd240d37e4c26d614f7f6590836651a2021857465952",
+          "fitted_fit_score": {
+            "mean_cost_per_window": 2.69750484267465,
+            "sum_cost": 22089.86715666271,
+            "window_count": 8189
+          },
+          "fitted_key_assignments": 23,
+          "fitted_key_sha256": "41bfd79d3811bde654d777e28af28b0983f2da74a5691be66bf11e971e300f0f",
+          "known_fit_score": {
+            "mean_cost_per_window": 2.69750484267465,
+            "sum_cost": 22089.86715666271,
+            "window_count": 8189
+          },
+          "known_key_exact": true,
+          "missing_fit_labels": 1,
+          "observed_fit_labels": 22,
+          "observed_fit_mapping_errors": 0,
+          "observed_fit_mapping_exact": true,
+          "reported_fit_score_matches": true,
+          "result_sha256": "00ae4189fe40487edde714ca45b2214513f516f0c4a8ade921110202b571900c",
+          "seed": 411,
+          "test_character_errors": 0,
+          "test_ciphertext_sha256": "562765ff627c1de2a00c082aa6d0c6f1e2a0da91a7e4cb2bfd8c548a25fbc27f",
+          "test_labels_absent_from_fit": 0
+        }
+      ],
+      "source_loader_reused": true,
+      "source_partitions": {
+        "fit": {
+          "partition_length": 110777,
+          "partition_sha256_ascii": "eca000c4750e8ea6bb73e0a6dedd7783c74a80dbc2b80e30d7319568db65f2aa",
+          "selected_length": 8192,
+          "selected_sha256_ascii": "1b49026fbc6daf6657125780a6df9cef09d6667ae3fd9dba8c2f09e24cf1705a"
+        },
+        "test": {
+          "partition_length": 111052,
+          "partition_sha256_ascii": "12242cb41173a4424fdbf436609637c295b78b6b2f415a5116aa7250803be201",
+          "selected_length": 8192,
+          "selected_sha256_ascii": "5069903be369fdf4cbea116fd8b3e2872503b5475114bfaea56b5e06a8fec939"
+        },
+        "train": {
+          "partition_length": 922901,
+          "partition_sha256_ascii": "92c202196ebe52a5a499be7dfafbf9e0ad34cc691941914af52b4bd161c46241",
+          "selected_length": 922901,
+          "selected_sha256_ascii": "92c202196ebe52a5a499be7dfafbf9e0ad34cc691941914af52b4bd161c46241"
+        }
+      },
+      "status": "verified",
+      "verifier_sha256": "2885338bb1d6e3de83b72cb864d2572c084ebb4dd4c176226eba09ad2bcf1712"
+    },
+    "project_suite": {
+      "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+      "log_sha256": "9bee943a920b3efbdf5e5ce5f6b747aea978e5bbdaa6daaee877a2e3a7ba7536",
+      "status": "passed",
+      "tests": 85
+    },
+    "replay": {
+      "comparison": "All output files are byte-identical. No fields were excluded.",
+      "file_sha256": {
+        "fitting-plaintext.txt": "ebce718b411adaf0387d1dd1bdf8d651b8bbbd3225867d73fd92a01d77af3d7d",
+        "model-counts.json": "cf49e9eac4c0e654768ab70118f8a06a4a3f129fc4139905b4837a0c8013910c",
+        "reference-metadata.json": "62e68446d76cf2bd8d62ddba98f72cd21fb84c195f45609682ae528c14176613",
+        "result.json": "49c0aeb548fced5c1fe46ede7e7f0669b13f3879f2c2488d7a6a6252284d9bee",
+        "run-config.json": "05c816c691a5269ca925d288f971f87539dcc3a1b592055f674fb1ff3c95c0e2",
+        "seed-408/decoded-fitting.txt": "ebce718b411adaf0387d1dd1bdf8d651b8bbbd3225867d73fd92a01d77af3d7d",
+        "seed-408/decoded-test.txt": "234db8e37e8c3ee9e3844a40d970e2370dd8298b17f3e89725cb575d89aa5666",
+        "seed-408/fitting-ciphertext.txt": "086ca854aa02e0ec9de8bbf04fd53705856a281bdbeacc9857a1a25a00afe1b8",
+        "seed-408/frozen-key.json": "8668b61bda2364d343a2dd45e827dd1670786f9bf5ef81df27a6217cd2755871",
+        "seed-408/result.json": "aed282070d14c50a0fdf412095a4767a43ef0c32a77047ef77410fa61153254a",
+        "seed-408/test-ciphertext.txt": "518965de6def670731ff451ad80f52faac5d41e0aad09af50f4ee95ac777ad34",
+        "seed-409/decoded-fitting.txt": "ebce718b411adaf0387d1dd1bdf8d651b8bbbd3225867d73fd92a01d77af3d7d",
+        "seed-409/decoded-test.txt": "234db8e37e8c3ee9e3844a40d970e2370dd8298b17f3e89725cb575d89aa5666",
+        "seed-409/fitting-ciphertext.txt": "240943379cecf91968806aba5cc5368611ee687327c9b128f440d2f60127e04b",
+        "seed-409/frozen-key.json": "190aa82b68c7ed0b3f425b0589fed4b9ba9539cd4e6566a43817040c233ba391",
+        "seed-409/result.json": "6f2c85c424188ed4845936180fd1db04acfd04ebabcb871b1e3d94710c3692a9",
+        "seed-409/test-ciphertext.txt": "108d95bc88ba82864abb65b00f0b2b35cf32538b8856f7f68c057d15c5d045b8",
+        "seed-410/decoded-fitting.txt": "ebce718b411adaf0387d1dd1bdf8d651b8bbbd3225867d73fd92a01d77af3d7d",
+        "seed-410/decoded-test.txt": "234db8e37e8c3ee9e3844a40d970e2370dd8298b17f3e89725cb575d89aa5666",
+        "seed-410/fitting-ciphertext.txt": "78340462e28eb8cd03632ef976321354dd2c6e4e985838af81fbf2ceef6a5f26",
+        "seed-410/frozen-key.json": "5a5051f320c9f2cd73ee2e8beb41b61757a1fcdf06153c4cb56c01b52a54c5ca",
+        "seed-410/result.json": "2250534f63356fab1a817f92e9303528fbdc06ed0073421acda72842bad00e2c",
+        "seed-410/test-ciphertext.txt": "aaaa4942c65b404437cb3fac0e6e6971c91cab2a055acce0426fe7f3ef77d762",
+        "seed-411/decoded-fitting.txt": "ebce718b411adaf0387d1dd1bdf8d651b8bbbd3225867d73fd92a01d77af3d7d",
+        "seed-411/decoded-test.txt": "234db8e37e8c3ee9e3844a40d970e2370dd8298b17f3e89725cb575d89aa5666",
+        "seed-411/fitting-ciphertext.txt": "4dc87d7888c46b9145a7eacaa75e8f908074d80835a40d9f0c141561675adfff",
+        "seed-411/frozen-key.json": "780eaa1e7d4df1465b71965c9a667fcf32d62ea838359d1c069ff94a19a244e9",
+        "seed-411/result.json": "00ae4189fe40487edde714ca45b2214513f516f0c4a8ade921110202b571900c",
+        "seed-411/test-ciphertext.txt": "45589d6d838cb80fb8ae3689d6ea978f934e4d65f377e5b6e62c6e15bcbd54ad",
+        "stream-records.json": "6db6488ae1e59799330ca8b58f3c90ba140ac129f902b5bcdf6bf21ed1670862",
+        "test-plaintext.txt": "234db8e37e8c3ee9e3844a40d970e2370dd8298b17f3e89725cb575d89aa5666",
+        "training.txt": "2094eae80f287f1902f834562830bbebb181b6d71f42746879a567c121f5d63e"
+      },
+      "method_files": "Parent commit plus the six frozen method files and freeze record.",
+      "original_files": 32,
+      "original_runtime": {
+        "accepted": true,
+        "elapsed_seconds": 29.669911,
+        "status": "completed"
+      },
+      "replay_files": 32,
+      "replay_runtime": {
+        "accepted": true,
+        "elapsed_seconds": 28.564936,
+        "status": "completed"
+      },
+      "source_downloads": "Fresh files in the separate replay tree; pinned hashes matched.",
+      "status": "passed"
+    }
+  }
+}
