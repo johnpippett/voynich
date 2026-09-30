@@ -310,5 +310,434 @@
     "private_evidence_directory": "results/levitov-primary-source-2026-09-30/",
     "capture_verification": "All three saved tool-text captures match their recorded byte counts and SHA-256 hashes.",
     "catalogue_label_limit": "The snippet-view and no-preview labels appear with other-edition links. Neither inspected record supplied primary method pages."
+  },
+  "follow_up": {
+    "date": "2026-09-30",
+    "private_evidence_directory": "results/child-complete-method-2026-09-30/",
+    "scope": {
+      "created_utc": "2026-09-30T13:46:38.297529+00:00",
+      "question": "Does the remaining archived paper or the linked later website supply a fixed reading method with independently validated meanings?",
+      "archived_paper": {
+        "path": "results/child-later-source-2026-09-30/paper-2007.pdf",
+        "sha256": "774525b82e8e89ed225b2bb0ba9a4a0fd9295abd8ea7f5bea508d3de71bf9b62",
+        "additional_pdf_pages": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          11
+        ],
+        "reason": "Complete the paper review without making absence claims from the earlier eight-page selection."
+      },
+      "website": {
+        "first_source": "https://voynich.nu/refs.html",
+        "search_query_limit": 2,
+        "retrieval_limit": 6,
+        "counting": "Every external open, click, download, or screenshot attempt counts, including failures. Local reads do not count.",
+        "method_scope": "Follow the recorded Child and Bernholz lead. Inspect at most four primary website pages, selected from visible navigation for method, key, translation, or validation."
+      },
+      "boundaries": [
+        "No new manuscript decoding or corpus fit.",
+        "No later changes to stopped model studies.",
+        "No contact, purchase, borrowing, login, or access-control bypass.",
+        "Preserve exact source captures and their hashes.",
+        "Do not infer method failure from an access failure.",
+        "Keep source claims separate from independently validated manuscript content."
+      ],
+      "amendment": {
+        "amended_utc": "2026-09-30T13:48:04.561580+00:00",
+        "previous_retrieval_limit": 6,
+        "new_retrieval_limit": 10,
+        "reason": "The live site uses image maps and image-only page bodies. Four extra retrievals permit inspection of the primary images, before any method image has been read.",
+        "unchanged": "Two queries and at most four primary website pages. No manuscript decoding or model fit."
+      }
+    },
+    "website_access": {
+      "searches": [],
+      "retrievals": [
+        {
+          "operation": "web open",
+          "url": "https://voynich.nu/refs.html",
+          "capture": "references-web-result.json",
+          "result": "Bibliography links the evolved Child proposal to https://www.voynichproject.org/.",
+          "bytes": 32208,
+          "sha256": "2d844ec8fe7b624f12f9fffb157b8eee38635af4be7444ecb8612158b920b3ea",
+          "capture_type": "Serialized web-reader output, not original HTML."
+        },
+        {
+          "operation": "web click",
+          "url": "https://www.voynichproject.org/",
+          "capture": "website-web-result.json",
+          "result": "The web reader returned only two image links.",
+          "bytes": 348,
+          "sha256": "7ca9359fa1ff50440e8e6686e1ea414d59ac245d08efca3b94340b26c8362a6b",
+          "capture_type": "Serialized web-reader output, not original HTML."
+        },
+        {
+          "operation": "raw HTTP GET",
+          "url": "https://www.voynichproject.org/",
+          "requested_utc": "2026-09-30T13:47:17.335183+00:00",
+          "status": 200,
+          "final_url": "https://www.voynichproject.org/",
+          "content_type": "text/html",
+          "file": "website.html",
+          "bytes": 1697,
+          "sha256": "3c9c6114d77fc3841392cd2a135f69f04e5224988758cb5789df8bea41c8f24d"
+        },
+        {
+          "operation": "raw HTTP GET",
+          "url": "https://www.voynichproject.org/method/",
+          "requested_utc": "2026-09-30T13:48:04.561781+00:00",
+          "status": 200,
+          "final_url": "https://www.voynichproject.org/method/",
+          "content_type": "text/html",
+          "file": "method.html",
+          "bytes": 19379,
+          "sha256": "21b7261339950f3e904605be59fa25577bb24034bc958bedb6fecbc5d13bc061"
+        },
+        {
+          "operation": "raw HTTP GET",
+          "url": "https://www.voynichproject.org/cypher/",
+          "requested_utc": "2026-09-30T13:48:04.841092+00:00",
+          "status": 200,
+          "final_url": "https://www.voynichproject.org/cypher/",
+          "content_type": "text/html",
+          "file": "cypher.html",
+          "bytes": 5485,
+          "sha256": "ef7353c7e9d080d491c4152163a149ef99da51de90129e2211f9935783bf9889"
+        },
+        {
+          "operation": "raw HTTP GET",
+          "url": "https://www.voynichproject.org/work/",
+          "requested_utc": "2026-09-30T13:48:05.034624+00:00",
+          "status": 200,
+          "final_url": "http://voynichproject.org/research/",
+          "content_type": "text/html",
+          "file": "work.html",
+          "bytes": 4187,
+          "sha256": "41332ed41e9f1f4e9a58feccc872bd3c66bd9f3ecd1367bed77712ef9d2fb8ab"
+        },
+        {
+          "operation": "raw HTTP GET",
+          "url": "https://www.voynichproject.org/cypher/cypher.jpg",
+          "requested_utc": "2026-09-30T13:48:54.781691+00:00",
+          "status": 200,
+          "final_url": "https://www.voynichproject.org/cypher/cypher.jpg",
+          "content_type": "image/jpeg",
+          "file": "cypher.jpg",
+          "bytes": 705478,
+          "sha256": "af0b3c92da7986c731bdcda33ddad1a395bcab6970700408ca238c64fe6043b7"
+        },
+        {
+          "operation": "raw HTTP GET",
+          "url": "https://www.voynichproject.org/cypher/digraphs.jpg",
+          "requested_utc": "2026-09-30T13:48:55.272108+00:00",
+          "status": 200,
+          "final_url": "https://www.voynichproject.org/cypher/digraphs.jpg",
+          "content_type": "image/jpeg",
+          "file": "digraphs.jpg",
+          "bytes": 691217,
+          "sha256": "09038a520b74ae0ba6d113a5ab4e2d0889518b1eb108b2f26239b39f05ce42fb"
+        },
+        {
+          "operation": "raw HTTP GET",
+          "url": "https://www.voynichproject.org/cypher/words.jpg",
+          "requested_utc": "2026-09-30T13:48:55.762379+00:00",
+          "status": 200,
+          "final_url": "https://www.voynichproject.org/cypher/words.jpg",
+          "content_type": "image/jpeg",
+          "file": "words.jpg",
+          "bytes": 2623545,
+          "sha256": "37dd8fe88e9e505657ed6ed32b3ddec1c201f96d1d8cd62432ded3e8fb476f00"
+        },
+        {
+          "operation": "raw HTTP GET",
+          "url": "https://www.voynichproject.org/research/106v/",
+          "requested_utc": "2026-09-30T13:48:56.370822+00:00",
+          "status": 200,
+          "final_url": "https://www.voynichproject.org/research/106v/",
+          "content_type": "text/html",
+          "file": "research-106v.html",
+          "bytes": 11299,
+          "sha256": "4fca708b3f92bf184930c3763e4a4f6bad28fe84a07ec95355ac23d8401b3c3e"
+        }
+      ],
+      "limits": {
+        "queries_used": 0,
+        "queries_allowed": 2,
+        "retrievals_used": 10,
+        "initial_retrieval_limit": 6,
+        "amended_retrieval_limit": 10,
+        "amendment_before_method_content": true,
+        "source_format_correction": "The entry page is image-only. The method and research pages also contain HTML prose and inline sign images."
+      }
+    },
+    "website_selection": {
+      "selected_utc": "2026-09-30T13:48:54.781598+00:00",
+      "primary_method_pages": [
+        "https://www.voynichproject.org/method/",
+        "https://www.voynichproject.org/cypher/",
+        "https://www.voynichproject.org/work/",
+        "https://www.voynichproject.org/research/106v/"
+      ],
+      "navigation_only": [
+        "https://voynich.nu/refs.html",
+        "https://www.voynichproject.org/"
+      ],
+      "images_selected": [
+        "https://www.voynichproject.org/cypher/cypher.jpg",
+        "https://www.voynichproject.org/cypher/digraphs.jpg",
+        "https://www.voynichproject.org/cypher/words.jpg"
+      ],
+      "reason": "The cipher page labels its three images as character set, digraphs, and word list. The work page identifies f106v as its most intensive work. The entry page received navigation inspection only; its main image remains unread.",
+      "limit": "Method prose is available in HTML, contrary to the initial inference from the entry page. Inline method glyph images are not acquired in this scope."
+    },
+    "root_review": {
+      "reviewed_utc": "2026-09-30T13:52:55.194384+00:00",
+      "website": [
+        {
+          "source": "method.html",
+          "headings": [
+            "Research Approach",
+            "East Nordic Languages",
+            "Future Research Plans"
+          ],
+          "observations": [
+            "The site proposes multiple Germanic languages and uses tentative names for them.",
+            "The site distinguishes words used for meaning from words cited as language forms, but describes missing visible quotation markers.",
+            "The site states a preference for fewer question marks and hypothetical notes in glosses.",
+            "The site calls for further work by more qualified scholars."
+          ],
+          "inference": "An unqualified-looking gloss does not by itself show a confirmed meaning."
+        },
+        {
+          "source": "work.html",
+          "observations": [
+            "The page calls the work proof of concept rather than full translations.",
+            "It describes concordances that align signs, transliteration, and possible meanings.",
+            "It identifies f106v as its most intensively studied folio."
+          ]
+        },
+        {
+          "source": "cypher.jpg",
+          "observations": [
+            "A proposed character table supplies shape variants, labels, and some position rules.",
+            "Some proposed sound values remain alternatives; the last entry is unknown."
+          ],
+          "limit": "No EVA equivalents or coverage measurements."
+        },
+        {
+          "source": "digraphs.jpg",
+          "observations": [
+            "A separate table maps compound shapes to transliterations.",
+            "Some rows contain alternative values."
+          ],
+          "limit": "No new reading or whole-manuscript assignment."
+        },
+        {
+          "source": "words.jpg",
+          "observations": [
+            "The glossary gives proposed meanings, some grammar fields, and folio and line references.",
+            "It includes uncertain entries marked with question marks."
+          ],
+          "limit": "The viewer resized the 920 by 8028 image to 688 by 6000. No complete glossary transcription or source-locus check was made."
+        },
+        {
+          "source": "research-106v.html",
+          "headings": [
+            "Goths Say... Jutes Say...",
+            "The question of stress",
+            "Detailed concordance"
+          ],
+          "observations": [
+            "The prose describes tentative Goths and Jutes glosses, with no certainty about historical identification.",
+            "The page states that its analysis selects 13 of 47 lines.",
+            "It repeats the proof-of-concept limit."
+          ],
+          "limit": "The thirteen embedded line-concordance images and inline manuscript images were not acquired or inspected."
+        }
+      ],
+      "archived_paper_additional_pages": [
+        2,
+        3,
+        4,
+        5,
+        10,
+        11
+      ],
+      "paper_findings": [
+        {
+          "pages": [
+            3,
+            4,
+            5
+          ],
+          "claim": "The paper compares spelling and grammatical patterns and proposes a layout interpretation for f76r."
+        },
+        {
+          "pages": [
+            10,
+            11
+          ],
+          "claim": "The paper gives partial f106v glosses and marks uncertain wording. The page10 opening gloss says Jutish."
+        },
+        {
+          "pages": [
+            11
+          ],
+          "claim": "The paper proposes h after o and i after e as vowel lengtheners and discusses stress or pitch."
+        }
+      ],
+      "decision": "The sources add explicit candidate rules and examples, but no independently validated reading resulted. Do not equate source preservation or an author glossary with a verified translation."
+    },
+    "additional_paper_pages": {
+      "scope": {
+        "pdf_pages": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          11
+        ],
+        "review_type": "local render and visual inspection",
+        "render_dpi": 200
+      },
+      "source": {
+        "path": "results/child-later-source-2026-09-30/paper-2007.pdf",
+        "sha256": "774525b82e8e89ed225b2bb0ba9a4a0fd9295abd8ea7f5bea508d3de71bf9b62",
+        "pdf_page_count": 14
+      },
+      "rendering": {
+        "tool": "pdftoppm",
+        "commands": [
+          "pdftoppm -f 2 -l 5 -r 200 -png results/child-later-source-2026-09-30/paper-2007.pdf results/child-complete-method-2026-09-30/remaining-pages/page",
+          "pdftoppm -f 10 -l 11 -r 200 -png results/child-later-source-2026-09-30/paper-2007.pdf results/child-complete-method-2026-09-30/remaining-pages/page"
+        ],
+        "pages": [
+          {
+            "pdf_page": 2,
+            "render": "page-02.png",
+            "width": 1700,
+            "height": 2200,
+            "sha256": "3f37dd8bc50676847af2b86ae8fcc1548d4577c523652caf909f2956b429fb70"
+          },
+          {
+            "pdf_page": 3,
+            "render": "page-03.png",
+            "width": 1700,
+            "height": 2200,
+            "sha256": "f520f4fc4703b70385d61cafa7cf5a81bdeb497ef088b33a0352570ff77d9596"
+          },
+          {
+            "pdf_page": 4,
+            "render": "page-04.png",
+            "width": 1700,
+            "height": 2200,
+            "sha256": "ea8a5aa58cb8d8da086257064722589abcc4c5099a867a0b9674c8991dcea3ee"
+          },
+          {
+            "pdf_page": 5,
+            "render": "page-05.png",
+            "width": 1700,
+            "height": 2200,
+            "sha256": "eb8020d790e1d3e5ff5c11cf99a0dcef8a0c2a288269c5b94294ed87ea7c2e6f"
+          },
+          {
+            "pdf_page": 10,
+            "render": "page-10.png",
+            "width": 1700,
+            "height": 2200,
+            "sha256": "6294e5428c79e8d52896126521b0dc339a853aef6e45af46b9cb45ce9bc855cf"
+          },
+          {
+            "pdf_page": 11,
+            "render": "page-11.png",
+            "width": 1700,
+            "height": 2200,
+            "sha256": "0b743a68452c42a648c8247f6a8587ae6af7cfb4685f5097a60806ecfb162718"
+          }
+        ]
+      }
+    },
+    "review_files": [
+      {
+        "file": "scope.json",
+        "bytes": 1854,
+        "sha256": "d1796c4bf90dcb3214cdf7737f4f082535f9159659d6af6945b1f0f8813501d3"
+      },
+      {
+        "file": "access-log.json",
+        "bytes": 4558,
+        "sha256": "1e88e8756d6cae1afb146a5d1a2d20776b1f458d9bfbb8fca669b756b733ddd6"
+      },
+      {
+        "file": "website-selection.json",
+        "bytes": 979,
+        "sha256": "effb4252958fe7744ef861ccfd8e96eae2885f5c37c8c609b347304d4636fbb8"
+      },
+      {
+        "file": "root-review.json",
+        "bytes": 3487,
+        "sha256": "6ad2d9a8d50634f4c506f81364e73fd0e331dd5edcee3d3333d0894fd888db6b"
+      },
+      {
+        "file": "remaining-pages/sources.json",
+        "bytes": 1679,
+        "sha256": "816f0c9e2c1c2b4ec00609d507223893901f52a76ae636c6d55985c107376a0a"
+      },
+      {
+        "file": "remaining-pages/audit.md",
+        "bytes": 4692,
+        "sha256": "8a090d9ac999e8c2023bae8205608c88b5e1b82ab28c9f432a71c32713cf8828"
+      },
+      {
+        "file": "website-table-audit.md",
+        "bytes": 2968,
+        "sha256": "a2e9bdf06433284e172b09580d915418209ea1bdfff25eea76ac8dad46e69ef2"
+      },
+      {
+        "file": "website-prose-audit.md",
+        "bytes": 3390,
+        "sha256": "97d17a85137c59861d752884ec17385e5ec7e9583fbe125424ea2cb760d8eb89"
+      }
+    ],
+    "verification": {
+      "original_capture_hashes": "All captured response hashes and byte counts match.",
+      "paper_and_render_hashes": "The PDF and six page images match their recorded hashes; all six render dimensions match.",
+      "project_tests": {
+        "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+        "exit_code": 0,
+        "tests": 85,
+        "result": "OK",
+        "log_sha256": "c0ae603e26fad4224f65e4f2f66b6005c1b0e91a339509871c57d59adb46bca9"
+      },
+      "separate_AI_reviews": {
+        "paper_pages": [
+          2,
+          3,
+          4,
+          5,
+          10,
+          11
+        ],
+        "website_prose_pages": [
+          "method",
+          "work"
+        ],
+        "website_images": [
+          "cypher.jpg",
+          "digraphs.jpg"
+        ],
+        "result": "Separate readers agreed about the source qualifications, website table counts, and explicit proposed-reading limits.",
+        "corrections": [
+          "Root corrected a draft misreading of Jutish as Jewish.",
+          "The table audit clarifies that several shape variants under one label can be allographs; this alone does not prevent a fixed reading map."
+        ],
+        "limit": "These are AI source reviews, not independent scholarly validation of the proposed meanings."
+      }
+    },
+    "decision": "The paper and reviewed website material supply proposed tables and readings. They do not establish independently validated meanings. No new manuscript decoding or model fit followed."
   }
 }

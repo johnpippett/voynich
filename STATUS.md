@@ -9,9 +9,10 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
-The [later Child source review](docs/research/child-later-table-review-2026-09-30.md) preserves an archived paper with a 21-row sign table.
-It records explicit position rules, uncertain values, and the author's unresolved exact word meanings.
-The reviewed pages supply no validated translation. A separate Levitov search supplied no primary method pages and did not assess that method.
+The [Child follow-up](docs/research/child-later-table-review-2026-09-30.md) now covers the complete archived paper and selected website material.
+The website supplies tables of characters and compound signs, but describes its readings as a proof of concept with tentative meanings.
+It also limits uncertainty marks in its presentation. No validated translation resulted.
+A separate Levitov search supplied no primary method pages and did not assess that method.
 
 The [Child prose review](docs/research/child-method-source-review-2026-09-30.md) records the author's explicit limits on his 1976 North Germanic proposal.
 Printed glyphs remain unverified after access failures. The record preserves a retrieval-limit failure and a corrected Brumbaugh search.

@@ -1,4 +1,4 @@
-# Child's later sign table
+# Child's archived paper and website
 
 Date: 2026-09-30.
 
@@ -38,9 +38,9 @@ The reviewed material does not establish independently validated continuous text
 ## Scope and reproduction
 
 The [source record](child-later-table-review-2026-09-30.sources.json) gives the PDF hash, source URLs, acquisition results, and selected pages.
-Detailed visual review covered PDF pages 1, 6–9, and 12–14.
-Small images of all 14 pages supported navigation. Pages 2–5 and 10–11 received no detailed review.
-This record makes no claim about additional rules or validation on those pages or in later website material.
+The initial detailed visual review covered PDF pages 1, 6–9, and 12–14.
+Small images of all 14 pages supported navigation. The initial review did not examine pages 2–5 and 10–11 in detail.
+The follow-up below adds those pages and selected website material.
 Search references give 2007 as the publication year; this review did not verify a date printed in the paper.
 
 The acquisition used two search queries and three retrieval attempts, within the declared limits of two and six.
@@ -50,6 +50,44 @@ No manuscript decoding or new model fit followed.
 To repeat the source review, get the archived PDF and compare its SHA-256 hash with the source record.
 Examine the table on page 14, its qualifications on pages 12–13, and the passage discussion on pages 6–9.
 Keep the author's proposed meanings separate from verified manuscript content.
+
+## Complete paper review
+
+A separate follow-up examined PDF pages 2–5 and 10–11.
+Together, the two reviews cover all 14 pages.
+Pages 3–5 describe comparisons with familiar spelling patterns and proposed paragraph structure on folio 76r.
+These comparisons supply a research approach, not an independently verified language identification.
+
+Pages 10–11 give further proposed readings for folio 106v.
+The opening gloss refers to Jutish people.
+Child marks much of the wording as uncertain.
+Page 11 proposes that `h` after `o` and `i` after `e` can lengthen vowels.
+It also gives a conditional identification of Ansgar. This review does not confirm that name or the proposed meanings.
+
+## Website method and limits
+
+The [website's cipher page](https://www.voynichproject.org/cypher/) supplies three images: a character table, a table of compound signs, and a glossary.
+The character table has 22 data rows. The table of compound signs has 24 data rows.
+They include position rules, alternative readings, and an unknown `x` entry.
+The glossary gives proposed meanings, some grammar information, and folio and line references.
+These are source rules and examples, not independently verified manuscript readings.
+
+The [method page](https://www.voynichproject.org/method/) proposes several Germanic languages and keeps the names of those languages tentative.
+It distinguishes words used for their meanings from words cited as language forms.
+It also states a preference for fewer question marks and hypothetical notes in the presentation.
+Thus, a gloss without a question mark does not by itself confirm a meaning.
+
+The [research index](https://www.voynichproject.org/work/) calls the work a proof of concept and distinguishes it from full translations.
+The [folio 106v page](https://www.voynichproject.org/research/106v/) states that it selects 13 of 47 lines for analysis.
+This review examined its HTML prose but did not acquire the images for its thirteen selected lines.
+It did not measure coverage or compare those images with the original manuscript.
+
+The website review used ten retrieval operations and no search queries.
+The initial limit was six operations. A recorded amendment permitted ten after the entry page revealed image-based navigation and content.
+The amendment preceded inspection of method content. Other pages subsequently supplied HTML prose as well as images.
+The source record preserves the amendment, exact source hashes, page selection, and inspection limits.
+
+No new manuscript decoding or model fit followed. The project still has no validated key or translation.
 
 ## Separate Levitov access result
 
