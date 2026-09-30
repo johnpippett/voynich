@@ -1,0 +1,472 @@
+{
+  "date": "2026-09-30",
+  "review_type": "Primary source rules and access review; no manuscript decoding",
+  "article_2022": {
+    "title": "Language of the “Voynich Manuscript”",
+    "authors": [
+      "Mayil B. Asgarov",
+      "Ahmet Ardich"
+    ],
+    "journal": "Türkologiya",
+    "issue": "1 (2022)",
+    "date_basis": "Printed journal issue; not the later catalogue upload date.",
+    "source_url": "https://dergipark.anas.az/index.php/turkology/article/download/1625/1573/1788",
+    "retrieved_utc": "2026-09-30T14:20:58Z",
+    "raw_pdf": {
+      "file": "results/ardic-primary-method-2026-09-30/source-01-article.pdf",
+      "bytes": 903706,
+      "sha256": "88430dab3fba037b474f91b5bcf92c722ce661031ba70e5b96f74ab22c265413"
+    },
+    "pdf_page_count": 13,
+    "scope": {
+      "file": "results/ardic-primary-method-2026-09-30/scope.md",
+      "bytes": 1393,
+      "sha256": "1356e42263ac219ef5f1fde583371935e05330007ee4869510fd9bd5a9c4c483"
+    },
+    "initial_selection": {
+      "file": "results/ardic-primary-method-2026-09-30/selected-method-pages.json",
+      "bytes": 659,
+      "sha256": "c0f03114574b0428acae4dfd045fcc11d09d10c7dbc94ac0f05b155f1d7a81af"
+    },
+    "initial_pdf_pages_one_based": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10
+    ],
+    "root_extension": {
+      "recorded_utc": "2026-09-30T14:30:57.606929+00:00",
+      "type": "Prospective source-review extension, not an experimental gate change",
+      "original_detailed_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "added_detailed_pages": [
+        9
+      ],
+      "reason": "Complete the 2022 method and reading discussion before deciding whether the article supplies a usable rule set. Page 9 has not yet been inspected in detail by root.",
+      "new_total_unique_detailed_pages": 9,
+      "limits": "Read one additional local PDF page only. No external request, manuscript decoding, source repair, or changed test criterion. Unplanned 2025 web extraction is a separate recorded incident and is not made prospective by this extension."
+    },
+    "root_extension_record": {
+      "file": "results/ardic-primary-method-2026-09-30/page-9-extension.json",
+      "bytes": 739,
+      "sha256": "26a1549939260cb0585b851d1d4cb9500d1544593f247c1c6259e6ccd5059341"
+    },
+    "final_detailed_pages_one_based": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "images": [
+      {
+        "file": "results/ardic-primary-method-2026-09-30/page-02.png",
+        "bytes": 309690,
+        "sha256": "9470e22b68266306d3808776a5e7f9f6aaed05e44633b3f12cd4f940eb4367e1",
+        "pdf_page_one_based": 2
+      },
+      {
+        "file": "results/ardic-primary-method-2026-09-30/page-03.png",
+        "bytes": 509755,
+        "sha256": "263c75703de09f1c12cf618fb9850ddaaf93ab847c4c29e2cd04a76b1ca3211c",
+        "pdf_page_one_based": 3
+      },
+      {
+        "file": "results/ardic-primary-method-2026-09-30/page-04.png",
+        "bytes": 358276,
+        "sha256": "1d06c8f0ba3fc7b6337916d2c5dbaa1aa516e9ff09380c732217c5442c2d85c7",
+        "pdf_page_one_based": 4
+      },
+      {
+        "file": "results/ardic-primary-method-2026-09-30/page-05.png",
+        "bytes": 492560,
+        "sha256": "de01a9040f722957e0d2de3263310d9d9278abb85b7dd15041a96b951fe1db45",
+        "pdf_page_one_based": 5
+      },
+      {
+        "file": "results/ardic-primary-method-2026-09-30/page-06.png",
+        "bytes": 456428,
+        "sha256": "1df44b14125d1ba9a7bbb449dd5b632dfe2c81bee01c8e8148ce94b5a87383bb",
+        "pdf_page_one_based": 6
+      },
+      {
+        "file": "results/ardic-primary-method-2026-09-30/page-07.png",
+        "bytes": 503805,
+        "sha256": "d206b6d253322c441c0d50a1a6197996308957208c3825a9353538531a131dfe",
+        "pdf_page_one_based": 7
+      },
+      {
+        "file": "results/ardic-primary-method-2026-09-30/page-08.png",
+        "bytes": 369451,
+        "sha256": "45813bbf155125680e18e0f10bcff107944472c64925c0e534db65e6fdcc4d90",
+        "pdf_page_one_based": 8
+      },
+      {
+        "file": "results/ardic-primary-method-2026-09-30/page-10.png",
+        "bytes": 281501,
+        "sha256": "4a9b2af2ceb9074f1d1895fb80fa797701db72adc1cc58394260c5b1630ab4f6",
+        "pdf_page_one_based": 10
+      },
+      {
+        "file": "results/ardic-primary-method-2026-09-30/page-high-03.png",
+        "bytes": 916364,
+        "sha256": "4ac7ecdaef8e73ca1855e1a1a98e5e0118824f201b2f6239aa60130fabd160e1",
+        "pdf_page_one_based": 3
+      },
+      {
+        "file": "results/ardic-primary-method-2026-09-30/page-09-root.png",
+        "bytes": 295347,
+        "sha256": "e6d4c9ac9b263d1757e64eadcba5342c4d043b0d8b4aefef0169e9e66dc20c58",
+        "pdf_page_one_based": 9
+      }
+    ],
+    "reviews": [
+      {
+        "file": "results/ardic-primary-method-2026-09-30/audit.md",
+        "bytes": 4579,
+        "sha256": "2faa9b246591a9a4ab1dd9fa59b5ecec64fd112c1e7d440343c6db9d966d6414"
+      },
+      {
+        "file": "results/ardic-primary-method-2026-09-30/root-rules-audit.md",
+        "bytes": 4007,
+        "sha256": "f4553bfb47d49cb140befd3206f8d6f1f6976c9ecc0d036326e9e7e357ae3b17"
+      },
+      {
+        "file": "results/ardic-primary-method-2026-09-30/first-line-audit.md",
+        "bytes": 2857,
+        "sha256": "55756f8891faee7d0828a3f867296273981b728751e445b063aa0c7a29979551"
+      }
+    ],
+    "source_record": {
+      "file": "results/ardic-primary-method-2026-09-30/sources.json",
+      "bytes": 4262,
+      "sha256": "af7444d3f6059e89da588f2c333b422e8ffb4164d13ce6d29d302be73bc6bed7"
+    },
+    "queries": [
+      "Ahmet Ardıç Voynich Turkish decoding method",
+      "Ahmet Ardic Voynich key alphabet decipherment book"
+    ],
+    "search_capture": {
+      "file": "results/ardic-primary-method-2026-09-30/search-01.json",
+      "bytes": 34095,
+      "sha256": "a8284aef157d9e1be39378756131a50ae9a996c65cb8503df4291fc49c2d44bf"
+    },
+    "other_retrievals": [
+      {
+        "number": 1,
+        "operation": "Download the 2022 article PDF",
+        "url": "https://dergipark.anas.az/index.php/turkology/article/download/1625/1573/1788",
+        "result_file": "source-01-article.pdf",
+        "retrieved_at": "2026-09-30T14:20:58Z",
+        "bytes": 903706,
+        "sha256": "88430dab3fba037b474f91b5bcf92c722ce661031ba70e5b96f74ab22c265413"
+      },
+      {
+        "number": 2,
+        "operation": "Open the author's publication-list page",
+        "url": "https://turkicresearch.com/Articles/Articles?page=4",
+        "capture_file": "retrieval-02-turkicresearch-list.json",
+        "capture_sha256": "973c90d01157fda4e148bd1cf833c692a40a08cd280dd8721fd96e733558b7fd",
+        "raw_source_bytes_saved": false,
+        "exposed_text": "The 2025 entry title and its English description state that the phonetic options in the tables are being gradually refined and simplified. The entry links to the 2025 PDF."
+      },
+      {
+        "number": 3,
+        "operation": "Click the 2025 PDF link in the publication-list page",
+        "url": "https://turkicresearch.com/files/articles/3070.pdf",
+        "capture_file": "retrieval-03-updated-ata-tables.json",
+        "capture_sha256": "6fa5a2d5ad17f59bcf8fc0872504fa79992851f4a1d9664850e9140e101c43d8",
+        "raw_source_bytes_saved": false,
+        "returned_pdf_page_count": 54,
+        "returned_text_line_count": 1977,
+        "visible_page_line_markers": 416,
+        "visible_page_numbers_zero_based": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "visible_content": "The returned extraction included page 0 title text, page 1 method-status notes, a page 2 table heading, and example text or notes from pages 4–12. The output contained no page images.",
+        "scope_incident": "The returned extraction exceeded the eight-page limit for all sources. It is preserved as an exposure record and was not audited as method evidence in this task. The root agent registered a separate bounded follow-up."
+      }
+    ],
+    "captures": [
+      {
+        "file": "results/ardic-primary-method-2026-09-30/retrieval-02-turkicresearch-list.json",
+        "bytes": 27873,
+        "sha256": "973c90d01157fda4e148bd1cf833c692a40a08cd280dd8721fd96e733558b7fd"
+      },
+      {
+        "file": "results/ardic-primary-method-2026-09-30/retrieval-03-updated-ata-tables.json",
+        "bytes": 23979,
+        "sha256": "6fa5a2d5ad17f59bcf8fc0872504fa79992851f4a1d9664850e9140e101c43d8"
+      }
+    ],
+    "limits": {
+      "queries": 2,
+      "other_retrieval_operations": 6,
+      "initial_detailed_pages": 8
+    },
+    "scope_incident": {
+      "kind": "Unplanned PDF text exposure beyond the initial page limit",
+      "later_pdf_pages_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visible_line_markers": 416,
+      "distinction": "Text exposure is not a complete visual review. The later image review has its own prospective scope.",
+      "metadata_correction": "Draft 2022 page fields incorrectly said zero-based. The values were one-based. Corrected before publication."
+    }
+  },
+  "later_ata_tables": {
+    "title": "ATA Syllabic Letter Transcription Studies: Current Tables and Methodological Notes",
+    "listed_year": 2025,
+    "year_basis": "Author publication list, saved in the initial source packet.",
+    "source_url": "https://turkicresearch.com/files/articles/3070.pdf",
+    "retrieved_utc": "2026-09-30T14:32:08.892764+00:00",
+    "raw_pdf": {
+      "file": "results/ardic-current-tables-2026-09-30/ata-current-tables.pdf",
+      "bytes": 3595867,
+      "sha256": "226209ef3bcd77e451181b764a1adaddd4e6d52aae79bbdc09881fc8ea7b72dc"
+    },
+    "pdf_page_count": 54,
+    "scope": {
+      "created_utc": "2026-09-30T14:32:08.721574+00:00",
+      "question": "What completion status and selection rules do the later ATA table notes state?",
+      "source_url": "https://turkicresearch.com/files/articles/3070.pdf",
+      "scope_type": "Prospective follow-up after unplanned text exposure in the earlier source review. This is not blind evidence.",
+      "previous_exposure": {
+        "capture": "results/ardic-primary-method-2026-09-30/retrieval-03-updated-ata-tables.json",
+        "zero_based_pages_exposed": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "detailed_inspection_limit_exceeded_in_prior_review": true,
+        "root_prior_view": "Title and first Turkish note from the capture; English notes heading located on PDF page 2; worker supplied a summary."
+      },
+      "selection": {
+        "pdf_pages": [
+          2,
+          3
+        ],
+        "reason": "English method notes begin on PDF page 2. Page 3 is the immediately following table page. Select both before raw source acquisition and detailed image review.",
+        "pages_not_reviewed": "All other pages, apart from the earlier unplanned text exposure, remain outside this image review."
+      },
+      "limits": {
+        "search_queries": 0,
+        "external_retrieval_operations": 1,
+        "detailed_pdf_pages": 2
+      },
+      "boundaries": [
+        "No original manuscript reading, alphabet-to-EVA mapping, corpus run, or model fit.",
+        "Do not infer the status of unexamined later versions.",
+        "Do not treat author trial descriptions as independently validated readings.",
+        "This follow-up does not remove the prior exposure incident."
+      ]
+    },
+    "scope_record": {
+      "file": "results/ardic-current-tables-2026-09-30/scope.json",
+      "bytes": 1647,
+      "sha256": "37a75346aa8754cfc5ff822e82e9c2d2ad878bf760ef350215ba0cab1ea0bcbd"
+    },
+    "detailed_pages_one_based": [
+      2,
+      3
+    ],
+    "images": [
+      {
+        "file": "results/ardic-current-tables-2026-09-30/page-02.png",
+        "bytes": 355314,
+        "sha256": "d964c98650f1be4edc8781fc4dd737609edf5053c51b14aef0dbc258a42645c5"
+      },
+      {
+        "file": "results/ardic-current-tables-2026-09-30/page-03.png",
+        "bytes": 397137,
+        "sha256": "b496c74530274660b285111a880cb8e2ec6bd62a1b2bd1bf0131dd83dd892ce5"
+      }
+    ],
+    "review": {
+      "file": "results/ardic-current-tables-2026-09-30/audit.md",
+      "bytes": 3010,
+      "sha256": "3de5ab01010d43b85e5cdb94c946be517457afdd9173aab33e36beeb16a8c955"
+    },
+    "source_record": {
+      "file": "results/ardic-current-tables-2026-09-30/sources.json",
+      "bytes": 2949,
+      "sha256": "b07dbdef68b78333f1c2bac09f0022cbee589c758c3ca411d16462d9da3957a8"
+    },
+    "actual_retrievals": 1,
+    "actual_queries": 0,
+    "limit": "Only pages 2–3 received detailed image review. This review does not audit every table row or assess later revisions."
+  },
+  "gibbs_publisher_preview": {
+    "url": "https://www.the-tls.com/history/medieval-history/voynich-manuscript-solution",
+    "author": "Nicholas Gibbs",
+    "displayed_date": "2017-09-08",
+    "scope_record": {
+      "file": "results/gibbs-primary-method-2026-09-30/scope.json",
+      "bytes": 942,
+      "sha256": "79288c9ef1a3d3babd85dc18a9f6d3c97c8eb38b4cf53523fcc4a4d40cf5af27"
+    },
+    "selection_record": {
+      "file": "results/gibbs-primary-method-2026-09-30/selection.json",
+      "bytes": 361,
+      "sha256": "07c161c7aed9780c325477d424c5d953cb5c89f27b216d289941d7b03e3a1191"
+    },
+    "source_record": {
+      "file": "results/gibbs-primary-method-2026-09-30/sources.json",
+      "bytes": 3088,
+      "sha256": "d06437e92c4a9c73c4bd96f7de151d158078a60a1de1da0333f8343d9fff34d8"
+    },
+    "review": {
+      "file": "results/gibbs-primary-method-2026-09-30/audit.md",
+      "bytes": 1871,
+      "sha256": "f11ad164a07a43e89b8345827028770754067128c7dd2254d0f9ed68ea3cb285"
+    },
+    "raw_html": {
+      "file": "results/gibbs-primary-method-2026-09-30/publisher-response.html",
+      "bytes": 31804,
+      "sha256": "caa45567d338d87edd1de91e4b2b11abe468c59a6c2aea5e2c89ef7760bf08b0"
+    },
+    "raw_html_limit": "Application shell; not full readable article text.",
+    "captures": [
+      {
+        "file": "results/gibbs-primary-method-2026-09-30/search-1.json",
+        "bytes": 35226,
+        "sha256": "abcc33000b478302d2205ef7a92f4e2cde4e3558bb616ed0816e81f1e8b4f390"
+      },
+      {
+        "file": "results/gibbs-primary-method-2026-09-30/search-2.json",
+        "bytes": 71,
+        "sha256": "1048ddaf93c0dfa7b1304db3ffef722f4a37db0018ad2c63d0062118c5d92b42"
+      },
+      {
+        "file": "results/gibbs-primary-method-2026-09-30/primary-open-1.json",
+        "bytes": 314,
+        "sha256": "c5a510b4248763ba9436e8c5f25b598799dc33db97504ad1651644369c893d3c"
+      },
+      {
+        "file": "results/gibbs-primary-method-2026-09-30/primary-open-3.json",
+        "bytes": 350,
+        "sha256": "56e961893c5f73ef29b218a722515a04347d39f7c59fae7765ab74f61117048d"
+      },
+      {
+        "file": "results/gibbs-primary-method-2026-09-30/publisher-browser-excerpts.json",
+        "bytes": 1190,
+        "sha256": "dcaebd7cf6fe1c2fa4aebb5fa03732f71e66c02002c8dd1434c1f9fdd11489e1"
+      }
+    ],
+    "queries": [
+      "Nicholas Gibbs Voynich manuscript solution 2017 TLS original article Latin abbreviations",
+      "site:the-tls.co.uk \"Gibbs\" \"Voynich\" solution"
+    ],
+    "retrievals": [
+      {
+        "operation": 1,
+        "kind": "web open",
+        "url": "https://www.the-tls.co.uk/articles/public/voynich-manuscript-solution/",
+        "result": "Timeout fetching",
+        "capture": {
+          "file": "primary-open-1.json",
+          "bytes": 314,
+          "sha256": "c5a510b4248763ba9436e8c5f25b598799dc33db97504ad1651644369c893d3c"
+        }
+      },
+      {
+        "operation": 2,
+        "url": "https://www.the-tls.co.uk/articles/public/voynich-manuscript-solution/",
+        "requested_utc": "2026-09-30T14:20:08.661129+00:00",
+        "status": 200,
+        "final_url": "https://www.the-tls.com/history/medieval-history/voynich-manuscript-solution",
+        "content_type": "text/html; charset=UTF-8",
+        "file": "publisher-response.html",
+        "bytes": 31804,
+        "sha256": "caa45567d338d87edd1de91e4b2b11abe468c59a6c2aea5e2c89ef7760bf08b0"
+      },
+      {
+        "operation": 3,
+        "kind": "web open",
+        "url": "https://www.the-tls.com/history/medieval-history/voynich-manuscript-solution",
+        "result": "Title but zero article lines",
+        "capture": {
+          "file": "primary-open-3.json",
+          "bytes": 350,
+          "sha256": "56e961893c5f73ef29b218a722515a04347d39f7c59fae7765ab74f61117048d"
+        }
+      },
+      {
+        "operation": 4,
+        "kind": "hidden browser navigation",
+        "url": "https://www.the-tls.com/history/medieval-history/voynich-manuscript-solution",
+        "result": "Introduction and subscription block; full article unread",
+        "selected_excerpt_record": {
+          "file": "publisher-browser-excerpts.json",
+          "bytes": 1190,
+          "sha256": "dcaebd7cf6fe1c2fa4aebb5fa03732f71e66c02002c8dd1434c1f9fdd11489e1"
+        }
+      }
+    ],
+    "full_method_assessed": false,
+    "capture_limit": "The browser record has selected visible excerpts, not a full accessibility-tree capture. Capture hashes do not identify complete article bytes."
+  },
+  "verification": {
+    "source_hashes": "passed",
+    "capture_json": "parsed",
+    "project_test_command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+    "project_test_count": 85,
+    "project_test_exit_code": 0,
+    "test_log": {
+      "file": "results/ardic-primary-method-2026-09-30/project-tests.log",
+      "bytes": 12303,
+      "sha256": "4b251b17d24b7fd8589d97f8f5d5feedf6429e898ce41ce8e1527ade03416b29"
+    },
+    "meaning_limit": "Source agreement and passing software tests do not validate a translation."
+  }
+}

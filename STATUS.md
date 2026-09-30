@@ -9,6 +9,10 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [Ardıç–Asgarov review](docs/research/ardic-reading-rules-2026-09-30.md) examines a proposed passage reading and later ATA table notes.
+The examined material leaves value selections open and supplies no validated key. No manuscript decoding test followed.
+The report preserves a source-exposure limit failure and a separate Gibbs publisher-preview limit.
+
 The [Child example review](docs/research/child-example-check-2026-09-30.md) compares the first two website examples with the proposed tables.
 Some normalized drawings agree with the tables; other groups remain unresolved. The comparison does not validate transcription accuracy or meaning.
 A separate Stojko search found catalogue information but no primary method pages. That method remains unassessed.
