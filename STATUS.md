@@ -34,6 +34,8 @@ A [later primary-source check](docs/research/fontana-published-alphabet-2026-09-
 The 1897 journal scan shows 23 sign-to-letter pairs and an abbreviation rule.
 Another AI check agreed about the table. A new excerpt reader supplied no usable sign sequence.
 No reading score, use on Munich text, or Voynich assignment followed.
+A further one-pass check used original folio 8r. The two AI records did not establish a common sign sequence.
+The tentative primary reading remains unverified; no abbreviation expansion or retry followed.
 
 The [manuscript pilot without spaces](reports/SPACEFREE_MANUSCRIPT_PILOT.md) failed its fixed rule for a later reading study.
 All four 26-letter artificial controls passed before the manuscript stage.

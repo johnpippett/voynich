@@ -60,6 +60,40 @@ Upright type identifies plain text; italic type identifies cipher readings.
 These conventions prevent direct use of the printed words as an exact sign-position record.
 This source statement does not establish how Schulte's earlier transcription treats every sign.
 
+## Original manuscript image follow-up
+
+A further check used the original BnF image of folio 8r.
+The [BnF manifest](https://gallica.bnf.fr/iiif/ark:/12148/btv1b10023795x/manifest.json) identifies it as canvas 29.
+The [source image](https://gallica.bnf.fr/iiif/ark:/12148/btv1b10023795x/f29/full/full/0/native.jpg) measures 2,986 by 4,172 pixels.
+This source differs from the printed facsimile used in the earlier failed check.
+
+The folio and reading rules were fixed before the image was obtained.
+The selected input was the first two cipher lines, above the red Latin heading.
+Crop coordinates were fixed after a page-layout examination, before the sign readings.
+The method used the same printed alphabet and permitted one pass per reader.
+It required uncertain signs and abbreviation marks to remain explicit, without Latin word repairs.
+
+The primary agent recorded 17 and 19 tentative sign positions, with eight unresolved letter values.
+These positions did not receive confirmation from the other AI reader.
+That reader could not supply a stable sequence or word boundaries.
+It recorded only two low-confidence shape candidates on line 1 and a possible abbreviation bar on line 2.
+Thus, the records do not establish a common sign sequence or a continuous reading.
+
+The primary agent had seen published readings from other folios and chapter titles, including the neighboring folio 8v.
+Neither reader consulted a proposed folio 8r reading during this check.
+The folio selection was not random, and no numeric agreement threshold was declared.
+This was an exploratory input check, not a confirmatory reading test.
+
+Some tall or descending marks approach the crop edges.
+This crop limit and the uncertain shape matches remain in the first-pass records.
+No changed crop, alphabet change, abbreviation expansion, or reader retry followed.
+The result limits this AI reading procedure. It does not show that the manuscript is unreadable.
+
+Both crops reproduced with identical decoded pixel values from the saved JPEG.
+The source and three reader-input hashes matched. All 85 project tests passed.
+Source files, reading records, and the replay receipt stay in `results/fontana-original-reading-2026-09-30/`.
+The source record gives the crop rectangles and hashes. No Voynich sign assignment followed.
+
 ## Verification and next requirement
 
 The [source record](fontana-published-alphabet-2026-09-30.sources.json) gives the source URLs, hashes, page numbers, and crop coordinates.

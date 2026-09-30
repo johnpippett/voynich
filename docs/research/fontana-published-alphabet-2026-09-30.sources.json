@@ -235,5 +235,105 @@
     },
     "crop_rectangles": "Coordinates are pixels at the recorded dpi; x and y start at the upper-left page corner.",
     "crop_command_template": "pdftoppm -f PAGE -l PAGE -r DPI -x X -y Y -W WIDTH -H HEIGHT -png SOURCE.pdf PREFIX"
+  },
+  "original_image_followup": {
+    "date": "2026-09-30",
+    "source": {
+      "file": "bnf-f8r.jpg",
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10023795x/f29/full/full/0/native.jpg",
+      "final_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10023795x/f29/full/full/0/native.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 1026863,
+      "sha256": "15abf764a504256c39589e999f0a167eb2870383d08ce5fb48300433588b2cf3",
+      "retrieved_utc": "2026-09-30T11:17:07.057933+00:00",
+      "folio": "8r",
+      "canvas_number": 29,
+      "width": 2986,
+      "height": 4172
+    },
+    "manifest": {
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10023795x/manifest.json",
+      "sha256": "4b1bb796fad2eddf9de2915ac450fa633a1cb1f0015d566d86f3fe1692e4cacc",
+      "file": "bnf-nal-635-manifest.json",
+      "retained_directory": "results/historical-key-comparators-2026-09-29/fontana/source-bodies/",
+      "bytes": 316635
+    },
+    "table_sha256": "5c06aa501143e5946dc55f31f07278384cacba145e3c43c94a8381760896f68e",
+    "crops": [
+      {
+        "path": "line-1.png",
+        "x": 570,
+        "y": 520,
+        "width": 1750,
+        "height": 185,
+        "sha256": "ece986fd0d4cbf6db203954d1ad7d974d463ca17f6cad8d756259f53e8ab6396",
+        "bytes": 292523,
+        "dimensions": [
+          1750,
+          185
+        ],
+        "rgb_sha256": "98ca5524cb867c81b43fb920a347e0dc88c09406a2d86f023e87cc8205d34e28",
+        "replay_pixels_match": true
+      },
+      {
+        "path": "line-2.png",
+        "x": 570,
+        "y": 705,
+        "width": 1750,
+        "height": 185,
+        "sha256": "cf83f850b49a36f2ef92cc448e41f6866cf8a789c5b4712d5180c48e166b2679",
+        "bytes": 296236,
+        "dimensions": [
+          1750,
+          185
+        ],
+        "rgb_sha256": "7fdfd801d8aada3c071fe762c5f80a63b2cd8a8980176d6cfbd41c7d86d41c55",
+        "replay_pixels_match": true
+      }
+    ],
+    "crop_command_template": "magick bnf-f8r.jpg -crop {width}x{height}+{x}+{y} +repage {path}",
+    "replay": "Both crop RGB pixel streams matched a repeat in an empty temporary directory. PNG file hashes identify the original crops.",
+    "selection": "First two cipher lines above the red Latin heading. Folio and rules fixed before download; crop rectangles fixed after layout view and before readings.",
+    "records": [
+      {
+        "file": "scope.json",
+        "sha256": "29e41881e79d98efc4d478414287d6798611c15830c6684e2f3cb193a644a5f3"
+      },
+      {
+        "file": "crop-scope.json",
+        "sha256": "b12cfa37f45e3dd97ac650358bc555294e9413ca8176f44af0308eb468656d55"
+      },
+      {
+        "file": "root-reading.json",
+        "sha256": "1d1cad7f12f0fcfca14e7674eeb3f7b32aa8fbdfa4e0a8bc4159ca17a23b1d7f"
+      },
+      {
+        "file": "worker-reading.json",
+        "sha256": "bd26be5611a905eb435950d69a8df91bd9f1cb150e3330a9eae6ac89afdce548"
+      },
+      {
+        "file": "crop-replay.json",
+        "sha256": "cbaaa386a49723a29ebd188fda0ba46d0aeac875006917ebf3fd4eeeadb2c73d"
+      }
+    ],
+    "result": {
+      "primary_tentative_positions": [
+        17,
+        19
+      ],
+      "primary_unresolved_letter_values": 8,
+      "other_reader_stable_sequences": 0,
+      "other_reader_low_confidence_candidates": 2,
+      "accepted_common_sequence": false,
+      "continuous_reading": false
+    },
+    "limits": [
+      "Exploratory input check; no numeric agreement threshold declared.",
+      "Primary agent had seen other published folio readings and neighboring chapter titles. No proposed f8r reading was consulted.",
+      "Some marks approach crop edges. No changed crop or reader retry followed.",
+      "Partial records do not validate letter readings or establish source unreadability."
+    ],
+    "next_requirement": "A materially different input method needs evidence for stable sign positions before a further reading test. Do not repeat this packet with prompt repairs."
   }
 }
