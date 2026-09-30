@@ -1,0 +1,223 @@
+{
+  "date": "2026-09-30",
+  "repository": "https://github.com/keninayoung/Voynich_Pipeline",
+  "commit": "c7c3b66fe6c4e5ea8c172df4c607befeae823740",
+  "scope": "Four fixed repository files. Landing-page triage covered three proposals; this source check examines CMM only. No supplied program or real corpus execution.",
+  "sources": [
+    {
+      "file": "altrideicktus-home.html",
+      "url": "https://www.voynichcode.org/",
+      "final_url": "https://www.voynichcode.org/",
+      "status": 200,
+      "bytes": 61277,
+      "sha256": "c619121b26c3ab911f5aa24fdccfa890bc0bf71472ba9eb337f629f974d949ab",
+      "retrieved_utc": "2026-09-30T11:34:57.776011+00:00"
+    },
+    {
+      "file": "simonin-home.html",
+      "url": "https://github.com/GSimonin90/voynich-system-decipherment",
+      "final_url": "https://github.com/GSimonin90/voynich-system-decipherment",
+      "status": 200,
+      "bytes": 339885,
+      "sha256": "e131c0650fbbed10eab959b5c1e08c5352a8fcc54845028c443ad0b95715f1cf",
+      "retrieved_utc": "2026-09-30T11:34:57.152268+00:00"
+    },
+    {
+      "file": "cmm-home.html",
+      "url": "https://github.com/keninayoung/Voynich_Pipeline",
+      "final_url": "https://github.com/keninayoung/Voynich_Pipeline",
+      "status": 200,
+      "bytes": 316950,
+      "sha256": "f579e96ff49e6f677695f8ed9575dc960fbb080152990f6211fa902e39ac1739",
+      "retrieved_utc": "2026-09-30T11:34:56.984298+00:00"
+    },
+    {
+      "file": "cmm-head.json",
+      "url": "https://api.github.com/repos/keninayoung/Voynich_Pipeline/commits/master",
+      "final_url": "https://api.github.com/repos/keninayoung/Voynich_Pipeline/commits/master",
+      "status": 200,
+      "bytes": 6537,
+      "sha256": "86352c6f140bb096818c4c84dc6dcd73380167f750020a8161a7a79068c51e7c",
+      "retrieved_utc": "2026-09-30T11:34:58.055924+00:00"
+    },
+    {
+      "file": "cmm-tree.json",
+      "url": "https://api.github.com/repos/keninayoung/Voynich_Pipeline/git/trees/c7c3b66fe6c4e5ea8c172df4c607befeae823740?recursive=1",
+      "final_url": "https://api.github.com/repos/keninayoung/Voynich_Pipeline/git/trees/c7c3b66fe6c4e5ea8c172df4c607befeae823740?recursive=1",
+      "status": 200,
+      "bytes": 107063,
+      "sha256": "6f77e0a7cabf00f53a0685f7ef7c7bcea39c14dff08b4af853c3e8953742268b",
+      "retrieved_utc": "2026-09-30T11:35:30.851471+00:00"
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/keninayoung/Voynich_Pipeline/c7c3b66fe6c4e5ea8c172df4c607befeae823740/README.md",
+      "final_url": "https://raw.githubusercontent.com/keninayoung/Voynich_Pipeline/c7c3b66fe6c4e5ea8c172df4c607befeae823740/README.md",
+      "status": 200,
+      "bytes": 8429,
+      "sha256": "0d0a2fab32fbcc0749481e02039aeef8fa066a75aebdd62600e730b3f1c47734",
+      "retrieved_utc": "2026-09-30T11:35:30.855141+00:00"
+    },
+    {
+      "file": "translation_guide.md",
+      "url": "https://raw.githubusercontent.com/keninayoung/Voynich_Pipeline/c7c3b66fe6c4e5ea8c172df4c607befeae823740/translation_guide.md",
+      "final_url": "https://raw.githubusercontent.com/keninayoung/Voynich_Pipeline/c7c3b66fe6c4e5ea8c172df4c607befeae823740/translation_guide.md",
+      "status": 200,
+      "bytes": 3024,
+      "sha256": "e6db428af470b1dab5d71d5a400b726ceda094b22c2c1c270b32e6ee7f6e3fa6",
+      "retrieved_utc": "2026-09-30T11:35:30.854625+00:00"
+    },
+    {
+      "file": "voynich_pipeline.py",
+      "url": "https://raw.githubusercontent.com/keninayoung/Voynich_Pipeline/c7c3b66fe6c4e5ea8c172df4c607befeae823740/voynich_pipeline.py",
+      "final_url": "https://raw.githubusercontent.com/keninayoung/Voynich_Pipeline/c7c3b66fe6c4e5ea8c172df4c607befeae823740/voynich_pipeline.py",
+      "status": 200,
+      "bytes": 20406,
+      "sha256": "458e821e9b0ed9feda129b3860aa6f173694cef3529d7075544a96740a6e13b4",
+      "retrieved_utc": "2026-09-30T11:35:30.881220+00:00"
+    },
+    {
+      "file": "build_full_voynich_csv_strict.py",
+      "url": "https://raw.githubusercontent.com/keninayoung/Voynich_Pipeline/c7c3b66fe6c4e5ea8c172df4c607befeae823740/build_full_voynich_csv_strict.py",
+      "final_url": "https://raw.githubusercontent.com/keninayoung/Voynich_Pipeline/c7c3b66fe6c4e5ea8c172df4c607befeae823740/build_full_voynich_csv_strict.py",
+      "status": 200,
+      "bytes": 5020,
+      "sha256": "116e34fc3b7d56470a9d42abf3df120d02f48c754a50b2e203c77bc7e9c90be5",
+      "retrieved_utc": "2026-09-30T11:35:30.828176+00:00"
+    }
+  ],
+  "lexicon_proof": {
+    "source_sha256": "458e821e9b0ed9feda129b3860aa6f173694cef3529d7075544a96740a6e13b4",
+    "base_unit_count": 21,
+    "character_entry_count": 17,
+    "medical_lexicon_count": 20,
+    "mapped_term_count": 20,
+    "mapped_terms_outside_medical_lexicon": [],
+    "medical_terms_not_mapped": [],
+    "injected_terms": [
+      "fac",
+      "usa"
+    ],
+    "injected_terms_in_medical_lexicon": [],
+    "static_branch_argument": "make_unit_map replaces only k/l variants represented in make_char_map. Main decoding drops unknown characters and removes or groups terms. It appends one fac or usa to every retained clause, including fallback.",
+    "formula": "For N>0 flattened output terms and C retained clauses, lexicon_alignment=round((N-C)/N,4). If N=0 the source returns zero.",
+    "limit": "This is a source derivation, not observed corpus output or runtime validation. It says nothing by itself about whether any particular proposed meaning is true."
+  },
+  "filter_check": {
+    "case_inputs_and_expectations": [
+      {
+        "id": "guide_english_fragment",
+        "text": "a straight short thick descending stroke with a",
+        "expected": {
+          "seed_match": "shor",
+          "valid_tokens": 7,
+          "total_tokens": 8,
+          "bad_word": false,
+          "pipeline_keep": true,
+          "builder_keep": true
+        }
+      },
+      {
+        "id": "same_fragment_with_excluded_word",
+        "text": "folio a straight short thick descending stroke with a",
+        "expected": {
+          "seed_match": "shor",
+          "valid_tokens": 8,
+          "total_tokens": 9,
+          "bad_word": true,
+          "pipeline_keep": false,
+          "builder_keep": false
+        }
+      },
+      {
+        "id": "artificial_positive_control",
+        "text": "qokar",
+        "expected": {
+          "seed_match": "qokar",
+          "valid_tokens": 1,
+          "total_tokens": 1,
+          "bad_word": false,
+          "pipeline_keep": true,
+          "builder_keep": true
+        }
+      },
+      {
+        "id": "artificial_negative_control",
+        "text": "blue yellow",
+        "expected": {
+          "seed_match": null,
+          "valid_tokens": 0,
+          "total_tokens": 2,
+          "bad_word": false,
+          "pipeline_keep": false,
+          "builder_keep": false
+        }
+      }
+    ],
+    "source_constant_ranges": {
+      "voynich_pipeline.py": [
+        24,
+        33
+      ],
+      "build_full_voynich_csv_strict.py": [
+        19,
+        39
+      ]
+    },
+    "source_function_ranges": {
+      "voynich_pipeline.py": [
+        53,
+        81
+      ],
+      "build_full_voynich_csv_strict.py": [
+        41,
+        73
+      ]
+    },
+    "method": "Independent constant-based calculation; no external source code executed.",
+    "all_four_expectations_match": true,
+    "replay_identical": true,
+    "initial_failure": "The full-source AST parse rejected non-UTF-8 byte 0x92 in a comment on line418. The revised calculation parsed only the named ASCII constant ranges. It did not change source files or expected results.",
+    "records": [
+      {
+        "file": "filter-trace-plan.json",
+        "sha256": "9ce78a94ec41e32cf0fc0c5b55f5bf86f061b84aeb61be0268e7b6dc1bb06a72"
+      },
+      {
+        "file": "filter-trace-first-attempt.py",
+        "sha256": "2d7b4fecc2c8ae39f442fb5da3f393d5ae27b05a24918812ffa45c44cdef2e3c"
+      },
+      {
+        "file": "filter-trace-failure.json",
+        "sha256": "5d3bb40b8e20a442d1e445b859222ec204cf49f096b077ac7d7ea82d9acf94f7"
+      },
+      {
+        "file": "filter-trace.py",
+        "sha256": "9df8bcc3c6a22d76019280e2e06775a93244910f235426e754c3d9c33d3cf619"
+      },
+      {
+        "file": "filter-trace-result.json",
+        "sha256": "5327651233b7135901b362f967e0127c6e9c82f51dab5eac5862b84d32081175"
+      },
+      {
+        "file": "lexicon-proof.json",
+        "sha256": "4111f70995956396153516dfbc00e9f63ccdf51ba2944778011f5acfd577f438"
+      },
+      {
+        "file": "metric-audit.json",
+        "sha256": "41d8a5972cf15559d39b32083923ad644d0e6892a951ea5685580db7507ae798"
+      },
+      {
+        "file": "filter-audit.md",
+        "sha256": "9732e63eda001b5b2f91a89abd285133e715f1a227151f495478623b7fef0f11"
+      }
+    ],
+    "independent_reader_confirmed": true
+  },
+  "limits": [
+    "The fragment is an artificial filter input drawn from a guide example. No full-corpus contamination rate was measured.",
+    "The guide and current program can describe different versions.",
+    "The static metric proof does not establish a runtime metric or any particular meaning.",
+    "The sensitivity source mismatch does not measure the size of an empirical error."
+  ]
+}

@@ -9,6 +9,11 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [CMM source check](docs/research/cmm-reading-method-check-2026-09-30.md) found that its lexicon score uses the decoder's own output vocabulary.
+Both input filters accept an English description from its translation guide in a fixed calculation.
+Its sensitivity comparison also uses different processing paths. These findings supply no independent support for the assigned meanings.
+No manuscript decoding run followed.
+
 The [Kiltau source check](docs/research/kiltau-hebrew-aramaic-source-check-2026-09-30.md) found a conflict between rule R2 and its listed `or` output.
 The published validation definitions differ about prediction timing. The site lists blind validation by specialists outside the project with status `pending`.
 The external dictionary entry examined does not give the selected physician sense.
