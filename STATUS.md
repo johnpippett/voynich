@@ -9,6 +9,13 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [Naibbe relabeling control](reports/NAIBBE_RELABEL_CONTROL.md) tests four known keys on artificial Latin text without original spaces.
+All four searches failed, with at most two correct assignments among the observed test labels.
+In every case, the known key has a lower fit loss than the saved search key.
+Thus, these saved maps are not optima for the fixed objective. This result does not reject Latin, Naibbe, or all possible keys.
+
+The attempt stops without a manuscript experiment. A clean replay reproduced all result fields except elapsed time.
+
 The [historical source check](docs/research/historical-key-comparisons-2026-09-29.md) now includes a complete printed key from Meister's 1902 book.
 Its printed 1448 date remains uncertain because named titles have later dates under specific identifications.
 The neighboring 1483 key has separate rules. Fontana's complete sign assignments remain outside the reviewed sources.
