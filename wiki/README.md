@@ -6,6 +6,7 @@ Voynich contains reproducible statistical research on Beinecke MS 408. The proje
 
 ## Topic notes
 
+- [21.18 Manuscript Without Spaces](<20-29 Implementation & Operations/21 Implementation Notes/21.18 Manuscript Without Spaces.md>).
 - [21.17 Substitution Without Spaces](<20-29 Implementation & Operations/21 Implementation Notes/21.17 Substitution Without Spaces.md>).
 - [21.16 Naibbe Relabeling Control](<20-29 Implementation & Operations/21 Implementation Notes/21.16 Naibbe Relabeling Control.md>).
 - [21.15 Candidate Key Audits](<20-29 Implementation & Operations/21 Implementation Notes/21.15 Candidate Key Audits.md>).

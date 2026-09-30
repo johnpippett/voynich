@@ -24,6 +24,8 @@ jobs:
         run: python scripts/test_blue_word_transfer_e2e.py results/blue-word-transfer-v1/e2e/ci
       - name: Run substitution command checks without spaces
         run: python experiments/spacefree_substitution/check_e2e.py
+      - name: Run manuscript pilot command checks
+        run: python experiments/spacefree_manuscript/check_e2e.py
       - name: Run lexicon experiment tests
         run: PYTHONPATH=src:. python -m unittest discover -s experiments/lexicon -p 'test_*.py' -v
       - name: Run homophonic experiment tests

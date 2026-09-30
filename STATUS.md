@@ -9,13 +9,24 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [manuscript pilot without spaces](reports/SPACEFREE_MANUSCRIPT_PILOT.md) failed its fixed rule for a later reading study.
+All four 26-letter artificial controls passed before the manuscript stage.
+The ZL test mean cost was 4.421693, above the Latin baseline of 2.708901.
+Its score was below both shuffled controls and identity, but those comparisons supply no reading.
+The unchanged ZL map gave an IT test mean of 4.431523 without another fit.
+
+The pilot stops without additional search or a translation claim.
+A separate replay reproduced all 14 output files with identical bytes.
+This pilot does not show that the manuscript is not Latin.
+It did not test every possible substitution method or key.
+
 The [substitution control without spaces](reports/SPACEFREE_SUBSTITUTION_CONTROL.md) recovered all four planted maps.
 Each control recovered all 22 observed fitting assignments and all 8,192 test characters without errors.
 The complete 23-entry maps also matched. The permutation rule fixes the one assignment absent during fitting.
 No test label was absent during fitting. A separate replay produced all 32 output files with identical bytes.
 
 This is a development control on fixed Latin samples. It supplies no Voynich key or translation.
-No manuscript experiment followed; the earlier stopped studies stay stopped.
+The later 26-letter pilot is a separate method. The earlier stopped studies stay stopped.
 
 The [f1r margin check](docs/research/f1r-margin-key-check-2026-09-29.md#full-resolution-follow-up) now includes two full-resolution processed images from the public multispectral archive.
 The first AI records missed the target columns. One corrected pass supplied no agreed sign-to-letter pair.

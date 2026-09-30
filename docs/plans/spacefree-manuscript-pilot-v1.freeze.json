@@ -1,0 +1,15 @@
+{
+  "files": {
+    "data/bifolio_manifest.json": "998cb3d6c8327ff0bdf786d52968fa3bec9f5fa9b05ba7ae56065fc9639fad72",
+    "data/reference_manifest.json": "f261b781f150991e3305aae5057a94dc91afd8e59c58bb22ff199347f5ce3e6d",
+    "data/source_manifest.json": "77c9f755ed47c19ccfe3ef92b7699953d5d5e9ada729492662c94154d3d2f4f1",
+    "docs/plans/spacefree-manuscript-pilot-v1.md": "77725c5a4104b0404b1754a28152cb0bea36b7e8645c9b6be331378724b5b454",
+    "experiments/spacefree_manuscript/check_e2e.py": "cbe06efcbb498bd13f67a3e55f3a96a259f0818ac21a113c2987c6b4e9a1be3e",
+    "experiments/spacefree_manuscript/run.py": "520b11c2472e00e324b4fddae1cd8144344d9d25f8ae4c8576baf85adc98b665",
+    "experiments/spacefree_substitution/score.py": "675742347cb070c2d2210cef178bd87b195765253307f4181409c8770ac5e19e",
+    "src/voynich/corpus.py": "064c45794d523b5c07ea10621752e325d35709f619e0763ac6ba1561f0fa1dc2",
+    "src/voynich/groups.py": "15b77e967ce296634a36a3deacba660c14a4d4615c99597949b5586d682bdef0",
+    "src/voynich/reference.py": "97e173c761b137d3653a827315b62a68af3e96abd189afdecc46e9759d2b94d9"
+  },
+  "schema_version": 1
+}
