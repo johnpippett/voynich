@@ -1,0 +1,56 @@
+{
+  "study": "romance_matrix_source_check_v1",
+  "date": "2026-09-29",
+  "repository": "https://github.com/mateothour-idk/translate-voynich",
+  "commit": "93a3d9a52bf8419680bcf2b3eec42ea9ab24476f",
+  "complete_tree": true,
+  "tree_sha256": "7918eaf431d11a69ac80daeb426b2aeaae390ac51ac013c1e86c366a69bbe6f2",
+  "inspected_files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/mateothour-idk/translate-voynich/93a3d9a52bf8419680bcf2b3eec42ea9ab24476f/README.md",
+      "sha256": "2bade0707b05c3d0a9817338f0da9fb65a8193592ca05c277c158a33a3a5d882",
+      "bytes": 3861
+    },
+    {
+      "path": "auditar.py",
+      "url": "https://raw.githubusercontent.com/mateothour-idk/translate-voynich/93a3d9a52bf8419680bcf2b3eec42ea9ab24476f/auditar.py",
+      "sha256": "f5638fca317ff017e1938e474663a45862e63aa177e093e8a857257ff3f55913",
+      "bytes": 460
+    },
+    {
+      "path": "voynichapp.py",
+      "url": "https://raw.githubusercontent.com/mateothour-idk/translate-voynich/93a3d9a52bf8419680bcf2b3eec42ea9ab24476f/voynichapp.py",
+      "sha256": "3b617100a9f2756dc9c59dda8be011f1ca70f20bd3d000ee626728fe08b64bc4",
+      "bytes": 9689
+    },
+    {
+      "path": "voynichdatos.py",
+      "url": "https://raw.githubusercontent.com/mateothour-idk/translate-voynich/93a3d9a52bf8419680bcf2b3eec42ea9ab24476f/voynichdatos.py",
+      "sha256": "591a270bd04ac31091606561a453dedafc835fcf31910c856e2eb389a87f321b",
+      "bytes": 6459
+    },
+    {
+      "path": "reglas.txt",
+      "url": "https://raw.githubusercontent.com/mateothour-idk/translate-voynich/93a3d9a52bf8419680bcf2b3eec42ea9ab24476f/reglas.txt",
+      "sha256": "75eca1d27fcb7c37883c70ee7c377f14e89fabb2b54e28fcd4cd3eecad3a8fb7",
+      "bytes": 240
+    }
+  ],
+  "probe_plan_sha256": "ac80e7cf5b6298983f1035b28317e659cb9dc328bd7de3251cb845e1c1c16d0d",
+  "checker_sha256": "2854afe722e092e7ee1c527b631fc9d397357ec3d87c532b954962c7ea2c2ffe",
+  "result_sha256": "9d53a288f0ec35ba4c00f8f05fe82d258c318649ac35181661ed77db32302ab4",
+  "manuscript_files_read": false,
+  "external_application_started": false,
+  "limit": "The check describes source behavior and does not validate a translation.",
+  "verification": {
+    "artificial_inputs": 8,
+    "dictionary_order_cases": 6,
+    "project_tests_passed": 85,
+    "fresh_source_replay": true,
+    "overwrite_rejected_without_change": true,
+    "altered_source_rejected_before_output": true,
+    "independent_source_review_sha256": "b7bef8acf6b99de7c7c40a342f3c0315269c1ad72c03d415d63ffa49275dddbc",
+    "review_limit": "Source review only. No external scholarly validation."
+  }
+}

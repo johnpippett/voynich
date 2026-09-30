@@ -9,6 +9,10 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [Romance matrix check](docs/research/romance-matrix-source-check-2026-09-29.md) finds automatic dictionary acceptance for every phonetic token with one to three characters.
+The program's edit-distance rule also gives different meanings when equal-distance entries change order.
+Eight artificial inputs and six order checks reproduced this behavior. They supply no manuscript reading or independent evidence for the meanings.
+
 The [Naibbe relabeling control](reports/NAIBBE_RELABEL_CONTROL.md) tests four known keys on artificial Latin text without original spaces.
 All four searches failed, with at most two correct assignments among the observed test labels.
 In every case, the known key has a lower fit loss than the saved search key.

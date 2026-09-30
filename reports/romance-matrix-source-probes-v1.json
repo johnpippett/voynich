@@ -1,0 +1,241 @@
+{
+  "source_sha256": {
+    "voynichapp.py": "3b617100a9f2756dc9c59dda8be011f1ca70f20bd3d000ee626728fe08b64bc4",
+    "voynichdatos.py": "591a270bd04ac31091606561a453dedafc835fcf31910c856e2eb389a87f321b"
+  },
+  "dictionary_entries": {
+    "english": 77,
+    "spanish": 77
+  },
+  "shortest_english_keys": [
+    "su",
+    "si"
+  ],
+  "original_order": [
+    {
+      "input": "pui cuta",
+      "phonetic": "pui cuta",
+      "gloss": "plant bark",
+      "words": [
+        {
+          "phonetic": "pui",
+          "exact_entry": true,
+          "minimum_distance": 0,
+          "tied_keys": [
+            "pui"
+          ],
+          "selected_key": "pui"
+        },
+        {
+          "phonetic": "cuta",
+          "exact_entry": true,
+          "minimum_distance": 0,
+          "tied_keys": [
+            "cuta"
+          ],
+          "selected_key": "cuta"
+        }
+      ]
+    },
+    {
+      "input": "f",
+      "phonetic": "f",
+      "gloss": "its",
+      "words": [
+        {
+          "phonetic": "f",
+          "exact_entry": false,
+          "minimum_distance": 2,
+          "tied_keys": [
+            "su",
+            "si"
+          ],
+          "selected_key": "su"
+        }
+      ]
+    },
+    {
+      "input": "ff",
+      "phonetic": "ff",
+      "gloss": "its",
+      "words": [
+        {
+          "phonetic": "ff",
+          "exact_entry": false,
+          "minimum_distance": 2,
+          "tied_keys": [
+            "su",
+            "si"
+          ],
+          "selected_key": "su"
+        }
+      ]
+    },
+    {
+      "input": "fff",
+      "phonetic": "fff",
+      "gloss": "plant",
+      "words": [
+        {
+          "phonetic": "fff",
+          "exact_entry": false,
+          "minimum_distance": 3,
+          "tied_keys": [
+            "pui",
+            "con",
+            "su",
+            "oas",
+            "si",
+            "dic",
+            "cia",
+            "seo",
+            "sar",
+            "ain",
+            "dam",
+            "air"
+          ],
+          "selected_key": "pui"
+        }
+      ]
+    },
+    {
+      "input": "ffff",
+      "phonetic": "ffff",
+      "gloss": "[ffff]",
+      "words": [
+        {
+          "phonetic": "ffff",
+          "exact_entry": false,
+          "minimum_distance": 4,
+          "tied_keys": [
+            "pui",
+            "cuta",
+            "con",
+            "su",
+            "caur",
+            "toes",
+            "odor",
+            "oas",
+            "si",
+            "opas",
+            "vety",
+            "dic",
+            "raur",
+            "copi",
+            "cia",
+            "cuti",
+            "seo",
+            "ocol",
+            "olti",
+            "pair",
+            "pain",
+            "oain",
+            "dais",
+            "sar",
+            "otiy",
+            "quiy",
+            "quey",
+            "oiaj",
+            "cios",
+            "ain",
+            "aram",
+            "sier",
+            "dam",
+            "air",
+            "soar",
+            "ciey",
+            "caud",
+            "cedy",
+            "cidí"
+          ],
+          "selected_key": null
+        }
+      ]
+    },
+    {
+      "input": "qok",
+      "phonetic": "quoqu",
+      "gloss": "whereby",
+      "words": [
+        {
+          "phonetic": "quoqu",
+          "exact_entry": true,
+          "minimum_distance": 0,
+          "tied_keys": [
+            "quoqu"
+          ],
+          "selected_key": "quoqu"
+        }
+      ]
+    },
+    {
+      "input": "eee",
+      "phonetic": "ei",
+      "gloss": "if",
+      "words": [
+        {
+          "phonetic": "ei",
+          "exact_entry": false,
+          "minimum_distance": 1,
+          "tied_keys": [
+            "si"
+          ],
+          "selected_key": "si"
+        }
+      ]
+    },
+    {
+      "input": "h",
+      "phonetic": "h",
+      "gloss": "its",
+      "words": [
+        {
+          "phonetic": "h",
+          "exact_entry": false,
+          "minimum_distance": 2,
+          "tied_keys": [
+            "su",
+            "si"
+          ],
+          "selected_key": "su"
+        }
+      ]
+    }
+  ],
+  "reversed_dictionary_order": [
+    {
+      "input": "f",
+      "phonetic": "f",
+      "gloss": "if"
+    },
+    {
+      "input": "ff",
+      "phonetic": "ff",
+      "gloss": "if"
+    },
+    {
+      "input": "fff",
+      "phonetic": "fff",
+      "gloss": "air"
+    },
+    {
+      "input": "pui cuta",
+      "phonetic": "pui cuta",
+      "gloss": "plant bark"
+    },
+    {
+      "input": "ffff",
+      "phonetic": "ffff",
+      "gloss": "[ffff]"
+    },
+    {
+      "input": "qok",
+      "phonetic": "quoqu",
+      "gloss": "whereby"
+    }
+  ],
+  "all_expectations_match": true,
+  "app_startup_executed": false,
+  "manuscript_inputs_read": false,
+  "limit": "These checks describe program behavior. They do not validate word meanings."
+}
