@@ -26,6 +26,9 @@ The 1975 *Yale University Library Gazette* paper remains unread.
 The limited search included an incorrect expansion of the journal name to *The Mathematical Gazette*.
 The source record preserves that error. This search does not settle the paper's availability.
 
+A [corrected search](child-method-source-review-2026-09-30.md#corrected-brumbaugh-search) used the proper journal name in two new queries.
+It also supplied no full article text. The 1975 method remains unread.
+
 The [1976 publisher record](https://www.journals.uchicago.edu/doi/10.2307/751135) identifies an article on star maps, pages 139–150.
 Its public preview supplies page 139. Pages 140–150 remain unread.
 The preview distinguishes the last-leaf cipher from the main text cipher.

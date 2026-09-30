@@ -9,6 +9,10 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [Child prose review](docs/research/child-method-source-review-2026-09-30.md) records the author's explicit limits on his 1976 North Germanic proposal.
+Printed glyphs remain unverified after access failures. The record preserves a retrieval-limit failure and a corrected Brumbaugh search.
+These sources supply no complete method for a new reading test.
+
 The [Brumbaugh source review](docs/research/brumbaugh-source-review-2026-09-30.md) preserves partial method evidence from two public article previews.
 The full papers remain unread, and the source record retains a journal-name error in the limited search.
 Full method review remains open. These access limits do not reject the proposed readings.

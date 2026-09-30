@@ -1,0 +1,243 @@
+{
+  "date": "2026-09-30",
+  "paper": {
+    "author": "James R. Child",
+    "title": "The Voynich Manuscript Revisited",
+    "official_landing_page": "https://www.nsa.gov/Helpful-Links/NSA-FOIA/Declassification-Transparency-Initiatives/Internal-Periodicals-Publications/Legacy-Periodicals-Lists/igphoto/2002755866/",
+    "publication_as_reported_by_landing_page": "Summer 1976, volume XXI, number 3",
+    "source_url": "https://media.defense.gov/2021/Jul/02/2002755866/-1/-1/0/VOYNICH-MANUSCRIPT-REVISITED.PDF",
+    "pages_reported_by_web_reader": 4
+  },
+  "source_captures": [
+    {
+      "url": "https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/tech-journals/voynich-manuscript-revisited.pdf",
+      "final_url": "https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/tech-journals/voynich-manuscript-revisited.pdf",
+      "file": "source-error.html",
+      "status": 403,
+      "content_type": "text/html",
+      "bytes": 515,
+      "sha256": "7ac9b6b26af9878f33741585519a0fa39b94eb3a97a664769f7aff45f062a392",
+      "retrieved_utc": "2026-09-30T13:07:30.550775+00:00"
+    },
+    {
+      "url": "https://www.nsa.gov/Portals/70/documents/news-features/declassified-documents/tech-journals/voynich-manuscript-revisited.pdf",
+      "final_url": "https://www.nsa.gov/Portals/70/documents/news-features/declassified-documents/tech-journals/voynich-manuscript-revisited.pdf",
+      "file": "legacy-error.html",
+      "status": 403,
+      "content_type": "text/html",
+      "bytes": 515,
+      "sha256": "9d871c740259b24638531cd415b500d5daab8b23df91718986ff7f4fe1d91332",
+      "retrieved_utc": "2026-09-30T13:09:08.783876+00:00"
+    },
+    {
+      "file": "web-extraction.txt",
+      "capture_type": "Serialized content blocks from the successful web-reader tool output in this task; not original PDF bytes.",
+      "source_url": "https://media.defense.gov/2021/Jul/02/2002755866/-1/-1/0/VOYNICH-MANUSCRIPT-REVISITED.PDF",
+      "bytes": 10567,
+      "sha256": "81c234cd51ecdd3623816693360fdb32d9cb3f261a770c67e843a0d8066881d2",
+      "preserved_utc": "2026-09-30T13:11:13.001225+00:00",
+      "pages_reported": 4,
+      "limitations": [
+        "Glyph images were not delivered to the model.",
+        "Direct PDF downloads and later web re-open returned HTTP403.",
+        "Extraction contains OCR errors; no glyph values inferred."
+      ],
+      "readable_extraction": {
+        "file": "web-text-readable.txt",
+        "bytes": 10202,
+        "sha256": "b5644c674fa725870e44447fc935c221396c4dee3381d44d2eaa4271703af338"
+      }
+    }
+  ],
+  "source_hash_limit": "The saved web output and derived readable text have hashes. Original PDF bytes were not obtained, so no PDF hash or glyph-image verification is available.",
+  "review": {
+    "reviewed_utc": "2026-09-30T13:13:58.169996+00:00",
+    "input": "web-text-readable.txt",
+    "input_sha256": "b5644c674fa725870e44447fc935c221396c4dee3381d44d2eaa4271703af338",
+    "review_type": "prose only; four-page extraction",
+    "observations": [
+      {
+        "claim": "The author begins with f114r and uses f40v as follow-up; function-word assignments lead to proposed names and verb forms.",
+        "pdf_page": 2
+      },
+      {
+        "claim": "The author omits the lengthy trial-and-error recovery process.",
+        "pdf_page_range": [
+          2,
+          3
+        ]
+      },
+      {
+        "claim": "The author states that not all letters are recovered and that offering a translation of two tentative clauses would be premature.",
+        "pdf_page": 3
+      }
+    ],
+    "unverified": [
+      "All printed glyph examples",
+      "Historical linguistic and dating claims",
+      "Later Child work",
+      "Any complete decoding method beyond this paper"
+    ],
+    "conclusion": "The author explicitly presents incomplete recovery. No new manuscript reading is supported by this source review.",
+    "page_number_basis": "One-based PDF page labels from web extraction, not visually verified printed page numbers."
+  },
+  "access_log": {
+    "queries": [
+      "site.nsa.gov \"The Voynich Manuscript Revisited\" Child",
+      "\"James R. Child\" \"Voynich\" 1976 pdf",
+      "\"voynich-manuscript-revisited.pdf\" -site:nsa.gov -site:media.defense.gov"
+    ],
+    "requests": [
+      {
+        "kind": "direct PDF fetch",
+        "url": "https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/tech-journals/voynich-manuscript-revisited.pdf",
+        "result": "HTTP403 body saved"
+      },
+      {
+        "kind": "web open",
+        "url": "https://www.nsa.gov/Helpful-Links/NSA-FOIA/Declassification-Transparency-Initiatives/Internal-Periodicals-Publications/Legacy-Periodicals-Lists/igphoto/2002755866/",
+        "result": "Metadata and official download link"
+      },
+      {
+        "kind": "web PDF open",
+        "url": "https://media.defense.gov/2021/Jul/02/2002755866/-1/-1/0/VOYNICH-MANUSCRIPT-REVISITED.PDF",
+        "result": "Four-page text extraction; preserved"
+      },
+      {
+        "kind": "direct PDF fetch",
+        "url": "https://media.defense.gov/2021/Jul/02/2002755866/-1/-1/0/VOYNICH-MANUSCRIPT-REVISITED.PDF",
+        "result": "HTTP403; no PDF saved"
+      },
+      {
+        "kind": "web screenshot",
+        "pdf_page": 1,
+        "result": "Text-only tool response; no image delivered"
+      },
+      {
+        "kind": "web screenshot",
+        "pdf_page": 2,
+        "result": "Text-only tool response; no image delivered"
+      },
+      {
+        "kind": "web screenshot",
+        "pdf_page": 3,
+        "result": "Text-only tool response; no image delivered"
+      },
+      {
+        "kind": "web screenshot",
+        "pdf_page": 4,
+        "result": "HTTP403 error"
+      },
+      {
+        "kind": "curl PDF fetch with ordinary browser user agent",
+        "url": "https://media.defense.gov/2021/Jul/02/2002755866/-1/-1/0/VOYNICH-MANUSCRIPT-REVISITED.PDF",
+        "result": "HTTP403; no PDF saved"
+      },
+      {
+        "kind": "web screenshot of earlier search reference",
+        "pdf_page": 2,
+        "result": "Unsupported content type"
+      },
+      {
+        "kind": "web screenshot of earlier search reference",
+        "pdf_page": 3,
+        "result": "Unsupported content type"
+      },
+      {
+        "kind": "legacy PDF fetch",
+        "url": "https://www.nsa.gov/Portals/70/documents/news-features/declassified-documents/tech-journals/voynich-manuscript-revisited.pdf",
+        "result": "HTTP403 body saved"
+      },
+      {
+        "kind": "web PDF reopen",
+        "url": "https://media.defense.gov/2021/Jul/02/2002755866/-1/-1/0/VOYNICH-MANUSCRIPT-REVISITED.PDF",
+        "result": "HTTP403; error capture saved"
+      }
+    ],
+    "limits": {
+      "queries_allowed": 3,
+      "queries_used": 3,
+      "source_opens_allowed": 6,
+      "acquisition_and_screenshot_requests_used": 13,
+      "source_pages_allowed": 8,
+      "target_article_pages_exposed": 4,
+      "total_source_page_exposure": "Not verified: final query automatically supplied excerpts from Parmentier in search results. No additional article was opened or audited."
+    },
+    "failure": "The six-source-open limit was not enforced across downloads and screenshot requests. Counting all attempts gives thirteen. Acquisition stops.",
+    "provenance_note": "The successful web extraction was preserved from this task's own recorded tool output after the later re-open failed. It is not a hash of the PDF."
+  },
+  "brumbaugh_corrected_search": {
+    "date": "2026-09-30",
+    "scope": {
+      "author": "Robert S. Brumbaugh",
+      "title": "The Solution of the Voynich 'Roger Bacon' Cipher",
+      "journal": "Yale University Library Gazette",
+      "volume": 49,
+      "issue": 4,
+      "year": 1975,
+      "pages": "347-355",
+      "page_count_reported": 9
+    },
+    "searches_used": 2,
+    "searches": [
+      {
+        "query": "\"The Solution of the Voynich 'Roger Bacon' Cipher\" \"Yale University Library Gazette\" 49 4 347 355 1975",
+        "domains": [],
+        "result": "Bibliographic entries and a forum thread; no article file in the visible results."
+      },
+      {
+        "query": "\"Yale University Library Gazette\" \"The Solution of the Voynich\" Brumbaugh 49 347 355",
+        "domains": [
+          "elischolar.library.yale.edu",
+          "library.yale.edu",
+          "jstor.org"
+        ],
+        "result": "No official Yale repository copy appeared in the visible results."
+      }
+    ],
+    "page_opens_used": 2,
+    "page_opens": [
+      {
+        "url": "https://www.voynich.ninja/thread-2297-post-19487.html",
+        "status": "opened",
+        "role": "secondary forum report",
+        "observation": "A 2023 post lists the JSTOR title and nine-page extent. It says full access requires login.",
+        "article_body": false,
+        "raw_body_saved": false
+      },
+      {
+        "url": "https://voynich.ninja/thread-2297.html",
+        "status": "timeout",
+        "error": "TimeoutError",
+        "article_body": false,
+        "raw_body_saved": false
+      }
+    ],
+    "source_files": [],
+    "article_acquired": false,
+    "access_limit": "No full paper copy was found in the checked routes. The text remains unread; no conclusion about its method can be made."
+  },
+  "verification": {
+    "saved_capture_hashes_and_byte_counts": "passed",
+    "project_tests": {
+      "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "tests": 85,
+      "result": "OK",
+      "log_sha256": "7d246b6497d19c4957384e8820fc98120d33ffdd2c8df08de0f7ae9db9dfdeab"
+    },
+    "separate_AI_prose_review": {
+      "file": "prose-audit.md",
+      "sha256": "8d6af960666eb5a1f5f8850a79f8f192cb2434bbc9142344f501c7fd0efd948a",
+      "result": "Agrees about the omitted recovery details, incomplete letters, and withheld translation of two clauses.",
+      "limit": "This is another AI review of the same web extraction, not scholarly validation of a reading."
+    }
+  },
+  "reproduction": [
+    "Use the official source URL to inspect PDF pages 2\u20133.",
+    "Find the author's statements about omitted recovery details, incomplete letter recovery, and withheld clause translation.",
+    "Treat manuscript glyphs as unverified until source images are available.",
+    "Do not treat a web-extraction hash as a PDF hash."
+  ],
+  "decision": "No complete method for a new manuscript reading test resulted. Later Child work and North Germanic languages remain outside this assessment."
+}
