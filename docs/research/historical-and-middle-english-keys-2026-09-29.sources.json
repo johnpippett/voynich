@@ -35,7 +35,17 @@
       29,
       30,
       31,
-      32
+      32,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      276,
+      277
     ],
     "root_image_checks": [
       {
@@ -62,10 +72,78 @@
         "pdf_page": 32,
         "printed_page": 32,
         "sha256": "8e02112b27ac9e567e41cf874c3a08417a35a7e0f3b79b61179bfd352674b16a"
+      },
+      {
+        "pdf_page": 61,
+        "printed_page": 61,
+        "sha256": "2406185c3776d05b9752b3fc2523765956e7e045955c4fd91b8cdaae3630360a"
+      },
+      {
+        "pdf_page": 276,
+        "printed_page": 276,
+        "sha256": "457553c981ec8aa005aaf3c215e9435a652ddf94e36356ffd39e1d059a17053c"
+      },
+      {
+        "pdf_page": 277,
+        "printed_page": 277,
+        "sha256": "7e7d0c95a14b6436a92d5691946fbad70d982cb8d271a843737471032f3fc28f"
       }
     ],
     "page_numbering": "PDF and printed page numbers agree for examined ranges.",
-    "scope": "Method choices and selected examples only. Later plant glossary and its reported matches were not checked."
+    "scope": "Method choices, glossary selection, initial glossary examples, and f55v comparison. No complete glossary count or manuscript decoder run.",
+    "initial_examined_pdf_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "follow_up_selected_pages": [
+      [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      [
+        276,
+        277
+      ]
+    ],
+    "follow_up_navigation": {
+      "machine_pdf_pages": 323,
+      "search": "Exact folio string f55v, case-insensitive. Only matching page numbers and lines retained.",
+      "hits": [
+        30,
+        276
+      ],
+      "limit": "Navigation index is not full human examination of the source."
+    }
   },
   "middle_english_dictionary": {
     "entry": "with(e n.(1)",
@@ -206,6 +284,34 @@
       "result": "One Figure 25 candidate on PDF page 105.",
       "limit": "Machine processing is not full human page examination.",
       "fresh_caption_bands_processed": 132
+    },
+    "feely_original_follow_up": {
+      "catalogue_api": "Internet Archive Advanced Search",
+      "queries": [
+        {
+          "query": "title:&quot;Roger Bacon\\'s Cypher&quot; AND creator:&quot;Feely, Joseph Martin&quot;",
+          "sha256": "3c24afb05df36dde4706cd186cf257b3f2707391ccabee54cc85e6add3286739",
+          "num_found": 0,
+          "returned_titles": []
+        },
+        {
+          "query": "creator:&quot;Joseph Martin Feely&quot;",
+          "sha256": "fecc27056f5b59d72a46f72a3c68a7f20a6de97286ac923966fc67cb3aee2708",
+          "num_found": 1,
+          "returned_titles": [
+            "Shakespeare's maze further deciphered"
+          ]
+        },
+        {
+          "query": "title:Roger AND title:Bacon AND title:Cypher",
+          "sha256": "5965117a4bdfda82b94457e587553c36dc9f0bc6a97fc39861f1a0b42ae7c2a3",
+          "num_found": 0,
+          "returned_titles": []
+        }
+      ],
+      "target_scan_obtained": false,
+      "original_book_pages_examined": 0,
+      "limit": "No target record in these queries. Does not show that no copy exists."
     }
   },
   "strong": {
@@ -223,5 +329,27 @@
     "result_cards_exposed": 28,
     "scope_failure": "No further discovery queries after overrun.",
     "limit": "Access failure gives no conclusion about the complete key."
+  },
+  "f55v_image": {
+    "manifest_sha256": "317d58fd9ea90392a83d9858a91eada3d0b41416a3c835857dc0154bd123a309",
+    "canvas_id": "https://collections.library.yale.edu/manifests/oid/2002046/canvas/1006183",
+    "canvas_label": {
+      "none": [
+        "55v"
+      ]
+    },
+    "image_url": "https://collections.library.yale.edu/iiif/2/1006183/full/full/0/default.jpg",
+    "image_sha256": "0e9b1dac025cad189bc7258f41fb8cafc6fcff70f9c4e5bb4f85c9bb79ad5a80",
+    "image_bytes": 2472922,
+    "image_width": 2979,
+    "image_height": 3769,
+    "retrieved_utc": "2026-09-30T01:32:24.139165+00:00",
+    "schema_correction": "Initial v2 sequences lookup returned zero canvas hits. Source is a v3 items manifest. Exact label55v yielded one canvas; initial empty result preserved separately.",
+    "manifest_url": "https://collections.library.yale.edu/manifests/2002046",
+    "review_scope": {
+      "primary_agent": "Knew the proposed name before viewing.",
+      "separate_AI_task": "Received no candidate name or decoded text; asked for drawn features only, not species identification.",
+      "limit": "Neither is independent expert identification. No manuscript text decoding or counts."
+    }
   }
 }

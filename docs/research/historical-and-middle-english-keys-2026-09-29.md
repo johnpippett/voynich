@@ -33,7 +33,7 @@ This check supports the historical vocabulary reference. It does not check the m
 
 On page 32, Vatne says the sample translations do not validate the decoding.
 Vatne proposes comparison of plant names with their illustrations. This check did not test that proposal.
-This check did not examine the later plant glossary or reproduce its reported matches.
+The first check did not examine the later plant glossary. The follow-up below examines its selection method and the fixed f55v example.
 A new test needs fixed reading choices and plant identifications made independently of the proposed decoded names.
 
 ### Scope
@@ -42,6 +42,8 @@ The first check covered pages 1–8. Two later tasks examined pages 15–24 and 
 These selections preceded the respective page extractions. The primary agent checked images of pages 23, 24, 25, 30, and 32.
 Printed and PDF page numbers agree in these ranges. No claim about all 323 pages follows from this check.
 
+The later check added pages 60–67 and 276–277. It did not reproduce all 104 reported plant-name readings.
+
 The fixed dictionary target was `with(e)`. The earlier `wilwe` lookup was for navigation only.
 A third web query corrected a domain-filter error after an initial two-query limit. The saved record keeps this scope change.
 
@@ -49,11 +51,47 @@ A later site search exposed 15 result cards. The check selected the exact `with(
 Direct retrieval failed, but a hidden browser displayed the dictionary after automatic security verification.
 The local record contains observations from that page, not original server bytes.
 
+### Plant-comparison method
+
+Page 61 explains how the plant glossary selects candidates.
+A candidate plant name enters the table when the author sees a matching feature in the manuscript drawing.
+The author omits other plants with the same vernacular name if they lack visual similarity.
+Another column then rates the illustration match.
+Thus, visual fit affects both selection and the stated support for a candidate.
+This procedure does not keep the illustration evidence separate from candidate selection.
+
+The first examples also use both directions of inference.
+The f1v discussion starts from a proposed text reading, then selects a plant through described features (pages 62–63).
+The f2v discussion starts from the illustration, then gives alternative proposed readings (pages 66–67).
+Pages 60–67 give no complete candidate count or failed-match count.
+These observations do not reproduce or disprove the reported total of 104 names.
+
+### The selected f55v comparison
+
+Pages 276–277 propose basket willow, *Salix viminalis*. The table selects paragraph 1, line 1, word 2.
+Page 277 describes the resemblance as weak and records differences in color, flower/petals, and pedicel.
+It records similarities in the stem and leaves.
+The page also lists `withþene` and `withthin`, which agree with the dictionary header checked above.
+The `within` spelling on page 30 therefore does not describe every form that the paper gives.
+
+The primary agent examined the [Yale f55v image](https://collections.library.yale.edu/iiif/2/1006183/full/full/0/default.jpg) with the proposed name already known.
+A separate AI task received the same image without the candidate name or decoded text.
+The image has a central stem, a broad green region, small terminal structures, and branching forms below.
+The individual leaf arrangement and diagnostic reproductive structures stay uncertain in this check.
+These observations give no independently checked plant identification. They do not disprove the willow proposal.
+
+The source check now shows how visual fit enters the glossary selection.
+A test of the key still needs fixed reading rules and plant identifications made without the proposed decoded names.
+It also needs the complete candidate set and failures, with a comparison rule fixed before evaluation.
+
 ## Feely source access
 
 D’Imperio's [study](https://www.govinfo.gov/content/pkg/GOVPUB-D-PURL-gpo58694/pdf/GOVPUB-D-PURL-gpo58694.pdf#page=105) reproduces Feely's proposed alphabet in Figure 25.
 The figure is on printed page 103, PDF page 105. Its caption cites Feely 1943, pages 11 and 34–35.
 This is D’Imperio's adapted reproduction. The selected catalogue routes supplied no pages from Feely's original book.
+
+Three later Internet Archive queries found no target record. One author query returned an unrelated Feely title.
+These catalogue results do not show that no copy exists.
 
 The figure gives proposed readings of f78r labels above a table of drawn signs and Latin-letter values.
 The table includes single letters and groups, such as `ND`, `DER`, `PER`, and `UND`.
