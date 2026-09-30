@@ -78,7 +78,7 @@
     ],
     "image_credit": "The Lazarus Project and The Chester F. Carlson Center for Imaging Science at Rochester Institute of Technology",
     "manuscript": "Beinecke Rare Book & Manuscript Library MS 408, f1r",
-    "limit": "Published f1r images only. Complete spectral archive not examined."
+    "limit": "The initial check used published f1r images. The full_resolution_followup field records the later two-file archive check."
   },
   "yale_f1r": {
     "manifest_url": "https://collections.library.yale.edu/manifests/2002046",
@@ -143,5 +143,357 @@
     "tests": 85,
     "result": "pass",
     "log_sha256": "24f84a5f2c3b7d44c5b41da0186cff06a1cfa470640de75fd76e82518e29c0d7"
+  },
+  "full_resolution_followup": {
+    "question": "Can public full-resolution processed f1r multispectral images support a fixed row alignment and visible sign-to-Roman-letter pairs?",
+    "archive_root": "https://drive.google.com/drive/folders/1mNQGKQDSCR4M_c2M2JrsU5soghvYwMig",
+    "f1r_folder": "https://drive.google.com/drive/folders/1_J_2ukEJwknW7a2p8NnseypSwTyM28_I",
+    "folder_captures": [
+      {
+        "url": "https://drive.google.com/drive/folders/1mNQGKQDSCR4M_c2M2JrsU5soghvYwMig?usp=sharing",
+        "bytes": 342618,
+        "sha256": "5b5701e59661b32de5ef8c08e5f1877cdfd9d98b0c41c5d84e90d2dad56a0543"
+      },
+      {
+        "url": "https://drive.google.com/drive/folders/1BFwNZTgLqvgnIU8rmXQCdW6kIuC4baS7",
+        "bytes": 386342,
+        "sha256": "6568d8e647688e45a26a6e45e9ad6ea83c034a72fc6378066a767a944c68de64",
+        "utc": "2026-09-30T05:28:48.422476+00:00"
+      },
+      {
+        "url": "https://drive.google.com/drive/folders/1_J_2ukEJwknW7a2p8NnseypSwTyM28_I",
+        "bytes": 338226,
+        "sha256": "ad8798766a40897bb48bf17778b2a39839d0a7d0dbfcea8332b39c31e0bc6211",
+        "utc": "2026-09-30T05:29:03.032924+00:00"
+      }
+    ],
+    "selection_criteria": [
+      "Select the JPEG with RH_margin in its name for the target region.",
+      "Select the first listed greenRoI_bottom JPEG as a second processing view.",
+      "Exclude the hue-adjusted near-duplicate. The TIFF plus a JPEG exceeds the total byte cap.",
+      "The folder page does not provide pixel dimensions. Record them after download."
+    ],
+    "image_total_bytes": 38000068,
+    "images": [
+      {
+        "source_url": "https://drive.google.com/file/d/1J8Z2kaTZgLJ972hoAKIcTuEhEmqWIMXt/view",
+        "filename": "Voynich_001r_bands01-22_RF+FL_cal_med3+box51x5_bad_22bands_blueRoI_RH_margin_shiftdif_MNF_R+3_G-4_B-5_scga.jpg",
+        "local_name": "source-1.jpg",
+        "bytes": 18969779,
+        "sha256": "a4dc96aebab02871c15a80e2ec8e6f9d5a7f70f9e00c86beb9f5b0ce8b81a5ef",
+        "utc": "2026-09-30T05:29:56.122051+00:00",
+        "width": 6132,
+        "height": 8176,
+        "mode": "RGB"
+      },
+      {
+        "source_url": "https://drive.google.com/file/d/1rBOSvrVJfpEKbLVsr85ijN26bwsQCHbp/view",
+        "filename": "Voynich_001r_bands01-22_RF+FL_cal_med3+box51x5_bad_20bands_noUVb+UVp_greenRoI_bottom_shiftdif_MNF_R-3_G-3_B+14_scl2_r-90.jpg",
+        "local_name": "source-2.jpg",
+        "bytes": 19030289,
+        "sha256": "e9e20479a4354c453e7138525800ea7090b628d2313f1046ca60dfc13a72e3d9",
+        "utc": "2026-09-30T05:29:58.317912+00:00",
+        "width": 6132,
+        "height": 8176,
+        "mode": "RGB"
+      }
+    ],
+    "crop_coordinate_system": "Original JPEG pixels, top-left origin; crop bounds x0,y0,x1,y1, upper bounds exclusive.",
+    "panels": [
+      {
+        "file": "s1-panel-1.png",
+        "source": "source-1.jpg",
+        "box_xyxy": [
+          3700,
+          850,
+          4600,
+          2250
+        ],
+        "sha256": "cd677c3f5c904f81b6191d2c29b73ae7f64de00386de630c70578ccf1f1d5ae6"
+      },
+      {
+        "file": "s1-panel-2.png",
+        "source": "source-1.jpg",
+        "box_xyxy": [
+          3700,
+          2150,
+          4600,
+          3550
+        ],
+        "sha256": "fa216bb978b7085c53ab43c28389b099ef4eaaf28306a744f4ed2acd0586fb41"
+      },
+      {
+        "file": "s1-panel-3.png",
+        "source": "source-1.jpg",
+        "box_xyxy": [
+          3700,
+          3450,
+          4600,
+          4850
+        ],
+        "sha256": "1443b8c0f2c28a697df49e56a849464e0d0164caa96d0915d2c804100ee88175"
+      },
+      {
+        "file": "s1-panel-4.png",
+        "source": "source-1.jpg",
+        "box_xyxy": [
+          3700,
+          4750,
+          4600,
+          6150
+        ],
+        "sha256": "5bd811df70707fa0e3662afd59173bf3d3b708b2a298aa3f1a8c45ffc8fdd17d"
+      },
+      {
+        "file": "s1-panel-5.png",
+        "source": "source-1.jpg",
+        "box_xyxy": [
+          3700,
+          6050,
+          4600,
+          7350
+        ],
+        "sha256": "63ed34430799f5c7945aa3bc8dc1e8845e87086a50a2ea6e84813d2d849ec869"
+      },
+      {
+        "file": "s2-panel-1.png",
+        "source": "source-2.jpg",
+        "box_xyxy": [
+          3700,
+          850,
+          4600,
+          2250
+        ],
+        "sha256": "4bb72764dd1cd4ba4644e2142f287554a6de4e307befd63cfb88befb52f164b0"
+      },
+      {
+        "file": "s2-panel-2.png",
+        "source": "source-2.jpg",
+        "box_xyxy": [
+          3700,
+          2150,
+          4600,
+          3550
+        ],
+        "sha256": "d8463af102e1e6eea28f906d17cd6d12c49e5f848de423030de87aec63c59983"
+      },
+      {
+        "file": "s2-panel-3.png",
+        "source": "source-2.jpg",
+        "box_xyxy": [
+          3700,
+          3450,
+          4600,
+          4850
+        ],
+        "sha256": "f68457b3438bf5c9270642be75010d8f3cf40d0834d14421d7fbf3c07074eb64"
+      },
+      {
+        "file": "s2-panel-4.png",
+        "source": "source-2.jpg",
+        "box_xyxy": [
+          3700,
+          4750,
+          4600,
+          6150
+        ],
+        "sha256": "c896a9189671d7a33f4ff27001a3ede4eac60a75efa3b156aa322aa969fd2c50"
+      },
+      {
+        "file": "s2-panel-5.png",
+        "source": "source-2.jpg",
+        "box_xyxy": [
+          3700,
+          6050,
+          4600,
+          7350
+        ],
+        "sha256": "8e71ac29d9e1daea8ea3b40d786df58fa30075395ace63ca67c773a9c73e71cf"
+      }
+    ],
+    "crop_method": "Lossless rectangular crops only. No rotation, contrast adjustment, sharpening, or generated marks.",
+    "acceptance_rule": [
+      "Both independent records must explicitly identify the same visible Roman literal, the same adjacent sign shape, and a clear row alignment.",
+      "Both endpoints and the row alignment must be unambiguous in both records. A plausible shape or a likely alphabet position is insufficient.",
+      "The coordinator compares original coordinates and shape descriptions. It does not change a worker reading to create agreement.",
+      "No reading is promoted to manuscript plaintext or a validated key.",
+      "If no row passes, stop without a corpus test or another image selection."
+    ],
+    "credit": "The Lazarus Project and The Chester F. Carlson Center for Imaging Science at Rochester Institute of Technology",
+    "limits": [
+      "Two processed full-page JPEGs were examined. Other files and raw spectral bands were not examined.",
+      "Two AI records from one model are not independent expert validation.",
+      "Separate processing versions do not supply independent physical evidence.",
+      "No source image was changed to complete or clarify a written form."
+    ],
+    "software_check": {
+      "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+      "tests": 85,
+      "result": "pass",
+      "log_sha256": "f57476bc934479a1767818a1c7fd93fe60050ff8fb0a0640c8f79055b4360ca0"
+    },
+    "initial_task_failure": {
+      "reason": "The initial reader tasks compared outer-edge marks to manuscript body-text rows. Their records did not test correspondences between the three margin columns. This is a task-localization failure, not a result about column legibility.",
+      "initial_record_sha256": {
+        "reader-a.json": "5966f62041714d81b71554222a10ce061092c53b2ff4ddfdccaf63e73f9ee0bd",
+        "reader-a.md": "b58c7f824d06acfadd66a52639b12e60e329c7b2b760ad0ec811053b33554fe1",
+        "reader-b.json": "1009acc43cb9f9c39fffac874b6ef7185410913f8d30a6784b8dd44be777f3fd",
+        "reader-b.md": "6cc72920838f2ccaacd2d395445deca8b843d575b366c2c126392ede08b4dd36"
+      },
+      "reader_b_scope_clarification": "Reader B confirmed treating most ink to the left of its two traces as body text without checking additional margin columns."
+    },
+    "clarified_method": {
+      "question": "Can readers record the three margin columns when their approximate horizontal positions are explicit?",
+      "fixed_method": [
+        "Use the same two source images and ten crops. No new image selection or enhancement.",
+        "Approximate column x centers are 4010, 4170, and 4360 in the original images. These are geometric guides, not assigned letters or exact bounds.",
+        "Record correspondences across these margin columns, not with lines of manuscript body text.",
+        "No expected alphabet, published transcription, EVA conversion, missing-value inference, or corpus application.",
+        "Use one clarified pass per reader. Keep initial records unchanged; write distinct clarified records.",
+        "Apply the original clear-agreement rule only to records that address these columns.",
+        "Stop after this corrected pass if any necessary reading or row alignment is unresolved. No further reader retry."
+      ],
+      "utc": "2026-09-30T05:38:15.888104+00:00",
+      "expected_exposure": "The coordinator supplies approximate column locations after seeing full images. This is an assisted localization task, not a fully blind discovery test."
+    },
+    "crop_verification": {
+      "setup": "Python with Pillow 12.3.0",
+      "steps": [
+        "Read each selected original JPEG.",
+        "Crop each recorded rectangle with no image adjustment.",
+        "Compare decoded RGB bytes against each saved PNG.",
+        "Check original-file SHA-256 values against the frozen packet."
+      ],
+      "checks": [
+        {
+          "panel": "s1-panel-1.png",
+          "pixels_equal": true,
+          "pixel_sha256": "d8b2781e8557ab8c184108a88948d3696adab46fc2d2d83d18a47871a694383d",
+          "size": [
+            900,
+            1400
+          ],
+          "mode": "RGB"
+        },
+        {
+          "panel": "s1-panel-2.png",
+          "pixels_equal": true,
+          "pixel_sha256": "16e1c6a111b55a8eed93cc7c281b41648ce31578d251f080dbcb52e7743ce1e7",
+          "size": [
+            900,
+            1400
+          ],
+          "mode": "RGB"
+        },
+        {
+          "panel": "s1-panel-3.png",
+          "pixels_equal": true,
+          "pixel_sha256": "3250626dc51d9eacbd26549a082c531a8c3ad41d63849e3ecc8fd8cea0006923",
+          "size": [
+            900,
+            1400
+          ],
+          "mode": "RGB"
+        },
+        {
+          "panel": "s1-panel-4.png",
+          "pixels_equal": true,
+          "pixel_sha256": "c0fbbcef0218272d5d1b15959fea34e13c9df112725695d75fc0c7737216565d",
+          "size": [
+            900,
+            1400
+          ],
+          "mode": "RGB"
+        },
+        {
+          "panel": "s1-panel-5.png",
+          "pixels_equal": true,
+          "pixel_sha256": "960cba41217eb39b81f008671effe023737d2661d5d771aa7f60c8d496062adf",
+          "size": [
+            900,
+            1300
+          ],
+          "mode": "RGB"
+        },
+        {
+          "panel": "s2-panel-1.png",
+          "pixels_equal": true,
+          "pixel_sha256": "838f7a8de909a0bc97dda8a247e5d1ad6cc387304cdfb3cd4419bb7b8b7257d0",
+          "size": [
+            900,
+            1400
+          ],
+          "mode": "RGB"
+        },
+        {
+          "panel": "s2-panel-2.png",
+          "pixels_equal": true,
+          "pixel_sha256": "541d4448b71ad14a5c77b9bb8ce9c9c73a5c271d6a9f7e124a98851145ff385d",
+          "size": [
+            900,
+            1400
+          ],
+          "mode": "RGB"
+        },
+        {
+          "panel": "s2-panel-3.png",
+          "pixels_equal": true,
+          "pixel_sha256": "99befc92d956b5b88dedb777404f44d2c2af78c4c499ab7cb1a197ddc23d4ed6",
+          "size": [
+            900,
+            1400
+          ],
+          "mode": "RGB"
+        },
+        {
+          "panel": "s2-panel-4.png",
+          "pixels_equal": true,
+          "pixel_sha256": "103ceccba037335855af91a3e210664bef279cfd5c3f1f835a8a2673d4a6f3c8",
+          "size": [
+            900,
+            1400
+          ],
+          "mode": "RGB"
+        },
+        {
+          "panel": "s2-panel-5.png",
+          "pixels_equal": true,
+          "pixel_sha256": "051e6da1831bd69ba664d10baf4f1fbae23adcf56c4745f621016fa2dab699fa",
+          "size": [
+            900,
+            1300
+          ],
+          "mode": "RGB"
+        }
+      ],
+      "result": "All ten panels have exactly the source crop pixels.",
+      "failure_limits": [
+        "This check cannot establish processing accuracy, ink identity, or sign readings.",
+        "Both source JPEGs are supplied processed images, not raw spectral-band measurements."
+      ]
+    },
+    "result": {
+      "accepted_pairs": 0,
+      "complete_column_transcription": false,
+      "reader_a_possible_row_groups": 1,
+      "reader_b_possible_row_groups": 4,
+      "new_sign_assignments": 0,
+      "manuscript_test": false,
+      "decision": "Stop this AI reading procedure without another reader pass.",
+      "interpretation_limit": "No usable shared reading resulted. This does not establish that the images contain no readable letters.",
+      "image_delivery": "Both readers reported using view_image and emitting its image_url as image blocks. This report does not validate visual interpretations."
+    },
+    "receipt_sha256": {
+      "reader-a-clarified.json": "833c4be5c53c18798676e187fa2083d9a28e4c015fac610df02735d7a1673b2e",
+      "reader-a-clarified.md": "f354c8fae46cbe787047993373419cb111fca04d0d64086a69978cfd894665d6",
+      "reader-b-clarified.json": "ac37996ca71138d94d41fcff13ca60b2bcd951d15177c196dd6d9cd871bc8163",
+      "reader-b-clarified.md": "4f6a15add02922131f1c61da56b469ee9dc3b4bd75222cb0222419914bfd21b2",
+      "crop-verification.json": "fd834fc816e95f22a790c13c8d49b977fedf9a67bb39af0a5a130dd63c08cb27",
+      "agreement-method.json": "d8b8f09a2b76811663de8a3e29d0ebaf9f73640ec17a93eb4c3a90a30190538a",
+      "clarified-method.json": "7eaf1b45cab6629fa5f51b9e8c10c8f96e14dfd91f1e9f429a0090260a961186",
+      "coordinator-region-check.json": "9ab00e513ae1616a9126ac4b137c140b3662663870e86f8c3c77fa473526e781",
+      "method-review.md": "2838cb5d06d77f294eff34bbf19696820f7db4b27194382177547902f71d891b",
+      "verification.md": "51e36416a92fca6fdc4ad2001922f492c936bfed97e9ea045c1b26413d0af987"
+    }
   }
 }

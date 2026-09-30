@@ -9,6 +9,11 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [f1r margin check](docs/research/f1r-margin-key-check-2026-09-29.md#full-resolution-follow-up) now includes two full-resolution processed images from the public multispectral archive.
+The first AI records missed the target columns. One corrected pass supplied no agreed sign-to-letter pair.
+This reading procedure produced no usable shared transcription. It does not show that the columns are unreadable.
+The fixed images and crop records are kept. No new sign value or manuscript test followed.
+
 The [Romance matrix check](docs/research/romance-matrix-source-check-2026-09-29.md) finds automatic dictionary acceptance for every phonetic token with one to three characters.
 The program's edit-distance rule also gives different meanings when equal-distance entries change order.
 Eight artificial inputs and six order checks reproduced this behavior. They supply no manuscript reading or independent evidence for the meanings.

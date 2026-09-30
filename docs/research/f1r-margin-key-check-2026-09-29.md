@@ -55,7 +55,8 @@ It does not give a measured ink date or a validated substitution rule.
 
 The primary agent examined the transcription image and two images that compare letter forms and show-through.
 No unknown entry was filled, and no glyph was converted to EVA.
-The complete multispectral image archive was not examined.
+This first check did not examine full-resolution files from the multispectral archive.
+The follow-up below examines two such files.
 
 Image credit: The Lazarus Project and The Chester F. Carlson Center for Imaging Science at Rochester Institute of Technology.
 Manuscript: Beinecke Rare Book & Manuscript Library MS 408, f1r.
@@ -77,6 +78,64 @@ It does not show that all other images would give the same reading limit.
 These are AI image observations, not an expert handwriting assessment.
 The later multispectral source check above supplies additional information. The ordinary-light limit does not override it.
 
+## Full-resolution follow-up
+
+The new question concerns visible sign-to-letter pairs in two full-resolution processed images.
+It does not repeat the earlier source review or apply a proposed key to the manuscript.
+
+The [public f1r folder](https://drive.google.com/drive/folders/1_J_2ukEJwknW7a2p8NnseypSwTyM28_I) contains four processed files.
+The check selected two JPEG files before image examination.
+One filename specifies the right margin. The other specifies a different processing region at the bottom of the page.
+The selection excludes a similar color-adjusted JPEG and a TIFF that exceeds the combined download limit with either JPEG.
+These criteria do not show that the selected images give the best possible readings.
+
+Both selected images measure 6,132 by 8,176 pixels. Their combined size is 38,000,068 bytes.
+They show the same folio through two processing methods. They are not independent physical evidence.
+The check keeps the complete image files and their SHA-256 hashes.
+The source record gives the original filenames, public links, and hashes.
+
+The right-margin rectangle extends from `(3700, 850)` to `(4600, 7350)` in each source image.
+Five panels divide that rectangle, with 100 pixels of overlap between adjacent panels.
+Their starting y-coordinates are `850`, `2150`, `3450`, `4750`, and `6050`.
+The first four panels measure 900 by 1,400 pixels. The last measures 900 by 1,300 pixels.
+The source record gives all crop coordinates and hashes.
+
+Two separate AI readers received the fixed images without published transcriptions or the other reader's record.
+The instructions prohibited alphabet completion, EVA conversion, and inference of missing marks.
+An accepted row needs clear agreement on its Roman letter, adjacent sign shape, and alignment.
+The coordinator does not change either record to create agreement.
+
+The first records addressed outer-edge marks and their possible relation to body-text lines.
+They did not record the three margin columns. One reader confirmed this task error in a separate scope response.
+That reader saw a clear outline but could not identify writing or assign one row.
+These records cannot show that the margin columns are unreadable.
+The check keeps both initial records unchanged.
+
+The corrected question asks whether explicit column positions let the readers record correspondences across the margin columns.
+The coordinator supplied approximate x-coordinates `4010`, `4170`, and `4360` before one corrected pass.
+These coordinates identify regions. They supply no expected letter, sign value, or row sequence.
+The corrected pass uses the same images and crops. Its records are separate from the first records.
+This procedure assists image location. It is not a fully blind column-discovery test.
+
+The corrected records supply one possible row group from reader A and four from reader B.
+Neither reader assigned a Roman letter or accepted a sign-to-letter pair.
+Their records do not supply a complete column transcription.
+The coordinator's image examination found distinct forms, but it cannot replace agreement between the two records.
+Thus, the procedure produced no usable shared reading. This result does not show that the images contain no readable letters.
+
+The check stops here without another reader pass or a manuscript test.
+It supplies no new sign value and does not contradict the published preliminary transcription.
+The two readers reported that their tools displayed image pixels, not only file paths.
+This delivery report does not validate their visual interpretations.
+
+The coordinator also examined the two full-page overviews and all ten margin panels.
+No contrast change, sharpening, or generated mark was applied.
+Decoded RGB byte comparisons confirm that all ten PNG panels contain exactly the corresponding source pixels.
+This check tests crop integrity. It does not test spectral processing accuracy or identify ink layers.
+
+These separate AI records use the same model. No handwriting expert validated their readings.
+The check does not examine raw spectral bands, all processing versions, or matching regions on the reverse side.
+
 ## Decision and verification
 
 Do not use these columns as known plaintext or a validated key.
@@ -88,6 +147,7 @@ The [source record](f1r-margin-key-check-2026-09-29.sources.json) gives source U
 Download the sources and compare their hashes. Examine the chart, cited source passages, and fixed image regions.
 Dynamic web pages can change after capture. A changed hash requires examination of the changed content.
 
-The required project suite passed all 85 tests. This software result does not validate a key or translation.
+The required project suite passed all 85 tests.
+This software result does not validate a key or translation.
 No manuscript corpus processing, new sign assignment, or external decoder execution followed.
 Source bodies and detailed receipts stay in the ignored result directory.
