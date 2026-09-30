@@ -9,6 +9,10 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [Vogt–Newbold review](docs/research/vogt-newbold-reading-rules-2026-09-30.md) examines proposed sound tables and historical deciphering rules.
+Vogt's recovered tables compare names, with partly clipped method notes. Newbold's rules require choices about letter values and rearrangement.
+Neither examined source establishes a fixed continuous reading. No new manuscript decoding followed.
+
 The [Ardıç–Asgarov review](docs/research/ardic-reading-rules-2026-09-30.md) examines a proposed passage reading and later ATA table notes.
 The examined material leaves value selections open and supplies no validated key. No manuscript decoding test followed.
 The report preserves a source-exposure limit failure and a separate Gibbs publisher-preview limit.

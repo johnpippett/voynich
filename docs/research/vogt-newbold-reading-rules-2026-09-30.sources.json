@@ -1,0 +1,508 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-30",
+  "purpose": "Source rules and eligibility review; no new manuscript reading or decoding run.",
+  "vogt": {
+    "source_page": {
+      "url": "https://stephenbax.net/?p=1550",
+      "title": "Voynich phonetics (June 2015 version) by Derek Vogt",
+      "displayed_date": "2015-07-01",
+      "addendum_date_displayed": "April 2016",
+      "raw_html_obtained": false,
+      "capture": "retrieval-01-web.json"
+    },
+    "images": [
+      {
+        "url": "https://stephenbax.net/wp-content/uploads/2015/07/Vogt-june-2015-scheme-part-1b.jpg",
+        "file": "results/vogt-primary-method-2026-09-30/scheme-part-1.jpg",
+        "bytes": 1194526,
+        "sha256": "8ef20c65cf1fbece27eb9d85a9345d4bb9dd75629920141d45733d2cfdfd1b1e",
+        "dimensions": [
+          595,
+          3427
+        ],
+        "acquisition": "Supported browser pageAssets export of loaded image",
+        "saved_utc": "2026-09-30T14:50:43.106903+00:00"
+      },
+      {
+        "url": "https://stephenbax.net/wp-content/uploads/2015/07/Vogt-june-2015-scheme-part-2b.jpg",
+        "file": "results/vogt-primary-method-2026-09-30/scheme-part-2.jpg",
+        "bytes": 1352936,
+        "sha256": "c3c43c34aa6b5c6073ef41b68998c5a142946d2b4842c3f9f861667f53e4c8be",
+        "dimensions": [
+          549,
+          3426
+        ],
+        "acquisition": "Supported browser pageAssets export of loaded image",
+        "saved_utc": "2026-09-30T14:50:43.309518+00:00"
+      }
+    ],
+    "search_queries": [
+      "Derek Vogt Voynich phonetic alphabet reading method original",
+      "\"Derek Vogt\" \"2016\" phonetic pdf"
+    ],
+    "limits_and_counts": {
+      "search_queries": 2,
+      "non_search_retrieval_operations": 9,
+      "initial_non_search_limit": 8,
+      "prospectively_extended_limit": 9
+    },
+    "detailed_pages": {
+      "web_pages": 1,
+      "image_pages": 2,
+      "limit": 8
+    },
+    "access_limits": [
+      "Raw page and three image urllib requests returned HTTP 403.",
+      "Web image click returned Internal Error.",
+      "The browser loaded the two 2015 images; the 2016 image had zero natural dimensions.",
+      "Browser content export was unsupported.",
+      "The second search returned unrelated namesakes; no such result was used."
+    ],
+    "reading_limits": [
+      "Source image right edge clips several method notes.",
+      "No continuous passage appears in the two 2015 images.",
+      "The attached 2016 table remains unassessed.",
+      "No blind evaluation, manuscript input recovery, decoder execution, or corpus fit occurred."
+    ],
+    "capture_note": "Web-tool records preserve returned representations, not original HTTP response bytes. Source images are stored separately."
+  },
+  "newbold": {
+    "title": "The Cipher of Roger Bacon",
+    "author": "William Romaine Newbold",
+    "editor": "Roland Grubb Kent",
+    "publication_year": 1928,
+    "url": "https://oncle-dom.fr/biblio/1928-Newbold-The%20Cipher%20of%20Roger%20Bacon.pdf",
+    "raw_file": "results/newbold-primary-method-2026-09-30/source-01-1928-book.pdf",
+    "sha256": "69e9f37fbafe3b76c96bae9fba5b6c459f639e97824f7f9bb9e9cf4504a9c891",
+    "bytes": 46842963,
+    "pdf_page_count": 297,
+    "retrieved_at": "2026-09-30T14:49:43Z",
+    "search": {
+      "call_count": 1,
+      "query_count": 3,
+      "queries": [
+        "The Cipher of Roger Bacon Newbold 1928 scan",
+        "The Cipher of Roger Bacon Internet Archive",
+        "The Cipher of Roger Bacon full text 1928"
+      ],
+      "preselection_text_exposure": "A search result for the direct PDF exposed text from printed page 96, Chapter VII, before page selection. It described the Voynich shorthand signs as fluid and difficult to reduce to a fixed alphabet. Selection was not blind to this excerpt."
+    },
+    "external_retrieval_count": 1,
+    "worker_observed_pages": [
+      {
+        "physical_pdf_page": 93,
+        "observed_printed_page": 51,
+        "filename": "rendered/printed-051-pdf-093-093.png"
+      },
+      {
+        "physical_pdf_page": 124,
+        "observed_printed_page": 78,
+        "filename": "rendered/printed-078-pdf-124-124.png"
+      },
+      {
+        "physical_pdf_page": 142,
+        "observed_printed_page": 96,
+        "filename": "rendered/printed-096-pdf-142-142.png"
+      },
+      {
+        "physical_pdf_page": 154,
+        "observed_printed_page": 105,
+        "filename": "rendered/printed-105-pdf-154-154.png"
+      },
+      {
+        "physical_pdf_page": 157,
+        "observed_printed_page": 108,
+        "filename": "rendered/printed-108-pdf-157-157.png"
+      },
+      {
+        "physical_pdf_page": 176,
+        "observed_printed_page": 121,
+        "filename": "rendered/printed-111-pdf-176-176.png"
+      },
+      {
+        "physical_pdf_page": 177,
+        "observed_printed_page": 122,
+        "filename": "rendered/printed-112-pdf-177-177.png"
+      },
+      {
+        "physical_pdf_page": 183,
+        "observed_printed_page": 126,
+        "filename": "rendered/printed-116-pdf-183-183.png"
+      }
+    ],
+    "root_rules_pages": [
+      {
+        "printed_page": 105,
+        "pdf_page_one_based": 154,
+        "file": "root-printed-105.png",
+        "sha256": "1f6da0775b2debffc202379f7954d72506f3b349d34a4cdfe870e06a98231021"
+      },
+      {
+        "printed_page": 106,
+        "pdf_page_one_based": 155,
+        "file": "root-printed-106.png",
+        "sha256": "67d923659b395961a3af2f7674554ebeb89449325765e4d87937e23a10046f56"
+      },
+      {
+        "printed_page": 107,
+        "pdf_page_one_based": 156,
+        "file": "root-printed-107.png",
+        "sha256": "35c91d08a5a9961bc3f7063a652a0fcffc5aa75e473a11c284bab6f1346c3538"
+      }
+    ],
+    "root_example_printed_pages": [
+      121,
+      122
+    ],
+    "unique_detailed_pdf_pages": 10,
+    "corrections": [
+      "The original selection labels remain [51, 78, 96, 105, 108, 111, 112, 116]. They record the pre-review selection and are not silently changed.",
+      "The last three rendered physical pages show printed pages 121, 122, and 126, not 111, 112, and 116.",
+      "The printed page 121 heading is The Annular Eclipse of 1290. The table-of-contents extraction read it as 1190.",
+      "Printed page 51 is headed The Voynich Manuscript: Contents. It is not the start of Chapter IV, despite the contents entry.",
+      "Printed page 126 is in Chapter XII, The Comet of 1173. It is not the key plate named in the pre-review reason for page 116."
+    ],
+    "scope_extension": "Root added printed pages 106 and 107 prospectively to complete the rules chapter. Worker stayed within eight detailed pages.",
+    "exclusions": [
+      "No complete book review",
+      "No intended key plate obtained",
+      "No value-table implementation",
+      "No new shorthand reading",
+      "No independent astronomical validation"
+    ],
+    "local_directory": "results/newbold-primary-method-2026-09-30"
+  },
+  "verification": {
+    "required_command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+    "required_tests_passed": 85,
+    "source_render_hash_checks": 24,
+    "scientific_limit": "Software and source checks do not validate proposed meanings."
+  },
+  "records": [
+    {
+      "path": "results/vogt-primary-method-2026-09-30/browser-assets-manifest.json",
+      "kind": "private_export_manifest",
+      "bytes": 742,
+      "sha256": "eb8bd82dde31e51e7806678aca3e2c8a13874f81bf6f12e5b7e409a68e331fde"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/browser-observations.json",
+      "kind": "review_or_metadata",
+      "bytes": 829,
+      "sha256": "c09b7d0c721f3f0f66b7cbafa58bb66cf655672b6afdc716085e865ae4be6068"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/image-access.json",
+      "kind": "review_or_metadata",
+      "bytes": 710,
+      "sha256": "7c63115e2b17dcffc696c53f6d661061d57c5a9146a567e558df60707dfa3f60"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/image-records.json",
+      "kind": "review_or_metadata",
+      "bytes": 2859,
+      "sha256": "9fcc98771f8ed83421506d1fa7a729bffbbcd5043f28df9efe06d9ee4cf1a914"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/image-selection.json",
+      "kind": "review_or_metadata",
+      "bytes": 739,
+      "sha256": "ce952cc85514562ef954a72bf3984fb68fb3123167fce48db99ded08487a799f"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/notes-audit.json",
+      "kind": "review_or_metadata",
+      "bytes": 4431,
+      "sha256": "48654103a58444eda249d173412420b958e3fbe16931af3dd8aa9b4ac2f66685"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/notes-audit.md",
+      "kind": "review_or_metadata",
+      "bytes": 4176,
+      "sha256": "c1fbda84c22a73fa957c7c3d6e823121e4983e7a5e10f95ebd4ed3e54a4ae434"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/project-tests.log",
+      "kind": "software_check_log",
+      "bytes": 12303,
+      "sha256": "badc69290d34aa35f810e27f736df33d13126077999ec43e6d46144f778b3cfe"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/retrieval-01-web.json",
+      "kind": "tool_return_capture",
+      "bytes": 19562,
+      "sha256": "599cda2c837e70cc21e19bf8ab202df1285a447f2a3f8be55e16c85a5a6f7796"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/retrieval-02.json",
+      "kind": "review_or_metadata",
+      "bytes": 163,
+      "sha256": "23501a37112b027f12edb03ac117b3fdf21a276c54494844ee0b27ac17017256"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/retrieval-extension.json",
+      "kind": "review_or_metadata",
+      "bytes": 763,
+      "sha256": "50ebf3da9efdeba63f3acd2dbd99b068a934f08084556352078dc7fd3ba5cfdf"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/review-closure.json",
+      "kind": "review_or_metadata",
+      "bytes": 806,
+      "sha256": "e2ed24422772d1e3b09c449c3afffb515b82e942b430eb360bd010f452a78654"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/root-audit.md",
+      "kind": "review_or_metadata",
+      "bytes": 3940,
+      "sha256": "d30aa81450b3ee663c30ea7294712fe32d66c7156764891fbf895640f1aa588b"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/scheme-part-1-crop-1.png",
+      "kind": "derived_image",
+      "bytes": 482294,
+      "sha256": "64fbe954991755424b84f0e87fed98f5691ded876b710922b34576a60eb0850e"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/scheme-part-1-crop-2.png",
+      "kind": "derived_image",
+      "bytes": 424801,
+      "sha256": "eebfa3290eb3264af4b5dbf983cc31d6b8982314ea6b7b30c2e477a24b5086ef"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/scheme-part-1-crop-3.png",
+      "kind": "derived_image",
+      "bytes": 398868,
+      "sha256": "eccd26eddc823e384b08842d9228ab93409a3f8cca6112a0c6daf43e6990ef5b"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/scheme-part-1-crop-4.png",
+      "kind": "derived_image",
+      "bytes": 441141,
+      "sha256": "7da27c949372c3277033d34811d1fb989bafcf4239f2b3f169a176ad2981a271"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/scheme-part-1-crop-5.png",
+      "kind": "derived_image",
+      "bytes": 10153,
+      "sha256": "2886ad3464bc85e9cc627af78b4150e2d08f79d8099a08c1504d550086f18f9d"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/scheme-part-1.jpg",
+      "kind": "raw_source_bytes",
+      "bytes": 1194526,
+      "sha256": "8ef20c65cf1fbece27eb9d85a9345d4bb9dd75629920141d45733d2cfdfd1b1e"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/scheme-part-2-crop-1.png",
+      "kind": "derived_image",
+      "bytes": 440376,
+      "sha256": "fcef3123c255e2af43f65f7aca3017e501ce2e3b534b38a3e0175138a8e919ce"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/scheme-part-2-crop-2.png",
+      "kind": "derived_image",
+      "bytes": 311578,
+      "sha256": "ccf9354eab46850f1cb6eaa3be3c6ce57156d1120b56551fe1df7a12910b50ba"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/scheme-part-2-crop-3.png",
+      "kind": "derived_image",
+      "bytes": 443390,
+      "sha256": "4f0f763607f758a7f16edec68fc7b9b0d75d666be2fb45f07abb71c46e597a4a"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/scheme-part-2-crop-4.png",
+      "kind": "derived_image",
+      "bytes": 713525,
+      "sha256": "ed0b73377858e30ef19034fae78afa085d8b289683a2b865ee7af33a7af5e824"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/scheme-part-2-crop-5.png",
+      "kind": "derived_image",
+      "bytes": 261,
+      "sha256": "88057e65f5310780b40d1e394f59c294c4e8ec76dd9aed6844f5ff7e4dc9bb20"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/scheme-part-2.jpg",
+      "kind": "raw_source_bytes",
+      "bytes": 1352936,
+      "sha256": "c3c43c34aa6b5c6073ef41b68998c5a142946d2b4842c3f9f861667f53e4c8be"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/scope.json",
+      "kind": "review_or_metadata",
+      "bytes": 769,
+      "sha256": "0abd3ec0d8772cb7a1df428ddb83c35abd36b5c24a7c2c94476cec0471898306"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/search-01.json",
+      "kind": "tool_return_capture",
+      "bytes": 35663,
+      "sha256": "b78bb1f09997ffc1ef84bbd861e5b924ed6b151a5e1b6b319b551c6f57742a8f"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/search-02-and-retrieval-03.json",
+      "kind": "tool_return_capture",
+      "bytes": 29311,
+      "sha256": "93b5177893524ff5305ac207a4d4ae615c9ef39d9833c29ef95c6ef90015d524"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/session-entry.txt",
+      "kind": "review_or_metadata",
+      "bytes": 204,
+      "sha256": "d57fbeed416f4ea51c6707960cca8befab821e4145b58f8865d58a2743e201a3"
+    },
+    {
+      "path": "results/vogt-primary-method-2026-09-30/sources.json",
+      "kind": "review_or_metadata",
+      "bytes": 2408,
+      "sha256": "2b9f9c9fbfb405b602ec05ee768449bb8b6368f02937fb71cd8e3b1176b12415"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/audit.md",
+      "kind": "review_or_metadata",
+      "bytes": 4627,
+      "sha256": "c33aa607d81547042d823fea640725a1806394a7502280f83bdafdf4e68edaf2"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/draft-wiki.md",
+      "kind": "review_or_metadata",
+      "bytes": 940,
+      "sha256": "319c1982823ce931155eba027d6e383c4a5602efdacf0b911224d4cab4863f4f"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/page-map-correction.json",
+      "kind": "review_or_metadata",
+      "bytes": 2861,
+      "sha256": "7cb25463147beb1842029cfb596b24ec09b90c881dd190e3fda5cb41c40efb83"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/rendered/printed-051-pdf-093-093.png",
+      "kind": "derived_image",
+      "bytes": 380250,
+      "sha256": "5c25acd78143886bde105b1ddaff9b01d7d1b10b30d603a74641e8a4480b1f8e"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/rendered/printed-078-pdf-124-124.png",
+      "kind": "derived_image",
+      "bytes": 322452,
+      "sha256": "91b31e246de8d5a343f6ea1f240daf2933ff8ca3604a50bc81bba77de95e5671"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/rendered/printed-096-pdf-142-142.png",
+      "kind": "derived_image",
+      "bytes": 303991,
+      "sha256": "0ee1147290c46cd34d200a5e4c7b1ea733e198d93fc02cca9f919bcd5981f70a"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/rendered/printed-105-pdf-154-154.png",
+      "kind": "derived_image",
+      "bytes": 311707,
+      "sha256": "d2d40328619681fe5bc30f33aa3a21b57d9150317e3818dc77ee56e19f7f0fb3"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/rendered/printed-108-pdf-157-157.png",
+      "kind": "derived_image",
+      "bytes": 319925,
+      "sha256": "99098af2cc0621d116d98eab9d40b012e33991602c789b59a84e5c59f453951f"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/rendered/printed-111-pdf-176-176.png",
+      "kind": "derived_image",
+      "bytes": 282020,
+      "sha256": "a10ec7a65437e098c94cb76fe33b8d11ac0e2b64ebe54e397ec514416c693eb3"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/rendered/printed-112-pdf-177-177.png",
+      "kind": "derived_image",
+      "bytes": 243696,
+      "sha256": "e23e40fce3730b0c8da38cd40a6679a75ca58bb685837b25021f0a8f550126be"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/rendered/printed-116-pdf-183-183.png",
+      "kind": "derived_image",
+      "bytes": 359075,
+      "sha256": "3df82049fd37884c4da216fda8044b9c24d53bc1c0506fd9476f44b5356bf9b1"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/root-example-correction.json",
+      "kind": "review_or_metadata",
+      "bytes": 727,
+      "sha256": "55c4f0b5373568f91307d85fba27bb41652f7f7b009d85024f35c96c89569353"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/root-example-selection.json",
+      "kind": "review_or_metadata",
+      "bytes": 393,
+      "sha256": "af8f880849a5da5ca54acb1f1cfc8a0677a02bcee7c27198009066d91b12fc95"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/root-printed-105.png",
+      "kind": "derived_image",
+      "bytes": 288856,
+      "sha256": "1f6da0775b2debffc202379f7954d72506f3b349d34a4cdfe870e06a98231021"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/root-printed-106.png",
+      "kind": "derived_image",
+      "bytes": 310322,
+      "sha256": "67d923659b395961a3af2f7674554ebeb89449325765e4d87937e23a10046f56"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/root-printed-107.png",
+      "kind": "derived_image",
+      "bytes": 313363,
+      "sha256": "35c91d08a5a9961bc3f7063a652a0fcffc5aa75e473a11c284bab6f1346c3538"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/root-render-records.json",
+      "kind": "review_or_metadata",
+      "bytes": 549,
+      "sha256": "66952ec1d321b989125fbdba6538703f877eb4eb8318ebf2748fcdc26f235829"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/root-rules-audit.md",
+      "kind": "review_or_metadata",
+      "bytes": 3609,
+      "sha256": "610e05af20e97a70123ca01e8c0a03414e55c3dbafc1e541cec5eee745c58ffa"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/root-rules-selection.json",
+      "kind": "review_or_metadata",
+      "bytes": 890,
+      "sha256": "00559bd80556f59251663ccde94b6239964136ff6d958906e46d7d25eb6fa124"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/scope.md",
+      "kind": "review_or_metadata",
+      "bytes": 1647,
+      "sha256": "8f975abfcec54e900c4ee8fe46355f780a512b842d7dbbadb45ee8caee5b74a5"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/search-01.json",
+      "kind": "tool_return_capture",
+      "bytes": 30995,
+      "sha256": "453ad6e657887876a25a589a09dec342d04d3ab43f8fc5a8b4a21ad5da40ed1a"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/selected-pages.json",
+      "kind": "review_or_metadata",
+      "bytes": 1168,
+      "sha256": "dc784dfc399018ec9971039e3f86599f422445ab142e80bcaddc8187f98109c3"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/source-01-1928-book.pdf",
+      "kind": "raw_source_bytes",
+      "bytes": 46842963,
+      "sha256": "69e9f37fbafe3b76c96bae9fba5b6c459f639e97824f7f9bb9e9cf4504a9c891"
+    },
+    {
+      "path": "results/newbold-primary-method-2026-09-30/sources.json",
+      "kind": "review_or_metadata",
+      "bytes": 4492,
+      "sha256": "439eb245abc979084dde16f7b93282b43dd5e6efa1bf0775bf4fa9d676845307"
+    }
+  ]
+}
