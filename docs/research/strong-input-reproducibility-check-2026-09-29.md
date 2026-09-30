@@ -82,3 +82,51 @@ It shows that the current broad class descriptions and row assumptions are insuf
 Further arithmetic variants on these uncertain inputs would not resolve that problem.
 The next method requires a more precise, reproducible input description or a source that states the missing rules.
 The project still has no validated key or translation.
+
+## Small-crop follow-up
+
+Another attempt used six plain crops from the first three groups on page 82.
+The renders used twice the previous scale and excluded the proposed-text band.
+Two new AI readers received explicit whole-sign definitions and recorded upper marks, signs, and lower marks as three lists.
+Each reader made one pass. The method permitted no replacement reading or primary-reader override.
+
+The primary reader had already examined the proposed text, including a possible mismatch in the third group.
+That prior examination informed the selection. This was a targeted method check, not an independent prediction or random sample.
+The alphabet, candidate columns, and forward-shift rule stayed fixed.
+The numeric interpretation and row-selection role of the upper band are still model assumptions.
+
+The lower lists agreed at all 17 positions: 14 known digits and three unresolved marks.
+This agreement did not show an alignment between digits and signs.
+The following counts describe the reader records, not verified counts of source signs.
+
+| Group | A upper/sign/lower counts | B upper/sign/lower counts | Equal counts within both records |
+| --- | --- | --- | --- |
+| 1 | 6 / 7 / 6 | 6 / 6 / 6 | No |
+| 2 | 4 / 5 / 4 | 4 / 4 / 4 | No |
+| 3 | 7 / 8 / 7 | 7 / 8 / 7 | No |
+
+Reader A separated the first group's caret and bench despite the explicit compound definition.
+This was an instruction-following failure. The record stays unchanged under the one-pass rule.
+The readers also treated detached marks differently in the second group.
+Both third-group records had more sign entries than numeric entries. Reader B recorded a possible compound boundary between adjacent arcs.
+
+The fixed alignment rule excluded all three groups. Thus, no position qualified for the letter calculation.
+The local program checked input counts and exclusions only. Its letter-comparison function was not run on these source records.
+The result shows limits of this reading procedure. It does not show that the source is unreadable or reject Strong's complete method.
+
+The source record includes the new crop coordinates, fixed requirements, reader counts, and hashes.
+The detailed packet, first-pass records, and review stay in `results/strong-crop-input-check-2026-09-29/`.
+Further reader retries stopped.
+
+Another search used two fixed queries and selected one archive page.
+The [J.VS archive](https://www.as.up.krakow.pl/jvs/JVSvolI2007.htm) was already a project source. Its bytes agreed with the earlier copy.
+Item 89 says its writer does not know Strong's procedure and distinguishes worksheets from instructions.
+Another passage proposes word-position operations but leaves several rules for short words unresolved.
+Neither passage supplies a fixed procedure for these worksheets. The initial search notes incorrectly called the page new; corrected notes record its earlier use.
+
+An independent count check confirmed the list lengths, lower-list agreement, source hashes, and zero eligible positions.
+An empty-directory replay produced the same six crop hashes and the same input-check result.
+The required project suite again passed all 85 tests. These checks do not validate source readings or a translation.
+
+This reconstruction attempt is stopped. A source with explicit rules or a different fixed method is necessary before another attempt.
+Another reader pass on the same packet is not the next research step.

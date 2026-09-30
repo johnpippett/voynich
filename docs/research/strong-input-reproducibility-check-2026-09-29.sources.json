@@ -147,5 +147,296 @@
       "passed": 85,
       "exit_code": 0
     }
+  },
+  "small_crop_followup": {
+    "source_pdf_page": 82,
+    "selection": "The first three complete groups in the first main line. Prior examination of proposed text and a possible third-group mismatch informed this selection.",
+    "purpose": "A targeted input-method check with prior target exposure. This is not an independent prediction or random sample.",
+    "attempt_limit": "One packet and one visual pass by each of two new readers. No replacement readings or primary-reader override.",
+    "crops": [
+      {
+        "group": 1,
+        "kind": "inputs",
+        "file": "group-1-inputs.png",
+        "scale_long_edge_pixels": 8000,
+        "x": 300,
+        "y": 3060,
+        "width": 940,
+        "height": 640,
+        "sha256": "d35f92a62bbd9377fc0982de39935f1b7b9e9ad30578211768954f9804ca43f4"
+      },
+      {
+        "group": 1,
+        "kind": "lower",
+        "file": "group-1-lower.png",
+        "scale_long_edge_pixels": 8000,
+        "x": 260,
+        "y": 4020,
+        "width": 920,
+        "height": 340,
+        "sha256": "6be9fbf10019bf1c24110fcc883c2a7c24e8ea4ae640f51dd8251d06c178572a"
+      },
+      {
+        "group": 2,
+        "kind": "inputs",
+        "file": "group-2-inputs.png",
+        "scale_long_edge_pixels": 8000,
+        "x": 1360,
+        "y": 3060,
+        "width": 660,
+        "height": 640,
+        "sha256": "15ab70dd442ee6064289867add324ec7556034dfbc0d11b33386a584708124cb"
+      },
+      {
+        "group": 2,
+        "kind": "lower",
+        "file": "group-2-lower.png",
+        "scale_long_edge_pixels": 8000,
+        "x": 1320,
+        "y": 4020,
+        "width": 720,
+        "height": 340,
+        "sha256": "9bbc373cf65d673b7382ec8fee66a3be18460478dede01292e59b1f6be7d3f9f"
+      },
+      {
+        "group": 3,
+        "kind": "inputs",
+        "file": "group-3-inputs.png",
+        "scale_long_edge_pixels": 8000,
+        "x": 2120,
+        "y": 3060,
+        "width": 1220,
+        "height": 640,
+        "sha256": "a681c0547c6b1918d64766f0d212cf1efc9b832a0da0286f29747cf7be84b288"
+      },
+      {
+        "group": 3,
+        "kind": "lower",
+        "file": "group-3-lower.png",
+        "scale_long_edge_pixels": 8000,
+        "x": 2080,
+        "y": 4020,
+        "width": 1120,
+        "height": 340,
+        "sha256": "a8c23070e913ae033bd46ddca949876c31c13fa3b7cc39b36fefc8bb702514b9"
+      }
+    ],
+    "render_command_template": "pdftoppm -f 82 -l 82 -singlefile -scale-to 8000 -x X -y Y -W WIDTH -H HEIGHT -png Strong.pdf OUTPUT_PREFIX",
+    "alignment_requirements": [
+      "Both readers must agree on the sign count and boundaries.",
+      "Upper-mark, sign, and lower-mark lists must have equal lengths within each record.",
+      "Any unresolved boundary excludes its group.",
+      "A position also needs an agreed known class, upper value 1, and known lower digit.",
+      "The initial lower dash and triangular lower marks stay unresolved."
+    ],
+    "unchanged_model": {
+      "alphabet": "ABCDEFGHIKLMNOPQRSTUVWX",
+      "row": 1,
+      "operation": "add lower digit to the candidate column position modulo23",
+      "classes": {
+        "bench_with_caret": [
+          "G"
+        ],
+        "open_curve": [
+          "H",
+          "S"
+        ],
+        "double_loop": [
+          "A",
+          "F",
+          "M"
+        ],
+        "closed_loop": [
+          "D",
+          "K",
+          "L",
+          "O",
+          "V"
+        ],
+        "hook_like": [
+          "W"
+        ]
+      }
+    },
+    "assumptions": [
+      "The upper band contains numeric values.",
+      "The upper value selects a row in the table.",
+      "Equal list lengths permit alignment in order."
+    ],
+    "reader_counts": [
+      {
+        "group": 1,
+        "counts": [
+          {
+            "sign_count": 7,
+            "upper_values": 6,
+            "classes": 7,
+            "lower_values": 6
+          },
+          {
+            "sign_count": 6,
+            "upper_values": 6,
+            "classes": 6,
+            "lower_values": 6
+          }
+        ],
+        "order_alignment": false,
+        "exclusions": [
+          "reader_1_unequal_or_unknown_counts",
+          "reader_sign_counts_differ"
+        ]
+      },
+      {
+        "group": 2,
+        "counts": [
+          {
+            "sign_count": 5,
+            "upper_values": 4,
+            "classes": 5,
+            "lower_values": 4
+          },
+          {
+            "sign_count": 4,
+            "upper_values": 4,
+            "classes": 4,
+            "lower_values": 4
+          }
+        ],
+        "order_alignment": false,
+        "exclusions": [
+          "reader_1_unequal_or_unknown_counts",
+          "reader_sign_counts_differ"
+        ]
+      },
+      {
+        "group": 3,
+        "counts": [
+          {
+            "sign_count": 8,
+            "upper_values": 7,
+            "classes": 8,
+            "lower_values": 7
+          },
+          {
+            "sign_count": 8,
+            "upper_values": 7,
+            "classes": 8,
+            "lower_values": 7
+          }
+        ],
+        "order_alignment": false,
+        "exclusions": [
+          "reader_1_unequal_or_unknown_counts",
+          "reader_1_unclear_boundary",
+          "reader_2_unequal_or_unknown_counts",
+          "reader_2_unclear_boundary"
+        ]
+      }
+    ],
+    "lower_lists": {
+      "a": [
+        [
+          null,
+          1,
+          3,
+          5,
+          7,
+          9
+        ],
+        [
+          7,
+          5,
+          3,
+          1
+        ],
+        [
+          null,
+          7,
+          null,
+          1,
+          3,
+          5,
+          7
+        ]
+      ],
+      "b": [
+        [
+          null,
+          1,
+          3,
+          5,
+          7,
+          9
+        ],
+        [
+          7,
+          5,
+          3,
+          1
+        ],
+        [
+          null,
+          7,
+          null,
+          1,
+          3,
+          5,
+          7
+        ]
+      ]
+    },
+    "lower_agreement": {
+      "entries": 17,
+      "known_digits": 14,
+      "unresolved_marks": 3,
+      "limit": "This list agreement does not give an alignment to signs."
+    },
+    "eligible_positions": 0,
+    "instruction_failure": "Reader A separated the first group caret and bench despite the explicit compound definition. The first-pass record stays unchanged.",
+    "arithmetic_status": "Only input counts and exclusions were checked. The letter-comparison function did not process these source records.",
+    "record_sha256": {
+      "scope.json": "14a7007aba4269f362c99b3f8242d4bc115b9db93a7f0843bc41f32fb9e41e00",
+      "reader-packet.md": "2ad87e58f8a998af5ae10db2ca73a4ddd8dde2ad8c9fa4ab903ae7959e041b02",
+      "packet-freeze.json": "dc66a341c3b9b972e50c76e74e2d53179bd8a9554100691d138de3c1032eee6b",
+      "reader-a/transcription.json": "778b8c2577f73672ee831ced30be876313c223121e5289e10e4bc12402d932f3",
+      "reader-b/transcription.json": "9d00a28094e40bd85933172e69bfe4d6c09d3c953a2e6ed99fef5df78d65f975",
+      "input-gate-result.json": "24ddc523d9971f5047e33a249b5820423cb1b849cbf28274d184c161a46cedd1",
+      "protocol-review.md": "020bb0856c62c719dfc16ff754ec31c473ef43c590c84baab3be19f385787ca4",
+      "gate-review.json": "d30c5f55aedd8562c59579c79d83843e4530f046ec43be417b0a96c5e1430c2a",
+      "e2e-replay.json": "26d66b18d77f8719dd760902e127811cb3762271082ae91025c779ef8899ebf4"
+    },
+    "decision": "Stop this reconstruction attempt and reader retries. A source with explicit rules or a different fixed method is necessary before another attempt.",
+    "required_project_tests": {
+      "passed": 85,
+      "exit_code": 0
+    },
+    "verification": {
+      "independent_count_check": "The check confirmed list lengths, lower-list agreement, source hashes, and zero eligible positions.",
+      "crop_replay": "An empty-directory render produced the same six crop hashes.",
+      "input_replay": "The fixed JSON and prepared checker produced the saved input-check result in an empty directory.",
+      "limit": "These checks do not validate source readings or a translation."
+    },
+    "source_rule_search": {
+      "queries": [
+        "\"Glen Claston\" \"Strong\" Voynich worksheet arithmetic shift",
+        "\"Leonell Strong\" \"Glen Claston\" rule grouping cipher"
+      ],
+      "selected_pages": 1,
+      "source": {
+        "url": "https://www.as.up.krakow.pl/jvs/JVSvolI2007.htm",
+        "bytes": 640703,
+        "sha256": "ba7357e80a10fd1c2af8c307890e304299864f2a846236445fd2baac88e288cf"
+      },
+      "prior_source_status": "The page and item 89 were examined earlier. The current capture has the same bytes as the earlier file.",
+      "finding": "Item 89 states that its writer does not know Strong's procedure. Another speculative passage leaves operation choices unresolved.",
+      "correction": "The first search notes incorrectly called the page new. Corrected notes record its earlier use.",
+      "decision": "The check found no fixed worksheet procedure.",
+      "newly_discovered_pages": 0,
+      "new_passage_locator": {
+        "text_marker": "Berj says: 4.)",
+        "character_offset_in_saved_html": 157266,
+        "topic": "Possible word-position operations and unresolved short-word rules."
+      }
+    }
   }
 }
