@@ -1,0 +1,263 @@
+{
+  "date": "2026-09-30",
+  "sources": [
+    {
+      "group": "1974",
+      "path": "publisher.html",
+      "url": "https://www.journals.uchicago.edu/doi/10.2307/2851756",
+      "final_url": "https://www.journals.uchicago.edu/doi/10.2307/2851756",
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 5558,
+      "sha256": "4a4e6753a60fd86f202c70718f0c342de5958862862b6d7f3e1a5bccb108c02e",
+      "retrieved_utc": "2026-09-30T12:55:32.872847+00:00",
+      "capture_note": "HTTP 403 access response; no article text."
+    },
+    {
+      "group": "1974",
+      "path": "jstor.html",
+      "url": "https://www.jstor.org/stable/2851756",
+      "final_url": "https://www.jstor.org/stable/2851756",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 3038,
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "retrieved_utc": "2026-09-30T12:55:32.985314+00:00",
+      "capture_note": "Client challenge; no article text."
+    },
+    {
+      "group": "1974",
+      "path": "public-first-page.png",
+      "url": "https://www.journals.uchicago.edu/cms/10.2307/2851756/asset/b657c77a-09d4-4a02-a8af-87ba05bdd4a2/assets/2851756.fp.png",
+      "status": 200,
+      "content_type": "image/png;charset=UTF-8",
+      "bytes": 151997,
+      "sha256": "5e3a714324300a6a133bee9be736f4f2eb98ea6ad2925c246a7c4dcbad1328b0",
+      "retrieved_utc": "2026-09-30T12:55:52.735476+00:00",
+      "capture_note": "Public preview of printed page 546."
+    },
+    {
+      "group": "1976",
+      "type": "publisher first-page image preview",
+      "title": "The Voynich 'Roger Bacon' Cipher Manuscript: Deciphered Maps of Stars",
+      "url": "https://www.journals.uchicago.edu/cms/10.2307/751135/asset/595c18d3-cf35-4ba5-9ab3-c34079d2c344/assets/751135.fp.png",
+      "retrieved_utc": "2026-09-30T12:59:04Z",
+      "http_status": 200,
+      "media_type": "image/png",
+      "pages_represented": [
+        139
+      ],
+      "bytes": 172116,
+      "sha256": "cb4d6da700cabd76606861f786bbb14f8600a6b218661c920b0ad3c0c56ce290",
+      "local_file": "1976-first-page.png"
+    },
+    {
+      "group": "catalogue",
+      "url": "https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms408.htm",
+      "file": "yale-detailed-catalog.html",
+      "bytes": 12040,
+      "sha256": "6b10556ef5a7d94b0fb125d2f4116f2d6f3b4a567a6e876e0fee256e8b8356c4",
+      "retrieved_utc": "2026-09-30T12:37:22.604530+00:00",
+      "used_for": "Three bibliographic references; not independent validation of readings."
+    }
+  ],
+  "review": {
+    "1974": {
+      "article_printed_page_range": [
+        546,
+        548
+      ],
+      "reviewed_printed_pages": [
+        546
+      ],
+      "unread_printed_page_range": [
+        547,
+        548
+      ],
+      "result": "Partial cipher description with three plaintext alternatives per symbol and contextual selection. Complete method not assessed."
+    },
+    "1975": {
+      "article_printed_page_range": [
+        347,
+        355
+      ],
+      "reviewed_printed_pages": [],
+      "result": "Full text not obtained. One search used an incorrect journal name; availability remains unresolved."
+    },
+    "1976": {
+      "article_printed_page_range": [
+        139,
+        150
+      ],
+      "reviewed_printed_pages": [
+        139
+      ],
+      "unread_printed_page_range": [
+        140,
+        150
+      ],
+      "result": "Partial last-leaf method statement. Complete star-map procedure not assessed."
+    }
+  },
+  "root_search": {
+    "queries": [
+      "\"Botany and the Voynich\" Brumbaugh 1974",
+      "Robert Brumbaugh Voynich 1974 Speculum 546 548 pdf",
+      "\"Brumbaugh\" \"2851756\" pdf",
+      "\"Botany and the Voynich\" \"pdf\" -scribd -researchgate"
+    ],
+    "web_opens": [
+      {
+        "url": "https://www.journals.uchicago.edu/doi/10.2307/2851756",
+        "result": "Publisher metadata, pages 546-548; full article requires access. Public first-page image linked."
+      },
+      {
+        "url": "https://www.jstor.org/stable/2851756",
+        "result": "No substantive body in web rendering; saved HTTP200 response is Client Challenge."
+      },
+      {
+        "url": "https://www.journals.uchicago.edu/cms/10.2307/2851756/asset/b657c77a-09d4-4a02-a8af-87ba05bdd4a2/assets/2851756.fp.png",
+        "result": "Public first-page PNG, visually reviewed at original detail."
+      }
+    ],
+    "query_limit": 4,
+    "scope_written_after_initial_search": true
+  },
+  "worker_search": {
+    "review_date": "2026-09-30",
+    "scope": [
+      {
+        "year": 1975,
+        "title": "The Solution of the Voynich 'Roger Bacon' Cipher",
+        "journal": "Yale University Library Gazette",
+        "volume": 49,
+        "pages": "347-355",
+        "full_text_obtained": false,
+        "access_note": "The exact-title search returned citations but no paper text. A WorldCat record describes a collection with a facsimile, but does not provide an online copy."
+      },
+      {
+        "year": 1976,
+        "title": "The Voynich 'Roger Bacon' Cipher Manuscript: Deciphered Maps of Stars",
+        "journal": "Journal of the Warburg and Courtauld Institutes",
+        "volume": 39,
+        "issue": 1,
+        "pages": "139-150",
+        "doi": "10.2307/751135",
+        "full_text_obtained": false,
+        "access_note": "The publisher page requires access for the full PDF. A public image preview of printed page 139 was acquired. Pages 140-150 were not reviewed."
+      }
+    ],
+    "search_query_count": 4,
+    "search_queries": [
+      {
+        "query": "\"The Solution of the Voynich Roger Bacon Cipher\" Brumbaugh",
+        "note": "Exact-title search; no full article copy found in the returned results."
+      },
+      {
+        "query": "\"The Voynich Roger Bacon Cipher Manuscript: Deciphered Maps of Stars\"",
+        "note": "Exact-title search for the 1976 article."
+      },
+      {
+        "query": "\"Mathematical Gazette\" \"Robert S. Brumbaugh\" 1975 347 355",
+        "note": "Incorrect journal title. The correct journal is Yale University Library Gazette."
+      },
+      {
+        "query": "\"Journal of the Warburg and Courtauld Institutes\" \"Brumbaugh\" 1976 139 150",
+        "note": "Bibliographic search for the 1976 article."
+      }
+    ],
+    "browser_open_attempts": 5,
+    "direct_page_body_fetch_attempts": 2,
+    "network_attempts_total": 8,
+    "sources": [
+      {
+        "type": "publisher first-page image preview",
+        "title": "The Voynich 'Roger Bacon' Cipher Manuscript: Deciphered Maps of Stars",
+        "url": "https://www.journals.uchicago.edu/cms/10.2307/751135/asset/595c18d3-cf35-4ba5-9ab3-c34079d2c344/assets/751135.fp.png",
+        "retrieved_utc": "2026-09-30T12:59:04Z",
+        "http_status": 200,
+        "media_type": "image/png",
+        "pages_represented": [
+          139
+        ],
+        "bytes": 172116,
+        "sha256": "cb4d6da700cabd76606861f786bbb14f8600a6b218661c920b0ad3c0c56ce290",
+        "local_file": "1976-first-page.png"
+      },
+      {
+        "type": "publisher article landing page, browser rendered only",
+        "url": "https://www.journals.uchicago.edu/doi/pdfplus/10.2307/751135",
+        "redirected_to": "https://www.journals.uchicago.edu/doi/abs/10.2307/751135",
+        "review_date": "2026-09-30",
+        "full_text_status": "Access required",
+        "preserved_raw_body": false
+      },
+      {
+        "type": "issue contents page, browser rendered only",
+        "url": "https://www.journals.uchicago.edu/toc/jwci/1976/39/1",
+        "review_date": "2026-09-30",
+        "observation": "The 1976 article appears on pages 139-150; the issue page marks its PDF No Access.",
+        "preserved_raw_body": false
+      },
+      {
+        "type": "WorldCat collection record, browser rendered only",
+        "url": "https://search.worldcat.org/title/Collection-of-facsimiles-circa-1404-1980/oclc/1574649857",
+        "review_date": "2026-09-30",
+        "observation": "The collection description lists a facsimile of the 1975 article. The record does not provide it online.",
+        "preserved_raw_body": false
+      },
+      {
+        "type": "secondary bibliography PDF, browser rendered only",
+        "url": "https://www.voynichcode.org/wp-content/uploads/2026/01/Voynich_Timeline_Altrideicktus_26-2.pdf",
+        "review_date": "2026-09-30",
+        "pdf_pages": 11,
+        "pages_used": [
+          8
+        ],
+        "observation": "PDF page 8 lists the 1975 Yale University Library Gazette citation. No article content was used.",
+        "preserved_raw_body": false
+      }
+    ],
+    "unsuccessful_routes": [
+      {
+        "url": "https://www.journals.uchicago.edu/doi/abs/10.2307/751135",
+        "result": "The publisher page offers full access after sign-in or purchase. The direct HTML fetch returned HTTP 403. No response body or file was saved."
+      },
+      {
+        "url": "https://www.journals.uchicago.edu/cms/10.2307/751135/asset/595c18d3-cf35-4ba5-9ab3-c34079d2c344/assets/751135.fp.png",
+        "result": "The browser preview request timed out. A direct request to the same linked public image returned HTTP 200."
+      },
+      {
+        "url": "https://search.worldcat.org/title/Collection-of-facsimiles-circa-1404-1980/oclc/1574649857",
+        "result": "The record describes a collection with a facsimile of the 1975 paper. It does not provide the paper online. The direct HTML fetch returned HTTP 429. No response body or file was saved."
+      }
+    ],
+    "interpretation_limit": "The 1976 page 139 preview is evidence only for what its text says. It does not show the complete star-map method. No method evidence was obtained for the 1975 paper."
+  },
+  "verification": {
+    "source_captures_hashed": 5,
+    "source_capture_hashes_and_sizes_agree": true,
+    "two_AI_reviews_agree_on_1974_preview": true,
+    "coordinator_visually_reviewed_both_previews": true,
+    "project_tests": {
+      "recorded_utc": "2026-09-30T12:58:33.983374+00:00",
+      "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "tests_run": 85,
+      "result": "OK",
+      "log_sha256": "f90be73053f352bbdbc4041ffd83c954c960289ab27ec607a8ae7bf2e8a9d35c"
+    }
+  },
+  "reproduction": [
+    "Open the two linked public previews and confirm printed pages 546 and 139.",
+    "Compare downloaded bytes and SHA-256 with the source records.",
+    "Inspect the cipher paragraphs on 546 and the last-leaf paragraph and footnote 7 on 139.",
+    "Keep all unreviewed pages outside any conclusion about rule completeness."
+  ],
+  "limits": [
+    "No full article was read.",
+    "No botanical identification or historical dating claim was independently evaluated.",
+    "No new manuscript reading, sign assignment, corpus fit, source-program execution, purchase, or researcher contact occurred.",
+    "Access limits do not reject the proposed readings."
+  ]
+}

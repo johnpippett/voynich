@@ -9,6 +9,10 @@ The [pause record](docs/research/pause-record-2026-09-17.md) preserves the earli
 
 ## Current findings and stopped branches
 
+The [Brumbaugh source review](docs/research/brumbaugh-source-review-2026-09-30.md) preserves partial method evidence from two public article previews.
+The full papers remain unread, and the source record retains a journal-name error in the limited search.
+Full method review remains open. These access limits do not reject the proposed readings.
+
 The [Ulyanenkov and Jama follow-up](docs/research/ulyanenkov-jama-method-check-2026-09-30.md) examines their reading methods beyond the earlier source selection.
 Ulyanenkov supplies a codebook and proposed connected text, but some rule selections remain unresolved.
 Jama reports observations on both sides of folio 91, which Yale lists as missing.
